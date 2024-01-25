@@ -1,0 +1,913 @@
+@prefix : <http://localhost:9000/hint#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix hint: <http://localhost:9000/hint#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@base <http://localhost:9000/hint#> .
+
+<http://localhost:9000/hint> rdf:type owl:Ontology ;
+                              owl:versionIRI <http://localhost:9000/hint/0.0.2> ;
+                              owl:imports <https://purl.org/nemo/gufo#/1.0.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/nemo/gufo#isDerivedFrom
+gufo:isDerivedFrom rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://localhost:9000/hint#categorizesVQT
+hint:categorizesVQT rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf gufo:categorizes ;
+                    rdfs:domain hint:VQualityType ;
+                    rdfs:range hint:VariantQuality .
+
+
+###  http://localhost:9000/hint#commDeviceHasInterface
+hint:commDeviceHasInterface rdf:type owl:ObjectProperty ;
+                            rdfs:domain hint:CommDevice ;
+                            rdfs:range hint:Interface .
+
+
+###  http://localhost:9000/hint#concernsVQT
+hint:concernsVQT rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf gufo:concernsQualityType ;
+                 rdfs:domain hint:ObservedQVA ;
+                 rdfs:range hint:VariantQuality .
+
+
+###  http://localhost:9000/hint#decodes
+hint:decodes rdf:type owl:ObjectProperty ;
+             rdfs:domain hint:Receiver ;
+             rdfs:range hint:WantedSender .
+
+
+###  http://localhost:9000/hint#detects
+hint:detects rdf:type owl:ObjectProperty ;
+             rdfs:domain hint:Sender ;
+             rdfs:range hint:Receiver .
+
+
+###  http://localhost:9000/hint#handSkakeBondHasSelectedBond
+hint:handSkakeBondHasSelectedBond rdf:type owl:ObjectProperty ;
+                                  rdfs:domain hint:HandSkakeBond ;
+                                  rdfs:range hint:SelectedBond .
+
+
+###  http://localhost:9000/hint#handshakes
+hint:handshakes rdf:type owl:ObjectProperty ;
+                rdfs:domain hint:Source ;
+                rdfs:range hint:Sink .
+
+
+###  http://localhost:9000/hint#isServedBy
+hint:isServedBy rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf hint:decodes ;
+                rdfs:domain hint:SelectedSender ;
+                rdfs:range hint:Receiver .
+
+
+###  http://localhost:9000/hint#monitors
+hint:monitors rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf hint:decodes ;
+              rdfs:domain hint:Receiver ;
+              rdfs:range hint:MonitoredSender .
+
+
+###  http://purl.org/nemo/gufo#inheresIn
+gufo:inheresIn rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/nemo/gufo#mediates
+gufo:mediates rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://localhost:9000/hint#hasEndPositionInXSDString
+hint:hasEndPositionInXSDString rdf:type owl:DatatypeProperty ;
+                               rdfs:domain gufo:ConcreteIndividual ;
+                               rdfs:range xsd:string .
+
+
+###  http://purl.org/nemo/gufo#hasQualityValue
+gufo:hasQualityValue rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://localhost:9000/hint#AP
+hint:AP rdf:type owl:Class ;
+        rdfs:subClassOf hint:Ne .
+
+
+###  http://localhost:9000/hint#AntennaGain
+hint:AntennaGain rdf:type owl:Class ;
+                 rdfs:subClassOf hint:VariantQuality ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty gufo:inheresIn ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass hint:Interface
+                                 ] .
+
+
+###  http://localhost:9000/hint#AntennaHeight
+hint:AntennaHeight rdf:type owl:Class ;
+                   rdfs:subClassOf hint:VariantQuality ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gufo:inheresIn ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass hint:Interface
+                                   ] .
+
+
+###  http://localhost:9000/hint#Bandwidth
+hint:Bandwidth rdf:type owl:Class ;
+               rdfs:subClassOf hint:VariantQuality ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty gufo:inheresIn ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass hint:WantedSignal
+                               ] .
+
+
+###  http://localhost:9000/hint#CQVA
+hint:CQVA rdf:type owl:Class ;
+          rdfs:subClassOf hint:ObservedQVA .
+
+
+###  http://localhost:9000/hint#Channel
+hint:Channel rdf:type owl:Class ;
+             rdfs:subClassOf hint:VariantQuality ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty gufo:inheresIn ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass hint:WantedSignal
+                             ] .
+
+
+###  http://localhost:9000/hint#CommDevice
+hint:CommDevice rdf:type owl:Class ;
+                rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://localhost:9000/hint#Configuration
+hint:Configuration rdf:type owl:Class ;
+                   rdfs:subClassOf hint:QVAEvent .
+
+
+###  http://localhost:9000/hint#Coverage
+hint:Coverage rdf:type owl:Class ;
+              rdfs:subClassOf hint:VariantQuality ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty gufo:inheresIn ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass hint:Interface
+                              ] .
+
+
+###  http://localhost:9000/hint#DecodedBond
+hint:DecodedBond rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Class ;
+                                       owl:unionOf ( hint:MonitoredBond
+                                                     hint:SelectedBond
+                                                   )
+                                     ] ;
+                 rdfs:subClassOf gufo:Relator ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty gufo:mediates ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass hint:Receiver
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty gufo:mediates ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass hint:WantedSender
+                                 ] .
+
+
+###  http://localhost:9000/hint#DetectedBond
+hint:DetectedBond rdf:type owl:Class ;
+                  rdfs:subClassOf gufo:Relator ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty gufo:mediates ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass hint:Receiver
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty gufo:mediates ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass hint:Sender
+                                  ] .
+
+
+###  http://localhost:9000/hint#Frequency
+hint:Frequency rdf:type owl:Class ;
+               rdfs:subClassOf hint:VariantQuality ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty gufo:inheresIn ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass hint:WantedSignal
+                               ] .
+
+
+###  http://localhost:9000/hint#HandSkakeBond
+hint:HandSkakeBond rdf:type owl:Class ;
+                   rdfs:subClassOf gufo:Relator ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gufo:mediates ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass hint:Sink
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gufo:mediates ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass hint:Source
+                                   ] .
+
+
+###  http://localhost:9000/hint#IPAddress
+hint:IPAddress rdf:type owl:Class ;
+               rdfs:subClassOf hint:VariantQuality ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty gufo:inheresIn ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass hint:Interface
+                               ] .
+
+
+###  http://localhost:9000/hint#IQVA
+hint:IQVA rdf:type owl:Class ;
+          rdfs:subClassOf hint:ObservedQVA .
+
+
+###  http://localhost:9000/hint#Information
+hint:Information rdf:type owl:Class ;
+                 rdfs:subClassOf gufo:IntrinsicMode ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty gufo:inheresIn ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass hint:WantedSignal
+                                 ] .
+
+
+###  http://localhost:9000/hint#InnerNode
+hint:InnerNode rdf:type owl:Class ;
+               rdfs:subClassOf hint:Ne .
+
+
+###  http://localhost:9000/hint#Interface
+hint:Interface rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:unionOf ( hint:Ne
+                                                   hint:Ue
+                                                 )
+                                   ] ,
+                                   [ rdf:type owl:Class ;
+                                     owl:unionOf ( hint:Receiver
+                                                   hint:Sender
+                                                 )
+                                   ] ,
+                                   [ rdf:type owl:Class ;
+                                     owl:unionOf ( hint:Sink
+                                                   hint:Source
+                                                 )
+                                   ] ;
+               rdfs:subClassOf gufo:FunctionalComplex ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty [ owl:inverseOf gufo:inheresIn
+                                                ] ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass hint:Protocol
+                               ] .
+
+
+###  http://localhost:9000/hint#LQVA
+hint:LQVA rdf:type owl:Class ;
+          rdfs:subClassOf hint:ObservedQVA .
+
+
+###  http://localhost:9000/hint#Latency
+hint:Latency rdf:type owl:Class ;
+             rdfs:subClassOf hint:VariantQuality ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty gufo:inheresIn ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass hint:HandSkakeBond
+                             ] .
+
+
+###  http://localhost:9000/hint#MAC
+hint:MAC rdf:type owl:Class ;
+         rdfs:subClassOf hint:VariantQuality ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty gufo:inheresIn ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass hint:Interface
+                         ] .
+
+
+###  http://localhost:9000/hint#Measurement
+hint:Measurement rdf:type owl:Class ;
+                 rdfs:subClassOf hint:QVAEvent .
+
+
+###  http://localhost:9000/hint#MonitoredBond
+hint:MonitoredBond rdf:type owl:Class ;
+                   rdfs:subClassOf hint:DecodedBond ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gufo:mediates ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass hint:MonitoredSender
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gufo:mediates ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass hint:Receiver
+                                   ] .
+
+
+###  http://localhost:9000/hint#MonitoredSender
+hint:MonitoredSender rdf:type owl:Class ;
+                     rdfs:subClassOf hint:WantedSender ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty [ owl:inverseOf gufo:mediates
+                                                      ] ;
+                                       owl:someValuesFrom hint:MonitoredBond
+                                     ] .
+
+
+###  http://localhost:9000/hint#Ne
+hint:Ne rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:unionOf ( hint:AP
+                                            hint:InnerNode
+                                          )
+                            ] ;
+        rdfs:subClassOf hint:Interface .
+
+
+###  http://localhost:9000/hint#ObservedQVA
+hint:ObservedQVA rdf:type owl:Class ;
+                 rdfs:subClassOf gufo:QualityValueAttributionSituation .
+
+
+###  http://localhost:9000/hint#Power
+hint:Power rdf:type owl:Class ;
+           rdfs:subClassOf hint:VariantQuality ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty gufo:inheresIn ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass hint:WantedSignal
+                           ] .
+
+
+###  http://localhost:9000/hint#Protocol
+hint:Protocol rdf:type owl:Class ;
+              rdfs:subClassOf gufo:IntrinsicMode ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty gufo:inheresIn ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass hint:Interface
+                              ] .
+
+
+###  http://localhost:9000/hint#QVAEvent
+hint:QVAEvent rdf:type owl:Class ;
+              rdfs:subClassOf gufo:Event .
+
+
+###  http://localhost:9000/hint#Receiver
+hint:Receiver rdf:type owl:Class ;
+              rdfs:subClassOf hint:Interface ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty [ owl:inverseOf gufo:mediates
+                                               ] ;
+                                owl:someValuesFrom hint:DecodedBond
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty [ owl:inverseOf gufo:mediates
+                                               ] ;
+                                owl:someValuesFrom hint:DetectedBond
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty [ owl:inverseOf gufo:mediates
+                                               ] ;
+                                owl:someValuesFrom hint:MonitoredBond
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty [ owl:inverseOf gufo:mediates
+                                               ] ;
+                                owl:someValuesFrom hint:SelectedBond
+                              ] .
+
+
+###  http://localhost:9000/hint#SQVA
+hint:SQVA rdf:type owl:Class ;
+          rdfs:subClassOf hint:ObservedQVA .
+
+
+###  http://localhost:9000/hint#SelectedBond
+hint:SelectedBond rdf:type owl:Class ;
+                  rdfs:subClassOf hint:DecodedBond ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty gufo:mediates ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass hint:Receiver
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty gufo:mediates ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass hint:SelectedSender
+                                  ] .
+
+
+###  http://localhost:9000/hint#SelectedSender
+hint:SelectedSender rdf:type owl:Class ;
+                    rdfs:subClassOf hint:WantedSender ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty [ owl:inverseOf gufo:mediates
+                                                     ] ;
+                                      owl:someValuesFrom hint:SelectedBond
+                                    ] .
+
+
+###  http://localhost:9000/hint#Sender
+hint:Sender rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:unionOf ( hint:UnWantedSender
+                                                hint:WantedSender
+                                              )
+                                ] ;
+            rdfs:subClassOf hint:Interface ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty [ owl:inverseOf gufo:mediates
+                                             ] ;
+                              owl:someValuesFrom hint:DetectedBond
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty [ owl:inverseOf gufo:inheresIn
+                                             ] ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass hint:Signal
+                            ] .
+
+
+###  http://localhost:9000/hint#Signal
+hint:Signal rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:unionOf ( hint:UnWantedSignal
+                                                hint:WantedSignal
+                                              )
+                                ] ;
+            rdfs:subClassOf gufo:IntrinsicMode ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty gufo:inheresIn ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass hint:Sender
+                            ] .
+
+
+###  http://localhost:9000/hint#Sink
+hint:Sink rdf:type owl:Class ;
+          rdfs:subClassOf hint:Interface ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf gufo:mediates
+                                           ] ;
+                            owl:someValuesFrom hint:HandSkakeBond
+                          ] .
+
+
+###  http://localhost:9000/hint#Source
+hint:Source rdf:type owl:Class ;
+            rdfs:subClassOf hint:Interface ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty [ owl:inverseOf gufo:mediates
+                                             ] ;
+                              owl:someValuesFrom hint:HandSkakeBond
+                            ] .
+
+
+###  http://localhost:9000/hint#Throughput
+hint:Throughput rdf:type owl:Class ;
+                rdfs:subClassOf hint:VariantQuality ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty gufo:inheresIn ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass hint:DecodedBond
+                                ] .
+
+
+###  http://localhost:9000/hint#Ue
+hint:Ue rdf:type owl:Class ;
+        rdfs:subClassOf hint:Interface .
+
+
+###  http://localhost:9000/hint#UnWantedSender
+hint:UnWantedSender rdf:type owl:Class ;
+                    rdfs:subClassOf hint:Sender .
+
+
+###  http://localhost:9000/hint#UnWantedSignal
+hint:UnWantedSignal rdf:type owl:Class ;
+                    rdfs:subClassOf hint:Signal .
+
+
+###  http://localhost:9000/hint#VQualityType
+hint:VQualityType rdf:type owl:Class ;
+                  rdfs:subClassOf gufo:EndurantType .
+
+
+###  http://localhost:9000/hint#VariantQuality
+hint:VariantQuality rdf:type owl:Class ;
+                    rdfs:subClassOf gufo:Quality .
+
+
+###  http://localhost:9000/hint#WMode
+hint:WMode rdf:type owl:Class ;
+           rdfs:subClassOf hint:VariantQuality ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty gufo:inheresIn ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass hint:Interface
+                           ] .
+
+
+###  http://localhost:9000/hint#WantedSender
+hint:WantedSender rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:unionOf ( hint:MonitoredSender
+                                                      hint:SelectedSender
+                                                    )
+                                      ] ;
+                  rdfs:subClassOf hint:Sender ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty [ owl:inverseOf gufo:mediates
+                                                   ] ;
+                                    owl:someValuesFrom hint:DecodedBond
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty [ owl:inverseOf gufo:inheresIn
+                                                   ] ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass hint:WantedSignal
+                                  ] .
+
+
+###  http://localhost:9000/hint#WantedSignal
+hint:WantedSignal rdf:type owl:Class ;
+                  rdfs:subClassOf hint:Signal ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty gufo:inheresIn ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass hint:WantedSender
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty [ owl:inverseOf gufo:inheresIn
+                                                   ] ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass hint:Information
+                                  ] .
+
+
+###  http://purl.org/nemo/gufo#FunctionalComplex
+gufo:FunctionalComplex rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#IntrinsicMode
+gufo:IntrinsicMode rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Kind
+gufo:Kind rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Relator
+gufo:Relator rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Role
+gufo:Role rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://localhost:9000/hint#AP
+hint:AP rdf:type owl:NamedIndividual ,
+                 gufo:Role .
+
+
+###  http://localhost:9000/hint#AntennaGain
+hint:AntennaGain rdf:type owl:NamedIndividual ,
+                          hint:VQualityType .
+
+
+###  http://localhost:9000/hint#AntennaHeight
+hint:AntennaHeight rdf:type owl:NamedIndividual ,
+                            hint:VQualityType .
+
+
+###  http://localhost:9000/hint#Bandwidth
+hint:Bandwidth rdf:type owl:NamedIndividual ,
+                        hint:VQualityType .
+
+
+###  http://localhost:9000/hint#Channel
+hint:Channel rdf:type owl:NamedIndividual ,
+                      hint:VQualityType .
+
+
+###  http://localhost:9000/hint#CommDevice
+hint:CommDevice rdf:type owl:NamedIndividual ,
+                         gufo:Kind .
+
+
+###  http://localhost:9000/hint#Coverage
+hint:Coverage rdf:type owl:NamedIndividual ,
+                       hint:VQualityType .
+
+
+###  http://localhost:9000/hint#DecodedBond
+hint:DecodedBond rdf:type owl:NamedIndividual ,
+                          gufo:Kind .
+
+
+###  http://localhost:9000/hint#DetectedBond
+hint:DetectedBond rdf:type owl:NamedIndividual ,
+                           gufo:Kind .
+
+
+###  http://localhost:9000/hint#Frequency
+hint:Frequency rdf:type owl:NamedIndividual ,
+                        hint:VQualityType .
+
+
+###  http://localhost:9000/hint#HandSkakeBond
+hint:HandSkakeBond rdf:type owl:NamedIndividual ,
+                            gufo:Kind .
+
+
+###  http://localhost:9000/hint#IPAddress
+hint:IPAddress rdf:type owl:NamedIndividual ,
+                        hint:VQualityType .
+
+
+###  http://localhost:9000/hint#Information
+hint:Information rdf:type owl:NamedIndividual ,
+                          gufo:Kind .
+
+
+###  http://localhost:9000/hint#InnerNode
+hint:InnerNode rdf:type owl:NamedIndividual ,
+                        gufo:Role .
+
+
+###  http://localhost:9000/hint#Interface
+hint:Interface rdf:type owl:NamedIndividual ,
+                        gufo:Kind .
+
+
+###  http://localhost:9000/hint#Latency
+hint:Latency rdf:type owl:NamedIndividual ,
+                      hint:VQualityType .
+
+
+###  http://localhost:9000/hint#MAC
+hint:MAC rdf:type owl:NamedIndividual ,
+                  hint:VQualityType .
+
+
+###  http://localhost:9000/hint#MonitoredBond
+hint:MonitoredBond rdf:type owl:NamedIndividual ,
+                            gufo:Role .
+
+
+###  http://localhost:9000/hint#MonitoredSender
+hint:MonitoredSender rdf:type owl:NamedIndividual ,
+                              gufo:Role .
+
+
+###  http://localhost:9000/hint#Ne
+hint:Ne rdf:type owl:NamedIndividual ,
+                 gufo:Role .
+
+
+###  http://localhost:9000/hint#Power
+hint:Power rdf:type owl:NamedIndividual ,
+                    hint:VQualityType .
+
+
+###  http://localhost:9000/hint#Protocol
+hint:Protocol rdf:type owl:NamedIndividual ,
+                       gufo:Kind .
+
+
+###  http://localhost:9000/hint#Receiver
+hint:Receiver rdf:type owl:NamedIndividual ,
+                       gufo:Role .
+
+
+###  http://localhost:9000/hint#SelectedBond
+hint:SelectedBond rdf:type owl:NamedIndividual ,
+                           gufo:Role .
+
+
+###  http://localhost:9000/hint#SelectedSender
+hint:SelectedSender rdf:type owl:NamedIndividual ,
+                             gufo:Role .
+
+
+###  http://localhost:9000/hint#Sender
+hint:Sender rdf:type owl:NamedIndividual ,
+                     gufo:Role .
+
+
+###  http://localhost:9000/hint#Signal
+hint:Signal rdf:type owl:NamedIndividual ,
+                     gufo:Kind .
+
+
+###  http://localhost:9000/hint#Sink
+hint:Sink rdf:type owl:NamedIndividual ,
+                   gufo:Role .
+
+
+###  http://localhost:9000/hint#Source
+hint:Source rdf:type owl:NamedIndividual ,
+                     gufo:Role .
+
+
+###  http://localhost:9000/hint#Throughput
+hint:Throughput rdf:type owl:NamedIndividual ,
+                         hint:VQualityType .
+
+
+###  http://localhost:9000/hint#Ue
+hint:Ue rdf:type owl:NamedIndividual ,
+                 gufo:Role .
+
+
+###  http://localhost:9000/hint#UnWantedSender
+hint:UnWantedSender rdf:type owl:NamedIndividual ,
+                             gufo:Role .
+
+
+###  http://localhost:9000/hint#UnWantedSignal
+hint:UnWantedSignal rdf:type owl:NamedIndividual ,
+                             gufo:Role .
+
+
+###  http://localhost:9000/hint#VariantQuality
+hint:VariantQuality rdf:type owl:NamedIndividual ,
+                             gufo:EndurantType .
+
+
+###  http://localhost:9000/hint#WMode
+hint:WMode rdf:type owl:NamedIndividual ,
+                    hint:VQualityType .
+
+
+###  http://localhost:9000/hint#WantedSender
+hint:WantedSender rdf:type owl:NamedIndividual ,
+                           gufo:Role .
+
+
+###  http://localhost:9000/hint#WantedSignal
+hint:WantedSignal rdf:type owl:NamedIndividual ,
+                           gufo:Role .
+
+
+###  http://localhost:9000/hint#decodes
+hint:decodes rdf:type owl:NamedIndividual ;
+             gufo:isDerivedFrom hint:DecodedBond .
+
+
+###  http://localhost:9000/hint#detects
+hint:detects rdf:type owl:NamedIndividual ;
+             gufo:isDerivedFrom hint:DetectedBond .
+
+
+###  http://localhost:9000/hint#handshakes
+hint:handshakes rdf:type owl:NamedIndividual ;
+                gufo:isDerivedFrom hint:HandSkakeBond .
+
+
+###  http://localhost:9000/hint#isServedBy
+hint:isServedBy rdf:type owl:NamedIndividual ;
+                gufo:isDerivedFrom hint:SelectedBond .
+
+
+###  http://localhost:9000/hint#monitors
+hint:monitors rdf:type owl:NamedIndividual ;
+              gufo:isDerivedFrom hint:MonitoredBond .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+hint:AP rdfs:label "AP"@en .
+
+
+hint:CommDevice rdfs:label "CommDevice"@en .
+
+
+hint:DecodedBond rdfs:label "DecodedBond"@en .
+
+
+hint:DetectedBond rdfs:label "DetectedBond"@en .
+
+
+hint:HandSkakeBond rdfs:label "HandSkakeBond"@en .
+
+
+hint:Information rdfs:label "Information"@en .
+
+
+hint:InnerNode rdfs:label "InnerNode"@en .
+
+
+hint:Interface rdfs:label "Interface"@en .
+
+
+hint:MonitoredBond rdfs:label "MonitoredBond"@en .
+
+
+hint:MonitoredSender rdfs:label "MonitoredSender"@en .
+
+
+hint:Ne rdfs:label "Ne"@en .
+
+
+hint:Protocol rdfs:label "Protocol"@en .
+
+
+hint:Receiver rdfs:label "Receiver"@en .
+
+
+hint:SelectedBond rdfs:label "SelectedBond"@en .
+
+
+hint:SelectedSender rdfs:label "SelectedSender"@en .
+
+
+hint:Sender rdfs:label "Sender"@en .
+
+
+hint:Signal rdfs:label "Signal"@en .
+
+
+hint:Sink rdfs:label "Sink"@en .
+
+
+hint:Source rdfs:label "Source"@en .
+
+
+hint:Ue rdfs:label "Ue"@en .
+
+
+hint:UnWantedSender rdfs:label "UnWantedSender"@en .
+
+
+hint:UnWantedSignal rdfs:label "UnWantedSignal"@en .
+
+
+hint:WantedSender rdfs:label "WantedSender"@en .
+
+
+hint:WantedSignal rdfs:label "WantedSignal"@en .
+
+
+hint:decodes rdfs:label "decodes"@en .
+
+
+hint:detects rdfs:label "detects"@en .
+
+
+hint:handshakes rdfs:label "handshakes"@en .
+
+
+hint:isServedBy rdfs:label "is served by"@en .
+
+
+hint:monitors rdfs:label "monitors"@en .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,1657 @@
+@prefix : <http://myontology.com/scenario#> .
+@prefix p0: <http://example.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gufo: <https://purl.org/nemo/gufo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://myontology.com/scenario#> .
+
+<http://myontology.com/scenario> rdf:type owl:Ontology ;
+                                  owl:imports <http://purl.org/nemo/gufo#/1.0.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/nemo/gufo#categorizes
+<http://purl.org/nemo/gufo#categorizes> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/nemo/gufo#isDerivedFrom
+<http://purl.org/nemo/gufo#isDerivedFrom> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://myontology.com/scenario#MOPTIsSubordinateTo
+:MOPTIsSubordinateTo rdf:type owl:ObjectProperty .
+
+
+###  http://myontology.com/scenario#MOPowerTypeIsSubordinateTo
+:MOPowerTypeIsSubordinateTo rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
+                            rdfs:domain :MilitaryOrganizationPowerType ;
+                            rdfs:range :MilitaryOrganizationPowerType .
+
+
+###  http://myontology.com/scenario#MOTypeIsSubordinateTo
+:MOTypeIsSubordinateTo rdf:type owl:ObjectProperty .
+
+
+###  http://myontology.com/scenario#ProtocolOf
+:ProtocolOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://purl.org/nemo/gufo#inheresIn> ;
+            rdfs:domain :Protocol ;
+            rdfs:range :Interface .
+
+
+###  http://myontology.com/scenario#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :MilitaryPlatform ;
+           rdfs:range :MilitaryOrganization .
+
+
+###  http://myontology.com/scenario#carries
+:carries rdf:type owl:ObjectProperty ;
+         rdfs:domain :CommDeviceCarrier ;
+         rdfs:range :CommDevice ;
+         rdfs:label "carries"@en .
+
+
+###  http://myontology.com/scenario#hasDirectRelationshipWith
+:hasDirectRelationshipWith rdf:type owl:ObjectProperty ,
+                                    owl:SymmetricProperty ;
+                           rdfs:domain :MilitaryOrganization ;
+                           rdfs:range :MilitaryOrganization ;
+                           rdfs:label "hasDirectRelationshipWith"@en .
+
+
+###  http://myontology.com/scenario#hasInterfPowerType
+:hasInterfPowerType rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain :Interface .
+
+
+###  http://myontology.com/scenario#hasInterface
+:hasInterface rdf:type owl:ObjectProperty ;
+              rdfs:domain :CommDevice ;
+              rdfs:range :Interface ;
+              rdfs:label "hasInterface"@en .
+
+
+###  http://myontology.com/scenario#hasMOPowerType
+:hasMOPowerType rdf:type owl:ObjectProperty ;
+                rdfs:domain :MilitaryOrganization .
+
+
+###  http://myontology.com/scenario#hasVehiclePowerType
+:hasVehiclePowerType rdf:type owl:ObjectProperty .
+
+
+###  http://myontology.com/scenario#hierarchicallyEquivalentWith
+:hierarchicallyEquivalentWith rdf:type owl:ObjectProperty ;
+                              rdfs:domain :HierarchicallyEquivalent ;
+                              rdfs:range :HierarchicallyEquivalent ;
+                              rdfs:label "HierarchicallyEquivalentWith"@en .
+
+
+###  http://myontology.com/scenario#isCommanderOf
+:isCommanderOf rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isSubordinateTo ;
+               rdfs:label "isCommanderOf"@pt .
+
+
+###  http://myontology.com/scenario#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ;
+             rdfs:domain :MilitaryPersonAsPassenger ;
+             rdfs:range :Vehicle ;
+             rdfs:label "isLocatedIn"@en .
+
+
+###  http://myontology.com/scenario#isSubordinateTo
+:isSubordinateTo rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Subordinate ;
+                 rdfs:range :Commander ;
+                 rdfs:label "isSubordinateTo"@en .
+
+
+###  http://myontology.com/scenario#mayTalkTo
+:mayTalkTo rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdf:type owl:SymmetricProperty ;
+           rdfs:domain :Ue ;
+           rdfs:range :Ue .
+
+
+###  http://myontology.com/scenario#militaryPersonHasMilitaryOrganization
+:militaryPersonHasMilitaryOrganization rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :MilitaryPerson ;
+                                       rdfs:range :MilitaryOrganization .
+
+
+###  http://myontology.com/scenario#militaryScenarioHasInstitutionalElement
+:militaryScenarioHasInstitutionalElement rdf:type owl:ObjectProperty ;
+                                         rdfs:domain :MilitaryScenario ;
+                                         rdfs:range :InstitutionalElement .
+
+
+###  http://myontology.com/scenario#militaryScenarioHasOperationalElement
+:militaryScenarioHasOperationalElement rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :MilitaryScenario ;
+                                       rdfs:range :OperationalElement .
+
+
+###  http://myontology.com/scenario#networkHasInterface
+:networkHasInterface rdf:type owl:ObjectProperty ;
+                     rdfs:domain :WirelessNetwork ;
+                     rdfs:range :Interface .
+
+
+###  http://myontology.com/scenario#operates
+:operates rdf:type owl:ObjectProperty ;
+          rdfs:domain :Operator ;
+          rdfs:range :Ue ;
+          rdfs:label "operates"@en .
+
+
+###  http://purl.org/nemo/gufo#inheresIn
+<http://purl.org/nemo/gufo#inheresIn> rdf:type owl:ObjectProperty ;
+                                      rdfs:range :CommDeviceCarrier .
+
+
+###  http://purl.org/nemo/gufo#mediates
+<http://purl.org/nemo/gufo#mediates> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://myontology.com/scenario#amphibiousSpeed
+:amphibiousSpeed rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+                 rdfs:domain :Armored ;
+                 rdfs:range rdfs:Literal .
+
+
+###  http://myontology.com/scenario#antennaGain
+:antennaGain rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+             rdfs:domain :Interface ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://myontology.com/scenario#channelValue
+:channelValue rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+              rdfs:domain :AccessPoint ;
+              rdfs:range xsd:int .
+
+
+###  http://myontology.com/scenario#coverage
+:coverage rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+          rdfs:domain :Interface ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://myontology.com/scenario#frequency
+:frequency rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+           rdfs:domain :Interface ;
+           rdfs:range rdfs:Literal .
+
+
+###  http://myontology.com/scenario#frequencyRange
+:frequencyRange rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+                rdfs:range xsd:string .
+
+
+###  http://myontology.com/scenario#ip
+:ip rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+    rdfs:domain :Interface ;
+    rdfs:range xsd:string .
+
+
+###  http://myontology.com/scenario#mac
+:mac rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+     rdfs:domain :CommDevice ;
+     rdfs:range xsd:string .
+
+
+###  http://myontology.com/scenario#maxPassengers
+:maxPassengers rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+               rdfs:domain :Vehicle ;
+               rdfs:range xsd:int .
+
+
+###  http://myontology.com/scenario#maxSpeedLand
+:maxSpeedLand rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+              rdfs:domain :CommDeviceCarrier ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://myontology.com/scenario#maxStrength
+:maxStrength rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+             rdfs:range xsd:int .
+
+
+###  http://myontology.com/scenario#minPassengers
+:minPassengers rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> .
+
+
+###  http://myontology.com/scenario#minSpeed
+:minSpeed rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+          rdfs:domain :CommDeviceCarrier ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://myontology.com/scenario#minStrength
+:minStrength rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+             rdfs:range xsd:int .
+
+
+###  http://myontology.com/scenario#modeValue
+:modeValue rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+           rdfs:domain :AccessPoint ;
+           rdfs:range xsd:string .
+
+
+###  http://myontology.com/scenario#ssid
+:ssid rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+      rdfs:domain :AccessPoint ;
+      rdfs:range xsd:string .
+
+
+###  http://myontology.com/scenario#strenght
+:strenght rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+          rdfs:domain :MilitaryOrganization ;
+          rdfs:range xsd:integer .
+
+
+###  http://myontology.com/scenario#txPower
+:txPower rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+         rdfs:domain :Interface ;
+         rdfs:range xsd:integer .
+
+
+###  http://myontology.com/scenario#txPowerRange
+:txPowerRange rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+              rdfs:range xsd:string .
+
+
+###  http://myontology.com/scenario#visibilityRange
+:visibilityRange rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf <http://purl.org/nemo/gufo#hasQualityValue> ;
+                 rdfs:domain :CommDeviceCarrier ;
+                 rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/nemo/gufo#hasQualityValue
+<http://purl.org/nemo/gufo#hasQualityValue> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://myontology.com/scenario#AccessPoint
+:AccessPoint rdf:type owl:Class ;
+             rdfs:subClassOf :Interface .
+
+
+###  http://myontology.com/scenario#Armored
+:Armored rdf:type owl:Class ;
+         rdfs:subClassOf :Vehicle .
+
+
+###  http://myontology.com/scenario#Battalion
+:Battalion rdf:type owl:Class ;
+           rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com/scenario#BattleGroup
+:BattleGroup rdf:type owl:Class ;
+             rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com/scenario#Brigade
+:Brigade rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com/scenario#Cascavel
+:Cascavel rdf:type owl:Class ;
+          rdfs:subClassOf :Armored .
+
+
+###  http://myontology.com/scenario#CommDevice
+:CommDevice rdf:type owl:Class ;
+            rdfs:subClassOf :OperationalElement .
+
+
+###  http://myontology.com/scenario#CommDeviceCarrier
+:CommDeviceCarrier rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+
+###  http://myontology.com/scenario#Commander
+:Commander rdf:type owl:Class ;
+           rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com/scenario#Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com/scenario#Guarani
+:Guarani rdf:type owl:Class ;
+         rdfs:subClassOf :Armored .
+
+
+###  http://myontology.com/scenario#HierarchicallyEquivalent
+:HierarchicallyEquivalent rdf:type owl:Class ;
+                          rdfs:subClassOf :MilitaryOrganization ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hierarchicallyEquivalentWith ;
+                                            owl:someValuesFrom :HierarchicallyEquivalent
+                                          ] .
+
+
+###  http://myontology.com/scenario#InstitutionalElement
+:InstitutionalElement rdf:type owl:Class ;
+                      rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+
+###  http://myontology.com/scenario#Interface
+:Interface rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+
+###  http://myontology.com/scenario#MilitaryEmployment
+:MilitaryEmployment rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/nemo/gufo#Relator> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.org/nemo/gufo#mediates> ;
+                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :MilitaryOrganization
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.org/nemo/gufo#mediates> ;
+                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :MilitaryPerson
+                                    ] .
+
+
+###  http://myontology.com/scenario#MilitaryOrganization
+:MilitaryOrganization rdf:type owl:Class ;
+                      rdfs:subClassOf :InstitutionalElement ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#mediates>
+                                                       ] ;
+                                        owl:someValuesFrom :MilitaryEmployment
+                                      ] .
+
+
+###  http://myontology.com/scenario#MilitaryOrganizationPowerType
+:MilitaryOrganizationPowerType rdf:type owl:Class ;
+                               rdfs:subClassOf <http://purl.org/nemo/gufo#EndurantType> ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :MOTypeIsSubordinateTo ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :MilitaryOrganizationPowerType
+                                               ] .
+
+
+###  http://myontology.com/scenario#MilitaryPerson
+:MilitaryPerson rdf:type owl:Class ;
+                rdfs:subClassOf :OperationalElement ,
+                                :Person ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :militaryPersonHasMilitaryOrganization ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :MilitaryOrganization
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#mediates>
+                                                 ] ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :MilitaryEmployment
+                                ] .
+
+
+###  http://myontology.com/scenario#MilitaryPersonAsDismounted
+:MilitaryPersonAsDismounted rdf:type owl:Class ;
+                            rdfs:subClassOf :MilitaryPerson ;
+                            owl:disjointWith :MilitaryPersonAsPassenger .
+
+
+###  http://myontology.com/scenario#MilitaryPersonAsPassenger
+:MilitaryPersonAsPassenger rdf:type owl:Class ;
+                           rdfs:subClassOf :MilitaryPerson ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :isLocatedIn ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :Vehicle
+                                           ] .
+
+
+###  http://myontology.com/scenario#MilitaryPlatform
+:MilitaryPlatform rdf:type owl:Class ;
+                  rdfs:subClassOf :CommDeviceCarrier ,
+                                  :OperationalElement .
+
+
+###  http://myontology.com/scenario#MilitaryScenario
+:MilitaryScenario rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+
+###  http://myontology.com/scenario#OperationalElement
+:OperationalElement rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+
+###  http://myontology.com/scenario#Operator
+:Operator rdf:type owl:Class ;
+          rdfs:subClassOf :MilitaryPerson .
+
+
+###  http://myontology.com/scenario#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+
+###  http://myontology.com/scenario#Platoon
+:Platoon rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com/scenario#Protocol
+:Protocol rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/nemo/gufo#IntrinsicMode> .
+
+
+###  http://myontology.com/scenario#Subordinate
+:Subordinate rdf:type owl:Class ;
+             rdfs:subClassOf :MilitaryOrganization ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :isSubordinateTo ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Commander
+                             ] .
+
+
+###  http://myontology.com/scenario#Ue
+:Ue rdf:type owl:Class ;
+    rdfs:subClassOf :Interface .
+
+
+###  http://myontology.com/scenario#UeDown
+:UeDown rdf:type owl:Class ;
+        rdfs:subClassOf :Ue .
+
+
+###  http://myontology.com/scenario#UeUp
+:UeUp rdf:type owl:Class ;
+      rdfs:subClassOf :Ue .
+
+
+###  http://myontology.com/scenario#Urutu
+:Urutu rdf:type owl:Class ;
+       rdfs:subClassOf :Armored .
+
+
+###  http://myontology.com/scenario#Vehicle
+:Vehicle rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryPlatform .
+
+
+###  http://myontology.com/scenario#VehiclePowerType
+:VehiclePowerType rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/nemo/gufo#EndurantType> .
+
+
+###  http://myontology.com/scenario#WirelessNetwork
+:WirelessNetwork rdf:type owl:Class ;
+                 rdfs:subClassOf :OperationalElement .
+
+
+###  http://purl.org/nemo/gufo#Category
+<http://purl.org/nemo/gufo#Category> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#EndurantType
+<http://purl.org/nemo/gufo#EndurantType> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#FunctionalComplex
+<http://purl.org/nemo/gufo#FunctionalComplex> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#IntrinsicMode
+<http://purl.org/nemo/gufo#IntrinsicMode> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Kind
+<http://purl.org/nemo/gufo#Kind> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#MaterialRelationshipType
+<http://purl.org/nemo/gufo#MaterialRelationshipType> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Mixin
+<http://purl.org/nemo/gufo#Mixin> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Phase
+<http://purl.org/nemo/gufo#Phase> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Quality
+<http://purl.org/nemo/gufo#Quality> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Relator
+<http://purl.org/nemo/gufo#Relator> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Role
+<http://purl.org/nemo/gufo#Role> rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#SubKind
+<http://purl.org/nemo/gufo#SubKind> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://myontology.com/scenario#AccessPoint
+:AccessPoint rdf:type owl:NamedIndividual ,
+                      <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://myontology.com/scenario#Armored
+:Armored rdf:type owl:NamedIndividual ,
+                  <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://myontology.com/scenario#Battalion
+:Battalion rdf:type owl:NamedIndividual ,
+                    :MilitaryOrganizationPowerType ;
+           :MOTypeIsSubordinateTo :Brigade .
+
+
+###  http://myontology.com/scenario#BattleGroup
+:BattleGroup rdf:type owl:NamedIndividual ,
+                      :MilitaryOrganizationPowerType ;
+             :MOTypeIsSubordinateTo :Platoon .
+
+
+###  http://myontology.com/scenario#Brigade
+:Brigade rdf:type owl:NamedIndividual ,
+                  :MilitaryOrganizationPowerType .
+
+
+###  http://myontology.com/scenario#Car
+:Car rdf:type owl:NamedIndividual ,
+              <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://myontology.com/scenario#Cascavel
+:Cascavel rdf:type owl:NamedIndividual ,
+                   :VehiclePowerType .
+
+
+###  http://myontology.com/scenario#CommDevice
+:CommDevice rdf:type owl:NamedIndividual ,
+                     <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://myontology.com/scenario#CommDeviceCarrier
+:CommDeviceCarrier rdf:type owl:NamedIndividual ,
+                            <http://purl.org/nemo/gufo#Mixin> .
+
+
+###  http://myontology.com/scenario#Commander
+:Commander rdf:type owl:NamedIndividual ,
+                    <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://myontology.com/scenario#Company
+:Company rdf:type owl:NamedIndividual ,
+                  :MilitaryOrganizationPowerType ;
+         :MOTypeIsSubordinateTo :Battalion .
+
+
+###  http://myontology.com/scenario#Guarani
+:Guarani rdf:type owl:NamedIndividual ,
+                  :VehiclePowerType .
+
+
+###  http://myontology.com/scenario#HierarchicallyEquivalent
+:HierarchicallyEquivalent rdf:type owl:NamedIndividual ,
+                                   <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://myontology.com/scenario#Interface
+:Interface rdf:type owl:NamedIndividual ,
+                    <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://myontology.com/scenario#InterfacePowerType
+:InterfacePowerType rdf:type owl:NamedIndividual ,
+                             <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://myontology.com/scenario#MilitaryOrganization
+:MilitaryOrganization rdf:type owl:NamedIndividual ,
+                               <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://myontology.com/scenario#MilitaryOrganizationPowerTypee
+:MilitaryOrganizationPowerTypee rdf:type owl:NamedIndividual ,
+                                         <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://myontology.com/scenario#MilitaryPerson
+:MilitaryPerson rdf:type owl:NamedIndividual ,
+                         <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://myontology.com/scenario#MilitaryPersonAsDismounted
+:MilitaryPersonAsDismounted rdf:type owl:NamedIndividual ,
+                                     <http://purl.org/nemo/gufo#Phase> .
+
+
+###  http://myontology.com/scenario#MilitaryPersonAsPassenger
+:MilitaryPersonAsPassenger rdf:type owl:NamedIndividual ,
+                                    <http://purl.org/nemo/gufo#Phase> .
+
+
+###  http://myontology.com/scenario#MilitaryPlatform
+:MilitaryPlatform rdf:type owl:NamedIndividual ,
+                           <http://purl.org/nemo/gufo#Category> .
+
+
+###  http://myontology.com/scenario#OperationalElement
+:OperationalElement rdf:type owl:NamedIndividual ,
+                             <http://purl.org/nemo/gufo#Category> .
+
+
+###  http://myontology.com/scenario#Operator
+:Operator rdf:type owl:NamedIndividual ,
+                   <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://myontology.com/scenario#Person
+:Person rdf:type owl:NamedIndividual ,
+                 <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://myontology.com/scenario#Platoon
+:Platoon rdf:type owl:NamedIndividual ,
+                  :MilitaryOrganizationPowerType ;
+         :MOTypeIsSubordinateTo :Company .
+
+
+###  http://myontology.com/scenario#Protocol
+:Protocol rdf:type owl:NamedIndividual ,
+                   <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://myontology.com/scenario#Subordinate
+:Subordinate rdf:type owl:NamedIndividual ,
+                      <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://myontology.com/scenario#Ue
+:Ue rdf:type owl:NamedIndividual ,
+             <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://myontology.com/scenario#UeDown
+:UeDown rdf:type owl:NamedIndividual ,
+                 <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://myontology.com/scenario#UeUp
+:UeUp rdf:type owl:NamedIndividual ,
+               <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://myontology.com/scenario#Urutu
+:Urutu rdf:type owl:NamedIndividual ,
+                :VehiclePowerType .
+
+
+###  http://myontology.com/scenario#Vehicle
+:Vehicle rdf:type owl:NamedIndividual ,
+                  <http://purl.org/nemo/gufo#Category> .
+
+
+###  http://myontology.com/scenario#WirelessNetwork
+:WirelessNetwork rdf:type owl:NamedIndividual ,
+                          <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://myontology.com/scenario#militaryPersonHasMilitaryOrganization
+:militaryPersonHasMilitaryOrganization rdf:type owl:NamedIndividual ,
+                                                <http://purl.org/nemo/gufo#MaterialRelationshipType> .
+
+
+###  http://myontology.com/scenario#net1
+:net1 rdf:type owl:NamedIndividual ,
+               :WirelessNetwork .
+
+
+###  http://myontology.com/scenario#scenario1
+:scenario1 rdf:type owl:NamedIndividual ,
+                    :MilitaryScenario .
+
+
+###  http://myontology.com/scenario#sta7
+:sta7 rdf:type owl:NamedIndividual ,
+               :CommDevice ;
+      :mac "00:00:00:00:00:08" .
+
+
+###  http://myontology.com/scenario#802.11g
+<http://myontology.com/scenario#802.11g> rdf:type owl:NamedIndividual ,
+                                                  :Protocol .
+
+
+[ :maxStrength 50
+] .
+
+[ :maxStrength 800 ;
+   :minStrength 500
+ ] .
+
+[ :maxStrength 50 ;
+   :minStrength 20
+ ] .
+
+[ :maxStrength 50
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+:AccessPoint rdfs:label "AccessPoint"@en .
+
+
+:Armored rdfs:label "Armored"@en .
+
+
+:CommDevice rdfs:label "CommDevice"@en .
+
+
+:CommDeviceCarrier rdfs:label "CommDeviceCarrier"@en .
+
+
+:Commander rdfs:label "Commander"@en .
+
+
+:HierarchicallyEquivalent rdfs:label "HierarchicallyEquivalent"@en .
+
+
+:Interface rdfs:label "Interface"@en .
+
+
+:MilitaryOrganization rdfs:label "MilitaryOrganization"@en .
+
+
+:MilitaryPerson rdfs:label "MilitaryPerson"@en .
+
+
+:MilitaryPersonAsPassenger rdfs:label "MilitaryPersonAsPassenger"@en .
+
+
+:MilitaryPlatform rdfs:label "MilitaryPlatform"@en .
+
+
+:OperationalElement rdfs:label "OperationalElement"@en .
+
+
+:Operator rdfs:label "CommDeviceOperator"@en .
+
+
+:Person rdfs:label "Person"@en .
+
+
+:Subordinate rdfs:label "Subordinate"@en .
+
+
+:Vehicle rdfs:label "Vehicle"@en .
+
+
+:WirelessNetwork rdfs:label "WirelessNetwork"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Battalion
+                        :BattleGroup
+                        :Brigade
+                        :Company
+                        :Platoon
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Cascavel
+                        :Guarani
+                        :Urutu
+                      )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:m2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:m1 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:c2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:c1 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:i1 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:i2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:o1 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:o2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:g rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:ms rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:ie rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:mp rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:mo rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:o3 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:ompt1 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:ompt2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:oe rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:ms1 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:ms2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "MilitaryAsCarrier" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPerson ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :o1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :CommDeviceCarrier ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :o1
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPersonAsDismounted ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :o1
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "set guarani data properties" ;
+   rdfs:label "Guarani Data Properties" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Guarani ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :g
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :minSpeed ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :g ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> 0.972222
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :visibilityRange ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :g ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> 1000
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :amphibiousSpeed ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :g ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> 2.5
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :maxSpeedLand ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :g ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> 26.3889
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "InstitutionalElement" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryScenario ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :ms
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :InstitutionalElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :ie
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :militaryScenarioHasInstitutionalElement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :ms ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :ie
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "MilitaryPerson and Platform must belong to the same MO" ;
+   rdfs:label "MilitaryPerson and Platform same MO" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPlatform ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :mp
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPerson ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :m1
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :mo
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :isLocatedIn ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :mp
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :belongsTo ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :mp ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :mo
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :militaryPersonHasMilitaryOrganization ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :mo
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "HierarchicalyEquivalentRule" ;
+   rdfs:label "HierarchicalyEquivalentRule" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :o1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :o2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :o3
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :isSubordinateTo ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :o1 ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :o3
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :isSubordinateTo ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :o2 ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :o3
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :o1 ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> :o2
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganizationPowerType ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :ompt1
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasMOPowerType ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :o1 ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> :ompt1
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasMOPowerType ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> :o2 ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> :ompt1
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest rdf:nil
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hierarchicallyEquivalentWith ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :o1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :o2
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :HierarchicallyEquivalent ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :o2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :HierarchicallyEquivalent ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :o1
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Hierarchically restriction for MO powertypes" ;
+   rdfs:label "Hierarchically restriction for MO powertypes" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :o2
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :o1
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :isSubordinateTo ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :o2 ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :o1
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :o1 ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :o2
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganizationPowerType ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :ompt1
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganizationPowerType ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :ompt2
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasMOPowerType ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :o1 ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> :ompt1
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasMOPowerType ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :o2 ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> :ompt2
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest rdf:nil
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :MOTypeIsSubordinateTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :ompt2 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :ompt1
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Military Data Properties" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPersonAsDismounted ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :m1
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :maxSpeedLand ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> 1.11111
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :minSpeed ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> 0.277778
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :visibilityRange ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> 300
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "OperationalElement" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryScenario ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :ms
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :OperationalElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :oe
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :militaryScenarioHasOperationalElement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :ms ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :oe
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Scenario restriction" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryScenario ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :ms1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryScenario ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :ms2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :ms1 ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :ms2
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#SameIndividualAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :ms1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :ms2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "mayTalkTo inference to subordinates" ;
+   rdfs:label "communication rule 1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPerson ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :m2
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPerson ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :m1
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :CommDevice ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :c2
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :CommDevice ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :c1
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> :UeDown ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :i1
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> :UeUp ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :i2
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasInterface ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :c2 ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> :i2
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasInterface ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :c1 ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> :i1
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> :operates ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> :i1
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> :operates ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> :m2 ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> :i2
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> :o1
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> :o2
+                                                                                                                                                                              ] ;
+                                                                                                                                                                    rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                               rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#propertyPredicate> :isSubordinateTo ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument1> :o2 ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument2> :o1
+                                                                                                                                                                                         ] ;
+                                                                                                                                                                               rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :militaryPersonHasMilitaryOrganization ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument2> :o1
+                                                                                                                                                                                                    ] ;
+                                                                                                                                                                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :militaryPersonHasMilitaryOrganization ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument1> :m2 ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument2> :o2
+                                                                                                                                                                                                               ] ;
+                                                                                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                                                                                   ]
+                                                                                                                                                                                        ]
+                                                                                                                                                                             ]
+                                                                                                                                                                  ]
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :mayTalkTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :i1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :i2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "hierarquically equivalent MayTalkTo" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPerson ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :m1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPerson ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :m2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :CommDevice ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :c1
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :CommDevice ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :c2
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> :UeUp ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :i1
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> :UeUp ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :i2
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :o2
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :o1
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> :o1 ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> :o2
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> :militaryPersonHasMilitaryOrganization ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> :o1
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> :militaryPersonHasMilitaryOrganization ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> :m2 ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> :o2
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasInterface ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> :c1 ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument2> :i1
+                                                                                                                                                                              ] ;
+                                                                                                                                                                    rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                               rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasInterface ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument1> :c2 ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument2> :i2
+                                                                                                                                                                                         ] ;
+                                                                                                                                                                               rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :operates ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument2> :i1
+                                                                                                                                                                                                    ] ;
+                                                                                                                                                                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :operates ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument1> :m2 ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument2> :i2
+                                                                                                                                                                                                               ] ;
+                                                                                                                                                                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hierarchicallyEquivalentWith ;
+                                                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#argument1> :o1 ;
+                                                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#argument2> :o2
+                                                                                                                                                                                                                          ] ;
+                                                                                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                                                                                              ]
+                                                                                                                                                                                                   ]
+                                                                                                                                                                                        ]
+                                                                                                                                                                             ]
+                                                                                                                                                                  ]
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :mayTalkTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :i1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :i2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "communication  rule (same OM)" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPerson ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :m1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryPerson ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :m2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :o1
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :MilitaryOrganization ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :o2
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> :CommDevice ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :c1
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> :CommDevice ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :c2
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :c1 ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> :c2
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#classPredicate> :UeUp ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :i1
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#classPredicate> :UeUp ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> :i2
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasInterface ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> :c1 ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> :i1
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasInterface ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> :c2 ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> :i2
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#propertyPredicate> :militaryPersonHasMilitaryOrganization ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument2> :o1
+                                                                                                                                                                              ] ;
+                                                                                                                                                                    rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                               rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#propertyPredicate> :militaryPersonHasMilitaryOrganization ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument1> :m2 ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument2> :o2
+                                                                                                                                                                                         ] ;
+                                                                                                                                                                               rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :operates ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument1> :m1 ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument2> :i1
+                                                                                                                                                                                                    ] ;
+                                                                                                                                                                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :operates ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument1> :m2 ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument2> :i2
+                                                                                                                                                                                                               ] ;
+                                                                                                                                                                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#SameIndividualAtom> ;
+                                                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#argument1> :o1 ;
+                                                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#argument2> :o2
+                                                                                                                                                                                                                          ] ;
+                                                                                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                                                                                              ]
+                                                                                                                                                                                                   ]
+                                                                                                                                                                                        ]
+                                                                                                                                                                             ]
+                                                                                                                                                                  ]
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :mayTalkTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :i1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :i2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

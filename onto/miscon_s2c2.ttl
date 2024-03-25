@@ -1,0 +1,784 @@
+@prefix : <http://myontology.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://myontology.com#> .
+
+<http://myontology.com> rdf:type owl:Ontology ;
+                         owl:imports <http://purl.org/nemo/gufo> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/nemo/gufo#isDerivedFrom
+gufo:isDerivedFrom rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://myontology.com#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :MilitaryPlatform ;
+           rdfs:range :MilitaryOrganization ;
+           rdfs:label "belongsTo"@en .
+
+
+###  http://myontology.com#carries
+:carries rdf:type owl:ObjectProperty ;
+         rdfs:domain :CommDeviceCarrier ;
+         rdfs:range :CommDevice ;
+         rdfs:label "carries"@en .
+
+
+###  http://myontology.com#hasInterface
+:hasInterface rdf:type owl:ObjectProperty ;
+              rdfs:domain :CommDevice ;
+              rdfs:range :Interface ;
+              rdfs:label "hasInterface"@en .
+
+
+###  http://myontology.com#hierarchicallyEquivalentTo
+:hierarchicallyEquivalentTo rdf:type owl:ObjectProperty ;
+                            rdfs:domain :HierarchicallyEquivalent ;
+                            rdfs:range :HierarchicallyEquivalent ;
+                            rdfs:label "hierarchicallyEquivalentTo"@en .
+
+
+###  http://myontology.com#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ;
+             rdfs:domain :MilitaryPersonAsPassenger ;
+             rdfs:range :Vehicle ;
+             rdfs:label "isLocatedIn"@en .
+
+
+###  http://myontology.com#isSubordinateTo
+:isSubordinateTo rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Subordinate ;
+                 rdfs:range :Commander ;
+                 rdfs:label "isSubordinateTo"@en .
+
+
+###  http://myontology.com#mayTalkTo
+:mayTalkTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :Ue ;
+           rdfs:range :Ue ;
+           rdfs:label "mayTalkTo"@en .
+
+
+###  http://myontology.com#militaryPersonHasMilitaryOrganization
+:militaryPersonHasMilitaryOrganization rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :MilitaryPerson ;
+                                       rdfs:range :MilitaryOrganization .
+
+
+###  http://myontology.com#militaryScenarioHasInstitutionalElement
+:militaryScenarioHasInstitutionalElement rdf:type owl:ObjectProperty ;
+                                         rdfs:domain :MilitaryScenario ;
+                                         rdfs:range :InstitutionalElement ;
+                                         rdfs:label "militaryScenarioHasInstitutionalElement"@en .
+
+
+###  http://myontology.com#militaryScenarioHasOperationalElement
+:militaryScenarioHasOperationalElement rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :MilitaryScenario ;
+                                       rdfs:range :OperationalElement ;
+                                       rdfs:label "militaryScenarioHasOperationalElement"@en .
+
+
+###  http://myontology.com#operates
+:operates rdf:type owl:ObjectProperty ;
+          rdfs:domain :UeOperator ;
+          rdfs:range :Ue ;
+          rdfs:label "operates"@en .
+
+
+###  http://myontology.com#1
+<http://myontology.com#1> rdf:type owl:ObjectProperty ;
+                          rdfs:domain :WirelessNetwork ;
+                          rdfs:range :Interface .
+
+
+###  http://purl.org/nemo/gufo#inheresIn
+gufo:inheresIn rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/nemo/gufo#mediates
+gufo:mediates rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://myontology.com#amphibiousSpeed_1
+:amphibiousSpeed_1 rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf gufo:hasQualityValue ;
+                   rdfs:domain :Armored ;
+                   rdfs:label "amphibiousSpeed"@en .
+
+
+###  http://myontology.com#antennaGain
+:antennaGain rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf gufo:hasQualityValue ;
+             rdfs:domain :Interface ;
+             rdfs:label "antennaGain"@en .
+
+
+###  http://myontology.com#channelValue
+:channelValue rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf gufo:hasQualityValue ;
+              rdfs:domain :AccessPoint ;
+              rdfs:label "channelValue"@en .
+
+
+###  http://myontology.com#coverage
+:coverage rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf gufo:hasQualityValue ;
+          rdfs:domain :Interface ;
+          rdfs:label "coverage"@en .
+
+
+###  http://myontology.com#frequency
+:frequency rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf gufo:hasQualityValue ;
+           rdfs:domain :Interface ;
+           rdfs:label "frequency"@en .
+
+
+###  http://myontology.com#frequencyRange
+:frequencyRange rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf gufo:hasQualityValue ;
+                rdfs:domain :Interface ;
+                rdfs:label "frequencyRange"@en .
+
+
+###  http://myontology.com#ip
+:ip rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf gufo:hasQualityValue ;
+    rdfs:domain :Interface ;
+    rdfs:label "ip"@en .
+
+
+###  http://myontology.com#mac
+:mac rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf gufo:hasQualityValue ;
+     rdfs:domain :CommDevice ;
+     rdfs:label "mac"@en .
+
+
+###  http://myontology.com#maxSpeedLand
+:maxSpeedLand rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf gufo:hasQualityValue ;
+              rdfs:domain :CommDeviceCarrier ;
+              rdfs:label "maxSpeedLand"@en .
+
+
+###  http://myontology.com#minSpeed
+:minSpeed rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf gufo:hasQualityValue ;
+          rdfs:domain :CommDeviceCarrier ;
+          rdfs:label "minSpeed"@en .
+
+
+###  http://myontology.com#modeValue
+:modeValue rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf gufo:hasQualityValue ;
+           rdfs:domain :AccessPoint ;
+           rdfs:label "modeValue"@en .
+
+
+###  http://myontology.com#ssid
+:ssid rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf gufo:hasQualityValue ;
+      rdfs:domain :AccessPoint ;
+      rdfs:label "ssid"@en .
+
+
+###  http://myontology.com#strenght
+:strenght rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf gufo:hasQualityValue ;
+          rdfs:domain :MilitaryOrganization ;
+          rdfs:label "strenght"@en .
+
+
+###  http://myontology.com#txPower
+:txPower rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf gufo:hasQualityValue ;
+         rdfs:domain :Interface ;
+         rdfs:label "txPower"@en .
+
+
+###  http://myontology.com#txPowerRange
+:txPowerRange rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf gufo:hasQualityValue ;
+              rdfs:domain :Interface ;
+              rdfs:label "txPowerRange"@en .
+
+
+###  http://myontology.com#visibilityRange
+:visibilityRange rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf gufo:hasQualityValue ;
+                 rdfs:domain :CommDeviceCarrier ;
+                 rdfs:label "visibilityRange"@en .
+
+
+###  http://purl.org/nemo/gufo#hasQualityValue
+gufo:hasQualityValue rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://myontology.com#AccessPoint
+:AccessPoint rdf:type owl:Class ;
+             rdfs:subClassOf :Interface .
+
+
+###  http://myontology.com#Armored
+:Armored rdf:type owl:Class ;
+         rdfs:subClassOf :Vehicle ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty [ owl:inverseOf gufo:inheresIn
+                                          ] ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :amphibiousSpeed
+                         ] .
+
+
+###  http://myontology.com#Battalion
+:Battalion rdf:type owl:Class ;
+           rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com#BattleGroup
+:BattleGroup rdf:type owl:Class ;
+             rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com#Brigade
+:Brigade rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com#Cascavel
+:Cascavel rdf:type owl:Class ;
+          rdfs:subClassOf :Armored .
+
+
+###  http://myontology.com#CommDevice
+:CommDevice rdf:type owl:Class ;
+            rdfs:subClassOf :OperationalElement .
+
+
+###  http://myontology.com#CommDeviceCarrier
+:CommDeviceCarrier rdf:type owl:Class ;
+                   rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://myontology.com#Commander
+:Commander rdf:type owl:Class ;
+           rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com#Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com#Guarani
+:Guarani rdf:type owl:Class ;
+         rdfs:subClassOf :Armored .
+
+
+###  http://myontology.com#HierarchicallyEquivalent
+:HierarchicallyEquivalent rdf:type owl:Class ;
+                          rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com#InstitutionalElement
+:InstitutionalElement rdf:type owl:Class ;
+                      rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://myontology.com#Interface
+:Interface rdf:type owl:Class ;
+           rdfs:subClassOf gufo:FunctionalComplex ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty [ owl:inverseOf gufo:inheresIn
+                                            ] ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Protocol
+                           ] .
+
+
+###  http://myontology.com#MilitaryEmployment
+:MilitaryEmployment rdf:type owl:Class ;
+                    rdfs:subClassOf gufo:Relator ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty gufo:mediates ;
+                                      owl:someValuesFrom :MilitaryPerson
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty gufo:mediates ;
+                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :MilitaryOrganization
+                                    ] .
+
+
+###  http://myontology.com#MilitaryOrganization
+:MilitaryOrganization rdf:type owl:Class ;
+                      rdfs:subClassOf :InstitutionalElement ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty [ owl:inverseOf gufo:mediates
+                                                       ] ;
+                                        owl:someValuesFrom :MilitaryEmployment
+                                      ] .
+
+
+###  http://myontology.com#MilitaryPerson
+:MilitaryPerson rdf:type owl:Class ;
+                rdfs:subClassOf :OperationalElement ,
+                                :Person ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty [ owl:inverseOf gufo:mediates
+                                                 ] ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :MilitaryEmployment
+                                ] .
+
+
+###  http://myontology.com#MilitaryPersonAsDismounted
+:MilitaryPersonAsDismounted rdf:type owl:Class ;
+                            rdfs:subClassOf :CommDeviceCarrier ,
+                                            :MilitaryPerson .
+
+
+###  http://myontology.com#MilitaryPersonAsPassenger
+:MilitaryPersonAsPassenger rdf:type owl:Class ;
+                           rdfs:subClassOf :MilitaryPerson .
+
+
+###  http://myontology.com#MilitaryPlatform
+:MilitaryPlatform rdf:type owl:Class ;
+                  rdfs:subClassOf :CommDeviceCarrier ,
+                                  :OperationalElement .
+
+
+###  http://myontology.com#MilitaryScenario
+:MilitaryScenario rdf:type owl:Class ;
+                  rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://myontology.com#OperationalElement
+:OperationalElement rdf:type owl:Class ;
+                    rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://myontology.com#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://myontology.com#Platoon
+:Platoon rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com#Protocol
+:Protocol rdf:type owl:Class ;
+          rdfs:subClassOf gufo:IntrinsicMode ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty gufo:inheresIn ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Interface
+                          ] .
+
+
+###  http://myontology.com#Subordinate
+:Subordinate rdf:type owl:Class ;
+             rdfs:subClassOf :MilitaryOrganization .
+
+
+###  http://myontology.com#Ue
+:Ue rdf:type owl:Class ;
+    rdfs:subClassOf :Interface .
+
+
+###  http://myontology.com#UeDown
+:UeDown rdf:type owl:Class ;
+        rdfs:subClassOf :Ue .
+
+
+###  http://myontology.com#UeOperator
+:UeOperator rdf:type owl:Class ;
+            rdfs:subClassOf :MilitaryPerson .
+
+
+###  http://myontology.com#UeUp
+:UeUp rdf:type owl:Class ;
+      rdfs:subClassOf :Ue .
+
+
+###  http://myontology.com#Urutu
+:Urutu rdf:type owl:Class ;
+       rdfs:subClassOf :Armored .
+
+
+###  http://myontology.com#Vehicle
+:Vehicle rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryPlatform .
+
+
+###  http://myontology.com#WirelessNetwork
+:WirelessNetwork rdf:type owl:Class ;
+                 rdfs:subClassOf :OperationalElement .
+
+
+###  http://myontology.com#amphibiousSpeed
+:amphibiousSpeed rdf:type owl:Class ;
+                 rdfs:subClassOf gufo:Quality ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty gufo:inheresIn ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :Armored
+                                 ] .
+
+
+###  http://purl.org/nemo/gufo#Category
+gufo:Category rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#FunctionalComplex
+gufo:FunctionalComplex rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#IntrinsicMode
+gufo:IntrinsicMode rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Kind
+gufo:Kind rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#MaterialRelationshipType
+gufo:MaterialRelationshipType rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Mixin
+gufo:Mixin rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Phase
+gufo:Phase rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Quality
+gufo:Quality rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Relator
+gufo:Relator rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Role
+gufo:Role rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#SubKind
+gufo:SubKind rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://myontology.com#AccessPoint
+:AccessPoint rdf:type owl:NamedIndividual ,
+                      gufo:Role .
+
+
+###  http://myontology.com#Armored
+:Armored rdf:type owl:NamedIndividual ,
+                  gufo:SubKind .
+
+
+###  http://myontology.com#Battalion
+:Battalion rdf:type owl:NamedIndividual ,
+                    gufo:SubKind .
+
+
+###  http://myontology.com#BattleGroup
+:BattleGroup rdf:type owl:NamedIndividual ,
+                      gufo:SubKind .
+
+
+###  http://myontology.com#Brigade
+:Brigade rdf:type owl:NamedIndividual ,
+                  gufo:SubKind .
+
+
+###  http://myontology.com#Cascavel
+:Cascavel rdf:type owl:NamedIndividual ,
+                   gufo:SubKind .
+
+
+###  http://myontology.com#CommDevice
+:CommDevice rdf:type owl:NamedIndividual ,
+                     gufo:Kind .
+
+
+###  http://myontology.com#CommDeviceCarrier
+:CommDeviceCarrier rdf:type owl:NamedIndividual ,
+                            gufo:Mixin .
+
+
+###  http://myontology.com#Commander
+:Commander rdf:type owl:NamedIndividual ,
+                    gufo:Role .
+
+
+###  http://myontology.com#Company
+:Company rdf:type owl:NamedIndividual ,
+                  gufo:SubKind .
+
+
+###  http://myontology.com#Guarani
+:Guarani rdf:type owl:NamedIndividual ,
+                  gufo:SubKind .
+
+
+###  http://myontology.com#HierarchicallyEquivalent
+:HierarchicallyEquivalent rdf:type owl:NamedIndividual ,
+                                   gufo:Role .
+
+
+###  http://myontology.com#InstitutionalElement
+:InstitutionalElement rdf:type owl:NamedIndividual ,
+                               gufo:Category .
+
+
+###  http://myontology.com#Interface
+:Interface rdf:type owl:NamedIndividual ,
+                    gufo:Kind .
+
+
+###  http://myontology.com#MilitaryEmployment
+:MilitaryEmployment rdf:type owl:NamedIndividual ,
+                             gufo:Kind .
+
+
+###  http://myontology.com#MilitaryOrganization
+:MilitaryOrganization rdf:type owl:NamedIndividual ,
+                               gufo:Kind .
+
+
+###  http://myontology.com#MilitaryPerson
+:MilitaryPerson rdf:type owl:NamedIndividual ,
+                         gufo:Role .
+
+
+###  http://myontology.com#MilitaryPersonAsDismounted
+:MilitaryPersonAsDismounted rdf:type owl:NamedIndividual ,
+                                     gufo:Phase .
+
+
+###  http://myontology.com#MilitaryPersonAsPassenger
+:MilitaryPersonAsPassenger rdf:type owl:NamedIndividual ,
+                                    gufo:Phase .
+
+
+###  http://myontology.com#MilitaryPlatform
+:MilitaryPlatform rdf:type owl:NamedIndividual ,
+                           gufo:Category .
+
+
+###  http://myontology.com#MilitaryScenario
+:MilitaryScenario rdf:type owl:NamedIndividual ,
+                           gufo:Kind .
+
+
+###  http://myontology.com#OperationalElement
+:OperationalElement rdf:type owl:NamedIndividual ,
+                             gufo:Category .
+
+
+###  http://myontology.com#Person
+:Person rdf:type owl:NamedIndividual ,
+                 gufo:Kind .
+
+
+###  http://myontology.com#Platoon
+:Platoon rdf:type owl:NamedIndividual ,
+                  gufo:SubKind .
+
+
+###  http://myontology.com#Protocol
+:Protocol rdf:type owl:NamedIndividual ,
+                   gufo:Kind .
+
+
+###  http://myontology.com#Subordinate
+:Subordinate rdf:type owl:NamedIndividual ,
+                      gufo:Role .
+
+
+###  http://myontology.com#Ue
+:Ue rdf:type owl:NamedIndividual ,
+             gufo:Role .
+
+
+###  http://myontology.com#UeDown
+:UeDown rdf:type owl:NamedIndividual ,
+                 gufo:Role .
+
+
+###  http://myontology.com#UeOperator
+:UeOperator rdf:type owl:NamedIndividual ,
+                     gufo:Role .
+
+
+###  http://myontology.com#UeUp
+:UeUp rdf:type owl:NamedIndividual ,
+               gufo:Role .
+
+
+###  http://myontology.com#Urutu
+:Urutu rdf:type owl:NamedIndividual ,
+                gufo:SubKind .
+
+
+###  http://myontology.com#Vehicle
+:Vehicle rdf:type owl:NamedIndividual ,
+                  gufo:Kind .
+
+
+###  http://myontology.com#WirelessNetwork
+:WirelessNetwork rdf:type owl:NamedIndividual ,
+                          gufo:Kind .
+
+
+###  http://myontology.com#amphibiousSpeed
+:amphibiousSpeed rdf:type owl:NamedIndividual ,
+                          gufo:Kind .
+
+
+###  http://myontology.com#militaryPersonHasMilitaryOrganization
+:militaryPersonHasMilitaryOrganization rdf:type owl:NamedIndividual ,
+                                                gufo:MaterialRelationshipType .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:AccessPoint rdfs:label "AccessPoint"@en .
+
+
+:Armored rdfs:label "Armored"@en .
+
+
+:Battalion rdfs:label "Battalion"@en .
+
+
+:BattleGroup rdfs:label "BattleGroup"@en .
+
+
+:Brigade rdfs:label "Brigade"@en .
+
+
+:Cascavel rdfs:label "Cascavel"@en .
+
+
+:CommDevice rdfs:label "CommDevice"@en .
+
+
+:CommDeviceCarrier rdfs:label "CommDeviceCarrier"@en .
+
+
+:Commander rdfs:label "Commander"@en .
+
+
+:Company rdfs:label "Company"@en .
+
+
+:Guarani rdfs:label "Guarani"@en .
+
+
+:HierarchicallyEquivalent rdfs:label "HierarchicallyEquivalent"@en .
+
+
+:InstitutionalElement rdfs:label "InstitutionalElement"@en .
+
+
+:Interface rdfs:label "Interface"@en .
+
+
+:MilitaryEmployment gufo:isDerivedFrom :militaryPersonHasMilitaryOrganization ;
+                    rdfs:label "MilitaryEmployment"@en .
+
+
+:MilitaryOrganization rdfs:label "MilitaryOrganization"@en .
+
+
+:MilitaryPerson rdfs:label "MilitaryPerson"@en .
+
+
+:MilitaryPersonAsDismounted rdfs:label "MilitaryPersonAsDismounted"@en .
+
+
+:MilitaryPersonAsPassenger rdfs:label "MilitaryPersonAsPassenger"@en .
+
+
+:MilitaryPlatform rdfs:label "MilitaryPlatform"@en .
+
+
+:MilitaryScenario rdfs:label "MilitaryScenario"@en .
+
+
+:OperationalElement rdfs:label "OperationalElement"@en .
+
+
+:Person rdfs:label "Person"@en .
+
+
+:Platoon rdfs:label "Platoon"@en .
+
+
+:Protocol rdfs:label "Protocol"@en .
+
+
+:Subordinate rdfs:label "Subordinate"@en .
+
+
+:Ue rdfs:label "Ue"@en .
+
+
+:UeDown rdfs:label "UeDown"@en .
+
+
+:UeOperator rdfs:label "UeOperator"@en .
+
+
+:UeUp rdfs:label "UeUp"@en .
+
+
+:Urutu rdfs:label "Urutu"@en .
+
+
+:Vehicle rdfs:label "Vehicle"@en .
+
+
+:WirelessNetwork rdfs:label "WirelessNetwork"@en .
+
+
+:amphibiousSpeed rdfs:label "amphibiousSpeed"@en .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

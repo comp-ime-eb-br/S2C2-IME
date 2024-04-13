@@ -4,7 +4,7 @@ Esta é a página inicial relativa aos artefatos desenvolvidos na modelagem conc
 
 ## Organização dos Artefatos
 
-1. *diagrams* - diagramas da modelagem conceitual construídas no Visual Paradigm
+1. *diagrams* - diagramas da modelagem conceitual construídas no Visual Paradigm - https://github.com/comp-ime-eb-br/S2C2-IME/tree/main/diagrams
 2. *docs* - documentos pertinentes ao projeto e artigos publicados
 3. *onto* - ontologias operacionais desenvolvidas para representar os elementos dos Sistemas de Sistemas de Comando e Controle 
 4. *pages* - páginas html que consolidam o dicionário das entidades representadas nas ontologias

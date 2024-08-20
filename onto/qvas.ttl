@@ -1,0 +1,400 @@
+@prefix : <https://purl.org/s2c2/qvas#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.org/s2c2/qvas#> .
+
+<https://purl.org/s2c2/qvas> rdf:type owl:Ontology ;
+                              owl:imports <https://purl.org/nemo/gufo#/1.0.0> ;
+                              <http://purl.org/dc/elements/1.1/creator> "https://orcid.org/0000-0002-0240-4506" ,
+                                                                        "https://orcid.org/0000-0002-1153-3879" ,
+                                                                        "https://orcid.org/0000-0003-4965-9941" ;
+                              <http://purl.org/dc/elements/1.1/title> "qvas: The Quality Value Assignment Ontology" ;
+                              <http://purl.org/dc/terms/created> "2024-06-07"^^xsd:date ;
+                              <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "qvas" ;
+                              <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/s2c2/qvas#" ;
+                              rdfs:comment "The Quality Value Assignment ontology (qvas) aims to provide an operational ontology that allows value assignment over time for qualities defined by the UFO foundational ontology. An assigning event can be further specialized as a measurement or a configuration, while a value assignment can be specialized as a measurement result or configuration setting." ;
+                              owl:versionInfo "\"1.0.0\"@en" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://purl.org/s2c2/qvas#describes
+:describes rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf gufo:inheresIn ;
+           rdfs:domain :MQuality ;
+           rdfs:range :MQBearer ;
+           rdfs:comment "identifies a MQuality which inheres in a MQBearer" ;
+           rdfs:label "describes"@en .
+
+
+###  https://purl.org/s2c2/qvas#hasAEvent
+:hasAEvent rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf gufo:isEventProperPartOf ;
+           rdfs:domain :CAsgnEvent ;
+           rdfs:range :AsgnEvent ;
+           rdfs:label "hasAEvent"@en .
+
+
+###  https://purl.org/s2c2/qvas#hasVAsgmt
+:hasVAsgmt rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf gufo:isAspectProperPartOf ;
+           rdfs:domain :CValueAsgmt ;
+           rdfs:range :ValueAsgmt ;
+           rdfs:label "hasVAsgmt"@en .
+
+
+###  https://purl.org/s2c2/qvas#holdsValueFor
+:holdsValueFor rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf gufo:inheresIn ;
+               rdfs:domain :ValueAsgmt ;
+               rdfs:range :MQuality ;
+               rdfs:comment "identifies a ValueAsgmt which inheres in a MQuality" ;
+               rdfs:label "holdsValueFor"@en .
+
+
+###  https://purl.org/s2c2/qvas#isAssignedBy
+:isAssignedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf gufo:externallyDependsOn ;
+              rdfs:domain :ValueAsgmt ;
+              rdfs:range :ValueAssigner ;
+              rdfs:comment "identifies a ValueAsgmt which is externally dependent on a ValueAssigner" ;
+              rdfs:label "isAssignedBy"@en .
+
+
+###  https://purl.org/s2c2/qvas#isResultOf
+:isResultOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf gufo:wasCreatedIn ;
+            rdfs:domain :ValueAsgmt ;
+            rdfs:range :AsgnEvent ;
+            rdfs:comment "identifies a ValueAsgmt that is the result of a value-assigning event" ;
+            rdfs:label "isResultOf"@en .
+
+
+###  https://purl.org/s2c2/qvas#participateAsMQB
+:participateAsMQB rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf gufo:participatedIn ;
+                  rdfs:domain :MQBearer ;
+                  rdfs:range :AsgnEvent ;
+                  rdfs:comment "identifies a MQBearer participating on a value-assigning event" ;
+                  rdfs:label "participateAsMQB"@en .
+
+
+###  https://purl.org/s2c2/qvas#participateAsVA
+:participateAsVA rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf gufo:participatedIn ;
+                 rdfs:domain :ValueAssigner ;
+                 rdfs:range :AsgnEvent ;
+                 rdfs:comment "identifies a ValuseAssigner participating on a value-assigning event" ;
+                 rdfs:label "participateAsVA"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://purl.org/s2c2/qvas#assignedValue
+:assignedValue rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf gufo:hasQualityValue ;
+               rdfs:domain :ValueAsgmt ;
+               rdfs:comment "maps a ValueAsgmt to MQuality's domain (quality structure)" ;
+               rdfs:label "assignedValue"@en .
+
+
+###  https://purl.org/s2c2/qvas#endTime
+:endTime rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf gufo:hasQualityValue ;
+         rdfs:domain :AsgnEvent ;
+         rdfs:comment "maps a AsgnEvent to the ending time of a value-assigning event" ;
+         rdfs:label "endTime"@en .
+
+
+###  https://purl.org/s2c2/qvas#resultTime
+:resultTime rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf gufo:hasQualityValue ;
+            rdfs:domain :ValueAsgmt ;
+            rdfs:comment "maps a ValueAsgmt to the instant of time when a value was assigned to a MQuality" ;
+            rdfs:label "resultTime"@en .
+
+
+###  https://purl.org/s2c2/qvas#sresultTime
+:sresultTime rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf gufo:hasQualityValue ;
+             rdfs:domain :CValueAsgmt ;
+             rdfs:comment "maps a CValueAsgmt to the starting instant of the ValueAsgmt aggregation" ;
+             rdfs:label "sresultTime"@en .
+
+
+###  https://purl.org/s2c2/qvas#startTime
+:startTime rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf gufo:hasQualityValue ;
+           rdfs:domain :AsgnEvent ;
+           rdfs:comment "maps a AsgnEvent to the starting time of a value-assigning event" ;
+           rdfs:label "startTime"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/s2c2/qvas#AAsgnEvent
+:AAsgnEvent rdf:type owl:Class ;
+            rdfs:subClassOf :AsgnEvent ;
+            owl:disjointWith :CAsgnEvent .
+
+
+###  https://purl.org/s2c2/qvas#AValueAsgmt
+:AValueAsgmt rdf:type owl:Class ;
+             rdfs:subClassOf :ValueAsgmt ;
+             owl:disjointWith :CValueAsgmt .
+
+
+###  https://purl.org/s2c2/qvas#AsgnEvent
+:AsgnEvent rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:unionOf ( :AAsgnEvent
+                                               :CAsgnEvent
+                                             )
+                               ] ;
+           rdfs:subClassOf gufo:Event .
+
+
+###  https://purl.org/s2c2/qvas#CAsgnEvent
+:CAsgnEvent rdf:type owl:Class ;
+            rdfs:subClassOf :AsgnEvent .
+
+
+###  https://purl.org/s2c2/qvas#CValueAsgmt
+:CValueAsgmt rdf:type owl:Class ;
+             rdfs:subClassOf :ValueAsgmt .
+
+
+###  https://purl.org/s2c2/qvas#CfgSet
+:CfgSet rdf:type owl:Class ;
+        rdfs:subClassOf :ValueAsgmt ;
+        owl:disjointWith :MsrResult .
+
+
+###  https://purl.org/s2c2/qvas#Configuration
+:Configuration rdf:type owl:Class ;
+               rdfs:subClassOf :AsgnEvent ;
+               owl:disjointWith :Measurement .
+
+
+###  https://purl.org/s2c2/qvas#DomainEntity
+:DomainEntity rdf:type owl:Class ;
+              rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  https://purl.org/s2c2/qvas#DomainQuality
+:DomainQuality rdf:type owl:Class ;
+               rdfs:subClassOf gufo:Quality .
+
+
+###  https://purl.org/s2c2/qvas#MQBearer
+:MQBearer rdf:type owl:Class ;
+          rdfs:subClassOf :DomainEntity .
+
+
+###  https://purl.org/s2c2/qvas#MQuality
+:MQuality rdf:type owl:Class ;
+          rdfs:subClassOf :DomainQuality .
+
+
+###  https://purl.org/s2c2/qvas#Measurement
+:Measurement rdf:type owl:Class ;
+             rdfs:subClassOf :AsgnEvent .
+
+
+###  https://purl.org/s2c2/qvas#MsrResult
+:MsrResult rdf:type owl:Class ;
+           rdfs:subClassOf :ValueAsgmt .
+
+
+###  https://purl.org/s2c2/qvas#ValueAsgmt
+:ValueAsgmt rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:unionOf ( :AValueAsgmt
+                                                :CValueAsgmt
+                                              )
+                                ] ;
+            rdfs:subClassOf gufo:ExtrinsicMode .
+
+
+###  https://purl.org/s2c2/qvas#ValueAssigner
+:ValueAssigner rdf:type owl:Class ;
+               rdfs:subClassOf :DomainEntity .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/s2c2/qvas#AAsgnEvent
+:AAsgnEvent rdf:type owl:NamedIndividual ,
+                     gufo:EventType .
+
+
+###  https://purl.org/s2c2/qvas#AValueAsgmt
+:AValueAsgmt rdf:type owl:NamedIndividual ,
+                      gufo:Kind .
+
+
+###  https://purl.org/s2c2/qvas#AsgnEvent
+:AsgnEvent rdf:type owl:NamedIndividual ,
+                    gufo:EventType .
+
+
+###  https://purl.org/s2c2/qvas#CAsgnEvent
+:CAsgnEvent rdf:type owl:NamedIndividual ,
+                     gufo:EventType .
+
+
+###  https://purl.org/s2c2/qvas#CValueAsgmt
+:CValueAsgmt rdf:type owl:NamedIndividual ,
+                      gufo:Kind .
+
+
+###  https://purl.org/s2c2/qvas#DomainEntity
+:DomainEntity rdf:type owl:NamedIndividual ,
+                       gufo:Kind .
+
+
+###  https://purl.org/s2c2/qvas#DomainQuality
+:DomainQuality rdf:type owl:NamedIndividual ,
+                        gufo:Kind .
+
+
+###  https://purl.org/s2c2/qvas#MQBearer
+:MQBearer rdf:type owl:NamedIndividual ,
+                   gufo:Role .
+
+
+###  https://purl.org/s2c2/qvas#MQuality
+:MQuality rdf:type owl:NamedIndividual ,
+                   gufo:Role .
+
+
+###  https://purl.org/s2c2/qvas#ValueAsgmt
+:ValueAsgmt rdf:type owl:NamedIndividual ,
+                     gufo:Category .
+
+
+###  https://purl.org/s2c2/qvas#ValueAssigner
+:ValueAssigner rdf:type owl:NamedIndividual ,
+                        gufo:Role .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:AAsgnEvent rdfs:comment "is a specialization of AsgnEvent, representing atomic events of value assignment, which may result in value assignments" ;
+            rdfs:label "AAsgnEvent"@en .
+
+
+:AValueAsgmt rdfs:comment "is a specialization of ValueAsgmt, representing atomic value assignments holding a value for MQuality at a specific time." ;
+             rdfs:label "AValueAsgmt"@en .
+
+
+:AsgnEvent rdfs:comment "is the category of events that assigns values to  MQuality in which an MQBearer and a ValueAssigner participate and possibly lead to a value assignment." ;
+           rdfs:label "AsgnEvent"@en .
+
+
+:CAsgnEvent rdfs:comment "is a specialization of AsgnEvent, representing complex events of value assignment as AsgnEvent aggregations" ;
+            rdfs:label "CAsgnEvent"@en .
+
+
+:CValueAsgmt rdfs:comment "is a specialization of ValueAsgmt, representing complex value assignments as aggregations of ValueAsgmt." ;
+             rdfs:label "CValueAsgmt"@en .
+
+
+:DomainEntity rdfs:comment "an entity in a domain that can be identified as a UFO Object." ;
+              rdfs:label "DomainEntity"@en .
+
+
+:DomainQuality rdfs:comment "an entity representing an aspect of the domain that can be defined as a UFO Quality." ;
+               rdfs:label "DomainQuality"@en .
+
+
+:MQBearer rdfs:comment "is the role an endurant plays whenever it bears an MQuality while participating in a value assignment event (AsgEvent)" ;
+          rdfs:label "MQBearer"@en .
+
+
+:MQuality rdfs:comment "is the role a quality plays whenever its value changes over time, and it is necessary to keep track of it." ;
+          rdfs:label "MQuality"@en .
+
+
+:ValueAsgmt rdfs:comment "is the truthmaker of the material relationship between MQuality and ValueAssigner. It is a category of external dependent modes responsible for holding the assigned value for an MQuality, which a ValueAssigner assigns, and it is the result of a value assignment event in a certain period." ;
+            rdfs:label "ValueAsgmt"@en .
+
+
+:ValueAssigner rdfs:comment "is the role an endurant plays whenever it is responsible for assigning a value to an MQuality while participating in a value assignment event (AsgEvent)" ;
+               rdfs:label "ValueAssigner"@en .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:a rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:b rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:value rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :AsgnEvent ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :ValueAsgmt ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :isResultOf ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :endTime ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :a ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :value
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :resultTime ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :value
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

@@ -1,913 +1,955 @@
-@prefix : <http://localhost:9000/hint#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix : <https://purl.org/s2c2/hint#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix gufo: <http://purl.org/nemo/gufo#> .
-@prefix hint: <http://localhost:9000/hint#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix terms: <http://purl.org/dc/terms/> .
-@base <http://localhost:9000/hint#> .
+@base <https://purl.org/s2c2/hint#> .
 
-<http://localhost:9000/hint> rdf:type owl:Ontology ;
-                              owl:versionIRI <http://localhost:9000/hint/0.0.2> ;
-                              owl:imports <https://purl.org/nemo/gufo#/1.0.0> .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/nemo/gufo#isDerivedFrom
-gufo:isDerivedFrom rdf:type owl:AnnotationProperty .
-
+<https://purl.org/s2c2/hint> rdf:type owl:Ontology ;
+                              owl:imports <https://purl.org/nemo/gufo#/1.0.0> ;
+                              <http://purl.org/dc/elements/1.1/creator> "https://orcid.org/0000-0002-0240-4506" ,
+                                                                        "https://orcid.org/0000-0002-1153-3879" ,
+                                                                        "https://orcid.org/0000-0003-4965-9941" ;
+                              <http://purl.org/dc/elements/1.1/title> "hint: Heterogeneous Telecommunication Network Ontology" ;
+                              <http://purl.org/dc/terms/created> "2024-06-07"^^xsd:date ;
+                              <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "hint" ,
+                                                                                    "http://purl.org/s2c2/hint#" ;
+                              rdfs:comment "\"Heterogeneous Telecommunication Network Ontology (hint) aims to provide an operational ontology that allows the representation of the main mobility management concepts and relationships. It is supported by UFO Foundational Ontology and is based on the conceptual model proposed in the article entitled 'Enhancing heterogeneous mobile network management based on a well-founded reference ontology' (https://doi.org/10.1016/j.future.2023.08.008)\"" ;
+                              owl:versionInfo "\"1.0.0\"@en" .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://localhost:9000/hint#categorizesVQT
-hint:categorizesVQT rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf gufo:categorizes ;
-                    rdfs:domain hint:VQualityType ;
-                    rdfs:range hint:VariantQuality .
+###  https://purl.org/s2c2/hint#bindsMSignal
+:bindsMSignal rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :bindsWSignal ;
+              rdfs:domain :MonitoredBond ;
+              rdfs:range :MonitoredSignal ;
+              rdfs:label "bindsMSignal"@en .
 
 
-###  http://localhost:9000/hint#commDeviceHasInterface
-hint:commDeviceHasInterface rdf:type owl:ObjectProperty ;
-                            rdfs:domain hint:CommDevice ;
-                            rdfs:range hint:Interface .
+###  https://purl.org/s2c2/hint#bindsMedium
+:bindsMedium rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf gufo:externallyDependsOn ;
+             rdfs:domain :DetectedBond ;
+             rdfs:range :Medium ;
+             rdfs:label "bindsMedium"@en .
 
 
-###  http://localhost:9000/hint#concernsVQT
-hint:concernsVQT rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf gufo:concernsQualityType ;
-                 rdfs:domain hint:ObservedQVA ;
-                 rdfs:range hint:VariantQuality .
+###  https://purl.org/s2c2/hint#bindsReceiver
+:bindsReceiver rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf gufo:inheresIn ;
+               rdfs:domain :DetectedBond ;
+               rdfs:range :Receiver ;
+               rdfs:label "bindsReceiver"@en .
 
 
-###  http://localhost:9000/hint#decodes
-hint:decodes rdf:type owl:ObjectProperty ;
-             rdfs:domain hint:Receiver ;
-             rdfs:range hint:WantedSender .
+###  https://purl.org/s2c2/hint#bindsSSender
+:bindsSSender rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :bindsWSender ;
+              rdfs:domain :SelectedBond ;
+              rdfs:range :SelectedSender ;
+              rdfs:label "bindsSSender"@en .
 
 
-###  http://localhost:9000/hint#detects
-hint:detects rdf:type owl:ObjectProperty ;
-             rdfs:domain hint:Sender ;
-             rdfs:range hint:Receiver .
+###  https://purl.org/s2c2/hint#bindsSSignal
+:bindsSSignal rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :bindsWSignal ;
+              rdfs:domain :SelectedBond ;
+              rdfs:range :SelectedSignal ;
+              rdfs:label "bindsSSignal"@en .
 
 
-###  http://localhost:9000/hint#handSkakeBondHasSelectedBond
-hint:handSkakeBondHasSelectedBond rdf:type owl:ObjectProperty ;
-                                  rdfs:domain hint:HandSkakeBond ;
-                                  rdfs:range hint:SelectedBond .
+###  https://purl.org/s2c2/hint#bindsSender
+:bindsSender rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf gufo:externallyDependsOn ;
+             rdfs:domain :DetectedBond ;
+             rdfs:range :Sender ;
+             rdfs:label "bindsSender"@en .
 
 
-###  http://localhost:9000/hint#handshakes
-hint:handshakes rdf:type owl:ObjectProperty ;
-                rdfs:domain hint:Source ;
-                rdfs:range hint:Sink .
+###  https://purl.org/s2c2/hint#bindsSignal
+:bindsSignal rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf gufo:externallyDependsOn ;
+             rdfs:domain :DetectedBond ;
+             rdfs:range :Signal ;
+             rdfs:label "bindsSignal"@en .
 
 
-###  http://localhost:9000/hint#isServedBy
-hint:isServedBy rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf hint:decodes ;
-                rdfs:domain hint:SelectedSender ;
-                rdfs:range hint:Receiver .
+###  https://purl.org/s2c2/hint#bindsWSender
+:bindsWSender rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :bindsSender ;
+              rdfs:domain :DecodedBond ;
+              rdfs:range :WantedSender ;
+              rdfs:label "bindsWSender"@en .
 
 
-###  http://localhost:9000/hint#monitors
-hint:monitors rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf hint:decodes ;
-              rdfs:domain hint:Receiver ;
-              rdfs:range hint:MonitoredSender .
+###  https://purl.org/s2c2/hint#bindsWSignal
+:bindsWSignal rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :bindsSignal ;
+              rdfs:domain :DecodedBond ;
+              rdfs:range :WantedSignal ;
+              rdfs:label "bindsWSignal"@en .
 
 
-###  http://purl.org/nemo/gufo#inheresIn
-gufo:inheresIn rdf:type owl:ObjectProperty .
+###  https://purl.org/s2c2/hint#caracterizesMSignal
+:caracterizesMSignal rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :caracterizesWSignal ;
+                     rdfs:domain :SignalGeneration ;
+                     rdfs:range :MonitoredSignal ;
+                     rdfs:label "caracterizesMSignal"@en .
 
 
-###  http://purl.org/nemo/gufo#mediates
-gufo:mediates rdf:type owl:ObjectProperty .
+###  https://purl.org/s2c2/hint#caracterizesSSignal
+:caracterizesSSignal rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :caracterizesWSignal ;
+                     rdfs:domain :SignalGeneration ;
+                     rdfs:range :SelectedSignal ;
+                     rdfs:label "caracterizesSSignal"@en .
+
+
+###  https://purl.org/s2c2/hint#caracterizesSignal
+:caracterizesSignal rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf gufo:inheresIn ;
+                    rdfs:domain :SignalGeneration ;
+                    rdfs:range :Signal ;
+                    rdfs:label "caracterizesSignal"@en .
+
+
+###  https://purl.org/s2c2/hint#caracterizesWSignal
+:caracterizesWSignal rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :caracterizesSignal ;
+                     rdfs:domain :SignalGeneration ;
+                     rdfs:range :WantedSignal ;
+                     rdfs:label "caracterizesWSignal"@en .
+
+
+###  https://purl.org/s2c2/hint#dependsOnMSender
+:dependsOnMSender rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :dependsOnWSender ;
+                  rdfs:domain :SignalGeneration ;
+                  rdfs:range :MonitoredSender ;
+                  rdfs:label "dependsOnMSender"@en .
+
+
+###  https://purl.org/s2c2/hint#dependsOnSSender
+:dependsOnSSender rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :dependsOnWSender ;
+                  rdfs:domain :SignalGeneration ;
+                  rdfs:range :SelectedSender ;
+                  rdfs:label "dependsOnSSender"@en .
+
+
+###  https://purl.org/s2c2/hint#dependsOnSender
+:dependsOnSender rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf gufo:externallyDependsOn ;
+                 rdfs:domain :SignalGeneration ;
+                 rdfs:range :Sender ;
+                 rdfs:label "dependsOnSender"@en .
+
+
+###  https://purl.org/s2c2/hint#dependsOnWSender
+:dependsOnWSender rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :dependsOnSender ;
+                  rdfs:domain :SignalGeneration ;
+                  rdfs:range :WantedSender ;
+                  rdfs:label "dependsOnWSender"@en .
+
+
+###  https://purl.org/s2c2/hint#hasCB
+:hasCB rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf gufo:isComponentOf ;
+       rdfs:domain :CommDevice ;
+       rdfs:range :CommBoard .
+
+
+###  https://purl.org/s2c2/hint#hasCS
+:hasCS rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf gufo:isComponentOf ;
+       rdfs:domain :CommDevice ;
+       rdfs:range :CommSW .
+
+
+###  https://purl.org/s2c2/hint#hasProtocol
+:hasProtocol rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf gufo:inheresIn ;
+             rdfs:domain :Protocol ;
+             rdfs:range :PeerNode .
+
+
+###  https://purl.org/s2c2/hint#isPositionOf
+:isPositionOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf gufo:inheresIn ;
+              rdfs:domain :Position ;
+              rdfs:range :CommDevice .
+
+
+###  https://purl.org/s2c2/hint#providedBy
+:providedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf gufo:inheresIn ;
+            rdfs:domain :SrvRequest ;
+            rdfs:range :LLNode ;
+            rdfs:label "providedBy"@en .
+
+
+###  https://purl.org/s2c2/hint#requestedBy
+:requestedBy rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf gufo:externallyDependsOn ;
+             rdfs:domain :SrvRequest ;
+             rdfs:range :ULNode ;
+             rdfs:label "requestedBy"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://localhost:9000/hint#hasEndPositionInXSDString
-hint:hasEndPositionInXSDString rdf:type owl:DatatypeProperty ;
-                               rdfs:domain gufo:ConcreteIndividual ;
-                               rdfs:range xsd:string .
+###  signalGeneration:bandwidth
+<signalGeneration:bandwidth> rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf gufo:hasQualityValue ;
+                             rdfs:domain :SignalGeneration ;
+                             rdfs:label "bandwidth"@en .
 
 
-###  http://purl.org/nemo/gufo#hasQualityValue
-gufo:hasQualityValue rdf:type owl:DatatypeProperty .
+###  signalGeneration:frequency
+<signalGeneration:frequency> rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf gufo:hasQualityValue ;
+                             rdfs:domain :SignalGeneration ;
+                             rdfs:label "frequency"@en .
+
+
+###  signalGeneration:power
+<signalGeneration:power> rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf gufo:hasQualityValue ;
+                         rdfs:domain :SignalGeneration ;
+                         rdfs:label "power"@en .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://localhost:9000/hint#AP
-hint:AP rdf:type owl:Class ;
-        rdfs:subClassOf hint:Ne .
+###  https://purl.org/s2c2/hint#Atmosphere
+:Atmosphere rdf:type owl:Class ;
+            rdfs:subClassOf :PropagationEnabler .
 
 
-###  http://localhost:9000/hint#AntennaGain
-hint:AntennaGain rdf:type owl:Class ;
-                 rdfs:subClassOf hint:VariantQuality ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty gufo:inheresIn ;
-                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass hint:Interface
-                                 ] .
+###  https://purl.org/s2c2/hint#CoaxialCable
+:CoaxialCable rdf:type owl:Class ;
+              rdfs:subClassOf :PropagationEnabler .
 
 
-###  http://localhost:9000/hint#AntennaHeight
-hint:AntennaHeight rdf:type owl:Class ;
-                   rdfs:subClassOf hint:VariantQuality ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty gufo:inheresIn ;
-                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass hint:Interface
-                                   ] .
+###  https://purl.org/s2c2/hint#CommBoard
+:CommBoard rdf:type owl:Class ;
+           rdfs:subClassOf :LayerNode ;
+           owl:disjointWith :CommSW .
 
 
-###  http://localhost:9000/hint#Bandwidth
-hint:Bandwidth rdf:type owl:Class ;
-               rdfs:subClassOf hint:VariantQuality ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty gufo:inheresIn ;
-                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass hint:WantedSignal
-                               ] .
-
-
-###  http://localhost:9000/hint#CQVA
-hint:CQVA rdf:type owl:Class ;
-          rdfs:subClassOf hint:ObservedQVA .
-
-
-###  http://localhost:9000/hint#Channel
-hint:Channel rdf:type owl:Class ;
-             rdfs:subClassOf hint:VariantQuality ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty gufo:inheresIn ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass hint:WantedSignal
-                             ] .
-
-
-###  http://localhost:9000/hint#CommDevice
-hint:CommDevice rdf:type owl:Class ;
-                rdfs:subClassOf gufo:FunctionalComplex .
-
-
-###  http://localhost:9000/hint#Configuration
-hint:Configuration rdf:type owl:Class ;
-                   rdfs:subClassOf hint:QVAEvent .
-
-
-###  http://localhost:9000/hint#Coverage
-hint:Coverage rdf:type owl:Class ;
-              rdfs:subClassOf hint:VariantQuality ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty gufo:inheresIn ;
-                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                owl:onClass hint:Interface
-                              ] .
-
-
-###  http://localhost:9000/hint#DecodedBond
-hint:DecodedBond rdf:type owl:Class ;
-                 owl:equivalentClass [ rdf:type owl:Class ;
-                                       owl:unionOf ( hint:MonitoredBond
-                                                     hint:SelectedBond
-                                                   )
-                                     ] ;
-                 rdfs:subClassOf gufo:Relator ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty gufo:mediates ;
-                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass hint:Receiver
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty gufo:mediates ;
-                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass hint:WantedSender
-                                 ] .
-
-
-###  http://localhost:9000/hint#DetectedBond
-hint:DetectedBond rdf:type owl:Class ;
-                  rdfs:subClassOf gufo:Relator ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty gufo:mediates ;
-                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass hint:Receiver
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty gufo:mediates ;
-                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass hint:Sender
-                                  ] .
-
-
-###  http://localhost:9000/hint#Frequency
-hint:Frequency rdf:type owl:Class ;
-               rdfs:subClassOf hint:VariantQuality ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty gufo:inheresIn ;
-                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass hint:WantedSignal
-                               ] .
-
-
-###  http://localhost:9000/hint#HandSkakeBond
-hint:HandSkakeBond rdf:type owl:Class ;
-                   rdfs:subClassOf gufo:Relator ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty gufo:mediates ;
-                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass hint:Sink
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty gufo:mediates ;
-                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass hint:Source
-                                   ] .
-
-
-###  http://localhost:9000/hint#IPAddress
-hint:IPAddress rdf:type owl:Class ;
-               rdfs:subClassOf hint:VariantQuality ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty gufo:inheresIn ;
-                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass hint:Interface
-                               ] .
-
-
-###  http://localhost:9000/hint#IQVA
-hint:IQVA rdf:type owl:Class ;
-          rdfs:subClassOf hint:ObservedQVA .
-
-
-###  http://localhost:9000/hint#Information
-hint:Information rdf:type owl:Class ;
-                 rdfs:subClassOf gufo:IntrinsicMode ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty gufo:inheresIn ;
-                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass hint:WantedSignal
-                                 ] .
-
-
-###  http://localhost:9000/hint#InnerNode
-hint:InnerNode rdf:type owl:Class ;
-               rdfs:subClassOf hint:Ne .
-
-
-###  http://localhost:9000/hint#Interface
-hint:Interface rdf:type owl:Class ;
-               owl:equivalentClass [ rdf:type owl:Class ;
-                                     owl:unionOf ( hint:Ne
-                                                   hint:Ue
-                                                 )
-                                   ] ,
-                                   [ rdf:type owl:Class ;
-                                     owl:unionOf ( hint:Receiver
-                                                   hint:Sender
-                                                 )
-                                   ] ,
-                                   [ rdf:type owl:Class ;
-                                     owl:unionOf ( hint:Sink
-                                                   hint:Source
-                                                 )
-                                   ] ;
-               rdfs:subClassOf gufo:FunctionalComplex ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty [ owl:inverseOf gufo:inheresIn
-                                                ] ;
-                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass hint:Protocol
-                               ] .
-
-
-###  http://localhost:9000/hint#LQVA
-hint:LQVA rdf:type owl:Class ;
-          rdfs:subClassOf hint:ObservedQVA .
-
-
-###  http://localhost:9000/hint#Latency
-hint:Latency rdf:type owl:Class ;
-             rdfs:subClassOf hint:VariantQuality ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty gufo:inheresIn ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass hint:HandSkakeBond
-                             ] .
-
-
-###  http://localhost:9000/hint#MAC
-hint:MAC rdf:type owl:Class ;
-         rdfs:subClassOf hint:VariantQuality ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty gufo:inheresIn ;
-                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass hint:Interface
-                         ] .
-
-
-###  http://localhost:9000/hint#Measurement
-hint:Measurement rdf:type owl:Class ;
-                 rdfs:subClassOf hint:QVAEvent .
-
-
-###  http://localhost:9000/hint#MonitoredBond
-hint:MonitoredBond rdf:type owl:Class ;
-                   rdfs:subClassOf hint:DecodedBond ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty gufo:mediates ;
-                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass hint:MonitoredSender
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty gufo:mediates ;
-                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass hint:Receiver
-                                   ] .
-
-
-###  http://localhost:9000/hint#MonitoredSender
-hint:MonitoredSender rdf:type owl:Class ;
-                     rdfs:subClassOf hint:WantedSender ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty [ owl:inverseOf gufo:mediates
-                                                      ] ;
-                                       owl:someValuesFrom hint:MonitoredBond
-                                     ] .
-
-
-###  http://localhost:9000/hint#Ne
-hint:Ne rdf:type owl:Class ;
-        owl:equivalentClass [ rdf:type owl:Class ;
-                              owl:unionOf ( hint:AP
-                                            hint:InnerNode
-                                          )
-                            ] ;
-        rdfs:subClassOf hint:Interface .
-
-
-###  http://localhost:9000/hint#ObservedQVA
-hint:ObservedQVA rdf:type owl:Class ;
-                 rdfs:subClassOf gufo:QualityValueAttributionSituation .
-
-
-###  http://localhost:9000/hint#Power
-hint:Power rdf:type owl:Class ;
-           rdfs:subClassOf hint:VariantQuality ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty gufo:inheresIn ;
-                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onClass hint:WantedSignal
-                           ] .
-
-
-###  http://localhost:9000/hint#Protocol
-hint:Protocol rdf:type owl:Class ;
-              rdfs:subClassOf gufo:IntrinsicMode ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty gufo:inheresIn ;
-                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                owl:onClass hint:Interface
-                              ] .
-
-
-###  http://localhost:9000/hint#QVAEvent
-hint:QVAEvent rdf:type owl:Class ;
-              rdfs:subClassOf gufo:Event .
-
-
-###  http://localhost:9000/hint#Receiver
-hint:Receiver rdf:type owl:Class ;
-              rdfs:subClassOf hint:Interface ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty [ owl:inverseOf gufo:mediates
-                                               ] ;
-                                owl:someValuesFrom hint:DecodedBond
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty [ owl:inverseOf gufo:mediates
-                                               ] ;
-                                owl:someValuesFrom hint:DetectedBond
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty [ owl:inverseOf gufo:mediates
-                                               ] ;
-                                owl:someValuesFrom hint:MonitoredBond
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty [ owl:inverseOf gufo:mediates
-                                               ] ;
-                                owl:someValuesFrom hint:SelectedBond
-                              ] .
-
-
-###  http://localhost:9000/hint#SQVA
-hint:SQVA rdf:type owl:Class ;
-          rdfs:subClassOf hint:ObservedQVA .
-
-
-###  http://localhost:9000/hint#SelectedBond
-hint:SelectedBond rdf:type owl:Class ;
-                  rdfs:subClassOf hint:DecodedBond ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty gufo:mediates ;
-                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass hint:Receiver
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty gufo:mediates ;
-                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass hint:SelectedSender
-                                  ] .
-
-
-###  http://localhost:9000/hint#SelectedSender
-hint:SelectedSender rdf:type owl:Class ;
-                    rdfs:subClassOf hint:WantedSender ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty [ owl:inverseOf gufo:mediates
-                                                     ] ;
-                                      owl:someValuesFrom hint:SelectedBond
-                                    ] .
-
-
-###  http://localhost:9000/hint#Sender
-hint:Sender rdf:type owl:Class ;
-            owl:equivalentClass [ rdf:type owl:Class ;
-                                  owl:unionOf ( hint:UnWantedSender
-                                                hint:WantedSender
-                                              )
-                                ] ;
-            rdfs:subClassOf hint:Interface ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty [ owl:inverseOf gufo:mediates
-                                             ] ;
-                              owl:someValuesFrom hint:DetectedBond
-                            ] ,
+###  https://purl.org/s2c2/hint#CommDevice
+:CommDevice rdf:type owl:Class ;
+            rdfs:subClassOf gufo:FunctionalComplex ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty [ owl:inverseOf gufo:inheresIn
                                              ] ;
                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass hint:Signal
+                              owl:onClass :Position
                             ] .
 
 
-###  http://localhost:9000/hint#Signal
-hint:Signal rdf:type owl:Class ;
-            owl:equivalentClass [ rdf:type owl:Class ;
-                                  owl:unionOf ( hint:UnWantedSignal
-                                                hint:WantedSignal
-                                              )
-                                ] ;
-            rdfs:subClassOf gufo:IntrinsicMode ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty gufo:inheresIn ;
-                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass hint:Sender
-                            ] .
+###  https://purl.org/s2c2/hint#CommSW
+:CommSW rdf:type owl:Class ;
+        rdfs:subClassOf :LayerNode .
 
 
-###  http://localhost:9000/hint#Sink
-hint:Sink rdf:type owl:Class ;
-          rdfs:subClassOf hint:Interface ,
+###  https://purl.org/s2c2/hint#DecodedBond
+:DecodedBond rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Class ;
+                                   owl:unionOf ( :MonitoredBond
+                                                 :SelectedBond
+                                               )
+                                 ] ;
+             rdfs:subClassOf :DetectedBond .
+
+
+###  https://purl.org/s2c2/hint#DetectedBond
+:DetectedBond rdf:type owl:Class ;
+              rdfs:subClassOf gufo:ExtrinsicMode ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :bindsMedium ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Medium
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :bindsReceiver ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Receiver
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :bindsSender ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Sender
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :bindsSignal ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Signal
+                              ] .
+
+
+###  https://purl.org/s2c2/hint#FiberCable
+:FiberCable rdf:type owl:Class ;
+            rdfs:subClassOf :PropagationEnabler .
+
+
+###  https://purl.org/s2c2/hint#HandShakeBond
+:HandShakeBond rdf:type owl:Class ;
+               rdfs:subClassOf gufo:Relator ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty gufo:mediates ;
+                                 owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :PeerNode
+                               ] .
+
+
+###  https://purl.org/s2c2/hint#LLMedium
+:LLMedium rdf:type owl:Class ;
+          rdfs:subClassOf :LogMedium .
+
+
+###  https://purl.org/s2c2/hint#LLNode
+:LLNode rdf:type owl:Class ;
+        rdfs:subClassOf :ServiceNode .
+
+
+###  https://purl.org/s2c2/hint#LayerNode
+:LayerNode rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:unionOf ( :CommBoard
+                                               :CommSW
+                                             )
+                               ] ,
+                               [ rdf:type owl:Class ;
+                                 owl:unionOf ( :PeerNode
+                                               :ServiceNode
+                                             )
+                               ] ;
+           rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  https://purl.org/s2c2/hint#LogMedium
+:LogMedium rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:unionOf ( :LLMedium
+                                               :ULMedium
+                                             )
+                               ] ;
+           rdfs:subClassOf :Medium ;
+           owl:disjointWith :PropagationEnabler .
+
+
+###  https://purl.org/s2c2/hint#Medium
+:Medium rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:unionOf ( :LogMedium
+                                            :PhyMedium
+                                          )
+                            ] ;
+        rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  https://purl.org/s2c2/hint#MonitoredBond
+:MonitoredBond rdf:type owl:Class ;
+               rdfs:subClassOf :DecodedBond .
+
+
+###  https://purl.org/s2c2/hint#MonitoredSender
+:MonitoredSender rdf:type owl:Class ;
+                 rdfs:subClassOf :WantedSender .
+
+
+###  https://purl.org/s2c2/hint#MonitoredSignal
+:MonitoredSignal rdf:type owl:Class ;
+                 rdfs:subClassOf :WantedSignal .
+
+
+###  https://purl.org/s2c2/hint#PeerNode
+:PeerNode rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( :Receiver
+                                              :Sender
+                                            )
+                              ] ,
+                              [ rdf:type owl:Class ;
+                                owl:unionOf ( :Rx
+                                              :TRx
+                                              :Tx
+                                            )
+                              ] ;
+          rdfs:subClassOf :LayerNode ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty [ owl:inverseOf gufo:mediates
+                            owl:onProperty [ owl:inverseOf gufo:inheresIn
                                            ] ;
-                            owl:someValuesFrom hint:HandSkakeBond
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Protocol
                           ] .
 
 
-###  http://localhost:9000/hint#Source
-hint:Source rdf:type owl:Class ;
-            rdfs:subClassOf hint:Interface ,
+###  https://purl.org/s2c2/hint#PhyMedium
+:PhyMedium rdf:type owl:Class ;
+           rdfs:subClassOf :Medium ,
+                           :PropagationEnabler .
+
+
+###  https://purl.org/s2c2/hint#Position
+:Position rdf:type owl:Class ;
+          rdfs:subClassOf gufo:Quality .
+
+
+###  https://purl.org/s2c2/hint#PropagationEnabler
+:PropagationEnabler rdf:type owl:Class ;
+                    rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  https://purl.org/s2c2/hint#Protocol
+:Protocol rdf:type owl:Class ;
+          rdfs:subClassOf gufo:IntrinsicMode ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty gufo:inheresIn ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :PeerNode
+                          ] .
+
+
+###  https://purl.org/s2c2/hint#Receiver
+:Receiver rdf:type owl:Class ;
+          rdfs:subClassOf :PeerNode ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty [ owl:inverseOf :bindsReceiver
+                                           ] ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :DetectedBond
+                          ] ;
+          owl:disjointWith :Tx .
+
+
+###  https://purl.org/s2c2/hint#Rx
+:Rx rdf:type owl:Class ;
+    rdfs:subClassOf :PeerNode ;
+    owl:disjointWith :Sender .
+
+
+###  https://purl.org/s2c2/hint#SelectedBond
+:SelectedBond rdf:type owl:Class ;
+              rdfs:subClassOf :DecodedBond ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :bindsSSender ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :SelectedSender
+                              ] .
+
+
+###  https://purl.org/s2c2/hint#SelectedSender
+:SelectedSender rdf:type owl:Class ;
+                rdfs:subClassOf :WantedSender .
+
+
+###  https://purl.org/s2c2/hint#SelectedSignal
+:SelectedSignal rdf:type owl:Class ;
+                rdfs:subClassOf :WantedSignal .
+
+
+###  https://purl.org/s2c2/hint#Sender
+:Sender rdf:type owl:Class ;
+        rdfs:subClassOf :PeerNode ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty [ owl:inverseOf :dependsOnSender
+                                         ] ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :SignalGeneration
+                        ] .
+
+
+###  https://purl.org/s2c2/hint#ServiceNode
+:ServiceNode rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Class ;
+                                   owl:unionOf ( :LLNode
+                                                 :ULNode
+                                               )
+                                 ] ;
+             rdfs:subClassOf :LayerNode .
+
+
+###  https://purl.org/s2c2/hint#Signal
+:Signal rdf:type owl:Class ;
+        rdfs:subClassOf gufo:FunctionalComplex ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty [ owl:inverseOf :caracterizesSignal
+                                         ] ;
+                          owl:someValuesFrom :SignalGeneration
+                        ] .
+
+
+###  https://purl.org/s2c2/hint#SignalGeneration
+:SignalGeneration rdf:type owl:Class ;
+                  rdfs:subClassOf gufo:ExtrinsicMode ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :dependsOnSender ;
+                                    owl:someValuesFrom :Sender
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :caracterizesSignal ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :Signal
+                                  ] .
+
+
+###  https://purl.org/s2c2/hint#SrvRequest
+:SrvRequest rdf:type owl:Class ;
+            rdfs:subClassOf gufo:ExtrinsicMode ,
                             [ rdf:type owl:Restriction ;
-                              owl:onProperty [ owl:inverseOf gufo:mediates
-                                             ] ;
-                              owl:someValuesFrom hint:HandSkakeBond
+                              owl:onProperty :providedBy ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :LLNode
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :requestedBy ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :ULNode
                             ] .
 
 
-###  http://localhost:9000/hint#Throughput
-hint:Throughput rdf:type owl:Class ;
-                rdfs:subClassOf hint:VariantQuality ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty gufo:inheresIn ;
-                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass hint:DecodedBond
-                                ] .
+###  https://purl.org/s2c2/hint#TRx
+:TRx rdf:type owl:Class ;
+     rdfs:subClassOf :PeerNode .
 
 
-###  http://localhost:9000/hint#Ue
-hint:Ue rdf:type owl:Class ;
-        rdfs:subClassOf hint:Interface .
+###  https://purl.org/s2c2/hint#Tx
+:Tx rdf:type owl:Class ;
+    rdfs:subClassOf :PeerNode .
 
 
-###  http://localhost:9000/hint#UnWantedSender
-hint:UnWantedSender rdf:type owl:Class ;
-                    rdfs:subClassOf hint:Sender .
+###  https://purl.org/s2c2/hint#ULMedium
+:ULMedium rdf:type owl:Class ;
+          rdfs:subClassOf :LogMedium .
 
 
-###  http://localhost:9000/hint#UnWantedSignal
-hint:UnWantedSignal rdf:type owl:Class ;
-                    rdfs:subClassOf hint:Signal .
+###  https://purl.org/s2c2/hint#ULNode
+:ULNode rdf:type owl:Class ;
+        rdfs:subClassOf :ServiceNode .
 
 
-###  http://localhost:9000/hint#VQualityType
-hint:VQualityType rdf:type owl:Class ;
-                  rdfs:subClassOf gufo:EndurantType .
+###  https://purl.org/s2c2/hint#WantedSender
+:WantedSender rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:unionOf ( :MonitoredSender
+                                                  :SelectedSender
+                                                )
+                                  ] ;
+              rdfs:subClassOf :Sender .
 
 
-###  http://localhost:9000/hint#VariantQuality
-hint:VariantQuality rdf:type owl:Class ;
-                    rdfs:subClassOf gufo:Quality .
-
-
-###  http://localhost:9000/hint#WMode
-hint:WMode rdf:type owl:Class ;
-           rdfs:subClassOf hint:VariantQuality ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty gufo:inheresIn ;
-                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onClass hint:Interface
-                           ] .
-
-
-###  http://localhost:9000/hint#WantedSender
-hint:WantedSender rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Class ;
-                                        owl:unionOf ( hint:MonitoredSender
-                                                      hint:SelectedSender
-                                                    )
-                                      ] ;
-                  rdfs:subClassOf hint:Sender ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty [ owl:inverseOf gufo:mediates
-                                                   ] ;
-                                    owl:someValuesFrom hint:DecodedBond
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty [ owl:inverseOf gufo:inheresIn
-                                                   ] ;
-                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass hint:WantedSignal
-                                  ] .
-
-
-###  http://localhost:9000/hint#WantedSignal
-hint:WantedSignal rdf:type owl:Class ;
-                  rdfs:subClassOf hint:Signal ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty gufo:inheresIn ;
-                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass hint:WantedSender
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty [ owl:inverseOf gufo:inheresIn
-                                                   ] ;
-                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass hint:Information
-                                  ] .
-
-
-###  http://purl.org/nemo/gufo#FunctionalComplex
-gufo:FunctionalComplex rdf:type owl:Class .
-
-
-###  http://purl.org/nemo/gufo#IntrinsicMode
-gufo:IntrinsicMode rdf:type owl:Class .
-
-
-###  http://purl.org/nemo/gufo#Kind
-gufo:Kind rdf:type owl:Class .
-
-
-###  http://purl.org/nemo/gufo#Relator
-gufo:Relator rdf:type owl:Class .
-
-
-###  http://purl.org/nemo/gufo#Role
-gufo:Role rdf:type owl:Class .
+###  https://purl.org/s2c2/hint#WantedSignal
+:WantedSignal rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:unionOf ( :MonitoredSignal
+                                                  :SelectedSignal
+                                                )
+                                  ] ;
+              rdfs:subClassOf :Signal .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://localhost:9000/hint#AP
-hint:AP rdf:type owl:NamedIndividual ,
-                 gufo:Role .
-
-
-###  http://localhost:9000/hint#AntennaGain
-hint:AntennaGain rdf:type owl:NamedIndividual ,
-                          hint:VQualityType .
-
-
-###  http://localhost:9000/hint#AntennaHeight
-hint:AntennaHeight rdf:type owl:NamedIndividual ,
-                            hint:VQualityType .
-
-
-###  http://localhost:9000/hint#Bandwidth
-hint:Bandwidth rdf:type owl:NamedIndividual ,
-                        hint:VQualityType .
-
-
-###  http://localhost:9000/hint#Channel
-hint:Channel rdf:type owl:NamedIndividual ,
-                      hint:VQualityType .
-
-
-###  http://localhost:9000/hint#CommDevice
-hint:CommDevice rdf:type owl:NamedIndividual ,
-                         gufo:Kind .
-
-
-###  http://localhost:9000/hint#Coverage
-hint:Coverage rdf:type owl:NamedIndividual ,
-                       hint:VQualityType .
-
-
-###  http://localhost:9000/hint#DecodedBond
-hint:DecodedBond rdf:type owl:NamedIndividual ,
-                          gufo:Kind .
-
-
-###  http://localhost:9000/hint#DetectedBond
-hint:DetectedBond rdf:type owl:NamedIndividual ,
-                           gufo:Kind .
-
-
-###  http://localhost:9000/hint#Frequency
-hint:Frequency rdf:type owl:NamedIndividual ,
-                        hint:VQualityType .
-
-
-###  http://localhost:9000/hint#HandSkakeBond
-hint:HandSkakeBond rdf:type owl:NamedIndividual ,
-                            gufo:Kind .
-
-
-###  http://localhost:9000/hint#IPAddress
-hint:IPAddress rdf:type owl:NamedIndividual ,
-                        hint:VQualityType .
-
-
-###  http://localhost:9000/hint#Information
-hint:Information rdf:type owl:NamedIndividual ,
-                          gufo:Kind .
-
-
-###  http://localhost:9000/hint#InnerNode
-hint:InnerNode rdf:type owl:NamedIndividual ,
-                        gufo:Role .
-
-
-###  http://localhost:9000/hint#Interface
-hint:Interface rdf:type owl:NamedIndividual ,
-                        gufo:Kind .
-
-
-###  http://localhost:9000/hint#Latency
-hint:Latency rdf:type owl:NamedIndividual ,
-                      hint:VQualityType .
-
-
-###  http://localhost:9000/hint#MAC
-hint:MAC rdf:type owl:NamedIndividual ,
-                  hint:VQualityType .
-
-
-###  http://localhost:9000/hint#MonitoredBond
-hint:MonitoredBond rdf:type owl:NamedIndividual ,
-                            gufo:Role .
-
-
-###  http://localhost:9000/hint#MonitoredSender
-hint:MonitoredSender rdf:type owl:NamedIndividual ,
-                              gufo:Role .
-
-
-###  http://localhost:9000/hint#Ne
-hint:Ne rdf:type owl:NamedIndividual ,
-                 gufo:Role .
-
-
-###  http://localhost:9000/hint#Power
-hint:Power rdf:type owl:NamedIndividual ,
-                    hint:VQualityType .
-
-
-###  http://localhost:9000/hint#Protocol
-hint:Protocol rdf:type owl:NamedIndividual ,
-                       gufo:Kind .
-
-
-###  http://localhost:9000/hint#Receiver
-hint:Receiver rdf:type owl:NamedIndividual ,
-                       gufo:Role .
-
-
-###  http://localhost:9000/hint#SelectedBond
-hint:SelectedBond rdf:type owl:NamedIndividual ,
-                           gufo:Role .
-
-
-###  http://localhost:9000/hint#SelectedSender
-hint:SelectedSender rdf:type owl:NamedIndividual ,
-                             gufo:Role .
-
-
-###  http://localhost:9000/hint#Sender
-hint:Sender rdf:type owl:NamedIndividual ,
-                     gufo:Role .
-
-
-###  http://localhost:9000/hint#Signal
-hint:Signal rdf:type owl:NamedIndividual ,
+###  https://purl.org/s2c2/hint#Atmosphere
+:Atmosphere rdf:type owl:NamedIndividual ,
                      gufo:Kind .
 
 
-###  http://localhost:9000/hint#Sink
-hint:Sink rdf:type owl:NamedIndividual ,
+###  https://purl.org/s2c2/hint#CoaxialCable
+:CoaxialCable rdf:type owl:NamedIndividual ,
+                       gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#CommBoard
+:CommBoard rdf:type owl:NamedIndividual ,
+                    gufo:Category .
+
+
+###  https://purl.org/s2c2/hint#CommDevice
+:CommDevice rdf:type owl:NamedIndividual ,
+                     gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#CommSW
+:CommSW rdf:type owl:NamedIndividual ,
+                 gufo:Category .
+
+
+###  https://purl.org/s2c2/hint#DecodedBond
+:DecodedBond rdf:type owl:NamedIndividual ,
+                      gufo:Role .
+
+
+###  https://purl.org/s2c2/hint#DetectedBond
+:DetectedBond rdf:type owl:NamedIndividual ,
+                       gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#FiberCable
+:FiberCable rdf:type owl:NamedIndividual ,
+                     gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#HandShakeBond
+:HandShakeBond rdf:type owl:NamedIndividual ,
+                        gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#LLMedium
+:LLMedium rdf:type owl:NamedIndividual ,
                    gufo:Role .
 
 
-###  http://localhost:9000/hint#Source
-hint:Source rdf:type owl:NamedIndividual ,
-                     gufo:Role .
+###  https://purl.org/s2c2/hint#LLNode
+:LLNode rdf:type owl:NamedIndividual ,
+                 gufo:RoleMixin .
 
 
-###  http://localhost:9000/hint#Throughput
-hint:Throughput rdf:type owl:NamedIndividual ,
-                         hint:VQualityType .
+###  https://purl.org/s2c2/hint#LayerNode
+:LayerNode rdf:type owl:NamedIndividual ,
+                    gufo:Category .
 
 
-###  http://localhost:9000/hint#Ue
-hint:Ue rdf:type owl:NamedIndividual ,
-                 gufo:Role .
+###  https://purl.org/s2c2/hint#LogMedium
+:LogMedium rdf:type owl:NamedIndividual ,
+                    gufo:Kind .
 
 
-###  http://localhost:9000/hint#UnWantedSender
-hint:UnWantedSender rdf:type owl:NamedIndividual ,
-                             gufo:Role .
+###  https://purl.org/s2c2/hint#Medium
+:Medium rdf:type owl:NamedIndividual ,
+                 gufo:Mixin .
 
 
-###  http://localhost:9000/hint#UnWantedSignal
-hint:UnWantedSignal rdf:type owl:NamedIndividual ,
-                             gufo:Role .
+###  https://purl.org/s2c2/hint#MonitoredBond
+:MonitoredBond rdf:type owl:NamedIndividual ,
+                        gufo:Role .
 
 
-###  http://localhost:9000/hint#VariantQuality
-hint:VariantQuality rdf:type owl:NamedIndividual ,
-                             gufo:EndurantType .
+###  https://purl.org/s2c2/hint#MonitoredSender
+:MonitoredSender rdf:type owl:NamedIndividual ,
+                          gufo:RoleMixin .
 
 
-###  http://localhost:9000/hint#WMode
-hint:WMode rdf:type owl:NamedIndividual ,
-                    hint:VQualityType .
+###  https://purl.org/s2c2/hint#MonitoredSignal
+:MonitoredSignal rdf:type owl:NamedIndividual ,
+                          gufo:Role .
 
 
-###  http://localhost:9000/hint#WantedSender
-hint:WantedSender rdf:type owl:NamedIndividual ,
-                           gufo:Role .
+###  https://purl.org/s2c2/hint#PeerNode
+:PeerNode rdf:type owl:NamedIndividual ,
+                   gufo:Mixin .
 
 
-###  http://localhost:9000/hint#WantedSignal
-hint:WantedSignal rdf:type owl:NamedIndividual ,
-                           gufo:Role .
+###  https://purl.org/s2c2/hint#PhyMedium
+:PhyMedium rdf:type owl:NamedIndividual ,
+                    gufo:RoleMixin .
 
 
-###  http://localhost:9000/hint#decodes
-hint:decodes rdf:type owl:NamedIndividual ;
-             gufo:isDerivedFrom hint:DecodedBond .
+###  https://purl.org/s2c2/hint#Position
+:Position rdf:type owl:NamedIndividual ,
+                   gufo:Kind .
 
 
-###  http://localhost:9000/hint#detects
-hint:detects rdf:type owl:NamedIndividual ;
-             gufo:isDerivedFrom hint:DetectedBond .
+###  https://purl.org/s2c2/hint#PropagationEnabler
+:PropagationEnabler rdf:type owl:NamedIndividual ,
+                             gufo:Category .
 
 
-###  http://localhost:9000/hint#handshakes
-hint:handshakes rdf:type owl:NamedIndividual ;
-                gufo:isDerivedFrom hint:HandSkakeBond .
+###  https://purl.org/s2c2/hint#Protocol
+:Protocol rdf:type owl:NamedIndividual ,
+                   gufo:Kind .
 
 
-###  http://localhost:9000/hint#isServedBy
-hint:isServedBy rdf:type owl:NamedIndividual ;
-                gufo:isDerivedFrom hint:SelectedBond .
+###  https://purl.org/s2c2/hint#Receiver
+:Receiver rdf:type owl:NamedIndividual ,
+                   gufo:RoleMixin .
 
 
-###  http://localhost:9000/hint#monitors
-hint:monitors rdf:type owl:NamedIndividual ;
-              gufo:isDerivedFrom hint:MonitoredBond .
+###  https://purl.org/s2c2/hint#Rx
+:Rx rdf:type owl:NamedIndividual ,
+             gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#SelectedBond
+:SelectedBond rdf:type owl:NamedIndividual ,
+                       gufo:Role .
+
+
+###  https://purl.org/s2c2/hint#SelectedSender
+:SelectedSender rdf:type owl:NamedIndividual ,
+                         gufo:RoleMixin .
+
+
+###  https://purl.org/s2c2/hint#SelectedSignal
+:SelectedSignal rdf:type owl:NamedIndividual ,
+                         gufo:Role .
+
+
+###  https://purl.org/s2c2/hint#Sender
+:Sender rdf:type owl:NamedIndividual ,
+                 gufo:RoleMixin .
+
+
+###  https://purl.org/s2c2/hint#Sensitivity
+:Sensitivity rdf:type owl:NamedIndividual ,
+                      gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#ServiceNode
+:ServiceNode rdf:type owl:NamedIndividual ,
+                      gufo:RoleMixin .
+
+
+###  https://purl.org/s2c2/hint#Signal
+:Signal rdf:type owl:NamedIndividual ,
+                 gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#SignalGeneration
+:SignalGeneration rdf:type owl:NamedIndividual ,
+                           gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#SrvRequest
+:SrvRequest rdf:type owl:NamedIndividual ,
+                     gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#TRx
+:TRx rdf:type owl:NamedIndividual ,
+              gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#Tx
+:Tx rdf:type owl:NamedIndividual ,
+             gufo:Kind .
+
+
+###  https://purl.org/s2c2/hint#ULMedium
+:ULMedium rdf:type owl:NamedIndividual ,
+                   gufo:Role .
+
+
+###  https://purl.org/s2c2/hint#ULNode
+:ULNode rdf:type owl:NamedIndividual ,
+                 gufo:RoleMixin .
+
+
+###  https://purl.org/s2c2/hint#WantedSender
+:WantedSender rdf:type owl:NamedIndividual ,
+                       gufo:RoleMixin .
+
+
+###  https://purl.org/s2c2/hint#WantedSignal
+:WantedSignal rdf:type owl:NamedIndividual ,
+                       gufo:Role .
+
+
+###  https://purl.org/s2c2/hint#detects
+:detects rdf:type owl:NamedIndividual ,
+                  gufo:MaterialRelationshipType ;
+         gufo:isDerivedFrom :DetectedBond .
+
+
+###  https://purl.org/s2c2/hint#isServedBy
+:isServedBy rdf:type owl:NamedIndividual ,
+                     gufo:MaterialRelationshipType ;
+            gufo:isDerivedFrom :SelectedBond .
 
 
 #################################################################
 #    Annotations
 #################################################################
 
-hint:AP rdfs:label "AP"@en .
+:Atmosphere rdfs:label "Atmosphere"@en .
 
 
-hint:CommDevice rdfs:label "CommDevice"@en .
+:CoaxialCable rdfs:label "CoaxialCable"@en .
 
 
-hint:DecodedBond rdfs:label "DecodedBond"@en .
+:CommBoard rdfs:comment "in this context, represents the category of hardware able to transmit and/or receive electromagnetic waves." ;
+           rdfs:label "CommBoard"@en .
 
 
-hint:DetectedBond rdfs:label "DetectedBond"@en .
+:CommDevice rdfs:comment "An entity comprising at least one CommBoard and some CommSW. For instance, it can be a cell phone, a modem, or a GPS receiver, among others." ;
+            rdfs:label "CommDevice"@en .
 
 
-hint:HandSkakeBond rdfs:label "HandSkakeBond"@en .
+:CommSW rdfs:comment "in this context, represents the category of software able to establish communication with other software or hardware" ;
+        rdfs:label "CommSW"@en .
 
 
-hint:Information rdfs:label "Information"@en .
+:DecodedBond rdfs:comment "is a specialization of the DetectedBond EDM, representing the Signal's detection and decodification. According to several telecommunications vocabularies, it is the Link entity, such as the ITU V.662-3 recommendation." ;
+             rdfs:label "DecodedBond"@en .
 
 
-hint:InnerNode rdfs:label "InnerNode"@en .
+:DetectedBond rdfs:comment "is the truthmaker that binds Signal, Medium, and Receiver and supports the relation detectsSignal. It is the composition of the asymmetrical commitments between Receiver-Signal, Signal-Medium, and receiver-Medium, all representing external dependent modes (EDMs). It is also the truthmaker of the material relation between a Receiver and a Sender" ;
+              rdfs:label "DetectedBond"@en .
 
 
-hint:Interface rdfs:label "Interface"@en .
+:FiberCable rdfs:label "FiberCable"@en .
 
 
-hint:MonitoredBond rdfs:label "MonitoredBond"@en .
+:HandShakeBond rdfs:comment "is the truthmaker of the material relationship that binds two distincts TRxs represeting their mutual commitements and obligations." ;
+               rdfs:label "HandShakeBond"@en .
 
 
-hint:MonitoredSender rdfs:label "MonitoredSender"@en .
+:LLMedium rdfs:label "LLMedium"@en .
 
 
-hint:Ne rdfs:label "Ne"@en .
+:LLNode rdfs:comment "is a role category whenever a LayerNode \"vertically\" provides a service for another LayerNode" ;
+        rdfs:label "LLNode"@en .
 
 
-hint:Protocol rdfs:label "Protocol"@en .
+:LayerNode rdfs:comment "represents an entity in a layered network architecture that is grouped in a layer and generalizes two distinct categories of entities: CommBoards and CommSWs." ;
+           rdfs:label "LayerNode"@en .
 
 
-hint:Receiver rdfs:label "Receiver"@en .
+:LogMedium rdfs:comment "a logical structure through or over which a logical Signal is conveyed" ;
+           rdfs:label "LogMedium"@en .
 
 
-hint:SelectedBond rdfs:label "SelectedBond"@en .
+:Medium rdfs:comment "a structure through or over which a Signal is conveyed" ;
+        rdfs:label "Medium"@en .
 
 
-hint:SelectedSender rdfs:label "SelectedSender"@en .
+:MonitoredBond rdfs:comment "in mobile networks, the Receiver has to deal with several WantedSenders simultaneously. There are Signals that are not elected to be the ServingSignal, but need to be monitored to allow the execution of the handover process. In this sense, MonitoredSenders generates MonitoredSignals, which allows the bonding to a Receiver. The MonitoredBond represents such bonding, and it is a role played by the DecodedBond. According to 3GPP's recommendations, the MonitoredSender is also known as Neighbor and, therefore, the MonitoredBond is also known as the Neighbor Link." ;
+               rdfs:label "MonitoredBond"@en .
 
 
-hint:Sender rdfs:label "Sender"@en .
+:MonitoredSender rdfs:comment "a role played by a WantedSender whenever its generates a Signal which is only monitored by the Receiver." ;
+                 rdfs:label "MonitoredSender"@en .
 
 
-hint:Signal rdfs:label "Signal"@en .
+:MonitoredSignal rdfs:comment "a role WantedSignal plays whenever it is only monitored by the Receiver, becoming a SelectedSignal whenever necessary." ;
+                 rdfs:label "MonitoredSignal"@en .
 
 
-hint:Sink rdfs:label "Sink"@en .
+:PeerNode rdfs:comment "a role category that a Layer Node plays when it \"horizontally\" communicates with another distinct Layer Node that shares the same communication Protocol." ;
+          rdfs:label "PeerNode"@en .
 
 
-hint:Source rdfs:label "Source"@en .
+:PhyMedium rdfs:comment "natural or manufactured structure through or over which a physical Signal is conveyed. A role category that generalizes entities in the physical world able to propagate electromagnetic waves." ;
+           rdfs:label "PhyMedium"@en .
 
 
-hint:Ue rdfs:label "Ue"@en .
+:Position rdfs:comment "it is the location of an entity according to a coordinate system" ;
+          rdfs:label "Position"@en .
 
 
-hint:UnWantedSender rdfs:label "UnWantedSender"@en .
+:PropagationEnabler rdfs:label "PropagationEnabler"@en .
 
 
-hint:UnWantedSignal rdfs:label "UnWantedSignal"@en .
+:Protocol rdfs:comment "a set of communication rules that allows information exchange between distinct PeerNodes" ;
+          rdfs:label "Protocol"@en .
 
 
-hint:WantedSender rdfs:label "WantedSender"@en .
+:Receiver rdfs:comment "an abstract entity that detects Signals" ;
+          rdfs:label "Receiver"@en .
 
 
-hint:WantedSignal rdfs:label "WantedSignal"@en .
+:Rx rdfs:comment "hardware or software that can play, among others, the role of Receiver but not of Sender" ;
+    rdfs:label "Rx"@en .
 
 
-hint:decodes rdfs:label "decodes"@en .
+:SelectedBond rdfs:comment "in mobile networks, the Receiver has to deal with several WantedSenders simultaneously. Among them, one is selected to be the SelectedSender. Therefore, the SelectedBond, a role of the DecodedBond,  represents the bonding of a SelectedSender and Receiver, where the user's information is actually exchanged. According to 3GPP's recommendations, the SelectedSender is also known as Server and , therefore, the SelectedBond is also known as the Server Link." ;
+              rdfs:label "SelectedBond"@en .
 
 
-hint:detects rdfs:label "detects"@en .
+:SelectedSender rdfs:comment "a role played by a WantedSender whenever it generates a Signal that is selected for information exchange." ;
+                rdfs:label "SelectedSender"@en .
 
 
-hint:handshakes rdfs:label "handshakes"@en .
+:SelectedSignal rdfs:comment "a role WantedSignal plays whenever it is selected for information exchange between the WantedSender, now playing the role of SelectedSignal, and the Receiver." ;
+                rdfs:label "SelectedSignal"@en .
 
 
-hint:isServedBy rdfs:label "is served by"@en .
+:Sender rdfs:comment "an abstract entity that generates and transmits Signals"@en ;
+        rdfs:label "Sender"@en .
 
 
-hint:monitors rdfs:label "monitors"@en .
+:ServiceNode rdfs:comment "a role category played by a LayerNode when it ServiceNode whenever it \"vertically\" requests and/or provides network services to another LayerNode in the same host." ;
+             rdfs:label "ServiceNode"@en .
 
 
-###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
+:Signal rdfs:comment "a detectable transmitted energy that can be used to carry information" ;
+        rdfs:label "Signal"@en .
+
+
+:SignalGeneration rdfs:comment "is the truthmaker of the material relation between a Sender and a Signal, which characterizes the latter and is externally dependent on the former. It bears signal properties such as frequency, power, and bandwidth, among others." ;
+                  rdfs:label "SignalGeneration"@en .
+
+
+:SrvRequest rdfs:comment "is the truthmaker of the material relation between a ULNode and a LLNode, which characterizes the latter and is externally dependent on the former." ;
+            rdfs:label "SrvRequest"@en .
+
+
+:TRx rdfs:comment "hardware or software that can play, among others, the role of Sender and Receiver" ;
+     rdfs:label "TRx"@en .
+
+
+:Tx rdfs:comment "hardware or software that can play, among others, the role of Sender but not of Receiver" ;
+    rdfs:label "Tx"@en .
+
+
+:ULMedium rdfs:label "ULMedium"@en .
+
+
+:ULNode rdfs:comment "is a role category whenever a LayerNode \"vertically\" requests a service for another LayerNode" ;
+        rdfs:label "ULNode"@en .
+
+
+:WantedSender rdfs:comment "a role played by a Sender whenever it generates a Signal that is decoded by the Receiver" ;
+              rdfs:label "WantedSender"@en .
+
+
+:WantedSignal rdfs:comment "a Signal conveying Information that is not only detected but also understood (or decoded) by the Receiver. In other words, it is a Signal role whenever it is decoded by the Receiver" ;
+              rdfs:label "WantedSignal"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Atmosphere
+                :CoaxialCable
+                :FiberCable
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CommDevice
+                :LayerNode
+                :PropagationEnabler
+                :Signal
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Rx
+                :TRx
+                :Tx
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

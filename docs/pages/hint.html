@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My first ontology</title>
+    <title>hint: Heterogeneous Telecommunication Network Ontology</title>
     <style>
         #pylode {
             position: fixed;
@@ -283,13 +283,40 @@ td {
     <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "http://example.com",
+    "@id": "https://purl.org/s2c2/hint",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
+    "https://schema.org/creator": [
+      {
+        "@value": "https://orcid.org/0000-0002-0240-4506"
+      },
+      {
+        "@value": "https://orcid.org/0000-0002-1153-3879"
+      },
+      {
+        "@value": "https://orcid.org/0000-0003-4965-9941"
+      }
+    ],
+    "https://schema.org/dateCreated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-06-07"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "\"Heterogeneous Telecommunication Network Ontology (hint) aims to provide an operational ontology that allows the representation of the main mobility management concepts and relationships. It is supported by UFO Foundational Ontology and is based on the conceptual model proposed in the article entitled 'Enhancing heterogeneous mobile network management based on a well-founded reference ontology' (https://doi.org/10.1016/j.future.2023.08.008)\""
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@value": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      }
+    ],
     "https://schema.org/name": [
       {
-        "@value": "My first ontology"
+        "@value": "hint: Heterogeneous Telecommunication Network Ontology"
       }
     ]
   }
@@ -299,7 +326,7 @@ td {
   <body>
     <div id="content">
       <div class="section" id="metadata">
-        <h1>My first ontology</h1>
+        <h1>hint: Heterogeneous Telecommunication Network Ontology</h1>
         <h2>Metadata</h2>
         <dl>
           <div>
@@ -307,28 +334,85 @@ td {
               <strong>IRI</strong>
             </dt>
             <dd>
-              <code>http://example.com</code>
+              <code>https://purl.org/s2c2/hint</code>
             </dd>
           </div>
           <div>
             <dt>
               <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">Title</a>
             </dt>
-            <dd><p>My first ontology</p></dd>
+            <dd><p>hint: Heterogeneous Telecommunication Network Ontology</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/creator" title="An entity responsible for making the resource. Defined in DCMI Metadata Terms">Creator</a>
+            </dt>
+            <dd>
+              <ul>
+                <li>
+                  <span>https://orcid.org/0000-0002-0240-4506</span>
+                </li>
+                <li>
+                  <span>https://orcid.org/0000-0002-1153-3879</span>
+                </li>
+                <li>
+                  <span>https://orcid.org/0000-0003-4965-9941</span>
+                </li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/created" title="Date of creation of the resource. Defined in DCMI Metadata Terms">Date Created</a>
+            </dt>
+            <dd><p>2024-06-07</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/license" title="A legal document giving official permission to do something with the resource. Defined in DCMI Metadata Terms">License</a>
+            </dt>
+            <dd>
+              <a href="https://creativecommons.org/licenses/by/4.0/legalcode">https://creativecommons.org/licenses/by/4.0/legalcode</a>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionInfo" title="The annotation property that provides version information for an ontology or another OWL construct. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Info</a>
+            </dt>
+            <dd><p>"1.0.0"@en</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespacePrefix" title="None. Defined in None">Preferred Namespace Prefix</a>
+            </dt>
+            <dd>
+              <ul>
+                <li><p>hint</p></li>
+                <li>
+                  <a href="http://purl.org/s2c2/hint#">http://purl.org/s2c2/hint#</a>
+                </li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+            </dt>
+            <dd><p>"Heterogeneous Telecommunication Network Ontology (hint) aims to provide an operational ontology that allows the representation of the main mobility management concepts and relationships. It is supported by UFO Foundational Ontology and is based on the conceptual model proposed in the article entitled 'Enhancing heterogeneous mobile network management based on a well-founded reference ontology' (https://doi.org/10.1016/j.future.2023.08.008)"</p></dd>
           </div>
         </dl>
       </div>
       <div class="section" id="classes">
         <h2>Classes</h2>
-        <div class="property entity" id="Air">
-          <h3>Air
+        <div class="property entity" id="Atmosphere">
+          <h3>Atmosphere
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#Air</code>
+                <code>https://purl.org/s2c2/hint#Atmosphere</code>
               </td>
             </tr>
             <tr>
@@ -337,7 +421,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#PhyMedium">PhyMedium</a>
+                  <a href="#PropagationEnabler">PropagationEnabler</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -352,7 +436,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#CoaxialCable</code>
+                <code>https://purl.org/s2c2/hint#CoaxialCable</code>
               </td>
             </tr>
             <tr>
@@ -361,8 +445,49 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#PhyMedium">PhyMedium</a>
+                  <a href="#PropagationEnabler">PropagationEnabler</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="CommBoard">
+          <h3>CommBoard
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#CommBoard</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>in this context, represents the category of hardware able to transmit and/or receive electromagnetic waves.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#LayerNode">LayerNode</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#hasCB">hasCB</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
             </tr>
@@ -376,8 +501,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#CommDevice</code>
+                <code>https://purl.org/s2c2/hint#CommDevice</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>An entity comprising at least one CommBoard and some CommSW. For instance, it can be a cell phone, a modem, or a GPS receiver, among others.</p></td>
             </tr>
             <tr>
               <th>
@@ -395,38 +526,17 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="http://example.com#hasCommHW">hasCommHW</a>
+                      <a href="#hasCB">hasCB</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#hasCommSW">hasCommSW</a>
+                      <a href="#hasCS">hasCS</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                 </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="CommHW">
-          <h3>CommHW
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#CommHW</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <a href="http://purl.org/nemo/gufo#FunctionalComplex">gufo:FunctionalComplex</a>
               </td>
             </tr>
             <tr>
@@ -435,30 +545,25 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#hasCommHW">hasCommHW</a>
+                  <a href="#isPositionOf">isPositionOf</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
             </tr>
             <tr>
               <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
               </th>
               <td>
-                <ul>
-                  <li>
+                <span>
+                  <span>
+                    <a href="n0c0d5419d21f4b90a59f65901415c418b2">n0c0d5419d21f4b90a59f65901415c418b2</a>
                     <span>
-                      <a href="http://example.com#PhyNode">PhyNode</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#80211Phy">80211Phy</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
+                      <span class="cardinality">exactly</span>
+                      <span>1</span>
+                    </span><br>
+                  </span>
+                </span>
               </td>
             </tr>
           </table>
@@ -471,15 +576,24 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#CommSW</code>
+                <code>https://purl.org/s2c2/hint#CommSW</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>in this context, represents the category of software able to establish communication with other software or hardware</p></td>
             </tr>
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <a href="http://purl.org/nemo/gufo#FunctionalComplex">gufo:FunctionalComplex</a>
+                <span>
+                  <a href="#LayerNode">LayerNode</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
             <tr>
@@ -488,36 +602,9 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#hasCommSW">hasCommSW</a>
+                  <a href="#hasCS">hasCS</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="http://example.com#HTTP">HTTP</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#LogNode">LogNode</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#80211Med">80211Med</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
               </td>
             </tr>
           </table>
@@ -530,8 +617,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#DecodedBond</code>
+                <code>https://purl.org/s2c2/hint#DecodedBond</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>is a specialization of the DetectedBond EDM, representing the Signal's detection and decodification. According to several telecommunications vocabularies, it is the Link entity, such as the ITU V.662-3 recommendation.</p></td>
             </tr>
             <tr>
               <th>
@@ -539,7 +632,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#DetectBond">DetectBond</a>
+                  <a href="#DetectedBond">DetectedBond</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -548,29 +641,32 @@ td {
               <th>
                 <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
               </th>
+              <td><span>
+  <a href="#MonitoredBond">MonitoredBond</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="#SelectedBond">SelectedBond</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
               <td>
                 <ul>
-                  <li><span>
-  <a href="http://example.com#LLLink">LLLink</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="http://example.com#ULLink">ULLink</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span></li>
-                  <li><span>
-  <a href="http://example.com#PhyLink">PhyLink</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="http://example.com#LogLink">LogLink</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span></li>
-                  <li><span>
-  <a href="http://example.com#MonitoredBond">MonitoredBond</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="http://example.com#SelectedBond">SelectedBond</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span></li>
+                  <li>
+                    <span>
+                      <a href="#bindsWSender">bindsWSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#bindsWSignal">bindsWSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -582,37 +678,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="http://example.com#LLLink">LLLink</a>
+                      <a href="#MonitoredBond">MonitoredBond</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#LogLink">LogLink</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#MonitoredBond">MonitoredBond</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#PhyLink">PhyLink</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#SelectedBond">SelectedBond</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#ULLink">ULLink</a>
+                      <a href="#SelectedBond">SelectedBond</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -621,16 +693,22 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="DetectBond">
-          <h3>DetectBond
+        <div class="property entity" id="DetectedBond">
+          <h3>DetectedBond
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#DetectBond</code>
+                <code>https://purl.org/s2c2/hint#DetectedBond</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>is the truthmaker that binds Signal, Medium, and Receiver and supports the relation detectsSignal. It is the composition of the asymmetrical commitments between Receiver-Signal, Signal-Medium, and receiver-Medium, all representing external dependent modes (EDMs). It is also the truthmaker of the material relation between a Receiver and a Sender</p></td>
             </tr>
             <tr>
               <th>
@@ -648,19 +726,25 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="http://example.com#bindsMedium">bindsMedium</a>
+                      <a href="#bindsMedium">bindsMedium</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#bindsReceiver">bindsReceiver</a>
+                      <a href="#bindsReceiver">bindsReceiver</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#bindsSignal">bindsSignal</a>
+                      <a href="#bindsSender">bindsSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#bindsSignal">bindsSignal</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -677,11 +761,11 @@ td {
                     <span>
                       <span>
                         <span>
-                          <a href="http://example.com#bindsMedium">bindsMedium</a>
+                          <a href="#bindsMedium">bindsMedium</a>
                           <sup class="sup-op" title="OWL Object Property">op</sup>
                         </span>
                         <span>
-                          <span class="cardinality">exactly</span>
+                          <span class="cardinality">min</span>
                           <span>1</span>
                         </span><br>
                       </span>
@@ -691,11 +775,11 @@ td {
                     <span>
                       <span>
                         <span>
-                          <a href="http://example.com#bindsReceiver">bindsReceiver</a>
+                          <a href="#bindsReceiver">bindsReceiver</a>
                           <sup class="sup-op" title="OWL Object Property">op</sup>
                         </span>
                         <span>
-                          <span class="cardinality">exactly</span>
+                          <span class="cardinality">min</span>
                           <span>1</span>
                         </span><br>
                       </span>
@@ -705,11 +789,25 @@ td {
                     <span>
                       <span>
                         <span>
-                          <a href="http://example.com#bindsSignal">bindsSignal</a>
+                          <a href="#bindsSender">bindsSender</a>
                           <sup class="sup-op" title="OWL Object Property">op</sup>
                         </span>
                         <span>
-                          <span class="cardinality">exactly</span>
+                          <span class="cardinality">min</span>
+                          <span>1</span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <span>
+                          <a href="#bindsSignal">bindsSignal</a>
+                          <sup class="sup-op" title="OWL Object Property">op</sup>
+                        </span>
+                        <span>
+                          <span class="cardinality">min</span>
                           <span>1</span>
                         </span><br>
                       </span>
@@ -727,54 +825,6 @@ td {
                   <a href="#DecodedBond">DecodedBond</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="EMWave">
-          <h3>EMWave
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#EMWave</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <a href="http://purl.org/nemo/gufo#FunctionalComplex">gufo:FunctionalComplex</a>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="http://example.com#PhySignal">PhySignal</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#WiFiSignal">WiFiSignal</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#4GSignal">4GSignal</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
               </td>
             </tr>
           </table>
@@ -787,7 +837,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#FiberCable</code>
+                <code>https://purl.org/s2c2/hint#FiberCable</code>
               </td>
             </tr>
             <tr>
@@ -796,67 +846,51 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#PhyMedium">PhyMedium</a>
+                  <a href="#PropagationEnabler">PropagationEnabler</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="HTTP">
-          <h3>HTTP
+        <div class="property entity" id="HandShakeBond">
+          <h3>HandShakeBond
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#HTTP</code>
+                <code>https://purl.org/s2c2/hint#HandShakeBond</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>is the truthmaker of the material relationship that binds two distincts TRxs represeting their mutual commitements and obligations.</p></td>
             </tr>
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <span>
-                  <a href="#CommSW">CommSW</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="LLLink">
-          <h3>LLLink
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#LLLink</code>
+                <a href="http://purl.org/nemo/gufo#Relator">gufo:Relator</a>
               </td>
             </tr>
             <tr>
               <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
               </th>
               <td>
                 <span>
-                  <a href="#DecodedBond">DecodedBond</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#ULMedium">ULMedium</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                  <span>
+                    <a href="http://purl.org/nemo/gufo#mediates">gufo:mediates</a>
+                    <span>
+                      <span class="cardinality">min</span>
+                      <span>2</span>
+                    </span><br>
+                  </span>
                 </span>
               </td>
             </tr>
@@ -870,7 +904,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#LLMedium</code>
+                <code>https://purl.org/s2c2/hint#LLMedium</code>
               </td>
             </tr>
             <tr>
@@ -879,7 +913,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#Medium">Medium</a>
+                  <a href="#LogMedium">LogMedium</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -894,8 +928,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#LLNode</code>
+                <code>https://purl.org/s2c2/hint#LLNode</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>is a role category whenever a LayerNode "vertically" provides a service for another LayerNode</p></td>
             </tr>
             <tr>
               <th>
@@ -903,7 +943,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#Node">Node</a>
+                  <a href="#ServiceNode">ServiceNode</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -914,33 +954,92 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#requestService">requestService</a>
+                  <a href="#providedBy">providedBy</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="LogLink">
-          <h3>LogLink
+        <div class="property entity" id="LayerNode">
+          <h3>LayerNode
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#LogLink</code>
+                <code>https://purl.org/s2c2/hint#LayerNode</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>represents an entity in a layered network architecture that is grouped in a layer and generalizes two distinct categories of entities: CommBoards and CommSWs.</p></td>
             </tr>
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <span>
-                  <a href="#DecodedBond">DecodedBond</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <a href="http://purl.org/nemo/gufo#FunctionalComplex">gufo:FunctionalComplex</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
+              </th>
+              <td>
+                <ul>
+                  <li><span>
+  <a href="#CommBoard">CommBoard</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="#CommSW">CommSW</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span></li>
+                  <li><span>
+  <a href="#ServiceNode">ServiceNode</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="#PeerNode">PeerNode</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#CommBoard">CommBoard</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#CommSW">CommSW</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#PeerNode">PeerNode</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#ServiceNode">ServiceNode</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
               </td>
             </tr>
           </table>
@@ -953,73 +1052,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#LogMedium</code>
+                <code>https://purl.org/s2c2/hint#LogMedium</code>
               </td>
             </tr>
             <tr>
               <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
               </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="http://example.com#Medium">Medium</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <a href="http://purl.org/nemo/gufo#ExtrinsicMode">gufo:ExtrinsicMode</a>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="LogNode">
-          <h3>LogNode
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#LogNode</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#CommSW">CommSW</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#Node">Node</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="LogSignal">
-          <h3>LogSignal
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#LogSignal</code>
-              </td>
+              <td><p>a logical structure through or over which a logical Signal is conveyed</p></td>
             </tr>
             <tr>
               <th>
@@ -1027,156 +1067,22 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#Signal">Signal</a>
+                  <a href="#Medium">Medium</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="MSender">
-          <h3>MSender
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#MSender</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#WSender">WSender</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#generatesMSignal">generatesMSignal</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#monitors">monitors</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="MSignal">
-          <h3>MSignal
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#MSignal</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#WSignal">WSignal</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="http://example.com#decodesMSignal">decodesMSignal</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#generatesMSignal">generatesMSignal</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Medium">
-          <h3>Medium
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#Medium</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <a href="http://purl.org/nemo/gufo#Endurant">gufo:Endurant</a>
               </td>
             </tr>
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
               </th>
-              <td>
-                <ul>
-                  <li><span>
+              <td><span>
   <a href="#LLMedium">LLMedium</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://example.com#ULMedium">ULMedium</a>
+  <a href="#ULMedium">ULMedium</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span></li>
-                  <li><span>
-  <a href="http://example.com#PhyMedium">PhyMedium</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="#LogMedium">LogMedium</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span></li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#bindsMedium">bindsMedium</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
+</span></td>
             </tr>
             <tr>
               <th>
@@ -1192,19 +1098,78 @@ td {
                   </li>
                   <li>
                     <span>
+                      <a href="#ULMedium">ULMedium</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Medium">
+          <h3>Medium
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#Medium</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a structure through or over which a Signal is conveyed</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#FunctionalComplex">gufo:FunctionalComplex</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
+              </th>
+              <td><span>
+  <a href="#PhyMedium">PhyMedium</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="#LogMedium">LogMedium</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#bindsMedium">bindsMedium</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
                       <a href="#LogMedium">LogMedium</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#PhyMedium">PhyMedium</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#ULMedium">ULMedium</a>
+                      <a href="#PhyMedium">PhyMedium</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1221,8 +1186,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#MonitoredBond</code>
+                <code>https://purl.org/s2c2/hint#MonitoredBond</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>in mobile networks, the Receiver has to deal with several WantedSenders simultaneously. There are Signals that are not elected to be the ServingSignal, but need to be monitored to allow the execution of the handover process. In this sense, MonitoredSenders generates MonitoredSignals, which allows the bonding to a Receiver. The MonitoredBond represents such bonding, and it is a role played by the DecodedBond. According to 3GPP's recommendations, the MonitoredSender is also known as Neighbor and, therefore, the MonitoredBond is also known as the Neighbor Link.</p></td>
             </tr>
             <tr>
               <th>
@@ -1235,25 +1206,137 @@ td {
                 </span>
               </td>
             </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#bindsMSignal">bindsMSignal</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
           </table>
         </div>
-        <div class="property entity" id="Node">
-          <h3>Node
+        <div class="property entity" id="MonitoredSender">
+          <h3>MonitoredSender
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#Node</code>
+                <code>https://purl.org/s2c2/hint#MonitoredSender</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a role played by a WantedSender whenever its generates a Signal which is only monitored by the Receiver.</p></td>
             </tr>
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <a href="http://purl.org/nemo/gufo#FunctionalComplex">gufo:FunctionalComplex</a>
+                <span>
+                  <a href="#WantedSender">WantedSender</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#dependsOnMSender">dependsOnMSender</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="MonitoredSignal">
+          <h3>MonitoredSignal
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#MonitoredSignal</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a role WantedSignal plays whenever it is only monitored by the Receiver, becoming a SelectedSignal whenever necessary.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#WantedSignal">WantedSignal</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#bindsMSignal">bindsMSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#caracterizesMSignal">caracterizesMSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="PeerNode">
+          <h3>PeerNode
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#PeerNode</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a role category that a Layer Node plays when it "horizontally" communicates with another distinct Layer Node that shares the same communication Protocol.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#LayerNode">LayerNode</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
             <tr>
@@ -1263,27 +1346,50 @@ td {
               <td>
                 <ul>
                   <li><span>
-  <a href="http://example.com#ULNode">ULNode</a>
+  <a href="#Sender">Sender</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="#LLNode">LLNode</a>
+  <a href="#Receiver">Receiver</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></li>
                   <li><span>
-  <a href="#LogNode">LogNode</a>
+  <a href="#Tx">Tx</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://example.com#PhyNode">PhyNode</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span></li>
-                  <li><span>
-  <a href="http://example.com#Sender">Sender</a>
+  <a href="#Rx">Rx</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://example.com#Receiver">Receiver</a>
+  <a href="#TRx">TRx</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></li>
                 </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#hasProtocol">hasProtocol</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
+              </th>
+              <td>
+                <span>
+                  <span>
+                    <a href="n0c0d5419d21f4b90a59f65901415c418b31">n0c0d5419d21f4b90a59f65901415c418b31</a>
+                    <span>
+                      <span class="cardinality">exactly</span>
+                      <span>1</span>
+                    </span><br>
+                  </span>
+                </span>
               </td>
             </tr>
             <tr>
@@ -1294,65 +1400,35 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#LLNode">LLNode</a>
+                      <a href="#Receiver">Receiver</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#LogNode">LogNode</a>
+                      <a href="#Rx">Rx</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#PhyNode">PhyNode</a>
+                      <a href="#Sender">Sender</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#Receiver">Receiver</a>
+                      <a href="#TRx">TRx</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#Sender">Sender</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#ULNode">ULNode</a>
+                      <a href="#Tx">Tx</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                 </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="PhyLink">
-          <h3>PhyLink
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#PhyLink</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#DecodedBond">DecodedBond</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
               </td>
             </tr>
           </table>
@@ -1365,8 +1441,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#PhyMedium</code>
+                <code>https://purl.org/s2c2/hint#PhyMedium</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>natural or manufactured structure through or over which a physical Signal is conveyed. A role category that generalizes entities in the physical world able to propagate electromagnetic waves.</p></td>
             </tr>
             <tr>
               <th>
@@ -1381,9 +1463,71 @@ td {
                     </span>
                   </li>
                   <li>
-                    <a href="http://purl.org/nemo/gufo#FunctionalComplex">gufo:FunctionalComplex</a>
+                    <span>
+                      <a href="#PropagationEnabler">PropagationEnabler</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
                   </li>
                 </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Position">
+          <h3>Position
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#Position</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>it is the location of an entity according to a coordinate system</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#Quality">gufo:Quality</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#isPositionOf">isPositionOf</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="PropagationEnabler">
+          <h3>PropagationEnabler
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#PropagationEnabler</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#FunctionalComplex">gufo:FunctionalComplex</a>
               </td>
             </tr>
             <tr>
@@ -1394,7 +1538,7 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#Air">Air</a>
+                      <a href="#Atmosphere">Atmosphere</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1410,37 +1554,9 @@ td {
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="PhyNode">
-          <h3>PhyNode
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#PhyNode</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <ul>
                   <li>
                     <span>
-                      <a href="#CommHW">CommHW</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#Node">Node</a>
+                      <a href="#PhyMedium">PhyMedium</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1449,36 +1565,29 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="PhySignal">
-          <h3>PhySignal
+        <div class="property entity" id="Protocol">
+          <h3>Protocol
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#PhySignal</code>
+                <code>https://purl.org/s2c2/hint#Protocol</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a set of communication rules that allows information exchange between distinct PeerNodes</p></td>
             </tr>
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#EMWave">EMWave</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#Signal">Signal</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
+                <a href="http://purl.org/nemo/gufo#IntrinsicMode">gufo:IntrinsicMode</a>
               </td>
             </tr>
             <tr>
@@ -1486,26 +1595,26 @@ td {
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
               </th>
               <td>
-                <ul>
-                  <li>
+                <span>
+                  <a href="#hasProtocol">hasProtocol</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
+              </th>
+              <td>
+                <span>
+                  <span>
+                    <a href="http://purl.org/nemo/gufo#inheresIn">gufo:inheresIn</a>
                     <span>
-                      <a href="http://example.com#bandwidth">bandwidth</a>
-                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#frequency">frequency</a>
-                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#power">power</a>
-                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                    </span>
-                  </li>
-                </ul>
+                      <span class="cardinality">min</span>
+                      <span>1</span>
+                    </span><br>
+                  </span>
+                </span>
               </td>
             </tr>
           </table>
@@ -1518,8 +1627,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#Receiver</code>
+                <code>https://purl.org/s2c2/hint#Receiver</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>an abstract entity that detects Signals</p></td>
             </tr>
             <tr>
               <th>
@@ -1527,60 +1642,9 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Node">Node</a>
+                  <a href="#PeerNode">PeerNode</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="http://example.com#decodes">decodes</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#decodesMSignal">decodesMSignal</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#decodesSSignal">decodesSSignal</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#decodesSignal">decodesSignal</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#detectsSignal">detectsSignal</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#isServedBy">isServedBy</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#monitors">monitors</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
               </td>
             </tr>
             <tr>
@@ -1589,23 +1653,45 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#bindsReceiver">bindsReceiver</a>
+                  <a href="#bindsReceiver">bindsReceiver</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
+              </th>
+              <td>
+                <span>
+                  <span>
+                    <a href="n0c0d5419d21f4b90a59f65901415c418b34">n0c0d5419d21f4b90a59f65901415c418b34</a>
+                    <span>
+                      <span class="cardinality">exactly</span>
+                      <span>1</span>
+                    </span><br>
+                  </span>
                 </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="SSender">
-          <h3>SSender
+        <div class="property entity" id="Rx">
+          <h3>Rx
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#SSender</code>
+                <code>https://purl.org/s2c2/hint#Rx</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>hardware or software that can play, among others, the role of Receiver but not of Sender</p></td>
             </tr>
             <tr>
               <th>
@@ -1613,76 +1699,9 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#WSender">WSender</a>
+                  <a href="#PeerNode">PeerNode</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#generatesSSignal">generatesSSignal</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#isServedBy">isServedBy</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="SSignal">
-          <h3>SSignal
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#SSignal</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#WSignal">WSignal</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="http://example.com#decodesSSignal">decodesSSignal</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#generatesSSignal">generatesSSignal</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
               </td>
             </tr>
           </table>
@@ -1695,8 +1714,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#SelectedBond</code>
+                <code>https://purl.org/s2c2/hint#SelectedBond</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>in mobile networks, the Receiver has to deal with several WantedSenders simultaneously. Among them, one is selected to be the SelectedSender. Therefore, the SelectedBond, a role of the DecodedBond,  represents the bonding of a SelectedSender and Receiver, where the user's information is actually exchanged. According to 3GPP's recommendations, the SelectedSender is also known as Server and , therefore, the SelectedBond is also known as the Server Link.</p></td>
             </tr>
             <tr>
               <th>
@@ -1707,6 +1732,148 @@ td {
                   <a href="#DecodedBond">DecodedBond</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#bindsSSender">bindsSSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#bindsSSignal">bindsSSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
+              </th>
+              <td>
+                <span>
+                  <span>
+                    <span>
+                      <a href="#bindsSSender">bindsSSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                    <span>
+                      <span class="cardinality">min</span>
+                      <span>1</span>
+                    </span><br>
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="SelectedSender">
+          <h3>SelectedSender
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#SelectedSender</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a role played by a WantedSender whenever it generates a Signal that is selected for information exchange.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#WantedSender">WantedSender</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#bindsSSender">bindsSSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#dependsOnSSender">dependsOnSSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="SelectedSignal">
+          <h3>SelectedSignal
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#SelectedSignal</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a role WantedSignal plays whenever it is selected for information exchange between the WantedSender, now playing the role of SelectedSignal, and the Receiver.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#WantedSignal">WantedSignal</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#bindsSSignal">bindsSSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#caracterizesSSignal">caracterizesSSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
               </td>
             </tr>
           </table>
@@ -1719,8 +1886,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#Sender</code>
+                <code>https://purl.org/s2c2/hint#Sender</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>an abstract entity that generates and transmits Signals</p></td>
             </tr>
             <tr>
               <th>
@@ -1728,19 +1901,45 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Node">Node</a>
+                  <a href="#PeerNode">PeerNode</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
             </tr>
             <tr>
               <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#bindsSender">bindsSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#dependsOnSender">dependsOnSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#generates">generates</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                  <span>
+                    <a href="n0c0d5419d21f4b90a59f65901415c418b37">n0c0d5419d21f4b90a59f65901415c418b37</a>
+                    <span>
+                      <span class="cardinality">exactly</span>
+                      <span>1</span>
+                    </span><br>
+                  </span>
                 </span>
               </td>
             </tr>
@@ -1750,9 +1949,72 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#WSender">WSender</a>
+                  <a href="#WantedSender">WantedSender</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="ServiceNode">
+          <h3>ServiceNode
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#ServiceNode</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a role category played by a LayerNode when it ServiceNode whenever it "vertically" requests and/or provides network services to another LayerNode in the same host.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#LayerNode">LayerNode</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
+              </th>
+              <td><span>
+  <a href="#ULNode">ULNode</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="#LLNode">LLNode</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#LLNode">LLNode</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#ULNode">ULNode</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
               </td>
             </tr>
           </table>
@@ -1765,8 +2027,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#Signal</code>
+                <code>https://purl.org/s2c2/hint#Signal</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a detectable transmitted energy that can be used to carry information</p></td>
             </tr>
             <tr>
               <th>
@@ -1778,41 +2046,35 @@ td {
             </tr>
             <tr>
               <th>
-                <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
-              </th>
-              <td><span>
-  <a href="#PhySignal">PhySignal</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="#LogSignal">LogSignal</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span></td>
-            </tr>
-            <tr>
-              <th>
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
               </th>
               <td>
                 <ul>
                   <li>
                     <span>
-                      <a href="http://example.com#bindsSignal">bindsSignal</a>
+                      <a href="#bindsSignal">bindsSignal</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#detectsSignal">detectsSignal</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#generates">generates</a>
+                      <a href="#caracterizesSignal">caracterizesSignal</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                 </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
+              </th>
+              <td>
+                <span>
+                  <span>
+                    <a href="n0c0d5419d21f4b90a59f65901415c418b42">n0c0d5419d21f4b90a59f65901415c418b42</a>some<br>
+                  </span>
+                </span>
               </td>
             </tr>
             <tr>
@@ -1820,23 +2082,142 @@ td {
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
               </th>
               <td>
+                <span>
+                  <a href="#WantedSignal">WantedSignal</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="SignalGeneration">
+          <h3>SignalGeneration
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#SignalGeneration</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>is the truthmaker of the material relation between a Sender and a Signal, which characterizes the latter and is externally dependent on the former. It bears signal properties such as frequency, power, and bandwidth, among others.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#ExtrinsicMode">gufo:ExtrinsicMode</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
                 <ul>
                   <li>
                     <span>
-                      <a href="#LogSignal">LogSignal</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                      <a href="#caracterizesMSignal">caracterizesMSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#PhySignal">PhySignal</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                      <a href="#caracterizesSSignal">caracterizesSSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#WSignal">WSignal</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                      <a href="#caracterizesSignal">caracterizesSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#caracterizesWSignal">caracterizesWSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#dependsOnMSender">dependsOnMSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#dependsOnSSender">dependsOnSSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#dependsOnSender">dependsOnSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#dependsOnWSender">dependsOnWSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="signalGeneration:bandwidth">bandwidth</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="signalGeneration:frequency">frequency</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="signalGeneration:power">power</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <span>
+                        <span>
+                          <a href="#dependsOnSender">dependsOnSender</a>
+                          <sup class="sup-op" title="OWL Object Property">op</sup>
+                        </span>some<br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <span>
+                          <a href="#caracterizesSignal">caracterizesSignal</a>
+                          <sup class="sup-op" title="OWL Object Property">op</sup>
+                        </span>
+                        <span>
+                          <span class="cardinality">min</span>
+                          <span>1</span>
+                        </span><br>
+                      </span>
                     </span>
                   </li>
                 </ul>
@@ -1844,16 +2225,107 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="ULLink">
-          <h3>ULLink
+        <div class="property entity" id="SrvRequest">
+          <h3>SrvRequest
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#ULLink</code>
+                <code>https://purl.org/s2c2/hint#SrvRequest</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>is the truthmaker of the material relation between a ULNode and a LLNode, which characterizes the latter and is externally dependent on the former.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#ExtrinsicMode">gufo:ExtrinsicMode</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#providedBy">providedBy</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#requestedBy">requestedBy</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <span>
+                        <span>
+                          <a href="#providedBy">providedBy</a>
+                          <sup class="sup-op" title="OWL Object Property">op</sup>
+                        </span>
+                        <span>
+                          <span class="cardinality">min</span>
+                          <span>1</span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <span>
+                          <a href="#requestedBy">requestedBy</a>
+                          <sup class="sup-op" title="OWL Object Property">op</sup>
+                        </span>
+                        <span>
+                          <span class="cardinality">min</span>
+                          <span>1</span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="TRx">
+          <h3>TRx
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#TRx</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>hardware or software that can play, among others, the role of Sender and Receiver</p></td>
             </tr>
             <tr>
               <th>
@@ -1861,7 +2333,37 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#DecodedBond">DecodedBond</a>
+                  <a href="#PeerNode">PeerNode</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Tx">
+          <h3>Tx
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#Tx</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>hardware or software that can play, among others, the role of Sender but not of Receiver</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#PeerNode">PeerNode</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1876,7 +2378,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#ULMedium</code>
+                <code>https://purl.org/s2c2/hint#ULMedium</code>
               </td>
             </tr>
             <tr>
@@ -1884,20 +2386,10 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
               </th>
               <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#LLLink">LLLink</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#Medium">Medium</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
+                <span>
+                  <a href="#LogMedium">LogMedium</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
           </table>
@@ -1910,8 +2402,14 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#ULNode</code>
+                <code>https://purl.org/s2c2/hint#ULNode</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>is a role category whenever a LayerNode "vertically" requests a service for another LayerNode</p></td>
             </tr>
             <tr>
               <th>
@@ -1919,34 +2417,40 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Node">Node</a>
+                  <a href="#ServiceNode">ServiceNode</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
             </tr>
             <tr>
               <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#requestService">requestService</a>
+                  <a href="#requestedBy">requestedBy</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="WSender">
-          <h3>WSender
+        <div class="property entity" id="WantedSender">
+          <h3>WantedSender
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#WSender</code>
+                <code>https://purl.org/s2c2/hint#WantedSender</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a role played by a Sender whenever it generates a Signal that is decoded by the Receiver</p></td>
             </tr>
             <tr>
               <th>
@@ -1964,33 +2468,32 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
               </th>
               <td><span>
-  <a href="#MSender">MSender</a>
+  <a href="#SelectedSender">SelectedSender</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="#SSender">SSender</a>
+  <a href="#MonitoredSender">MonitoredSender</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#generatesWSignal">generatesWSignal</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
             </tr>
             <tr>
               <th>
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
               </th>
               <td>
-                <span>
-                  <a href="http://example.com#decodes">decodes</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#bindsWSender">bindsWSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#dependsOnWSender">dependsOnWSender</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -2001,13 +2504,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#MSender">MSender</a>
+                      <a href="#MonitoredSender">MonitoredSender</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#SSender">SSender</a>
+                      <a href="#SelectedSender">SelectedSender</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -2016,16 +2519,22 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="WSignal">
-          <h3>WSignal
+        <div class="property entity" id="WantedSignal">
+          <h3>WantedSignal
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#WSignal</code>
+                <code>https://purl.org/s2c2/hint#WantedSignal</code>
               </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a Signal conveying Information that is not only detected but also understood (or decoded) by the Receiver. In other words, it is a Signal role whenever it is decoded by the Receiver</p></td>
             </tr>
             <tr>
               <th>
@@ -2043,10 +2552,10 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
               </th>
               <td><span>
-  <a href="#MSignal">MSignal</a>
+  <a href="#MonitoredSignal">MonitoredSignal</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="#SSignal">SSignal</a>
+  <a href="#SelectedSignal">SelectedSignal</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2058,13 +2567,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="http://example.com#decodesSignal">decodesSignal</a>
+                      <a href="#bindsWSignal">bindsWSignal</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://example.com#generatesWSignal">generatesWSignal</a>
+                      <a href="#caracterizesWSignal">caracterizesWSignal</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -2079,13 +2588,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#MSignal">MSignal</a>
+                      <a href="#MonitoredSignal">MonitoredSignal</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#SSignal">SSignal</a>
+                      <a href="#SelectedSignal">SelectedSignal</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -2094,125 +2603,29 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="WiFiSignal">
-          <h3>WiFiSignal
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#WiFiSignal</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#EMWave">EMWave</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="4GSignal">
-          <h3>4GSignal
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#4GSignal</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#EMWave">EMWave</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="80211Med">
-          <h3>80211Med
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#80211Med</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#CommSW">CommSW</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="80211Phy">
-          <h3>80211Phy
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#80211Phy</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#CommHW">CommHW</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
       </div>
       <span>
-        <a href="http://example.com#LLLink">LLLink</a>
+        <a href="#MonitoredBond">MonitoredBond</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#ULLink">ULLink</a>
+        <a href="#SelectedBond">SelectedBond</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#LogLink">LogLink</a>
+        <a href="#CommBoard">CommBoard</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#PhyLink">PhyLink</a>
+        <a href="#CommSW">CommSW</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#MonitoredBond">MonitoredBond</a>
+        <a href="#PeerNode">PeerNode</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#SelectedBond">SelectedBond</a>
+        <a href="#ServiceNode">ServiceNode</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -2220,7 +2633,7 @@ td {
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#ULMedium">ULMedium</a>
+        <a href="#ULMedium">ULMedium</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -2228,7 +2641,27 @@ td {
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#PhyMedium">PhyMedium</a>
+        <a href="#PhyMedium">PhyMedium</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="#Receiver">Receiver</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="#Sender">Sender</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="#Rx">Rx</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="#TRx">TRx</a>
+        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+      </span>
+      <span>
+        <a href="#Tx">Tx</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
@@ -2236,51 +2669,73 @@ td {
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#ULNode">ULNode</a>
+        <a href="#ULNode">ULNode</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="#LogNode">LogNode</a>
+        <a href="#MonitoredSender">MonitoredSender</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#PhyNode">PhyNode</a>
+        <a href="#SelectedSender">SelectedSender</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#Receiver">Receiver</a>
+        <a href="#MonitoredSignal">MonitoredSignal</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <span>
-        <a href="http://example.com#Sender">Sender</a>
-        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-      </span>
-      <span>
-        <a href="#LogSignal">LogSignal</a>
-        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-      </span>
-      <span>
-        <a href="#PhySignal">PhySignal</a>
-        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-      </span>
-      <span>
-        <a href="#MSender">MSender</a>
-        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-      </span>
-      <span>
-        <a href="#SSender">SSender</a>
-        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-      </span>
-      <span>
-        <a href="#MSignal">MSignal</a>
-        <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-      </span>
-      <span>
-        <a href="#SSignal">SSignal</a>
+        <a href="#SelectedSignal">SelectedSignal</a>
         <sup class="sup-c" title="OWL/RDFS Class">c</sup>
       </span>
       <div class="section" id="objectproperties">
         <h2>Object Properties</h2>
+        <div class="property entity" id="bindsMSignal">
+          <h3>bindsMSignal
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#bindsMSignal</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#bindsWSignal">bindsWSignal</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#MonitoredBond">MonitoredBond</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#MonitoredSignal">MonitoredSignal</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
         <div class="property entity" id="bindsMedium">
           <h3>bindsMedium
             <sup class="sup-op" title="OWL Object Property">op</sup>
@@ -2289,7 +2744,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#bindsMedium</code>
+                <code>https://purl.org/s2c2/hint#bindsMedium</code>
               </td>
             </tr>
             <tr>
@@ -2306,7 +2761,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#DetectBond">DetectBond</a>
+                  <a href="#DetectedBond">DetectedBond</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2332,7 +2787,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#bindsReceiver</code>
+                <code>https://purl.org/s2c2/hint#bindsReceiver</code>
               </td>
             </tr>
             <tr>
@@ -2349,7 +2804,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#DetectBond">DetectBond</a>
+                  <a href="#DetectedBond">DetectedBond</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2361,6 +2816,152 @@ td {
               <td>
                 <span>
                   <a href="#Receiver">Receiver</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="bindsSSender">
+          <h3>bindsSSender
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#bindsSSender</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#bindsWSender">bindsWSender</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SelectedBond">SelectedBond</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SelectedSender">SelectedSender</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="bindsSSignal">
+          <h3>bindsSSignal
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#bindsSSignal</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#bindsWSignal">bindsWSignal</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SelectedBond">SelectedBond</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SelectedSignal">SelectedSignal</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="bindsSender">
+          <h3>bindsSender
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#bindsSender</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#externallyDependsOn">gufo:externallyDependsOn</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#bindsWSender">bindsWSender</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#DetectedBond">DetectedBond</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sender">Sender</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2375,7 +2976,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#bindsSignal</code>
+                <code>https://purl.org/s2c2/hint#bindsSignal</code>
               </td>
             </tr>
             <tr>
@@ -2388,11 +2989,22 @@ td {
             </tr>
             <tr>
               <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#bindsWSignal">bindsWSignal</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td>
                 <span>
-                  <a href="#DetectBond">DetectBond</a>
+                  <a href="#DetectedBond">DetectedBond</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2410,15 +3022,26 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="decodes">
-          <h3>decodes
+        <div class="property entity" id="bindsWSender">
+          <h3>bindsWSender
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#decodes</code>
+                <code>https://purl.org/s2c2/hint#bindsWSender</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#bindsSender">bindsSender</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
               </td>
             </tr>
             <tr>
@@ -2426,64 +3049,8 @@ td {
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
               </th>
               <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="http://example.com#isServedBy">isServedBy</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="http://example.com#monitors">monitors</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
                 <span>
-                  <a href="#Receiver">Receiver</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#WSender">WSender</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="decodesMSignal">
-          <h3>decodesMSignal
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#decodesMSignal</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#decodesSignal">decodesSignal</a>
+                  <a href="#bindsSSender">bindsSSender</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2494,7 +3061,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Receiver">Receiver</a>
+                  <a href="#DecodedBond">DecodedBond</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2505,22 +3072,22 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#MSignal">MSignal</a>
+                  <a href="#WantedSender">WantedSender</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="decodesSSignal">
-          <h3>decodesSSignal
+        <div class="property entity" id="bindsWSignal">
+          <h3>bindsWSignal
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#decodesSSignal</code>
+                <code>https://purl.org/s2c2/hint#bindsWSignal</code>
               </td>
             </tr>
             <tr>
@@ -2529,53 +3096,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#decodesSignal">decodesSignal</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Receiver">Receiver</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#SSignal">SSignal</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="decodesSignal">
-          <h3>decodesSignal
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#decodesSignal</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#detectsSignal">detectsSignal</a>
+                  <a href="#bindsSignal">bindsSignal</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2588,13 +3109,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#decodesMSignal">decodesMSignal</a>
+                      <a href="#bindsMSignal">bindsMSignal</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#decodesSSignal">decodesSSignal</a>
+                      <a href="#bindsSSignal">bindsSSignal</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -2607,7 +3128,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Receiver">Receiver</a>
+                  <a href="#DecodedBond">DecodedBond</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2618,31 +3139,31 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#WSignal">WSignal</a>
+                  <a href="#WantedSignal">WantedSignal</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="detectsSignal">
-          <h3>detectsSignal
+        <div class="property entity" id="caracterizesMSignal">
+          <h3>caracterizesMSignal
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#detectsSignal</code>
+                <code>https://purl.org/s2c2/hint#caracterizesMSignal</code>
               </td>
             </tr>
             <tr>
               <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
               </th>
               <td>
                 <span>
-                  <a href="#decodesSignal">decodesSignal</a>
+                  <a href="#caracterizesWSignal">caracterizesWSignal</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2653,7 +3174,107 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Receiver">Receiver</a>
+                  <a href="#SignalGeneration">SignalGeneration</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#MonitoredSignal">MonitoredSignal</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="caracterizesSSignal">
+          <h3>caracterizesSSignal
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#caracterizesSSignal</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#caracterizesWSignal">caracterizesWSignal</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SignalGeneration">SignalGeneration</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SelectedSignal">SelectedSignal</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="caracterizesSignal">
+          <h3>caracterizesSignal
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#caracterizesSignal</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#inheresIn">gufo:inheresIn</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#caracterizesWSignal">caracterizesWSignal</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SignalGeneration">SignalGeneration</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2671,15 +3292,182 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="generates">
-          <h3>generates
+        <div class="property entity" id="caracterizesWSignal">
+          <h3>caracterizesWSignal
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#generates</code>
+                <code>https://purl.org/s2c2/hint#caracterizesWSignal</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#caracterizesSignal">caracterizesSignal</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#caracterizesMSignal">caracterizesMSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#caracterizesSSignal">caracterizesSSignal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SignalGeneration">SignalGeneration</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#WantedSignal">WantedSignal</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="dependsOnMSender">
+          <h3>dependsOnMSender
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#dependsOnMSender</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#dependsOnWSender">dependsOnWSender</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SignalGeneration">SignalGeneration</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#MonitoredSender">MonitoredSender</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="dependsOnSSender">
+          <h3>dependsOnSSender
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#dependsOnSSender</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#dependsOnWSender">dependsOnWSender</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SignalGeneration">SignalGeneration</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SelectedSender">SelectedSender</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="dependsOnSender">
+          <h3>dependsOnSender
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#dependsOnSender</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#externallyDependsOn">gufo:externallyDependsOn</a>
               </td>
             </tr>
             <tr>
@@ -2688,7 +3476,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#generatesWSignal">generatesWSignal</a>
+                  <a href="#dependsOnWSender">dependsOnWSender</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2696,6 +3484,17 @@ td {
             <tr>
               <th>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SignalGeneration">SignalGeneration</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
                 <span>
@@ -2704,28 +3503,17 @@ td {
                 </span>
               </td>
             </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Signal">Signal</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
           </table>
         </div>
-        <div class="property entity" id="generatesMSignal">
-          <h3>generatesMSignal
+        <div class="property entity" id="dependsOnWSender">
+          <h3>dependsOnWSender
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#generatesMSignal</code>
+                <code>https://purl.org/s2c2/hint#dependsOnWSender</code>
               </td>
             </tr>
             <tr>
@@ -2734,99 +3522,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="http://example.com#generatesWSignal">generatesWSignal</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#MSender">MSender</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#MSignal">MSignal</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="generatesSSignal">
-          <h3>generatesSSignal
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#generatesSSignal</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://example.com#generatesWSignal">generatesWSignal</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#SSender">SSender</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#SSignal">SSignal</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="generatesWSignal">
-          <h3>generatesWSignal
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://example.com#generatesWSignal</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#generates">generates</a>
+                  <a href="#dependsOnSender">dependsOnSender</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2839,13 +3535,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#generatesMSignal">generatesMSignal</a>
+                      <a href="#dependsOnMSender">dependsOnMSender</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#generatesSSignal">generatesSSignal</a>
+                      <a href="#dependsOnSSender">dependsOnSSender</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -2858,7 +3554,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#WSender">WSender</a>
+                  <a href="#SignalGeneration">SignalGeneration</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2869,22 +3565,30 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#WSignal">WSignal</a>
+                  <a href="#WantedSender">WantedSender</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="hasCommHW">
-          <h3>hasCommHW
+        <div class="property entity" id="hasCB">
+          <h3>has cb
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#hasCommHW</code>
+                <code>https://purl.org/s2c2/hint#hasCB</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#isComponentOf">gufo:isComponentOf</a>
               </td>
             </tr>
             <tr>
@@ -2904,22 +3608,30 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#CommHW">CommHW</a>
+                  <a href="#CommBoard">CommBoard</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="hasCommSW">
-          <h3>hasCommSW
+        <div class="property entity" id="hasCS">
+          <h3>has cs
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#hasCommSW</code>
+                <code>https://purl.org/s2c2/hint#hasCS</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#isComponentOf">gufo:isComponentOf</a>
               </td>
             </tr>
             <tr>
@@ -2946,15 +3658,15 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="isServedBy">
-          <h3>isServedBy
+        <div class="property entity" id="hasProtocol">
+          <h3>has protocol
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#isServedBy</code>
+                <code>https://purl.org/s2c2/hint#hasProtocol</code>
               </td>
             </tr>
             <tr>
@@ -2962,10 +3674,7 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
               </th>
               <td>
-                <span>
-                  <a href="#decodes">decodes</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
+                <a href="http://purl.org/nemo/gufo#inheresIn">gufo:inheresIn</a>
               </td>
             </tr>
             <tr>
@@ -2974,7 +3683,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Receiver">Receiver</a>
+                  <a href="#Protocol">Protocol</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2985,22 +3694,22 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SSender">SSender</a>
+                  <a href="#PeerNode">PeerNode</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="monitors">
-          <h3>monitors
+        <div class="property entity" id="isPositionOf">
+          <h3>is position of
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#monitors</code>
+                <code>https://purl.org/s2c2/hint#isPositionOf</code>
               </td>
             </tr>
             <tr>
@@ -3008,10 +3717,7 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
               </th>
               <td>
-                <span>
-                  <a href="#decodes">decodes</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
+                <a href="http://purl.org/nemo/gufo#inheresIn">gufo:inheresIn</a>
               </td>
             </tr>
             <tr>
@@ -3020,7 +3726,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Receiver">Receiver</a>
+                  <a href="#Position">Position</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3031,22 +3737,30 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#MSender">MSender</a>
+                  <a href="#CommDevice">CommDevice</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="requestService">
-          <h3>requestService
+        <div class="property entity" id="providedBy">
+          <h3>providedBy
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#requestService</code>
+                <code>https://purl.org/s2c2/hint#providedBy</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#inheresIn">gufo:inheresIn</a>
               </td>
             </tr>
             <tr>
@@ -3055,7 +3769,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#ULNode">ULNode</a>
+                  <a href="#SrvRequest">SrvRequest</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3073,6 +3787,49 @@ td {
             </tr>
           </table>
         </div>
+        <div class="property entity" id="requestedBy">
+          <h3>requestedBy
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://purl.org/s2c2/hint#requestedBy</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <a href="http://purl.org/nemo/gufo#externallyDependsOn">gufo:externallyDependsOn</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SrvRequest">SrvRequest</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#ULNode">ULNode</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="section" id="datatypeproperties">
         <h2>Datatype Properties</h2>
@@ -3084,7 +3841,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#bandwidth</code>
+                <code>signalGeneration:bandwidth</code>
               </td>
             </tr>
             <tr>
@@ -3101,7 +3858,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhySignal">PhySignal</a>
+                  <a href="#SignalGeneration">SignalGeneration</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3116,7 +3873,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#frequency</code>
+                <code>signalGeneration:frequency</code>
               </td>
             </tr>
             <tr>
@@ -3133,7 +3890,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhySignal">PhySignal</a>
+                  <a href="#SignalGeneration">SignalGeneration</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3148,7 +3905,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://example.com#power</code>
+                <code>signalGeneration:power</code>
               </td>
             </tr>
             <tr>
@@ -3165,38 +3922,9 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhySignal">PhySignal</a>
+                  <a href="#SignalGeneration">SignalGeneration</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="section" id="annotationproperties">
-        <h2>Annotation Properties</h2>
-        <div class="property entity" id="isDerivedFrom">
-          <h3>is derived from
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://purl.org/nemo/gufo#isDerivedFrom</code>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="isRuleEnabled">
-          <h3>is rule enabled
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled</code>
               </td>
             </tr>
           </table>
@@ -3207,7 +3935,7 @@ td {
         <dl>
           <dt id=":">:</dt>
           <dd>
-            <code>http://example.com#</code>
+            <code>https://purl.org/s2c2/hint#</code>
           </dd>
           <dt id="dc">dc</dt>
           <dd>
@@ -3223,11 +3951,15 @@ td {
           </dd>
           <dt id="ns1">ns1</dt>
           <dd>
-            <code>http://</code>
+            <code>https://purl.org/s2c2/</code>
           </dd>
           <dt id="owl">owl</dt>
           <dd>
             <code>http://www.w3.org/2002/07/owl#</code>
+          </dd>
+          <dt id="prov">prov</dt>
+          <dd>
+            <code>http://www.w3.org/ns/prov#</code>
           </dd>
           <dt id="rdf">rdf</dt>
           <dd>
@@ -3236,6 +3968,10 @@ td {
           <dt id="rdfs">rdfs</dt>
           <dd>
             <code>http://www.w3.org/2000/01/rdf-schema#</code>
+          </dd>
+          <dt id="vann">vann</dt>
+          <dd>
+            <code>http://purl.org/vocab/vann/</code>
           </dd>
         </dl>
       </div>
@@ -3259,12 +3995,6 @@ td {
               <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
             </td>
             <td>Datatype Properties</td>
-          </tr>
-          <tr>
-            <td>
-              <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-            </td>
-            <td>Annotation Properties</td>
           </tr>
         </table>
       </div>
@@ -3296,16 +4026,16 @@ td {
           </h4>
           <ul class="second">
             <li>
-              <a href="#Air">Air</a>
+              <a href="#Atmosphere">Atmosphere</a>
             </li>
             <li>
               <a href="#CoaxialCable">CoaxialCable</a>
             </li>
             <li>
-              <a href="#CommDevice">CommDevice</a>
+              <a href="#CommBoard">CommBoard</a>
             </li>
             <li>
-              <a href="#CommHW">CommHW</a>
+              <a href="#CommDevice">CommDevice</a>
             </li>
             <li>
               <a href="#CommSW">CommSW</a>
@@ -3314,19 +4044,13 @@ td {
               <a href="#DecodedBond">DecodedBond</a>
             </li>
             <li>
-              <a href="#DetectBond">DetectBond</a>
-            </li>
-            <li>
-              <a href="#EMWave">EMWave</a>
+              <a href="#DetectedBond">DetectedBond</a>
             </li>
             <li>
               <a href="#FiberCable">FiberCable</a>
             </li>
             <li>
-              <a href="#HTTP">HTTP</a>
-            </li>
-            <li>
-              <a href="#LLLink">LLLink</a>
+              <a href="#HandShakeBond">HandShakeBond</a>
             </li>
             <li>
               <a href="#LLMedium">LLMedium</a>
@@ -3335,22 +4059,10 @@ td {
               <a href="#LLNode">LLNode</a>
             </li>
             <li>
-              <a href="#LogLink">LogLink</a>
+              <a href="#LayerNode">LayerNode</a>
             </li>
             <li>
               <a href="#LogMedium">LogMedium</a>
-            </li>
-            <li>
-              <a href="#LogNode">LogNode</a>
-            </li>
-            <li>
-              <a href="#LogSignal">LogSignal</a>
-            </li>
-            <li>
-              <a href="#MSender">MSender</a>
-            </li>
-            <li>
-              <a href="#MSignal">MSignal</a>
             </li>
             <li>
               <a href="#Medium">Medium</a>
@@ -3359,40 +4071,61 @@ td {
               <a href="#MonitoredBond">MonitoredBond</a>
             </li>
             <li>
-              <a href="#Node">Node</a>
+              <a href="#MonitoredSender">MonitoredSender</a>
             </li>
             <li>
-              <a href="#PhyLink">PhyLink</a>
+              <a href="#MonitoredSignal">MonitoredSignal</a>
+            </li>
+            <li>
+              <a href="#PeerNode">PeerNode</a>
             </li>
             <li>
               <a href="#PhyMedium">PhyMedium</a>
             </li>
             <li>
-              <a href="#PhyNode">PhyNode</a>
+              <a href="#Position">Position</a>
             </li>
             <li>
-              <a href="#PhySignal">PhySignal</a>
+              <a href="#PropagationEnabler">PropagationEnabler</a>
+            </li>
+            <li>
+              <a href="#Protocol">Protocol</a>
             </li>
             <li>
               <a href="#Receiver">Receiver</a>
             </li>
             <li>
-              <a href="#SSender">SSender</a>
-            </li>
-            <li>
-              <a href="#SSignal">SSignal</a>
+              <a href="#Rx">Rx</a>
             </li>
             <li>
               <a href="#SelectedBond">SelectedBond</a>
             </li>
             <li>
+              <a href="#SelectedSender">SelectedSender</a>
+            </li>
+            <li>
+              <a href="#SelectedSignal">SelectedSignal</a>
+            </li>
+            <li>
               <a href="#Sender">Sender</a>
+            </li>
+            <li>
+              <a href="#ServiceNode">ServiceNode</a>
             </li>
             <li>
               <a href="#Signal">Signal</a>
             </li>
             <li>
-              <a href="#ULLink">ULLink</a>
+              <a href="#SignalGeneration">SignalGeneration</a>
+            </li>
+            <li>
+              <a href="#SrvRequest">SrvRequest</a>
+            </li>
+            <li>
+              <a href="#TRx">TRx</a>
+            </li>
+            <li>
+              <a href="#Tx">Tx</a>
             </li>
             <li>
               <a href="#ULMedium">ULMedium</a>
@@ -3401,22 +4134,10 @@ td {
               <a href="#ULNode">ULNode</a>
             </li>
             <li>
-              <a href="#WSender">WSender</a>
+              <a href="#WantedSender">WantedSender</a>
             </li>
             <li>
-              <a href="#WSignal">WSignal</a>
-            </li>
-            <li>
-              <a href="#WiFiSignal">WiFiSignal</a>
-            </li>
-            <li>
-              <a href="#4GSignal">4GSignal</a>
-            </li>
-            <li>
-              <a href="#80211Med">80211Med</a>
-            </li>
-            <li>
-              <a href="#80211Phy">80211Phy</a>
+              <a href="#WantedSignal">WantedSignal</a>
             </li>
           </ul>
         </li>
@@ -3426,55 +4147,73 @@ td {
           </h4>
           <ul class="second">
             <li>
+              <a href="#bindsMSignal">bindsMSignal</a>
+            </li>
+            <li>
               <a href="#bindsMedium">bindsMedium</a>
             </li>
             <li>
               <a href="#bindsReceiver">bindsReceiver</a>
             </li>
             <li>
+              <a href="#bindsSSender">bindsSSender</a>
+            </li>
+            <li>
+              <a href="#bindsSSignal">bindsSSignal</a>
+            </li>
+            <li>
+              <a href="#bindsSender">bindsSender</a>
+            </li>
+            <li>
               <a href="#bindsSignal">bindsSignal</a>
             </li>
             <li>
-              <a href="#decodes">decodes</a>
+              <a href="#bindsWSender">bindsWSender</a>
             </li>
             <li>
-              <a href="#decodesMSignal">decodesMSignal</a>
+              <a href="#bindsWSignal">bindsWSignal</a>
             </li>
             <li>
-              <a href="#decodesSSignal">decodesSSignal</a>
+              <a href="#caracterizesMSignal">caracterizesMSignal</a>
             </li>
             <li>
-              <a href="#decodesSignal">decodesSignal</a>
+              <a href="#caracterizesSSignal">caracterizesSSignal</a>
             </li>
             <li>
-              <a href="#detectsSignal">detectsSignal</a>
+              <a href="#caracterizesSignal">caracterizesSignal</a>
             </li>
             <li>
-              <a href="#generates">generates</a>
+              <a href="#caracterizesWSignal">caracterizesWSignal</a>
             </li>
             <li>
-              <a href="#generatesMSignal">generatesMSignal</a>
+              <a href="#dependsOnMSender">dependsOnMSender</a>
             </li>
             <li>
-              <a href="#generatesSSignal">generatesSSignal</a>
+              <a href="#dependsOnSSender">dependsOnSSender</a>
             </li>
             <li>
-              <a href="#generatesWSignal">generatesWSignal</a>
+              <a href="#dependsOnSender">dependsOnSender</a>
             </li>
             <li>
-              <a href="#hasCommHW">hasCommHW</a>
+              <a href="#dependsOnWSender">dependsOnWSender</a>
             </li>
             <li>
-              <a href="#hasCommSW">hasCommSW</a>
+              <a href="#hasCB">has cb</a>
             </li>
             <li>
-              <a href="#isServedBy">isServedBy</a>
+              <a href="#hasCS">has cs</a>
             </li>
             <li>
-              <a href="#monitors">monitors</a>
+              <a href="#hasProtocol">has protocol</a>
             </li>
             <li>
-              <a href="#requestService">requestService</a>
+              <a href="#isPositionOf">is position of</a>
+            </li>
+            <li>
+              <a href="#providedBy">providedBy</a>
+            </li>
+            <li>
+              <a href="#requestedBy">requestedBy</a>
             </li>
           </ul>
         </li>
@@ -3491,19 +4230,6 @@ td {
             </li>
             <li>
               <a href="#power">power</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h4>
-            <a href="#annotationproperties">Annotation Properties</a>
-          </h4>
-          <ul class="second">
-            <li>
-              <a href="#isDerivedFrom">is derived from</a>
-            </li>
-            <li>
-              <a href="#isRuleEnabled">is rule enabled</a>
             </li>
           </ul>
         </li>
@@ -3531,10 +4257,16 @@ td {
               <a href="#owl">owl</a>
             </li>
             <li>
+              <a href="#prov">prov</a>
+            </li>
+            <li>
               <a href="#rdf">rdf</a>
             </li>
             <li>
               <a href="#rdfs">rdfs</a>
+            </li>
+            <li>
+              <a href="#vann">vann</a>
             </li>
           </ul>
         </li>

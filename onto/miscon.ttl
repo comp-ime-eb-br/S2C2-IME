@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#> .
+@prefix : <https://purl.org/s2c2/miscon> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,13 +10,13 @@
 @prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@base <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#> .
+@base <https://purl.org/s2c2/miscon> .
 
-<https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon> rdf:type owl:Ontology ;
-                                                                        rdfs:comment """The MiScOn ontology presents modeling that connects the military environment with the communication environment, reusing other ontologies, providing semantic reasoning with information about the behavior of communication between military personnel in an operational scenario.
+<https://purl.org/s2c2/miscon> rdf:type owl:Ontology ;
+                                rdfs:comment """The MiScOn ontology presents modeling that connects the military environment with the communication environment, reusing other ontologies, providing semantic reasoning with information about the behavior of communication between military personnel in an operational scenario.
 
 The MiScOn ontology represents concepts related to the Brazilian Armed Forces, but represents concepts in English. Therefore, if necessary, the translation can be done easily using translation tools or dictionaries. With the correct translation, the terms represented should not present interoperability problems with the terms used by the Armed Forces' C2 systems.""" ;
-                                                                        rdfs:label "MiScOn - Military Scenario Ontology" .
+                                rdfs:label "MiScOn - Military Scenario Ontology" .
 
 #################################################################
 #    Annotation properties
@@ -30,20 +30,11 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#inheresIn
-<https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#inheresIn> rdf:type owl:ObjectProperty ;
-                                                                               rdfs:range :CommDeviceCarrier .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates
-<https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates> rdf:type owl:ObjectProperty .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MOPTIsSubordinateTo
+###  https://purl.org/s2c2/miscon#MOPTIsSubordinateTo
 :MOPTIsSubordinateTo rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MOPowerTypeIsSubordinateTo
+###  https://purl.org/s2c2/miscon#MOPowerTypeIsSubordinateTo
 :MOPowerTypeIsSubordinateTo rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf owl:topObjectProperty ;
                             rdfs:domain :MilitaryOrganizationPowerType ;
@@ -52,18 +43,18 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                             rdfs:label "MOPowerTypeIsSubordinateTo" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MOTypeIsSubordinateTo
+###  https://purl.org/s2c2/miscon#MOTypeIsSubordinateTo
 :MOTypeIsSubordinateTo rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#ProtocolOf
+###  https://purl.org/s2c2/miscon#ProtocolOf
 :ProtocolOf rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#inheresIn> ;
             rdfs:domain :Protocol ;
             rdfs:range :CommBoard .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#belongsTo
+###  https://purl.org/s2c2/miscon#belongsTo
 :belongsTo rdf:type owl:ObjectProperty ;
            rdfs:domain :MilitaryPlatform ;
            rdfs:range :MilitaryOrganization ;
@@ -71,7 +62,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
            rdfs:label "belongsTo" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#carries
+###  https://purl.org/s2c2/miscon#carries
 :carries rdf:type owl:ObjectProperty ;
          rdfs:domain :CommDeviceCarrier ;
          rdfs:range :CommDevice ;
@@ -79,7 +70,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
          rdfs:label "carries"@en .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#hasCB
+###  https://purl.org/s2c2/miscon#hasCB
 :hasCB rdf:type owl:ObjectProperty ;
        rdfs:domain :CommDevice ;
        rdfs:range :CommBoard ;
@@ -87,7 +78,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
        rdfs:label "hasCB"@en .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#hasDirectRelationshipWith
+###  https://purl.org/s2c2/miscon#hasDirectRelationshipWith
 :hasDirectRelationshipWith rdf:type owl:ObjectProperty ,
                                     owl:SymmetricProperty ;
                            rdfs:domain :MilitaryOrganization ;
@@ -96,14 +87,14 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                            rdfs:label "hasDirectRelationshipWith"@en .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#hasInterfPowerType
+###  https://purl.org/s2c2/miscon#hasInterfPowerType
 :hasInterfPowerType rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty ;
                     rdfs:domain :CommBoard ;
                     rdfs:label "hasInterfPowerType" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#hasMOPowerType
+###  https://purl.org/s2c2/miscon#hasMOPowerType
 :hasMOPowerType rdf:type owl:ObjectProperty ;
                 rdfs:domain :MilitaryOrganization ;
                 rdfs:range :MilitaryOrganizationPowerType ;
@@ -111,11 +102,11 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                 rdfs:label "hasMOPowerType" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#hasVehiclePowerType
+###  https://purl.org/s2c2/miscon#hasVehiclePowerType
 :hasVehiclePowerType rdf:type owl:ObjectProperty .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#hierarchicallyEquivalentWith
+###  https://purl.org/s2c2/miscon#hierarchicallyEquivalentWith
 :hierarchicallyEquivalentWith rdf:type owl:ObjectProperty ;
                               rdfs:domain :HierarchicallyEquivalent ;
                               rdfs:range :HierarchicallyEquivalent ;
@@ -123,14 +114,14 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                               rdfs:label "HierarchicallyEquivalentWith"@en .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#isCommanderOf
+###  https://purl.org/s2c2/miscon#isCommanderOf
 :isCommanderOf rdf:type owl:ObjectProperty ;
                owl:inverseOf :isSubordinateTo ;
                rdfs:comment "A relationship that establishes that a military organization is commander of another military organization," ;
                rdfs:label "isCommanderOf"@pt .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#isLocatedIn
+###  https://purl.org/s2c2/miscon#isLocatedIn
 :isLocatedIn rdf:type owl:ObjectProperty ;
              rdfs:domain :MilitaryPersonAsPassenger ;
              rdfs:range :Vehicle ;
@@ -138,7 +129,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
              rdfs:label "isLocatedIn"@en .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#isSubordinateTo
+###  https://purl.org/s2c2/miscon#isSubordinateTo
 :isSubordinateTo rdf:type owl:ObjectProperty ;
                  rdfs:domain :Subordinate ;
                  rdfs:range :Commander ;
@@ -146,7 +137,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                  rdfs:label "isSubordinateTo"@en .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#mayTalkTo
+###  https://purl.org/s2c2/miscon#mayTalkTo
 :mayTalkTo rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
            rdf:type owl:SymmetricProperty ;
@@ -156,13 +147,13 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
            rdfs:label "mayTalkTo" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#militaryPersonHasMilitaryOrganization
+###  https://purl.org/s2c2/miscon#militaryPersonHasMilitaryOrganization
 :militaryPersonHasMilitaryOrganization rdf:type owl:ObjectProperty ;
                                        rdfs:domain :MilitaryPerson ;
                                        rdfs:range :MilitaryOrganization .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#militaryPersonIsSubordinateTo
+###  https://purl.org/s2c2/miscon#militaryPersonIsSubordinateTo
 :militaryPersonIsSubordinateTo rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf owl:topObjectProperty ;
                                rdfs:domain :SubordinateMilitaryPerson ;
@@ -171,7 +162,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                                rdfs:label "militaryPersonIsSubordinateTo" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#militaryScenarioHasInstitutionalElement
+###  https://purl.org/s2c2/miscon#militaryScenarioHasInstitutionalElement
 :militaryScenarioHasInstitutionalElement rdf:type owl:ObjectProperty ;
                                          rdfs:domain :MilitaryScenario ;
                                          rdfs:range :InstitutionalElement ;
@@ -179,7 +170,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                                          rdfs:label "militaryScenarioHasInstitutionalElement" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#militaryScenarioHasOperationalElement
+###  https://purl.org/s2c2/miscon#militaryScenarioHasOperationalElement
 :militaryScenarioHasOperationalElement rdf:type owl:ObjectProperty ;
                                        rdfs:domain :MilitaryScenario ;
                                        rdfs:range :OperationalElement ;
@@ -187,7 +178,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                                        rdfs:label "militaryScenarioHasOperationalElement" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#networkHasCB
+###  https://purl.org/s2c2/miscon#networkHasCB
 :networkHasCB rdf:type owl:ObjectProperty ;
               rdfs:domain :WirelessNetwork ;
               rdfs:range :CommBoard ;
@@ -195,7 +186,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
               rdfs:label "networkHasCB" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#operates
+###  https://purl.org/s2c2/miscon#operates
 :operates rdf:type owl:ObjectProperty ;
           rdfs:domain :UeOperator ;
           rdfs:range :Ue ;
@@ -203,15 +194,20 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
           rdfs:label "operates"@en .
 
 
+###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#inheresIn
+<https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#inheresIn> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:range :CommDeviceCarrier .
+
+
+###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates
+<https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates> rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue
-<https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> rdf:type owl:DatatypeProperty .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#amphibiousSpeed
+###  https://purl.org/s2c2/miscon#amphibiousSpeed
 :amphibiousSpeed rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
                  rdfs:domain :Armored ;
@@ -220,7 +216,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                  rdfs:label "amphibiousSpeed" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#antennaGain
+###  https://purl.org/s2c2/miscon#antennaGain
 :antennaGain rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
              rdfs:domain :CommBoard ;
@@ -229,7 +225,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
              rdfs:label "antennaGain" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#channelValue
+###  https://purl.org/s2c2/miscon#channelValue
 :channelValue rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
               rdfs:domain :AccessPoint ;
@@ -238,7 +234,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
               rdfs:label "channelValue" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#coverage
+###  https://purl.org/s2c2/miscon#coverage
 :coverage rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
           rdfs:domain :CommBoard ;
@@ -247,7 +243,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
           rdfs:label "coverage." .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#frequency
+###  https://purl.org/s2c2/miscon#frequency
 :frequency rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
            rdfs:domain :CommBoard ;
@@ -256,7 +252,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
            rdfs:label "frequency" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#frequencyRange
+###  https://purl.org/s2c2/miscon#frequencyRange
 :frequencyRange rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
                 rdfs:range xsd:string ;
@@ -264,7 +260,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                 rdfs:label "frequencyRange" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#ip
+###  https://purl.org/s2c2/miscon#ip
 :ip rdf:type owl:DatatypeProperty ;
     rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
     rdfs:domain :CommBoard ;
@@ -273,7 +269,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
     rdfs:label "ip" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#mac
+###  https://purl.org/s2c2/miscon#mac
 :mac rdf:type owl:DatatypeProperty ;
      rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
      rdfs:domain :CommDevice ;
@@ -282,7 +278,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
      rdfs:label "mac" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#maxPassengers
+###  https://purl.org/s2c2/miscon#maxPassengers
 :maxPassengers rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
                rdfs:domain :Vehicle ;
@@ -291,7 +287,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                rdfs:label "maxPassengers" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#maxSpeedLand
+###  https://purl.org/s2c2/miscon#maxSpeedLand
 :maxSpeedLand rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
               rdfs:domain :CommDeviceCarrier ;
@@ -300,7 +296,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
               rdfs:label "maxSpeedLand" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#maxStrength
+###  https://purl.org/s2c2/miscon#maxStrength
 :maxStrength rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
              rdfs:range xsd:int ;
@@ -308,14 +304,14 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
              rdfs:label "maxStrength" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#minPassengers
+###  https://purl.org/s2c2/miscon#minPassengers
 :minPassengers rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
                rdfs:comment "Min quantity of passengers in a vehicle." ;
                rdfs:label "minPassengers" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#minSpeed
+###  https://purl.org/s2c2/miscon#minSpeed
 :minSpeed rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
           rdfs:domain :CommDeviceCarrier ;
@@ -324,7 +320,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
           rdfs:label "minSpeed" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#minStrength
+###  https://purl.org/s2c2/miscon#minStrength
 :minStrength rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
              rdfs:range xsd:int ;
@@ -332,7 +328,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
              rdfs:label "minStrength" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#modeValue
+###  https://purl.org/s2c2/miscon#modeValue
 :modeValue rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
            rdfs:domain :AccessPoint ;
@@ -341,7 +337,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
            rdfs:label "modeValue" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#ssid
+###  https://purl.org/s2c2/miscon#ssid
 :ssid rdf:type owl:DatatypeProperty ;
       rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
       rdfs:domain :AccessPoint ;
@@ -350,7 +346,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
       rdfs:label "ssid" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#strenght
+###  https://purl.org/s2c2/miscon#strenght
 :strenght rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
           rdfs:domain :MilitaryOrganization ;
@@ -358,7 +354,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
           rdfs:comment "Strenght of a military organization." .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#txPower
+###  https://purl.org/s2c2/miscon#txPower
 :txPower rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
          rdfs:domain :CommBoard ;
@@ -367,7 +363,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
          rdfs:label "txPower" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#txPowerRange
+###  https://purl.org/s2c2/miscon#txPowerRange
 :txPowerRange rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
               rdfs:range xsd:string ;
@@ -375,7 +371,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
               rdfs:label "txPowerRange" .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#visibilityRange
+###  https://purl.org/s2c2/miscon#visibilityRange
 :visibilityRange rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
                  rdfs:domain :CommDeviceCarrier ;
@@ -384,9 +380,269 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                  rdfs:label "visibilityRange" .
 
 
+###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue
+<https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> rdf:type owl:DatatypeProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
+
+###  https://purl.org/s2c2/miscon#AccessPoint
+:AccessPoint rdf:type owl:Class ;
+             rdfs:subClassOf :CommBoard .
+
+
+###  https://purl.org/s2c2/miscon#Armored
+:Armored rdf:type owl:Class ;
+         rdfs:subClassOf :Vehicle .
+
+
+###  https://purl.org/s2c2/miscon#Battalion
+:Battalion rdf:type owl:Class ;
+           rdfs:subClassOf :MilitaryOrganization .
+
+
+###  https://purl.org/s2c2/miscon#BattleGroup
+:BattleGroup rdf:type owl:Class ;
+             rdfs:subClassOf :MilitaryOrganization .
+
+
+###  https://purl.org/s2c2/miscon#Brigade
+:Brigade rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryOrganization .
+
+
+###  https://purl.org/s2c2/miscon#Cascavel
+:Cascavel rdf:type owl:Class ;
+          rdfs:subClassOf :Armored .
+
+
+###  https://purl.org/s2c2/miscon#CommBoard
+:CommBoard rdf:type owl:Class ;
+           rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> .
+
+
+###  https://purl.org/s2c2/miscon#CommDevice
+:CommDevice rdf:type owl:Class ;
+            rdfs:subClassOf :OperationalElement .
+
+
+###  https://purl.org/s2c2/miscon#CommDeviceCarrier
+:CommDeviceCarrier rdf:type owl:Class ;
+                   rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> .
+
+
+###  https://purl.org/s2c2/miscon#Commander
+:Commander rdf:type owl:Class ;
+           rdfs:subClassOf :MilitaryOrganization .
+
+
+###  https://purl.org/s2c2/miscon#CommanderMilitaryPerson
+:CommanderMilitaryPerson rdf:type owl:Class ;
+                         rdfs:subClassOf :MilitaryPerson ;
+                         owl:disjointWith :SubordinateMilitaryPerson .
+
+
+###  https://purl.org/s2c2/miscon#Communication
+:Communication rdf:type owl:Class ;
+               rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Relator> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates> ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Ue
+                               ] ;
+               rdfs:comment "The Thruthmaker of the relationship between Ue and himself." ;
+               rdfs:label "Communication" .
+
+
+###  https://purl.org/s2c2/miscon#Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryOrganization .
+
+
+###  https://purl.org/s2c2/miscon#Guarani
+:Guarani rdf:type owl:Class ;
+         rdfs:subClassOf :Armored .
+
+
+###  https://purl.org/s2c2/miscon#HierarchicallyEquivalent
+:HierarchicallyEquivalent rdf:type owl:Class ;
+                          rdfs:subClassOf :MilitaryOrganization ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hierarchicallyEquivalentWith ;
+                                            owl:someValuesFrom :HierarchicallyEquivalent
+                                          ] .
+
+
+###  https://purl.org/s2c2/miscon#InstitutionalElement
+:InstitutionalElement rdf:type owl:Class ;
+                      rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> ;
+                      rdfs:comment "Institutional Elements of the scenario." ;
+                      rdfs:label "InstitutionalElement" .
+
+
+###  https://purl.org/s2c2/miscon#MilitaryEmployment
+:MilitaryEmployment rdf:type owl:Class ;
+                    rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Relator> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates> ;
+                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :MilitaryOrganization
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates> ;
+                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :MilitaryPerson
+                                    ] ;
+                    rdfs:comment "The Thruthmaker of the relationship between Military and Military Organization." ;
+                    rdfs:label "MilitaryEmployment" .
+
+
+###  https://purl.org/s2c2/miscon#MilitaryOrganization
+:MilitaryOrganization rdf:type owl:Class ;
+                      rdfs:subClassOf :InstitutionalElement ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty [ owl:inverseOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates>
+                                                       ] ;
+                                        owl:someValuesFrom :MilitaryEmployment
+                                      ] .
+
+
+###  https://purl.org/s2c2/miscon#MilitaryOrganizationPowerType
+:MilitaryOrganizationPowerType rdf:type owl:Class ;
+                               rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#EndurantType> ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :MOTypeIsSubordinateTo ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :MilitaryOrganizationPowerType
+                                               ] ;
+                               rdfs:comment "PowerType of MilitaryOrganization." ;
+                               rdfs:label "MilitaryOrganitionPowerType" .
+
+
+###  https://purl.org/s2c2/miscon#MilitaryPerson
+:MilitaryPerson rdf:type owl:Class ;
+                rdfs:subClassOf :OperationalElement ,
+                                :Person ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :militaryPersonHasMilitaryOrganization ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :MilitaryOrganization
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty [ owl:inverseOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates>
+                                                 ] ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :MilitaryEmployment
+                                ] .
+
+
+###  https://purl.org/s2c2/miscon#MilitaryPersonAsDismounted
+:MilitaryPersonAsDismounted rdf:type owl:Class ;
+                            rdfs:subClassOf :MilitaryPerson ;
+                            owl:disjointWith :MilitaryPersonAsPassenger .
+
+
+###  https://purl.org/s2c2/miscon#MilitaryPersonAsPassenger
+:MilitaryPersonAsPassenger rdf:type owl:Class ;
+                           rdfs:subClassOf :MilitaryPerson ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :isLocatedIn ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :Vehicle
+                                           ] .
+
+
+###  https://purl.org/s2c2/miscon#MilitaryPlatform
+:MilitaryPlatform rdf:type owl:Class ;
+                  rdfs:subClassOf :CommDeviceCarrier ,
+                                  :OperationalElement .
+
+
+###  https://purl.org/s2c2/miscon#MilitaryScenario
+:MilitaryScenario rdf:type owl:Class ;
+                  rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> ;
+                  rdfs:comment "Military operation scenario. It is related to all operational and institutional elements that aggregate the scenario where the simulation of the military operation will take place." ;
+                  rdfs:label "MilitaryScenario" .
+
+
+###  https://purl.org/s2c2/miscon#OperationalElement
+:OperationalElement rdf:type owl:Class ;
+                    rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> .
+
+
+###  https://purl.org/s2c2/miscon#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> .
+
+
+###  https://purl.org/s2c2/miscon#Platoon
+:Platoon rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryOrganization .
+
+
+###  https://purl.org/s2c2/miscon#Protocol
+:Protocol rdf:type owl:Class ;
+          rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#IntrinsicMode> .
+
+
+###  https://purl.org/s2c2/miscon#Subordinate
+:Subordinate rdf:type owl:Class ;
+             rdfs:subClassOf :MilitaryOrganization ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :isSubordinateTo ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Commander
+                             ] .
+
+
+###  https://purl.org/s2c2/miscon#SubordinateMilitaryPerson
+:SubordinateMilitaryPerson rdf:type owl:Class ;
+                           rdfs:subClassOf :MilitaryPerson .
+
+
+###  https://purl.org/s2c2/miscon#Ue
+:Ue rdf:type owl:Class ;
+    rdfs:subClassOf :CommBoard .
+
+
+###  https://purl.org/s2c2/miscon#UeDown
+:UeDown rdf:type owl:Class ;
+        rdfs:subClassOf :Ue .
+
+
+###  https://purl.org/s2c2/miscon#UeOperator
+:UeOperator rdf:type owl:Class ;
+            rdfs:subClassOf :MilitaryPerson .
+
+
+###  https://purl.org/s2c2/miscon#UeUp
+:UeUp rdf:type owl:Class ;
+      rdfs:subClassOf :Ue .
+
+
+###  https://purl.org/s2c2/miscon#Urutu
+:Urutu rdf:type owl:Class ;
+       rdfs:subClassOf :Armored .
+
+
+###  https://purl.org/s2c2/miscon#Vehicle
+:Vehicle rdf:type owl:Class ;
+         rdfs:subClassOf :MilitaryPlatform .
+
+
+###  https://purl.org/s2c2/miscon#VehiclePowerType
+:VehiclePowerType rdf:type owl:Class ;
+                  rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#EndurantType> ;
+                  rdfs:comment "PowerType of Vehycle." ;
+                  rdfs:label "VehiclePowerType" .
+
+
+###  https://purl.org/s2c2/miscon#WirelessNetwork
+:WirelessNetwork rdf:type owl:Class ;
+                 rdfs:subClassOf :OperationalElement .
+
 
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Category
 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Category> rdf:type owl:Class .
@@ -436,506 +692,250 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> rdf:type owl:Class .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#AccessPoint
-:AccessPoint rdf:type owl:Class ;
-             rdfs:subClassOf :CommBoard .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Armored
-:Armored rdf:type owl:Class ;
-         rdfs:subClassOf :Vehicle .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Battalion
-:Battalion rdf:type owl:Class ;
-           rdfs:subClassOf :MilitaryOrganization .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#BattleGroup
-:BattleGroup rdf:type owl:Class ;
-             rdfs:subClassOf :MilitaryOrganization .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Brigade
-:Brigade rdf:type owl:Class ;
-         rdfs:subClassOf :MilitaryOrganization .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Cascavel
-:Cascavel rdf:type owl:Class ;
-          rdfs:subClassOf :Armored .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#CommBoard
-:CommBoard rdf:type owl:Class ;
-           rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#CommDevice
-:CommDevice rdf:type owl:Class ;
-            rdfs:subClassOf :OperationalElement .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#CommDeviceCarrier
-:CommDeviceCarrier rdf:type owl:Class ;
-                   rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Commander
-:Commander rdf:type owl:Class ;
-           rdfs:subClassOf :MilitaryOrganization .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#CommanderMilitaryPerson
-:CommanderMilitaryPerson rdf:type owl:Class ;
-                         rdfs:subClassOf :MilitaryPerson ;
-                         owl:disjointWith :SubordinateMilitaryPerson .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Communication
-:Communication rdf:type owl:Class ;
-               rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Relator> ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates> ;
-                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass :Ue
-                               ] ;
-               rdfs:comment "The Thruthmaker of the relationship between Ue and himself." ;
-               rdfs:label "Communication" .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Company
-:Company rdf:type owl:Class ;
-         rdfs:subClassOf :MilitaryOrganization .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Guarani
-:Guarani rdf:type owl:Class ;
-         rdfs:subClassOf :Armored .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#HierarchicallyEquivalent
-:HierarchicallyEquivalent rdf:type owl:Class ;
-                          rdfs:subClassOf :MilitaryOrganization ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty :hierarchicallyEquivalentWith ;
-                                            owl:someValuesFrom :HierarchicallyEquivalent
-                                          ] .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#InstitutionalElement
-:InstitutionalElement rdf:type owl:Class ;
-                      rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> ;
-                      rdfs:comment "Institutional Elements of the scenario." ;
-                      rdfs:label "InstitutionalElement" .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryEmployment
-:MilitaryEmployment rdf:type owl:Class ;
-                    rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Relator> ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates> ;
-                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass :MilitaryOrganization
-                                    ] ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates> ;
-                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass :MilitaryPerson
-                                    ] ;
-                    rdfs:comment "The Thruthmaker of the relationship between Military and Military Organization." ;
-                    rdfs:label "MilitaryEmployment" .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryOrganization
-:MilitaryOrganization rdf:type owl:Class ;
-                      rdfs:subClassOf :InstitutionalElement ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty [ owl:inverseOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates>
-                                                       ] ;
-                                        owl:someValuesFrom :MilitaryEmployment
-                                      ] .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryOrganizationPowerType
-:MilitaryOrganizationPowerType rdf:type owl:Class ;
-                               rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#EndurantType> ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :MOTypeIsSubordinateTo ;
-                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass :MilitaryOrganizationPowerType
-                                               ] ;
-                               rdfs:comment "PowerType of MilitaryOrganization." ;
-                               rdfs:label "MilitaryOrganitionPowerType" .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryPerson
-:MilitaryPerson rdf:type owl:Class ;
-                rdfs:subClassOf :OperationalElement ,
-                                :Person ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :militaryPersonHasMilitaryOrganization ;
-                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass :MilitaryOrganization
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty [ owl:inverseOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#mediates>
-                                                 ] ;
-                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass :MilitaryEmployment
-                                ] .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryPersonAsDismounted
-:MilitaryPersonAsDismounted rdf:type owl:Class ;
-                            rdfs:subClassOf :MilitaryPerson ;
-                            owl:disjointWith :MilitaryPersonAsPassenger .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryPersonAsPassenger
-:MilitaryPersonAsPassenger rdf:type owl:Class ;
-                           rdfs:subClassOf :MilitaryPerson ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty :isLocatedIn ;
-                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                             owl:onClass :Vehicle
-                                           ] .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryPlatform
-:MilitaryPlatform rdf:type owl:Class ;
-                  rdfs:subClassOf :CommDeviceCarrier ,
-                                  :OperationalElement .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryScenario
-:MilitaryScenario rdf:type owl:Class ;
-                  rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> ;
-                  rdfs:comment "Military operation scenario. It is related to all operational and institutional elements that aggregate the scenario where the simulation of the military operation will take place." ;
-                  rdfs:label "MilitaryScenario" .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#OperationalElement
-:OperationalElement rdf:type owl:Class ;
-                    rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Person
-:Person rdf:type owl:Class ;
-        rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Platoon
-:Platoon rdf:type owl:Class ;
-         rdfs:subClassOf :MilitaryOrganization .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Protocol
-:Protocol rdf:type owl:Class ;
-          rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#IntrinsicMode> .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Subordinate
-:Subordinate rdf:type owl:Class ;
-             rdfs:subClassOf :MilitaryOrganization ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :isSubordinateTo ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :Commander
-                             ] .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#SubordinateMilitaryPerson
-:SubordinateMilitaryPerson rdf:type owl:Class ;
-                           rdfs:subClassOf :MilitaryPerson .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Ue
-:Ue rdf:type owl:Class ;
-    rdfs:subClassOf :CommBoard .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#UeDown
-:UeDown rdf:type owl:Class ;
-        rdfs:subClassOf :Ue .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#UeOperator
-:UeOperator rdf:type owl:Class ;
-            rdfs:subClassOf :MilitaryPerson .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#UeUp
-:UeUp rdf:type owl:Class ;
-      rdfs:subClassOf :Ue .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Urutu
-:Urutu rdf:type owl:Class ;
-       rdfs:subClassOf :Armored .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Vehicle
-:Vehicle rdf:type owl:Class ;
-         rdfs:subClassOf :MilitaryPlatform .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#VehiclePowerType
-:VehiclePowerType rdf:type owl:Class ;
-                  rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#EndurantType> ;
-                  rdfs:comment "PowerType of Vehycle." ;
-                  rdfs:label "VehiclePowerType" .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#WirelessNetwork
-:WirelessNetwork rdf:type owl:Class ;
-                 rdfs:subClassOf :OperationalElement .
-
-
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#AccessPoint
+###  https://purl.org/s2c2/miscon#AccessPoint
 :AccessPoint rdf:type owl:NamedIndividual ,
                       <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Armored
+###  https://purl.org/s2c2/miscon#Armored
 :Armored rdf:type owl:NamedIndividual ,
                   <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Battalion
+###  https://purl.org/s2c2/miscon#Battalion
 :Battalion rdf:type owl:NamedIndividual ,
-                    <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
-                    :MilitaryOrganizationPowerType ;
+                    :MilitaryOrganizationPowerType ,
+                    <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ;
            :MOTypeIsSubordinateTo :Brigade ;
            :maxStrength 800 ;
            :minStrength 500 .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#BattleGroup
+###  https://purl.org/s2c2/miscon#BattleGroup
 :BattleGroup rdf:type owl:NamedIndividual ,
-                      <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
-                      :MilitaryOrganizationPowerType ;
+                      :MilitaryOrganizationPowerType ,
+                      <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ;
              :MOTypeIsSubordinateTo :Platoon ;
              :maxStrength 5 ;
              :minStrength 3 .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Brigade
+###  https://purl.org/s2c2/miscon#Brigade
 :Brigade rdf:type owl:NamedIndividual ,
-                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
-                  :MilitaryOrganizationPowerType ;
+                  :MilitaryOrganizationPowerType ,
+                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ;
          :maxStrength 5000 ;
          :minStrength 3000 .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Car
+###  https://purl.org/s2c2/miscon#Car
 :Car rdf:type owl:NamedIndividual .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Cascavel
+###  https://purl.org/s2c2/miscon#Cascavel
 :Cascavel rdf:type owl:NamedIndividual ,
-                   <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
-                   :VehiclePowerType ;
+                   :VehiclePowerType ,
+                   <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ;
           :maxPassengers 3 ;
           :maxSpeedLand 100 ;
           :minPassengers 3 .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#CommBoard
+###  https://purl.org/s2c2/miscon#CommBoard
 :CommBoard rdf:type owl:NamedIndividual ,
                     <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Kind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#CommDevice
+###  https://purl.org/s2c2/miscon#CommDevice
 :CommDevice rdf:type owl:NamedIndividual ,
                      <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Kind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#CommDeviceCarrier
+###  https://purl.org/s2c2/miscon#CommDeviceCarrier
 :CommDeviceCarrier rdf:type owl:NamedIndividual ,
                             <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Mixin> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Commander
+###  https://purl.org/s2c2/miscon#Commander
 :Commander rdf:type owl:NamedIndividual ,
                     <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Role> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#CommanderMilitaryPerson
+###  https://purl.org/s2c2/miscon#CommanderMilitaryPerson
 :CommanderMilitaryPerson rdf:type owl:NamedIndividual ,
                                   <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Role> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Company
+###  https://purl.org/s2c2/miscon#Company
 :Company rdf:type owl:NamedIndividual ,
-                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
-                  :MilitaryOrganizationPowerType ;
+                  :MilitaryOrganizationPowerType ,
+                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ;
          :MOTypeIsSubordinateTo :Battalion ;
          :maxStrength 250 ;
          :minStrength 60 .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Guarani
+###  https://purl.org/s2c2/miscon#Guarani
 :Guarani rdf:type owl:NamedIndividual ,
-                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
-                  :VehiclePowerType ;
+                  :VehiclePowerType ,
+                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ;
          :maxPassengers 11 ;
          :maxSpeedLand 90 ;
          :minPassengers 2 .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#HierarchicallyEquivalent
+###  https://purl.org/s2c2/miscon#HierarchicallyEquivalent
 :HierarchicallyEquivalent rdf:type owl:NamedIndividual ,
                                    <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Role> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#InterfacePowerType
+###  https://purl.org/s2c2/miscon#InterfacePowerType
 :InterfacePowerType rdf:type owl:NamedIndividual ,
                              <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Kind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#InternUe
+###  https://purl.org/s2c2/miscon#InternUe
 :InternUe rdf:type owl:NamedIndividual .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryOrganization
+###  https://purl.org/s2c2/miscon#MilitaryOrganization
 :MilitaryOrganization rdf:type owl:NamedIndividual ,
                                <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Kind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryOrganizationPowerTypee
+###  https://purl.org/s2c2/miscon#MilitaryOrganizationPowerTypee
 :MilitaryOrganizationPowerTypee rdf:type owl:NamedIndividual ,
                                          <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Kind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryPerson
+###  https://purl.org/s2c2/miscon#MilitaryPerson
 :MilitaryPerson rdf:type owl:NamedIndividual ,
                          <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Role> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryPersonAsDismounted
+###  https://purl.org/s2c2/miscon#MilitaryPersonAsDismounted
 :MilitaryPersonAsDismounted rdf:type owl:NamedIndividual ,
                                      <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Phase> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryPersonAsPassenger
+###  https://purl.org/s2c2/miscon#MilitaryPersonAsPassenger
 :MilitaryPersonAsPassenger rdf:type owl:NamedIndividual ,
                                     <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Phase> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#MilitaryPlatform
+###  https://purl.org/s2c2/miscon#MilitaryPlatform
 :MilitaryPlatform rdf:type owl:NamedIndividual ,
                            <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Category> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#OperationalElement
+###  https://purl.org/s2c2/miscon#OperationalElement
 :OperationalElement rdf:type owl:NamedIndividual ,
                              <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Category> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Person
+###  https://purl.org/s2c2/miscon#Person
 :Person rdf:type owl:NamedIndividual ,
                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Kind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Platoon
+###  https://purl.org/s2c2/miscon#Platoon
 :Platoon rdf:type owl:NamedIndividual ,
-                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
-                  :MilitaryOrganizationPowerType ;
+                  :MilitaryOrganizationPowerType ,
+                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ;
          :MOTypeIsSubordinateTo :Company ;
          :maxStrength 50 ;
          :minStrength 20 .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Protocol
+###  https://purl.org/s2c2/miscon#Protocol
 :Protocol rdf:type owl:NamedIndividual .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Subordinate
+###  https://purl.org/s2c2/miscon#Subordinate
 :Subordinate rdf:type owl:NamedIndividual ,
                       <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Role> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#SubordinateMilitaryPerson
+###  https://purl.org/s2c2/miscon#SubordinateMilitaryPerson
 :SubordinateMilitaryPerson rdf:type owl:NamedIndividual ,
                                     <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Role> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Ue
+###  https://purl.org/s2c2/miscon#Ue
 :Ue rdf:type owl:NamedIndividual ,
              <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#UeDown
+###  https://purl.org/s2c2/miscon#UeDown
 :UeDown rdf:type owl:NamedIndividual ,
                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#UeOperator
+###  https://purl.org/s2c2/miscon#UeOperator
 :UeOperator rdf:type owl:NamedIndividual ,
                      <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Role> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#UeUp
+###  https://purl.org/s2c2/miscon#UeUp
 :UeUp rdf:type owl:NamedIndividual ,
                <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Urutu
+###  https://purl.org/s2c2/miscon#Urutu
 :Urutu rdf:type owl:NamedIndividual ,
-                <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
-                :VehiclePowerType ;
+                :VehiclePowerType ,
+                <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ;
        :maxPassengers 13 ;
        :maxSpeedLand 110 ;
        :minPassengers 2 .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Vehicle
+###  https://purl.org/s2c2/miscon#Vehicle
 :Vehicle rdf:type owl:NamedIndividual ,
                   <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Kind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#WirelessNetwork
+###  https://purl.org/s2c2/miscon#WirelessNetwork
 :WirelessNetwork rdf:type owl:NamedIndividual ,
                           <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Kind> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#militaryPersonHasMilitaryOrganization
+###  https://purl.org/s2c2/miscon#militaryPersonHasMilitaryOrganization
 :militaryPersonHasMilitaryOrganization rdf:type owl:NamedIndividual ,
                                                 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#MaterialRelationshipType> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#net1
+###  https://purl.org/s2c2/miscon#net1
 :net1 rdf:type owl:NamedIndividual ,
                :WirelessNetwork .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#scenario1
+###  https://purl.org/s2c2/miscon#scenario1
 :scenario1 rdf:type owl:NamedIndividual ,
                     :MilitaryScenario .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#ueHasCommunicationWithUe
+###  https://purl.org/s2c2/miscon#ueHasCommunicationWithUe
 :ueHasCommunicationWithUe rdf:type owl:NamedIndividual ,
                                    <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#MaterialRelationshipType> .
 
 
-[ :maxStrength 50 ;
-  :minStrength 20
-] .
-
 [ :maxStrength 50
- ] .
+] .
 
 [ :maxStrength 50
  ] .
 
 [ :maxStrength 800 ;
    :minStrength 500
+ ] .
+
+[ :maxStrength 50 ;
+   :minStrength 20
  ] .
 
 #################################################################
@@ -1101,25 +1101,25 @@ According to the Army Glossary:
 
 <http://myontology.com/scenario#ie> rdf:type swrl:Variable .
 
-<http://myontology.com/scenario#m1> rdf:type swrl:Variable .
-
 <http://myontology.com/scenario#mp> rdf:type swrl:Variable .
+
+<http://myontology.com/scenario#m1> rdf:type swrl:Variable .
 
 <http://myontology.com/scenario#mo> rdf:type swrl:Variable .
 
-<http://myontology.com/scenario#ompt1> rdf:type swrl:Variable .
+<http://myontology.com/scenario#o3> rdf:type swrl:Variable .
 
-<http://myontology.com/scenario#o1> rdf:type swrl:Variable .
+<http://myontology.com/scenario#ompt1> rdf:type swrl:Variable .
 
 <http://myontology.com/scenario#o2> rdf:type swrl:Variable .
 
-<http://myontology.com/scenario#o3> rdf:type swrl:Variable .
+<http://myontology.com/scenario#o1> rdf:type swrl:Variable .
 
 <http://myontology.com/scenario#ompt2> rdf:type swrl:Variable .
 
-:o2 rdf:type swrl:Variable .
+<https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1> rdf:type swrl:Variable .
 
-:o1 rdf:type swrl:Variable .
+<https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2> rdf:type swrl:Variable .
 
 <http://myontology.com/scenario#oe> rdf:type swrl:Variable .
 
@@ -1132,25 +1132,25 @@ According to the Army Glossary:
    rdfs:label "hierarquically equivalent MayTalkTo" ;
    rdf:type swrl:Imp ;
    swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:ClassAtom ;
-                           swrl:classPredicate :MilitaryOrganization ;
-                           swrl:argument1 :o2
+               rdf:first [ rdf:type swrl:DifferentIndividualsAtom ;
+                           swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1> ;
+                           swrl:argument2 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:ClassAtom ;
                                       swrl:classPredicate :MilitaryOrganization ;
-                                      swrl:argument1 :o1
+                                      swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1>
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
-                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                 swrl:propertyPredicate :hierarchicallyEquivalentWith ;
-                                                 swrl:argument1 :o1 ;
-                                                 swrl:argument2 :o2
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate :MilitaryOrganization ;
+                                                 swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2>
                                                ] ;
                                      rdf:rest [ rdf:type swrl:AtomList ;
-                                                rdf:first [ rdf:type swrl:DifferentIndividualsAtom ;
-                                                            swrl:argument1 :o1 ;
-                                                            swrl:argument2 :o2
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate :hierarchicallyEquivalentWith ;
+                                                            swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1> ;
+                                                            swrl:argument2 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2>
                                                           ] ;
                                                 rdf:rest rdf:nil
                                               ]
@@ -1160,8 +1160,8 @@ According to the Army Glossary:
    swrl:head [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                            swrl:propertyPredicate :mayTalkTo ;
-                           swrl:argument1 :o1 ;
-                           swrl:argument2 :o2
+                           swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1> ;
+                           swrl:argument2 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2>
                          ] ;
                rdf:rest rdf:nil
              ]
@@ -1174,18 +1174,18 @@ According to the Army Glossary:
    swrl:body [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:ClassAtom ;
                            swrl:classPredicate :MilitaryOrganization ;
-                           swrl:argument1 :o2
+                           swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:ClassAtom ;
                                       swrl:classPredicate :MilitaryOrganization ;
-                                      swrl:argument1 :o1
+                                      swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2>
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
                                      rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                                                  swrl:propertyPredicate :isSubordinateTo ;
-                                                 swrl:argument1 :o2 ;
-                                                 swrl:argument2 :o1
+                                                 swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2> ;
+                                                 swrl:argument2 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1>
                                                ] ;
                                      rdf:rest rdf:nil
                                    ]
@@ -1194,8 +1194,8 @@ According to the Army Glossary:
    swrl:head [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                            swrl:propertyPredicate :mayTalkTo ;
-                           swrl:argument1 :o2 ;
-                           swrl:argument2 :o1
+                           swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2> ;
+                           swrl:argument2 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1>
                          ] ;
                rdf:rest rdf:nil
              ]
@@ -1208,17 +1208,17 @@ According to the Army Glossary:
    swrl:body [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:ClassAtom ;
                            swrl:classPredicate :MilitaryOrganization ;
-                           swrl:argument1 :o2
+                           swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:ClassAtom ;
                                       swrl:classPredicate :MilitaryOrganization ;
-                                      swrl:argument1 :o1
+                                      swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2>
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
                                      rdf:first [ rdf:type swrl:SameIndividualAtom ;
-                                                 swrl:argument1 :o1 ;
-                                                 swrl:argument2 :o2
+                                                 swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1> ;
+                                                 swrl:argument2 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2>
                                                ] ;
                                      rdf:rest rdf:nil
                                    ]
@@ -1227,8 +1227,8 @@ According to the Army Glossary:
    swrl:head [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                            swrl:propertyPredicate :mayTalkTo ;
-                           swrl:argument1 :o1 ;
-                           swrl:argument2 :o2
+                           swrl:argument1 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o1> ;
+                           swrl:argument2 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#o2>
                          ] ;
                rdf:rest rdf:nil
              ]
@@ -1253,15 +1253,15 @@ According to the Army Glossary:
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
-                                      swrl:propertyPredicate :visibilityRange ;
+                                      swrl:propertyPredicate :minSpeed ;
                                       swrl:argument1 <http://myontology.com/scenario#m1> ;
-                                      swrl:argument2 300
+                                      swrl:argument2 0.277778
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
-                                                 swrl:propertyPredicate :minSpeed ;
+                                                 swrl:propertyPredicate :visibilityRange ;
                                                  swrl:argument1 <http://myontology.com/scenario#m1> ;
-                                                 swrl:argument2 0.277778
+                                                 swrl:argument2 300
                                                ] ;
                                      rdf:rest rdf:nil
                                    ]
@@ -1275,13 +1275,13 @@ According to the Army Glossary:
    rdf:type swrl:Imp ;
    swrl:body [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:ClassAtom ;
-                           swrl:classPredicate :MilitaryScenario ;
-                           swrl:argument1 <http://myontology.com/scenario#ms>
+                           swrl:classPredicate :OperationalElement ;
+                           swrl:argument1 <http://myontology.com/scenario#oe>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:ClassAtom ;
-                                      swrl:classPredicate :OperationalElement ;
-                                      swrl:argument1 <http://myontology.com/scenario#oe>
+                                      swrl:classPredicate :MilitaryScenario ;
+                                      swrl:argument1 <http://myontology.com/scenario#ms>
                                     ] ;
                           rdf:rest rdf:nil
                         ]
@@ -1308,12 +1308,12 @@ According to the Army Glossary:
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:ClassAtom ;
                                       swrl:classPredicate :MilitaryScenario ;
-                                      swrl:argument1 <http://myontology.com/scenario#ms1>
+                                      swrl:argument1 <http://myontology.com/scenario#ms2>
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
                                      rdf:first [ rdf:type swrl:ClassAtom ;
                                                  swrl:classPredicate :MilitaryScenario ;
-                                                 swrl:argument1 <http://myontology.com/scenario#ms2>
+                                                 swrl:argument1 <http://myontology.com/scenario#ms1>
                                                ] ;
                                      rdf:rest rdf:nil
                                    ]
@@ -1341,27 +1341,27 @@ According to the Army Glossary:
              ] ;
    swrl:head [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
-                           swrl:propertyPredicate :amphibiousSpeed ;
+                           swrl:propertyPredicate :maxSpeedLand ;
                            swrl:argument1 <http://myontology.com/scenario#g> ;
-                           swrl:argument2 2.5
+                           swrl:argument2 26.3889
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
-                                      swrl:propertyPredicate :minSpeed ;
+                                      swrl:propertyPredicate :amphibiousSpeed ;
                                       swrl:argument1 <http://myontology.com/scenario#g> ;
-                                      swrl:argument2 0.972222
+                                      swrl:argument2 2.5
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
-                                                 swrl:propertyPredicate :visibilityRange ;
+                                                 swrl:propertyPredicate :minSpeed ;
                                                  swrl:argument1 <http://myontology.com/scenario#g> ;
-                                                 swrl:argument2 1000
+                                                 swrl:argument2 0.972222
                                                ] ;
                                      rdf:rest [ rdf:type swrl:AtomList ;
                                                 rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
-                                                            swrl:propertyPredicate :maxSpeedLand ;
+                                                            swrl:propertyPredicate :visibilityRange ;
                                                             swrl:argument1 <http://myontology.com/scenario#g> ;
-                                                            swrl:argument2 26.3889
+                                                            swrl:argument2 1000
                                                           ] ;
                                                 rdf:rest rdf:nil
                                               ]
@@ -1402,10 +1402,9 @@ According to the Army Glossary:
    rdfs:label "MilitaryPerson and Platform same MO" ;
    rdf:type swrl:Imp ;
    swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate :isLocatedIn ;
-                           swrl:argument1 <http://myontology.com/scenario#m1> ;
-                           swrl:argument2 <http://myontology.com/scenario#mp>
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :MilitaryPlatform ;
+                           swrl:argument1 <http://myontology.com/scenario#mp>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:ClassAtom ;
@@ -1413,9 +1412,10 @@ According to the Army Glossary:
                                       swrl:argument1 <http://myontology.com/scenario#m1>
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
-                                     rdf:first [ rdf:type swrl:ClassAtom ;
-                                                 swrl:classPredicate :MilitaryPlatform ;
-                                                 swrl:argument1 <http://myontology.com/scenario#mp>
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate :isLocatedIn ;
+                                                 swrl:argument1 <http://myontology.com/scenario#m1> ;
+                                                 swrl:argument2 <http://myontology.com/scenario#mp>
                                                ] ;
                                      rdf:rest [ rdf:type swrl:AtomList ;
                                                 rdf:first [ rdf:type swrl:ClassAtom ;
@@ -1450,52 +1450,52 @@ According to the Army Glossary:
    rdf:type swrl:Imp ;
    swrl:body [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:ClassAtom ;
-                           swrl:classPredicate :MilitaryOrganizationPowerType ;
-                           swrl:argument1 <http://myontology.com/scenario#ompt1>
+                           swrl:classPredicate :MilitaryOrganization ;
+                           swrl:argument1 <http://myontology.com/scenario#o3>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                      swrl:propertyPredicate :hasMOPowerType ;
-                                      swrl:argument1 <http://myontology.com/scenario#o1> ;
-                                      swrl:argument2 <http://myontology.com/scenario#ompt1>
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate :MilitaryOrganizationPowerType ;
+                                      swrl:argument1 <http://myontology.com/scenario#ompt1>
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
                                      rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                 swrl:propertyPredicate :hasMOPowerType ;
+                                                 swrl:propertyPredicate :isSubordinateTo ;
                                                  swrl:argument1 <http://myontology.com/scenario#o2> ;
-                                                 swrl:argument2 <http://myontology.com/scenario#ompt1>
+                                                 swrl:argument2 <http://myontology.com/scenario#o3>
                                                ] ;
                                      rdf:rest [ rdf:type swrl:AtomList ;
-                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                            swrl:propertyPredicate :isSubordinateTo ;
-                                                            swrl:argument1 <http://myontology.com/scenario#o2> ;
-                                                            swrl:argument2 <http://myontology.com/scenario#o3>
+                                                rdf:first [ rdf:type swrl:DifferentIndividualsAtom ;
+                                                            swrl:argument1 <http://myontology.com/scenario#o1> ;
+                                                            swrl:argument2 <http://myontology.com/scenario#o2>
                                                           ] ;
                                                 rdf:rest [ rdf:type swrl:AtomList ;
-                                                           rdf:first [ rdf:type swrl:DifferentIndividualsAtom ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate :isSubordinateTo ;
                                                                        swrl:argument1 <http://myontology.com/scenario#o1> ;
-                                                                       swrl:argument2 <http://myontology.com/scenario#o2>
+                                                                       swrl:argument2 <http://myontology.com/scenario#o3>
                                                                      ] ;
                                                            rdf:rest [ rdf:type swrl:AtomList ;
                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                                                  swrl:propertyPredicate :isSubordinateTo ;
-                                                                                  swrl:argument1 <http://myontology.com/scenario#o1> ;
-                                                                                  swrl:argument2 <http://myontology.com/scenario#o3>
+                                                                                  swrl:propertyPredicate :hasMOPowerType ;
+                                                                                  swrl:argument1 <http://myontology.com/scenario#o2> ;
+                                                                                  swrl:argument2 <http://myontology.com/scenario#ompt1>
                                                                                 ] ;
                                                                       rdf:rest [ rdf:type swrl:AtomList ;
                                                                                  rdf:first [ rdf:type swrl:ClassAtom ;
                                                                                              swrl:classPredicate :MilitaryOrganization ;
-                                                                                             swrl:argument1 <http://myontology.com/scenario#o3>
+                                                                                             swrl:argument1 <http://myontology.com/scenario#o1>
                                                                                            ] ;
                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
-                                                                                            rdf:first [ rdf:type swrl:ClassAtom ;
-                                                                                                        swrl:classPredicate :MilitaryOrganization ;
-                                                                                                        swrl:argument1 <http://myontology.com/scenario#o2>
+                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                        swrl:propertyPredicate :hasMOPowerType ;
+                                                                                                        swrl:argument1 <http://myontology.com/scenario#o1> ;
+                                                                                                        swrl:argument2 <http://myontology.com/scenario#ompt1>
                                                                                                       ] ;
                                                                                             rdf:rest [ rdf:type swrl:AtomList ;
                                                                                                        rdf:first [ rdf:type swrl:ClassAtom ;
                                                                                                                    swrl:classPredicate :MilitaryOrganization ;
-                                                                                                                   swrl:argument1 <http://myontology.com/scenario#o1>
+                                                                                                                   swrl:argument1 <http://myontology.com/scenario#o2>
                                                                                                                  ] ;
                                                                                                        rdf:rest rdf:nil
                                                                                                      ]
@@ -1510,12 +1510,12 @@ According to the Army Glossary:
    swrl:head [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:ClassAtom ;
                            swrl:classPredicate :HierarchicallyEquivalent ;
-                           swrl:argument1 <http://myontology.com/scenario#o2>
+                           swrl:argument1 <http://myontology.com/scenario#o1>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:ClassAtom ;
                                       swrl:classPredicate :HierarchicallyEquivalent ;
-                                      swrl:argument1 <http://myontology.com/scenario#o1>
+                                      swrl:argument1 <http://myontology.com/scenario#o2>
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
                                      rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
@@ -1536,45 +1536,45 @@ According to the Army Glossary:
    swrl:body [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:ClassAtom ;
                            swrl:classPredicate :MilitaryOrganizationPowerType ;
-                           swrl:argument1 <http://myontology.com/scenario#ompt1>
+                           swrl:argument1 <http://myontology.com/scenario#ompt2>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                      swrl:propertyPredicate :hasMOPowerType ;
-                                      swrl:argument1 <http://myontology.com/scenario#o1> ;
-                                      swrl:argument2 <http://myontology.com/scenario#ompt1>
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate :MilitaryOrganizationPowerType ;
+                                      swrl:argument1 <http://myontology.com/scenario#ompt1>
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
                                      rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                 swrl:propertyPredicate :hasMOPowerType ;
+                                                 swrl:propertyPredicate :isSubordinateTo ;
                                                  swrl:argument1 <http://myontology.com/scenario#o2> ;
-                                                 swrl:argument2 <http://myontology.com/scenario#ompt2>
+                                                 swrl:argument2 <http://myontology.com/scenario#o1>
                                                ] ;
                                      rdf:rest [ rdf:type swrl:AtomList ;
-                                                rdf:first [ rdf:type swrl:ClassAtom ;
-                                                            swrl:classPredicate :MilitaryOrganizationPowerType ;
-                                                            swrl:argument1 <http://myontology.com/scenario#ompt2>
+                                                rdf:first [ rdf:type swrl:DifferentIndividualsAtom ;
+                                                            swrl:argument1 <http://myontology.com/scenario#o1> ;
+                                                            swrl:argument2 <http://myontology.com/scenario#o2>
                                                           ] ;
                                                 rdf:rest [ rdf:type swrl:AtomList ;
-                                                           rdf:first [ rdf:type swrl:DifferentIndividualsAtom ;
-                                                                       swrl:argument1 <http://myontology.com/scenario#o1> ;
-                                                                       swrl:argument2 <http://myontology.com/scenario#o2>
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate :MilitaryOrganization ;
+                                                                       swrl:argument1 <http://myontology.com/scenario#o1>
                                                                      ] ;
                                                            rdf:rest [ rdf:type swrl:AtomList ;
                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                                                  swrl:propertyPredicate :isSubordinateTo ;
-                                                                                  swrl:argument1 <http://myontology.com/scenario#o2> ;
-                                                                                  swrl:argument2 <http://myontology.com/scenario#o1>
+                                                                                  swrl:propertyPredicate :hasMOPowerType ;
+                                                                                  swrl:argument1 <http://myontology.com/scenario#o1> ;
+                                                                                  swrl:argument2 <http://myontology.com/scenario#ompt1>
                                                                                 ] ;
                                                                       rdf:rest [ rdf:type swrl:AtomList ;
-                                                                                 rdf:first [ rdf:type swrl:ClassAtom ;
-                                                                                             swrl:classPredicate :MilitaryOrganization ;
-                                                                                             swrl:argument1 <http://myontology.com/scenario#o2>
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate :hasMOPowerType ;
+                                                                                             swrl:argument1 <http://myontology.com/scenario#o2> ;
+                                                                                             swrl:argument2 <http://myontology.com/scenario#ompt2>
                                                                                            ] ;
                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
                                                                                             rdf:first [ rdf:type swrl:ClassAtom ;
                                                                                                         swrl:classPredicate :MilitaryOrganization ;
-                                                                                                        swrl:argument1 <http://myontology.com/scenario#o1>
+                                                                                                        swrl:argument1 <http://myontology.com/scenario#o2>
                                                                                                       ] ;
                                                                                             rdf:rest rdf:nil
                                                                                           ]

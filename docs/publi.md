@@ -24,11 +24,7 @@ hide:
 
 # Artigos
 
-**Enhancing heterogeneous mobile network management based on a well-founded reference ontology**[:material-file-pdf-box:{ title="file"}](publi/230810_FGCS_enhancing.pdf){:download="230810_FGCS_enhancing"}[:simple-doi:](https://doi.org/10.1016/j.future.2023.08.008)[:material-tag-text:{ title="bibtex" }](publi/ref/S0167739X23003084.bib)
-
-
 **Enhancing heterogeneous mobile network management based on a well-founded reference ontology**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/52dc2bbf3cbc694688339b65e3cf4f3aa1fde579/publi/230810_FGCS_Enhancing%20heterogeneous%20mobile%20network%20management%20based%20on%20a%20well-founded%20reference%20ontology.pdf?raw=true){:download="230810_FGCS_enhancing"}[:simple-doi:](https://doi.org/10.1016/j.future.2023.08.008)[:material-tag-text:{ title="bibtex" }](publi/ref/S0167739X23003084.bib)
-
 
 *Julio Cesar Cardoso Tesolin and André M. Demori and David Fernandes Cruz Moura and Maria Cláudia Cavalcanti*
 

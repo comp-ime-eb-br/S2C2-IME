@@ -55,6 +55,7 @@ nav:
     - MiScOn: ontodesc/miscon.md
   - Publicações: publi.md
   - Equipe: equipe.md
+  - Noticias: noticia.md
   - Utilitários:
     - mkdocs: util/mkdocs.md
     - purl: util/purl.md

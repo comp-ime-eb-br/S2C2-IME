@@ -28,7 +28,7 @@ hide:
 
 *Julio Cesar Cardoso Tesolin and André M. Demori and David Fernandes Cruz Moura and Maria Cláudia Cavalcanti*
 
-**Engenharia Dirigida a Modelos Aplicada à Cognição de Rádios em Operações Militares**[:material-file-pdf-box:{ title="file"}](publi/C-01_Artigo_RMCT_V2_2_corrigido_n.pdf){:download="RMCT_EngDirModCogRadio"}
+**Engenharia Dirigida a Modelos Aplicada à Cognição de Rádios em Operações Militares**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/C-01_Artigo_RMCT_V2_2_corrigido_n.pdf?raw=true){:download="RMCT_EngDirModCogRadio"}
 
 *Marcus Albert Alves da Silva, Gabriel Bozza, Milena Mayara Ruya, David Fernandes Cruz Moura, Maria Claudia Reis Cavalcanti, Luis Ferreira Pires* 
 

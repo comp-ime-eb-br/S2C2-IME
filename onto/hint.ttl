@@ -21,8 +21,67 @@
                               owl:versionInfo "\"1.0.0\"@en" .
 
 #################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
+
+###  http://purl.org/nemo/gufo#externallyDependsOn
+gufo:externallyDependsOn rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/nemo/gufo#inheresIn
+gufo:inheresIn rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/nemo/gufo#isComponentOf
+gufo:isComponentOf rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/nemo/gufo#isDerivedFrom
+gufo:isDerivedFrom rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/nemo/gufo#mediates
+gufo:mediates rdf:type owl:ObjectProperty .
+
+
+###  https://purl.org/s2c2/hint#bindsMSender
+:bindsMSender rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :bindsWSender ;
+              rdfs:domain :MonitoredBond ;
+              rdfs:range :MonitoredSender .
+
 
 ###  https://purl.org/s2c2/hint#bindsMSignal
 :bindsMSignal rdf:type owl:ObjectProperty ;
@@ -208,6 +267,18 @@
 #    Data properties
 #################################################################
 
+###  http://purl.org/nemo/gufo#hasQualityValue
+gufo:hasQualityValue rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/s2c2/hint#power
+:power rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf gufo:hasQualityValue ;
+       rdfs:domain :Signal ;
+       rdfs:range xsd:decimal ;
+       rdfs:label "power" .
+
+
 ###  signalGeneration:bandwidth
 <signalGeneration:bandwidth> rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf gufo:hasQualityValue ;
@@ -222,16 +293,61 @@
                              rdfs:label "frequency"@en .
 
 
-###  signalGeneration:power
-<signalGeneration:power> rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf gufo:hasQualityValue ;
-                         rdfs:domain :SignalGeneration ;
-                         rdfs:label "power"@en .
+###  signalGeneration:txPower
+<signalGeneration:txPower> rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf gufo:hasQualityValue ;
+                           rdfs:domain :SignalGeneration ;
+                           rdfs:range xsd:decimal ;
+                           rdfs:label "txPower"@en .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+###  http://purl.org/nemo/gufo#Category
+gufo:Category rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#ExtrinsicMode
+gufo:ExtrinsicMode rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#FunctionalComplex
+gufo:FunctionalComplex rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#IntrinsicMode
+gufo:IntrinsicMode rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Kind
+gufo:Kind rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#MaterialRelationshipType
+gufo:MaterialRelationshipType rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Mixin
+gufo:Mixin rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Quality
+gufo:Quality rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Relator
+gufo:Relator rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Role
+gufo:Role rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#RoleMixin
+gufo:RoleMixin rdf:type owl:Class .
+
 
 ###  https://purl.org/s2c2/hint#Atmosphere
 :Atmosphere rdf:type owl:Class ;
@@ -284,11 +400,6 @@
                                 owl:onClass :Medium
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty :bindsReceiver ;
-                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                owl:onClass :Receiver
-                              ] ,
-                              [ rdf:type owl:Restriction ;
                                 owl:onProperty :bindsSender ;
                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass :Sender
@@ -297,6 +408,11 @@
                                 owl:onProperty :bindsSignal ;
                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass :Signal
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :bindsReceiver ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Receiver
                               ] .
 
 
@@ -430,8 +546,7 @@
                           [ rdf:type owl:Restriction ;
                             owl:onProperty [ owl:inverseOf :bindsReceiver
                                            ] ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :DetectedBond
+                            owl:someValuesFrom :DetectedBond
                           ] ;
           owl:disjointWith :Tx .
 

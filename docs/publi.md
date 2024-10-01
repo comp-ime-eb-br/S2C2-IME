@@ -68,7 +68,9 @@ hide:
 
 *Flavio Ferreira da Silva, Julio Cesar Duarte, Wallace Corbo*
 
-**A Review of Testbeds on SCADA Systems with Malware Analysis**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/outrosArtigosEquipe/Artigo_Testbeds_RITA_aceito.pdf?raw=true){:download="SCADA_TestBeds"}
+**PREAnoTe: Uma abordagem de anotação de corpus para o ajuste fino de Large Language Model pré-treinado**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/outrosArtigosEquipe/Artigo_Testbeds_RITA_aceito.pdf?raw=true){:download="SBBD PREAnoTe"}
+*Jones de Oliveira Avelino, Gustavo Ewbank Danon, Giselle de Farias Rosa, Kelli de Faria Cordeiro, Maria Cláudia Cavalcanti*
+
 
 # Relatórios e Outros Documentos
 

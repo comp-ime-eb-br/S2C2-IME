@@ -68,7 +68,8 @@ hide:
 
 *Flavio Ferreira da Silva, Julio Cesar Duarte, Wallace Corbo*
 
-**PREAnoTe: Uma abordagem de anotação de corpus para o ajuste fino de Large Language Model pré-treinado**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/outrosArtigosEquipe/Artigo_Testbeds_RITA_aceito.pdf?raw=true){:download="SBBD PREAnoTe"}
+**PREAnoTe: Uma abordagem de anotação de corpus para o ajuste fino de Large Language Model pré-treinado**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/SBBD_2024___PREAnoTe.pdf?raw=true){:download="SBBD PREAnoTe"}
+
 *Jones de Oliveira Avelino, Gustavo Ewbank Danon, Giselle de Farias Rosa, Kelli de Faria Cordeiro, Maria Cláudia Cavalcanti*
 
 

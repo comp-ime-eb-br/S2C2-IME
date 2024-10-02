@@ -6,7 +6,7 @@ hide:
 
 # Teses
 
-**Towards A Mobile Wireless Network Ontology For Radio Access Points Selection Supported By Semantic Reasoning**[:material-file-pdf-box:{ title="file"}](publi/202407_Tese_JTesolin.pdf){:download="202407_Tese_JTesolin"}
+**Towards A Mobile Wireless Network Ontology For Radio Access Points Selection Supported By Semantic Reasoning**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/20240704_Tese_JTesolin.pdf?raw=true){:download="202407_Tese_JTesolin"}
 
 *Julio Cesar Cardoso Tesolin*
 

@@ -10,3 +10,5 @@ hide:
 [IME - Seção de Engenharia de Computação (SE-9)](http://www.comp.ime.eb.br/pos/)
 
 [IME - Seção de Engenharia de Defesa (SE-10)](https://pged.ime.eb.br/)
+
+[Unified Foundational Ontology - UFO - Giancarlo Guizzardi](https://www.giancarloguizzardi.com/)

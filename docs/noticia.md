@@ -13,6 +13,7 @@ O curso sobre  operacionalização de ontologias será ministrado pelo Dr. [Clau
 O curso é apropriado para alunos e professores de pós-graduação que tenham alguma experiência em ontologias e nas linguagens OWL/RDF. As vagas são limitadas à capacidade do laboratório. Prioridade será dada para os alunos de Pós-graduação do IME e da UFRJ que participam dos Projetos S2C2 e Cibersemântica. 
 
 Os interessados devem enviar email para [yoko@ime.eb.br](yoko@ime.eb.br) incluindo no assunto do email [OpOn@IME], e informando:
+
 - nome completo
 - nível: graduando, mestrando ou doutorando
 - universidade/depto a que está vinculado
@@ -21,6 +22,7 @@ Os interessados devem enviar email para [yoko@ime.eb.br](yoko@ime.eb.br) incluin
 - um parágrafo relatando experiência anterior no desenvolivmento de ontologias operacionais e as ferramentas usadas para isso.
 
 Lista de Participantes:
+
 - André Muniz Demori - IME
 - Daniel Martins Mourão - IME
 - Anderson Alves Albuquerque - IME

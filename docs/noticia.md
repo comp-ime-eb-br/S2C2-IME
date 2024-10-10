@@ -19,3 +19,27 @@ Os interessados devem enviar email para [yoko@ime.eb.br](yoko@ime.eb.br) incluin
 - orientadores
 - tema de dissertação/tese resumido
 - um parágrafo relatando experiência anterior no desenvolivmento de ontologias operacionais e as ferramentas usadas para isso.
+
+Lista de Participantes:
+- André Muniz Demori - IME
+- Daniel Martins Mourão - IME
+- Anderson Alves Albuquerque - IME
+- Cláudia Rödel - IME
+- Luciano Lima da Silva - IME
+- Ubirajara Santos - UFRJ
+- Samir Ramos - IME/UNICAMP
+- Alex Garcia - IME
+- Ronaldo Goldschmidt- IME
+- Maria Cláudia Cavalcanti - IME
+- Vania Borges - UFRJ
+- Maria Luiza Machado Campos - UFRJ
+- Linair Maria Campos - UFRJ/UFF
+- Marcelo Amaral - PETROBRAS/UFRJ
+- Julia Campos Rocha - UFRJ
+- Alberto Sulaiman - IME
+- Valquire Jesus - UFRJ/S2C2
+- Giulianna dos Santos IME
+- Lucas Maddalena - PUC-RIO
+- Marcia dos Santos - UFRJ
+- Leandro Ouriques - CASNAV/UFRJ
+  

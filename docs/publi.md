@@ -72,6 +72,11 @@ hide:
 
 *Jones de Oliveira Avelino, Gustavo Ewbank Danon, Giselle de Farias Rosa, Kelli de Faria Cordeiro, Maria Cláudia Cavalcanti*
 
+**Knowledge Graph Generation from Text Using Supervised Approach Supported by a Relation Metamodel: An Application in C2 Domain**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/2024_ICEIS_KnowledgeGraphGen?raw=true){:download="24_ICEIS_KnowldegeGraphGen"}[:simple-doi:](https://www.scitepress.org/Link.aspx?doi=10.5220/0012629300003690)
+
+*Jones de Oliveira Avelino, Giselle de Farias Rosa, Gustavo Ewbank Danon,  Kelli de Faria Cordeiro, Maria Cláudia Cavalcanti*
+
+
 
 # Relatórios e Outros Documentos
 

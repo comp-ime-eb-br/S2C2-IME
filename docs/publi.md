@@ -74,7 +74,7 @@ hide:
 
 
 
-**Towards a microservices architecture to support communication in C2 applications**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/2024_SOSE_TowardsMSA_capa.pdf?raw=true){:download="Towards_MSA"}[:simple-doi:](https://www.scitepress.org/Link.aspx?doi=10.5220/0012629300003690)
+**Towards a microservices architecture to support communication in C2 applications**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/2024_SOSE_TowardsMSA_capa.pdf?raw=true){:download="Towards_MSA"}[:simple-doi:](https://ieeexplore.ieee.org/document/10620941)
 
 
 *Flavio Ferreira da Silva, Luís Ferreira Pires, Julio Cesar Duarte, Maria Cláudia Cavalcanti*

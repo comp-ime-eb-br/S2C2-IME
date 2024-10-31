@@ -52,11 +52,11 @@ hide:
 
 *André M. Demori, Renan Rodrigues Moreira Resende da Silva, Pedro Paulo Leal de Albuquerque, David Fernandes Cruz Moura, Julio Cesar Cardoso Tesolin, Maria Claudia Reis Cavalcanti*
 
-**A Semantic Web Approach for Military Operation Scenarios Development for Simulation** {:download="23_ICEIS_A_SemanticWebApproach"}[:simple-doi:](DOI: 10.5220/0012088600003541)    
+**A Semantic Web Approach for Military Operation Scenarios Development for Simulation** {:download="23_ICEIS_A_SemanticWebApproach"}[:simple-doi:](https://www.scitepress.org/Papers/2023/120886/120886.pdf)    
 
 *André Demori; Julio Tesolin; David Moura; João Gomes; Gabriel Pedroso; Leonardo Silva de Carvalho; Edison Pignaton de Freitas;Maria C. Cavalcanti*
 
-**Integrating a Multi-Agent System Simulator and a Network Emulator to Realistically Exercise Military Network Scenarios** {:download="23_ICEIS_A_SemanticWebApproach"}[:simple-doi:](DOI: 10.5220/0012051600003546)    
+**Integrating a Multi-Agent System Simulator and a Network Emulator to Realistically Exercise Military Network Scenarios** {:download="23_ICEIS_Integrating_MultiAgent}[:simple-doi:](https://www.scitepress.org/Papers/2023/120516/120516.pdf)    
 
 *Dante Barone, Juliano Wickboldt, Maria C. Cavalcanti, David Moura, Julio Tesolin, André Demori, Julio Anjos, Leonardo Silva de Carvalho, João Gomes, Edison Pignaton de Freitas*
 

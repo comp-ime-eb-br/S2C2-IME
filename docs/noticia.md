@@ -17,7 +17,8 @@ As vagas são limitadas à capacidade da sala de aula. Prioridade será dada par
 **Os interessados deverão enviar e-mail para yoko@ime.eb.br incluindo no assunto do e-mail a expressão [ODCM@IME], e informando os seguintes dados:** 
 
 - nome completo; 
-- telefone; nível (graduando, mestrando ou doutorando); 
+- telefone; 
+- nível (graduando, mestrando ou doutorando); 
 - universidade/departamento a que está vinculado; 
 - nomes dos orientadores; 
 - resumo do tema de pesquisa/dissertação/tese; 

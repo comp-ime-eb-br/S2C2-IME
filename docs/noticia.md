@@ -26,7 +26,7 @@ As vagas são limitadas à capacidade da sala de aula. Prioridade será dada par
 
 Para conhecer mais sobre o Professor GUIZZARDI, pode-se acessar seu [portfolio de apresentações e entrevistas](https://www.giancarloguizzardi.com/), e pode-se acessar o seu [histórico de publicações](https://scholar.google.com/citations?hl=pt-BR&user=nnfVBt8AAAAJ&view_op=list_works&sortby=pubdate) e [pesquisa](https://people.utwente.nl/g.guizzardi).
 
-# Resultado das Inscrições ao Curso Sobre Operacionalização de Ontologias
+# Resultado das Inscrições ao Curso Sobre Operacionalização de Ontologias - Prof. Dr. Claudenir Morais Fonseca
 
 Lista de Participantes:
 

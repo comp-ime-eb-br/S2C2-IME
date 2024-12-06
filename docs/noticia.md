@@ -4,6 +4,41 @@ hide:
   - toc
 ---
 
+# Resultado das Inscrições no Curso Sobre Modelagem Conceitual Orientada por Ontologias - Prof. Dr. GIANCARLO GUIZZARDI
+
+Lista de Participantes:
+
+- André Muniz Demori, IME
+- Alberto Sulaiman, IME
+- Alex Garcia, IME
+- Anderson Alves, IME
+- Caíque Nascimento, PUC-Rio
+- Claudia Bosaipo, IME
+- Daniel Mourão, IME
+- Fernanda Araújo Baião, PUC-Rio
+- Gabriel Ferreira, PUC-Rio
+- Glenda Carla Moura Amaral, UT
+- Jóice Cleide Cardoso Ennes de Souza, UFF
+- Jones Avelino, IME
+- Júlia Campos Rocha, UFRJ
+- Laís Fausto Souza, UFF
+- Leandro Ouriques, UFRJ
+- Leticia Vidal Ozorio, PUC-Rio
+- Linair Maria Campos, UFRJ/UFF
+- Luana Salles, IBICT
+- Marcela Rabelo De Lima, IME
+- Maria Luiza Machado Campos, UFRJ
+- Mateus da Rocha Peixoto, PUC-Rio
+- Natália Oliveira, UFRJ
+- Romulo Girardi, IME
+- Ronaldo Goldschmidt, IME
+- Rosana Portugal Tavares, UFF
+- Sergio de Castro Martins, UFRJ
+- Ubirajara Santos, UFRJ
+- Valquire Jesus, UFRJ 
+- Vania Borges, UFRJ
+- Wesley Santos, PUC-Rio
+
 # Curso Sobre Modelagem Conceitual Orientada por Ontologias - Prof. Dr. GIANCARLO GUIZZARDI
 
 ## Período : 10, 11 e 13 DEZ 2024, das 13h00min às 17h00min 

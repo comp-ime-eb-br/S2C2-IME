@@ -14,12 +14,19 @@ Esse curso teórico e prático tem como objetivo apresentar o conhecimento neces
 Esse é um curso baseado em projeto, no qual as aulas expositivas e as sessões práticas fornecem a base de conhecimento necessária para a execução do projeto. Durante o curso os alunos utilizam o conhecimento adquirido nas sessões expositivas no projeto, que abrange as etapas do processo de FAIRificação, incluindo:
 
 -  ⁠Planejamento da FAIRificação com a identificação dos objetivos, nível de FAIRness almejado, partes interessadas, etc.
+  
 -⁠  ⁠⁠Entendimento do conjunto de dados a ser FAIRificado, o que ele representa, quais são os itens dos dados, valores possíveis, unidades de medida, etc.
+
 -⁠  ⁠⁠Definição do modelo semântico dos dados;
+
 -⁠  ⁠⁠Aplicação do modelo semântico aos dados, tornado-os conectáveis;
+
 -⁠  ⁠⁠Definição do modelo semântico dos metadados;
+
 -⁠  ⁠⁠Uso do modelo de metadados como o esquema para criar registros de metadados que descrevam os dados;
+
 -⁠  ⁠⁠Publicação dos dados e metadados FAIRificados;
+
 -⁠  ⁠⁠Avaliação do nível de FAIRness dos dados e metadados FAIRificados.
 
 O curso será oferecido em formato presencial e compacto, nas instalações do Instituto Militar de Engenharia em sala a ser divulgada, no período 03 a 06 de Junho de 2025, das 13h30min às 17h30min.  O público alvo do curso são alunos e professores de pós-graduação que tenham interesse no tema Engenharia e Gestão de Dados.

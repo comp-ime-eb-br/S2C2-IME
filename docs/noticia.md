@@ -13,6 +13,7 @@ Descrição:
 Esse curso teórico e prático tem como objetivo apresentar o conhecimento necessário para entender e aplicar os princípios FAIR em dados e metadados e imediatamente aplicá-lo em um projeto de FAIRificação de dados. O curso enfoca a compreensão dos pincípios, sua análise e o processo para tornar os dados existentes (mais) FAIR. Uma parte significativa dos princípios FAIR está relacionada ao apoio à capacidade dos agentes artificiais de interpretar as informações descobertas e agir de acordo com elas. Isso é feito por meio de técnicas semânticas, como ontologias, Linked Data e Web Semântica, que também são abordadas no curso.
 Esse é um curso baseado em projeto, no qual as aulas expositivas e as sessões práticas fornecem a base de conhecimento necessária para a execução do projeto. Durante o curso os alunos utilizam o conhecimento adquirido nas sessões expositivas no projeto, que abrange as etapas do processo de FAIRificação, incluindo:
 
+
 -  ⁠Planejamento da FAIRificação com a identificação dos objetivos, nível de FAIRness almejado, partes interessadas, etc.
   
 -⁠  ⁠⁠Entendimento do conjunto de dados a ser FAIRificado, o que ele representa, quais são os itens dos dados, valores possíveis, unidades de medida, etc.

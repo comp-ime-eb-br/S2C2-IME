@@ -3,6 +3,38 @@ hide:
   - navigation
   - toc
 ---
+# CURSO: ENGENHARIA DE DADOS FAIR
+# PROF: LUIZ OLAVO BONINO - Univ. Twente
+# ORG: MARIA CLÁUDIA REIS CAVALCANTI (IME) e LUANA SALES (IBICT)
+# 3 a 6 de Junho de 2025
+
+Descrição:
+⁠ Desde a publicação em 2016, os princípios FAIR rapidamente ganharam atenção internacional ao introduzirem um conjunto de princípios orientadores que visam melhorar a busca, acessibilidade, interoperabilidade e reutilização de dados, metadados e outros objetos digitais (findability, accessibility, interoperability e reusability em inglês). Um objetivo importante dos princípios FAIR é a melhoria do aproveitamento dos recursos investidos na geração de objetos digitais, incrementando a capacidade de ação de agentes computacionais e, portanto, aumentando a automação em diferentes atividades que exigem dados, localizáveis, acessíveis, interoperáveis e reutilizáveis. A rápida aceitação e adoção dos princípios como diretrizes para a gestão adequada de dados criou uma demanda significativa por conhecimento especializado sobre como aplicá-los e, portanto, aumentar o nível de FAIRness dos objetos digitais.
+Esse curso teórico e prático tem como objetivo apresentar o conhecimento necessário para entender e aplicar os princípios FAIR em dados e metadados e imediatamente aplicá-lo em um projeto de FAIRificação de dados. O curso enfoca a compreensão dos pincípios, sua análise e o processo para tornar os dados existentes (mais) FAIR. Uma parte significativa dos princípios FAIR está relacionada ao apoio à capacidade dos agentes artificiais de interpretar as informações descobertas e agir de acordo com elas. Isso é feito por meio de técnicas semânticas, como ontologias, Linked Data e Web Semântica, que também são abordadas no curso.
+Esse é um curso baseado em projeto, no qual as aulas expositivas e as sessões práticas fornecem a base de conhecimento necessária para a execução do projeto. Durante o curso os alunos utilizam o conhecimento adquirido nas sessões expositivas no projeto, que abrange as etapas do processo de FAIRificação, incluindo:
+-  ⁠Planejamento da FAIRificação com a identificação dos objetivos, nível de FAIRness almejado, partes interessadas, etc.
+-⁠  ⁠⁠Entendimento do conjunto de dados a ser FAIRificado, o que ele representa, quais são os itens dos dados, valores possíveis, unidades de medida, etc.
+-⁠  ⁠⁠Definição do modelo semântico dos dados;
+-⁠  ⁠⁠Aplicação do modelo semântico aos dados, tornado-os conectáveis;
+-⁠  ⁠⁠Definição do modelo semântico dos metadados;
+-⁠  ⁠⁠Uso do modelo de metadados como o esquema para criar registros de metadados que descrevam os dados;
+-⁠  ⁠⁠Publicação dos dados e metadados FAIRificados;
+-⁠  ⁠⁠Avaliação do nível de FAIRness dos dados e metadados FAIRificados.
+
+O curso será oferecido em formato presencial e compacto, nas instalações do Instituto Militar de Engenharia em sala a ser divulgada, no período 03 a 06 de Junho de 2025, das 13h30min às 17h30min.  O público alvo do curso são alunos e professores de pós-graduação que tenham interesse no tema Engenharia e Gestão de Dados.
+
+As vagas são limitadas à capacidade da sala de aula. Prioridade será dada para os alunos de Pós-graduação do IME, UFRJ e PUC-Rio que participam dos Projetos S2C2 e CiberSemântica, e aos alunos do PPGCI - IBICT. A lista de selecionados será divulgada a partir de 1⁠º MAIO 25 no site do Projeto S2C2(https://comp-ime-eb-br.github.io/S2C2-IME/noticia/).
+
+Para se inscrever utilize o formulário https://forms.gle/pgLJaCF7tpSze92F9
+
+Requisitos do curso:
+- um conhecimento prévio de estrutura de dados é desejável;
+- será necessário levar um notebook pessoal para acompanhar tarefas práticas.
+
+Mini-CV: Luiz Bonino é Professor Associado no grupo Semântica, Segurança Cibernética e Serviços da Universidade de Twente e do grupo de BioSemântica do Centro Médico Universitário de Leiden. Ele participou do workshop em 2014 que deu origem aos princípios FAIR e é co-autor do artigo original onde os princípios foram introduzidos. Nos últimos 11 anos seu foco de pesquisa tem sido a criação e desenvolvimento de tecnologias, diretrizes e processos para apoiar a concretização dos princípios FAIR, incluindo o FAIR Digital Object Framework, o FAIR Data Point e o FAIR Data Train.
+Mais informações no link: https://research.utwente.nl/en/persons/luiz-bonino
+
+Obs: O curso não oferece certificado.
 
 # Resultado das Inscrições no Curso Sobre Modelagem Conceitual Orientada por Ontologias - Prof. Dr. GIANCARLO GUIZZARDI
 

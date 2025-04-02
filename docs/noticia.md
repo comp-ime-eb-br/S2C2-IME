@@ -4,9 +4,9 @@ hide:
   - toc
 ---
 # CURSO: ENGENHARIA DE DADOS FAIR
-# PROF: LUIZ OLAVO BONINO - Univ. Twente
-# ORG: MARIA CLÁUDIA REIS CAVALCANTI (IME) e LUANA SALES (IBICT)
-# 3 a 6 de Junho de 2025
+ PROF: LUIZ OLAVO BONINO - Univ. Twente
+ ORG: MARIA CLÁUDIA REIS CAVALCANTI (IME) e LUANA SALES (IBICT)
+ 3 a 6 de Junho de 2025
 
 Descrição:
 ⁠Desde a publicação em 2016, os princípios FAIR rapidamente ganharam atenção internacional ao introduzirem um conjunto de princípios orientadores que visam melhorar a busca, acessibilidade, interoperabilidade e reutilização de dados, metadados e outros objetos digitais (findability, accessibility, interoperability e reusability em inglês). Um objetivo importante dos princípios FAIR é a melhoria do aproveitamento dos recursos investidos na geração de objetos digitais, incrementando a capacidade de ação de agentes computacionais e, portanto, aumentando a automação em diferentes atividades que exigem dados, localizáveis, acessíveis, interoperáveis e reutilizáveis. A rápida aceitação e adoção dos princípios como diretrizes para a gestão adequada de dados criou uma demanda significativa por conhecimento especializado sobre como aplicá-los e, portanto, aumentar o nível de FAIRness dos objetos digitais.

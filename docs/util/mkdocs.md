@@ -19,3 +19,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 ### Repository
 
 https://squidfunk.github.io/mkdocs-material/reference/
+
+### Step by Step Building a MKDocs site
+
+https://www.youtube.com/watch?v=DeZjkCtttss

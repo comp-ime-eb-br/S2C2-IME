@@ -26,9 +26,9 @@ Durante o curso os alunos utilizam o conhecimento adquirido nas sessões exposit
 
 O curso será oferecido em formato presencial e compacto, nas instalações do Instituto Militar de Engenharia em sala a ser divulgada, no período 03 a 06 de Junho de 2025, das 13h30min às 17h30min.  O público alvo do curso são alunos e professores de pós-graduação que tenham interesse no tema Engenharia e Gestão de Dados.
 
-As vagas são limitadas à capacidade da sala de aula. Prioridade será dada para os alunos de Pós-graduação do IME, UFRJ e PUC-Rio que participam dos Projetos S2C2 e CiberSemântica, e aos alunos do PPGCI - IBICT. A lista de selecionados será divulgada a partir de 1⁠º MAIO 25 no site do Projeto S2C2(https://comp-ime-eb-br.github.io/S2C2-IME/noticia/).
+As vagas são limitadas à capacidade da sala de aula. Prioridade será dada para os alunos de Pós-graduação do IME, UFRJ e PUC-Rio que participam dos Projetos S2C2 e CiberSemântica, e aos alunos do PPGCI - IBICT. A lista de selecionados será divulgada a partir de 1⁠º MAIO 25 no site do Projeto [S2C2](https://comp-ime-eb-br.github.io/S2C2-IME/noticia/).
 
-Para se inscrever utilize o formulário https://forms.gle/pgLJaCF7tpSze92F9
+Para se inscrever utilize este [formulário](https://forms.gle/pgLJaCF7tpSze92F9).
 
 Requisitos do curso:
 
@@ -36,7 +36,7 @@ Requisitos do curso:
 - será necessário levar um notebook pessoal para acompanhar tarefas práticas.
 
 Mini-CV: Luiz Bonino é Professor Associado no grupo Semântica, Segurança Cibernética e Serviços da Universidade de Twente e do grupo de BioSemântica do Centro Médico Universitário de Leiden. Ele participou do workshop em 2014 que deu origem aos princípios FAIR e é co-autor do artigo original onde os princípios foram introduzidos. Nos últimos 11 anos seu foco de pesquisa tem sido a criação e desenvolvimento de tecnologias, diretrizes e processos para apoiar a concretização dos princípios FAIR, incluindo o FAIR Digital Object Framework, o FAIR Data Point e o FAIR Data Train.
-Mais informações no link: https://research.utwente.nl/en/persons/luiz-bonino
+Mais informações neste [link](https://research.utwente.nl/en/persons/luiz-bonino).
 
 Obs: O curso não oferece certificado.
 

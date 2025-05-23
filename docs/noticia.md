@@ -3,6 +3,38 @@ hide:
   - navigation
   - toc
 ---
+# CURSO: ENGENHARIA DE DADOS FAIR - lista de inscritos
+- PROF: LUIZ OLAVO BONINO - Univ. Twente
+- ORG: MARIA CLÁUDIA REIS CAVALCANTI (IME) e LUANA SALES (IBICT)
+- 3 a 6 de Junho de 2025
+
+- Alessandra C F Bessa
+- ALEX DE VASCONCELLOS GARCIA
+- Ana Lúcia da Silva Araújo 
+- Anderson Silva de Araujo 
+- André Muniz Demori
+- Carla Beatriz Marques Felipe
+- Fabio Sebastião Pereira da Silva
+- Gabriel Santiago Macedo
+- Julia Campos Rocha
+- Karina veras praxedes dos santos
+- Leonardo Guerreiro Azevedo
+- Lidianne Vianna Albernaz
+- Luiz Eduardo Davila de Paiva
+- Marcia dos Santos Machado Vieira
+- Maria Luiza M. Campos
+- Natália Queiroz de Oliveira
+- Roberta Pereira da Silva de Paula
+- Roelvis Ortiz Núñez 
+- Sergio Serra
+- Thaisa da Silva Hernandez
+- Thyago Ferreira Vieira 
+- Ubirajara Simões Santos 
+- Vânia Borges
+
+
+
+- 
 # CURSO: ENGENHARIA DE DADOS FAIR
 - PROF: LUIZ OLAVO BONINO - Univ. Twente
 - ORG: MARIA CLÁUDIA REIS CAVALCANTI (IME) e LUANA SALES (IBICT)

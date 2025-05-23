@@ -8,6 +8,8 @@ hide:
 - ORG: MARIA CLÁUDIA REIS CAVALCANTI (IME) e LUANA SALES (IBICT)
 - 3 a 6 de Junho de 2025
 
+Lista de Inscritos:
+
 - Alessandra C F Bessa
 - ALEX DE VASCONCELLOS GARCIA
 - Ana Lúcia da Silva Araújo 

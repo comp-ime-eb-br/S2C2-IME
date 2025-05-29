@@ -20,7 +20,6 @@ Lista de Inscritos:
 - Gabriel Santiago Macedo
 - Julia Campos Rocha
 - Karina veras praxedes dos santos
-- Leonardo Guerreiro Azevedo
 - Lidianne Vianna Albernaz
 - Luiz Eduardo Davila de Paiva
 - Marcia dos Santos Machado Vieira
@@ -28,7 +27,6 @@ Lista de Inscritos:
 - Natália Queiroz de Oliveira
 - Roberta Pereira da Silva de Paula
 - Roelvis Ortiz Núñez 
-- Sergio Serra
 - Thaisa da Silva Hernandez
 - Thyago Ferreira Vieira 
 - Ubirajara Simões Santos 

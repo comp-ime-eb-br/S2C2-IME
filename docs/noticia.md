@@ -18,6 +18,7 @@ Lista de Inscritos:
 - Carla Beatriz Marques Felipe
 - Fabio Sebastião Pereira da Silva
 - Gabriel Santiago Macedo
+- José Gustavo Moura Corrêa
 - Julia Campos Rocha
 - Karina veras praxedes dos santos
 - Lidianne Vianna Albernaz
@@ -26,15 +27,12 @@ Lista de Inscritos:
 - Maria Luiza M. Campos
 - Natália Queiroz de Oliveira
 - Roberta Pereira da Silva de Paula
-- Roelvis Ortiz Núñez 
 - Thaisa da Silva Hernandez
 - Thyago Ferreira Vieira 
 - Ubirajara Simões Santos 
 - Vânia Borges
 
-
-
-- 
+ 
 # CURSO: ENGENHARIA DE DADOS FAIR
 - PROF: LUIZ OLAVO BONINO - Univ. Twente
 - ORG: MARIA CLÁUDIA REIS CAVALCANTI (IME) e LUANA SALES (IBICT)

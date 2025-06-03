@@ -16,15 +16,18 @@ Lista de Inscritos:
 - Anderson Silva de Araujo 
 - André Muniz Demori
 - Carla Beatriz Marques Felipe
+- Fabio Bernardo
 - Fabio Sebastião Pereira da Silva
 - Gabriel Santiago Macedo
 - José Gustavo Moura Corrêa
 - Julia Campos Rocha
 - Karina veras praxedes dos santos
 - Lidianne Vianna Albernaz
+- Luana Sales
 - Luiz Eduardo Davila de Paiva
 - Marcia dos Santos Machado Vieira
-- Maria Luiza M. Campos
+- Maria Luiza Almeida Campos
+- Maria Luiza Machado Campos
 - Natália Queiroz de Oliveira
 - Roberta Pereira da Silva de Paula
 - Thaisa da Silva Hernandez

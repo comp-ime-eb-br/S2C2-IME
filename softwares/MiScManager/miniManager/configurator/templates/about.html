@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'test-plan.css' %}">
+{% endblock %}
+
+{% block content %}
+
+        <form method="POST">
+          {% csrf_token %}
+          <div class="container">
+              MiScManager é um gerenciador/configurador para simulações de comunicações militares que utilizam o Mininet-WiFi como emulador de redes, focadas em cenários militares criados a partir de uma ontologia de referência. Através do MiScManager, os usuários podem configurar tanto o cenário militar quanto as especificações da rede de comunicação sem fio, seja importando a configuração de uma ontologia ou manualmente.<br>
+              <button type="submit" name="download_ttl" class="btn btn-secondary">Download Ontologia de Domínio Base</button><br><br>
+            </div><br><br>
+
+          <div class="container">
+              MiScManager é uma extensão do MiniManager. Clique no botão "Baixar MiniManager Paper" para baixar o artigo sobre o MiniManager.<br>
+              <button type="submit" name="download_paper" class="btn btn-secondary">Download Artigo MiniManager</button><br><br>
+            </div><br><br>
+
+          <div class="container">
+              Clique no botão de download abaixo para baixar a ontologia base para a criação de cenários militares.
+            </div><br><br>
+          </div>
+        </form>
+<br><br><br>
+
+   <footer id="footer" class="footer-area section-padding">
+      <div class="container">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <h3 class="footer-titel"></h3>
+              <ul class="footer-link">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="footer-logo"><img src="../static/img/imelogo.jpeg" alt="" height="150px"></h3>
+                <div class="textwidget">
+                  <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis.</p>
+                -->
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <br>
+              <br>
+              <h3 class="footer-titel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../static/img/gitlab_icon.png" width="10%" height="">&nbsp;gitlab</h3>
+              <ul class="address">
+                <li>
+                  <a href="https://gitlab.com/andredemori/mini-manager_" target="_blank">https://gitlab.com/andredemori/mini-manager_</a>
+                </li>
+                <li>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <h3 class="footer-titel"></h3>
+              <ul class="footer-link">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-content">
+                <p>MiniManager 2023 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+{% endblock %}

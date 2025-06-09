@@ -1,0 +1,104 @@
+@startuml  Diagrama de Classe
+skinparam classAttributeIconSize 0
+
+    class MininetScript {
+        - configuration
+        - radioFrequencyMeasurements
+        - performanceMeasurements
+        - net
+
+        + run()
+        - loadConfiguration()
+        - topology()
+        - analyse
+    }
+
+    interface IMeasurer {
+        + run()
+    }
+
+    class PositionMeasurer {
+        - number start
+        - nodes
+
+        + run()
+    }
+
+    class RadioFrequencyMeasurer {
+        - number start
+        - stations
+        - measurements
+
+        + run()
+        - isValidMeasurement()
+        - getValidMeasures()
+        - getMetricFromNode()
+    }
+
+    class PerformanceMeasurer {
+        - number start
+        - net
+        - measurements
+
+        + run()
+        - collectMeasurement(measurement)
+        - getMeasure(measure)
+        - ping(source, destination)
+        - iperf(source, destination)
+    }
+
+    interface MininetDecoratorComponent {
+        + configure()
+        + getNetwork()
+
+    }
+
+    class MininetBaseDecorator {
+        - component
+        - network
+        + configure()
+    }
+
+    class MininetNetwork {
+        - network
+        - nodes
+        - links
+        + getNetwork()
+        + configure()
+    }
+
+    class PropagationModelDecorator {
+        - propagationModel
+        - args
+        + getNetwork()
+        + configure()
+    }
+
+    class MobilityModelDecorator {
+        - mobilityModel
+        - args
+        + getNetwork()
+        + configure()
+    }
+
+    class NetworkStarterDecorator {
+        + getNetwork()
+        + configure()
+    }
+
+
+    IMeasurer <|.. PositionMeasurer
+    IMeasurer <|.. RadioFrequencyMeasurer
+    IMeasurer <|.. PerformanceMeasurer
+    MininetDecoratorComponent <|.. MininetNetwork
+    MininetDecoratorComponent <|.. MininetBaseDecorator
+    MininetBaseDecorator o-- MininetDecoratorComponent
+    MininetBaseDecorator <|-- PropagationModelDecorator
+    MininetBaseDecorator <|-- MobilityModelDecorator
+    MininetBaseDecorator <|-- NetworkStarterDecorator
+
+    MininetScript ..> IMeasurer
+    MininetScript ..> MininetDecoratorComponent
+
+
+@enduml

@@ -1,0 +1,59 @@
+<div class="card propagationModel-form">
+  <h5 class="card-header">Parâmetros de medida de performance</h5>
+  <div class="card-body">
+    <div class="row">
+      <input class="form-check-input" type="checkbox" name="performancemeasure" id="performancemeasure">
+      <select class="col-2" name="performancemeasure_name" id="performancemeasure_name">
+          {% for measure in measures %}
+          <option value="{{measure.name}}">{{measure.name}}</option>
+          {% endfor %}
+      </select>
+      <input class="col-2" type="text" name="performancemeasuresource" id="performancemeasuresource" placeholder="source" disabled>
+      <input class="col-2" type="text" name="performancemeasuredestination" id="performancemeasuredestination" placeholder="destination" disabled>
+      <input type="number" class="col-1" name = "performanceperiod" id="performanceperiod" placeholder="Período" disabled>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('performancemeasure').onchange = function() {
+  changeAvailabilityPerformance(this.checked);
+};
+
+function changeAvailabilityPerformance(checked){
+  document.getElementById('performancemeasuresource').disabled = !checked;
+  document.getElementById('performancemeasuredestination').disabled = !checked;
+  document.getElementById('performanceperiod').disabled = !checked;
+}
+
+function fillPerformanceMeasurements(performanceMeasurements){
+  resetPerformance();
+  if(performanceMeasurements.length == 0){
+    return;
+  }
+
+  var performancemeasureElement = document.getElementById("performancemeasure");
+  performancemeasureElement.value = "on";
+  performancemeasureElement.checked = true;
+  changeAvailabilityPerformance(true);
+
+  var measurement = performanceMeasurements[0];
+
+  document.getElementById("performancemeasuresource").value = measurement.source;
+  document.getElementById("performancemeasuredestination").value = measurement.destination;
+  document.getElementById("performanceperiod").value = measurement.period;
+  document.getElementById("performancemeasure_name").value = measurement.measure.name;
+}
+
+function resetPerformance(){
+  var performancemeasureElement = document.getElementById("performancemeasure");
+  performancemeasureElement.value = "off";
+  performancemeasureElement.checked = false;
+  changeAvailabilityPerformance(false);
+  
+  document.getElementById("performancemeasuresource").value = "";
+  document.getElementById("performancemeasuredestination").value = "";
+  document.getElementById("performanceperiod").value = "";
+  document.getElementById("performancemeasure_name").value = "";
+}
+</script>

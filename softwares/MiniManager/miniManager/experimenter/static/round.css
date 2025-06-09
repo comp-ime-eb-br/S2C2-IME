@@ -1,0 +1,46 @@
+.action-buttons {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    margin-right: 20px;
+}
+
+.round-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.radio-frequency-table tbody {
+    overflow-y: scroll;
+    max-height: 400px;
+}
+
+.performance-table {
+    overflow-y: scroll;
+    height: 450px;
+}
+
+.round-result {
+    padding-right: 5px;
+}
+
+.result {
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.round-graph {
+    padding-left: 5px;
+}
+
+.chart {
+    height: 30vh !important;
+}

@@ -1,0 +1,19 @@
+.add-button {
+    padding-top: 25px;
+}
+
+.current-nodes {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    margin: 10px 0;
+    border: dashed;
+}
+
+.node {
+    margin-right: 10px;
+}
+
+.nodes-form {
+    margin: 15px 0;
+}

@@ -1,0 +1,684 @@
+{% load static %}
+
+
+{% block head %}
+
+  <link rel="stylesheet" href="{% static 'nodes.css' %}">
+
+{% endblock %}
+
+
+<div class="card nodes-form">
+  <h5 class="card-header">Network nodes</h5>
+  <div class="card-body">
+    <div class="new-node">
+      <div class="row form-group">
+        <div class="col">
+
+          <label for="node">Select the node type</label>
+          <select class="form-control" onchange="onnodeSelect(this)" name="node" id="node">
+            <option value="station">Station</option>
+            <option value="host">Host</option>
+            <option value="accesspoint">Access Point</option>
+            <option value="switch">Switch</option>
+          </select>
+        </div>
+
+        <div class="add-button col">
+          <button type="button" onclick="addNodeByForm()" class="btn btn-secondary">Add node</button>
+        </div>
+
+      </div>
+
+      <div id="station"  class="hidde-element form-group" style="display: none;">
+        <input type="hidden" id="station_specific_attribute" name="station_specific_attribute" value="position_node,check_position,x_max,x_min,y_max,y_min">
+        <input type="hidden" id="station_node_attribute" name="station_node_attribute" value="name,mac,military_person">
+        <input type="hidden" id="station_interface_attribute" name="station_interface_attribute" value="ip_intf0,ip_intf1,txpower_intf0,txpower_intf1,range_intf0,range_intf1,antenna_gain_intf0,antenna_gain_intf1">
+        <div class="form-group row">
+
+          <div class="col">
+            <label id="name" for="namestation">name</label>
+            <input type="text" name="station_name" class="form-control" id="station_name" placeholder="sta1">
+          </div>
+
+          <div class="col">
+            <label id="military_person" for="military_person">Operator</label>
+            <select name="station_military_person" id="station_military_person">
+              {% for mp in mpersons %}
+                <option value="{{mp.id}}">{{mp.Identifier}}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="col">
+            <label id="mac" for="mac">mac addr</label>
+            <input type="text" name="station_mac" class="form-control" id="station_mac" placeholder="00:00:00:00:00:02">
+          </div>
+
+          <div class="col">
+            <label id="ip_intf0" for="ip_intf0">ip interf 1</label>
+            <input type="text" name="station_ip_intf0" class="form-control" id="station_ip_intf0" placeholder="10.0.0.1/8">
+          </div>
+            <div class="col">
+            <label id="ip_intf1" for="ip_intf1">ip interf 2</label>
+            <input type="text" name="station_ip_intf1" class="form-control" id="station_ip_intf1" placeholder="10.0.0.1/8">
+          </div>
+
+          <div class="col">
+            <label id="txpower_intf0" for="txpower_intf0">txpower interf 1</label>
+            <input type="number" name="station_txpower_intf0" class="form-control" id="station_txpower_intf0" placeholder="15">
+          </div>
+            <div class="col">
+            <label id="txpower_intf1" for="txpower_intf1">txpower interf 2</label>
+            <input type="number" name="station_txpower_intf1" class="form-control" id="station_txpower_intf1" placeholder="15">
+          </div>
+
+          <div class="col">
+            <label id="range_intf0" for="range_intf0">range intf 0</label>
+            <input type="number" step="any" name="station_range_intf0" id="station_range_intf0" class="form-control">
+        </div>
+
+        <div class="col">
+            <label id="range_intf1" for="range_intf1">range intf 1</label>
+            <input type="number" step="any" name="station_range_intf1" id="station_range_intf1" class="form-control">
+        </div>
+
+        <div class="col">
+            <label id="antenna_gain_intf0" for="antenna_gain_intf0">antenna gain intf 0</label>
+            <input type="number" step="any" name="station_antenna_gain_intf0" id="station_antenna_gain_intf0" class="form-control">
+        </div>
+
+        <div class="col">
+            <label id="antenna_gain_intf1" for="antenna_gain_intf1">antenna gain intf 1</label>
+            <input type="number" step="any" name="station_antenna_gain_intf1" id="station_antenna_gain_intf1" class="form-control">
+        </div>
+
+          <div class="col" id="position_node_wrapper" style="display: none;">
+            <label id="position_node" for="position_node">position</label> <button type="button" data-balloon-length="large" class="button button1" aria-label="Only applies to Tracked Mobility Model." data-balloon-pos="up">i</button>
+            <input type="text" name="station_position_node" class="form-control" id="station_position_node" placeholder="347.414,572.84,0">
+          </div>
+
+       <div class="col">
+            <label id="check_position" for="check_position">Position mode</label>
+            <select name="station_check_position" id="station_check_position">
+              <option value="">---</option>
+              <option value="1">1 - Fixed position</option>
+              <option value="2">2 - quadrant</option>
+              <option value="3">3 - random move in defined mobility model</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="quadrant_wrapper" style="display: none;">
+          <div class="col">
+            <label id="x_max" for="x_max">x_max</label>
+            <input type="number" step="any" name="station_x_max" id="station_x_max">
+          </div>
+          <div class="col">
+            <label id="x_min" for="x_min">x_min</label>
+            <input type="number" step="any" name="station_x_min" id="station_x_min">
+          </div>
+          <div class="col">
+            <label id="y_max" for="y_min">y_max</label>
+            <input type="number" step="any" name="station_y_max" id="station_y_max">
+          </div>
+          <div class="col">
+            <label id="y_min" for="y_min">y_min</label>
+            <input type="number" step="any" name="station_y_min" id="station_y_min">
+          </div>
+        </div>
+
+        </div>
+
+        </div>
+
+      <div id="accesspoint"  class="hidde-element form-group" style="display: none;">
+        <input type="hidden" id="accesspoint_specific_attribute" name="accesspoint_specific_attribute" value="ssid,mode,channel,wlans,position_node">
+        <input type="hidden" id="accesspoint_node_attribute" name="accesspoint_node_attribute" value="name,mac">
+        <input type="hidden" id="accesspoint_interface_attribute" name="accesspoint_interface_attribute" value="">
+        <div class="form-group row">
+          <div class="col">
+            <label id="name" for="nameaccess">name</label>
+            <input type="text" name="accesspoint_name" class="form-control" id="accesspoint_name" placeholder="ap1">
+          </div>
+
+          <div class="col">
+            <label id="name" for="ssidlb">ssid</label>
+            <input type="text" name="accesspoint_ssid" class="form-control" id="accesspoint_ssid" placeholder="new-ssid">
+          </div>
+
+          <div class="col">
+            <label id="name" for="mode">mode</label>
+            <input type="text" name="accesspoint_mode" class="form-control" id="accesspoint_mode" placeholder="a">
+          </div>
+
+          <div class="col">
+            <label id="name" for="channel">channel</label>
+            <input type="text" name="accesspoint_channel" class="form-control" id="accesspoint_channel" placeholder="36">
+          </div>
+
+          <div class="col">
+            <label id="name" for="wlans">wlans</label>
+            <input type="text" name="accesspoint_wlans" class="form-control" id="accesspoint_wlans" placeholder="2">
+          </div>
+
+          <div class="col">
+            <label id="mac" for="mac">mac addr</label>
+            <input type="text" name="accesspoint_mac" class="form-control" id="accesspoint_mac" placeholder="00:00:00:00:00:02">
+          </div>
+        </div>
+
+        <div class="col">
+            <label id="position_node" for="position_node">position</label> <button type="button" data-balloon-length="large" class="button button1" aria-label="Only applies to Tracked Mobility Model." data-balloon-pos="up">i</button>
+            <input type="text" name="accesspoint_position_node" class="form-control" id="accesspoint_position_node" placeholder="347.414,572.84,0">
+          </div>
+
+      </div>
+
+      <div id="host"  class="hidde-element form-group" style="display: none;">
+        <input type="hidden" id="host_specific_attribute" name="host_specific_attribute" value="">
+        <input type="hidden" id="host_node_attribute" name="host_node_attribute" value="name,mac">
+        <input type="hidden" id="host_interface_attribute" name="host_interface_attribute" value="ip">
+        <div class="form-group row">
+
+          <div class="col">
+            <label id="name" for="namehost">name</label>
+            <input type="text" name="host_name" class="form-control" id="host_name" placeholder="h1">
+          </div>
+
+          <!--
+
+          <div class="col">
+
+            <label id="name" for="namehost">CommDevice Operator's Military organization</label>
+
+            <input type="text" name="host_military_organization" class="form-control" id="host_military_organization" placeholder="Brigada">
+
+          </div>
+
+          -->
+
+          <div class="col">
+            <label id="name" for="mac">mac address</label>
+            <input type="text" name="host_mac" class="form-control" id="host_mac" placeholder="00:00:00:00:00:02">
+          </div>
+
+          <div class="col">
+            <label id="name" for="ip">ip</label>
+            <input type="text" name="host_ip" class="form-control" id="host_ip" placeholder="10.0.0.1/8">
+          </div>
+        </div>
+
+      </div>
+
+      <div id="switch"  class="hidde-element form-group" style="display: none;">
+        <input type="hidden" id="switch_specific_attribute" name="switch_specific_attribute" value="">
+        <input type="hidden" id="switch_node_attribute" name="switch_node_attribute" value="name">
+        <input type="hidden" id="switch_interface_attribute" name="switch_interface_attribute" value="">
+        <div class="form-group row">
+
+          <div class="col">
+            <label id="name" for="switchname">name</label>
+            <input type="text" name="switch_name" class="form-control" id="switch_name" placeholder="s1">
+          </div>
+
+          <!--
+
+          <div class="col">
+
+            <label id="name" for="switchmilitary_organization">CommDevice Operator's Military organization</label>
+
+            <input type="text" name="switch_military_organization" class="form-control" id="switch_military_organization" placeholder="Brigada">
+
+          </div>
+
+          -->
+
+        </div>
+      </div>
+    </div>
+    <div id="current-nodes" class="current-nodes">
+    </div>
+  </div>
+</div>
+
+<script>
+  const checkPositionSelect = document.getElementById('station_check_position');
+  const positionNodeWrapper = document.getElementById('position_node_wrapper');
+  const quadrantWrapper = document.getElementById('quadrant_wrapper');
+  const stationPositionNode = document.getElementById('station_position_node');
+  const xMax = document.getElementById("station_x_max");
+  const xMin = document.getElementById("station_x_min");
+  const yMax = document.getElementById("station_y_max");
+  const yMin = document.getElementById("station_y_min");
+
+  checkPositionSelect.addEventListener('change', () => {
+    if (checkPositionSelect.value === '1') {
+      positionNodeWrapper.style.display = 'block';
+      quadrantWrapper.style.display = 'none';
+      stationPositionNode.value = '';
+    } else if (checkPositionSelect.value === '2') {
+      positionNodeWrapper.style.display = 'none';
+      quadrantWrapper.style.display = 'block';
+      xMax.parentElement.style.display = "block";
+      xMin.parentElement.style.display = "block";
+      yMax.parentElement.style.display = "block";
+      yMin.parentElement.style.display = "block";
+    } else {
+      positionNodeWrapper.style.display = 'none';
+      quadrantWrapper.style.display = 'none';
+      stationPositionNode.value = '0';
+      xMax.parentElement.style.display = "none";
+      xMin.parentElement.style.display = "none";
+      yMax.parentElement.style.display = "none";
+      yMin.parentElement.style.display = "none";
+      xMax.value = 0;
+      xMin.value = 0;
+      yMax.value = 0;
+      yMin.value = 0;
+    }
+  });
+</script>
+
+<script>
+  function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
+</script>
+
+<script>
+
+
+function hide(){
+
+  var earrings = document.querySelector("#classe");
+
+  earrings.style.visibility = 'hidden';
+
+}
+
+
+function show(){
+
+  var earrings = document.querySelector("#classe");
+
+  earrings.style.visibility = 'visible';
+
+}
+
+
+function genderSelectHandler(select){
+
+  if(select == 'Plataforma'){
+
+   show();
+
+  }else if(select == 'Indivíduo'){
+
+  hide();
+
+  }
+
+}
+
+
+    // ESTE SERIA O CONTEÚDO DO .js
+
+var json_classes = {
+
+  "recursos": [
+
+    {
+
+      "sigla": "Plataforma",
+
+      "nome": "Plataforma",
+
+      "classes": [
+
+        "Fixa",
+
+        "Móvel",
+
+      ]
+
+    }
+
+  ]
+
+};
+
+
+  // FIM DO .js
+
+
+function buscaClasses(e){
+
+   document.querySelector("#classe").innerHTML = '';
+
+   var classe_select = document.querySelector("#classe");
+
+
+   var num_recursos = json_classes.recursos.length;
+
+   var j_index = -1;
+
+
+   // aqui eu pego o index do Estado dentro do JSON
+
+   for(var x=0;x<num_recursos;x++){
+
+      if(json_classes.recursos[x].sigla == e){
+
+         j_index = x;
+
+      }
+
+   }
+
+
+   if(j_index != -1){
+
+
+      json_classes.recursos[j_index].classes.forEach(function(classe){
+
+         var cid_opts = document.createElement('option');
+
+         cid_opts.setAttribute('value',classe)
+
+         cid_opts.innerHTML = classe;
+
+         classe_select.appendChild(cid_opts);
+
+      });
+
+   }else{
+
+      document.querySelector("#classe").innerHTML = '';
+
+   }
+
+}
+
+
+</script>
+
+
+<script>
+
+
+var currentNodeType = "station";
+
+var nodesCounter = 0;
+
+var currentNodes = {};
+
+
+
+changeNodeForm(currentNodeType);
+
+
+function onnodeSelect(selectSrc) {
+
+  var nodeType = selectSrc.value;
+
+  changeNodeForm(nodeType);
+
+  currentNodeType = nodeType;
+
+}
+
+
+function changeNodeForm(newNodeType) {
+
+  document.getElementById(currentNodeType).style.display = "none";
+
+  var newElement = document.getElementById(newNodeType);
+
+  newElement.style.display = "inline-block";
+
+}
+
+
+function addNodeByForm(){
+
+  var nodeType = document.getElementById("node").value;
+
+  var attributes = getAttributes(nodeType);
+
+  var nodeAttributes = attributes[0];
+
+  var specificAttributes = attributes[1];
+
+  var interfaceAttributes = attributes[2];
+
+
+  var nodeObj = {}
+
+  for(var nodeattr of [...nodeAttributes, ...specificAttributes, ...interfaceAttributes]){
+
+    value = document.getElementById(nodeType+"_"+nodeattr).value;
+
+    if(!value){
+
+      alert("Insira todos os atributos de um novo nó.");
+
+      return;
+
+    }
+
+    nodeObj[nodeattr] = value;
+
+  }
+
+
+  addNode({type: nodeType, props: nodeObj});
+
+}
+
+
+function addNodeByObj(node){
+
+  var nodeType = node.type;
+
+  var attributes = getAttributes(nodeType);
+
+  var nodeAttributes = attributes[0];
+
+  var specificAttributes = attributes[1];
+
+  var interfaceAttributes = attributes[2];
+
+  var nodeObj = {};
+
+
+  for(var attr of nodeAttributes){
+
+    nodeObj[attr] = node[attr];
+
+  }
+
+
+  for(var attr of specificAttributes){
+
+    nodeObj[attr] = node.args[attr];
+
+  }
+
+
+  for(var attr of interfaceAttributes){
+
+    nodeObj[attr] = node.interface.args[attr];
+
+  }
+
+
+  addNode({type: nodeType, props: nodeObj});
+
+
+}
+
+
+function getAttributes(nodeType){
+
+  var nodeAttributesString = document.getElementById(nodeType + "_node_attribute").value;
+
+  var specificAttributesString = document.getElementById(nodeType + "_specific_attribute").value;
+
+  var interfaceAttributesString = document.getElementById(nodeType + "_interface_attribute").value;
+
+
+  var nodeAttributes = !nodeAttributesString ? [] : nodeAttributesString.split(',');
+
+  var specificAttributes = !specificAttributesString ? [] : specificAttributesString.split(',');
+
+  var interfaceAttributes = !interfaceAttributesString ? [] : interfaceAttributesString.split(',');
+
+
+  return [nodeAttributes, specificAttributes, interfaceAttributes]
+
+}
+
+
+function addNode(node){
+
+  nodesCounter++;
+
+  var nodeID = "node-"+nodesCounter;
+
+  node["id"] = nodeID;
+
+  currentNodes[nodeID] = node;
+
+  renderNode(node);
+
+}
+
+
+function renderNode(node) {
+
+  var div = document.createElement("div");
+
+  div.id = node.id;
+
+  div.className = "card";
+
+  div.style.marginRight = "5px";
+
+
+  var h5 = document.createElement("h5");
+
+  h5.className = "card-header"
+
+  h5.appendChild(document.createTextNode("Nó: " + node.type))
+
+  div.appendChild(h5)
+
+
+  var ul = document.createElement("ul");
+
+  ul.classList = ["card-body", "list-group", "list-group-flush"];
+
+
+  for(var prop in node.props){
+
+    var li = document.createElement("li");
+
+    li.className = "list-group-item";
+
+    li.appendChild(document.createTextNode(prop + ": " + node.props[prop]));
+
+    div.appendChild(li);
+
+  }
+
+  div.appendChild(ul);
+
+
+  var footer = document.createElement("div");
+
+  footer.className = "card-footer"
+
+  var button = document.createElement("button");
+
+  button.appendChild(document.createTextNode("Remover elemento"));
+
+  button.setAttribute("type", "button");
+
+  button.onclick = function(){
+
+    removeNode(node.id)
+
+  }
+
+  footer.appendChild(button);
+
+  div.appendChild(footer);
+
+
+  parent = document.getElementById("current-nodes");
+
+  parent.appendChild(div);
+
+}
+
+
+function removeNode(nodeID) {
+
+  child = document.getElementById(nodeID);
+
+  parent = document.getElementById("current-nodes");
+
+  parent.removeChild(child);
+
+
+  delete currentNodes[nodeID];
+
+}
+
+
+function resetNodes(){
+
+    for(var nodeID in currentNodes){
+
+      removeNode(nodeID);
+
+    }
+
+  }
+
+
+function fillNodes(nodes){
+
+  resetNodes();
+
+
+  for(var node of nodes){
+
+    addNodeByObj(node);
+
+  }
+
+}
+
+
+function getNodes(){
+
+  nodeList = []
+
+  for(var nodeID in currentNodes){
+
+    nodeList.push(currentNodes[nodeID].props.name);
+
+  }
+
+
+  return nodeList;
+
+}
+
+
+</script>

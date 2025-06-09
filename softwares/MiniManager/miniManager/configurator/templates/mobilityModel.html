@@ -1,0 +1,119 @@
+{% load static %}
+{% block head %}
+  <link rel="stylesheet" href="{% static 'mobilityModel.css' %}">
+{% endblock %}
+
+<div class="card mobilityModel-form">
+  <h5 class="card-header">Modelo de Mobilidade</h5>
+  <div class="card-body">
+    <label for="mobilityModel">Selecione o Modelo de Mobilidade</label>
+    <select class="form-control" onchange="onmobilityModelSelect(this)" name="mobilitymodel" id="mobilityModel">
+      {% for model in mmodels %}
+      <option value="{{model.name}}">{{model.displayname}}</option>
+      {% endfor %}
+    </select>
+    <div id="RandomDirection"  class="hidde-element form-group" style="display: none;">
+      <div class="form-group">
+        <input type="hidden" name="RandomDirectionattribute" id="RandomDirectionattribute" value="seed,min_velocidade,max_velocidade,min_x,max_x,min_y,max_y,min_z,max_z">
+        <div class="row">
+          <div class="col">
+            <label for="seed">seed</label>
+            <input type="number" name="seed" class="form-control" id="seed" placeholder="1">
+          </div>
+          <div class="col">
+            <label for="min_velocidade">Velocidade Mínima</label>
+            <input type="number" name="min_velocidade" class="form-control" id="min_velocidade" placeholder="1">
+          </div>
+          <div class="col">
+            <label for="max_velocidade">Velocidade Máxima</label>
+            <input type="number" name="max_velocidade" class="form-control" id="max_velocidade" placeholder="10">
+          </div>
+          <div class="col">
+            <label for="min_x">X Mínimo</label>
+            <input type="number" name="min_x" class="form-control" id="min_x" placeholder="0">
+          </div>
+          <div class="col">
+            <label for="max_x">X Máximo</label>
+            <input type="number" name="max_x" class="form-control" id="max_x" placeholder="100">
+          </div>
+          <div class="col">
+            <label for="min_y">Y Mínimo</label>
+            <input type="number" name="min_y" class="form-control" id="min_y" placeholder="0">
+          </div>
+          <div class="col">
+            <label for="max_y">Y Máximo</label>
+            <input type="number" name="max_y" class="form-control" id="max_y" placeholder="100">
+          </div>
+          <div class="col">
+            <label for="min_z">Z Mínimo</label>
+            <input type="number" name="min_z" class="form-control" id="min_z" placeholder="0">
+          </div>
+          <div class="col">
+            <label for="max_z">Z Máximo</label>
+            <input type="number" name="max_z" class="form-control" id="max_z" placeholder="0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="model-not-supported" class="hidde-element alert alert-primary" role="alert">Modelo de mobilidade ainda não suportado</div>
+  </div>
+</div>
+<script>
+
+var currentmobilityModelName = "RandomDirection";
+changemobilityModelForm(currentmobilityModelName);
+
+function onmobilityModelSelect(selectSrc) {
+  let mobilityModelName = selectSrc.value;
+  changemobilityModelForm(mobilityModelName);
+  currentmobilityModelName = mobilityModelName;
+}
+
+
+function changemobilityModelForm(newmobilityModel) {
+  document.getElementById(currentmobilityModelName).style.display = "none";
+
+  let newElement = document.getElementById(newmobilityModel);
+  if(!newElement){
+    newElement = document.getElementById("model-not-supported");
+  }
+
+  newElement.style.display = "inline-block";
+}
+
+function fillMobilityModel(mobilityModel){
+  var model = mobilityModel.model;
+  document.getElementById("mobilityModel").value = model;
+  currentmobilityModelName = model;
+  changemobilityModelForm(model);
+
+  for(var arg in mobilityModel.args){
+    document.getElementsByName(arg)[0].value = mobilityModel.args[arg];
+  }
+}
+
+function validateMobilityModel(){
+    var mobilityModel = document.getElementById("mobilityModel").value;
+    if(!mobilityModel){
+        alert("Selecione um modelo de mobilidade.");
+        return false;
+    }
+
+    var attributesElement = document.getElementById(mobilityModel + "attribute");
+    if(!attributesElement){
+      return true;
+    }
+    var attributesString = attributesElement.value;
+    var attributes = !attributesString ? [] : attributesString.split(',');
+
+    for(var attr of attributes){
+      if(!document.getElementById(attr).value){
+        alert("Preencha os campos obrigatórios do Modelo de Mobilidade");
+        return false;
+      }
+    }
+
+    return true;
+}
+
+</script>

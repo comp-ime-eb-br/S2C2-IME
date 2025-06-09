@@ -1,0 +1,2734 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://myontology.com/scenario/2023/4/untitled-ontology-85"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://myontology.com/scenario/2023/4/untitled-ontology-85">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#Commander"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://myontology.com/scenario#Range"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Broadcast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Interface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryEmployment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Regiment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://myontology.com/scenario#VisibilityRange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/nemo/gufo#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Car"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#DataTransferMethodOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#isCommanderOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0-wlan0"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasDirectRelationshipWith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#mediates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2Company"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Subordinate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#Armored"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterfPowerType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#InstitutionalElement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Unicast"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsCarrier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2-wlan0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#carries"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Commander"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Company"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Battalion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Brigade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#Interface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#MilitaryEmployment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#CommDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/nemo/gufo#Mixin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Armored"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/nemo/gufo#Role"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#VisibilityRange_"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#AccessPoint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#CommDeviceOperator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/nemo/gufo#categorizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Frequency_"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://myontology.com/scenario#MinSpeed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#networkHasCommDevice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://myontology.com/scenario#AntennaGain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#Subordinate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#AntennaGain_"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#DataTransferMethod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://myontology.com/scenario#Frequency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#WirelessNetwork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#wn1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://myontology.com/scenario#MaxSpeedLand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Multicast"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasInstitutionalElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Txpower_"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1-wlan0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsPassenger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#CruisingSpeed_"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Range_"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#MinSpeed_"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://myontology.com/scenario#Txpower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://myontology.com/scenario#AmphibiousSpeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/nemo/gufo#Relator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#Guarani"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#AccessPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/nemo/gufo#IntrinsicMode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#CommDeviceOperator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#OperationalElement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#MilitaryScenario"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#Platoon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryAsPassenger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#WirelessNetwork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#InterfacePowerType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryPerson"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/nemo/gufo#isDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#isSubordinateTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://myontology.com/scenario#hierarchicallyEquivalentDuringCommunicationWith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#BattleTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/nemo/gufo#MaterialRelationshipType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#DataTransferMethod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#P25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#AccessPoint"/>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#Armored"/>
+        <Class IRI="http://myontology.com/scenario#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#CommDeviceOperator"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#Commander"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#DataTransferMethod"/>
+        <Class IRI="https://purl.org/nemo/gufo#IntrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#DataTransferMethod"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+            <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#Guarani"/>
+        <Class IRI="http://myontology.com/scenario#Armored"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://myontology.com/scenario#hierarchicallyEquivalentDuringCommunicationWith"/>
+            <Class IRI="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#InstitutionalElement"/>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#Interface"/>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+            </ObjectInverseOf>
+            <Class IRI="http://myontology.com/scenario#DataTransferMethod"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsCarrier"/>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsCarrier"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsPassenger"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsPassenger"/>
+        <ObjectMaxCardinality cardinality="11">
+            <ObjectProperty IRI="http://myontology.com/scenario#isLocatedIn"/>
+            <Class IRI="http://myontology.com/scenario#Guarani"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryEmployment"/>
+        <Class IRI="https://purl.org/nemo/gufo#Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryEmployment"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#mediates"/>
+            <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryEmployment"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#mediates"/>
+            <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+        <Class IRI="http://myontology.com/scenario#InstitutionalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#mediates"/>
+            </ObjectInverseOf>
+            <Class IRI="http://myontology.com/scenario#MilitaryEmployment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+            <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+        <Class IRI="http://myontology.com/scenario#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+            <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#mediates"/>
+            </ObjectInverseOf>
+            <Class IRI="http://myontology.com/scenario#MilitaryEmployment"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#MilitaryScenario"/>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#Person"/>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#Subordinate"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#Subordinate"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://myontology.com/scenario#hasDirectRelationshipWith"/>
+            <Class IRI="http://myontology.com/scenario#Commander"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#Subordinate"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://myontology.com/scenario#isSubordinateTo"/>
+            <Class IRI="http://myontology.com/scenario#Commander"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#Vehicle"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://myontology.com/scenario#WirelessNetwork"/>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsCarrier"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsPassenger"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Commander"/>
+        <NamedIndividual IRI="#2Company"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#InstitutionalElement"/>
+        <NamedIndividual IRI="#2Company"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+        <NamedIndividual IRI="#2Company"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Subordinate"/>
+        <NamedIndividual IRI="#2Company"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="#2Company"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#AccessPoint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#AntennaGain_"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Armored"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Battalion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Battalion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#BattleTeam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#BattleTeam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Brigade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Brigade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#DataTransferMethod"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Broadcast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#IntrinsicMode"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Broadcast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Car"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#CommDevice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Mixin"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Role"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#CommDeviceOperator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Role"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Commander"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Company"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Company"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#CruisingSpeed_"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#DataTransferMethod"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Frequency_"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Role"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Interface"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#InterfacePowerType"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Role"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryAsPassenger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryEmployment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Role"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryPerson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#MinSpeed_"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#DataTransferMethod"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Multicast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#IntrinsicMode"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Multicast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#OperationalElement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#P25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#P25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#P25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Person"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Platoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Platoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Range_"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Regiment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Regiment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Role"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Subordinate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Txpower_"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#DataTransferMethod"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Unicast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#IntrinsicMode"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Unicast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Vehicle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#VisibilityRange_"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#WirelessNetwork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Armored"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Guarani"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Vehicle"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Armored"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Guarani"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Vehicle"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#MaterialRelationshipType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDeviceOperator"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsCarrier"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Person"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryScenario"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Interface"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0-wlan0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0-wlan0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Interface"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1-wlan0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1-wlan0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Interface"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2-wlan0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2-wlan0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#WirelessNetwork"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#wn1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#wn1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDeviceOperator"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsCarrier"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Person"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#CommDeviceOperator"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsPassenger"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Person"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Commander"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#InstitutionalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://myontology.com/scenario#Subordinate"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://purl.org/nemo/gufo#FunctionalComplex"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+        <NamedIndividual IRI="#2Company"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Company"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#isCommanderOf"/>
+        <NamedIndividual IRI="#2Company"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Battalion"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Brigade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#BattleTeam"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Platoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#DataTransferMethodOf"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Broadcast"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Broadcast"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Company"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Battalion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Platoon"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Company"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Regiment"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Brigade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#belongsTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#belongsTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#carries"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasInstitutionalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+        <NamedIndividual IRI="#2Company"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasInstitutionalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#scenario_simplified"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterface"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0-wlan0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterfPowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0-wlan0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterface"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1-wlan0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterfPowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1-wlan0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterface"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2-wlan0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterfPowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2-wlan0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#networkHasCommDevice"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#wn1"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#networkHasCommDevice"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#wn1"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#networkHasCommDevice"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#wn1"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#carries"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#isLocatedIn"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#2"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasDirectRelationshipWith"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+        <NamedIndividual IRI="#2Company"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#Platoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://myontology.com/scenario#isSubordinateTo"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#3Platoon"/>
+        <NamedIndividual IRI="#2Company"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#Frequency"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#Frequency"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">56.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#Txpower"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#Txpower"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">16.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">16.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">56.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#AmphibiousSpeed"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#MaxSpeedLand"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#MinSpeed"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#VisibilityRange"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#AmphibiousSpeed"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#MaxSpeedLand"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#MinSpeed"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#VisibilityRange"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#guarani1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#MaxSpeedLand"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#MinSpeed"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#VisibilityRange"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#AntennaGain"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#Range"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#AntennaGain"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#Range"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#AntennaGain"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#Range"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#sta2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#MaxSpeedLand"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#MinSpeed"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://myontology.com/scenario#VisibilityRange"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+        <NamedIndividual IRI="http://myontology.com/scenario#0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://myontology.com/scenario#DataTransferMethodOf"/>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterfPowerType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://myontology.com/scenario#isCommanderOf"/>
+        <ObjectProperty IRI="http://myontology.com/scenario#isSubordinateTo"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </ReflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#DataTransferMethodOf"/>
+        <Class IRI="http://myontology.com/scenario#DataTransferMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#belongsTo"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#carries"/>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasDirectRelationshipWith"/>
+        <Class IRI="http://myontology.com/scenario#Commander"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterfPowerType"/>
+        <Class IRI="http://myontology.com/scenario#Interface"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterface"/>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#hierarchicallyEquivalentDuringCommunicationWith"/>
+        <Class IRI="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#isLocatedIn"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryAsPassenger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#isSubordinateTo"/>
+        <Class IRI="http://myontology.com/scenario#Subordinate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasInstitutionalElement"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryScenario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryScenario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <Class IRI="http://myontology.com/scenario#WirelessNetwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#networkHasCommDevice"/>
+        <Class IRI="http://myontology.com/scenario#WirelessNetwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+        <Class IRI="http://myontology.com/scenario#CommDeviceOperator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#DataTransferMethodOf"/>
+        <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#belongsTo"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#carries"/>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasDirectRelationshipWith"/>
+        <Class IRI="http://myontology.com/scenario#Subordinate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterfPowerType"/>
+        <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasInterface"/>
+        <Class IRI="http://myontology.com/scenario#Interface"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#hierarchicallyEquivalentDuringCommunicationWith"/>
+        <Class IRI="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#isLocatedIn"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#isSubordinateTo"/>
+        <Class IRI="http://myontology.com/scenario#Commander"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+        <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasInstitutionalElement"/>
+        <Class IRI="http://myontology.com/scenario#InstitutionalElement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+        <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#networkHasAccessPoint"/>
+        <Class IRI="http://myontology.com/scenario#AccessPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#networkHasCommDevice"/>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://myontology.com/scenario#AmphibiousSpeed"/>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://myontology.com/scenario#AntennaGain"/>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://myontology.com/scenario#Frequency"/>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://myontology.com/scenario#MaxSpeedLand"/>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://myontology.com/scenario#MinSpeed"/>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://myontology.com/scenario#Range"/>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://myontology.com/scenario#Txpower"/>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://myontology.com/scenario#VisibilityRange"/>
+        <DataProperty IRI="https://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://myontology.com/scenario#AmphibiousSpeed"/>
+        <Class IRI="http://myontology.com/scenario#Guarani"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://myontology.com/scenario#AntennaGain"/>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://myontology.com/scenario#Frequency"/>
+        <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://myontology.com/scenario#MaxSpeedLand"/>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://myontology.com/scenario#MinSpeed"/>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://myontology.com/scenario#Range"/>
+        <Class IRI="http://myontology.com/scenario#CommDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://myontology.com/scenario#Txpower"/>
+        <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://myontology.com/scenario#VisibilityRange"/>
+        <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://myontology.com/scenario#AmphibiousSpeed"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://myontology.com/scenario#AntennaGain"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://myontology.com/scenario#Frequency"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://myontology.com/scenario#MaxSpeedLand"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://myontology.com/scenario#MinSpeed"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://myontology.com/scenario#Range"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://myontology.com/scenario#Txpower"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://myontology.com/scenario#VisibilityRange"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>CommDevice Data Properties</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#CommDevice"/>
+                <Variable IRI="http://example.com#c1"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#AntennaGain"/>
+                <Variable IRI="http://example.com#c1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#Range"/>
+                <Variable IRI="http://example.com#c1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>communication rule 1</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>communication rule 1</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+                <Variable IRI="http://example.com#m2"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+                <Variable IRI="http://example.com#m2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+                <Variable IRI="http://example.com#m1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Variable IRI="http://example.com#c1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+                <Variable IRI="http://example.com#m2"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+                <Variable IRI="http://example.com#ompt2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#isSubordinateTo"/>
+                <Variable IRI="http://example.com#o2"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+                <Variable IRI="http://example.com#o1"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+                <Variable IRI="http://example.com#o2"/>
+                <Variable IRI="http://example.com#ompt2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#CommDevice"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#CommDevice"/>
+                <Variable IRI="http://example.com#c1"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+                <Variable IRI="http://example.com#c1"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>communication rule 4</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+                <Variable IRI="http://example.com#m2"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+                <Variable IRI="http://example.com#c1"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+                <Variable IRI="http://example.com#m2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+                <Variable IRI="http://example.com#m1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Variable IRI="http://example.com#c1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+                <Variable IRI="http://example.com#m2"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ClassAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="http://example.com#o1"/>
+                <Variable IRI="http://example.com#o2"/>
+            </DifferentIndividualsAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+                <Variable IRI="http://example.com#o2"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+                <Variable IRI="http://example.com#o1"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#CommDevice"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#CommDevice"/>
+                <Variable IRI="http://example.com#c1"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hierarchicallyEquivalentDuringCommunicationWith"/>
+                <Variable IRI="http://example.com#o1"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>communication rule (commdevices same OM)</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>communication rule (commdevices same OM)</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+                <Variable IRI="http://example.com#m2"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+                <Variable IRI="http://example.com#m2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+                <Variable IRI="http://example.com#m1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Variable IRI="http://example.com#c1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+                <Variable IRI="http://example.com#m2"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ObjectPropertyAtom>
+            <SameIndividualAtom>
+                <Variable IRI="http://example.com#o1"/>
+                <Variable IRI="http://example.com#o2"/>
+            </SameIndividualAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ClassAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="http://example.com#c1"/>
+                <Variable IRI="http://example.com#c2"/>
+            </DifferentIndividualsAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+                <Variable IRI="http://example.com#o2"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+                <Variable IRI="http://example.com#o1"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#CommDevice"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#CommDevice"/>
+                <Variable IRI="http://example.com#c1"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+                <Variable IRI="http://example.com#c1"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>communication rule 3</Literal>
+        </Annotation>
+        <Body>
+            <DifferentIndividualsAtom>
+                <Variable IRI="http://example.com#o1"/>
+                <Variable IRI="http://example.com#o2"/>
+            </DifferentIndividualsAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+                <Variable IRI="http://example.com#m2"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#mayTalkTo"/>
+                <Variable IRI="http://example.com#c1"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+                <Variable IRI="http://example.com#m2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+                <Variable IRI="http://example.com#m1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Variable IRI="http://example.com#c1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#operates"/>
+                <Variable IRI="http://example.com#m2"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#CommDevice"/>
+                <Variable IRI="http://example.com#c2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#CommDevice"/>
+                <Variable IRI="http://example.com#c1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hasDirectRelationshipWith"/>
+                <Variable IRI="http://example.com#o1"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>MilitaryAsCarrier</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#CommDeviceCarrier"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryAsCarrier"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>set the Guarari&apos;s data properties</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Guarani Data Properties</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#Guarani"/>
+                <Variable IRI="http://example.com#g"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#MaxSpeedLand"/>
+                <Variable IRI="http://example.com#g"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">95</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#AmphibiousSpeed"/>
+                <Variable IRI="http://example.com#g"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#MinSpeed"/>
+                <Variable IRI="http://example.com#g"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.5</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#VisibilityRange"/>
+                <Variable IRI="http://example.com#g"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>InstitutionalElement</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryScenario"/>
+                <Variable IRI="http://myontology.com/scenario#ms"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#InstitutionalElement"/>
+                <Variable IRI="http://myontology.com/scenario#ie"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasInstitutionalElement"/>
+                <Variable IRI="http://myontology.com/scenario#ms"/>
+                <Variable IRI="http://myontology.com/scenario#ie"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Interf Powertype Data Properties</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#InterfacePowerType"/>
+                <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#Frequency"/>
+                <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">56</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#Txpower"/>
+                <NamedIndividual IRI="http://myontology.com/scenario#SDR"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Military Data Properties</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryAsCarrier"/>
+                <Variable IRI="http://example.com#m1"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#MaxSpeedLand"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#MinSpeed"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://myontology.com/scenario#VisibilityRange"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Military and Platform same MO</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#isLocatedIn"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Variable IRI="http://example.com#mp"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPlatform"/>
+                <Variable IRI="http://example.com#mp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryPerson"/>
+                <Variable IRI="http://example.com#m1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#belongsTo"/>
+                <Variable IRI="http://example.com#mp"/>
+                <Variable IRI="http://example.com#mo"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#mo"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+                <Variable IRI="http://example.com#m1"/>
+                <Variable IRI="http://example.com#mo"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Rule Definition to Restrict Subordination Definitions in the Military Hierarchy</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Hierarchically restriction for OM supertype</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+                <Variable IRI="http://example.com#ompt2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#isSubordinateTo"/>
+                <Variable IRI="http://example.com#o2"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="http://example.com#o1"/>
+                <Variable IRI="http://example.com#o2"/>
+            </DifferentIndividualsAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+                <Variable IRI="http://example.com#o1"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hasMOPowerType"/>
+                <Variable IRI="http://example.com#o2"/>
+                <Variable IRI="http://example.com#ompt2"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryOrganization"/>
+                <Variable IRI="http://example.com#o2"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+                <Variable IRI="http://example.com#ompt2"/>
+                <Variable IRI="http://example.com#ompt1"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>OperationalElement</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryScenario"/>
+                <Variable IRI="http://myontology.com/scenario#ms"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#OperationalElement"/>
+                <Variable IRI="http://myontology.com/scenario#oe"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+                <Variable IRI="http://myontology.com/scenario#ms"/>
+                <Variable IRI="http://myontology.com/scenario#oe"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Scenario restriction</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryScenario"/>
+                <Variable IRI="http://myontology.com/scenario#ms1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://myontology.com/scenario#MilitaryScenario"/>
+                <Variable IRI="http://myontology.com/scenario#ms2"/>
+            </ClassAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="http://myontology.com/scenario#ms1"/>
+                <Variable IRI="http://myontology.com/scenario#ms2"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <SameIndividualAtom>
+                <Variable IRI="http://myontology.com/scenario#ms1"/>
+                <Variable IRI="http://myontology.com/scenario#ms2"/>
+            </SameIndividualAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>communication  rule 2</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#isSubordinateTo"/>
+                <Variable IRI="http://example.com#o2"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://myontology.com/scenario#hasDirectRelationshipWith"/>
+                <Variable IRI="http://example.com#o2"/>
+                <Variable IRI="http://example.com#o1"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#AccessPoint</IRI>
+        <Literal xml:lang="en">AccessPoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#Armored</IRI>
+        <Literal xml:lang="en">Armored</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#CommDevice</IRI>
+        <Literal xml:lang="en">CommDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#CommDeviceCarrier</IRI>
+        <Literal xml:lang="en">CommDeviceCarrier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#CommDeviceOperator</IRI>
+        <Literal xml:lang="en">CommDeviceOperator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#Commander</IRI>
+        <Literal xml:lang="en">Commander</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication</IRI>
+        <Literal xml:lang="en">HierarchicallyEquivalentDuringCommunication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#Interface</IRI>
+        <Literal xml:lang="en">Interface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/nemo/gufo#categorizes"/>
+        <IRI>http://myontology.com/scenario#InterfacePowerType</IRI>
+        <IRI>http://myontology.com/scenario#Interface</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#InterfacePowerType</IRI>
+        <Literal xml:lang="en">InterfacePowerType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#MilitaryAsPassenger</IRI>
+        <Literal xml:lang="en">MilitaryAsPassenger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/nemo/gufo#isDerivedFrom"/>
+        <IRI>http://myontology.com/scenario#MilitaryEmployment</IRI>
+        <IRI>http://myontology.com/scenario#militaryHasMilitaryOrganization</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#MilitaryEmployment</IRI>
+        <Literal xml:lang="en">MilitaryEmployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#MilitaryOrganization</IRI>
+        <Literal xml:lang="en">MilitaryOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/nemo/gufo#categorizes"/>
+        <IRI>http://myontology.com/scenario#MilitaryOrganizationPowerType</IRI>
+        <IRI>http://myontology.com/scenario#MilitaryOrganization</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#MilitaryOrganizationPowerType</IRI>
+        <Literal xml:lang="en">MilitaryOrganizationPowerType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#MilitaryPerson</IRI>
+        <Literal xml:lang="en">Military</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#MilitaryPlatform</IRI>
+        <Literal xml:lang="en">MilitaryPlatform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#OperationalElement</IRI>
+        <Literal xml:lang="en">OperationalElement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#Person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#Subordinate</IRI>
+        <Literal xml:lang="en">Subordinate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#Vehicle</IRI>
+        <Literal xml:lang="en">Vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#WirelessNetwork</IRI>
+        <Literal xml:lang="en">WirelessNetwork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#carries</IRI>
+        <Literal xml:lang="en">carries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#hasDirectRelationshipWith</IRI>
+        <Literal xml:lang="en">hasDirectRelationshipWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#hasInterface</IRI>
+        <Literal xml:lang="en">hasInterface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#hierarchicallyEquivalentDuringCommunicationWith</IRI>
+        <Literal xml:lang="en">HierarchicallyEquivalentDuringCommunicationWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#isCommanderOf</IRI>
+        <Literal xml:lang="pt">isCommanderOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#isLocatedIn</IRI>
+        <Literal xml:lang="en">isLocatedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#isSubordinateTo</IRI>
+        <Literal xml:lang="en">isSubordinateTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://myontology.com/scenario#operates</IRI>
+        <Literal xml:lang="en">operates</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

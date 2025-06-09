@@ -1,0 +1,23 @@
+{% load static %}
+
+{% block content %}
+  {% include "network.html" %}
+  {% include "propagationModel.html" with pmodels=pmodels only %}
+  {% include "mobilityModel.html" with mmodels=mmodels only %}
+  {% include "nodes.html" %}
+  {% include "links.html" %}
+  {% include "radioFrequencyMeasurements.html" with measures=measures only %}
+  {% include "performanceMeasurements.html" with measures=pmeasures only %}
+
+  <script>
+    function fillForm(jsonOBJ){
+      fillNetwork(jsonOBJ["network"]);
+      fillNodes(jsonOBJ["nodes"]);
+      fillLinks(jsonOBJ["links"]);
+      fillPropagationModel(jsonOBJ["propagationModel"]);
+      fillMobilityModel(jsonOBJ["mobilityModel"]);
+      fillRadioFrequencyMeasurements(jsonOBJ["radioFrequencyMeasurements"]);
+      fillPerformanceMeasurements(jsonOBJ["performanceMeasurements"]);
+    }
+  </script>
+{% endblock %}

@@ -1,0 +1,2924 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://myontology.com/scenario#"
+     xml:base="http://myontology.com/scenario"
+     xmlns:p0="http://example.com#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:gufo="https://purl.org/nemo/gufo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:gufo1="http://purl.org/nemo/gufo#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://myontology.com/scenario"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/nemo/gufo#categorizes -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/nemo/gufo#categorizes"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#isDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/nemo/gufo#isDerivedFrom"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://myontology.com/scenario#MOTypeIsSubordinateTo -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#MOTypeIsSubordinateTo">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#ProtocolOf -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#ProtocolOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Protocol"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#belongsTo">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#MilitaryPlatform"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#carries -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#carries">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#CommDevice"/>
+        <rdfs:label xml:lang="en">carries</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#hasDirectRelationshipWith -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#hasDirectRelationshipWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+        <rdfs:label xml:lang="en">hasDirectRelationshipWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#hasInterfPowerType -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#hasInterfPowerType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#hasInterface -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#hasInterface">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#CommDevice"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#Interface"/>
+        <rdfs:label xml:lang="en">hasInterface</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#hasMOPowerType -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#hasMOPowerType">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#hasVehiclePowerType -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#hasVehiclePowerType"/>
+    
+
+
+    <!-- http://myontology.com/scenario#hierarchicallyEquivalentDuringCommunicationWith -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#hierarchicallyEquivalentDuringCommunicationWith">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+        <rdfs:label xml:lang="en">HierarchicallyEquivalentDuringCommunicationWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#isCommanderOf -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#isCommanderOf">
+        <owl:inverseOf rdf:resource="http://myontology.com/scenario#isSubordinateTo"/>
+        <rdfs:label xml:lang="pt">isCommanderOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#isLocatedIn">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#MilitaryPersonAsPassenger"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#Vehicle"/>
+        <rdfs:label xml:lang="en">isLocatedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#isSubordinateTo -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#isSubordinateTo">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Subordinate"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#Commander"/>
+        <rdfs:label xml:lang="en">isSubordinateTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#mayTalkTo -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#mayTalkTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Ue"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#Ue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#militaryPersonHasMilitaryOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#militaryScenarioHasInstitutionalElement -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#militaryScenarioHasInstitutionalElement">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#MilitaryScenario"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#InstitutionalElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#militaryScenarioHasOperationalElement -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#militaryScenarioHasOperationalElement">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#MilitaryScenario"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#OperationalElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#networkHasInterface -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#networkHasInterface">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#WirelessNetwork"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#operates -->
+
+    <owl:ObjectProperty rdf:about="http://myontology.com/scenario#operates">
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Operator"/>
+        <rdfs:range rdf:resource="http://myontology.com/scenario#Ue"/>
+        <rdfs:label xml:lang="en">operates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#inheresIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#inheresIn">
+        <rdfs:range rdf:resource="http://myontology.com/scenario#CommDeviceCarrier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#mediates -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#mediates"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://myontology.com/scenario#amphibiousSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#amphibiousSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Guarani"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#antennaGain -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#antennaGain">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#channelValue -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#channelValue">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#AccessPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#coverage -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#coverage">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#frequency -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#frequency">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#frequencyRange -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#frequencyRange">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#ip -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#ip">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#mac -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#mac">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#CommDevice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#maxAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#maxAmount">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#maxSpeedLand -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#maxSpeedLand">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#maxStrength -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#maxStrength">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#minAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#minAmount">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#minSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#minSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#minStrength -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#minStrength">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#modeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#modeValue">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#AccessPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#ssid -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#ssid">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#AccessPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#txPower -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#txPower">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#txPowerRange -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#txPowerRange">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://myontology.com/scenario#visibilityRange -->
+
+    <owl:DatatypeProperty rdf:about="http://myontology.com/scenario#visibilityRange">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasQualityValue"/>
+        <rdfs:domain rdf:resource="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#hasQualityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/nemo/gufo#hasQualityValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://myontology.com/scenario#AccessPoint -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#AccessPoint">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Armored -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Armored">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Battalion -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Battalion">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Brigade -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Brigade">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Cascavel -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Cascavel">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#Armored"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#CommDevice -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#CommDevice">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#OperationalElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#CommDeviceCarrier -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#CommDeviceCarrier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Commander -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Commander">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Company -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Company">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Guarani -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Guarani">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#Armored"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://myontology.com/scenario#hierarchicallyEquivalentDuringCommunicationWith"/>
+                <owl:someValuesFrom rdf:resource="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#InstitutionalElement -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#InstitutionalElement">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Interface -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Interface">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryEmployment -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#MilitaryEmployment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryOrganization -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#MilitaryOrganization">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#InstitutionalElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://myontology.com/scenario#MilitaryEmployment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryOrganizationPowerType -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#MilitaryOrganizationPowerType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#EndurantType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryPerson -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#MilitaryPerson">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#OperationalElement"/>
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://myontology.com/scenario#MilitaryEmployment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryPersonAsDismounted -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#MilitaryPersonAsDismounted">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+        <owl:disjointWith rdf:resource="http://myontology.com/scenario#MilitaryPersonAsPassenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryPersonAsPassenger -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#MilitaryPersonAsPassenger">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://myontology.com/scenario#isLocatedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://myontology.com/scenario#Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryPlatform -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#MilitaryPlatform">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#CommDeviceCarrier"/>
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#OperationalElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryScenario -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#MilitaryScenario">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#OperationalElement -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#OperationalElement">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Operator -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Operator">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Person -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Person">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Platoon -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Platoon">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Protocol -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Protocol">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Subordinate -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Subordinate">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://myontology.com/scenario#hasDirectRelationshipWith"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://myontology.com/scenario#Commander"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://myontology.com/scenario#isSubordinateTo"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://myontology.com/scenario#Commander"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Ue -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Ue">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#UeDown -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#UeDown">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#Ue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#UeUp -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#UeUp">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#Ue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Urutu -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Urutu">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#Armored"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#Vehicle -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#Vehicle">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#MilitaryPlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#VehiclePowerType -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#VehiclePowerType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#EndurantType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://myontology.com/scenario#WirelessNetwork -->
+
+    <owl:Class rdf:about="http://myontology.com/scenario#WirelessNetwork">
+        <rdfs:subClassOf rdf:resource="http://myontology.com/scenario#OperationalElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Category -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Category"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#EndurantType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#EndurantType"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#FunctionalComplex -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#IntrinsicMode -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Kind -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Kind"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#MaterialRelationshipType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#MaterialRelationshipType"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Mixin -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Mixin"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Quality -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Quality"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Relator -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Relator"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Role -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Role"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#SubKind -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#SubKind"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://myontology.com/scenario#AccessPoint -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#AccessPoint">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#AntennaGain_ -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#AntennaGain_">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Armored -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Armored">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Battalion -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Battalion">
+        <rdf:type rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+        <MOTypeIsSubordinateTo rdf:resource="http://myontology.com/scenario#Brigade"/>
+        <maxStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</maxStrength>
+        <minStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</minStrength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Brigade">
+        <rdf:type rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+        <maxStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</maxStrength>
+        <minStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</minStrength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Car -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Car">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Cascavel -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Cascavel">
+        <rdf:type rdf:resource="http://myontology.com/scenario#VehiclePowerType"/>
+        <maxAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</maxAmount>
+        <minAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</minAmount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#CommDevice -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#CommDevice">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#CommDeviceCarrier -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#CommDeviceCarrier">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Mixin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Commander -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Commander">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Company -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Company">
+        <rdf:type rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+        <MOTypeIsSubordinateTo rdf:resource="http://myontology.com/scenario#Battalion"/>
+        <maxStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</maxStrength>
+        <minStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</minStrength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#CruisingSpeed_ -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#CruisingSpeed_">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Frequency_ -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Frequency_">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Guarani -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Guarani">
+        <rdf:type rdf:resource="http://myontology.com/scenario#VehiclePowerType"/>
+        <maxAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</maxAmount>
+        <minAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</minAmount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#GuaraniType -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#GuaraniType"/>
+    
+
+
+    <!-- http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Interface -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Interface">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#InterfacePowerType -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#InterfacePowerType">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryEmployment -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#MilitaryEmployment">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryOrganization -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#MilitaryOrganization">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryOrganizationPowerTypee -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#MilitaryOrganizationPowerTypee">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryPerson -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#MilitaryPerson">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryPersonAsDismounted -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#MilitaryPersonAsDismounted">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryPersonAsPassenger -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#MilitaryPersonAsPassenger">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#MilitaryPlatform -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#MilitaryPlatform">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#MinSpeed_ -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#MinSpeed_">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#OperationalElement -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#OperationalElement">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Operator -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Operator">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Person -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Person">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Platoon -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Platoon">
+        <rdf:type rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+        <MOTypeIsSubordinateTo rdf:resource="http://myontology.com/scenario#Company"/>
+        <maxStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</maxStrength>
+        <minStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</minStrength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Protocol -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Protocol">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Range_ -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Range_">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Subordinate -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Subordinate">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Teste -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Teste">
+        <rdf:type rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+        <maxStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</maxStrength>
+        <minStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</minStrength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Txpower_ -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Txpower_">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Ue -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Ue">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#UeDown -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#UeDown">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#UeUp -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#UeUp">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Urutu -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Urutu">
+        <rdf:type rdf:resource="http://myontology.com/scenario#VehiclePowerType"/>
+        <maxAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</maxAmount>
+        <minAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</minAmount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#Vehicle -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#Vehicle">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#VisibilityRange_ -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#VisibilityRange_">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#WirelessNetwork -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#WirelessNetwork">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#interfpt01 -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#interfpt01"/>
+    
+
+
+    <!-- http://myontology.com/scenario#militaryPersonHasMilitaryOrganization -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#MaterialRelationshipType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#net1 -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#net1">
+        <rdf:type rdf:resource="http://myontology.com/scenario#WirelessNetwork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#scenario1 -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#scenario1">
+        <rdf:type rdf:resource="http://myontology.com/scenario#MilitaryScenario"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://myontology.com/scenario#802.11g -->
+
+    <owl:NamedIndividual rdf:about="http://myontology.com/scenario#802.11g">
+        <rdf:type rdf:resource="http://myontology.com/scenario#Protocol"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <maxStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</maxStrength>
+    </rdf:Description>
+    <rdf:Description>
+        <maxStrength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</maxStrength>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://myontology.com/scenario#AccessPoint">
+        <rdfs:label xml:lang="en">AccessPoint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#Armored">
+        <rdfs:label xml:lang="en">Armored</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#CommDevice">
+        <rdfs:label xml:lang="en">CommDevice</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#CommDeviceCarrier">
+        <rdfs:label xml:lang="en">CommDeviceCarrier</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#Commander">
+        <rdfs:label xml:lang="en">Commander</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication">
+        <rdfs:label xml:lang="en">HierarchicallyEquivalentDuringCommunication</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#Interface">
+        <rdfs:label xml:lang="en">Interface</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#MilitaryEmployment">
+        <gufo1:isDerivedFrom rdf:resource="http://myontology.com/scenario#militaryHasMilitaryOrganization"/>
+        <rdfs:label xml:lang="en">MilitaryEmployment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#MilitaryOrganization">
+        <rdfs:label xml:lang="en">MilitaryOrganization</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#MilitaryPerson">
+        <rdfs:label xml:lang="en">MilitaryPerson</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#MilitaryPersonAsPassenger">
+        <rdfs:label xml:lang="en">MilitaryPersonAsPassenger</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#MilitaryPlatform">
+        <rdfs:label xml:lang="en">MilitaryPlatform</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#OperationalElement">
+        <rdfs:label xml:lang="en">OperationalElement</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#Operator">
+        <rdfs:label xml:lang="en">CommDeviceOperator</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#Platoon">
+        <rdfs:comment>testetetetete</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#Subordinate">
+        <rdfs:label xml:lang="en">Subordinate</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#Vehicle">
+        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#WirelessNetwork">
+        <rdfs:label xml:lang="en">WirelessNetwork</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://myontology.com/scenario#m2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#m1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#o1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#o2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#c2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#c1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#i1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#i2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#ompt1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.com#o1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#g">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#ms">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#ie">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#mp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#mo">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#ompt2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://example.com#m1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#oe">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#ms1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://myontology.com/scenario#ms2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>communication rule to create communication inside the same MO</rdfs:comment>
+        <rdfs:label>communication rule (same MO)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#UeUp"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#i1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#CommDevice"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#CommDevice"/>
+                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c1"/>
+                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#c2"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization"/>
+                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization"/>
+                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasInterface"/>
+                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#c1"/>
+                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasInterface"/>
+                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c2"/>
+                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#operates"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#operates"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+                                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                                                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                        <rdf:first>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#UeUp"/>
+                                                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:first>
+                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#mayTalkTo"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#i1"/>
+                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>communication rule 3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#CommDevice"/>
+                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#c2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#CommDevice"/>
+                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c1"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#Interface"/>
+                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#Interface"/>
+                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasInterface"/>
+                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#c1"/>
+                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasInterface"/>
+                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c2"/>
+                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#operates"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#operates"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization"/>
+                                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                                                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                        <rdf:first>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#mayTalkTo"/>
+                                                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:first>
+                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasDirectRelationshipWith"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>MilitaryAsCarrier</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+                        <swrl:argument1 rdf:resource="http://example.com#o1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#CommDeviceCarrier"/>
+                                <swrl:argument1 rdf:resource="http://example.com#o1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPersonAsDismounted"/>
+                        <swrl:argument1 rdf:resource="http://example.com#o1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>set guarani data properties</rdfs:comment>
+        <rdfs:label>Guarani Data Properties</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#Guarani"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#g"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#minSpeed"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#g"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#visibilityRange"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#g"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#amphibiousSpeed"/>
+                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#g"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#maxSpeedLand"/>
+                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#g"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>InstitutionalElement</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryScenario"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#ms"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#InstitutionalElement"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#ie"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryScenarioHasInstitutionalElement"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#ms"/>
+                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#ie"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>MilitaryPerson and Platform must belong to the same MO</rdfs:comment>
+        <rdfs:label>MilitaryPerson and Platform same MO</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPlatform"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#mp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#mo"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#isLocatedIn"/>
+                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#mp"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#belongsTo"/>
+                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#mp"/>
+                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#mo"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#mo"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Rule definition to restrict subordination relations in the military hierarchy</rdfs:comment>
+        <rdfs:label>Hierarchically restriction for MO powertypes</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#isSubordinateTo"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#o1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#o2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#ompt1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasMOPowerType"/>
+                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#ompt1"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasMOPowerType"/>
+                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#ompt2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#ompt2"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#MOTypeIsSubordinateTo"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#ompt2"/>
+                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#ompt1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Military Data Properties</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPersonAsDismounted"/>
+                        <swrl:argument1 rdf:resource="http://example.com#m1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#maxSpeedLand"/>
+                        <swrl:argument1 rdf:resource="http://example.com#m1"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#minSpeed"/>
+                                <swrl:argument1 rdf:resource="http://example.com#m1"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#visibilityRange"/>
+                                        <swrl:argument1 rdf:resource="http://example.com#m1"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>OperationalElement</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryScenario"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#ms"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#OperationalElement"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#oe"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryScenarioHasOperationalElement"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#ms"/>
+                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#oe"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Scenario restriction</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryScenario"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#ms1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryScenario"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#ms2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#ms1"/>
+                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#ms2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#ms1"/>
+                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#ms2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>communication  rule 2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#isSubordinateTo"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasDirectRelationshipWith"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>defines two organizations as equivalent during communication</rdfs:comment>
+        <rdfs:label>HierarchicallyEquivalentDuringCommunication rule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#UeUp"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#i1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#CommDevice"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#CommDevice"/>
+                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization"/>
+                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization"/>
+                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganizationPowerType"/>
+                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#ompt1"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasMOPowerType"/>
+                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#ompt1"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasMOPowerType"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#ompt1"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#operates"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#operates"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                                                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasInterface"/>
+                                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c1"/>
+                                                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasInterface"/>
+                                                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#c2"/>
+                                                                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                        <rdf:first>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+                                                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:first>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                <rdf:first>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+                                                                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:first>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                        <rdf:first>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#UeUp"/>
+                                                                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:first>
+                                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:rest>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#mayTalkTo"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#i1"/>
+                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hierarchicallyEquivalentDuringCommunicationWith"/>
+                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#HierarchicallyEquivalentDuringCommunication"/>
+                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>mayTalkTo inference</rdfs:comment>
+        <rdfs:label>communication rule 1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryPerson"/>
+                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#CommDevice"/>
+                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#c2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#CommDevice"/>
+                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#UeDown"/>
+                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#UeUp"/>
+                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasInterface"/>
+                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#c2"/>
+                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#hasInterface"/>
+                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#c1"/>
+                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#operates"/>
+                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#i1"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#operates"/>
+                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                        <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                <swrl:classPredicate rdf:resource="http://myontology.com/scenario#MilitaryOrganization"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#isSubordinateTo"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization"/>
+                                                                                                                                <swrl:argument1 rdf:resource="http://myontology.com/scenario#m1"/>
+                                                                                                                                <swrl:argument2 rdf:resource="http://myontology.com/scenario#o1"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#militaryPersonHasMilitaryOrganization"/>
+                                                                                                                                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#m2"/>
+                                                                                                                                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#o2"/>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://myontology.com/scenario#mayTalkTo"/>
+                        <swrl:argument1 rdf:resource="http://myontology.com/scenario#i1"/>
+                        <swrl:argument2 rdf:resource="http://myontology.com/scenario#i2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

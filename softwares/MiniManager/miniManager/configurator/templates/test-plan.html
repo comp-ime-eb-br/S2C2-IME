@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'test-plan.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="title-bar">
+    <h1>Criar Plano de Teste</h1>
+    <form action="/test-plans/" method="get">
+      <button class="btn btn-secondary">Listar Plano de Testes</button>
+    </form>
+  </div>
+  <form class="test-plan-form" action="/test-plan/" method="POST" onsubmit="return validateForm();">
+    {% csrf_token %}
+    <div class="test-plan-inputs">
+      <div class="row">
+        <div class="col">
+          <label for="test-plan_name" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="test-plan_name" name="test-plan_name" placeholder="Meu Plano de Teste 1">
+        </div>
+        <div class="col">
+          <label for="test-plan_name" class="form-label">Autor</label>
+          <input type="text" class="form-control" id="test-plan_author" name="test-plan_author" placeholder="Pesquisador 1">
+        </div>
+      </div>
+      <label for="test-plan_name" class="form-label">Descrição</label>
+      <input type="text" class="form-control" id="test-plan_description" name="test-plan_description" placeholder="Plano de Teste criado para reproduzir o cenário X">
+    </div>
+    <button type="submit" class="submit-button btn btn-primary">Criar Plano de Teste</button>
+    {% if error %}
+      <div id="status-bar" class="alert alert-primary" role="alert">{{ errorMessage }}</div>
+    {% endif %}
+  </form>
+
+  <script>
+    function validateForm(){
+      name = document.getElementById("test-plan_name").value;
+      author = document.getElementById("test-plan_author").value;
+      description = document.getElementById("test-plan_description").value;
+
+      if(!name || !author || !description){
+        alert("Preenca todos os campos obrigatórios");
+        return false;
+      }
+      
+      return true;
+    }
+  </script>
+{% endblock %}

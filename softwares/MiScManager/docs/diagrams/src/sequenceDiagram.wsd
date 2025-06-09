@@ -1,0 +1,123 @@
+@startuml Diagrama de Sequência
+autonumber 1.1.1
+
+Pesquisador -> Navegador: Solicitar a execução\n de uma simulação
+Navegador -> Experimenter: POST /round
+autonumber inc B
+Experimenter -> Configurator: obterVersão(VersionID)
+Configurator -> Database: obterVersão(VersionID)
+Database --> Configurator:  Versão do Experimento\n(incluindo a respectiva configuração)
+Configurator --> Experimenter: Versão do Experimento\n(incluindo a respectiva configuração)
+autonumber inc B
+Experimenter -> Database: obterTotalRodadas(VersionID)
+Database --> Experimenter: total de rodadas
+Experimenter -> Database: novaRodada(VersionID)
+Database --> Experimenter: rodadaID
+Experimenter -> Experimenter: Colocar experimento na fila
+
+
+
+
+
+autonumber inc A
+Experimenter -> Experimenter: GET /round/<round_id>
+autonumber inc B
+Experimenter -> Configurator: obterVersão(roundID)
+Configurator -> Database: obterVersão(roundID)
+Database --> Configurator:  Versão do Experimento\n(incluindo a respectiva configuração)
+Configurator --> Experimenter: Versão do Experimento\n(incluindo a respectiva configuração)
+autonumber inc B
+Experimenter -> Database: obterStatusRodada(rodadaID)
+Database --> Experimenter: Status da Rodada
+autonumber inc B
+Experimenter --> Navegador: Páginda de execução de Experimento (HTML e JS)
+Navegador -> Navegador: Renderizar Página
+Navegador -> Pesquisador: Exibir Página de Rodada(Em execução)
+autonumber inc B
+Navegador -> Experimenter: abrir conexão websocket
+Experimenter --> Navegador: conexão websocket estabelecida
+
+
+
+
+
+autonumber inc A
+note over Experimenter: Quando o experimento em questão estiver no topo da fila.
+Experimenter -> Experimenter: Consumir fila de experimento
+Experimenter -> Experimenter: Bloquear consumo da fila
+Experimenter -> database: Atualizar status da rodada
+database --> Experimenter: Ok
+Experimenter -> ProvenanceCatcher: Inicializar captura
+Experimenter -> MininetWifiAdapter: Solicitar inicialização do experimento
+autonumber inc B
+MininetWifiAdapter -> MininetWifi: Configurar Rede
+MininetWifiAdapter -> MininetWifiAdapter: Inicializar Coleta de Resultados
+
+loop Até a Solicitação de encerrar Rodada
+    autonumber inc B
+    MininetWifiAdapter -> MininetWifi: Solicita Resultado
+    MininetWifi -> MininetWifiAdapter: Resultado parcial
+    MininetWifiAdapter -> Experimenter: Resultado parcial
+
+    autonumber inc B
+    alt primeiro Resultado Parcial
+        Experimenter -> database: Atualizar status da rodada
+        database --> Experimenter: Ok
+    end
+
+    MininetWifiAdapter -> ProvenanceCatcher: Resultado parcial
+    ProvenanceCatcher -> ProvenanceCatcher: Armazenar resultado parcial
+    Experimenter -> Navegador: Resultado Parcial (via webSocket)
+    Navegador -> Pesquisador: Exibir Resultado Parcial
+end
+
+
+
+
+autonumber inc A
+Pesquisador -> Navegador: Solicita finalização do experimento
+Navegador -> Experimenter: POST /finish-round
+Experimenter -> MininetWifiAdapter: solicitar finalização do experimento
+note over Experimenter: Ou tempo de execução do Experimento termina
+autonumber inc B
+MininetWifiAdapter -> MininetWifiAdapter: Interromper coleta\n de Resultados
+MininetWifiAdapter -> MininetWifi: Limpar configuração\n
+MininetWifiAdapter --> Experimenter: experimento finalizado
+MininetWifiAdapter --> ProvenanceCatcher: experimento finalizado
+autonumber inc B
+ProvenanceCatcher -> Database: novoResultado()
+Database --> ProvenanceCatcher: OK
+ProvenanceCatcher --> Experimenter: OK
+autonumber inc B
+Experimenter -> Experimenter: Liberar consumo da fila
+Experimenter --> Navegador: Experimento Finalizado
+autonumber inc B
+Navegador -> Pesquisador: Atualiza as informações exibidas
+Navegador -> Experimenter: encerrar conexão websocket
+
+
+
+autonumber inc A
+alt finalização por solicitação do usuário
+    Experimenter -> Experimenter: GET /round/<round_id>
+    autonumber inc B
+    Experimenter -> Configurator: obterVersão(roundID)
+    Configurator -> Database: obterVersão(roundID)
+    Database --> Configurator:  Versão do Experimento\n(incluindo a respectiva configuração)
+    Configurator --> Experimenter: Versão do Experimento\n(incluindo a respectiva configuração)
+    autonumber inc B
+    Experimenter -> Database: obterStatusRodada(rodadaID)
+    Database --> Experimenter: Status da Rodada
+    autonumber inc B
+    Experimenter -> ProvenanceCatcher: obterResultado(rodadaID)
+    ProvenanceCatcher -> Database: obterResultado(rodadaID)
+    Database -> ProvenanceCatcher: Resultado
+    ProvenanceCatcher --> Experimenter: Resultado do Experimento
+    autonumber inc B
+    Experimenter --> Navegador: Página de vizualização de Experimento (HTML e JS)
+    Navegador -> Navegador: Renderizar Página
+    Navegador -> Pesquisador: Exibir Página de Rodada(Finalizada)
+end
+
+
+@enduml

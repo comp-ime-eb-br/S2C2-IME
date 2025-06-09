@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'test-plan.css' %}">
+  <link rel="stylesheet" href="{% static 'css/table.css' %}">
+{% endblock %}
+
+{% block content %}
+  <h1>Plano de Testes</h1>
+  <form action="/test-plan/" method="get">
+    <button class="btn btn-primary">Criar Plano de Teste</button>
+  </form><br>
+  <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Criado em</th>
+            <th>Atualizado em</th>
+            <th>Autor</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="styled-table-content">
+      {% for testPlan in testPlans %}
+      <tr>
+        <td>{{ testPlan.name }}</td>
+        <td>{{ testPlan.created_at|date:"d/m/Y" }} - {{ testPlan.created_at|time:"h:i:s" }}</td>
+        <td>{{ testPlan.updated_at|date:"d/m/Y" }} - {{ testPlan.updated_at|time:"h:i:s" }}</td>
+        <td>{{ testPlan.author }}</td>
+        <td>{{ testPlan.description }}</td>
+        <td><a href="/versions/{{testPlan.id}}">ABRIR</a>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

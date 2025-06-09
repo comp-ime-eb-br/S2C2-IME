@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<result roundID="148">
+  <radioFrequency>
+    <instant time="3">
+      <station name="sta1-wlan0">
+        <rssi>-78.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.1</ip>
+        <position>[16.34, 55.32, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta2-wlan0">
+        <rssi>-59.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.2</ip>
+        <position>[23.29, 27.03, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta3-wlan0">
+        <rssi>0</rssi>
+        <channel>0</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.3</ip>
+        <position>[63.07, 13.14, 0.0]</position>
+        <associatedto>None</associatedto>
+      </station>
+    </instant>
+    <instant time="4">
+      <station name="sta1-wlan0">
+        <rssi>-79.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.1</ip>
+        <position>[17.75, 56.51, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta2-wlan0">
+        <rssi>-58.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.2</ip>
+        <position>[22.31, 26.45, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta3-wlan0">
+        <rssi>0</rssi>
+        <channel>0</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.3</ip>
+        <position>[63.04, 12.55, 0.0]</position>
+        <associatedto>None</associatedto>
+      </station>
+    </instant>
+    <instant time="5">
+      <station name="sta1-wlan0">
+        <rssi>-79.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.1</ip>
+        <position>[19.15, 57.69, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta2-wlan0">
+        <rssi>-57.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.2</ip>
+        <position>[21.33, 25.87, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta3-wlan0">
+        <rssi>0</rssi>
+        <channel>0</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.3</ip>
+        <position>[63.01, 11.95, 0.0]</position>
+        <associatedto>None</associatedto>
+      </station>
+    </instant>
+    <instant time="6">
+      <station name="sta1-wlan0">
+        <rssi>-80.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.1</ip>
+        <position>[20.56, 58.88, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta2-wlan0">
+        <rssi>-56.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.2</ip>
+        <position>[20.36, 25.28, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta3-wlan0">
+        <rssi>0</rssi>
+        <channel>0</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.3</ip>
+        <position>[62.98, 11.35, 0.0]</position>
+        <associatedto>None</associatedto>
+      </station>
+    </instant>
+    <instant time="7">
+      <station name="sta1-wlan0">
+        <rssi>-81.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.1</ip>
+        <position>[21.97, 60.06, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta2-wlan0">
+        <rssi>-54.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.2</ip>
+        <position>[19.38, 25.3, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta3-wlan0">
+        <rssi>0</rssi>
+        <channel>0</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.3</ip>
+        <position>[62.95, 10.75, 0.0]</position>
+        <associatedto>None</associatedto>
+      </station>
+    </instant>
+    <instant time="8">
+      <station name="sta1-wlan0">
+        <rssi>-82.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.1</ip>
+        <position>[23.37, 61.25, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta2-wlan0">
+        <rssi>-51.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.2</ip>
+        <position>[18.4, 25.88, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta3-wlan0">
+        <rssi>0</rssi>
+        <channel>0</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.3</ip>
+        <position>[62.92, 10.15, 0.0]</position>
+        <associatedto>None</associatedto>
+      </station>
+    </instant>
+    <instant time="9">
+      <station name="sta1-wlan0">
+        <rssi>-83.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.1</ip>
+        <position>[24.78, 62.43, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta2-wlan0">
+        <rssi>-47.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.2</ip>
+        <position>[17.43, 26.47, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta3-wlan0">
+        <rssi>0</rssi>
+        <channel>0</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.3</ip>
+        <position>[62.89, 10.44, 0.0]</position>
+        <associatedto>None</associatedto>
+      </station>
+    </instant>
+    <instant time="10">
+      <station name="sta1-wlan0">
+        <rssi>-83.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.1</ip>
+        <position>[26.18, 63.62, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta2-wlan0">
+        <rssi>-42.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.2</ip>
+        <position>[16.45, 27.05, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta3-wlan0">
+        <rssi>0</rssi>
+        <channel>0</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.3</ip>
+        <position>[62.86, 11.04, 0.0]</position>
+        <associatedto>None</associatedto>
+      </station>
+    </instant>
+    <instant time="11">
+      <station name="sta1-wlan0">
+        <rssi>-84.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.1</ip>
+        <position>[27.59, 64.8, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta2-wlan0">
+        <rssi>-37.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.2</ip>
+        <position>[15.47, 27.63, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta3-wlan0">
+        <rssi>0</rssi>
+        <channel>0</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.3</ip>
+        <position>[62.83, 11.64, 0.0]</position>
+        <associatedto>None</associatedto>
+      </station>
+    </instant>
+    <instant time="12">
+      <station name="sta1-wlan0">
+        <rssi>-85.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.1</ip>
+        <position>[29.0, 65.99, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta2-wlan0">
+        <rssi>-32.0</rssi>
+        <channel>36</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.2</ip>
+        <position>[14.5, 28.22, 0.0]</position>
+        <associatedto>ap1-wlan1</associatedto>
+      </station>
+      <station name="sta3-wlan0">
+        <rssi>0</rssi>
+        <channel>0</channel>
+        <band>20</band>
+        <ssid>new-ssid</ssid>
+        <txpower>14</txpower>
+        <ip>10.0.0.3</ip>
+        <position>[62.8, 12.24, 0.0]</position>
+        <associatedto>None</associatedto>
+      </station>
+    </instant>
+  </radioFrequency>
+  <performance>
+    <instance time="11" source="sta1" destination="sta2" name="ping">
+      <value> 10 packets transmitted, 10 received, 0% packet loss, time 9050ms rtt min/avg/max/mdev = 1.056/312.685/2049.986/654.469 ms, pipe 3</value>
+    </instance>
+  </performance>
+</result>

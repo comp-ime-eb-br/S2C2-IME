@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'compare-rounds.css' %}">
+{% endblock %}
+
+{% block content %}
+  <h1>{{ round1 }} X {{ round2 }}</h1>
+  {% if hasError %}
+    <div class="alert alert-primary" role="alert">{{ errorMessage }}</div>
+  {% else %}
+    <div class="diff-content">
+      <div class="table-content">
+        {% include "result-table.html" with name="radioFrequency" titles=radioFrequencyTitles rows=radioFrequency isDiff=True only %}
+      </div>
+      <div class="table-content">
+        {% include "result-table.html" with name="performance" titles=performanceTitles rows=performance isDiff=True only %}
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

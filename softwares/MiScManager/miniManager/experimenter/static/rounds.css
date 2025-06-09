@@ -1,0 +1,10 @@
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.round-actions {
+    display: flex;
+    justify-content: space-between;
+}

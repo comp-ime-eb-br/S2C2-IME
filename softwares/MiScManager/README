@@ -1,0 +1,12 @@
+LINK DO VÍDEO DE DEMONSTRAÇÃO: https://www.youtube.com/watch?v=oCnLUqbpUcg
+
+LINK PARA INSTALAÇÃO DO MININET-WIFI: https://github.com/intrig-unicamp/mininet-wifi
+
+
+MiniManager é uma aplicação Django Framework.
+
+Devem ser instalados os pacotes listados no arquivo requirements.txt.
+
+Banco de dados utilizado: PostgreSQL.
+
+

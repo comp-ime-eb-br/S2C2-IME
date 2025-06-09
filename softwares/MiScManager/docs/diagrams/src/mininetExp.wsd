@@ -1,0 +1,54 @@
+@startuml  Diagrama de Classe
+skinparam classAttributeIconSize 0
+
+interface IResultEventListener {
+    + update(subject)
+}
+
+class ResultNotifier {
+    - observers
+    + attach(observer)
+    + detach(observer)
+    + notify(subject)
+    - notify(subject)
+}
+
+class OutputHandler {
+    + notifier
+    + string eventType
+    + contents
+
+    + formattedContent(content)
+    + process()
+}
+
+class EOFHandler {}
+
+class PartialResultHandler {}
+
+class ErrorHandler {}
+
+class MininetWifiExp {
+    - notifier
+    - boolean active
+    - process
+    - number start
+    - configuration
+
+    + run()
+    + finish()
+    + addListener()
+    - serializeConfiguration()
+    - isTimeExpired()
+    - shouldKeepRunning()
+}
+
+ResultNotifier o-- IResultEventListener
+OutputHandler o-- ResultNotifier
+OutputHandler <|-- EOFHandler
+OutputHandler <|-- PartialResultHandler
+OutputHandler <|-- ErrorHandler
+MininetWifiExp o-- ResultNotifier
+MininetWifiExp ..> OutputHandler
+
+@enduml

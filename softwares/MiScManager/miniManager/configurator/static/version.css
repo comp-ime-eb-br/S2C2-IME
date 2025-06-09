@@ -1,0 +1,13 @@
+.submit-button {
+    margin-top: 20px;
+}
+
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-file {
+    width: auto !important;
+}

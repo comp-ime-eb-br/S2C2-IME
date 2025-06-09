@@ -1,0 +1,27 @@
+@startuml Mininet Architecture
+
+actor "Cientista" as cientist
+
+frame MiniManager{
+    frame "User Interface" as UI {
+        node "Experimenter" as experimenter
+        node "Configurator" as configurator
+    }
+    
+    node "ProvenanceCatcher" as provenanceCatcher
+    node "MininetWifiAdapter" as mininetWifiAdapter
+
+}
+
+database "Database" as db
+node "Mininet WiFi" as mininetWiFi
+
+UI -up- cientist
+UI -left- db
+experimenter -left- configurator
+experimenter -- mininetWifiAdapter
+mininetWifiAdapter -left- provenanceCatcher
+provenanceCatcher -left- db
+mininetWifiAdapter -down- mininetWiFi
+experimenter -- provenanceCatcher
+@enduml

@@ -1,0 +1,61 @@
+@startuml  Diagrama de Classe
+skinparam classAttributeIconSize 0
+
+
+class Model {}
+class View {}
+class Round {
+    + string name
+    + datetime start
+    + datetime end
+    + string status
+    + string version
+    - string old_status
+    
+    + save()
+    + boolean isDone()
+}
+
+class RoundsView {
+    + get(request, version_id)
+}
+
+class RoundView {
+    + get(request, version_id)
+    + post(request)
+    - enqueueExperiment(configuration, roundID)
+}
+
+class ExportRoundView {
+    + get(request, round_id)
+}
+
+class CompareRoundsView {
+    + get(request)
+}
+
+package provenanceCatcher {
+    class ProvenanceService {}
+}
+
+package configurator {
+    class ConfiguratorService {}
+}
+
+
+Model <|-- Round
+
+View <|-- RoundsView
+RoundsView ..> ConfiguratorService
+
+View <|-- RoundView
+RoundView ..> ConfiguratorService
+RoundView ..> ProvenanceService
+
+View <|-- ExportRoundView
+ExportRoundView ..> ProvenanceService
+
+View <|-- CompareRoundsView
+CompareRoundsView ..> ProvenanceService
+
+@enduml

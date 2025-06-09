@@ -1,0 +1,86 @@
+{% load static %}
+{% block head %}
+  <link rel="stylesheet" href="{% static 'propagationModel.css' %}">
+{% endblock %}
+
+<div class="card propagationModel-form">
+  <h5 class="card-header">Modelo de Propagação</h5>
+  <div class="card-body">
+    <label for="PropagationModel">Selecione o Modelo de Propagação</label>
+    <select class="form-control" onchange="onPropagationModelSelect(this)" name="propagationmodel" id="PropagationModel">
+      {% for model in pmodels %}
+      <option value="{{model.name}}">{{model.displayname}}</option>
+      {% endfor %}
+    </select>
+    <div id="logDistance"  class="hidde-element form-group">
+      <div class="form-group">
+        <input type="hidden" name="logDistanceattribute" value="exponent" id="logDistanceattribute">
+        <label for="exponent">Expoente</label>
+        <input type="number" name="exponent" class="form-control" id="exponent" placeholder="4">
+      </div>
+    </div>
+    <div id="friis" class="hidde-element form-group"></div>
+    <div id="model-not-supported" class="hidde-element alert alert-primary" role="alert">Modelo de Propagação ainda não suportado</div>
+  </div>
+</div>
+
+<script>
+
+var currentPropagationModelName = "logDistance";
+changePropagationModelForm(currentPropagationModelName);
+
+function onPropagationModelSelect(selectSrc) {
+  let propagationModelName = selectSrc.value;
+  changePropagationModelForm(propagationModelName);
+  currentPropagationModelName = propagationModelName;
+}
+
+
+function changePropagationModelForm(newPropagationModel) {
+  document.getElementById(currentPropagationModelName).style.display = "none";
+
+  let newElement = document.getElementById(newPropagationModel);
+  if(!newElement){
+    newElement = document.getElementById("model-not-supported");
+  }
+
+  newElement.style.display = "inline-block";
+}
+
+function fillPropagationModel(propagationModel){
+  var model = propagationModel.model;
+  document.getElementById("PropagationModel").value = model;
+  changePropagationModelForm(model);
+  currentPropagationModelName = model;
+
+  for(var arg in propagationModel.args){
+    document.getElementsByName(arg)[0].value = propagationModel.args[arg];
+  }
+}
+
+function validatePropagationModel(){
+    var propagationmodel = document.getElementById("PropagationModel").value;
+    if(!propagationmodel){
+        alert("Selecione um modelo de propagação.");
+        return false;
+    }
+
+    var attributesElement = document.getElementById(propagationmodel + "attribute");
+    if(!attributesElement){
+      return true;
+    }
+    var attributesString = attributesElement.value;
+    var attributes = !attributesString ? [] : attributesString.split(',');
+
+    for(var attr of attributes){
+      if(!document.getElementById(attr).value){
+        alert("Preencha os campos obrigatórios do Modelo de Propagação");
+        return false;
+      }
+    }
+
+    return true;
+}
+
+</script>
+

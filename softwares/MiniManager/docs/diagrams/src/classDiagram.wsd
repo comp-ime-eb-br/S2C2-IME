@@ -1,0 +1,321 @@
+@startuml  Diagrama de Classe
+skinparam classAttributeIconSize 0
+
+package django {
+    class AsyncJsonWebsocketConsumer {}
+    class Model {}
+    class View {}
+}
+
+package experimenter {
+
+    class WebSocketServer {
+        + void connect()
+        + void disconnect()
+        + void sendMessage(data)
+        + void sendMessageToRoom(roundID, data)
+        - getRoomGroupName(roundID)
+    }
+
+    class Round {
+        + string name
+        + datetime start
+        + datetime end
+        + string status
+        + string version
+        - string old_status
+        
+        + save()
+        + boolean isDone()
+    }
+
+    class ExperimentListener {
+        - roundID
+        - started
+
+        + update(subject)
+        - updateStatus(status)
+        - sendMessage(subject)
+    }
+
+    class ExperimentsQueue {
+        + Queue queue
+        - ExperimentsQueue instance
+        - boolean busy
+        - Map roundToExperimentMap
+        - number currentRound
+
+        + add (MininetWifiExp mininetWifiExp, number roundID, string medicao_schema)
+        + finishExperiment(number roundID)
+        + experimentFinished(number roundID)
+        + instance()
+
+        - consume()
+        - startExperiment(number roundID)
+        - updateRoundStatus(number roundID)
+        - startCapture(number roundID, string schema)
+    }
+    
+
+    class RoundsView {
+        + get(request, version_id)
+    }
+
+    class RoundView {
+        + get(request, version_id)
+        + post(request)
+        - enqueueExperiment(configuration, roundID)
+    }
+
+    class FinishRoundView {
+        + post(request)
+    }
+
+    class ExportRoundView {
+        + get(request, round_id)
+    }
+
+    class CompareRoundsView {
+        + get(request)
+    }
+
+}
+
+package mininetWifiAdapter {
+    interface IResultEventListener {
+        + update(subject)
+    }
+
+    class ResultNotifier {
+        - observers
+        + attach(observer)
+        + detach(observer)
+        + notify(subject)
+        - notify(subject)
+    }
+
+    class OutputHandler {
+        + notifier
+        + string eventType
+        + contents
+
+        + formattedContent(content)
+        + process()
+    }
+
+    class EOFHandler {}
+
+    class PartialResultHandler {}
+
+    class ErrorHandler {}
+
+    class MininetWifiExp {
+        - notifier
+        - boolean active
+        - process
+        - number start
+        - configuration
+
+        + run()
+        + finish()
+        + addListener()
+        - serializeConfiguration()
+        - isTimeExpired()
+        - shouldKeepRunning()
+    }
+
+    class MininetScript {
+        - configuration
+        - radioFrequencyMeasurements
+        - performanceMeasurements
+        - net
+
+        + run()
+        - loadConfiguration()
+        - topology()
+        - analyse
+    }
+
+    interface IMeasurer {
+        + run()
+    }
+
+    class PositionMeasurer {
+        - number start
+        - nodes
+
+        + run()
+    }
+
+    class RadioFrequencyMeasurer {
+        - number start
+        - stations
+        - measurements
+
+        + run()
+        - isValidMeasurement()
+        - getValidMeasures()
+        - getMetricFromNode()
+    }
+
+    class PerformanceMeasurer {
+        - number start
+        - net
+        - measurements
+
+        + run()
+        - collectMeasurement(measurement)
+        - getMeasure(measure)
+        - ping(source, destination)
+        - iperf(source, destination)
+    }
+
+    interface MininetDecoratorComponent {
+        + configure()
+        + getNetwork()
+
+    }
+
+    class MininetBaseDecorator {
+        - component
+        - network
+        + configure()
+    }
+
+    class MininetNetwork {
+        - network
+        - nodes
+        - links
+        + getNetwork()
+        + configure()
+    }
+
+    class PropagationModelDecorator {
+        - propagationModel
+        - args
+        + getNetwork()
+        + configure()
+    }
+
+    class MobilityModelDecorator {
+        - mobilityModel
+        - args
+        + getNetwork()
+        + configure()
+    }
+
+    class NetworkStarterDecorator {
+        + getNetwork()
+        + configure()
+    }
+
+    ResultNotifier *-- IResultEventListener
+    OutputHandler o-- ResultNotifier
+    OutputHandler <|-- EOFHandler
+    OutputHandler <|-- PartialResultHandler
+    OutputHandler <|-- ErrorHandler
+    MininetWifiExp o-- ResultNotifier
+    MininetWifiExp ..> OutputHandler
+    IMeasurer <|.. PositionMeasurer
+    IMeasurer <|.. RadioFrequencyMeasurer
+    IMeasurer <|.. PerformanceMeasurer
+    MininetDecoratorComponent <|.. MininetNetwork
+    MininetDecoratorComponent <|.. MininetBaseDecorator
+    MininetBaseDecorator o-- MininetDecoratorComponent
+    MininetBaseDecorator <|-- PropagationModelDecorator
+    MininetBaseDecorator <|-- MobilityModelDecorator
+    MininetBaseDecorator <|-- NetworkStarterDecorator
+
+    MininetScript ..> IMeasurer
+    MininetScript ..> MininetDecoratorComponent
+}
+
+
+package provenanceCatcher {
+    class ProvenanceService {
+        + getResultRowsFromRound(roundID, schema, radioFrequencyMeasures)
+        + getXML(roundID, encoding)
+        + diffResults(roundID1, roundID2, schema1, schema2, measurements)
+        - getResultContentFromRound(roundID, schema)
+        - isGreaterThan(row1, row2)
+        - isEqual(row1, row2)
+        - getDiff(rows1, rows2)
+    }
+
+    class ProvenanceManager {
+        - instance
+        - roundID
+        - schema
+        - radioFrequency
+        - performance
+
+        + instance()
+        + reset(roundID, schema)
+        + addResult(content)
+        + saveResults()
+        - addRadioFrequencyElement(time, radioFrequency)
+        - addPerformanceElement(time, performance)
+    }
+
+    class Result {
+        + xml_content
+        + round
+    }
+
+    class ProvenanceListener {
+        + update(subject)
+    }
+
+    ProvenanceListener *-- ProvenanceManager
+    ProvenanceManager ..> Result
+    ProvenanceService ..> Result
+}
+
+Model <|-- Result
+
+
+
+package configurator {
+    class ConfiguratorService {}
+}
+
+
+
+AsyncJsonWebsocketConsumer <|-- WebSocketServer
+
+Model <|-- Round
+
+IResultEventListener <|.. ExperimentListener
+ExperimentListener ..> WebSocketServer
+ExperimentListener ..> ExperimentsQueue
+ExperimentListener ..> Round
+
+IResultEventListener <|.. ProvenanceListener
+
+ExperimentsQueue "1" o-- "*" MininetWifiExp
+ExperimentsQueue ..> Round
+ExperimentsQueue ..> ProvenanceManager
+ExperimentsQueue ..> ProvenanceListener
+
+View <|-- RoundsView
+RoundsView ..> Round
+RoundsView ..> ConfiguratorService
+
+View <|-- RoundView
+RoundView ..> Round
+RoundView ..> ConfiguratorService
+RoundView ..> ExperimentsQueue
+
+View <|-- FinishRoundView
+FinishRoundView ..> Round
+FinishRoundView ..> ExperimentsQueue
+
+View <|-- ExportRoundView
+ExportRoundView ..> Round
+ExportRoundView ..> ProvenanceService
+
+View <|-- CompareRoundsView
+CompareRoundsView ..> Round
+CompareRoundsView ..> ProvenanceService
+
+@enduml

@@ -1,0 +1,365 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* The Close Button */
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+
+.mo-container {
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+}
+</style>
+
+<form class="test-plan-form" method="POST" onsubmit="return validateForm();">
+      {% csrf_token %}
+  <div class="col">
+    <label for="scenario_name" class="form-label">Nome do cenário</label>
+    <input type="text" class="form-control" id="scenario_name" name="scenario_name" placeholder="Cenário" required>
+    <br><br>
+    <label for="scenario_description" class="form-label">Descrição</label>
+    <input type="text" class="form-control" id="scenario_description" name="scenario_description" placeholder="Descrição do cenário" required>
+  </div>
+
+<br>
+<hr>
+<div class="col">
+
+<!-- Trigger/Open The Modal -->
+<button type="button" class="btn btn-secondary" id="myBtn">Adicionar OM</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <label for="fname">Nome da OM</label>
+    <input type="text" id="mo_name" name="mo_name"><br><br>
+
+    <label for="commander">OM Comandante</label>
+    <select id="commander" name="commander"></select><br><br>
+
+    <label for="type">Tipo</label>
+    <select id="type" name="type">
+      {%for t in types%}
+        <option>{{t.name}}</option>
+      {%endfor%}
+    </select><br><br>
+
+    <button type="button" class="btn btn-secondary" id="createmo">Criar OM</button>
+  </div>
+
+</div>
+
+<div id="output"></div>
+<br><br>
+<hr>
+<button type="button" class="btn btn-secondary" id="myBtn2">Adicionar Militar</button>
+
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+    <label for="identifier">Id</label>
+    <input type="text" id="identifier" name="identifier"><br><br>
+
+    <label for="person_mo">Organização Militar</label>
+    <select id="person_mo" name="person_mo"></select><br><br>
+
+    <label for="carrier">Carrier</label>
+    <select id="carrier" name="carrier">
+      <option>Guarani</option>
+      <option>By Foot</option>
+    </select><br><br>
+
+    <button type="button" class="btn btn-secondary" id="createmp">Criar Militar</button>
+  </div>
+
+</div>
+
+
+<div id="output2"></div><br><br>
+
+<hr>
+
+<input type="hidden" id="military_org_data" name="military_org_data" value="">
+<input type="hidden" id="military_person_data" name="military_person_data" value="">
+
+<button type="submit" class="btn btn-secondary" id="save">Salvar Cenário</button>
+
+</div>
+</form>
+<script>
+
+var military_org_data_array = [];
+var military_person_data_array = [];
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// Get the save button
+var saveButton = document.getElementById("save");
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks the button, open the modal
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  } else if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+// When the user clicks the "Create MO" button
+document.getElementById("createmo").onclick = function() {
+  var mo_name = document.getElementById("mo_name").value;
+  var commander = document.getElementById("commander").value;
+  var type = document.getElementById("type").value;
+
+  var military_org_data = {
+    mo_name: mo_name,
+    commander: commander,
+    type: type
+  };
+  military_org_data_array.push(military_org_data);
+
+  // Update the value of the hidden input field
+  document.getElementById("military_org_data").value = JSON.stringify(military_org_data_array);
+
+  // Create a new div element to hold the MO information
+  var mo_div = document.createElement("div");
+  mo_div.style.border = "1px solid #ccc";
+  mo_div.style.display = "inline-block";
+  mo_div.style.width = "30%";
+  mo_div.style.margin = "10px";
+
+  // Create a new paragraph element for the MO name
+  var name_p = document.createElement("p");
+  name_p.innerHTML = "<b>Name:</b> " + mo_name;
+  mo_div.appendChild(name_p);
+
+  // Create a new paragraph element for the MO commander
+  var commander_p = document.createElement("p");
+  commander_p.innerHTML = "<b>Commander:</b> " + commander;
+  mo_div.appendChild(commander_p);
+
+  // Create a new paragraph element for the MO type
+  var type_p = document.createElement("p");
+  type_p.innerHTML = "<b>Type:</b> " + type;
+  mo_div.appendChild(type_p);
+
+  // Add the MO information div to the output div
+  document.getElementById("output").appendChild(mo_div);
+
+  // Clear the input fields
+  document.getElementById("mo_name").value = "";
+  document.getElementById("commander").value = "";
+  document.getElementById("type").value = "";
+
+  // Hide the modal
+  modal.style.display = "none";
+
+  // Update the options of the "person_mo" select element
+  var select = document.getElementById("person_mo");
+  select.innerHTML = ""; // clear any existing options
+  for (var i = 0; i < military_org_data_array.length; i++) {
+    var option = document.createElement("option");
+    option.text = military_org_data_array[i].mo_name;
+    option.value = military_org_data_array[i].mo_name;
+    select.appendChild(option);
+  }
+
+  // Update the options of the "commander" select element
+  var commanderSelect = document.getElementById("commander");
+  commanderSelect.innerHTML = ""; // clear any existing options
+  for (var i = 0; i < military_org_data_array.length; i++) {
+    var option = document.createElement("option");
+    option.text = military_org_data_array[i].mo_name;
+    option.value = military_org_data_array[i].mo_name;
+    commanderSelect.appendChild(option);
+  }
+
+};
+
+// When the user clicks the "Create MP" button
+document.getElementById("createmp").onclick = function() {
+
+  var identifier = document.getElementById("identifier").value;
+  var person_mo = document.getElementById("person_mo").value;
+  var carrier = document.getElementById("carrier").value;
+  var military_person_data = {
+    identifier: identifier,
+    person_mo: person_mo,
+    carrier: carrier
+  };
+  military_person_data_array.push(military_person_data);
+
+  // Update the value of the hidden input field
+  document.getElementById("military_person_data").value = JSON.stringify(military_person_data_array);
+
+
+  // Create a new div element to hold the MP information
+  var mp_div = document.createElement("div");
+  mp_div.style.border = "1px solid #ccc";
+  mp_div.style.display = "inline-block";
+  mp_div.style.width = "30%";
+  mp_div.style.margin = "10px";
+
+  // Create a new paragraph element for the MP identifier
+  var id_p = document.createElement("p");
+  id_p.innerHTML = "<b>Identifier:</b> " + identifier;
+  mp_div.appendChild(id_p);
+
+  // Create a new paragraph element for the MP MO
+  var mo_p = document.createElement("p");
+  mo_p.innerHTML = "<b>MO:</b> " + person_mo;
+  mp_div.appendChild(mo_p);
+
+  // Create a new paragraph element for the MP carrier
+  var carrier_p = document.createElement("p");
+  carrier_p.innerHTML = "<b>Carrier:</b> " + carrier;
+  mp_div.appendChild(carrier_p);
+
+  // Add the MP information div to the output2 div
+  document.getElementById("output2").appendChild(mp_div);
+
+  // Clear the input fields
+  document.getElementById("identifier").value = "";
+  document.getElementById("person_mo").value = "";
+  document.getElementById("carrier").value = "";
+
+  // Hide the modal
+  modal2.style.display = "none";
+
+  // Get the military organization data from the hidden input field
+  var militaryOrgData = JSON.parse(document.getElementById("military_org_data").value);
+
+  // Get the select element
+  var select = document.getElementById("person_mo");
+
+  // Clear any existing options
+  select.innerHTML = "";
+  // Loop through the military organization data and add options to the select element
+  for (var i = 0; i < militaryOrgData.length; i++) {
+    var option = document.createElement("option");
+    option.text = militaryOrgData[i].mo_name;
+    option.value = militaryOrgData[i].mo_name;
+    select.add(option);
+  }
+
+  // Get the select element for commanders
+  var select2 = document.getElementById("commander");
+
+  // Clear any existing options
+  select2.innerHTML = "";
+
+  // Create an array of unique commanders
+  var commanders = [];
+  for (var i = 0; i < militaryOrgData.length; i++) {
+    if (commanders.indexOf(militaryOrgData[i].commander) === -1) {
+      commanders.push(militaryOrgData[i].commander);
+    }
+  }
+
+  // Loop through the commanders and add options to the select element
+  for (var i = 0; i < commanders.length; i++) {
+    var option = document.createElement("option");
+    option.text = commanders[i];
+    option.value = commanders[i];
+    select2.add(option);
+  }
+};
+
+</script>
+{% endblock %}

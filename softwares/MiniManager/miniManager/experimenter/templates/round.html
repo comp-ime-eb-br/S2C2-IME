@@ -1,0 +1,245 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'round.css' %}">
+  <link rel="stylesheet" href="{% static 'css/table.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="title-bar">
+    <h1>{{ round.name }}</h1>
+    <form action="/rounds/{{round.version_id}}" method="get">
+      <button class="btn btn-secondary">Voltar para Versões</button>
+    </form>
+  </div>
+  <div class="action-buttons">
+    {% if round.status != "DONE" %}
+    <form action="/finish-round" method="post">
+        {% csrf_token %}
+        <button type="sumbit" id="finish-button" class="btn btn-primary" name="round" value="{{round.id}}">Finalizar</button>
+    </form>
+
+    <p style="color:red;">Ao clicar em finalizar serão removidos todos os módulos e as configurações WiFi e <br>
+      as conexões serão reiniciadas. Espere alguns segundos até iniciar outro experimento.</p>
+    {% endif %}
+  </div>
+  <div class="round-content">
+    <div class="round-result">
+      <div id="status-bar" class="alert alert-primary" role="alert">Carregando...</div>
+      <div class="result">
+        {% include "result-table.html" with name="radioFrequency" titles=radioFrequencyTitles rows=radioFrequency isDiff=False only %}
+      </div>
+    </div>
+    <div class="round-graph">
+      <div class="performance-table">
+        {% include "result-table.html" with name="performance" titles=performanceTitles rows=performance isDiff=False only %}
+      </div>
+      <div>
+        <canvas class="chart" id="myChart"></canvas>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+  <script>
+    // status message bar
+    const STATUS = {
+      WAITING: "WAITING",
+      STARTING: "STARTING",
+      IN_PROGRESS: "IN_PROGRESS",
+      DONE: "DONE"
+    };
+
+    const STATUS_TO_MESSAGE = {};
+    STATUS_TO_MESSAGE[STATUS.WAITING] = "Aguardando a inicialização...";
+    STATUS_TO_MESSAGE[STATUS.STARTING] = "Iniciando...";
+    STATUS_TO_MESSAGE[STATUS.IN_PROGRESS] = "Em andamento...";
+    STATUS_TO_MESSAGE[STATUS.DONE] = "Finalizado";
+
+    const updateStatusBar = (message) => {
+      const element = document.getElementById("status-bar");
+      element.innerHTML = message;
+    }
+
+    // graph
+    const config = {
+      type: 'scatter',
+      data: {
+        labels: [],
+        datasets: []
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: {
+            duration: 0, // general animation time
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                const label = context.dataset.label || '';
+                return label;
+              }
+            }
+          },
+          legend: {
+            display: false
+          },
+          datalabels: {
+            color: '#2196f3',
+            anchor: 'start',
+            align: 'start',
+            formatter: function(value, context) {
+              return context.dataset.label;
+            }
+          },
+        },
+      },
+    };
+    
+    const updateChat = (positions) => {
+      if(!positions || positions == []){
+        return;
+      }
+
+      labels = Object.keys(positions)
+      datasets = []
+
+      for(const label of labels){
+        const { position, type } = positions[label];
+        const { pointStyle, color } = getPointByType(type);
+        datasets.push({
+          label,
+          data: [{x: position[0], y: position[1]}],
+          borderColor: color,
+          backgroundColor: color,
+          pointRadius: 8,
+          pointStyle
+        })
+      }
+
+      myChart.data = {labels, datasets};
+      myChart.update();
+    }
+
+    const getPointByType = (type) => {
+      const map = {
+        station: {pointStyle: 'circle', color: '#2196f3'},
+        accessPoint: {pointStyle: 'triangle', color: '#000000'}
+      };
+
+      return map[type];
+    }
+
+    // websocket
+    const openWSConnection = (roundID) => {
+      const url = `ws://${window.location.host}/ws/round/${roundID}/`;
+      const chatSocket = new WebSocket(url);
+
+      chatSocket.onmessage = wsOnMessage;
+      chatSocket.onclose = wsOnClose;
+    }
+
+    const wsOnMessage = (e) => {
+      const {type, value} = JSON.parse(e.data).payload;
+        let status = STATUS_TO_MESSAGE[STATUS.WAITING];
+        if(type == "START"){
+            status = STATUS_TO_MESSAGE[STATUS.STARTING];
+        }
+
+        if(type == "UPDATE"){
+            status = STATUS_TO_MESSAGE[STATUS.IN_PROGRESS];
+            for(const item of value){
+              updateRadioFrequencyTable(item.radioFrequency);
+              updateChat(item.positions);
+              updatePerformanceTable(item.performance, item.time)
+            }
+        }
+
+        if(type == "FINISH"){
+          status = STATUS_TO_MESSAGE[STATUS.DONE];
+          hiddenFinishButton();
+        }
+
+        updateStatusBar(status);
+    }
+
+    const wsOnClose = (e) => {
+        console.error('Chat socket closed unexpectedly');
+    };
+
+    const updateRadioFrequencyTable = (newRows) => {
+      if(!newRows || newRows == []){
+        return;
+      }
+
+      for(row of newRows){
+        const values = [];
+        for(const key of measurementsArray){
+          const value = (key in row) ? row[key] : "";
+          values.push(value);
+        }
+
+        addElementToTable(values, "radioFrequency-table-content");
+      }
+    }
+
+    const generateColumn = (value) => {
+      const tdnode =  document.createElement("td");
+      const textnode = document.createTextNode(value);
+      tdnode.appendChild(textnode);
+      return tdnode;
+    }
+
+    const addElementToTable = (values, id) => {
+        const trnode = document.createElement("tr");
+        for(value of values){
+          const tdnode = generateColumn(value);
+          trnode.appendChild(tdnode);
+        }
+
+        table = document.getElementById(id)
+        table.insertBefore(trnode, table.firstChild);
+    }
+
+    const updatePerformanceTable = (newRow, time) => {
+      if(!newRow){
+        return;
+      }
+
+      text = ""
+      for(const value of newRow["value"]){
+        text += value + "\n"
+      }
+
+      values = [time, newRow["source"], newRow["destination"], newRow["name"], text]
+      addElementToTable(values, "performance-table-content");
+    }
+  
+    hiddenFinishButton = () => {
+      document.getElementById("finish-button").style.visibility = "hidden";
+    }
+
+    // ---- init -------
+    const roundStatus = "{{round.status}}";
+    const roundID = {{ round.id }};
+
+    updateStatusBar(STATUS_TO_MESSAGE[roundStatus]);
+
+    Chart.register(ChartDataLabels);
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+
+    // process measurements
+    const measurementsArray = {{ radioFrequencyTitles | safe }};
+
+    if(roundStatus != STATUS.DONE){
+      openWSConnection(roundID);
+    }
+  </script>
+{% endblock %}

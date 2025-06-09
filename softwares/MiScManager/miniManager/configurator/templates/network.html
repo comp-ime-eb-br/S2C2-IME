@@ -1,0 +1,44 @@
+{% load static %}
+{% block head %}
+  <link rel="stylesheet" href="{% static 'network.css' %}">
+{% endblock %}
+
+<div class="card network-form">
+    <h5 class="card-header">Rede</h5>
+    <div class="card-body">
+        <label for="adhoc">Rede Adhoc</label>
+        <input type="checkbox" name="adhoc" id="adhoc">
+        <div class="row">
+            <div class="col-2">
+                <label for="fading_cof">Coeficiente de Fading*</label>
+                <input type="number" name="fading_cof" class="form-control" id="fading_cof" placeholder="0">
+            </div>
+            <div class="col-2">
+                <label for="noise_th">Noise threshold*</label>
+                <input type="number" name="noise_th" class="form-control" id="noise_th" placeholder="-91">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function fillNetwork(network){
+    var adhocElement = document.getElementById("adhoc")
+    adhocElement.value = network.adhoc ? "on" : "off";
+    adhocElement.checked = network.adhoc;
+    document.getElementById("fading_cof").value = network.args.fading_cof;
+    document.getElementById("noise_th").value = network.args.noise_th;
+}
+
+function validateNetwork(){
+    var fading_cof = document.getElementById("fading_cof").value;
+    var noise_th = document.getElementById("noise_th").value;
+
+    if(!fading_cof || !noise_th){
+        alert("Preencha os campos obrigatórios de Network");
+        return false;
+    }
+
+    return true;
+}
+</script>

@@ -1,0 +1,30 @@
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'css/table.css' %}">
+{% endblock %}
+
+<table class="styled-table">
+    <thead>
+        <tr>
+          {% if isDiff %}
+            <th>diff</th>
+          {% endif %}
+          {% for title in titles %}
+            <th>{{ title }}</th>
+          {% endfor %}
+        </tr>
+    </thead>
+    <tbody id="{{name}}-table-content">
+      {% for row in rows %}
+        <tr class="{{row.type | type_style}}">
+          {% if isDiff %}
+            <td>{{row.type | type_signal}}</td>  
+          {% endif %}
+          {% for col in row.value %}
+            <td>{{ col }}</td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+</table>

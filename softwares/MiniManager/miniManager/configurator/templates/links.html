@@ -1,0 +1,154 @@
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'links.css' %}">
+{% endblock %}
+
+<div class="card link-form">
+  <h5 class="card-header">Criar Links</h5>
+  <div class="card-body">
+    <div id="new-link">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-3">
+            <label for="node1">Nó 1</label>
+            <input type="text" name="node1" class="form-control" id="node1">
+          </div>
+          <div class="col-3">
+            <label for="node2">Nó 2</label>
+            <input type="text" name="node2" class="form-control" id="node2">
+          </div>
+          <div class="add-link col-1">
+            <button type="button" onclick="addLinkByForm()" class="btn btn-primary">Adicionar Link</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="bw">Largura de Banda (b/s)</label>
+            <input type="number" name="bw" class="form-control" id="bw" placeholder="10">
+          </div>
+          <div class="col">
+            <label for="delay">Delay (ms)</label>
+            <input type="number" name="delay" class="form-control" id="delay" placeholder="1">
+          </div>
+          <div class="col">
+            <label for="loss">Loss (%)</label>
+            <input type="number" name="loss" class="form-control" id="loss" placeholder="1">
+          </div>
+          <div class="col">
+            <label for="max_queue_size">Máximo tamanho da fila</label>
+            <input type="number" name="max_queue_size" class="form-control" id="max_queue_size" placeholder="100">
+          </div>
+          <div class="col">
+            <label for="jitter">Jitter (ms)</label>
+            <input type="number" name="jitter" class="form-control" id="jitter" placeholder="1">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="current-links" class="current-links">
+    </div>
+  </div>
+</div>
+
+<script>
+  var linksCounter = 0;
+  var currentLinks = {};
+  
+  function addLinkByForm(){
+    var node1 = document.getElementById("node1").value;
+    var node2 = document.getElementById("node2").value;
+    var bw = document.getElementById("bw").value;
+    var delay = document.getElementById("delay").value;
+    var loss = document.getElementById("loss").value;
+    var max_queue_size = document.getElementById("max_queue_size").value;
+    var jitter = document.getElementById("jitter").value;
+
+    if(!node1 || !node2 || !bw|| !delay|| !loss|| !max_queue_size|| !jitter){
+      alert("Insira todos os atributos de um novo link");
+      return;
+    }
+
+    var nodes = getNodes();
+
+    if(!(nodes.includes(node1))){
+      alert("Nó 1 inválido");
+      return;
+    }
+
+    if(!(nodes.includes(node2))){
+      alert("Nó 2 inválido");
+      return;
+    }
+
+    var props = { bw: bw, delay: delay, loss: loss, max_queue_size: max_queue_size, jitter: jitter};
+    addLink({node1: node1, node2: node2, props: props});
+  }
+
+  function addLink(link){
+    linksCounter++;
+    var linkID = "link-"+linksCounter;
+    link["id"] = linkID;
+    currentLinks[linkID] = link;
+    renderLink(link);
+  }
+  
+  function renderLink(link) {
+    var div = document.createElement("div");
+    div.id = link.id;
+    div.className = "card";
+    div.style.marginRight = "5px";
+  
+    var h5 = document.createElement("h5");
+    h5.className = "card-header";
+    h5.appendChild(document.createTextNode(link.node1 + " --- " + link.node2));
+    div.appendChild(h5);
+  
+    var ul = document.createElement("ul");
+    ul.classList = ["card-body", "list-group", "list-group-flush"]
+  
+    for(var prop in link.props){
+      var li = document.createElement("li");
+      li.className = "list-group-item"
+      li.appendChild(document.createTextNode(prop + ": " + link.props[prop]))
+      div.appendChild(li)
+    }
+    div.appendChild(ul)
+  
+    var footer = document.createElement("div");
+    footer.className = "card-footer"
+    var button = document.createElement("button");
+    button.appendChild(document.createTextNode("Remover elemento"));
+    button.setAttribute("type", "button");
+    button.onclick = function(){
+      removeLink(link.id)
+    }
+    footer.appendChild(button);
+    div.appendChild(footer);
+  
+    parent = document.getElementById("current-links");
+    parent.appendChild(div);
+  }
+  
+  function removeLink(linkID) {
+    child = document.getElementById(linkID);
+    parent = document.getElementById("current-links");
+    parent.removeChild(child);
+  
+    delete currentLinks[linkID];
+  }
+
+  function resetLinks(){
+    for(var linkID in currentLinks){
+      removeLink(linkID);
+    }
+  }
+
+  function fillLinks(links){
+    resetLinks();
+    for(var link of links){
+      addLink({node1: link.node1, node2: link.node2, props: link.args});
+    }
+  }
+  </script>
+  

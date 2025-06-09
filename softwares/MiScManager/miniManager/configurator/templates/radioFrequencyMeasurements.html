@@ -1,0 +1,49 @@
+<div class="card propagationModel-form">
+  <h5 class="card-header">Parâmetros de medida de rádio frequência</h5>
+  <div class="card-body">
+    {% for measure in measures %}
+    <div class="row">
+      <input class="form-check-input" type="checkbox" name="radiofrequency" value="{{measure.name}}" id="{{measure.name}}check">
+      <label class="col-1 form-check-label" for="defaultCheck1">
+        {{measure.name}}
+      </label>
+      <input type="number" class="col form-control" name = "{{measure.name}}" id="{{measure.name}}period" placeholder="Período de {{measure.name}}" disabled>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<script>
+  {% for measure in measures %}
+  document.getElementById('{{measure.name}}check').onchange = function() {
+    changeAvailabilityRF('{{measure.name}}period', this.checked);
+  };
+  {% endfor %}
+
+  function changeAvailabilityRF(id, checked){
+    document.getElementById(id).disabled = !checked;
+  }
+
+  function fillRadioFrequencyMeasurements(radioFrequencyMeasurements){
+    resetRF()
+    for(var rfmeasurement of radioFrequencyMeasurements){
+      var rfName = rfmeasurement.measure.name;
+      var rfCheckElement = document.getElementById(rfName + "check");
+      rfCheckElement.value = rfName;
+      rfCheckElement.checked = true;
+      changeAvailabilityRF(rfName + "period", true);
+
+      document.getElementById(rfName + "period").value = rfmeasurement.period;
+    }
+  }
+
+  function resetRF(){
+    var rfCheckElement;
+    {% for measure in measures %}
+    rfCheckElement = document.getElementById('{{measure.name}}check');
+    rfCheckElement.value = '{{measure.name}}';
+    rfCheckElement.checked = false;
+    changeAvailabilityRF('{{measure.name}}period', false);
+    document.getElementById('{{measure.name}}period').value = "";
+    {% endfor %}
+  }
+</script>

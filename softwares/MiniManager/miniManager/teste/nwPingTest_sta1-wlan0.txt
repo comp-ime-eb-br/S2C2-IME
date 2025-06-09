@@ -1,0 +1,2 @@
+dict_items([('timestamp', 'Sun Nov 21 17:46:43 2021'), ('source', 'sta1-wlan0'), ('destination', 'sta2-wlan0'), ('pingResult', '10 packets transmitted, 6 received, 40% packet loss, time 9080ms'), ('rttResult', 'rtt min/avg/max/mdev = 1.365/37.415/216.083/79.903 ms')])
+dict_items([('timestamp', 'Sun Nov 21 17:46:58 2021'), ('source', 'sta1-wlan0'), ('destination', 'sta2-wlan0'), ('pingResult', '10 packets transmitted, 10 received, 0% packet loss, time 9013ms'), ('rttResult', 'rtt min/avg/max/mdev = 1.357/1.650/2.823/0.407 ms')])

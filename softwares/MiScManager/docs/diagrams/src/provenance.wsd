@@ -1,0 +1,51 @@
+@startuml  Diagrama de Classe
+skinparam classAttributeIconSize 0
+
+class ProvenanceService {
+    + getResultRowsFromRound(roundID, schema, radioFrequencyMeasures)
+    + getXML(roundID, encoding)
+    + diffResults(roundID1, roundID2, schema1, schema2, measurements)
+    - getResultContentFromRound(roundID, schema)
+    - isGreaterThan(row1, row2)
+    - isEqual(row1, row2)
+    - getDiff(rows1, rows2)
+}
+
+class ProvenanceManager {
+    - instance
+    - roundID
+    - schema
+    - radioFrequency
+    - performance
+
+    + instance()
+    + reset(roundID, schema)
+    + addResult(content)
+    + saveResults()
+    - addRadioFrequencyElement(time, radioFrequency)
+    - addPerformanceElement(time, performance)
+}
+
+class Result {
+    + xml_content
+    + round
+}
+
+class ProvenanceListener {
+    + update(subject)
+}
+
+package mininetWifiAdapter {
+    interface IResultEventListener {
+        + update(subject)
+    }
+}
+
+ProvenanceListener *-- ProvenanceManager
+ProvenanceManager ..> Result
+ProvenanceService ..> Result
+
+Model <|-- Result
+IResultEventListener <|.. ProvenanceListener
+
+@enduml

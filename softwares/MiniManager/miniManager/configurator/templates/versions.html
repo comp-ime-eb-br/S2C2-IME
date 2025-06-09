@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'versions.css' %}">
+  <link rel="stylesheet" href="{% static 'css/table.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="title-bar">
+    <h1>Versões de {{ testPlan.name }}</h1>
+    <form action="/test-plans/" method="get">
+      <button type="sumbit" class="execute btn btn-secondary">Voltar para Plano de Testes</button>
+    </form>
+  </div>
+  <div class="action-buttons">
+    <form action="/version/{{testPlan.id}}" method="get">
+      <button class="btn btn-primary">Criar Versão</button>
+    </form>
+    <form action="/compare-rounds/" method="post">
+      <div class="input-group">
+        {% csrf_token %}
+        <span class="input-group-text">Insira as duas rodadas que deseja comparar</span>
+        <input type="hidden" name="test-plan" id="test-plan" value="{{testPlan.id}}">
+        <input type="text" aria-label="rodada1" class="form-control" name="round1" id="round1">
+        <input type="text" aria-label="rodada2" class="form-control" name="round2"  id="round2">
+        <button class="btn btn-primary">Comparar Versão</button>
+      </div>
+    </form>
+  </div>
+  <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Criado em</th>
+            <th>Atualizado em</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="styled-table-content">
+      {% for version in versions %}
+      <tr>
+        <td>{{ version.name }}</td>
+        <td>{{ version.created_at|date:"d/m/Y" }} - {{ version.created_at|time:"h:i:s" }}</td>
+        <td>{{ version.updated_at|date:"d/m/Y" }} - {{ version.updated_at|time:"h:i:s" }}</td>
+        <td class="version-actions"><a href="/rounds/{{version.id}}">ABRIR</a><a href="/export-version/{{version.id}}">EXPORTAR</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

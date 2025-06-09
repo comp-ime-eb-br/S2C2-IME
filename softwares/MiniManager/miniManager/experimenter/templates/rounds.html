@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'rounds.css' %}">
+  <link rel="stylesheet" href="{% static 'css/table.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="title-bar">
+    <h1>{{ version.name }}</h1>
+    <form action="/versions/{{version.test_plan_id}}" method="get">
+      <button type="sumbit" class="execute btn btn-secondary">Voltar para versões</button>
+    </form>
+  </div>
+  <div class="action-buttons">
+    <form action="/round/" method="post">
+      {% csrf_token %}
+      <button type="sumbit" class="execute btn btn-primary" name="version" value="{{ version.id }}">Executar</button>
+    </form>
+  </div>
+  <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Início</th>
+            <th>Fim</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="styled-table-content">
+      {% for round in rounds %}
+      <tr>
+        <td>{{ round.name }}</td>
+        <td>{{ round.start|date:"d/m/Y" }} - {{ round.start|time:"h:i:s" }}</td>
+        <td>{{ round.end|date:"d/m/Y" }} - {{ round.end|time:"h:i:s" }}</td>
+        <td>{{ round.status | round_message }}</td>
+        <td class="round-actions"><a href="/round/{{round.id}}">ABRIR</a><a href="/export-round/{{round.id}}">EXPORTAR</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

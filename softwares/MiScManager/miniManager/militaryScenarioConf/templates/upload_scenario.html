@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<form class="test-plan-form" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+  <div class="col">
+      <label for="file">Selecione um arquivo .owl para upload:</label><br>
+      <input type="file" id="file" name="file" required>
+      <br><br>
+      <input type="submit" class="btn btn-secondary" value="Upload Cenário">
+  </div>
+
+    <div>
+        <br>
+        {% if instances_output %}
+            <h2>Instances:</h2>
+            <p>{{ instances_output|safe }}</p>
+
+            <br><br>
+        {% endif %}
+
+    </div>
+
+</form>
+
+{% endblock %}

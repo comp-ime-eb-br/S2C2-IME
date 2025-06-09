@@ -1,0 +1,13 @@
+__pycache__/
+
+### VisualStudioCode ###
+.vscode/*
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide

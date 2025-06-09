@@ -1,0 +1,18 @@
+.diff-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.table-content {
+    padding: 5px;
+}
+
+.removed-row {
+    color: red;
+    border: solid;
+}
+
+.add-row {
+    color: blue;
+    border: solid;
+}

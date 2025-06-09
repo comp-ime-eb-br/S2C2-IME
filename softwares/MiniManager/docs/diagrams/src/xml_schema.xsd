@@ -1,0 +1,59 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="result">
+  <xs:complexType>
+    <xs:all>
+      <xs:element name="radioFrequency">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="instant" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="station" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:all>
+                        <xs:element name="position" type="xs:string"/>
+                        <xs:element name="rssi" type="xs:string"/>
+                        <xs:element name="channel" type="xs:string"/>
+                        <xs:element name="band" type="xs:string"/>
+                        <xs:element name="ssid" type="xs:string"/>
+                        <xs:element name="txpower" type="xs:string"/>
+                        <xs:element name="associatedto" type="xs:string"/>
+                        <xs:element name="ip" type="xs:string"/>
+                      </xs:all>
+                      <xs:attribute name="name" type="xs:string" use="required"/>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+                <xs:attribute name="time" type="xs:string" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="performance">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="instance" minOccurs="0" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element name="value" type="xs:string"/>
+                </xs:all>
+                <xs:attribute name="name" type="xs:string" use="required"/>
+                <xs:attribute name="time" type="xs:string" use="required"/>
+                <xs:attribute name="source" type="xs:string" use="required"/>
+                <xs:attribute name="destination" type="xs:string" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+    <xs:attribute name="roundID" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
+

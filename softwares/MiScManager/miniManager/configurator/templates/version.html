@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'version.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="title-bar">
+    <h5>Criar Versão para {{testPlan.name}}</h5>
+    <div class="input-file input-group">
+      <input type="file" class="form-control" id="inputGroupFile" aria-describedby="inputGroupFileAddon" aria-label="Upload">
+      <button class="btn btn-secondary" type="button" id="inputGroupFileAddon" onclick="importFile()">Importar Versão</button>
+    </div>
+    <form action="/versions/{{testPlan.id}}" method="get">
+      <button class="btn btn-secondary">Voltar para Versões</button>
+    </form>
+  </div>
+  {% if error %}
+  <div id="status-bar" class="alert alert-primary" role="alert">{{ errorMessage }}</div>
+  {% endif %}
+  <div class="row">
+  </div>
+  <form id="version-form" action="/version/" method="POST" onsubmit="return processForm();">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="version_name" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="version_name" name="version_name" placeholder="Versão 1">
+    </div>
+    <input type="hidden" name="test-plan" value="{{testPlan.id}}">
+
+    {% include "configuration.html" with pmodels=pmodels mmodels=mmodels measures=measures pmeasures=pmeasures oms=oms mpersons=mpersons only %}
+
+    <div class="submit-button d-grid gap-2">
+      <button type="submit" class="btn btn-secondary">Submit</button>
+    </div><br>
+  </form>
+
+  <script>
+    function generateInputsOfNode(node){
+      var element = document.createElement("div");
+      var inputType = document.createElement("input");
+      inputType.setAttribute('name', node.id + "-type");
+      inputType.setAttribute('value', node.type);
+      element.appendChild(inputType);
+
+      for(var prop in node.props){
+        var input = document.createElement("input");
+        input.setAttribute('name', node.id + "-" + prop);
+        input.setAttribute('value', node.props[prop]);
+        element.appendChild(input);
+      }
+
+      return element;
+    }
+
+    function generateInputsOfLink(link){
+      var element = document.createElement("div");
+      var inputNode1 = document.createElement("input");
+      inputNode1.setAttribute('name', link.id + "-node1");
+      inputNode1.setAttribute('value', link.node1);
+      element.appendChild(inputNode1);
+
+      var inputNode2 = document.createElement("input");
+      inputNode2.setAttribute('name', link.id + "-node2");
+      inputNode2.setAttribute('value', link.node2);
+      element.appendChild(inputNode2);
+
+      for(var prop in link.props){
+        var input = document.createElement("input");
+        input.setAttribute('name', link.id + "-" + prop);
+        input.setAttribute('value', link.props[prop]);
+        element.appendChild(input);
+      }
+
+      return element;
+    }
+
+    function processNodes(){
+      var parent = document.getElementById("version-form");
+      var nodes = [];
+
+      if(currentNodes == {}){
+        alert("nenhum nó configurado");
+        return false;
+      }
+
+      for(var nodeID in currentNodes){
+        nodes.push(nodeID);
+        parent.appendChild(generateInputsOfNode(currentNodes[nodeID]));
+      }
+
+      var input = document.createElement("input");
+      input.setAttribute('name', 'nodes');
+      input.setAttribute('value', nodes.toString());
+      parent.appendChild(input);
+
+      return true;
+    }
+
+    function processLinks(){
+      var parent = document.getElementById("version-form");
+      var links = [];
+
+      if(currentLinks == {}){
+        alert("nenhum link configurado");
+        return false;
+      }
+
+      for(var linkID in currentLinks){
+        links.push(linkID);
+        parent.appendChild(generateInputsOfLink(currentLinks[linkID]));
+      }
+
+      var input = document.createElement("input");
+      input.setAttribute('name', 'links');
+      input.setAttribute('value', links.toString());
+      parent.appendChild(input);
+
+      return true;
+    }
+
+    function processForm(){
+      if(!validateForm()){
+        return false;
+      }
+      return processNodes() && processLinks();
+    }
+
+    function importFile(){
+      var file = document.getElementById("inputGroupFile").files[0];
+      if (file) {
+        var reader = new FileReader();
+        reader.readAsText(file, "UTF-8");
+        reader.onload = function (evt) {
+          try {
+            jsonOBJ = JSON.parse(evt.target.result);
+            fillForm(jsonOBJ);
+          } catch {
+            alert("Arquivo inválido. Verifique o arquivo e tente novamente.");
+          }
+        }
+        reader.onerror = function (evt) {
+          alert("Erro ao fazer o upload do arquivo. Verifique o arquivo e tente novamente.");
+        }
+      }
+    }
+
+    function validateForm(){
+      name = document.getElementById("version_name").value;
+      if(!name){
+        alert("Insira um nome único para sua versão.")
+        return false;
+      }
+
+      return validateNetwork() && validatePropagationModel() && validateMobilityModel();
+    }
+  </script>
+{% endblock %}

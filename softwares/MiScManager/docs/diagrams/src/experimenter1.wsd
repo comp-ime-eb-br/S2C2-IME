@@ -1,0 +1,114 @@
+@startuml  Diagrama de Classe
+skinparam classAttributeIconSize 0
+
+
+class AsyncJsonWebsocketConsumer {}
+class Model {}
+class View {}
+
+
+class WebSocketServer {
+    + void connect()
+    + void disconnect()
+    + void sendMessage(data)
+    + void sendMessageToRoom(roundID, data)
+    - getRoomGroupName(roundID)
+}
+
+class Round {
+    + string name
+    + datetime start
+    + datetime end
+    + string status
+    + string version
+    - string old_status
+    
+    + save()
+    + boolean isDone()
+}
+
+class ExperimentListener {
+    - roundID
+    - started
+
+    + update(subject)
+    - updateStatus(status)
+    - sendMessage(subject)
+}
+
+class ExperimentsQueue {
+    + Queue queue
+    - ExperimentsQueue instance
+    - boolean busy
+    - Map roundToExperimentMap
+    - number currentRound
+
+    + add (MininetWifiExp mininetWifiExp, number roundID, string medicao_schema)
+    + finishExperiment(number roundID)
+    + experimentFinished(number roundID)
+    + instance()
+
+    - consume()
+    - startExperiment(number roundID)
+    - updateRoundStatus(number roundID)
+    - startCapture(number roundID, string schema)
+}
+
+class RoundView {
+    + get(request, version_id)
+    + post(request)
+    - enqueueExperiment(configuration, roundID)
+}
+
+class FinishRoundView {
+    + post(request)
+}
+
+
+package mininetWifiAdapter {
+    interface IResultEventListener {
+        + update(subject)
+    }
+
+    class MininetWifiExp {}
+}
+
+
+package provenanceCatcher {
+    class ProvenanceListener {
+        + update(subject)
+    }
+
+    class ProvenanceManager {}
+}
+
+
+
+package configurator {
+    class ConfiguratorService {}
+}
+
+
+
+AsyncJsonWebsocketConsumer <|-- WebSocketServer
+
+Model <|-- Round
+
+IResultEventListener <|.. ExperimentListener
+ExperimentListener ..> WebSocketServer
+ExperimentListener ..> ExperimentsQueue
+
+IResultEventListener <|.. ProvenanceListener
+
+ExperimentsQueue "1" o-- "*" MininetWifiExp
+ExperimentsQueue ..> ProvenanceManager
+ExperimentsQueue ..> ProvenanceListener
+
+View <|-- RoundView
+RoundView ..> ConfiguratorService
+RoundView ..> ExperimentsQueue
+
+View <|-- FinishRoundView
+FinishRoundView ..> ExperimentsQueue
+
+@enduml

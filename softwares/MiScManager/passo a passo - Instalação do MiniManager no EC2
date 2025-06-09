@@ -1,0 +1,48 @@
+1 - Criar instância EC2 com Ubuntu 20.04
+
+2 - Mudar Kernel (pode ser o mesmo do video) (pode ser 5.14.1generic...)
+https://www.youtube.com/watch?v=9MfQ0L34pw8&list=LL&index=6&t=671s
+
+sudo apt --fix-broken install
+sudo apt-get update
+sudo apt-get upgrade
+
+3 - Instalar o NetworkManager
+
+sudo apt-get install network-manager
+
+4 - Instalar VNC Server
+https://www.youtube.com/watch?v=gaQ9SvSr-Sw&list=LL&index=4&t=606s
+
+(Ao escolher o Default Display Manager, escolha gdm3)
+(pode pular o comando nano /etc/xrdp/xrdp.ini)
+
+#instalar o VNC client na máquina cliente
+sudo apt-get install -y tigervnc-viewer
+
+#start vnc
+vncserver
+
+5 - Habilitar o DISPLAY
+
+export DISPLAY=:1.0; xhost +
+
+6 - Instalar Mininet-WiFi
+
+https://github.com/intrig-unicamp/mininet-wifi
+
+7 - Instalar Postgres
+
+https://www.youtube.com/watch?v=9lq74SafVcw
+
+8 - Instalar MiniManager
+
+git clone --branch master https://gitlab.com/andredemori/mini-manager_.git
+
+9 - Instalar pacotes do requirements.txt
+
+pip install -r requirements.txt
+
+10 - Habilitar portas no EC2 
+
+80, 22, 8000, 5900, 53, 8080, 5432, 5901 - 5, 3398, 631, 3350

@@ -16,5 +16,10 @@ A ontologia **qvas** (**Q**uality **V**alue **As**signment)  tem como objetivo p
 
 ## MiScOn
 
-A ontologia MiScOn apresenta modelagem que conecta o ambiente militar com o ambiente de comunicação móvel sem fio, reutilizando outras ontologias, provendo raciocínio semântico com informações sobre o comportamento da comunicação entre militares em um cenário operacional. A ontologia MiScOn representa conceitos relacionados às Forças Armadas Brasileiras, mas também representa conceitos em inglês. Portanto, se necessário, a tradução pode ser feita facilmente utilizando ferramentas de tradução ou dicionários. Com a tradução correta, os termos representados não devem apresentar problemas de interoperabilidade com os termos utilizados pelos sistemas de C2 das Forças Armadas.
+A ontologia MiScOn apresenta modelagem que conecta o ambiente militar com o ambiente de comunicação móvel sem fio, reutilizando outras ontologias, provendo raciocínio semântico com informações sobre o comportamento da comunicação entre militares em um cenário operacional. A ontologia MiScOn representa conceitos relacionados às Forças Armadas Brasileiras, mas também representa conceitos em inglês. Portanto, se necessário, a tradução pode ser feita facilmente utilizando ferramentas de tradução ou dicionários. Com a tradução correta, os termos representados não devem apresentar problemas de interoperabilidade com os termos utilizados pelos sistemas de C2 das Forças Armadas. 
+
+## CROMO
+
+A ontologia CROMO é uma composição de várias subontologias com foco .... <em edição>
+
 

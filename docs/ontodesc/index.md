@@ -9,7 +9,7 @@ Nesta seção, descrevemos brevemente as ontologias desenvolvidas no projeto. O 
 ## hint
 
 A ontologia **hint** (**H**eterogeneous Telecommun**i**cation **N**etwork On**t**ology)  tem como objetivo fornecer uma ontologia operacional que permita a representação dos principais conceitos e relações de gestão da mobilidade em uma rede de comunicação móvel sem fio heterogênea. É apoiada pela ontologia UFO Foundational Ontology e baseia-se no modelo concetual proposto no artigo intitulado *Enhancing heterogeneous mobile network management based on a well-founded reference ontology*. 
-[:material-file:{ title="diagrama vpp"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/diagrams/hint.vpp?raw=true){:download="hintModel"} [:material-file-png-box:{ title="snapshot"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/diagrams/images/MiScOn S2C2.png?raw=true){:download="hintsnapshot"}
+[:material-file:{ title="diagrama vpp"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/diagrams/hint.vpp?raw=true){:download="hintModel"} [:material-file-png-box:{ title="snapshot"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/diagrams/images/hint_1.png?raw=true){:download="hint_1snapshot"}[:material-file-png-box:{ title="snapshot"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/diagrams/images/hint_2.png?raw=true){:download="hint_2snapshot"}[:material-file-png-box:{ title="snapshot"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/diagrams/images/hint_3.png?raw=true){:download="hint_3snapshot"}
 
 ## qvas
 

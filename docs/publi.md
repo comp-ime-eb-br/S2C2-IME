@@ -20,6 +20,10 @@ hide:
 
 *André Muniz Demori*
 
+**Autonomia de Meios Operativos para Apoio à Decisão em Sistemas de Comando e Controle: uma Abordagem Preditiva e Conceitual Utilizando Aprendizado de Máquina**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Dissertacao_Mestrado_PPGI_UFRJ_Valquire_Final_comAssinaturas?raw=true){:download="Diss_Valquire"}
+
+*Valquire da Silva de Jesus*
+
 # Projetos Finais de Curso
 
 **Desenvolvimento De Um Ambiente Para Testes De Raciocínio Em Um Rádio Cognitivo**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/PFC___RDS.pdf?raw=true){:download="PFC_Bozza_Milena"}

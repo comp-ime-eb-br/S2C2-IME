@@ -23,4 +23,8 @@ A ontologia MiScOn apresenta modelagem que conecta o ambiente militar com o ambi
 
 A ontologia CROMO é uma composição de várias subontologias com foco .... <em edição>
 
+## ATOp
+
+A Ontologia ATOp-NavalOntology foi desenvolvida com foco na representação dos principais conceitos relacionados à autonomia de meios operativos no contexto militar. Entre os pricipais conceitos que ela abarca destacam-se: plataforma naval militar, compartimentos de armazenamento, suprimentos e seus subtipos, eventos de uma operação naval, entre outros. A representação desses conceitos pode auxiliar na integração de sistemas de C2 envolvendo por exemplo o sistema SINGRA. 
+
 

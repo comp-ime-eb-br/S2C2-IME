@@ -21,10 +21,10 @@ A ontologia MiScOn apresenta modelagem que conecta o ambiente militar com o ambi
 
 ## CROMO
 
-A ontologia CROMO é uma composição de várias subontologias com foco .... <em edição>
+A ontologia CROMO é uma composição de várias subontologias com foco na representação dos conceitos envolvidos em cenários militares de operação de C2 utilizando rádios cognitivos, onde é preciso que definir regras de comportamento dos rádios. Entre os principais conceitos incluídos na CROMO destacam-se: situações, cenas, planejamento de comunicações, e elementos do cenário de operações militares.   
 
 ## ATOp
 
-A Ontologia ATOp-NavalOntology foi desenvolvida com foco na representação dos principais conceitos relacionados à autonomia de meios operativos no contexto militar. Entre os pricipais conceitos que ela abarca destacam-se: plataforma naval militar, compartimentos de armazenamento, suprimentos e seus subtipos, eventos de uma operação naval, entre outros. A representação desses conceitos pode auxiliar na integração de sistemas de C2 envolvendo por exemplo o sistema SINGRA. 
+A Ontologia ATOp-NavalOntology foi desenvolvida com foco na representação dos principais conceitos relacionados à autonomia de meios operativos no contexto militar. Entre os principais conceitos que ela abarca destacam-se: plataforma naval militar, compartimentos de armazenamento, suprimentos e seus subtipos, eventos de uma operação naval, entre outros. A representação desses conceitos pode auxiliar na integração de sistemas de C2 envolvendo por exemplo o sistema SINGRA da MB. [:material-file:{ title="diagrama vpp"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/diagrams/ATOp.vpp?raw=true){:download="ATOpModel"} [:material-file-png-box:{ title="snapshot"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/diagrams/images/ATOp.png?raw=true){:download="atop_snapshot"}
 
 

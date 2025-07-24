@@ -21,7 +21,7 @@ A ontologia MiScOn apresenta modelagem que conecta o ambiente militar com o ambi
 
 ## CROMO
 
-A ontologia CROMO é uma composição de várias subontologias com foco na representação dos conceitos envolvidos em cenários militares de operação de C2 utilizando rádios cognitivos, onde é preciso que definir regras de comportamento dos rádios. Entre os principais conceitos incluídos na CROMO destacam-se: situações, cenas, planejamento de comunicações, e elementos do cenário de operações militares.   
+A ontologia CROMO é uma composição de várias subontologias com foco na representação dos conceitos envolvidos em cenários militares de operação de C2 utilizando rádios cognitivos, onde é preciso que definir regras de comportamento dos rádios. Entre os principais conceitos incluídos na CROMO destacam-se: situações, cenas, planejamento de comunicações em um cenário de operações militares.   
 
 ## ATOp
 

@@ -60,11 +60,12 @@ hide:
 
 *André Demori; Julio Tesolin; David Moura; João Gomes; Gabriel Pedroso; Leonardo Silva de Carvalho; Edison Pignaton de Freitas;Maria C. Cavalcanti*
 
-**Integrating a Multi-Agent System Simulator and a Network Emulator to Realistically Exercise Military Network Scenarios** {:download="23_ICEIS_Integrating_MultiAgent}[:simple-doi:](https://www.scitepress.org/Papers/2023/120516/120516.pdf)    
+**Integrating a Multi-Agent System Simulator and a Network Emulator to Realistically Exercise Military Network Scenarios** {:download="23_SIMULTECH_Integrating_MultiAgent"}[:simple-doi:](https://www.scitepress.org/Papers/2023/120516/120516.pdf)   
 
 *Dante Barone, Juliano Wickboldt, Maria C. Cavalcanti, David Moura, Julio Tesolin, André Demori, Julio Anjos, Leonardo Silva de Carvalho, João Gomes, Edison Pignaton de Freitas*
 
-**Machine Learning Model Explainability supported by Data Explainability: a Provenance-Based Approach**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/outrosArtigosEquipe/Artigo_JIDM_rosana_duarte_kelli.pdf?raw=true){:download="ML_Explainability"}
+**Machine Learning Model Explainability supported by Data Explainability: a Provenance-Based Approach**
+[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/outrosArtigosEquipe/Artigo_JIDM_rosana_duarte_kelli.pdf?raw=true){:download="ML_Explainability"}
 
 *Rosana Leandro de Oliveira, Julio Cesar Duarte, Kelli de Faria Cordeiro*
 

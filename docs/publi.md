@@ -56,7 +56,7 @@ hide:
 
 *André M. Demori, Renan Rodrigues Moreira Resende da Silva, Pedro Paulo Leal de Albuquerque, David Fernandes Cruz Moura, Julio Cesar Cardoso Tesolin, Maria Claudia Reis Cavalcanti*
 
-**A Semantic Web Approach for Military Operation Scenarios Development for Simulation** {:download="23_ICEIS_A_SemanticWebApproach"}[:simple-doi:](https://www.scitepress.org/Papers/2023/120886/120886.pdf)    
+**A Semantic Web Approach for Military Operation Scenarios Development for Simulation**{:download="23_DATA_A_SemanticWebApproach"}[:simple-doi:](https://www.scitepress.org/Papers/2023/120886/120886.pdf)    
 
 *André Demori; Julio Tesolin; David Moura; João Gomes; Gabriel Pedroso; Leonardo Silva de Carvalho; Edison Pignaton de Freitas;Maria C. Cavalcanti*
 
@@ -64,8 +64,7 @@ hide:
 
 *Dante Barone, Juliano Wickboldt, Maria C. Cavalcanti, David Moura, Julio Tesolin, André Demori, Julio Anjos, Leonardo Silva de Carvalho, João Gomes, Edison Pignaton de Freitas*
 
-**Machine Learning Model Explainability supported by Data Explainability: a Provenance-Based Approach**
-[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/outrosArtigosEquipe/Artigo_JIDM_rosana_duarte_kelli.pdf?raw=true){:download="ML_Explainability"}
+**Machine Learning Model Explainability supported by Data Explainability: a Provenance-Based Approach**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/outrosArtigosEquipe/Artigo_JIDM_rosana_duarte_kelli.pdf?raw=true){:download="ML_Explainability"}
 
 *Rosana Leandro de Oliveira, Julio Cesar Duarte, Kelli de Faria Cordeiro*
 

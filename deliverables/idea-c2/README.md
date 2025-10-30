@@ -26,12 +26,12 @@ O IDEA-C2-Tool é um protótipo de software baseado no IDEA-C2 ((generatIon of k
 - **GRAPH DATABASE -> RDF TURTLE**
    - FILE 1: **/outputs/corpus_completo_curado.ttl** (RDF-Turtle)
    - FILE 2: **/outputs/corpus_completo_curado.json** (JSON)
-# Pre-requisites
+# Pré-requisitos
 - [PreAnoTeTool] (https://github.com/jonesavelino/preanotetool) responsável pela pré-anotação dos textos do corpus utilizando o Command and Control Relations Metamodel (C2RM) da abordagem IDEA-C2.
 - [Python 3.10.12] (https://www.python.org/downloads/release/python-31012/) linguagem de programação utilizada no desenvolvimento.
 - [Google Colab Pro] Integrated Development Environment (IDE), no formato notebook, para implementação e execução de código fonte, utilizando a linguagem de programação Python.
 - [GraphDB 9.11] (https://www.ontotext.com/products/graphdb/graphdb-free/), um sistema gerenciador de banco de dados em grafo que permite a manipulação de dados baseados em grafos em RDF e utiliza a linguagem SPARQL para recuperação e processamento de consultas. (Opcional!).
-- **Libraries**: 
+- **Bibliotecas**: 
   - [SpaCy 3.5] biblioteca para implementar rotinas baseadas em Natural Language Processing (NLP). 
   - [Pipeline] pt_core_news_sm (https://spacy.io/models/pt) (customizável)
   - [Architecture] spacy-transformers.TransformerModel.v3 (https://spacy.io/universe/project/spacy-transformers)
@@ -41,7 +41,7 @@ O IDEA-C2-Tool é um protótipo de software baseado no IDEA-C2 ((generatIon of k
   - [PyPDF2] - Biblioteca em Python capaz de dividir, fundir, recortar e transformar páginas de arquivos PDF. (https://pypi.org/project/PyPDF2/)
   - [PyDotPlus] - Biblioteca em Python baseada na evolução do pydot que fornece uma interface Python para a linguagem Dot do Graphviz. (https://pypi.org/project/pydotplus/)
 
-# Experiment
+# Experimentos
 - Passo a passo para executar os experimentos.
   - 1) Recuperar o "Glossário de Termos do EB" (SR) (link: https://bdex.eb.mil.br/jspui/bitstream/123456789/298/1/C-20-1.pdf)
   - 2) Executar os seguintes passos: (Esses passos correspondem aos subprocessos: Corpus Annotation and Language model Fine-Tuning)  

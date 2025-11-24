@@ -1,0 +1,25 @@
+{% extends 'core/config/base/base.html' %}
+{% load static %}
+{% block title %} {{ title_sheet }} {% endblock %}
+
+{% block content %}
+
+    <div class="row align-items-center bg-transparent pt-3">
+                       
+        {% include 'core/content/method/home/method.html' %}
+        
+        {% include 'core/content/microservice/home/microservice.html' %}
+
+        {% include 'core/content/ontology/home/ontology.html' %}
+
+        {% include 'core/content/ontology/home/taxonomy.html' %}
+
+        {% include 'core/content/hierarchy/home/hierarchy.html' %}
+
+        <!-- {% include 'core/content/researchers/home/researchers.html' %} -->
+
+        {% include 'core/config/footer/home/home.html' %}
+
+    </div>
+
+{% endblock %}

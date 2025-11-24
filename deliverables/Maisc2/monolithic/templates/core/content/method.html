@@ -1,0 +1,41 @@
+{% load static %}
+<section class="core py-5 border-bottom alert-secondary pt-5">
+<!-- <section class="core {% if message_text %} py-4 mt-1 {% else %} py-5 {% endif %} border-bottom alert-secondary pt-5"> -->
+    {% include 'core/config/message/message.html' %}
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 py-3 me-3">
+                <h5 class="fw-bold pt-3" style="color: black;"> > Method </h5>
+            </div>
+        </div>   
+
+        <div class="row align-items-top pt-3 d-flex justify-content-center">
+
+            <div class="col-md-6">
+                <div class="home-header-text-holder pe-md-5 pt-2 pl-3">
+                    <h6 class="fs-5 fw-light text-secondary text-justify gy-3" style="line-height: 40px;">
+                        The MAISC2 method aims to manipulate the elements of
+                        messages within the context of C2 to enrich them to help the
+                        recipients understand and interpret them. It has three primary
+                        stages: Parameterization, Application; and Presentation. Fig-
+                        ure 2 gives an overview of the stages of the MAISC2 method.
+                        The Parameterization stage prepares and trains a Machine
+                        Learning algorithm to perform entity recognition within the
+                        context of C2 systems at hand. This activity is not discussed
+                        in detail here, because this work focuses on the trained
+                        model’s application and our architectural requirements. 
+                    </h6>   
+                </div>
+            </div>
+
+            <div class="col-md-6 align-top pt-3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-end">
+                        <img src="{% static 'images/method/macro_processo.png' %}" alt="" class="mx-auto d-block img-fluid full-width shadow">
+                    </div>
+                </div>          
+            </div>
+
+        </div>
+    </div>
+</section>

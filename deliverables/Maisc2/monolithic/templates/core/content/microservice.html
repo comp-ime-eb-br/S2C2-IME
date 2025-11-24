@@ -1,0 +1,38 @@
+
+{% load static %}
+<section class="core py-5 border-bottom alert-light pt-5">
+<!-- <section class="core {% if message_text %} py-4 mt-1 {% else %} py-5 {% endif %} border-bottom alert-secondary pt-5"> -->
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 py-3 me-3">
+                <h5 class="fw-bold" style="color: black;"> > Microservice </h5>
+            </div>
+        </div>   
+
+        <div class="row align-items-top pt-3 d-flex justify-content-center">
+            <div class="col-md-6 align-top pt-3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-end">
+                        <img src="{% static 'images/microservice/architecture_maisc2.png' %}" alt="" class="mx-auto d-block img-fluid full-width shadow">
+                    </div>
+                </div>          
+            </div>
+
+            <div class="col-md-6">
+                <div class="home-header-text-holder pe-md-5 pt-2 pl-3">
+                    <h6 class="fs-5 fw-light text-secondary text-justify gy-3" style="line-height: 40px;">
+                        The MAISC<SUP>2</SUP> microservices architecture, which supports the MAISC<SUP>2</SUP> method, 
+                        is structured into three layers, namely the Client Layer, the Application Layer, and Pipeline Layer, as 
+                        illustrated in this figure to the left. Each layer hosts one or more microservices, forming a 
+                        pipeline encompassing the NLP processing required for enhancing the textual messages exchanged.This 
+                        enables the Entity Recognition and  Priority Classification tasks, as depicted in figure. The following 
+                        technologies were used to implement these microservices: Docker for creating containers to host the 
+                        microservices; Django as web development framework; Python, as programming language; and PostgreSQL 
+                        and SQLite, as the database management systems in the backend.                
+                    </h6>   
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

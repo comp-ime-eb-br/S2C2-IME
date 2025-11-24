@@ -1,0 +1,37 @@
+{% load static %}
+<section class="core py-5 border-bottom alert-light pt-5">
+<!-- <section class="core {% if message_text %} py-4 mt-1 {% else %} py-5 {% endif %} border-bottom alert-secondary pt-5"> -->
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 py-3 me-3">
+                <h5 class="fw-bold" style="color: black;"> > Taxonomy </h5>
+            </div>
+        </div>   
+
+
+        <div class="row align-items-top pt-3 d-flex justify-content-center">
+            <div class="col-md-6 align-top pt-3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-end">
+                        <img src="{% static 'images/ontology/taxonomy_maisc2.png' %}" alt="" class="mx-auto d-block img-fluid full-width shadow">
+                    </div>
+                </div>          
+            </div>
+
+            <div class="col-md-6">
+                <div class="home-header-text-holder pe-md-5 pt-4 pl-3">
+                    <h6 class="fs-5 fw-light text-secondary text-justify gy-3" style="line-height: 40px;">
+                        This figure shows the entity categories identifieds far: Place, Action, Military Unit,
+                        Agent, Direction, and Equipment. The Place category was based on military document, and
+                        it is divided into two new subcategories called Geographic Accident and Territorial Division.
+                        The Territoriaç Division is divided into seven new categories: Public Place, Neighborhood, 
+                        City, State, Country, Continent, and Part of Division. The Equipment category was chosen
+                        based on military document and while Military Unit and Action categories were based another
+                        military documento. 
+                    </h6>   
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,47 @@
+{% load static %}
+<section class="core py-5 border-bottom alert-secondary pt-5">
+<!-- <section class="core {% if message_text %} py-4 mt-1 {% else %} py-5 {% endif %} border-bottom alert-secondary pt-5"> -->
+  {% include 'core/config/message/message.html' %}
+    <div class="container">
+      <div class="row align-items-top pt-3 d-flex justify-content-center">
+        <div class="col-md-6">
+          <div class="home-header-text-holder pe-md-5">
+            <h5 class="fw-bold py-2">
+              > MAISC<sup>2</sup> Project
+            </h5>
+            <h6 class="fs-5 fw-light text-secondary text-justify gy-3" style="line-height: 40px;">
+              Method to Support Semantic Interoperability in Command and Control or, in Portuguese,
+              "Método para Apoiar a Interoperabilidade Semântica em Comando e Controle" (MAISC2) is an 
+              academic research project that uses Natural Language Processing (NLP) to process messages 
+              exchanged in a command and control environment to help the receiver better understand the 
+              message. The table to the right has all the chat rooms and your users. If you want to log in 
+              on the plataform you can use one user in the table.
+            </h6>   
+          </div>
+        </div>
+
+        <div class="col-md-6 align-top pt-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner text-end">
+                    <div class="carousel-item active">
+                      <img src="{% static 'images/hierarchy/hierarchy.png' %}" 
+                      alt="" class="mx-auto d-block img-fluid full-width shadow">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="{% static 'images/microservice/architecture_maisc2.png' %}" 
+                      alt="" class="mx-auto d-block img-fluid full-width shadow">
+                    </div>          
+                    <div class="carousel-item">
+                      <img src="{% static 'images/ontology/ontology_maisc2.png' %}" 
+                      alt="" class="mx-auto d-block img-fluid full-width shadow">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="{% static 'images/ontology/taxonomy_maisc2.png' %}" 
+                      alt="" class="mx-auto d-block img-fluid full-width shadow">
+                    </div>
+                </div>
+            </div>          
+        </div>
+      </div>
+    </div>
+</section>

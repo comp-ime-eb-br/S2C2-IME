@@ -1,0 +1,235 @@
+#map {
+    width:100%;
+    height:700px;
+  }
+  .map-coordinate{
+    position:absolute;
+    bottom: 0;
+    left:50%;
+    transform:translateX(-50%);
+    padding: 5px;
+    background-color: #ecb652;
+    border: 1px solid black;
+    border-radius: 2%;
+  }
+  
+  .full-screen{
+    padding: 5px;
+    padding-left: 6px;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 295px;
+    border-color:#BBB8B3;
+    border-style:solid;
+    border-radius:15%;
+    border-width:2px;
+    cursor: pointer;
+  }
+  
+  .navbar-brand img{
+      width :150px;
+      height: auto;
+  }
+  .full-width{
+      width: 100%;
+      height: auto;
+  }
+  .feature-item img{
+      width : 100px;
+      height: auto;
+  }
+  .subscribe{
+      background-size: cover;
+      background-position: center;
+      background-image: url(/static/images/subscribe/subscribe.jpg);
+  }
+  .brand-icon img{
+      width : 150px;
+      height: auto;
+  }
+  .blur-filter{
+      backdrop-filter: blur(8px);
+      background-color: rgb(100, 97, 97, 0.3);
+  }
+  .img-flag img{
+      width : 30px;
+      height: auto;
+  }
+  .img-blog img{
+      width : 30px;
+      height: auto;
+  }
+  /* .btn-colossos29{
+      background-color:#FF6C37;
+      color:#FF6C37;;
+      border-color:#FF6C37;
+  } */
+  
+  /* CSS */
+  .btn-colossos29 {
+    appearance: none;
+    background-color:#FF6C37;
+    border: 1px solid #FF6C37;
+    border-radius: 6px;
+    box-shadow: #FF6C37;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .btn-colossos29:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .btn-colossos29:hover {
+    background-color: #FF6C37;
+  }
+  
+  .btn-colossos29:focus {
+    box-shadow: #FF6C37;
+    outline: none;
+  }
+  
+  .btn-colossos29:disabled {
+    background-color: #FF6C37;
+    border-color: #FF6C37;
+    color: #FF6C37;
+    cursor: default;
+  }
+  
+  .btn-colossos29:active {
+    background-color: #FF6C37;
+    box-shadow:#FF6C37;
+  }
+  
+  
+  .back-top {
+    background-color: #494e4c;
+    height: 15vh;
+  }
+  
+  .back-main {
+    background-color: #d9dbd5;
+    height: 85vh;
+  }
+  
+  .back-container {
+    position: relative;
+  }
+  
+  .front-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .front-container1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+  }
+  
+  .chat-top {
+    background-color: #ededed;
+    min-height: 50px;
+  }
+  
+  .profile-image {
+    margin-top: 7px;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .contacts {
+    background-color: #ffffff;
+    min-height: 600px;
+  }
+  
+  .contact-table-scroll {
+    overflow-y: scroll;
+    height: 600px;
+  }
+  
+  .message-area {
+    background-color: #e4e1de;
+    min-height: 600px;
+  }
+  
+  .message-table-scroll {
+    overflow-y: scroll;
+    height: 550px;
+  }
+  
+  .message-box {
+    background-color: #f0f0f0;
+  }
+
+  .cursor-pointer{
+    cursor: pointer;
+  }
+
+.toggle {
+    margin-bottom: 40px;
+}
+
+.toggle > input {
+    display: none;
+}
+
+.toggle > label {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 44px;
+    background: #898989;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.toggle > label:after {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: '';
+    transition: all 0.3s ease;
+}
+.toggle > label:active:after {
+    transform: scale(1.15, 0.85);
+}
+.toggle > input:checked ~ label {
+    background: #6fbeb5;
+}
+.toggle > input:checked ~ label:after {
+    left: 20px;
+    background: #179588;
+}
+.toggle > input:disabled ~ label {
+    background: #d5d5d5;
+    pointer-events: none;
+}
+.toggle > input:disabled ~ label:after {
+    background: #bcbdbc;
+}

@@ -1,0 +1,58 @@
+{
+    "message": {
+        "entities": {
+            "ents_kind": "['AGT', 'AGT', 'AGT', 'VHC']",
+            "ents_posi": "[1, 7, 12, 14]",
+            "ents_text": "['coronel', 'major', 'tenente', 'viatura']"
+        },
+        "grammar": {
+            "concept": {
+                "lst_adje": "['t\u00e1ticas']",
+                "lst_adve": "[]",
+                "lst_conj": "[]",
+                "lst_det": "['O', 'as', 'a']",
+                "lst_noun": "['coronel', 'habilidades', 'determina\u00e7\u00e3o', 'tenente', 'viatura']",
+                "lst_num": "[]",
+                "lst_other": "['do', 'major', 'e', 'do', 'na']",
+                "lst_pron": "[]",
+                "lst_punc": "['?']",
+                "lst_verb": "['valorizava']"
+            },
+            "count": {
+                "tot_adej": "1",
+                "tot_adve": "0",
+                "tot_conj": "0",
+                "tot_det": "3",
+                "tot_noun": "5",
+                "tot_num": "0",
+                "tot_other": "5",
+                "tot_pron": "0",
+                "tot_punc": "1",
+                "tot_verb": "1"
+            }
+        },
+        "main": {
+            "message_raw": "O coronel valorizava as habilidades t\u00e1ticas do major e a determina\u00e7\u00e3o do tenente na viatura?",
+            "message_with_ents": "O coronel [AGT] valorizava as habilidades t\u00e1ticas do major [AGT] e a determina\u00e7\u00e3o do tenente [AGT] na viatura [VHC]? "
+        },
+        "priority": {
+            "status": true
+        },
+        "properties": {
+            "date": "27/04/2024",
+            "finish_processing": "39862.667839357",
+            "host_receiver": "443dfe98dc7c",
+            "host_sender": "443dfe98dc7c",
+            "ip_receiver": "172.27.0.3",
+            "ip_sender": "172.27.0.3",
+            "start_processing": "39862.414733166",
+            "time_processing": "0.25311",
+            "tokens": "['O', 'coronel', 'valorizava', 'as', 'habilidades', 't\u00e1ticas', 'do', 'major', 'e', 'a', 'determina\u00e7\u00e3o', 'do', 'tenente', 'na', 'viatura', '?']",
+            "tokens_len": "16"
+        },
+        "sentence": {
+            "len_sent": [],
+            "lst_sent": "[]"
+        }
+    }
+}

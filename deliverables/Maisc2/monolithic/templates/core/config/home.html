@@ -1,5 +1,17 @@
-{% include 'core/config/footer/footer/footer.html' %}
+{% load static %}
 
-{% include 'core/config/footer/copyright/copyright.html' %}
-
-{% include 'core/config/footer/sticky/sticky.html' %}
+<nav class="navbar navbar-dark fixed-top navbar-expand-lg bg-dark border-bottom">
+  <div class="container-fluid pr-5">
+    <div class="collapse navbar-collapse pl-5 pr-1" id="navbarSupportedContent">
+      {% include 'core/config/navbar/items.html' %}
+      {% if user_current %}
+        {% include 'core/config/navbar/privaty.html' %}
+      {% else %}    
+        {% include 'core/config/navbar/login.html' %}
+      {% endif %}
+    </div>
+  </div>
+</nav>
+{% include 'account/login/login.html' %}
+{% include 'account/register/register.html' %}
+{% include 'account/edit/edit.html' %}

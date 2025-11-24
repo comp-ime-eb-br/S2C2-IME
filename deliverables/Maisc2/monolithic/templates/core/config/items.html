@@ -1,0 +1,42 @@
+<div class="col-md-10 bg-dark">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+    <li class="nav-item pl-5 ml-0 me-5 bg-transparent pr-3 pt-1 fw-bold">
+      <a class="nav-link fw-normal  fs-5 {% if section == 'core2222222' %} active border-bottom border-4 {% endif %}" 
+      href="{% url 'core:core_home' %}" title="METHOD TO SUPPORT SEMANTIC INTEROPPERABILITY IN COMMAND AND CONTROL" 
+      style="color:orange">
+        MAISC<sup>2</sup>
+      </a>
+    </li>  
+
+    <!-- <li class="nav-item me-5 pt-2">
+      <a class="nav-link {% if section == 'sendc2' %} active {% endif %} small" 
+      href="{% url 'sendc2:sendc2_home' %}" title="PROTOTYPE TO SEND MESSAGE WITH NLP">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill me-2" viewBox="0 0 16 16">
+        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+      </svg>  
+        <small class="small fw-normal" style="font-size: smaller;">MESSAGE</small>
+      </a>
+    </li>     -->
+
+    <li class="nav-item me-5 pt-2"><!--border-bottom border-4 -->
+      <a class="nav-link {% if section == 'chatc2' %} active {% endif %} small" 
+      href="{% url 'room:rooms_home' %}" title="CHAT ROOM TO EXCHANGE MESSAGE C2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots-fill me-2" viewBox="0 0 16 16">
+          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+        </svg>
+        <small class="small fw-normal" style="font-size: smaller;">CHAT ROOM</small>
+      </a>
+    </li>     
+
+    <li class="nav-item me-5 pt-2">
+      <a class="nav-link {% if section == 'statistic' %} active fw-bold {% endif %} small" 
+      href="{% url 'statistic:statistic_home' %}" title="Analytic data">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line-fill me-2" viewBox="0 0 16 16">
+          <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1z"/>
+        </svg>
+        <small class="small fw-normal" style="font-size: smaller;">STATISTICS</small>
+      </a>
+    </li>    
+  </ul>
+</div>

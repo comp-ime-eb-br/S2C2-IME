@@ -1,0 +1,81 @@
+{% load static %}
+
+
+    <div class="col-md-2 bg-transparent text-end">
+        <div class="btn-group">
+            {% if user_current.profile.photo %} 
+                <button type="button" class="btn btn-outline-light rounded-pill border border-light text-muted rouded-1 p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="img-profile rounded-circle " src="{{ user_current.profile.photo.url }}" style="width:40px; height:40px;">
+                    <span class="position-absolute mt-2 top-50 start-100 translate-middle p-2 border rounded-circle" style="background-color:#0ee812; border-color:#0ee812;">
+                    </span>                
+                </button>      
+            {% else %}
+                <button type="button" class="btn btn-outline-light rounded border-0 text-muted rouded-1 p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                    <span class="position-absolute mt-2 top-50 start-100 translate-middle p-2 border rounded-circle" style="background-color:#0ee812; border-color:#0ee812;">
+                    </span>   
+                </button>
+            {% endif %}
+            <ul class="dropdown-menu dropdown-menu-end mt-1 rounded-0" style="min-width:20rem;max-width:20rem;">
+                <div class="row text-center pl-3 cursor-pointer"  data-bs-toggle="modal" data-bs-target="#edit_user">
+                    <div class="col-3 bg-transparent d-flex justify-content-end pr-1 pl-0" role="button">
+                        {% if user_current.profile.photo %} 
+                            <img class="img-profile rounded-circle cursor-pointer" src="{{ user_current.profile.photo.url }}" style="width:75px; height:75px;padding-top:1px;padding-bottom:1px">    
+                        {% else %} 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16"  style="width:75px; height:75px;">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                        {% endif %}
+                    </div>
+                    <div class="col-8 bg-transparent pt-2 pl-1">
+                        <h6 class="text-left small mb-1">
+                            <small class="fw-bold">
+                                {% if user_current.fisrt_name %}
+                                    {{ user_current.first_name|title }} {{user_current.last_name }}
+                                    {{ user_current.username|upper }}
+                                {% else %}
+                                    {{ user_current.username|upper }}
+                                {% endif %}
+                            </small>
+                        </h6>
+                        <h6 class="text-left small mb-1"><small>{{user_current.email }}</small></h6>
+                        <h6 class="text-left small mb-0"><small>{{user_current.date_joined|date:"d/m/Y" }}</small></h6>
+                    </div>
+                </div>
+                <hr class="mt-1 mb-1 p-0">
+                <li>
+                    <a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#log_user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people me-2" viewBox="0 0 16 16">
+                            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                        </svg>
+                        <small>Change user</small>                  
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#edit_user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-vcard me-2" viewBox="0 0 16 16">
+                            <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
+                            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"/>
+                        </svg>
+                        <small>Edit profile</small>                  
+                    </a>
+                </li>
+                <hr class="mt-1 mb-1 p-0">
+                <li class="">
+                    <a class="dropdown-item alert-danger" type="button" href="{% url 'account:account_logout' %}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square me-2" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                        <small>Sign out</small>
+                    </a>
+                </li>         
+            </ul>
+        </div>   
+    </div>  
+
+

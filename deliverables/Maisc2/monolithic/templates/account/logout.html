@@ -1,0 +1,78 @@
+{% extends 'core/config/base/base.html' %}
+{% load static %}
+{% block title %} {{ title_page}} {% endblock %}
+
+{% block content %}
+
+    <div class="row align-items-center bg-transparent pt-3">  
+        <section class="blog-post-list py-5 border-bottom">
+            <div class="container pl-2">
+                <div class="row align-items-top pt-4">
+                    <div class="col-md-6">
+                        <div class="home-header-text-holder pe-md-5">
+                            <h5 class="fw-bold">
+                                > Área Segura
+                            </h5>
+                            <h6 class="fs-5 fw-light text-secondary text-justify">
+                                Nesta seção é possível acessar a plataforma e executar
+                                diversas funcionalidades. Caso ainda não tenha se 
+                                cadastrado, pode fazer através deste link: <br>
+                                <a href="{% url 'register' %}" class="btn btn-md btn-outline-danger d-inline-flex align-items-center justify-content-center me-2 mt-3 w-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill me-2" viewBox="0 0 16 16">
+                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                    </svg>
+                                    SIGN-UP
+                                </a>
+                            </h6>   
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-top d-flex justify-content-center bg-transparent pt-4">                
+                        <div class="comment-form mb-6">
+                            {% if message_text %}
+                                <div class="alert {{ message_color }} alert-dismissible fade show" role="alert">
+                                    {% if message_color|stringformat:"s" == 'alert-success' %}<strong>{{ user|title }}</strong>,{% endif %}
+                                    {{ message_text }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            {% endif %}
+                            <div class="card">
+                                <div class="card-body bg-primary">
+                                    <h2 class="fs-5 text-white mb-3 mt-0 pt-0 pb-2 border-bottom">Acessar Conta</h2>                                
+                                    <form class="form" action="{% url 'account_login' %}" method="post">
+                                        {% csrf_token %}  
+                                        <div class="row gx-2">
+                                            <div class="col-md-12 mb-1">
+                                                <div class="mb-2">
+                                                    <input type="text" class="form-control form-control-sm" name="username" placeholder="Username" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-1">
+                                                <div class="mb-2">
+                                                    <input type="password" class="form-control form-control-sm" name="password" placeholder="Senha" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-sm btn-warning d-inline-flex align-items-center justify-content-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right me-2" viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                                            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                                        </svg>                           
+                                                        ENTRAR
+                                                    </button>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}            
+       

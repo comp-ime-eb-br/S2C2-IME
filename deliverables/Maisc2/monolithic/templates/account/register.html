@@ -1,0 +1,81 @@
+<!-- START SECTION SIGN UP -->
+<div class="modal fade" id="add_user" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" style="backdrop-filter: blur(5px);">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-bg-dark">
+              <h5 class="modal-title">Criar Conta</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="form" action="{% url 'account:account_register' %}" method="post">
+                  {% csrf_token %}  
+                  <div class="container">
+                      <div class="row gx-3">
+                          <div class="col-md-3">
+                            <div class="mb-1">
+                                usuário
+                            </div>
+                          </div>                        
+                          <div class="col-md-9">
+                              <div class="mb-2">
+                                  <input type="text" name="username" class="form-control form-control-sm" required>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="mb-1">
+                                email
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                              <div class="mb-2">
+                                <input type="email" name="email" class="form-control form-control-sm" placeholder="Email" required>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="mb-1">
+                                senha
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                              <div class="mb-2">
+                                <input type="password" class="form-control form-control-sm" name="password" placeholder="Senha" required>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="mb-1">
+                                repetir senha
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                              <div class="mb-3">
+                                <input type="password" class="form-control form-control-sm" name="password2" placeholder="Senha" required>
+                              </div>
+                          </div>                                                    
+                          <div class="col-md-9 mb-0">
+                              <div class="d-grid">
+                                  <button type="submit" class="btn btn-sm btn-colossos29 d-inline-flex align-items-center justify-content-center mb-2">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-check-fill me-2" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                      </svg> -->
+                                        <h6 class="pt-1">Salvar</h6>
+                                    </button>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="d-grid">
+                                <button type="button" class="btn btn-sm btn-outline-secondary d-inline-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill me-2" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                                    </svg> -->
+                                    <h6 class="pt-1 mt-1">Fechar</h6>
+                                </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+            </div>
+        </div>
+    </div>
+  </div>

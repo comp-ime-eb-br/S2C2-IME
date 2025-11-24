@@ -1,0 +1,714 @@
+{% extends 'core/config/base/base.html' %}
+{% load static %}
+{% block title %} {{ title_sheet }} {% endblock %}
+
+{% block content %}
+
+<section class="py-3 border-bottom mt-5">
+    <div class="back-container container-fluid">
+        <div class="container-fluid front-container">
+            <div class="back-top"></div>
+            <div class="back-main"></div>
+        </div>
+            <div class="row d-flex justify-content-center m-0 p-0">
+                <!--<div class="{% if second_room  %} col-6 {% else %} col-8 {% endif %} mt-4">-->
+                <div class="{% if second_room  %} col-6 {% else %} col-12 {% endif %} mt-4">
+                    <!-- START FIRST ROOM -->
+                    <div class="row chat-top" style="background-color:#9cbfdd">
+                        <div class="col-sm-3 border-right border-secondary pt-2 cursor-pointer"  data-bs-toggle="modal" data-bs-target="#edit_user" 
+                        title="NOME: {{ user.first_name}}&#10LOGIN: {{user.username}}&#10EMAIL: {{user.email}}&#10JOIN: {{user.date_joined}} ">
+                            {% if user.profile.photo %} 
+                                <img class="img-profile rounded-circle" src="{{ user.profile.photo.url }}" style="width:40px; height:40px;">   
+                            {% else %}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                </svg>
+                            {% endif %}
+                            <span class="ml-0 bdget bg-transparent bg-{{user_current.profile.collor}} pl-1 pr-2 mt-5 fw-bold text-dark">
+                                {{ user.username }}
+                            </span>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <div class="col-8 pt-2"> 
+                                    <span class="mt-1 bg-transparent bg-{{user_current.profile.collor}} pl-0 pr-2 fw-bold pb-0"> 
+                                        1a. room: {{ first_room }} 
+                                    </span>
+                                    <p class="pb-1 mb-0 small">
+                                        <small class="small fw-normal">
+                                            {% for each_room_user in rooms_user %}  
+                                                {% if each_room_user.slug|stringformat:"s" ==  first_room|stringformat:"s" %} 
+                                                users: {{ each_room_user.written_by }} 
+                                                {% endif %}
+                                            {% endfor %}
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col mt-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 contacts">
+                            <div class="contact-table-scroll">
+                                <div class="form-check form-switch bg-transparent pl-1 border-bottom">  
+                                    <ul id="taskList" class="pl-2 pt-3">
+                                        <div class="form-check form-switch bg-transparent" title="Activate or deactive natural language processing" data-bs-toggle="modal"> <!--data-bs-target="#active_nlp"-->
+                                            <input class="form-check-input btn-lg text-secondary" type="checkbox" role="switch" {% if room1_nlp %} checked {%endif%}>
+                                            <label class="form-check-label small pb-1 fst-italic text-secondary pt-1"> activate nlp</label>
+                                            <input type="hidden" id="rom" value="{{ first_room }}">
+                                        </div> 
+                                    </ul>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-sm-9 message-area" style="background-color:#DED5CC;">
+                            <div class="message-table-scroll pt-2 pb-3" id="chat-messages-one">
+                                {% for m in messages_room_first %}
+                                    {% if m.user.username|stringformat:'s' == request.user|stringformat:'s' %}
+                                        <div class="row mb-3 pb-0 bg-transparent d-flex align-items-end flex-column mb-3 pr-3">
+                                            <div class="col-7 pb-0 pl-1 justify-content-end">
+                                                <div class="{% if m.priority %} {{ background_message }} {{ color_border_message }} {{ weight_border_message }} 
+                                                {% else %} alert-primary border border-0 border-secondary {% endif %} pb-0 mb-0 pt-0 pl-1 pr-2 rounded justify-content-end" role="alert">
+                                                    <div class="row small pt-1 pl-1" style="font-size: 1.2rem; font-family: Verdana;">
+                                                        <div class="col-2 text-{{m.user.profile.collor}} fw-bold small">{{ m.user|upper }} </div>
+                                                        <div class="col-4 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>{{ m.created|date:"d/m/y"}} às {{ m.created|date:"H:i:s" }}</small></div>
+                                                        <div class="col-3 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>{{m.duration}}</small></div>
+                                                    </div>
+                                                    <div class="row pl-1 pr-1 fw-bold small">
+                                                        <span class="mb-1 pr-1 text-dark fw-bold" style="font-size: 1.2rem; font-family: Verdana;">
+                                                            {{ m.content }} 
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3"></div>  
+                                        </div>
+                                    {% else %}
+                                        <div class="row mb-3 pb-0 bg-transparent">
+                                            <div class="col-1 bg-transparent pr-1 pt-1 d-flex justify-content-end align-end">
+                                                {% if m.user.profile.photo %} 
+                                                    <img class="img-profile rounded-circle " src="{{ m.user.profile.photo.url }}" style="width:30px; height:30px;">   
+                                                {% else %}
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                                    </svg>
+                                                {% endif %}
+                                            </div>
+                                            <div class="col-7 pb-0 pl-1 ">
+                                                <div class="{% if m.priority %} {{ background_message }} {{ color_border_message }} {{ weight_border_message }} 
+                                                {% else %} alert-light {% endif %} pb-0 mb-0 pt-0 pl-1 rounded" role="alert">
+                                                    <div class="row small pt-1 pl-1" style="font-size: 1.2; font-family: Verdana;">
+                                                        <div class="col-2 text-{{m.user.profile.collor}} fw-bold small">{{ m.user|upper }} </div>
+                                                        <div class="col-4 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>{{ m.created|date:"d/m/y"}} às {{ m.created|date:"H:i:s" }}</small></div>
+                                                        <div class="col-3 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>{{m.duration}}</small></div>
+                                                    </div>
+                                                    <div class="row pl-1 fw-bold">
+                                                        <span class="mb-1 {% if m.priority %} text-dark {%else%} text-dark {% endif %} fw-bold" style="font-size: 1.2rem; font-family: Verdana;">
+                                                            {{ m.content }} 
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3"></div>  
+                                        </div>
+                                    {% endif %}                            
+                                {% endfor %}
+                            </div>
+                            <!-- END FIRST ROOM -->
+                            <div class="row message-box p-3 bg-ligth d-flex justify-content-center align-items-center">
+                                <div class="col-1 bg-transparent">             
+                                    {% if room.slug|stringformat:"s" == first_room %}
+                                        {% if second_room %}
+                                            <a href="{% url 'room:room_chat' second_room|lower %}" 
+                                            class="alert alert-success p-2 btn-sm fw-bold text-success" 
+                                            role="alert" style="text-decoration: none;" title="Room activated.">
+                                                ON
+                                            </a>
+                                        {% else %}
+                                            <a href="#" 
+                                            class="alert alert-success p-2 btn-sm fw-bold text-success" role="alert" 
+                                            style="text-decoration: none; cursor:not-allowed;" title="Room activated.">
+                                                ON
+                                            </a>
+                                        {% endif %}
+                                    {% else %}
+                                        <a href="{% url 'room:room_chat' first_room|lower %}" 
+                                        class="alert alert-secondary text-secondary p-2 btn-sm fw-bold" role="alert" 
+                                        style="text-decoration: none;" title="Click here to activated this room.">
+                                            OFF
+                                        </a>
+                                    {% endif %}
+                                </div> 
+                                <div class="col-10 bg-transparent pl-2 pr-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="chat-message-input" 
+                                        {% if room.slug == second_room %} 
+                                            disabled class="form-control fst-italic pt-1" placeholder="Click on the button OFF to activate the room..."
+                                        {% else %} 
+                                            class="form-control pt-1 fst-italic" placeholder="write your message here..."
+                                        {% endif %} required>
+                                    </div>
+                                </div>
+                                <div class="col-1 bg-transparent pl-0 pr-0 d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-light border" id="chat-message-submit"
+                                        {% if room.slug == second_room %} disabled {% endif %}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send " viewBox="0 0 16 16">
+                                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% if second_room %}
+                    <div class="col-6 mt-4">
+                        <!-- SECOND ROOM -->
+                        <div class="row chat-top" style="background-color: #e66d83;">
+                            <div class="col-sm-3 border-right border-secondary pt-2 cursor-pointer"  data-bs-toggle="modal" data-bs-target="#edit_user"
+                            title="NOME: {{ user.first_name}}&#10LOGIN: {{user.username}}&#10EMAIL: {{user.email}}&#10JOIN: {{user.date_joined}} ">
+                                {% if user.profile.photo %} 
+                                    <img class="img-profile rounded-circle" src="{{ user.profile.photo.url }}" style="width:40px; height:40px;">   
+                                {% else %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                    </svg>
+                                {% endif %}
+                                <span class="ml-0 bdget bg-transparent bg-{{user_current.profile.collor}} pl-1 pr-2 mt-5 fw-bold text-dark">
+                                    {{ user.username }}
+                                </span>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="row">
+                                    <div class="col-8 pt-2"> 
+                                        <span class="mt-1 bg-transparent bg-{{user_current.profile.collor}} pl-0 pr-2 fw-bold pb-0"> 
+                                            2a. room: {{ second_room }} 
+                                        </span>
+                                        <p class="pb-1 mb-0 small">
+                                            <small class="small fw-normal">
+                                                {% for each_room_user in rooms_user %}  
+                                                    {% if each_room_user.slug|stringformat:"s" ==  second_room|stringformat:"s" %} 
+                                                        {{ each_room_user.written_by }}
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="col mt-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3 contacts">
+                                <div class="contact-table-scroll">
+                                    <div class="form-check form-switch bg-transparent pl-1 border-bottom">  
+                                        <ul id="taskList2" class="pl-2 pt-3">
+                                            <div class="form-check form-switch bg-transparent" title="Activate or deactive natural language processing">
+                                                <input class="form-check-input btn-lg" type="checkbox" role="switch" {% if room2_nlp %} checked {%endif%}>
+                                                <label class="form-check-label small pb-1 fst-italic text-secondary pt-1"> activate nlp</label>
+                                                <input type="hidden" id="rom2" value="{{ second_room }}">
+                                            </div> 
+                                        </ul>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-sm-9 message-area" style="background-color:#DED5CC;">
+                                <div class="message-table-scroll pt-2 pb-3" id="chat-messages-two">
+                                    {% for m in messages_room_second %}
+                                    {% if m.user.username|stringformat:'s' == request.user|stringformat:'s' %}
+                                        <div class="row mb-3 pb-0 bg-transparent d-flex align-items-end flex-column mb-3 pr-3">
+                                            <div class="col-7 pb-0 pl-1 justify-content-end">
+                                                <div class="{% if m.priority %} {{ background_message }} {{ color_border_message }} {{ weight_border_message }} 
+                                                {% else %} alert-primary {% endif %} pb-0 mb-0 pt-0 pl-1 pr-2 rounded justify-content-end" role="alert">
+                                                    <div class="row small pt-1 pl-1" style="font-size: smaller; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                                        <div class="col-2 text-{{m.user.profile.collor}} fw-bold small">{{ m.user|upper }} </div>
+                                                        <div class="col-4 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>{{ m.created|date:"d/m/y" }} às {{ m.created|date:"H:i:s" }}</small></div>
+                                                        <div class="col-3 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>{{ m.duration }}</small></div>
+                                                    </div>
+                                                    <div class="row pl-1 fw-light small">
+                                                        <span class="mb-1  text-dark">
+                                                            {{ m.content }} 
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3"></div>  
+                                        </div>
+                                    {% else %}
+                                        <div class="row mb-3 pb-0 bg-transparent">
+                                            <div class="col-1 bg-transparent pr-1 pt-1 d-flex justify-content-end align-end">
+                                                {% if m.user.profile.photo %} 
+                                                    <img class="img-profile rounded-circle " src="{{ m.user.profile.photo.url }}" style="width:30px; height:30px;">   
+                                                {% else %}
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                                    </svg>
+                                                {% endif %}
+                                            </div>
+                                            <div class="col-7 pb-0 pl-1">
+                                                <div class="{% if m.priority %} {{ background_message }} {{ color_border_message }} {{ weight_border_message }} {% else %} alert-light {% endif %} pb-0 mb-0 pt-0 pl-1 rounded" role="alert">
+                                                    <div class="row small pt-1 pl-1" style="font-size: smaller; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                                        <div class="col-2 text-{{m.user.profile.collor}} fw-bold small">{{ m.user|upper }} </div>
+                                                        <div class="col-4 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>{{ m.created|date:"d/m/y"}} às {{ m.created|date:"H:i:s" }}</small></div>
+                                                        <div class="col-3 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>{{ m.duration }}</small></div>                            
+                                                    </div>
+                                                    <div class="row pl-1 fw-light small">
+                                                        <span class="mb-1 {% if m.priority %} text-dark {% endif %}">
+                                                            {{ m.content }} 
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3"></div>                              
+                                        </div>
+                                    {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="row message-box p-3 bg-ligth d-flex justify-content-center align-items-center">
+                                    <div class="col-1 bg-transparent">             
+                                        {% if room.slug|stringformat:"s" == second_room %}
+                                            <a href="{% url 'room:room_chat' first_room|lower %}" 
+                                            class="alert alert-success p-2 btn-sm fw-bold text-success" 
+                                            role="alert" style="text-decoration: none;" title="Room activated.">
+                                                ON
+                                            </a>
+                                        {% else %}
+                                            <a href="{% url 'room:room_chat' second_room|lower %}" 
+                                            class="alert alert-secondary text-secondary p-2 btn-sm fw-bold" role="alert" 
+                                            style="text-decoration: none;" title="Click here to activated this room.">
+                                                OFF
+                                            </a>
+                                        {% endif %}
+                                    </div> 
+                                    <div class="col-9 bg-transparent pl-2 pr-0">
+                                        <input type="text" id="chat-message-input-two"
+                                        {% if room.slug == first_room %} 
+                                            disabled class="form-control fst-italic" placeholder="Click on the button OFF to activate the room..."
+                                        {% else %} 
+                                            class="form-control fst-italic" placeholder="write your message here..."
+                                        {% endif %}>
+                                    </div>
+                                    <div class="col-1 bg-transparent pl-0 pr-0 d-flex justify-content-center" 
+                                    {% if room.slug == first_room %} disabled {% endif %}>
+                                        <button type="submit" class="btn btn-light border" id="chat-message-submit-two" 
+                                        {% if room.slug == first_room %} disabled {% endif %}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send " viewBox="0 0 16 16">
+                                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        <!--/div-->
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="active_nlp" tabindex="-1" aria-labelledby="active_nlp" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">        
+            <form id="form_toogle"></form>
+            <div class="row p-3">
+                <div class="col-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check-circle-fill me-2 pb-1 text-success" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                </div>
+                <div class="col"><h1 class="modal-title fs-5" id="exampleModalLabel">Alert mode nlp.</h1></div>
+                <div class="col-1"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            </div>
+        </div>
+        </div>
+    </div> 
+
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+{{ room.slug|json_script:"json-roomname" }}
+{{ room.nlp|json_script:"json-roomnlp"}}
+{{ request.user.username|json_script:"json-username" }}
+{{ user.profile.collor|json_script:"json-usercolor" }}
+{{ user_photo|json_script:"json-userphoto" }}
+{{ first_room|json_script:"json-firstroom" }}
+
+<script>
+    const media_ = '/media/';
+    const roomName  = JSON.parse(document.getElementById('json-roomname').textContent);
+    const room_nlp  = JSON.parse(document.getElementById('json-roomnlp').textContent);
+    const userName  = JSON.parse(document.getElementById('json-username').textContent);
+    const userColor = JSON.parse(document.getElementById('json-usercolor').textContent);
+    const userPhoto = JSON.parse(document.getElementById('json-userphoto').textContent);
+    const firstRoom = JSON.parse(document.getElementById('json-firstroom').textContent);
+    const chatSocket = new WebSocket('ws://'+window.location.host+'/ws/'+roomName+'/');
+    const user_=  userPhoto.replace(/["]/g, '');
+
+    user_picture = media_.concat(user_); //users/2024/04/06/mm-tesla-03.jpg';
+
+    //alert(user_);
+    //alert(user_picture);
+
+    var currentDate = new Date();
+    var date = currentDate.getDate();
+    var month= currentDate.getMonth(); 
+    var year = currentDate.getFullYear();
+    var hour = currentDate.getHours();
+    var min  = currentDate.getMinutes();
+    var sec  = currentDate.getSeconds();
+    var number;
+ 
+    function my_function() {
+        var w = document.getElementById("chat-message-ner");
+        var x = document.getElementById("myDIV");
+        var y = document.getElementById("myDIV2");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+        } else {
+            x.style.display = "none";
+            y.style.display = "block";
+        }  
+    }
+
+
+    function pad(n) { return n<10 ? '0'+n : n; } 
+    
+    var dateTimeMaisc2  = date + "/" + pad(month+1) + "/" + year + " às "+pad(hour)+":"+pad(min)+":"+pad(sec);
+    
+    chatSocket.onclose = function(e) {
+        console.log('onclose')
+    }
+
+    chatSocket.onmessage = function(e) {
+        const data = JSON.parse(e.data);
+        var message = '';
+
+        //alert(userName+' - '+data.username);
+
+        if (data.message){
+
+            message  = data.message;
+            duration = data.duration;
+            priority = data.priority;
+            photo    = data.photo;
+            
+            if (priority == true)
+            {
+                alert_color = 'alert alert-danger border border-2 border-danger';
+            }
+            else if (userName == data.username){
+                alert_color = 'alert alert-primary border border-0';
+            }
+            else
+            {
+                alert_color = 'alert alert-light border border-0';
+            }
+
+            /*<div class="col-1 text-{{m.user.profile.collor}} fw-bold mr-2 small">{{ m.user|upper }} </div>
+            <div class="col-3 bg-transparent pl-1 pr-0 pb-0 mb-0 small text-center"><small>{{ m.created|date:"d/m/y"}} às {{ m.created|date:"H:i:s" }}</small></div>
+            <div class="col-3 bg-transparent pl-1 pr-0 pb-0 mb-0 small align-left"><small>{{m.duration}}</small></div>*/ 
+
+            if (roomName == firstRoom)
+            {
+                if(userName == data.username){
+                    document.querySelector('#chat-messages-one').innerHTML += 
+                    (
+                        '<div class="row mb-3 pb-0 bg-transparent d-flex align-items-end flex-column mb-3 pr-3">'+
+                            '<div class="col-8 pb-0 pl-1 pr-2">'+
+                                '<div class="'+alert_color+' pb-1 mb-0 pt-0 pl-1" role="alert">'+
+                                    '<div class="row small pt-1 pl-1" style="font-size: 1.2rem; font-family: Verdana;">'+
+                                        '<div class="col-2 text-'+ userColor +' mr-0 font-weight-bold small"><small class="fw-bold">'+ data.username.toUpperCase() +'</small></div>'+
+                                        '<div class="col-4 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small class="text-center">'+dateTimeMaisc2+'</small></div>'+
+                                        '<div class="col-3 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>'+duration+'</small></div>'+
+                                    '</div>'+
+                                    '<div class="row pl-1 fw-bold" style="font-size: 1.2rem; font-family: Verdana;">'+
+                                        '<span class="text-dark fw-bold" style="font-size: 1.2rem; font-family: Verdana;">'
+                                            + data.message +
+                                        '</span>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>'
+                    ); 
+                }
+                else
+                {
+                    document.querySelector('#chat-messages-one').innerHTML += 
+                    (
+                        '<div class="row mb-3 pb-0 bg-transparent">'+
+                            '<div class="col-1 bg-transparent pr-1 pt-1 d-flex justify-content-end align-end">'+
+                               // '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"'+ 
+                               //     'class="bi bi-person-circle-fill text-'+userColor+' mr-0 rounded-circle bg-white" viewBox="0 0 16 16">'+
+                               //          '<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>'+
+                               //     '<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>'+
+                               // '</svg>'+
+                               '<img class="img-profile rounded-circle" src="'+photo+'" style="width:30px; height:30px;">'+
+                            '</div>'+
+                            '<div class="col-8 pb-0 pl-1">'+
+                                '<div class="'+alert_color+' pb-1 mb-0 pt-0 pl-1" role="alert">'+
+                                    '<div class="row small pt-1 pl-1" style="font-size: 1.2rem; font-family: Verdana, Arial, Cambria, Cochin, Georgia, Times, sans-serif;">'+
+                                        '<div class="col-2 text-'+ userColor +' mr-0 font-weight-bold small"><small class="fw-bold">'+ data.username.toUpperCase() +'</small></div>'+
+                                        '<div class="col-4 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small class="text-center">'+dateTimeMaisc2+'</small></div>'+
+                                        '<div class="col-3 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>'+duration+'</small></div>'+
+                                    '</div>'+
+                                    '<div class="row pl-1 fw-bold" style="font-size: 1.2rem; font-family: Verdana, Arial, Cambria, Cochin, Georgia, Times, sans-serif;">'+
+                                        '<span class="text-dark fw-bold" style="font-size: 1.2rem; font-family: Verdana, Arial, Cambria, Cochin, Georgia, Times, sans-serif;">' 
+                                            +data.message+ 
+                                        '</span>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>'
+                    ); 
+                }            
+            }
+            else
+            {
+               if(userName == data.username)
+               {
+                document.querySelector('#chat-messages-two').innerHTML += 
+                    (
+                        '<div class="row mb-3 pb-0 bg-transparent d-flex align-items-end flex-column mb-3 pr-3">'+
+                            '<div class="col-8 pb-0 pl-1">'+
+                                '<div class="'+alert_color+' pb-1 mb-0 pt-0 pl-1" role="alert">'+
+                                    '<div class="row small pt-1 pl-1" style="font-size: 1.2rem; font-family: Verdana;">'+
+                                        '<div class="col-2 text-'+ userColor +' font-weight-bold mr-0 small"><small class="fw-bold">'+ data.username.toUpperCase() +'</small></div>'+
+                                        '<div class="col-4 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small class="text-center">'+dateTimeMaisc2+'</small></div>'+
+                                        '<div class="col-3 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>'+duration+'</small></div>'+
+                                    '</div>'+
+                                    '<div class="row pl-1" style="font-size: 1.2rem; font-family: Verdana;">'+
+                                        '<span class="text-dark" style="font-size: 1.2rem; font-family: Verdana">'
+                                            + data.message +
+                                        '</span>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>'
+                    ); 
+                }
+                else
+                {
+                    document.querySelector('#chat-messages-two').innerHTML += 
+                    (
+                        '<div class="row mb-3 pb-0 bg-transparent">'+
+                            '<div class="col-1 bg-transparent pr-1 pt-1 d-flex justify-content-end align-end">'+
+                                '<img class="img-profile rounded-circle" src= "' +photo+ '" style="width:30px; height:30px;">'+
+                            '</div>'+
+                            '<div class="col-8 pb-0 pl-1">'+
+                                '<div class="'+alert_color+' pb-1 mb-0 pt-0 pl-1" role="alert">'+
+                                    '<div class="row small pt-1 pl-1" style="font-size: 1.2rem; font-family: Verdana;">'+
+                                        '<div class="col-2 text-'+ userColor +' mr-0 font-weight-bold small"><small class="fw-bold">'+ data.username.toUpperCase() +'</small></div>'+
+                                        '<div class="col-4 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small class="text-center">'+dateTimeMaisc2+'</small></div>'+
+                                        '<div class="col-3 bg-transparent pl-0 pr-0 pb-0 mb-0 small text-center"><small>'+duration+'</small></div>'+
+                                    '</div>'+
+                                    '<div class="row pl-1 text-dark" style="font-family: Verdana;">'+
+                                        '<span class="text-dark" style="font-size: 1.2rem; font-family: Verdana;">'
+                                            + data.message +
+                                        '</span>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>'
+                    );
+                }
+            }
+        } 
+        else 
+        {
+            alert('The message is empty!');
+            exit();
+        }
+
+        scrollToBottom();
+    };
+
+    if(roomName == firstRoom)
+    {
+        document.querySelector('#chat-message-input').focus();    
+        document.querySelector('#chat-message-input').onkeyup = function(e) {
+            if (e.keyCode === 13) {
+                document.querySelector('#chat-message-submit').click();
+            }
+        };
+
+        document.querySelector('#chat-message-submit').onclick = function(e) {
+            e.preventDefault()
+
+            const messageInputDom = document.querySelector('#chat-message-input');
+            const message = messageInputDom.value;
+
+            /*console.log({
+                'message': message,
+                'username': userName,
+                'room': roomName,
+                'nlp':room_nlp,
+                'photo': user_picture,
+            })*/ 
+
+            chatSocket.send(JSON.stringify({'message':message,'username':userName,'room':roomName, 'nlp':room_nlp, 'photo': user_picture}));
+
+            messageInputDom.value = '';
+
+            return false
+        };
+
+        function scrollToBottom() {
+            let objDiv = document.getElementById("chat-messages-one");
+            objDiv.scrollTop = objDiv.scrollHeight;
+        }
+
+        scrollToBottom();
+    }
+    else
+    {
+        document.querySelector('#chat-message-input-two').focus();    
+        document.querySelector('#chat-message-input-two').onkeyup = function(e) {
+            if (e.keyCode === 13) {
+                document.querySelector('#chat-message-submit-two').click();
+            }
+        };
+
+        document.querySelector('#chat-message-submit-two').onclick = function(e) {
+            e.preventDefault()
+
+            const messageInputDom = document.querySelector('#chat-message-input-two');
+            const message = messageInputDom.value;
+
+
+            /*console.log({
+                'message': message,
+                'username': userName,
+                'room': roomName,
+                'nlp':room_nlp,
+                'photo': user_picture,
+            })*/ 
+
+            chatSocket.send(JSON.stringify({'message':message,'username':userName,'room':roomName, 'nlp':room_nlp, 'photo': user_picture}));
+
+            messageInputDom.value = '';
+
+            return false
+        };
+
+        function scrollToBottom() {
+            let objDiv = document.getElementById("chat-messages-two");
+            objDiv.scrollTop = objDiv.scrollHeight;
+        }
+        
+        scrollToBottom();
+    }
+
+
+    $(document).ready(function() {
+        // Set CSRF token for AJAX requests
+        $.ajaxSetup({
+            headers: { "X-CSRFToken": "{{ csrf_token }}" }
+        });
+
+        // Function to load tasks from the server
+        function loadTasks() {
+            $.ajax({
+                url: '/tasks/get_tasks/',
+                method: 'GET',
+                success: function(data) {
+                    $('#taskList').empty();
+                    data.forEach(function(task) {
+                        var taskItem = '<li>' +
+                            '<div class="form-check form-switch">'+
+                            '<input class="form-check-input" type="checkbox" role="switch" ' + (task.completed ? 'checked' : '') + '>' +
+                            '</div>'+
+                            '</li>';
+                        $('#taskList').append(taskItem);
+                    });
+                    $('#taskList2').empty();
+                    data.forEach(function(task) {
+                        var taskItem = '<li>' +
+                            '<div class="form-check form-switch">'+
+                            '<input class="form-check-input" type="checkbox" role="switch" ' + (task.completed ? 'checked' : '') + '>' +
+                            '</div>'+
+                            '</li>';
+                        $('#taskList2').append(taskItem);
+                    });
+                }
+            });
+        }
+
+
+        // Function to update task status
+        $('#taskList').on('change', 'input[type="checkbox"]', function() {
+           // var roomId = $(this).siblings('.deleteTaskBtn').data('id');
+            var nlp = $(this).prop('checked');
+            var rom = document.getElementById('rom').value;
+            //alert('nlp : '+nlp+' rom : '+rom2);
+            $.ajax({
+                url: '/room/room_nlp/'+rom+'/',
+                method: 'POST',
+                data: { nlp: nlp },
+                cache:false,
+                success: function() {
+                   //alert('YES');
+                   document.getElementById("form_toogle").submit();
+                }
+            });            
+        });
+
+        // Function to update task status
+        $('#taskList2').on('change', 'input[type="checkbox"]', function() {
+           // var roomId = $(this).siblings('.deleteTaskBtn').data('id');
+            var nlp = $(this).prop('checked');
+            var rom = document.getElementById('rom2').value;
+            //alert('nlp : '+nlp+' rom : '+rom2);
+            $.ajax({
+                url: '/room/room_nlp/'+rom+'/',
+                method: 'POST',
+                data: { nlp: nlp },
+                success: function() {
+                    document.getElementById("form_toogle").submit();
+                }
+            });
+            
+        });
+
+        // Function to delete a task
+        $('#taskList2').on('click', '.deleteTaskBtn', function() {
+            var taskId = $(this).data('id');
+            $.ajax({
+                url: '/tasks/delete_task/',
+                method: 'POST',
+                data: { id: taskId },
+                success: function() {
+                    loadTasks();
+                }
+            });
+        });
+
+        // Function to add a new task
+        $('#addTaskBtn').click(function() {
+            var title = $('#taskInput').val();
+            $.ajax({
+                url: '/tasks/add_task/',
+                method: 'POST',
+                data: { title: title },
+                success: function() {
+                    $('#taskInput').val('');
+                    loadTasks();
+                }
+            });
+        });
+
+    });
+</script>
+
+{% endblock %}
+

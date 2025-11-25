@@ -1,0 +1,389 @@
+[
+  [
+    "Chegamos ao local. A fumaça é visível a uma grande distância",
+    {
+      "entities": [
+        [
+          12,
+          17,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Sim está bem denso. Precisamos confirmar o número de sobreviventes",
+    {
+      "entities": [
+        [
+          53,
+          66,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Equipe preparem os equipamentos de resgate",
+    {
+      "entities": [
+        [
+          30,
+          42,
+          "DEVICE"
+        ],
+        [
+          11,
+          17,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguma confirmação de explosões secundárias?",
+    {
+      "entities": [
+        [
+          0,
+          44,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não nenhuma até agora. Mas a área ainda é instável",
+    {
+      "entities": [
+        [
+          29,
+          33,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Identifiquem uma zona segura para os feridos",
+    {
+      "entities": [
+        [
+          37,
+          44,
+          "PLAYER"
+        ],
+        [
+          17,
+          21,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Ótimo. Montem a tenda de triagem lá",
+    {
+      "entities": [
+        [
+          16,
+          21,
+          "SUPPLIES"
+        ]
+      ]
+    }
+  ],
+  [
+    "Preciso de uma atualização sobre o acesso das ambulâncias",
+    {
+      "entities": [
+        [
+          46,
+          57,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "A estrada principal está bloqueada por destroços. Estamos coordenando um desvio",
+    {
+      "entities": [
+        [
+          2,
+          9,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Equipe de apoio removam o que puderem do caminho",
+    {
+      "entities": [
+        [
+          10,
+          16,
+          "UNIT"
+        ],
+        [
+          26,
+          33,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "O fogo está controlado?",
+    {
+      "entities": [
+        [
+          2,
+          6,
+          "EVENT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Ainda não. Precisamos de reforço dos bombeiros",
+    {
+      "entities": [
+        [
+          37,
+          46,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguma comunicação com o controle de tráfego aéreo?",
+    {
+      "entities": [
+        [
+          25,
+          44,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Sim confirmaram que havia 120 passageiros e 5 tripulantes",
+    {
+      "entities": [
+        [
+          30,
+          41,
+          "PLAYER"
+        ],
+        [
+          46,
+          57,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Quantos sobreviventes até agora?",
+    {
+      "entities": [
+        [
+          8,
+          21,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Continue a busca. Há alguém preso nas ferragens?",
+    {
+      "entities": [
+        [
+          18,
+          48,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Mantenham a segurança de todos. Algum sinal da caixa-preta?",
+    {
+      "entities": [
+        [
+          47,
+          58,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Equipes estão com máscaras e lanternas",
+    {
+      "entities": [
+        [
+          10,
+          17,
+          "UNIT"
+        ],
+        [
+          28,
+          36,
+          "DEVICE"
+        ],
+        [
+          39,
+          48,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Temos alguém da companhia aérea aqui?",
+    {
+      "entities": [
+        [
+          16,
+          31,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguma confirmação da carga transportada?",
+    {
+      "entities": [
+        [
+          0,
+          41,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Há alguma suspeita de vazamento?",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Continuem reportando qualquer alteração. Priorizem as vidas humanas",
+    {
+      "entities": [
+        [
+          41,
+          50,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Há uma área de maior concentração de destroços no setor norte",
+    {
+      "entities": [
+        [
+          67,
+          72,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Redobrem os esforços nesse ponto",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais médicos no local",
+    {
+      "entities": [
+        [
+          19,
+          26,
+          "PLAYER"
+        ],
+        [
+          30,
+          35,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Estamos chamando reforços do hospital regional",
+    {
+      "entities": [
+        [
+          38,
+          46,
+          "PLACE"
+        ],
+        [
+          29,
+          37,
+          "PLACE"
+        ],
+        [
+          17,
+          25,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém conseguiu acessar os registros de voo?",
+    {
+      "entities": [
+        [
+          0,
+          45,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Priorize a retirada dos corpos. Precisamos de identificação rápida",
+    {
+      "entities": [
+        [
+          24,
+          30,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "O comando central pediu uma estimativa de tempo para controlar a situação",
+    {
+      "entities": [
+        [
+          2,
+          9,
+          "UNIT"
+        ]
+      ]
+    }
+  ]
+]

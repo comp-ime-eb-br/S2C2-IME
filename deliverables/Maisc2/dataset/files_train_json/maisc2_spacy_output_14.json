@@ -1,0 +1,1939 @@
+[
+  [
+    "Chegamos ao local. A fumaça é visível a uma grande distância# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Alguma confirmação de explosões secundárias?# ",
+    {
+      "entities": [
+        [
+          44,
+          45,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Identifiquem uma zona segura para os feridos# ",
+    {
+      "entities": [
+        [
+          44,
+          45,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Ótimo. Montem a tenda de triagem lá# ",
+    {
+      "entities": [
+        [
+          35,
+          36,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Equipe de apoio removam o que puderem do caminho# ",
+    {
+      "entities": [
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguma comunicação com o controle de tráfego aéreo?# ",
+    {
+      "entities": [
+        [
+          51,
+          52,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Quantos sobreviventes até agora?# ",
+    {
+      "entities": [
+        [
+          32,
+          33,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Continue a busca. Há alguém preso nas ferragens?# ",
+    {
+      "entities": [
+        [
+          48,
+          49,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Mantenham a segurança de todos. Algum sinal da caixa-preta?# ",
+    {
+      "entities": [
+        [
+          59,
+          60,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Temos alguém da companhia aérea aqui?# ",
+    {
+      "entities": [
+        [
+          37,
+          38,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguma confirmação da carga transportada?# ",
+    {
+      "entities": [
+        [
+          41,
+          42,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Há alguma suspeita de vazamento?# ",
+    {
+      "entities": [
+        [
+          43,
+          44,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "As condições meteorológicas estão colaborando?# ",
+    {
+      "entities": [
+        [
+          46,
+          47,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Redobrem os esforços nesse ponto# ",
+    {
+      "entities": [
+        [
+          32,
+          33,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém conseguiu acessar os registros de voo?# ",
+    {
+      "entities": [
+        [
+          45,
+          46,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Priorize a retirada dos corpos. Precisamos de identificação rápida# ",
+    {
+      "entities": [
+        [
+          66,
+          67,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "O comando central pediu uma estimativa de tempo para controlar a situação# ",
+    {
+      "entities": [
+        [
+          73,
+          74,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "O acesso secundário está funcional?# ",
+    {
+      "entities": [
+        [
+          35,
+          36,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "A comunicação com os familiares das vítimas foi estabelecida?# ",
+    {
+      "entities": [
+        [
+          61,
+          62,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém está monitorando os sobreviventes no hospital?# ",
+    {
+      "entities": [
+        [
+          53,
+          54,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Vocês já avaliaram a possibilidade de usar drones para mapear a área?# ",
+    {
+      "entities": [
+        [
+          69,
+          70,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Algum sinal de sobreviventes nas zonas periféricas do impacto?# ",
+    {
+      "entities": [
+        [
+          62,
+          63,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Mantenham as equipes longe dessas áreas até avaliarem# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Como estão os suprimentos médicos?# ",
+    {
+      "entities": [
+        [
+          34,
+          35,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Confirmem a chegada dos reforços médicos# ",
+    {
+      "entities": [
+        [
+          40,
+          41,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Há alguma informação adicional da torre de controle?# ",
+    {
+      "entities": [
+        [
+          52,
+          53,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Os bombeiros já conseguiram isolar todos os focos de incêndio?# ",
+    {
+      "entities": [
+        [
+          62,
+          63,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Há algum risco ambiental devido ao combustível vazado?# ",
+    {
+      "entities": [
+        [
+          54,
+          55,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém conseguiu entrevistar testemunhas no local?# ",
+    {
+      "entities": [
+        [
+          50,
+          51,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais mangueiras na parte oeste. O calor está intenso# ",
+    {
+      "entities": [
+        [
+          66,
+          67,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "A confirmação da causa inicial do incêndio já foi feita?# ",
+    {
+      "entities": [
+        [
+          56,
+          57,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Há alguma confirmação de pessoas presas nos edifícios?# ",
+    {
+      "entities": [
+        [
+          54,
+          55,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Qual é a condição das vítimas resgatadas?# ",
+    {
+      "entities": [
+        [
+          41,
+          42,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais suprimentos médicos no ponto de triagem# ",
+    {
+      "entities": [
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Há algum sinal de colapso estrutural no prédio central?# ",
+    {
+      "entities": [
+        [
+          55,
+          56,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Como está o suprimento de água para os caminhões?# ",
+    {
+      "entities": [
+        [
+          49,
+          50,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguma atualização sobre o progresso no setor sul?# ",
+    {
+      "entities": [
+        [
+          50,
+          51,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "O calor está muito intenso no setor norte. Como estão os equipamentos?# ",
+    {
+      "entities": [
+        [
+          70,
+          71,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "A comunicação com as equipes de apoio está funcional?# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Certifiquem-se de que todos os relatórios sejam enviados ao comando central# ",
+    {
+      "entities": [
+        [
+          75,
+          76,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Qual é a previsão para extinguir o incêndio completamente?# ",
+    {
+      "entities": [
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Informem ao comando central. Precisamos de reforço aéreo?# ",
+    {
+      "entities": [
+        [
+          57,
+          58,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Alfa aqui é o comando. Confirmem a posição inimiga# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Entendido posicionem a artilharia para apoio# ",
+    {
+      "entities": [
+        [
+          44,
+          45,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Delta preparem os explosivos para bloquear a rota de fuga ao sul# ",
+    {
+      "entities": [
+        [
+          71,
+          72,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando estamos sob fogo pesado. Precisamos de suporte imediato# ",
+    {
+      "entities": [
+        [
+          63,
+          64,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Eco confirmem a condição da rota de evacuação# ",
+    {
+      "entities": [
+        [
+          52,
+          53,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Inimigos tentando um contra-ataque. Reforcem a linha central imediatamente# ",
+    {
+      "entities": [
+        [
+          74,
+          75,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Alfa avancem para neutralizar o restante das tropas# ",
+    {
+      "entities": [
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Inimigos recuando. Solicitamos apoio para garantir a área# ",
+    {
+      "entities": [
+        [
+          57,
+          58,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Eco estabeleçam um posto de observação no morro ao norte# ",
+    {
+      "entities": [
+        [
+          63,
+          64,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Bravo confirmem progresso na consolidação do flanco esquerdo# ",
+    {
+      "entities": [
+        [
+          67,
+          68,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Delta atualizem sobre a condição do equipamento pesado# ",
+    {
+      "entities": [
+        [
+          61,
+          62,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Alfa preparem-se para avançar para a próxima posição# ",
+    {
+      "entities": [
+        [
+          59,
+          60,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando necessitamos de suprimentos. Estoque de munição reduzido# ",
+    {
+      "entities": [
+        [
+          64,
+          65,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Inimigos tentam infiltrar pelo setor leste. Precisamos de suporte imediato# ",
+    {
+      "entities": [
+        [
+          74,
+          75,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Delta mantenham a pressão no setor sul. Prioridade é evitar recuo inimigo# ",
+    {
+      "entities": [
+        [
+          80,
+          81,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Alfa relatem progresso na interseção de 040# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Equipe Bravo atualizem sobre as condições climáticas no setor oeste# ",
+    {
+      "entities": [
+        [
+          67,
+          68,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Artilharia nossa em posição. Fogo liberado# ",
+    {
+      "entities": [
+        [
+          52,
+          53,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Eco verifiquem as condições da ponte no setor leste# ",
+    {
+      "entities": [
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Bravo relatem o status do pelotão 2# ",
+    {
+      "entities": [
+        [
+          42,
+          43,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Confirme se a pista de acesso está liberada para as ambulâncias# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Verifiquem se há risco de explosão secundária# ",
+    {
+      "entities": [
+        [
+          45,
+          46,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém localizou a caixa-preta?# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Podem acionar o suporte aéreo dos bombeiros para conter o fogo?# ",
+    {
+      "entities": [
+        [
+          63,
+          64,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Confirme se os bombeiros já chegaram no perímetro sul# ",
+    {
+      "entities": [
+        [
+          53,
+          54,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém encontrou sobreviventes ou sinais de vida?# ",
+    {
+      "entities": [
+        [
+          49,
+          50,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém avistou algum foco de fogo na parte traseira?# ",
+    {
+      "entities": [
+        [
+          51,
+          53,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais lanternas para a busca noturna# ",
+    {
+      "entities": [
+        [
+          49,
+          50,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem se há vazamento de combustível naquela seção# ",
+    {
+      "entities": [
+        [
+          55,
+          56,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Ouviu aquele barulho? Verifiquem se há alguma estrutura desabando# ",
+    {
+      "entities": [
+        [
+          65,
+          66,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Podem confirmar a presença de equipes de apoio psicológico?# ",
+    {
+      "entities": [
+        [
+          59,
+          60,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem se o rádio de emergência da aeronave foi acionado# ",
+    {
+      "entities": [
+        [
+          60,
+          61,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Avisem a todos para não retirarem objetos do local# ",
+    {
+      "entities": [
+        [
+          50,
+          51,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém conseguiu falar com os bombeiros que ficaram presos no tráfego?# ",
+    {
+      "entities": [
+        [
+          70,
+          71,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Reforcem o pedido de apoio médico especializado# ",
+    {
+      "entities": [
+        [
+          47,
+          48,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Temos lama no terreno cuidado para não atolarem os veículos# ",
+    {
+      "entities": [
+        [
+          59,
+          60,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Estão todos com equipamento de proteção completo?# ",
+    {
+      "entities": [
+        [
+          49,
+          50,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem se a parte do cockpit está identificada# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Alguém tem algum contato com o controle de voo?# ",
+    {
+      "entities": [
+        [
+          47,
+          48,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem se temos mapas detalhados do terreno# ",
+    {
+      "entities": [
+        [
+          47,
+          48,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Mantenham uma linha de visão clara entre as equipes# ",
+    {
+      "entities": [
+        [
+          51,
+          52,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Peguem extintores portáteis pode haver focos pequenos# ",
+    {
+      "entities": [
+        [
+          53,
+          54,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de uma contagem exata de quantas pessoas estavam a bordo# ",
+    {
+      "entities": [
+        [
+          67,
+          68,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Confirme se há algum vazamento químico além de combustível# ",
+    {
+      "entities": [
+        [
+          58,
+          57,
+          "PRIORITY"
+        ],
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Podem me informar se há contato visual com a equipe K9?# ",
+    {
+      "entities": [
+        [
+          55,
+          56,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Mantenham distância de pelo menos 50 metros daquele foco de incêndio# ",
+    {
+      "entities": [
+        [
+          68,
+          69,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Abram passagem para que o caminhão de bombeiros avance# ",
+    {
+      "entities": [
+        [
+          54,
+          55,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Localizaram algum passageiro com vida até agora?# ",
+    {
+      "entities": [
+        [
+          48,
+          49,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não removam corpos ou pertences sem o procedimento correto# ",
+    {
+      "entities": [
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais voluntários para ajudar no isolamento# ",
+    {
+      "entities": [
+        [
+          56,
+          57,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem se o calor está danificando algum equipamento sensível# ",
+    {
+      "entities": [
+        [
+          65,
+          66,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Mantenham os caminhos de saída livres para deslocamento rápido# ",
+    {
+      "entities": [
+        [
+          62,
+          63,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "A guarda civil já bloqueou a entrada principal?# ",
+    {
+      "entities": [
+        [
+          47,
+          48,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Podem confirmar se há trilhas de fumaça em outras áreas?# ",
+    {
+      "entities": [
+        [
+          56,
+          57,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Tragam lonas para cobrir as partes cruciais para investigação# ",
+    {
+      "entities": [
+        [
+          61,
+          62,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Vocês viram a equipe de paramédicos no setor B?# ",
+    {
+      "entities": [
+        [
+          47,
+          48,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Algum relato de vozes ou sons pedindo ajuda?# ",
+    {
+      "entities": [
+        [
+          44,
+          45,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem se o trem de pouso está em algum lugar visível# ",
+    {
+      "entities": [
+        [
+          57,
+          58,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "A aeronave estava com carga extra? Precisamos confirmar# ",
+    {
+      "entities": [
+        [
+          55,
+          56,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Solicitem ao controle local que desligue qualquer rede elétrica próxima# ",
+    {
+      "entities": [
+        [
+          71,
+          72,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "A marinha foi informada? Há um rio próximo que pode ter destroços# ",
+    {
+      "entities": [
+        [
+          65,
+          66,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de sacos especiais para recolher fragmentos e evidências# ",
+    {
+      "entities": [
+        [
+          67,
+          68,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém está monitorando as condições climáticas para as próximas horas?# ",
+    {
+      "entities": [
+        [
+          71,
+          72,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Chequem se há pontos de calor usando câmeras térmicas# ",
+    {
+      "entities": [
+        [
+          53,
+          54,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Realizem a triagem de pequenas partes metálicas para a perícia# ",
+    {
+      "entities": [
+        [
+          62,
+          63,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Anotem as coordenadas exatas de cada achado# ",
+    {
+      "entities": [
+        [
+          43,
+          44,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Quem está encarregado de registrar o relatório fotográfico?# ",
+    {
+      "entities": [
+        [
+          59,
+          60,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem se há comunicação com o hospital regional# ",
+    {
+      "entities": [
+        [
+          52,
+          53,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não iniciem a remoção dos destroços até a perícia autorizar# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Mantenham o caminho livre para os paramédicos# ",
+    {
+      "entities": [
+        [
+          45,
+          46,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém tem uma contagem de quantos setores já foram vasculhados?# ",
+    {
+      "entities": [
+        [
+          63,
+          65,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Usem coletes refletivos para melhor visibilidade mútua# ",
+    {
+      "entities": [
+        [
+          54,
+          55,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Formem grupos de três para explorar a zona oeste# ",
+    {
+      "entities": [
+        [
+          48,
+          49,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Documentem tudo que encontrarem com fotos e vídeos# ",
+    {
+      "entities": [
+        [
+          50,
+          51,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Já acionaram a defesa civil para apoio logístico?# ",
+    {
+      "entities": [
+        [
+          49,
+          50,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Confiram se há rastro de combustível no córrego próximo# ",
+    {
+      "entities": [
+        [
+          55,
+          56,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem o estado do terreno antes de estacionar veículos pesados# ",
+    {
+      "entities": [
+        [
+          67,
+          68,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Marquem onde cada parte da aeronave é encontrada# ",
+    {
+      "entities": [
+        [
+          48,
+          49,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais cordas e ganchos para estabilizar peças# ",
+    {
+      "entities": [
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Conseguiram confirmar a rota exata do voo junto à torre?# ",
+    {
+      "entities": [
+        [
+          56,
+          57,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem as condições de saúde de todos os membros da equipe# ",
+    {
+      "entities": [
+        [
+          62,
+          63,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Usem detectores de calor para localizar possíveis focos# ",
+    {
+      "entities": [
+        [
+          55,
+          56,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Evitem usar celulares próximos ao vazamento de combustível# ",
+    {
+      "entities": [
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Estão todos cientes das últimas orientações da central?# ",
+    {
+      "entities": [
+        [
+          55,
+          56,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Checaram a existência de algum sinalizador ativo no local?# ",
+    {
+      "entities": [
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Mantenham o controle de entrada e saída de pessoal# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Recolham amostras de solo para a perícia# ",
+    {
+      "entities": [
+        [
+          40,
+          41,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Localizaram os coletes salva-vidas ou botes de emergência?# ",
+    {
+      "entities": [
+        [
+          58,
+          59,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Era um voo doméstico ou internacional? Precisamos confirmar# ",
+    {
+      "entities": [
+        [
+          59,
+          60,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "A torre relatou algum problema técnico antes da queda?# ",
+    {
+      "entities": [
+        [
+          54,
+          55,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Peçam a todos que desliguem aparelhos que não sejam de uso profissional# ",
+    {
+      "entities": [
+        [
+          71,
+          72,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Isolem a área do radar de altitude se o encontrarem# ",
+    {
+      "entities": [
+        [
+          51,
+          52,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém viu restos do painel de controle?# ",
+    {
+      "entities": [
+        [
+          40,
+          41,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Quem está com o mapa digital para marcar as zonas já investigadas?# ",
+    {
+      "entities": [
+        [
+          66,
+          67,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Sigam sempre o protocolo de segurança em cenários de queda de avião# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Será que a aeronave soltou algum alerta de emergência antes de cair?# ",
+    {
+      "entities": [
+        [
+          68,
+          69,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Marquem a posição de cada pedaço grande de destroço# ",
+    {
+      "entities": [
+        [
+          51,
+          52,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Quem está responsável pelas anotações de cada descoberta?# ",
+    {
+      "entities": [
+        [
+          57,
+          58,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém localizou o estabilizador horizontal?# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Mantenham comunicação com a base a cada cinco minutos# ",
+    {
+      "entities": [
+        [
+          53,
+          54,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não deixem a população local se aproximar dos destroços# ",
+    {
+      "entities": [
+        [
+          55,
+          56,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "O piloto conseguiu tentar pouso de emergência? Não sabemos ainda# ",
+    {
+      "entities": [
+        [
+          64,
+          65,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não mexam em painéis até os investigadores autorizarem# ",
+    {
+      "entities": [
+        [
+          54,
+          55,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não liguem equipamentos elétricos perto do vazamento de combustível# ",
+    {
+      "entities": [
+        [
+          67,
+          68,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Aguarde confirmação antes de mexer naquele painel elétrico# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Quem está coordenando a equipe de buscas noturnas?# ",
+    {
+      "entities": [
+        [
+          50,
+          51,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Estão todos com lanternas e baterias extras?# ",
+    {
+      "entities": [
+        [
+          44,
+          45,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Evitem pisar onde não há visibilidade do terreno# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "A aeronave transportava carga especial? Ainda não sabemos# ",
+    {
+      "entities": [
+        [
+          38,
+          39,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Peçam ao comando para enviar mais máscaras com filtro# ",
+    {
+      "entities": [
+        [
+          53,
+          54,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem os arredores para objetos que podem ter sido arremessados# ",
+    {
+      "entities": [
+        [
+          68,
+          69,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "A encosta ali está instável não se aproximem sem suporte# ",
+    {
+      "entities": [
+        [
+          56,
+          57,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não comam ou bebam nada próximo aos destroços pode haver contaminação# ",
+    {
+      "entities": [
+        [
+          69,
+          70,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Usem cordas para demarcar o caminho seguro# ",
+    {
+      "entities": [
+        [
+          42,
+          43,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Certifiquem-se de desligar qualquer fonte de ignição# ",
+    {
+      "entities": [
+        [
+          52,
+          53,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem se a fuselagem tem qualquer rombo que indique explosão# ",
+    {
+      "entities": [
+        [
+          65,
+          66,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Certifiquem-se de que a segurança do local está 100 % antes de avançar# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Verifiquem se há escorpiões ou cobras nos destroços# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Desliguem os faróis dos veículos que não estejam em uso# ",
+    {
+      "entities": [
+        [
+          55,
+          56,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Apoiem a equipe forense na coleta de provas# ",
+    {
+      "entities": [
+        [
+          43,
+          44,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Preparem lanternas especiais para penetrar a fumaça# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Se algum civil se aproximar peçam para se afastar imediatamente# ",
+    {
+      "entities": [
+        [
+          63,
+          64,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Marquem no mapa digital cada local de resgate potencial# ",
+    {
+      "entities": [
+        [
+          55,
+          56,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Continuem procurando passageiros fora do perímetro imediato# ",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Alguém já checou o estado das baterias das lanternas e rádios?# ",
+    {
+      "entities": [
+        [
+          62,
+          63,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não perturbem qualquer local potencial de evidência# ",
+    {
+      "entities": [
+        [
+          51,
+          52,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Marquem as coordenadas usando GPS# ",
+    {
+      "entities": [
+        [
+          33,
+          34,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não retirem nada sem o protocolo correto de coleta de evidências# ",
+    {
+      "entities": [
+        [
+          64,
+          65,
+          "PRIORITY"
+        ]
+      ]
+    }
+  ]
+]

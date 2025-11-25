@@ -1,0 +1,2718 @@
+[
+  [
+    "Chegamos ao local. A fumaça é visível a uma grande distância",
+    {
+      "entities": [
+        [
+          12,
+          17,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Sim está bem denso. Precisamos confirmar o número de sobreviventes",
+    {
+      "entities": [
+        [
+          53,
+          66,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Equipe preparem os equipamentos de resgate",
+    {
+      "entities": [
+        [
+          30,
+          42,
+          "DEVICE"
+        ],
+        [
+          11,
+          17,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguma confirmação de explosões secundárias?",
+    {
+      "entities": [
+        [
+          0,
+          44,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não nenhuma até agora. Mas a área ainda é instável",
+    {
+      "entities": [
+        [
+          29,
+          33,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Identifiquem uma zona segura para os feridos",
+    {
+      "entities": [
+        [
+          37,
+          44,
+          "PLAYER"
+        ],
+        [
+          17,
+          21,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Ótimo. Montem a tenda de triagem lá",
+    {
+      "entities": [
+        [
+          16,
+          21,
+          "SUPPLIES"
+        ]
+      ]
+    }
+  ],
+  [
+    "Preciso de uma atualização sobre o acesso das ambulâncias",
+    {
+      "entities": [
+        [
+          46,
+          57,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "A estrada principal está bloqueada por destroços. Estamos coordenando um desvio",
+    {
+      "entities": [
+        [
+          2,
+          9,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Equipe de apoio removam o que puderem do caminho",
+    {
+      "entities": [
+        [
+          10,
+          16,
+          "UNIT"
+        ],
+        [
+          26,
+          33,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "O fogo está controlado?",
+    {
+      "entities": [
+        [
+          2,
+          6,
+          "EVENT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Ainda não. Precisamos de reforço dos bombeiros",
+    {
+      "entities": [
+        [
+          37,
+          46,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguma comunicação com o controle de tráfego aéreo?",
+    {
+      "entities": [
+        [
+          25,
+          44,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Sim confirmaram que havia 120 passageiros e 5 tripulantes",
+    {
+      "entities": [
+        [
+          30,
+          41,
+          "PLAYER"
+        ],
+        [
+          46,
+          57,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Quantos sobreviventes até agora?",
+    {
+      "entities": [
+        [
+          8,
+          21,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Continue a busca. Há alguém preso nas ferragens?",
+    {
+      "entities": [
+        [
+          18,
+          48,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Mantenham a segurança de todos. Algum sinal da caixa-preta?",
+    {
+      "entities": [
+        [
+          47,
+          58,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Equipes estão com máscaras e lanternas",
+    {
+      "entities": [
+        [
+          10,
+          17,
+          "UNIT"
+        ],
+        [
+          28,
+          36,
+          "DEVICE"
+        ],
+        [
+          39,
+          48,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Temos alguém da companhia aérea aqui?",
+    {
+      "entities": [
+        [
+          16,
+          31,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguma confirmação da carga transportada?",
+    {
+      "entities": [
+        [
+          0,
+          41,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Há alguma suspeita de vazamento?",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Continuem reportando qualquer alteração. Priorizem as vidas humanas",
+    {
+      "entities": [
+        [
+          41,
+          50,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Há uma área de maior concentração de destroços no setor norte",
+    {
+      "entities": [
+        [
+          67,
+          72,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Redobrem os esforços nesse ponto",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais médicos no local",
+    {
+      "entities": [
+        [
+          19,
+          26,
+          "PLAYER"
+        ],
+        [
+          30,
+          35,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Estamos chamando reforços do hospital regional",
+    {
+      "entities": [
+        [
+          38,
+          46,
+          "PLACE"
+        ],
+        [
+          29,
+          37,
+          "PLACE"
+        ],
+        [
+          17,
+          25,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém conseguiu acessar os registros de voo?",
+    {
+      "entities": [
+        [
+          0,
+          45,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Priorize a retirada dos corpos. Precisamos de identificação rápida",
+    {
+      "entities": [
+        [
+          24,
+          30,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "O comando central pediu uma estimativa de tempo para controlar a situação",
+    {
+      "entities": [
+        [
+          2,
+          9,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Informem ao comando. Precisamos de suporte aéreo para a busca",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "DEMAND"
+        ],
+        [
+          12,
+          19,
+          "UNIT"
+        ],
+        [
+          35,
+          48,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Um helicóptero deve chegar em breve",
+    {
+      "entities": [
+        [
+          3,
+          14,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "O acesso secundário está funcional?",
+    {
+      "entities": [
+        [
+          0,
+          35,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Enviem os veículos menores por lá",
+    {
+      "entities": [
+        [
+          10,
+          18,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "A comunicação com os familiares das vítimas foi estabelecida?",
+    {
+      "entities": [
+        [
+          36,
+          43,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Sim uma equipe está dedicada a isso",
+    {
+      "entities": [
+        [
+          8,
+          14,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém está monitorando os sobreviventes no hospital?",
+    {
+      "entities": [
+        [
+          0,
+          53,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Sim uma equipe de apoio está lá",
+    {
+      "entities": [
+        [
+          8,
+          14,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "O local é de difícil acesso equipes de apoio estão tendo dificuldade",
+    {
+      "entities": [
+        [
+          2,
+          7,
+          "PLACE"
+        ],
+        [
+          28,
+          35,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Vocês já avaliaram a possibilidade de usar drones para mapear a área?",
+    {
+      "entities": [
+        [
+          43,
+          49,
+          "DEVICE"
+        ],
+        [
+          64,
+          68,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Algum sinal de sobreviventes nas zonas periféricas do impacto?",
+    {
+      "entities": [
+        [
+          33,
+          38,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não até agora mas vamos ampliar o perímetro da busca",
+    {
+      "entities": [
+        [
+          34,
+          43,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos verificar se todas as vias de acesso estão seguras",
+    {
+      "entities": [
+        [
+          33,
+          37,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Há sinais de instabilidade em algumas estruturas no setor sul",
+    {
+      "entities": [
+        [
+          58,
+          61,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Mantenham as equipes longe dessas áreas até avaliarem",
+    {
+      "entities": [
+        [
+          24,
+          31,
+          "UNIT"
+        ],
+        [
+          45,
+          50,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Como estão os suprimentos médicos?",
+    {
+      "entities": [
+        [
+          26,
+          33,
+          "PLAYER"
+        ],
+        [
+          14,
+          25,
+          "SUPPLIES"
+        ]
+      ]
+    }
+  ],
+  [
+    "Confirmem a chegada dos reforços médicos",
+    {
+      "entities": [
+        [
+          33,
+          40,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Há alguma informação adicional da torre de controle?",
+    {
+      "entities": [
+        [
+          34,
+          51,
+          "UNIT"
+        ],
+        [
+          0,
+          52,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Os bombeiros já conseguiram isolar todos os focos de incêndio?",
+    {
+      "entities": [
+        [
+          3,
+          12,
+          "PLAYER"
+        ],
+        [
+          53,
+          61,
+          "EVENT"
+        ],
+        [
+          0,
+          62,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Continuem atualizando sobre a situação da caixa-preta",
+    {
+      "entities": [
+        [
+          0,
+          9,
+          "DEMAND"
+        ],
+        [
+          42,
+          53,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Então vamos redistribuir as equipes para cobrir tudo com eficácia",
+    {
+      "entities": [
+        [
+          28,
+          35,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Há algum risco ambiental devido ao combustível vazado?",
+    {
+      "entities": []
+    }
+  ],
+  [
+    "Sim mas a equipe de emergência química já está lidando com isso",
+    {
+      "entities": [
+        [
+          10,
+          16,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém conseguiu entrevistar testemunhas no local?",
+    {
+      "entities": [
+        [
+          29,
+          40,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais recursos para a área de triagem",
+    {
+      "entities": [
+        [
+          19,
+          27,
+          "SUPPLIES"
+        ]
+      ]
+    }
+  ],
+  [
+    "Reforços estão a caminho com mais equipamentos",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "UNIT"
+        ],
+        [
+          34,
+          46,
+          "SUPPLIES"
+        ]
+      ]
+    }
+  ],
+  [
+    "Continuem mantendo uma comunicação constante com o comando central",
+    {
+      "entities": [
+        [
+          51,
+          66,
+          "UNIT"
+        ],
+        [
+          0,
+          9,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Chegamos ao local. O fogo está se espalhando rapidamente",
+    {
+      "entities": [
+        [
+          21,
+          25,
+          "EVENT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais mangueiras na parte oeste. O calor está intenso",
+    {
+      "entities": [
+        [
+          39,
+          44,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "O caminhão de reforço com mais água está a caminho. Deve chegar em 10 minutos",
+    {
+      "entities": [
+        [
+          2,
+          10,
+          "VEHICLE"
+        ],
+        [
+          14,
+          21,
+          "UNIT"
+        ],
+        [
+          31,
+          35,
+          "SUPPLIES"
+        ]
+      ]
+    }
+  ],
+  [
+    "A confirmação da causa inicial do incêndio já foi feita?",
+    {
+      "entities": [
+        [
+          34,
+          42,
+          "EVENT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não ainda. Equipe de perícia está avaliando",
+    {
+      "entities": [
+        [
+          11,
+          17,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Estamos utilizando drones para monitorar os pontos críticos",
+    {
+      "entities": [
+        [
+          30,
+          36,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "A visibilidade está baixa. Todos precisam de máscaras de proteção e lanternas",
+    {
+      "entities": [
+        [
+          45,
+          53,
+          "DEVICE"
+        ],
+        [
+          68,
+          77,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Todas as equipes estão equipadas",
+    {
+      "entities": [
+        [
+          19,
+          26,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos evacuar as residências próximas. O fogo pode se espalhar rapidamente",
+    {
+      "entities": [
+        [
+          46,
+          50,
+          "EVENT"
+        ],
+        [
+          22,
+          33,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipes de evacuação já estão em ação na região leste",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          48,
+          53,
+          "DIRECTION"
+        ],
+        [
+          41,
+          47,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Há alguma confirmação de pessoas presas nos edifícios?",
+    {
+      "entities": [
+        [
+          44,
+          53,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Sim recebemos uma chamada do terceiro andar do prédio ao sul",
+    {
+      "entities": [
+        [
+          47,
+          53,
+          "PLACE"
+        ],
+        [
+          57,
+          60,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe de resgate priorizem essa localização imediatamente",
+    {
+      "entities": [
+        [
+          0,
+          6,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Estamos utilizando espuma química para reduzir o risco",
+    {
+      "entities": [
+        [
+          30,
+          44,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Vamos deslocar o contingente para o lado norte",
+    {
+      "entities": [
+        [
+          51,
+          56,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Qual é a condição das vítimas resgatadas?",
+    {
+      "entities": [
+        [
+          22,
+          29,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Duas estão com queimaduras graves sendo atendidas pela equipe médica",
+    {
+      "entities": [
+        [
+          62,
+          68,
+          "PLAYER"
+        ],
+        [
+          55,
+          61,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais suprimentos médicos no ponto de triagem",
+    {
+      "entities": [
+        [
+          19,
+          30,
+          "SUPPLIES"
+        ],
+        [
+          31,
+          38,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Reforços médicos estão a caminho ETA em 15 minutos",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "UNIT"
+        ],
+        [
+          9,
+          16,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Há algum sinal de colapso estrutural no prédio central?",
+    {
+      "entities": [
+        [
+          40,
+          46,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Evacuem todos das proximidades desse prédio imediatamente",
+    {
+      "entities": [
+        [
+          37,
+          43,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Vamos marcar a área como perigosa",
+    {
+      "entities": [
+        [
+          26,
+          30,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Como está o suprimento de água para os caminhões?",
+    {
+      "entities": [
+        [
+          12,
+          22,
+          "SUPPLIES"
+        ],
+        [
+          26,
+          30,
+          "SUPPLIES"
+        ],
+        [
+          39,
+          48,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Reservatórios próximos estão sendo utilizados mas precisamos de um ponto adicional",
+    {
+      "entities": [
+        [
+          0,
+          13,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguma atualização sobre o progresso no setor sul?",
+    {
+      "entities": [
+        [
+          46,
+          49,
+          "DIRECTION"
+        ],
+        [
+          40,
+          45,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Sim o fogo está sob controle em 70%",
+    {
+      "entities": [
+        [
+          6,
+          10,
+          "EVENT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Continuem os esforços. Precisamos de um controle total em breve",
+    {
+      "entities": [
+        [
+          0,
+          9,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "O calor está muito intenso no setor norte. Como estão os equipamentos?",
+    {
+      "entities": [
+        [
+          36,
+          41,
+          "DIRECTION"
+        ],
+        [
+          30,
+          35,
+          "PLACE"
+        ],
+        [
+          57,
+          69,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Estamos utilizando ventiladores e pulverizadores para diminuir a temperatura",
+    {
+      "entities": [
+        [
+          19,
+          31,
+          "DEVICE"
+        ],
+        [
+          34,
+          48,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "A comunicação com as equipes de apoio está funcional?",
+    {
+      "entities": [
+        [
+          21,
+          28,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Certifiquem-se de que todos os relatórios sejam enviados ao comando central",
+    {
+      "entities": [
+        [
+          60,
+          75,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Qual é a previsão para extinguir o incêndio completamente?",
+    {
+      "entities": [
+        [
+          35,
+          43,
+          "EVENT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Informem ao comando central. Precisamos de reforço aéreo?",
+    {
+      "entities": [
+        [
+          12,
+          27,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Alfa aqui é o comando. Confirmem a posição inimiga",
+    {
+      "entities": [
+        [
+          0,
+          11,
+          "UNIT"
+        ],
+        [
+          21,
+          28,
+          "UNIT"
+        ],
+        [
+          50,
+          57,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando visualizamos movimentos ao norte aproximadamente 300 metros",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          35,
+          40,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Mantenham a posição e aguardem reforços",
+    {
+      "entities": [
+        [
+          41,
+          49,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Inimigos avistados. Contagem aproximada de 20 soldados equipados com armamento pesado",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "UNIT"
+        ],
+        [
+          46,
+          54,
+          "PLAYER"
+        ],
+        [
+          69,
+          85,
+          "WEAPON"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido posicionem a artilharia para apoio",
+    {
+      "entities": [
+        [
+          23,
+          33,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Bravo flanqueiem pela esquerda para isolar o grupo",
+    {
+      "entities": [
+        [
+          0,
+          12,
+          "UNIT"
+        ],
+        [
+          52,
+          57,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Delta preparem os explosivos para bloquear a rota de fuga ao sul",
+    {
+      "entities": [
+        [
+          0,
+          12,
+          "UNIT"
+        ],
+        [
+          68,
+          71,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando estamos sob fogo pesado. Precisamos de suporte imediato",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          47,
+          54,
+          "SUPPLIES"
+        ],
+        [
+          20,
+          24,
+          "ACTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Força aérea está a caminho. ETA em 5 minutos",
+    {
+      "entities": [
+        [
+          0,
+          11,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Eco confirmem a condição da rota de evacuação",
+    {
+      "entities": [
+        [
+          0,
+          10,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Rota de evacuação segura. Estabelecendo perímetro de proteção",
+    {
+      "entities": [
+        [
+          0,
+          4,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Inimigos tentando um contra-ataque. Reforcem a linha central imediatamente",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "UNIT"
+        ],
+        [
+          36,
+          44,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Bravo em posição. Flanco esquerdo seguro",
+    {
+      "entities": [
+        [
+          0,
+          12,
+          "UNIT"
+        ],
+        [
+          25,
+          31,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Explosivos detonados. Rota de fuga ao sul comprometida",
+    {
+      "entities": [
+        [
+          0,
+          10,
+          "DEVICE"
+        ],
+        [
+          38,
+          41,
+          "DIRECTION"
+        ],
+        [
+          22,
+          34,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Alfa avancem para neutralizar o restante das tropas",
+    {
+      "entities": [
+        [
+          0,
+          11,
+          "UNIT"
+        ],
+        [
+          52,
+          58,
+          "UNIT"
+        ],
+        [
+          25,
+          36,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Inimigos recuando. Solicitamos apoio para garantir a área",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "UNIT"
+        ],
+        [
+          53,
+          57,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando avistamos reforços inimigos ao leste. Necessário apoio aéreo urgente",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          39,
+          44,
+          "DIRECTION"
+        ],
+        [
+          57,
+          68,
+          "UNIT"
+        ],
+        [
+          69,
+          76,
+          "DEMAND"
+        ],
+        [
+          27,
+          35,
+          "UNIT"
+        ],
+        [
+          18,
+          26,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Força aérea confirmou visual e está engajando o alvo",
+    {
+      "entities": [
+        [
+          0,
+          11,
+          "UNIT"
+        ],
+        [
+          48,
+          52,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Eco estabeleçam um posto de observação no morro ao norte",
+    {
+      "entities": [
+        [
+          0,
+          10,
+          "UNIT"
+        ],
+        [
+          58,
+          63,
+          "DIRECTION"
+        ],
+        [
+          49,
+          54,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Posto de observação estabelecido. Nenhum movimento adicional identificado",
+    {
+      "entities": [
+        [
+          0,
+          19,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando verificamos presença de minas na área. Procedendo com desativação",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          41,
+          45,
+          "PLACE"
+        ],
+        [
+          32,
+          37,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Prioridade é a segurança da equipe",
+    {
+      "entities": [
+        [
+          38,
+          44,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Bravo confirmem progresso na consolidação do flanco esquerdo",
+    {
+      "entities": [
+        [
+          0,
+          12,
+          "UNIT"
+        ],
+        [
+          52,
+          67,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Flanco esquerdo assegurado. Nenhum movimento hostil detectado",
+    {
+      "entities": [
+        [
+          0,
+          15,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Delta atualizem sobre a condição do equipamento pesado",
+    {
+      "entities": [
+        [
+          0,
+          12,
+          "UNIT"
+        ],
+        [
+          43,
+          54,
+          "WEAPON"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipamento operacional. Pronto para suporte adicional",
+    {
+      "entities": [
+        [
+          0,
+          11,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando inimigos capturados. Solicitamos orientações para interrogação",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          8,
+          16,
+          "UNIT"
+        ],
+        [
+          17,
+          27,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Mantenham os prisioneiros sob vigilância. Equipe de intel em rota",
+    {
+      "entities": [
+        [
+          13,
+          25,
+          "PLAYER"
+        ],
+        [
+          42,
+          48,
+          "UNIT"
+        ],
+        [
+          61,
+          65,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Alfa preparem-se para avançar para a próxima posição",
+    {
+      "entities": [
+        [
+          0,
+          6,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Avancem com cautela. Relatem qualquer movimentação incomum",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "DEMAND"
+        ],
+        [
+          21,
+          28,
+          "DEMAND"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Bravo detectamos comunicações inimigas. Analisando frequências",
+    {
+      "entities": [
+        [
+          0,
+          12,
+          "UNIT"
+        ],
+        [
+          37,
+          45,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Interferência criada. Inimigos com dificuldades para coordenar",
+    {
+      "entities": [
+        [
+          22,
+          30,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando necessitamos de suprimentos. Estoque de munição reduzido",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          24,
+          35,
+          "SUPPLIES"
+        ],
+        [
+          48,
+          55,
+          "SUPPLIES"
+        ],
+        [
+          37,
+          44,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Eco mantenham vigilância enquanto o reabastecimento é realizado",
+    {
+      "entities": [
+        [
+          0,
+          6,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Entendido. Setor sob vigilância",
+    {
+      "entities": [
+        [
+          11,
+          16,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Inimigos tentam infiltrar pelo setor leste. Precisamos de suporte imediato",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "UNIT"
+        ],
+        [
+          37,
+          42,
+          "DIRECTION"
+        ],
+        [
+          31,
+          36,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Alfa redirecionada para interceptar. Chegada em 5 minutos",
+    {
+      "entities": [
+        [
+          0,
+          6,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Posto de observação ao norte detectou movimentação hostil. Coordenadas enviadas",
+    {
+      "entities": [
+        [
+          23,
+          28,
+          "DIRECTION"
+        ],
+        [
+          0,
+          5,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Artilharia preparada para engajar",
+    {
+      "entities": [
+        [
+          10,
+          20,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Inimigos neutralizados. Setor leste assegurado",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "UNIT"
+        ],
+        [
+          24,
+          29,
+          "PLACE"
+        ],
+        [
+          30,
+          35,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando avistamos um comboio hostil ao oeste. Solicitação de avaliação tática",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          39,
+          44,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comboio identificado. Forças terrestres engajarão em 10 minutos",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          22,
+          39,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Delta mantenham a pressão no setor sul. Prioridade é evitar recuo inimigo",
+    {
+      "entities": [
+        [
+          0,
+          6,
+          "UNIT"
+        ],
+        [
+          42,
+          45,
+          "DIRECTION"
+        ],
+        [
+          36,
+          41,
+          "PLACE"
+        ],
+        [
+          73,
+          80,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Pressão mantida. Setor estabilizado",
+    {
+      "entities": [
+        [
+          17,
+          22,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando concluímos a consolidação da área. Todos os setores seguros",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          37,
+          41,
+          "PLACE"
+        ],
+        [
+          52,
+          59,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Bom trabalho. Preparem-se para a próxima missão",
+    {
+      "entities": [
+        [
+          41,
+          47,
+          "EVENT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Alfa relatem progresso na interseção de 040",
+    {
+      "entities": [
+        [
+          0,
+          6,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Nenhum movimento hostil detectado. Rota segura",
+    {
+      "entities": [
+        [
+          35,
+          39,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Bravo atualizem sobre as condições climáticas no setor oeste",
+    {
+      "entities": [
+        [
+          0,
+          6,
+          "UNIT"
+        ],
+        [
+          62,
+          67,
+          "DIRECTION"
+        ],
+        [
+          56,
+          61,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando identificamos posição de artilharia inimiga. Coordenadas enviadas",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          33,
+          43,
+          "UNIT"
+        ],
+        [
+          44,
+          51,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Artilharia nossa em posição. Fogo liberado",
+    {
+      "entities": [
+        [
+          10,
+          20,
+          "UNIT"
+        ],
+        [
+          39,
+          43,
+          "ACTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Inimigos neutralizados. Avanço autorizado",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Eco verifiquem as condições da ponte no setor leste",
+    {
+      "entities": [
+        [
+          0,
+          6,
+          "UNIT"
+        ],
+        [
+          47,
+          52,
+          "PLACE"
+        ],
+        [
+          53,
+          58,
+          "DIRECTION"
+        ],
+        [
+          38,
+          43,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Ponte intacta. Permitindo avanço de veículos pesados",
+    {
+      "entities": [
+        [
+          0,
+          5,
+          "PLACE"
+        ],
+        [
+          36,
+          44,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Comando avistamos aeronaves hostis. Estabelecendo contra-medidas",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ],
+        [
+          18,
+          27,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Forças aéreas em rota para interceptação",
+    {
+      "entities": [
+        [
+          0,
+          13,
+          "UNIT"
+        ],
+        [
+          17,
+          21,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Equipe Bravo relatem o status do pelotão 2",
+    {
+      "entities": [
+        [
+          0,
+          6,
+          "UNIT"
+        ],
+        [
+          33,
+          40,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Pelotão 2 intacto. Reagrupando para nova investida",
+    {
+      "entities": [
+        [
+          0,
+          7,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Inimigos se retiraram para o vale. Estabelecendo perseguição coordenada",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "UNIT"
+        ],
+        [
+          29,
+          33,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebido. Garantam a segurança das equipes",
+    {
+      "entities": [
+        [
+          35,
+          42,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Chegamos à área do impacto há muita fumaça",
+    {
+      "entities": [
+        [
+          11,
+          15,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Confirme se a pista de acesso está liberada para as ambulâncias",
+    {
+      "entities": [
+        [
+          0,
+          8,
+          "DEMAND"
+        ],
+        [
+          14,
+          19,
+          "PLACE"
+        ],
+        [
+          52,
+          63,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos garantir a segurança contra incêndio antes de avançar",
+    {
+      "entities": [
+        [
+          39,
+          47,
+          "EVENT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Ninguém se aproxime demais dos destroços sem equipamento adequado",
+    {
+      "entities": [
+        [
+          45,
+          56,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém localizou a caixa-preta?",
+    {
+      "entities": [
+        [
+          19,
+          30,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Por favor mantenham civis e curiosos afastados",
+    {
+      "entities": [
+        [
+          20,
+          25,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Podem acionar o suporte aéreo dos bombeiros para conter o fogo?",
+    {
+      "entities": [
+        [
+          16,
+          29,
+          "UNIT"
+        ],
+        [
+          34,
+          43,
+          "PLAYER"
+        ],
+        [
+          58,
+          62,
+          "EVENT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de uma equipe de resgate em cada setor demarcado",
+    {
+      "entities": [
+        [
+          18,
+          24,
+          "UNIT"
+        ],
+        [
+          44,
+          49,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Confirme se os bombeiros já chegaram no perímetro sul",
+    {
+      "entities": [
+        [
+          15,
+          24,
+          "PLAYER"
+        ],
+        [
+          50,
+          53,
+          "DIRECTION"
+        ],
+        [
+          40,
+          49,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Atenção há partes da aeronave penduradas em árvores",
+    {
+      "entities": [
+        [
+          21,
+          29,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não toque em nada até a perícia chegar",
+    {
+      "entities": [
+        [
+          24,
+          31,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos bloquear a estrada principal o trânsito está atrapalhando",
+    {
+      "entities": [
+        [
+          22,
+          29,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém encontrou sobreviventes ou sinais de vida?",
+    {
+      "entities": [
+        [
+          17,
+          30,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "As equipes de busca já iniciaram varredura na área leste",
+    {
+      "entities": [
+        [
+          3,
+          10,
+          "UNIT"
+        ],
+        [
+          51,
+          56,
+          "DIRECTION"
+        ],
+        [
+          46,
+          50,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém avistou algum foco de fogo na parte traseira?",
+    {
+      "entities": [
+        [
+          29,
+          33,
+          "EVENT"
+        ]
+      ]
+    }
+  ],
+  [
+    "O rádio está com muito ruído precisamos reforçar a comunicação",
+    {
+      "entities": [
+        [
+          2,
+          7,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Cuidado com destroços pontiagudos no solo",
+    {
+      "entities": [
+        [
+          37,
+          41,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Algum oficial já conseguiu contato com a central de operações?",
+    {
+      "entities": [
+        [
+          41,
+          61,
+          "UNIT"
+        ]
+      ]
+    }
+  ],
+  [
+    "Precisamos de mais lanternas para a busca noturna",
+    {
+      "entities": [
+        [
+          19,
+          28,
+          "DEVICE"
+        ]
+      ]
+    }
+  ],
+  [
+    "A fumaça está se deslocando para o lado leste usem máscaras",
+    {
+      "entities": [
+        [
+          51,
+          59,
+          "DEVICE"
+        ],
+        [
+          40,
+          45,
+          "DIRECTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "O terreno é instável andem com cuidado",
+    {
+      "entities": [
+        [
+          2,
+          9,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Recebemos informação de que o avião vinha em rota internacional",
+    {
+      "entities": [
+        [
+          30,
+          35,
+          "VEHICLE"
+        ],
+        [
+          45,
+          49,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "A perícia vai precisar das coordenadas exatas do local",
+    {
+      "entities": [
+        [
+          2,
+          9,
+          "UNIT"
+        ],
+        [
+          48,
+          54,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Podem confirmar a presença de equipes de apoio psicológico?",
+    {
+      "entities": [
+        [
+          30,
+          37,
+          "UNIT"
+        ],
+        [
+          47,
+          58,
+          "PLAYER"
+        ]
+      ]
+    }
+  ],
+  [
+    "Verifiquem se o rádio de emergência da aeronave foi acionado",
+    {
+      "entities": [
+        [
+          16,
+          21,
+          "DEVICE"
+        ],
+        [
+          39,
+          47,
+          "VEHICLE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Há uma trilha de destroços que se estende além do que imaginamos",
+    {
+      "entities": [
+        [
+          7,
+          13,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "A vegetação está pegando fogo em alguns pontos cuidado",
+    {
+      "entities": [
+        [
+          2,
+          11,
+          "PLACE"
+        ],
+        [
+          25,
+          29,
+          "ACTION"
+        ]
+      ]
+    }
+  ],
+  [
+    "Será necessário um helicóptero para mapear o perímetro exato",
+    {
+      "entities": [
+        [
+          19,
+          30,
+          "VEHICLE"
+        ],
+        [
+          45,
+          54,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Não há indícios de sobreviventes aqui na parte frontal",
+    {
+      "entities": [
+        [
+          19,
+          32,
+          "PLAYER"
+        ],
+        [
+          41,
+          54,
+          "PLACE"
+        ]
+      ]
+    }
+  ],
+  [
+    "Alguém conseguiu falar com os bombeiros que ficaram presos no tráfego?",
+    {
+      "entities": [
+        [
+          30,
+          39,
+          "PLAYER"
+        ]
+      ]
+    }
+  ]
+]

@@ -38,7 +38,7 @@ hide:
 
 *Davi Hugo Marques Pontes, Caio Chaves Bezerra Rocha*
 
-# Artigos
+# Artigos de Revista e Capítulos de Livro
 
 **Enhancing heterogeneous mobile network management based on a well-founded reference ontology**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/52dc2bbf3cbc694688339b65e3cf4f3aa1fde579/publi/230810_FGCS_Enhancing%20heterogeneous%20mobile%20network%20management%20based%20on%20a%20well-founded%20reference%20ontology.pdf?raw=true){:download="230810_FGCS_enhancing"}[:simple-doi:](https://doi.org/10.1016/j.future.2023.08.008)[:material-tag-text:{ title="bibtex" }](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/ref/S0167739X23003084.bib?raw=true)
 
@@ -47,6 +47,13 @@ hide:
 **Engenharia Dirigida a Modelos Aplicada à Cognição de Rádios em Operações Militares**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/C-01_Artigo_RMCT_V2_2_corrigido_n.pdf?raw=true){:download="RMCT_EngDirModCogRadio"}
 
 *Marcus Albert Alves da Silva, Gabriel Bozza, Milena Mayara Ruya, David Fernandes Cruz Moura, Maria Claudia Reis Cavalcanti, Luis Ferreira Pires* 
+
+**Performance Evaluation of Monolithic and Microservice Architectures for Natural Language Processing in Command and Control Applications**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Performance_Evaluation_of_Monolithic_and_Microservice_Architectures_for_Natural_Language_Processing_in_Command_and_Control_Applications.pdf?raw=true){:download="250902_IEEEacces_PerformanceEvalMaisC2"}[:simple-doi:](https://doi.org/10.1109/ACCESS.2025.3604775)
+
+
+**Integrated Multi-agent System Simulator and Network Emulator Framework to Realistically Exercise Networked Command and Control Application Scenarios**[:simple-doi:](https://doi.org/10.1007/978-3-031-77603-8_2)
+
+# Artigos de Conferência
 
 **Supporting Simulation of Military Communication Systems Using Well-Founded Modeling**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Supporting_Simulation_of_Military_Communication_Systems_Using_Well_Founded_Modeling___Ontobras_2022.pdf?raw=true){:download="Ontobras_SupSimMilCom"}[:material-tag-text:{ title="bibtex" }](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/ref/supportingsim.bib?raw=true)
 
@@ -100,9 +107,15 @@ hide:
 
 # Relatórios e Outros Documentos
 
-**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível conceitual)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Documento_com_a_descrição_das_sistemáticas__conceitual____S2C2_IME.pdf?raw=true){:download="RelatS2C2_Sistematica_Conceitual"}
+**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível conceitual)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Documento_com_a_descrição_das_sistemáticas__conceitual____S2C2_IME.pdf?raw=true){:download="RelatS2C2IME_Sistematica_Conceitual"}
 
-**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível logico)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/nomearquivo.pdf?raw=true){:download="RelatS2C2_Sistematica_Logica"}
+**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível logico)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/nomearquivo.pdf?raw=true){:download="RelatS2C2IME_Sistematica_Logica"}
 
-*Equipe S2C2-IME*
+**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível logico)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Construcao.pdf?raw=true){:download="RelatS2C2IME_Construcao"}
+
+**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível logico)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Demonstracao.pdf?raw=true){:download="RelatS2C2IME_Demonstracao"}
+
+**Especificação da Infraestrutura)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Infraestrutura.pdf?raw=true){:download="RelatS2C2IME_Infraestrutura"}
+
+*Todos os relatórios foram desenvolvidos pela Equipe S2C2-IME*
 

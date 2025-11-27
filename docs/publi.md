@@ -108,7 +108,21 @@ hide:
 
 *Jones de Oliveira Avelino, Giselle de Farias Rosa, Gustavo Ewbank Danon,  Kelli de Faria Cordeiro, Maria Cláudia Cavalcanti*
 
+**Improving Semantic Expressiveness in Data Catalogs: Applying Ontological Patterns to Data Catalog Vocabulary Relations**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/ONTOBRAS_2025_paper_38.pdf?raw=true){:download="ONTOBRAS_2025_paper_38"}
 
+*Vania Borges (UFRJ), Natália Queiroz de Oliveira (UFRJ), Maria Luiza Machado Campos (UFRJ), Giseli Rabello Lopes (UFRJ)*
+
+**ATHENA: A FAIR approach to publish and evaluate cybersecurity datasets**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/ONTOBRAS_2025_paper_19.pdf?raw=true){:download="ONTOBRAS_2025_paper_19"}
+
+*Thaisa da S. Hernandez (IME,MB), Caroline Gandolfi (IME), Pedro Bulcão (IME), Luiz Bonino da S. Santos (University of Twente), Anderson F. P. dos Santos (IME,Venturus Centro de Inovação Tecnológica), Maria Cláudia R. Cavalcanti (IME)*
+
+**LLM Assisted Vocabulary Harmonization**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/ONTOBRAS_2025_paper_7.pdf?raw=true){:download="ONTOBRAS_2025_paper_7"}
+
+*Samir de Oliveira Ramos (IME), Ronaldo Ribeiro Goldschmidt (IME), Maria Claudia Reis Cavalcanti (IME), Wallace Anacleto Pinheiro (IME), Alexandra Miguel Raibolt da Silva (IME), Robinson Callou (IME), Alex Garcia (IME), Bernardo Alkmim (PUC-Rio), Edward Hermann Haeusler (PUC-Rio), Ferrucio de Franco Rosa (ITA), Cecília de Azevedo Castro César (ITA), José Maria Parente de Oliveira (ITA)*
+
+**Notes on the use of the powertype pattern**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/ONTOBRAS_2025_paper_10.pdf?raw=true){:download="ONTOBRAS_2025_paper_10"}
+
+*André Demori (IME), Julio Tesolin (IME), Maria Claudia Cavalcanti (IME)*
 
 # Relatórios e Outros Documentos
 

@@ -50,8 +50,12 @@ hide:
 
 **Performance Evaluation of Monolithic and Microservice Architectures for Natural Language Processing in Command and Control Applications**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Performance_Evaluation_of_Monolithic_and_Microservice_Architectures_for_Natural_Language_Processing_in_Command_and_Control_Applications.pdf?raw=true){:download="250902_IEEEacces_PerformanceEvalMaisC2"}[:simple-doi:](https://doi.org/10.1109/ACCESS.2025.3604775)
 
+*Flavio Ferreira da Silva Mosafi, Mateus Sze Cosenza, Léo Victor Cruz Vasconcelos, Luís Ferreira Pires, Julio Cesar Duarte, Maria Claudia Reis Cavalcanti*
 
 **Integrated Multi-agent System Simulator and Network Emulator Framework to Realistically Exercise Networked Command and Control Application Scenarios**[:simple-doi:](https://doi.org/10.1007/978-3-031-77603-8_2)
+
+*Dante Barone, Juliano Wickboldt, Maria C. Cavalcanti, David Moura, Julio Tesolin, André Demori, Julio Anjos, Leonardo Silva de Carvalho, João Gomes, Edison Pignaton de Freitas*
+
 
 # Artigos de Conferência
 
@@ -91,15 +95,13 @@ hide:
 
 *Jones de Oliveira Avelino, Gustavo Ewbank Danon, Giselle de Farias Rosa, Kelli de Faria Cordeiro, Maria Cláudia Cavalcanti*
 
-
-
 **Towards a microservices architecture to support communication in C2 applications**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/2024_SOSE_TowardsMSA_capa.pdf?raw=true){:download="Towards_MSA"}[:simple-doi:](https://ieeexplore.ieee.org/document/10620941)
 
 
 *Flavio Ferreira da Silva, Luís Ferreira Pires, Julio Cesar Duarte, Maria Cláudia Cavalcanti*
 
 
-**Knowledge Graph Generation from Text Using Supervised Approach Supported by a Relation Metamodel: An Application in C2 Domain **[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/2024_ICEIS_KnowledgeGraphGen_capa.pdf?raw=true){:download="24_ICEIS_KnowldegeGraphGen"}[:simple-doi:](https://www.scitepress.org/Link.aspx?doi=10.5220/0012629300003690)    
+**Knowledge Graph Generation from Text Using Supervised Approach Supported by a Relation Metamodel: An Application in C2 Domain**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/2024_ICEIS_KnowledgeGraphGen_capa.pdf?raw=true){:download="24_ICEIS_KnowldegeGraphGen"}[:simple-doi:](https://www.scitepress.org/Link.aspx?doi=10.5220/0012629300003690)    
 
 *Jones de Oliveira Avelino, Giselle de Farias Rosa, Gustavo Ewbank Danon,  Kelli de Faria Cordeiro, Maria Cláudia Cavalcanti*
 
@@ -111,9 +113,9 @@ hide:
 
 **Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível logico)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/nomearquivo.pdf?raw=true){:download="RelatS2C2IME_Sistematica_Logica"}
 
-**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível logico)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Construcao.pdf?raw=true){:download="RelatS2C2IME_Construcao"}
+**Relatório de Construção da Prova de Conceito**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Construcao.pdf?raw=true){:download="RelatS2C2IME_Construcao"}
 
-**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível logico)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Demonstracao.pdf?raw=true){:download="RelatS2C2IME_Demonstracao"}
+**Relatório de Demonstração (Estudos de Caso e Provas de Conceito)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Demonstracao.pdf?raw=true){:download="RelatS2C2IME_Demonstracao"}
 
 **Especificação da Infraestrutura)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Infraestrutura.pdf?raw=true){:download="RelatS2C2IME_Infraestrutura"}
 

@@ -56,6 +56,9 @@ hide:
 
 *Dante Barone, Juliano Wickboldt, Maria C. Cavalcanti, David Moura, Julio Tesolin, André Demori, Julio Anjos, Leonardo Silva de Carvalho, João Gomes, Edison Pignaton de Freitas*
 
+**TForMIX: a method that combines LLM and Multidimensional Modeling for Technological Foresight**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/TForMIX_A_Method_That_Combines_LLM_and_Multidimensional_Modeling_for_Technological_Foresight.pdf?raw=true){:download="250902_IEEEaccess_TForMIX"}[:simple-doi:](https://doi.org/10.1109/ACCESS.2025.3605116)
+
+*Giselle de Farias Rosa, Jones de Oliveira Avelino, Maria Claudia Reis Cavalcanti, Julio Cesar Duarte*
 
 # Artigos de Conferência
 

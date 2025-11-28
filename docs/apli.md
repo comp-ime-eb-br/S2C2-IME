@@ -6,7 +6,9 @@ hide:
 
 Esta seção apresenta os softwares desenvolvidos no contexto do projeto S2C2, pela equipe do IME.
 
-##[MiScManager]((https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager)
+##MiScManager
+
+O software [MiScManager]((https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager) é um...
 
 
 ##MAISC2

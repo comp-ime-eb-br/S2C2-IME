@@ -1,5 +1,5 @@
 ---
-title: Sumário
+title: Ontologias
 hide:
   - toc
 ---

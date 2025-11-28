@@ -128,13 +128,13 @@ hide:
 
 **Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível conceitual)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Documento_com_a_descrição_das_sistemáticas__conceitual____S2C2_IME.pdf?raw=true){:download="RelatS2C2IME_Sistematica_Conceitual"}
 
-**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível logico)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/nomearquivo.pdf?raw=true){:download="RelatS2C2IME_Sistematica_Logica"}
+**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível logico)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Documento_com_a_descrição_de_Procedimentos_Sistemáticos__lógico____S2C2_IME.pdf?raw=true){:download="RelatS2C2IME_Sistematica_Logica"}
 
-**Relatório de Construção da Prova de Conceito**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Construcao.pdf?raw=true){:download="RelatS2C2IME_Construcao"}
+**Relatório de Construção da Prova de Conceito**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Relat_S2C2___Construção_da_Prova_de_Conceito.pdf?raw=true){:download="RelatS2C2IME_Construcao"}
 
-**Relatório de Demonstração (Estudos de Caso e Provas de Conceito)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Demonstracao.pdf?raw=true){:download="RelatS2C2IME_Demonstracao"}
+**Relatório de Demonstração (Estudos de Caso e Provas de Conceito)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Relat_S2C2__Demonstração_da_Prova_de_Conceito.pdf?raw=true){:download="RelatS2C2IME_Demonstracao"}
 
-**Especificação da Infraestrutura)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/RelatS2C2IME_Infraestrutura.pdf?raw=true){:download="RelatS2C2IME_Infraestrutura"}
+**Especificação da Infraestrutura)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/nomearquivo.pdf?raw=true){:download="RelatS2C2IME_Infraestrutura"}
 
 *Todos os relatórios foram desenvolvidos pela Equipe S2C2-IME*
 

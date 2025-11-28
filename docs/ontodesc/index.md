@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-Nesta seção, descrevemos brevemente as ontologias desenvolvidas no projeto. O detalhamento das ontologias operacionalizadas é fornecido nas sub-seções, onde utlizamos a biblioteca *pylode* do Python para a extração das descrições das classes e das propriedades, assim como de seus metadados.
+Nesta seção, descrevemos brevemente as ontologias desenvolvidas no projeto. O detalhamento das ontologias operacionalizadas é fornecido nas subseções, onde utilizamos a biblioteca *pylode* do Python para a extração das descrições das classes e das propriedades, assim como de seus metadados.
 
 ## hint
 

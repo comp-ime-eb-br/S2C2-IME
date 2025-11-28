@@ -1,12 +1,12 @@
 ---
-title:  Aplicações
 hide:
+  - title
   - toc
 ---
 
 Esta seção apresenta os softwares desenvolvidos no contexto do projeto S2C2, pela equipe do IME.
 
-##MiScManager
+##[MiScManager]((https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager)
 
 
 ##MAISC2

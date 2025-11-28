@@ -8,7 +8,7 @@ Esta seção apresenta os softwares desenvolvidos no contexto do projeto S2C2, p
 
 #MiScManager/MiniManager
 
-O software [MiScManager](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager) é uma extensão do software MiniManager,  que foi desenvolvido com o objetivo de ampliar as funcionalidades do MiniManager de modo a permitir a configuração de cenários de operações militares. Essa configuração é feita através do acesso a uma ontologia, previamente instanciada com um cenário específico. A arquitetura do MiScManager foi desenvolvida utilizando o Django Framework para funcionar como um sistema web seguindo o padrão MTV (Model-Template-View). O fato de o Django Framework estar escrito em linguagem Python facilita a comunicação com o Mininet-WiFi, também escrito na mesma linguagem. Ainda, possui como sistema gerenciador de banco de dados (SGBD) o PostgreSQL. 
+O software [MiScManager](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager) é uma extensão do software MiniManager, que foi desenvolvido com o objetivo de ampliar as suas funcionalidades, permitindo a configuração de cenários de operações militares. Essa configuração é feita através do acesso a uma ontologia, previamente instanciada com um cenário específico. A arquitetura do MiScManager foi desenvolvida utilizando o Django Framework para funcionar como um sistema web seguindo o padrão MTV (Model-Template-View). O fato de o Django Framework estar escrito em linguagem Python facilita a comunicação com o Mininet-WiFi, também escrito na mesma linguagem. Ainda, possui como sistema gerenciador de banco de dados (SGBD) o PostgreSQL. 
 
 
 #MAISC2
@@ -21,4 +21,5 @@ O [IDEA-C2-Tool](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverabl
 
 #Athena Evaluator
 
-O módulo [Athena Evaluator](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/AthenaEvaluator/) foi desenvolvido ....
+A abordagem Athena foi implementada como uma combinação de módulos de software. Primeiro, um repositório FAIR Data Point foi instanciado para publicar metadados sobre conjuntos de dados. Em segundo lugar, o módulo [Athena Evaluator](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/AthenaEvaluator/) foi implementado para analisar os metadados publicados no repositório com base em um conjunto de métricas de qualidade específicas e em métricas alinhadas com os princípios FAIR. Uma descrição dessa abordagem pode ser encontrada no artigo 
+[Athena:]((https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/ONTOBRAS_2025_paper_19.pdf)

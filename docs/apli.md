@@ -6,9 +6,9 @@ hide:
 
 Esta seção apresenta os softwares desenvolvidos no contexto do projeto S2C2, pela equipe do IME.
 
-##MiScManager
+##MiScManager/MiniManager
 
-O software [MiScManager](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager) é um...
+O software [MiScManager](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager) é uma extensão do software MiniManager,  que foi desenvolvido com o objetivo de ampliar as funcionalidades do MiniManager de modo a permitir a configuração de cenários de operações militares. Essa configuração é feita através do acesso a uma ontologia, previamente instanciada com um cenário específico. A arquitetura do MiScManager foi desenvolvida utilizando o Django Framework para funcionar como um sistema web seguindo o padrão MTV (Model-Template-View). O fato de o Django Framework estar escrito em linguagem Python facilita a comunicação com o Mininet-WiFi, também escrito na mesma linguagem. Ainda, possui como sistema gerenciador de banco de dados (SGBD) o PostgreSQL. 
 
 
 ##MAISC2
@@ -17,6 +17,8 @@ Para apoiar a troca de mensagens em operações de C2, foi desenvolvido o “Mé
 
 ##IDEA-C2-tool
 
-O IDEA-C2-Tool é um protótipo de software baseado no método IDEA-C2 ((generatIon of knowleDge graphs basEd on Artificial intelligence of C2 Domain), que é uma abordagem híbrida de apoio ao desenvolvimento de um Modelo Conceitual de Domínio (MD) através da combinação de componentes Data-Driven (DD) e Theory-Driven (TD), utilizando recursos semânticos (taxonomia) e um metamodelo baseado em Large Languagem Model (LLM) e um Knowledge Graph (KG) ajustados no domínio militar.
+O [IDEA-C2-Tool](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/idea-c2/) é um protótipo de software baseado no método IDEA-C2 ((generatIon of knowleDge graphs basEd on Artificial intelligence of C2 Domain), que é uma abordagem híbrida de apoio ao desenvolvimento de um Modelo Conceitual de Domínio (MD) através da combinação de componentes Data-Driven (DD) e Theory-Driven (TD), utilizando recursos semânticos (taxonomia) e um metamodelo baseado em Large Languagem Model (LLM) e um Knowledge Graph (KG) ajustados no domínio militar.
 
 ##Athena Evaluator
+
+O módulo [Athena Evaluator](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/AthenaEvaluator/) foi desenvolvido ....

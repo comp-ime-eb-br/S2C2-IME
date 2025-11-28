@@ -1,5 +1,7 @@
 ---
 title:  **Aplicações**
+hide:
+  - toc
 ---
 
 Esta seção apresenta os softwares desenvolvidos no contexto do projeto S2C2, pela equipe do IME.

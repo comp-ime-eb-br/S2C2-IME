@@ -8,18 +8,12 @@ Esta seção apresenta os softwares desenvolvidos no contexto do projeto S2C2, p
 
 ##MiScManager
 
-O software MiscManager [:directory:{ title="source files"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager) é um...
+O software [MiScManager](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager) é um...
 
 
 ##MAISC2
 
-No sentido de atender à questão de como apoiar a troca de mensagens em operações
-de C2, foi desenvolvido o “Método de Apoio à Interoperabilidade
-Semântica de C2 utilizando PLN” (MAISC2). O método MAISC2 é apresentado na
-forma de uma especificação constituída de etapas, atividades e tarefas, detalhando como
-atuar na intermediação das mensagens trocadas em um ambiente de C2, enriquecendo-as
-semanticamente. Para avaliar a viabilidade do método foi implementado o protótipo MAISC2 utilizando a abordagem de
-microserviços.
+Para apoiar a troca de mensagens em operações de C2, foi desenvolvido o “Método de Apoio à Interoperabilidade Semântica de C2 utilizando PLN” (MAISC2). O método MAISC2 é apresentado na forma de uma especificação constituída de etapas, atividades e tarefas, detalhando como atuar na intermediação das mensagens trocadas em um ambiente de C2, enriquecendo-as semanticamente. Para avaliar a viabilidade do método foi implementado o [protótipo MAISC2](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/Maisc2) utilizando a abordagem de microserviços.
 
 ##IDEA-C2-tool
 

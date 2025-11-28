@@ -8,7 +8,7 @@ Esta seção apresenta os softwares desenvolvidos no contexto do projeto S2C2, p
 
 ##MiScManager
 
-O software MiscManager [:directory:{ title="source files"}]((https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager) é um...
+O software MiscManager [:directory:{ title="source files"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/MiScManager) é um...
 
 
 ##MAISC2

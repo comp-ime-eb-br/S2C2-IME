@@ -1,5 +1,5 @@
 ---
-title:  **Aplicações**
+title:  Aplicações
 hide:
   - toc
 ---

@@ -22,4 +22,4 @@ O [IDEA-C2-Tool](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverabl
 #Athena Evaluator
 
 A abordagem Athena foi implementada como uma combinação de módulos de software. Primeiro, um repositório FAIR Data Point foi instanciado para publicar metadados sobre conjuntos de dados. Em segundo lugar, o módulo [Athena Evaluator](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/deliverables/AthenaEvaluator/) foi implementado para analisar os metadados publicados no repositório com base em um conjunto de métricas de qualidade específicas e em métricas alinhadas com os princípios FAIR. Uma descrição dessa abordagem pode ser encontrada no artigo 
-[Athena:]((https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/ONTOBRAS_2025_paper_19.pdf)
+[Athena: A FAIR approach to publish and evaluate cybersecurity datasets](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/ONTOBRAS_2025_paper_19.pdf)

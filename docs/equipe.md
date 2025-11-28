@@ -22,6 +22,6 @@ hide:
 - Luciana Escobar - Doutoranda - IME - [Lattes](http://lattes.cnpq.br/3544952699818599)
 - Andre Muniz Demori - Mestre - IME - [Lattes](http://lattes.cnpq.br/4798474703355068)
 - Flávio Ferreira da Silva Mosafi - Doutor (defesa prevista para Fev/2026) - IME - [Lattes](http://lattes.cnpq.br/0601021723340429)
-- Valquire da Silva de Jesus - Mestre - IME - [Lattes](http://lattes.cnpq.br/2808697732330017)
 - Jones de Oliveira Avelino	- Doutor (defesa prevista para Fev/2026) - IME - [Lattes](http://lattes.cnpq.br/0111943490858704)
+- Valquire da Silva de Jesus - Mestre - UFRJ - [Lattes](http://lattes.cnpq.br/2808697732330017)
 

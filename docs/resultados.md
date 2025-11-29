@@ -29,11 +29,11 @@ e do [repositório](https://github.com/comp-ime-eb-br/S2C2-IME) associado. A lis
 
 Analisando os resultados, em 5 anos de projeto, foi possível alcançar resultados significativos, tanto em publicações e artefatos como também com relação à formação de recursos humanos. Foram gerados 40 publicações/artefatos e o projeto contribuiu para a formação de 12 alunos até o momento. Vale ainda destacar que alguns dos alunos envolvidos no projeto integraram, ou ainda, poderão integrar as equipes do Centro de Desenvolvimento de Sistemas do EB, justificando desta forma, o investimento encomendado à financiadora do projeto (FINEP). Além disso, outros 2 alunos que foram formados no contexto do projeto hoje atuam junto à MB, na área de desenvolvimento de aplicativos de C2. Esse resultado se deve principalmente à equipe de professores e pesquisadores do IME, bem como de professores e pesquisadores da UFRJ, atuantes nas áreas de interoperabilidade de dados e ontologias. Tais professores formaram um time coeso e atuaram colaborativamente na orientação dos alunos envolvidos, guiando-os em temas dentro dos interesses das forças armadas e da sociedade. 
 
-Uma outra contribuição para a formação da equipe do projeto, que beneficiou professores e alunos, foi a organização de cursos de curta duração ministrados por pesquisadores especialistas reconhecidos na área de Semântica e Serviço da equipe da Universidade de Twente (UT) da Holanda. Foram ao todo 5 (cinco) visitas e os cursos foram oferecidos a professores e alunos além da equipe do IME, atingindo um número aproximado de  20 por curso. Alunos e professores de outras instituições, como UFRJ, PUC e IBICT, também puderam participar dos cursos. A seguir listamos os cursos oferecidos:
+Uma outra contribuição para a formação da equipe do projeto, que beneficiou professores e alunos, foi a organização de cursos de curta duração ministrados por pesquisadores especialistas reconhecidos na área de Semântica e Serviço da equipe da Universidade de Twente (UT) da Holanda. Foram ao todo 5 (cinco) visitas e os cursos foram oferecidos a professores e alunos além da equipe do IME, atingindo um número aproximado de  20 por curso. Alunos e professores de outras instituições, como UFRJ, PUC-Rio e IBICT, também puderam participar dos cursos. A seguir listamos os cursos oferecidos:
 
   -  Arquitetura de Sistemas de Informação - Prof João L. R. Moreira 
   -  Arquitetura Orientada a Micro-serviços - Prof. Luís F. Pires 
-  -  Operacionalização de Ontologias - Prof. Claudenir Moraes 
+  -  Operacionalização de Ontologias - Prof. Claudenir M. Fonseca 
   -  Modelagem Conceitual Orientada a Ontologias - Prof. Giancarlo Guizzardi 
   -  Engenharia de Dados FAIR - Prof. Luís Olavo Bonino
     

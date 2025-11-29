@@ -1,6 +1,5 @@
 ---
 hide:
-  - navigation
   - toc
 ---
 # Interoperabilidade Semântica de Comando e Controle das Forças Armadas Brasileiras

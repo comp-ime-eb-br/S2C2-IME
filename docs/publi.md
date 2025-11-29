@@ -134,7 +134,7 @@ hide:
 
 **Relatório de Demonstração (Estudos de Caso e Provas de Conceito)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Relat_S2C2__Demonstração_da_Prova_de_Conceito.pdf?raw=true){:download="RelatS2C2IME_Demonstracao"}
 
-**Especificação da Infraestrutura)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/nomearquivo.pdf?raw=true){:download="RelatS2C2IME_Infraestrutura"}
+**Especificação da Infraestrutura)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Relat_S2C2___Infraestrutura.pdf?raw=true){:download="RelatS2C2IME_Infraestrutura"}
 
 *Todos os relatórios foram desenvolvidos pela Equipe S2C2-IME*
 

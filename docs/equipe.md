@@ -16,7 +16,7 @@ hide:
 - Kelli de Faria Cordeiro - DSc. - Ministério da Defesa - [Lattes](http://lattes.cnpq.br/5730828709337079)
 - Giseli Rabello Lopes - DSc. - UFRJ - [Lattes](http://lattes.cnpq.br/9439416101626260)
 
-## Pesquisadores formados pelo projeto
+## Pesquisadores/Desenvolvedores formados pelo projeto
 - Julio Cesar Cardoso Tesolin - Doutor - IME - [Lattes](http://lattes.cnpq.br/3804203362816459)
 - Marcus Albert Alves da Silva - Doutor - IME - [Lattes](http://lattes.cnpq.br/2881869764006083)
 - Luciana Escobar - Doutoranda - IME - [Lattes](http://lattes.cnpq.br/3544952699818599)
@@ -28,6 +28,9 @@ hide:
 - Leo Vasconcellos - Eng. Computação - IME - [ORCID](https://orcid.org/0009-0005-9020-3059)
 
 ## Colaboradores
+- Adinê Alves - Eng. Computação e Mestrando - IME 
+- Thyago Ferreira - Mestrando - IME
+- Thaisa da Silva Hernandes - Mestre (defesa prevista para Fev/2026) - IME
 - Matheus Cosenza - Eng. Computação - IME - [ORCID](https://orcid.org/0009-0008-4329-0956)
 - Pedro Gallio Bulcão - Eng. Computação - IME [ORCID](https://orcid.org/0009-0008-6666-0104)
 - Pedro Paulo Albuquerque - Eng. Computação - IME 

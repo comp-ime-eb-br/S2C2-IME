@@ -35,7 +35,7 @@ Uma outra contribuição para a formação da equipe do projeto, que beneficiou 
   -  Arquitetura Orientada a Micro-serviços - Prof. Luís F. Pires 
   -  Operacionalização de Ontologias - Prof. Claudenir Moraes 
   -  Modelagem Conceitual Orientada a Ontologias - Prof. Giancarlo Guizzardi 
-  -  Gestão de Dados FAIR - Prof. Luís Olavo Bonino
+  -  Engenharia de Dados FAIR - Prof. Luís Olavo Bonino
     
 
 Assim, além dos produtos técnicos e científicos gerados, os impactos positivos extrapolam o âmbito acadêmico, alcançando também a sociedade por meio de ações de divulgação, inovação e aplicação prática dos resultados. Dessa forma, reafirma-se a relevância do apoio recebido, evidenciando que os recursos foram empregados com responsabilidade, planejamento e foco em resultados concretos. Por fim, considerando que alguns trabalhos ainda estão em andamento, espera-se que sejam gerados ainda mais resultados a serem reportados em futuro próximo. 

@@ -24,8 +24,15 @@ hide:
 - Flávio Ferreira da Silva Mosafi - Doutor (defesa prevista para Fev/2026) - IME - [Lattes](http://lattes.cnpq.br/0601021723340429)
 - Jones de Oliveira Avelino	- Doutor (defesa prevista para Fev/2026) - IME - [Lattes](http://lattes.cnpq.br/0111943490858704)
 - Valquire da Silva de Jesus - Mestre - UFRJ - [Lattes](http://lattes.cnpq.br/2808697732330017)
-- Carolina Duarte Gandolfi - Eng. Computação - IME - [ORCID](https://orcid.org/0009-0006-1173-8600)
-- Leo Vasconcellos - Eng. Computação - IME - [ORCID](https://orcid.org/0009-0005-9020-3059)
+- Caroline Duarte Gandolfi - Eng. Computação - IME - [ORCID](https://orcid.org/0009-0006-1173-8600)
+
+## Colaboradores
 - Matheus Cosenza - Eng. Computação - IME - [ORCID](https://orcid.org/0009-0008-4329-0956)
 - Pedro Gallio Bulcão - Eng. Computação - IME [ORCID](https://orcid.org/0009-0008-6666-0104)
+- Leo Vasconcellos - Eng. Computação - IME - [ORCID](https://orcid.org/0009-0005-9020-3059)
+- Pedro Paulo Albuquerque - Eng. Computação - IME 
+- Renan Rodrigues - Eng. Computação - IME 
+- Milena Mayara Ruy - Eng. Computação - IME 
+- Gabriel Bozza - Eng. Computação - IME 
+
 

@@ -124,6 +124,11 @@ hide:
 
 *André Demori (IME), Julio Tesolin (IME), Maria Claudia Cavalcanti (IME)*
 
+**Metadata and metrics for cybersecurity dataset evaluation**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/7668_HERNANDEZ_MTSR2025.pdf?raw=true){:download="MTSR_2025_paper"}
+
+*Thaisa da S. Hernandez (IME,MB), Caroline Gandolfi (IME), Luiz Bonino da S. Santos (University of Twente), Anderson F. P. dos Santos (IME,Venturus Centro de Inovação Tecnológica), Maria Cláudia R. Cavalcanti (IME)*
+
+
 # Relatórios e Outros Documentos
 
 **Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível conceitual)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Documento_com_a_descrição_das_sistemáticas__conceitual____S2C2_IME.pdf?raw=true){:download="RelatS2C2IME_Sistematica_Conceitual"}

@@ -109,8 +109,6 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#hierarchicallyEquivalentWith
 :hierarchicallyEquivalentWith rdf:type owl:ObjectProperty ;
-                              rdfs:domain :HierarchicallyEquivalent ;
-                              rdfs:range :HierarchicallyEquivalent ;
                               rdfs:comment "A relationship that establishes that a military organization is hierarchically equivalent to another military organization." ;
                               rdfs:label "HierarchicallyEquivalentWith"@en .
 
@@ -118,8 +116,6 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#isCommandedBy
 :isCommandedBy rdf:type owl:ObjectProperty ;
                owl:inverseOf :isCommanderOf ;
-               rdfs:domain :Subordinate ;
-               rdfs:range :Commander ;
                rdfs:comment "A relationship that establishes that a military organization is subordinate to another military organization." ;
                rdfs:label "isCommandedBy"@en .
 
@@ -201,6 +197,13 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue
 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#SIDC
+:SIDC rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#hasQualityValue> ;
+      rdfs:domain :MilitaryOrganizationPowerType ;
+      rdfs:range xsd:string .
 
 
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#amphibiousSpeed
@@ -505,11 +508,6 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                    rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#FunctionalComplex> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Commander
-:Commander rdf:type owl:Class ;
-           rdfs:subClassOf :MilitaryOrganization .
-
-
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#CommanderMilitaryPerson
 :CommanderMilitaryPerson rdf:type owl:Class ;
                          rdfs:subClassOf :MilitaryPerson ;
@@ -533,18 +531,14 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
          rdfs:subClassOf :MilitaryOrganization .
 
 
+###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Division
+:Division rdf:type owl:Class ;
+          rdfs:subClassOf :MilitaryOrganization .
+
+
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Guarani
 :Guarani rdf:type owl:Class ;
          rdfs:subClassOf :Armored_Vehicle .
-
-
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#HierarchicallyEquivalent
-:HierarchicallyEquivalent rdf:type owl:Class ;
-                          rdfs:subClassOf :MilitaryOrganization ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty :hierarchicallyEquivalentWith ;
-                                            owl:someValuesFrom :HierarchicallyEquivalent
-                                          ] .
 
 
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#InstitutionalElement
@@ -654,16 +648,6 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
           rdfs:subClassOf <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#IntrinsicMode> .
 
 
-###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Subordinate
-:Subordinate rdf:type owl:Class ;
-             rdfs:subClassOf :MilitaryOrganization ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :isCommandedBy ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :Commander
-                             ] .
-
-
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#SubordinateMilitaryPerson
 :SubordinateMilitaryPerson rdf:type owl:Class ;
                            rdfs:subClassOf :MilitaryPerson .
@@ -729,6 +713,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 :Battalion rdf:type owl:NamedIndividual ,
                     <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
                     :MilitaryOrganizationPowerType ;
+           owl:differentFrom :Division ;
            :maxStrength 800 ;
            :minStrength 500 .
 
@@ -737,6 +722,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 :BattleGroup rdf:type owl:NamedIndividual ,
                       <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
                       :MilitaryOrganizationPowerType ;
+             owl:differentFrom :Division ;
              :maxStrength 5 ;
              :minStrength 3 .
 
@@ -745,6 +731,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 :Brigade rdf:type owl:NamedIndividual ,
                   <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
                   :MilitaryOrganizationPowerType ;
+         owl:differentFrom :Division ;
          :maxStrength 5000 ;
          :minStrength 3000 .
 
@@ -757,9 +744,11 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 :Cascavel rdf:type owl:NamedIndividual ,
                    <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
                    :VehiclePowerType ;
+          :maxAmphibiousSpeed 30 ;
           :maxLandSpeed 100 ;
           :maxPassengers 3 ;
-          :minPassengers 3 .
+          :minPassengers 3 ;
+          :visibilityRange 8000 .
 
 
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#CommBoard
@@ -791,17 +780,29 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 :Company rdf:type owl:NamedIndividual ,
                   <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
                   :MilitaryOrganizationPowerType ;
+         owl:differentFrom :Division ;
          :maxStrength 250 ;
          :minStrength 60 .
+
+
+###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Division
+:Division rdf:type owl:NamedIndividual ,
+                   <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
+                   :MilitaryOrganizationPowerType ;
+          owl:differentFrom :Platoon ;
+          :maxStrength 20000 ;
+          :minStrength 9000 .
 
 
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Guarani
 :Guarani rdf:type owl:NamedIndividual ,
                   <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
                   :VehiclePowerType ;
+         :maxAmphibiousSpeed 30 ;
          :maxLandSpeed 90 ;
          :maxPassengers 11 ;
-         :minPassengers 2 .
+         :minPassengers 2 ;
+         :visibilityRange 8000 .
 
 
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#HierarchicallyEquivalent
@@ -857,7 +858,8 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 :Person rdf:type owl:NamedIndividual ,
                  <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#Kind> ;
         :maxAmphibiousSpeed 8 ;
-        :maxLandSpeed 2 .
+        :maxLandSpeed 2 ;
+        :visibilityRange 2000 .
 
 
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Platoon
@@ -906,9 +908,11 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 :Urutu rdf:type owl:NamedIndividual ,
                 <https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/gufo#SubKind> ,
                 :VehiclePowerType ;
+       :maxAmphibiousSpeed 30 ;
        :maxLandSpeed 110 ;
        :maxPassengers 13 ;
-       :minPassengers 2 .
+       :minPassengers 2 ;
+       :visibilityRange 8000 .
 
 
 ###  https://raw.githubusercontent.com/jcctesolin/s2c2/main/rdfxml/miscon#Vehicle
@@ -994,10 +998,6 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
                    rdfs:label "CommDeviceCarrier"@en .
 
 
-:Commander rdfs:comment "Role that a military organization assumes when occupying a commanding position in relation to another military organization in the military hierarchy." ;
-           rdfs:label "Commander"@en .
-
-
 :CommanderMilitaryPerson rdfs:comment "Military Person who is commander of the other Military Persons in his MO" ;
                          rdfs:label "CommanderMilitaryPerson" .
 
@@ -1008,10 +1008,6 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 
 :Guarani rdfs:comment "Guarani is a type of armored vehicle." ;
          rdfs:label "Guarani" .
-
-
-:HierarchicallyEquivalent rdfs:comment "Role that two distinct military organizations assume when they find themselves in a position of equivalence in the military hierarchy." ;
-                          rdfs:label "HierarchicallyEquivalent"@en .
 
 
 :MilitaryOrganization rdfs:comment """Type that confers a principle of identity to a given organization within the military domain. According to decree N 93,188, of August 29, 1986: Art 22. Units are military organizations called regiment, battalion or group. Art 23. Subunits are military organizations called company, squadron or battery and can be incorporated or independent.
@@ -1048,10 +1044,6 @@ According to the Army Glossary:
 
 :Platoon rdfs:comment "A subtype of military organization. A specialization for the Platoon level in the hierarchy of military organizations." ;
          rdfs:label "Platoon" .
-
-
-:Subordinate rdfs:comment "Role that a military organization assumes when it is directly subordinate to another organization in the hierarchy." ;
-             rdfs:label "Subordinate"@en .
 
 
 :SubordinateMilitaryPerson rdfs:comment "Military Person subordinate to CommanderMilitaryPerson, in the hierarchy of military personnel in a Military Organization" ;
@@ -1122,78 +1114,15 @@ According to the Army Glossary:
 
 :mo rdf:type swrl:Variable .
 
-:o1 rdf:type swrl:Variable .
-
 :o2 rdf:type swrl:Variable .
 
-:o3 rdf:type swrl:Variable .
-
-:ompt1 rdf:type swrl:Variable .
+:o1 rdf:type swrl:Variable .
 
 :oe rdf:type swrl:Variable .
 
 :ms1 rdf:type swrl:Variable .
 
 :ms2 rdf:type swrl:Variable .
-
-[ swrla:isRuleEnabled "true"^^xsd:boolean ;
-   rdfs:comment "" ;
-   rdfs:label "OperationalElement" ;
-   rdf:type swrl:Imp ;
-   swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:ClassAtom ;
-                           swrl:classPredicate :MilitaryScenario ;
-                           swrl:argument1 :ms
-                         ] ;
-               rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:ClassAtom ;
-                                      swrl:classPredicate :OperationalElement ;
-                                      swrl:argument1 :oe
-                                    ] ;
-                          rdf:rest rdf:nil
-                        ]
-             ] ;
-   swrl:head [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate :militaryScenarioHasOperationalElement ;
-                           swrl:argument1 :ms ;
-                           swrl:argument2 :oe
-                         ] ;
-               rdf:rest rdf:nil
-             ]
- ] .
-
-[ swrla:isRuleEnabled "true"^^xsd:boolean ;
-   rdfs:comment "" ;
-   rdfs:label "Scenario restriction" ;
-   rdf:type swrl:Imp ;
-   swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:DifferentIndividualsAtom ;
-                           swrl:argument1 :ms1 ;
-                           swrl:argument2 :ms2
-                         ] ;
-               rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:ClassAtom ;
-                                      swrl:classPredicate :MilitaryScenario ;
-                                      swrl:argument1 :ms1
-                                    ] ;
-                          rdf:rest [ rdf:type swrl:AtomList ;
-                                     rdf:first [ rdf:type swrl:ClassAtom ;
-                                                 swrl:classPredicate :MilitaryScenario ;
-                                                 swrl:argument1 :ms2
-                                               ] ;
-                                     rdf:rest rdf:nil
-                                   ]
-                        ]
-             ] ;
-   swrl:head [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:SameIndividualAtom ;
-                           swrl:argument1 :ms1 ;
-                           swrl:argument2 :ms2
-                         ] ;
-               rdf:rest rdf:nil
-             ]
- ] .
 
 [ swrla:isRuleEnabled "true"^^xsd:boolean ;
    rdfs:comment "" ;
@@ -1266,91 +1195,6 @@ According to the Army Glossary:
                            swrl:argument2 :mo
                          ] ;
                rdf:rest rdf:nil
-             ]
- ] .
-
-[ swrla:isRuleEnabled "true"^^xsd:boolean ;
-   rdfs:comment "HierarchicalyEquivalentRule" ;
-   rdfs:label "HierarchicalyEquivalentRule" ;
-   rdf:type swrl:Imp ;
-   swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:DifferentIndividualsAtom ;
-                           swrl:argument1 :o1 ;
-                           swrl:argument2 :o2
-                         ] ;
-               rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                      swrl:propertyPredicate :isCommandedBy ;
-                                      swrl:argument1 :o1 ;
-                                      swrl:argument2 :o3
-                                    ] ;
-                          rdf:rest [ rdf:type swrl:AtomList ;
-                                     rdf:first [ rdf:type swrl:ClassAtom ;
-                                                 swrl:classPredicate :MilitaryOrganizationPowerType ;
-                                                 swrl:argument1 :ompt1
-                                               ] ;
-                                     rdf:rest [ rdf:type swrl:AtomList ;
-                                                rdf:first [ rdf:type swrl:ClassAtom ;
-                                                            swrl:classPredicate :MilitaryOrganization ;
-                                                            swrl:argument1 :o3
-                                                          ] ;
-                                                rdf:rest [ rdf:type swrl:AtomList ;
-                                                           rdf:first [ rdf:type swrl:ClassAtom ;
-                                                                       swrl:classPredicate :MilitaryOrganization ;
-                                                                       swrl:argument1 :o2
-                                                                     ] ;
-                                                           rdf:rest [ rdf:type swrl:AtomList ;
-                                                                      rdf:first [ rdf:type swrl:ClassAtom ;
-                                                                                  swrl:classPredicate :MilitaryOrganization ;
-                                                                                  swrl:argument1 :o1
-                                                                                ] ;
-                                                                      rdf:rest [ rdf:type swrl:AtomList ;
-                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                                                             swrl:propertyPredicate :hasMOPowerType ;
-                                                                                             swrl:argument1 :o1 ;
-                                                                                             swrl:argument2 :ompt1
-                                                                                           ] ;
-                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
-                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                                                                        swrl:propertyPredicate :hasMOPowerType ;
-                                                                                                        swrl:argument1 :o2 ;
-                                                                                                        swrl:argument2 :ompt1
-                                                                                                      ] ;
-                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
-                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                                                                                                   swrl:propertyPredicate :isCommandedBy ;
-                                                                                                                   swrl:argument1 :o2 ;
-                                                                                                                   swrl:argument2 :o3
-                                                                                                                 ] ;
-                                                                                                       rdf:rest rdf:nil
-                                                                                                     ]
-                                                                                          ]
-                                                                               ]
-                                                                    ]
-                                                         ]
-                                              ]
-                                   ]
-                        ]
-             ] ;
-   swrl:head [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate :hierarchicallyEquivalentWith ;
-                           swrl:argument1 :o1 ;
-                           swrl:argument2 :o2
-                         ] ;
-               rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:ClassAtom ;
-                                      swrl:classPredicate :HierarchicallyEquivalent ;
-                                      swrl:argument1 :o1
-                                    ] ;
-                          rdf:rest [ rdf:type swrl:AtomList ;
-                                     rdf:first [ rdf:type swrl:ClassAtom ;
-                                                 swrl:classPredicate :HierarchicallyEquivalent ;
-                                                 swrl:argument1 :o2
-                                               ] ;
-                                     rdf:rest rdf:nil
-                                   ]
-                        ]
              ]
  ] .
 
@@ -1461,4 +1305,63 @@ According to the Army Glossary:
              ]
  ] .
 
-###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "OperationalElement" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :MilitaryScenario ;
+                           swrl:argument1 :ms
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate :OperationalElement ;
+                                      swrl:argument1 :oe
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate :militaryScenarioHasOperationalElement ;
+                           swrl:argument1 :ms ;
+                           swrl:argument2 :oe
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Scenario restriction" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DifferentIndividualsAtom ;
+                           swrl:argument1 :ms1 ;
+                           swrl:argument2 :ms2
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate :MilitaryScenario ;
+                                      swrl:argument1 :ms1
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate :MilitaryScenario ;
+                                                 swrl:argument1 :ms2
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:SameIndividualAtom ;
+                           swrl:argument1 :ms1 ;
+                           swrl:argument2 :ms2
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

@@ -2,7 +2,7 @@
 hide:
   - toc
 ---
-# Interoperabilidade Semântica de Comando e Controle das Forças Armadas Brasileiras
+# Interoperabilidade Semântica entre Sistemas de Comando e Controle das Forças Armadas Brasileiras
 
 ![](img/s2c2logo.png){ align=left }
 
@@ -20,5 +20,5 @@ com isso, redes de comunicações envolvendo questões de segurança nacional e 
 
 Para que tal ambiente funcione de modo satisfatório, é preciso estabelecer procedimentos adequados de gerência, de sorte que a tomada de decisão seja judiciosamente feita no contexto das operações militares.Permitir uma comunicação eficiente e segura vem sendo um desafio a ser superado diante da tecnologia oferecida. Para isso é necessário melhorar a interoperabilidade entre os sistemas, possibilitando que a organização tenha um bom nível de eficiência de seu Comando e Controle (C2). 
 
-Nesse contexto, com a finalidade de **aprimoramento da interoperabilidade semântica de Comando e Controle das Forças Armadas Brasileiras**, é que surgiu o projeto “Sistema de Sistemas de Comando e Controle” - S2C2. Publicado no DOU no 16 de 25 de janeiro de 2021, Seção 3, página 7, o projeto S2C2 conta com o financiamento da FINEP/DCT/FAPEB, referência número 2904/20 sobre o contrato de número 01.20.0272.00.
+Nesse contexto, com a finalidade de **aprimoramento da interoperabilidade semântica de Comando e Controle das Forças Armadas Brasileiras**, é que surgiu o projeto “Sistema de Sistemas de Comando e Controle” - S2C2. Publicado no DOU no 16 de 25 de janeiro de 2021, Seção 3, página 7. O projeto S2C2 contou com o financiamento da FINEP/DCT/FAPEB, referência número 2904/20 sob o contrato de número 01.20.0272.00. 
 

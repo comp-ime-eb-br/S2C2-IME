@@ -1,0 +1,63 @@
+@base <http://idea-c2.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix c2rm: <http://idea-c2.org/c2rm/#> .
+@prefix cnt: <http://idea-c2.org/data/#> .
+
+c2rm:entity a rdfs:Class .
+
+c2rm:relation
+  a rdf:Property ;
+  rdfs:domain c2rm:entity ;
+  rdfs:range c2rm:entity .
+
+c2rm:generaldomainrelation
+    a rdf:Property;
+    rdfs:subPropertyOf c2rm:relation.
+
+c2rm:c2domainrelation
+    a rdf:Property;
+    rdfs:subPropertyOf c2rm:relation.
+	
+c2rm:type_of
+  a rdf:Property ;
+  rdfs:subPropertyOf c2rm:generaldomainrelation .
+
+c2rm:capacity_of
+  a rdf:Property ;
+  rdfs:subPropertyOf c2rm:c2domainrelation .
+ 
+c2rm:applied_to
+  a rdf:Property ;
+  rdfs:subPropertyOf c2rm:c2domainrelation .
+ 
+cnt:elemento_do_poder_de_combate
+	a c2rm:entity .
+
+cnt:elemento_do_poder_de_combate_terrestre
+	a c2rm:entity ;
+	rdfs:subClassOf cnt:elemento_do_poder_de_combate .
+
+cnt:funcoes_de_combate
+	a c2rm:entity ;
+	rdfs:subClassOf cnt:elemento_do_poder_de_combate_terrestre .
+	
+cnt:informacoes
+	a c2rm:entity ;
+	rdfs:subClassOf cnt:elemento_do_poder_de_combate_terrestre .
+
+cnt:lideranca
+	a c2rm:entity ;
+	rdfs:subClassOf cnt:elemento_do_poder_de_combate_terrestre .
+
+cnt:guerra
+	a c2rm:entity ;
+	c2rm:applied_to cnt:elemento_do_poder_de_combate_terrestre .	
+
+cnt:f_ter
+	a c2rm:entity ;
+	c2rm:capacity_of cnt:elemento_do_poder_de_combate_terrestre .
+
+cnt:nao_guerra
+	a c2rm:entity ;
+	c2rm:applied_to cnt:elemento_do_poder_de_combate_terrestre .

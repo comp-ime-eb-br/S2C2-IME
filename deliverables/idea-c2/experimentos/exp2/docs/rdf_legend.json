@@ -1,0 +1,13 @@
+{
+    " associated_with": "http://idea.org/c2rm/#equivalent_to",
+    "equivalent_to": "http://idea.org/c2rm/#equivalent_to",
+    "composed_of": "http://idea.org/c2rm/#composed_of",
+    "type_of": "http://idea.org/c2rm/#type_of",
+    "defined_by": "http://idea.org/c2rm/#defined_by",
+    "co-referenced": "http://idea.org/c2rm/#co-referenced",
+    "instance_of": "http://idea.org/c2rm/#instance_of",
+    "responsible_for": "http://idea.org/c2rm/#responsible_for",
+    "capacity_of": "http://idea.org/c2rm/#capacity_of",    
+    "occurs_in": "http://idea.org/c2rm/#occurs_in",    
+    "applied_to": "http://idea.org/c2rm/#applied_to"
+}

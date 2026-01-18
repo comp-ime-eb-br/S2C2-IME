@@ -1,0 +1,2227 @@
+@prefix c2rm: <http://idea-c2.org/c2rm/#> .
+@prefix cnt: <http://idea-c2.org/data/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+c2rm:entity a rdfs:Class .
+
+c2rm:applied_to a rdf:Property ;
+    rdfs:subPropertyOf c2rm:c2domainrelation .
+
+c2rm:associated_with a rdf:Property ;
+    rdfs:subPropertyOf c2rm:generaldomainrelation .
+
+c2rm:capacity_of a rdf:Property ;
+    rdfs:subPropertyOf c2rm:c2domainrelation .
+
+c2rm:composed_of a rdf:Property ;
+    rdfs:subPropertyOf c2rm:generaldomainrelation .
+
+c2rm:coreferenced a rdf:Property ;
+    rdfs:subPropertyOf c2rm:c2domainrelation .
+
+c2rm:defined_by a rdf:Property ;
+    rdfs:subPropertyOf c2rm:generaldomainrelation .
+
+c2rm:equivalent_to a rdf:Property ;
+    rdfs:subPropertyOf c2rm:generaldomainrelation .
+
+c2rm:instance_of a rdf:Property ;
+    rdfs:subPropertyOf c2rm:generaldomainrelation .
+
+c2rm:occurs_in a rdf:Property ;
+    rdfs:subPropertyOf c2rm:c2domainrelation .
+
+c2rm:responsible_for a rdf:Property ;
+    rdfs:subPropertyOf c2rm:c2domainrelation .
+
+c2rm:type_of a rdf:Property ;
+    rdfs:subPropertyOf c2rm:generaldomainrelation .
+
+cnt:acao_politica a c2rm:entity ;
+    rdfs:subClassOf cnt:externa,
+        cnt:interna .
+
+cnt:acao_tatica a c2rm:entity ;
+    rdfs:subClassOf cnt:acao_aerea .
+
+cnt:acoes_taticas a c2rm:entity ;
+    rdfs:subClassOf cnt:arte_operacional .
+
+cnt:advocacia-geral_da_uniao a c2rm:entity,
+        cnt:orgaos .
+
+cnt:ambiente_global a c2rm:entity ;
+    rdfs:seeAlso cnt:ameacas .
+
+cnt:apoio_ao_combate a c2rm:entity ;
+    rdfs:subClassOf cnt:batalhao .
+
+cnt:arte a c2rm:entity ;
+    rdfs:subClassOf cnt:comando,
+        cnt:controle .
+
+cnt:atos a c2rm:entity ;
+    rdfs:subClassOf cnt:ameacas .
+
+cnt:batalha_profunda a c2rm:entity ;
+    c2rm:composed_of <nb3f48460555c4827939ac7abb0cf12b3> ;
+    rdfs:seeAlso cnt:componente_de_combate_aereo,
+        cnt:componente_de_combate_terrestre .
+
+cnt:casa_civil_da_presidencia_da_republica a c2rm:entity,
+        cnt:orgaos .
+
+cnt:cc2md a c2rm:entity ;
+    c2rm:responsible_for cnt:informacoes,
+        cnt:operacao_conjunta ;
+    rdfs:seeAlso cnt:operacoes_correntes,
+        cnt:orgao_central,
+        cnt:orgaos .
+
+cnt:ccop a c2rm:entity ;
+    rdfs:seeAlso cnt:garantia_da_lei_e_da_ordem .
+
+cnt:centro_de_coordenacao_de_operacoes a c2rm:entity ;
+    c2rm:composed_of <n2a54d355508a401e84ce68ccadc56f2a> ;
+    c2rm:responsible_for cnt:controle_operacional .
+
+cnt:chefias a c2rm:entity ;
+    rdfs:seeAlso cnt:emcfa,
+        cnt:fnsp,
+        cnt:fs,
+        cnt:operacao_conjunta,
+        cnt:policia_federal .
+
+cnt:chefias_do_emcfa a c2rm:entity ;
+    c2rm:responsible_for cnt:lista_de_necessidades .
+
+cnt:comandante_operacional a c2rm:entity ;
+    c2rm:responsible_for cnt:acoes,
+        cnt:arte_operacional,
+        cnt:planejamento_militar_da_campanha .
+
+cnt:comando_tatico a c2rm:entity ;
+    c2rm:capacity_of cnt:autoridade ;
+    rdfs:seeAlso cnt:autoridade,
+        cnt:comandante,
+        cnt:comando,
+        cnt:instrucao,
+        cnt:missao .
+
+cnt:comandos_das_forcas_componentes a c2rm:entity ;
+    c2rm:responsible_for cnt:planos_taticos .
+
+cnt:comandos_logisticos_das_fa a c2rm:entity ;
+    c2rm:composed_of <n8e06ba8fafe6464683a651619ad10a15> .
+
+cnt:conceitos_estrategicos a c2rm:entity ;
+    rdfs:seeAlso cnt:objetivos_operacionais .
+
+cnt:crescimento_populacional a c2rm:entity ;
+    rdfs:seeAlso cnt:fatores .
+
+<http://idea-c2.org/data/#departamento_de_planejamento,_orcamento_e_financas> a c2rm:entity ;
+    c2rm:composed_of <n92ca5029f22945f1b60d5871e6a0c447> .
+
+cnt:deslocamento a c2rm:entity ;
+    c2rm:applied_to cnt:forcas ;
+    rdfs:subClassOf cnt:manobra,
+        cnt:movimento .
+
+cnt:dimensao_fisica a c2rm:entity ;
+    c2rm:composed_of <ne3c69835ff6d41019c74f42b73c82251> ;
+    rdfs:seeAlso cnt:f_ter,
+        cnt:operacoes .
+
+cnt:dimensao_humana a c2rm:entity ;
+    c2rm:applied_to cnt:individuo,
+        cnt:sociedade ;
+    rdfs:seeAlso cnt:danos_colaterais,
+        cnt:perda_de_vidas_humanas .
+
+cnt:dimensao_informacional a c2rm:entity ;
+    c2rm:composed_of <n2f27fbfb2b1e459ab6f8f35702578b29> .
+
+cnt:dimensoes a c2rm:entity ;
+    rdfs:subClassOf cnt:fisica,
+        cnt:humana,
+        cnt:informacional .
+
+cnt:diretriz_presidencial_de_emprego_de_defesa a c2rm:entity ;
+    rdfs:seeAlso cnt:conceito_politico_do_planejamento,
+        cnt:decisoes_e_diretrizes,
+        cnt:orientacoes_e_condicionantes_aos_planejamentos,
+        cnt:planejamento_estrategico .
+
+cnt:distrito_federal a c2rm:entity ;
+    rdfs:seeAlso cnt:solicitacao .
+
+cnt:doutrina_de_operacoes_conjuntas a c2rm:entity ;
+    rdfs:subClassOf cnt:md30-m-01 .
+
+cnt:efeito a c2rm:entity ;
+    rdfs:subClassOf cnt:ato .
+
+cnt:elementos_do_poder_de_combate a c2rm:entity ;
+    rdfs:subClassOf cnt:elementos_do_poder_de_combate_terrestre .
+
+cnt:emprego_das_forcas_armadas_nas_operacoes_conjuntas a c2rm:entity ;
+    rdfs:seeAlso cnt:operacao_conjunta .
+
+cnt:estado-maior_conjunto a c2rm:entity ;
+    c2rm:responsible_for cnt:analises_de_situacao .
+
+cnt:exame_de_situacao a c2rm:entity ;
+    c2rm:composed_of <nda92e3e249ce4c80a09ee87e828d9d1c> .
+
+cnt:forca_aerea_brasileira a c2rm:entity ;
+    c2rm:composed_of <n9f9e0fac1c0a4e728f998d9afa216170> .
+
+cnt:forcas_militares_terrestres a c2rm:entity ;
+    c2rm:responsible_for cnt:arte_operacional .
+
+cnt:fotografia a c2rm:entity ;
+    rdfs:subClassOf cnt:aerofotografia .
+
+cnt:funcao_de_combate_m2 a c2rm:entity ;
+    c2rm:applied_to cnt:forcas ;
+    c2rm:composed_of <n161759e8384140938e32e25d3a8b1489> .
+
+cnt:gabinete_de_seguranca_institucional_da_presidencia_da_republica a c2rm:entity,
+        cnt:orgaos .
+
+<http://idea-c2.org/data/#glo,> a c2rm:entity ;
+    c2rm:composed_of <nd85ad56b8c634b048156e20c66cfed4f> ;
+    c2rm:responsible_for cnt:forcas_armadas .
+
+cnt:governador_de_estado a c2rm:entity ;
+    rdfs:seeAlso cnt:solicitacao .
+
+cnt:grande_comando a c2rm:entity ;
+    rdfs:subClassOf cnt:comando_aeroestrategico .
+
+cnt:grande_comando_logistico a c2rm:entity ;
+    rdfs:subClassOf cnt:batalhao .
+
+cnt:grande_comando_operacional a c2rm:entity ;
+    rdfs:subClassOf cnt:batalhao .
+
+cnt:grande_unidade a c2rm:entity ;
+    rdfs:subClassOf cnt:batalhao .
+
+cnt:iefa a c2rm:entity ;
+    c2rm:composed_of <n471b08c1a2584d5f92ded78769199a84> ;
+    rdfs:seeAlso cnt:decisao_presidencial,
+        cnt:dm .
+
+cnt:lideres a c2rm:entity ;
+    rdfs:seeAlso cnt:individuo .
+
+cnt:militar a c2rm:entity ;
+    rdfs:subClassOf cnt:comandante .
+
+cnt:ministerio_da_defesa a c2rm:entity ;
+    c2rm:responsible_for cnt:estrategico .
+
+cnt:ministerios a c2rm:entity,
+        cnt:orgaos ;
+    rdfs:subClassOf cnt:justica,
+        <http://idea-c2.org/data/#planejamento,_orcamento_e_gestao>,
+        cnt:relacoes_exteriores .
+
+cnt:ministro_da_defesa a c2rm:entity ;
+    c2rm:responsible_for cnt:diretriz,
+        cnt:diretriz_ministerial,
+        cnt:emcfa,
+        cnt:exame_de_situacao_operacional ;
+    rdfs:seeAlso cnt:estado-maior_conjunto_das_forcas_armadas .
+
+cnt:operacao_defensiva a c2rm:entity ;
+    c2rm:applied_to cnt:manobra_tatica_defensiva ;
+    c2rm:composed_of <n10932098a04e452eaa61ca3a6597642e> ;
+    rdfs:comment cnt:neutraliza_ou_reduz_a_eficiencia_dos_ataques_inimigos ;
+    rdfs:subClassOf cnt:defesa_em_posicao,
+        cnt:movimento_retrogrado .
+
+cnt:operacoes_interagencias a c2rm:entity ;
+    c2rm:composed_of <nfe0e891ff8ac48bbbd6b5834b12fa561> .
+
+cnt:organico a c2rm:entity ;
+    rdfs:subClassOf cnt:batalhao .
+
+cnt:organizacao a c2rm:entity ;
+    rdfs:seeAlso cnt:forcas_armadas ;
+    rdfs:subClassOf cnt:aeroestrategica,
+        cnt:combinada\(o\) .
+
+cnt:pessoas a c2rm:entity ;
+    rdfs:subClassOf cnt:agentes_de_perturbacao_da_ordem_publica .
+
+cnt:policia_do_exercito a c2rm:entity,
+        cnt:batalhao .
+
+cnt:ponto_critico a c2rm:entity ;
+    rdfs:subClassOf cnt:centro_de_gravidade .
+
+cnt:preparo a c2rm:entity ;
+    rdfs:seeAlso cnt:forcas_armadas .
+
+cnt:re a c2rm:entity ;
+    c2rm:applied_to cnt:adestramento .
+
+cnt:recursos_naturais a c2rm:entity ;
+    rdfs:seeAlso cnt:fatores .
+
+cnt:seguranca_integrada a c2rm:entity ;
+    c2rm:responsible_for cnt:execucao,
+        cnt:planejamentos ;
+    rdfs:seeAlso cnt:ministerio_publico,
+        cnt:poder_judiciario,
+        cnt:seguranca_publica .
+
+cnt:sinde a c2rm:entity ;
+    rdfs:seeAlso cnt:inteligencia .
+
+cnt:sistema_brasileiro_de_inteligencia a c2rm:entity ;
+    rdfs:seeAlso cnt:inteligencia .
+
+cnt:sistema_de_inteligencia_operacional a c2rm:entity ;
+    rdfs:seeAlso cnt:inteligencia .
+
+cnt:sistematica_de_planejamento_de_emprego_conjunto_das_forcas_armadas a c2rm:entity ;
+    c2rm:applied_to cnt:estrategico,
+        cnt:operacional,
+        cnt:politico,
+        cnt:tatico ;
+    c2rm:composed_of <na6724a436f264ee18228ebd3247e7b52> ;
+    rdfs:seeAlso cnt:planejamento_estrategico-militar .
+
+cnt:subchefia_de_comando_e_controle a c2rm:entity ;
+    c2rm:responsible_for cnt:plano_estrategico_de_comando_e_controle .
+
+cnt:subchefia_de_integracao_logistica a c2rm:entity ;
+    c2rm:composed_of <ncfc6714000c24df0a189a2c23f015e80> .
+
+cnt:subchefia_de_inteligencia_estrategica a c2rm:entity ;
+    c2rm:composed_of <n5d194834cb1a4d748f27b9972d5c2d2b> .
+
+cnt:subchefia_de_mobilizacao a c2rm:entity ;
+    c2rm:composed_of <na15c4ed35c6c40b79d55602dbaeba731> .
+
+cnt:subchefia_de_operacoes a c2rm:entity ;
+    c2rm:composed_of <n2cd6699fe887478ba2b99a66b6e4a608> ;
+    c2rm:responsible_for cnt:plano_estrategico_de_assuntos_civis,
+        cnt:plano_estrategico_de_operacoes_de_informacao .
+
+cnt:tripulacao a c2rm:entity ;
+    c2rm:composed_of <na55a0827776c4e4da2d0b94d3acaf620> .
+
+cnt:unidades a c2rm:entity ;
+    c2rm:responsible_for cnt:funcoes_de_combate ;
+    rdfs:subClassOf cnt:armas,
+        cnt:quadros,
+        cnt:servicos .
+
+cnt:unidades_navais a c2rm:entity ;
+    c2rm:responsible_for cnt:operacao_naval .
+
+cnt:acao a c2rm:entity ;
+    c2rm:applied_to cnt:operacao,
+        cnt:tarefa ;
+    rdfs:subClassOf cnt:combate .
+
+cnt:acao_aerea a c2rm:entity ;
+    c2rm:applied_to cnt:meios_aereos ;
+    rdfs:seeAlso cnt:esforco .
+
+cnt:acao_retardadora a c2rm:entity .
+
+cnt:acoes_de_efetivo_combate a c2rm:entity .
+
+cnt:acoes_militares a c2rm:entity ;
+    rdfs:subClassOf cnt:estrategica,
+        cnt:operacional,
+        cnt:tatica .
+
+cnt:acoes_ofensivas a c2rm:entity ;
+    rdfs:subClassOf cnt:combate_de_encontro,
+        cnt:incursao .
+
+cnt:acontecimentos a c2rm:entity .
+
+cnt:adaptaveis a c2rm:entity .
+
+cnt:adestramento a c2rm:entity .
+
+cnt:aereas a c2rm:entity .
+
+cnt:aerofotografia a c2rm:entity ;
+    c2rm:applied_to cnt:cartografia,
+        cnt:fotointerpretacao,
+        cnt:reconhecimento_aerofotografico ;
+    rdfs:seeAlso cnt:aeronaves,
+        cnt:veiculos_espaciais .
+
+cnt:aeronautica a c2rm:entity ;
+    rdfs:seeAlso cnt:comandantes .
+
+cnt:aeronave a c2rm:entity .
+
+cnt:agencias_governamentais a c2rm:entity .
+
+cnt:agentes_de_perturbacao_da_ordem_publica a c2rm:entity ;
+    c2rm:applied_to cnt:preservacao .
+
+cnt:agu a c2rm:entity ;
+    c2rm:responsible_for cnt:assistencia_juridica .
+
+cnt:aguas a c2rm:entity .
+
+cnt:alcance_operativo a c2rm:entity ;
+    c2rm:applied_to cnt:poder_de_combate ;
+    rdfs:comment cnt:distancia,
+        cnt:tempo .
+
+cnt:ambientais a c2rm:entity .
+
+cnt:ambiente_maritimo a c2rm:entity .
+
+cnt:ambiente_urbano a c2rm:entity .
+
+cnt:amplitude_de_alcance a c2rm:entity ;
+    rdfs:seeAlso cnt:operacoes .
+
+cnt:analise_dos_fatores_fixos_da_area_de_responsabilidade a c2rm:entity ;
+    c2rm:composed_of <n3a8ced0e759d489c94d8eec3b00188f9> .
+
+cnt:apoio a c2rm:entity ;
+    rdfs:seeAlso cnt:liberdade .
+
+cnt:apoio_a_decisao a c2rm:entity .
+
+cnt:aproveitamento_do_exito a c2rm:entity .
+
+cnt:aquisicao_de_alvos a c2rm:entity .
+
+cnt:area a c2rm:entity .
+
+cnt:area_de_concentracao a c2rm:entity .
+
+cnt:area_de_operacoes a c2rm:entity .
+
+cnt:area_militar a c2rm:entity .
+
+cnt:areas_de_operacoes a c2rm:entity .
+
+cnt:areas_de_responsabilidade a c2rm:entity ;
+    rdfs:seeAlso cnt:comandos_operacionais .
+
+cnt:areas_estrategicas a c2rm:entity ;
+    rdfs:seeAlso cnt:territorio_nacional ;
+    rdfs:subClassOf cnt:prioritarias .
+
+cnt:armas_de_fogos a c2rm:entity .
+
+cnt:assistencia_juridica a c2rm:entity ;
+    rdfs:seeAlso cnt:forcas .
+
+cnt:assuntos_civis a c2rm:entity .
+
+cnt:ataque_frontal a c2rm:entity .
+
+cnt:ativacao a c2rm:entity ;
+    rdfs:seeAlso cnt:comandos_operacionais .
+
+cnt:atividade a c2rm:entity ;
+    c2rm:applied_to cnt:funcao_de_combate,
+        cnt:problemas_militares ;
+    c2rm:composed_of <n32bc0bf22e79444f9d0a80de35456f47> ;
+    rdfs:subClassOf cnt:aeroestrategica,
+        cnt:combinada\(o\),
+        cnt:inteligencia .
+
+cnt:atividades_operacionais a c2rm:entity .
+
+cnt:ato a c2rm:entity ;
+    rdfs:subClassOf cnt:acao .
+
+cnt:atribuicoes_subsidiarias a c2rm:entity .
+
+cnt:atuais a c2rm:entity .
+
+cnt:autoridade_legitimamente_investida a c2rm:entity .
+
+cnt:avaliacao_da_conjuntura_e_elaboracao_de_cenarios a c2rm:entity .
+
+cnt:bens_patrimoniais a c2rm:entity .
+
+cnt:camara_dos_deputados a c2rm:entity .
+
+cnt:campanha a c2rm:entity ;
+    c2rm:applied_to cnt:objetivo ;
+    c2rm:composed_of <na523d4ff7a694883bf85500e09c6eaec> .
+
+cnt:campanhas a c2rm:entity .
+
+cnt:capacidade a c2rm:entity ;
+    c2rm:applied_to cnt:militares ;
+    rdfs:seeAlso cnt:exemplo,
+        cnt:motivacao,
+        cnt:objetividade ;
+    rdfs:subClassOf cnt:dirigir,
+        cnt:influenciar .
+
+cnt:capacidade_de_defesa a c2rm:entity .
+
+cnt:carater_estrategico a c2rm:entity .
+
+cnt:cartografia a c2rm:entity .
+
+cnt:centro_de_comando_e_controle_do_md a c2rm:entity .
+
+cnt:centro_de_gravidade a c2rm:entity ;
+    c2rm:composed_of <nd0ff59e25ac143c49ffd75dd206fd768> ;
+    rdfs:seeAlso cnt:sistema .
+
+cnt:centro_de_operacoes_conjuntas a c2rm:entity ;
+    rdfs:seeAlso cnt:equipe .
+
+cnt:chefe_do_estado-maior_conjunto_das_forcas_armadas a c2rm:entity ;
+    c2rm:responsible_for cnt:instrucoes_para_o_emprego_das_forcas_armadas .
+
+cnt:cidadaos a c2rm:entity .
+
+cnt:ciencia_e_arte_que_trata_do_funcionamento_de_uma_cadeia_de_comando a c2rm:entity .
+
+cnt:comandante_de_aeronave a c2rm:entity ;
+    c2rm:responsible_for cnt:aeronave,
+        cnt:missao,
+        cnt:seguranca .
+
+cnt:comandante_do_comando_combinado a c2rm:entity .
+
+cnt:comandante_do_teatro_de_operacoes a c2rm:entity .
+
+cnt:comandante_supremo a c2rm:entity ;
+    c2rm:responsible_for cnt:politico ;
+    owl:equivalentClass cnt:comando_supremo .
+
+cnt:comandos a c2rm:entity ;
+    c2rm:applied_to cnt:surpresa ;
+    rdfs:comment cnt:permanente_adestrada_e_altamente_qualificada ;
+    rdfs:seeAlso cnt:emprego .
+
+cnt:comandos_das_forcas_singulares a c2rm:entity ;
+    c2rm:responsible_for cnt:atividades .
+
+cnt:combate_de_encontro a c2rm:entity .
+
+cnt:competencias a c2rm:entity ;
+    rdfs:subClassOf cnt:criatividade,
+        cnt:pensamento_critico .
+
+cnt:componente_de_combate_aereo a c2rm:entity ;
+    rdfs:seeAlso cnt:acoes .
+
+cnt:componente_de_combate_terrestre a c2rm:entity ;
+    rdfs:seeAlso cnt:acoes .
+
+cnt:comportamento a c2rm:entity .
+
+cnt:comportamentos a c2rm:entity .
+
+cnt:comunicacao_social a c2rm:entity .
+
+cnt:conceito_politico_do_planejamento a c2rm:entity .
+
+cnt:conceito_preliminar_da_operacao a c2rm:entity ;
+    c2rm:composed_of <ndcfd9ae3900a4f668b6ae8e3da1840a2> .
+
+cnt:concepcao_da_manobra_do_comandante a c2rm:entity .
+
+cnt:condicionantes_politicas_ao_planejamento a c2rm:entity .
+
+cnt:condicoes_de_sucesso a c2rm:entity .
+
+cnt:conflito_armado a c2rm:entity .
+
+cnt:conhecimento a c2rm:entity ;
+    rdfs:seeAlso cnt:espaco_de_batalha .
+
+cnt:conjunta a c2rm:entity ;
+    rdfs:seeAlso cnt:operacoes_de_garantia_da_lei_e_da_ordem .
+
+cnt:conjunturais_locais a c2rm:entity .
+
+cnt:consciencia_situacional a c2rm:entity .
+
+cnt:conselho_de_defesa_nacional a c2rm:entity .
+
+cnt:conselho_militar_de_defesa a c2rm:entity .
+
+cnt:constituicao_federal a c2rm:entity .
+
+cnt:contato a c2rm:entity .
+
+cnt:contingencia a c2rm:entity .
+
+cnt:controlar a c2rm:entity .
+
+cnt:controle_das_operacoes_militares a c2rm:entity .
+
+cnt:controle_operacional a c2rm:entity ;
+    c2rm:applied_to cnt:acoes,
+        cnt:operacoes .
+
+cnt:coordenacao_da_operacao a c2rm:entity .
+
+cnt:criatividade a c2rm:entity .
+
+cnt:crises_repentinas a c2rm:entity .
+
+cnt:cumprimento_pleno_das_ordens a c2rm:entity .
+
+cnt:dados_atualizados a c2rm:entity .
+
+cnt:danos_colaterais a c2rm:entity .
+
+cnt:decisao a c2rm:entity ;
+    rdfs:seeAlso cnt:forcas_armadas,
+        cnt:ministro_de_estado_da_defesa .
+
+cnt:decisao_presidencial a c2rm:entity .
+
+cnt:defesa a c2rm:entity .
+
+cnt:defesa_cibernetica a c2rm:entity .
+
+cnt:defesa_civil_e_ajuda_humanitaria a c2rm:entity .
+
+cnt:defesa_da_patria a c2rm:entity .
+
+cnt:defesa_de_area a c2rm:entity .
+
+cnt:defesa_movel a c2rm:entity ;
+    rdfs:seeAlso cnt:defesa_em_posicao .
+
+cnt:delitos a c2rm:entity .
+
+cnt:desbordamento a c2rm:entity .
+
+cnt:designacao a c2rm:entity ;
+    rdfs:seeAlso cnt:comandantes .
+
+cnt:direcao a c2rm:entity .
+
+cnt:direitos_e_garantias_individuais a c2rm:entity .
+
+cnt:diretriz a c2rm:entity ;
+    c2rm:applied_to cnt:acoes ;
+    c2rm:composed_of <n46b2fbddd85b4233b518bc23f823fa9b> ;
+    rdfs:seeAlso cnt:op_glo .
+
+cnt:diretriz_ministerial a c2rm:entity ;
+    rdfs:seeAlso cnt:ativacao,
+        cnt:designacao .
+
+cnt:diretriz_para_o_estabelecimento_da_estrutura_militar_de_defesa a c2rm:entity .
+
+cnt:distancia a c2rm:entity .
+
+cnt:dm a c2rm:entity ;
+    rdfs:seeAlso cnt:chefe_do_estado-maior_conjunto_das_forcas_armadas,
+        cnt:comandantes,
+        cnt:comandos_operacionais,
+        cnt:crise .
+
+cnt:documento_oficial a c2rm:entity ;
+    c2rm:applied_to cnt:missao ;
+    c2rm:responsible_for cnt:orgaos .
+
+cnt:doutrina a c2rm:entity .
+
+cnt:economicos a c2rm:entity .
+
+cnt:elementos_do_poder_de_combate_terrestre a c2rm:entity ;
+    c2rm:applied_to cnt:situacoes ;
+    rdfs:seeAlso cnt:capacidades,
+        cnt:f_ter ;
+    rdfs:subClassOf cnt:funcoes_de_combate,
+        cnt:informacoes,
+        cnt:lideranca .
+
+cnt:emprego_singular a c2rm:entity ;
+    rdfs:seeAlso cnt:comando_operacional,
+        cnt:informado,
+        cnt:md .
+
+cnt:empresas a c2rm:entity .
+
+cnt:envolvimento a c2rm:entity .
+
+cnt:equipamento a c2rm:entity .
+
+cnt:equipe a c2rm:entity .
+
+cnt:esforco a c2rm:entity .
+
+cnt:espaco a c2rm:entity .
+
+cnt:espaco_de_batalha a c2rm:entity .
+
+cnt:espaco_geografico a c2rm:entity .
+
+cnt:estado-maior_conjunto_das_forcas_armadas a c2rm:entity ;
+    c2rm:responsible_for cnt:planos_estrategicos_de_emprego_conjunto_das_forcas_armadas .
+
+cnt:estados a c2rm:entity .
+
+cnt:estados-maiores a c2rm:entity .
+
+cnt:estadual a c2rm:entity ;
+    rdfs:subClassOf cnt:orgaos .
+
+cnt:estrategia_nacional_de_defesa a c2rm:entity .
+
+cnt:estrategias a c2rm:entity .
+
+cnt:estrategica a c2rm:entity .
+
+cnt:estrategicos a c2rm:entity .
+
+cnt:estrutura a c2rm:entity ;
+    rdfs:subClassOf cnt:doutrina,
+        cnt:equipamento,
+        cnt:pessoal,
+        cnt:tecnologia .
+
+cnt:estrutura_militar a c2rm:entity .
+
+cnt:estrutura_militar_de_defesa a c2rm:entity .
+
+cnt:estrutura_militar_de_guerra a c2rm:entity .
+
+cnt:estruturas a c2rm:entity .
+
+cnt:etapa_de_exame_de_situacao_e_planejamento a c2rm:entity ;
+    c2rm:composed_of <n509558bf5bcc41cd865ad792bbde9d89> .
+
+cnt:exame_de_situacao_e_planejamento a c2rm:entity .
+
+cnt:exames_de_situacao_taticos_das_forcas_componentes a c2rm:entity ;
+    rdfs:seeAlso cnt:conceito_preliminar_da_operacao .
+
+cnt:exemplo a c2rm:entity .
+
+cnt:exercicio a c2rm:entity ;
+    c2rm:responsible_for cnt:comando .
+
+cnt:exercicio_da_autoridade a c2rm:entity .
+
+cnt:externa a c2rm:entity .
+
+cnt:faixa_de_fronteira a c2rm:entity ;
+    rdfs:subClassOf cnt:aguas,
+        cnt:mar,
+        cnt:terrestre .
+
+cnt:federal a c2rm:entity ;
+    rdfs:subClassOf cnt:orgaos .
+
+cnt:ferramentas a c2rm:entity ;
+    rdfs:subClassOf cnt:apoio_a_decisao .
+
+cnt:finalidade a c2rm:entity .
+
+cnt:fisica a c2rm:entity .
+
+cnt:fluxo_de_informacoes a c2rm:entity .
+
+cnt:fnsp a c2rm:entity .
+
+cnt:fogos a c2rm:entity ;
+    c2rm:applied_to cnt:armas_de_fogos ;
+    c2rm:composed_of <nf036a59f53bf41e7b19450fe9dff9499> ;
+    rdfs:seeAlso cnt:forca .
+
+cnt:forca_aerea a c2rm:entity ;
+    c2rm:responsible_for cnt:aeroestrategica .
+
+cnt:forca_armada a c2rm:entity .
+
+cnt:forca_oponente a c2rm:entity .
+
+cnt:forcas_componentes a c2rm:entity ;
+    c2rm:responsible_for cnt:objetivos_operacionais,
+        cnt:operacao_conjunta,
+        cnt:planejamento,
+        cnt:tatico .
+
+cnt:forcas_militares a c2rm:entity .
+
+cnt:forcas_oponentes a c2rm:entity .
+
+cnt:forma a c2rm:entity ;
+    rdfs:subClassOf cnt:conjunta,
+        cnt:singular .
+
+cnt:formulacao_de_ordens a c2rm:entity .
+
+cnt:fotointerpretacao a c2rm:entity .
+
+cnt:funcao_de_combate a c2rm:entity .
+
+cnt:garantia_dos_poderes_constitucionais a c2rm:entity .
+
+cnt:governamentais a c2rm:entity .
+
+cnt:graduacao a c2rm:entity .
+
+cnt:heterogeneidade_dos_processos_de_emprego a c2rm:entity .
+
+cnt:hipotese_de_emprego a c2rm:entity ;
+    c2rm:composed_of <n41357b978ebe482b8d1ad6c1f629842f> ;
+    rdfs:seeAlso cnt:comandos_das_forcas_singulares,
+        cnt:md .
+
+cnt:historicos a c2rm:entity .
+
+cnt:humana a c2rm:entity .
+
+cnt:identificar a c2rm:entity .
+
+cnt:ifr a c2rm:entity .
+
+cnt:imprevisiveis a c2rm:entity ;
+    rdfs:seeAlso cnt:crises_repentinas,
+        cnt:planejamento_emergencial .
+
+cnt:incursao a c2rm:entity .
+
+cnt:infiltracao a c2rm:entity .
+
+cnt:informacao a c2rm:entity .
+
+cnt:informacional a c2rm:entity .
+
+cnt:iniciativa_propria a c2rm:entity ;
+    rdfs:seeAlso cnt:presidente_da_republica .
+
+cnt:inimigo a c2rm:entity .
+
+cnt:instrucao a c2rm:entity .
+
+cnt:instrucoes_para_o_emprego_das_forcas_armadas a c2rm:entity ;
+    rdfs:seeAlso cnt:atividades .
+
+cnt:interdicao a c2rm:entity .
+
+cnt:interesses a c2rm:entity .
+
+cnt:interna a c2rm:entity .
+
+cnt:internacionais a c2rm:entity .
+
+cnt:juncao a c2rm:entity .
+
+cnt:justica a c2rm:entity .
+
+cnt:legalidade a c2rm:entity .
+
+cnt:leis_complementares a c2rm:entity .
+
+cnt:lideranca a c2rm:entity ;
+    rdfs:seeAlso cnt:individuo .
+
+cnt:limitacoes_ao_emprego_dos_meios_militares a c2rm:entity .
+
+cnt:manobra_tatica a c2rm:entity ;
+    c2rm:applied_to cnt:ataque ;
+    rdfs:subClassOf cnt:ataque_frontal,
+        cnt:desbordamento,
+        cnt:envolvimento,
+        cnt:infiltracao,
+        cnt:penetracao .
+
+cnt:manobra_tatica_defensiva a c2rm:entity ;
+    rdfs:subClassOf cnt:acao_retardadora,
+        cnt:defesa_de_area,
+        cnt:defesa_movel,
+        cnt:retirada,
+        cnt:retraimento .
+
+cnt:mar a c2rm:entity .
+
+cnt:marcha_para_o_combate a c2rm:entity .
+
+cnt:medidas_adotadas a c2rm:entity .
+
+cnt:meios_aereos a c2rm:entity .
+
+cnt:ministro_de_estado_da_defesa a c2rm:entity ;
+    c2rm:responsible_for cnt:documento_oficial .
+
+cnt:mitigar a c2rm:entity .
+
+cnt:motivacao a c2rm:entity .
+
+cnt:movimento_e_manobra a c2rm:entity ;
+    c2rm:applied_to cnt:forcas ;
+    c2rm:composed_of <n9750a1f575014a62b730f508e3a1ecab> ;
+    rdfs:seeAlso cnt:situacao .
+
+cnt:mpog a c2rm:entity ;
+    c2rm:responsible_for cnt:recursos_financeiros .
+
+cnt:municipal a c2rm:entity ;
+    rdfs:subClassOf cnt:orgaos .
+
+cnt:nacionais a c2rm:entity .
+
+cnt:navais a c2rm:entity .
+
+cnt:necessidade a c2rm:entity ;
+    rdfs:seeAlso cnt:acoes .
+
+cnt:neutraliza_ou_reduz_a_eficiencia_dos_ataques_inimigos a c2rm:entity .
+
+cnt:nivel_setorial a c2rm:entity .
+
+cnt:normalidade a c2rm:entity .
+
+cnt:normas_de_conduta a c2rm:entity ;
+    c2rm:applied_to cnt:regras_de_engajamento ;
+    c2rm:composed_of <nfe9a50df6b3e480d8fe2df03e350f626> ;
+    rdfs:seeAlso cnt:comportamento,
+        cnt:direitos_e_garantias_individuais,
+        cnt:populacao,
+        cnt:tropa,
+        cnt:urbanidade .
+
+cnt:objetividade a c2rm:entity .
+
+cnt:objetivos a c2rm:entity ;
+    c2rm:composed_of <ne1b4152392e34b9a89d3a418d9fdce04> ;
+    rdfs:seeAlso cnt:objetivos_operacionais .
+
+cnt:objetivos_politicos_e_estrategicos a c2rm:entity .
+
+cnt:objetos a c2rm:entity .
+
+cnt:ong a c2rm:entity .
+
+cnt:operacao_ifr a c2rm:entity ;
+    c2rm:applied_to cnt:voo_por_instrumento ;
+    c2rm:composed_of <n6523785411e44ad18f5b3f023bc90b20> ;
+    owl:equivalentClass cnt:ifr .
+
+cnt:operacao_independente a c2rm:entity ;
+    owl:equivalentClass cnt:operacao_singular .
+
+cnt:operacao_interaliada a c2rm:entity ;
+    c2rm:composed_of <n13d03c6fca5746f5912c3852b3712ba9> ;
+    rdfs:seeAlso cnt:paises_aliados .
+
+cnt:operacao_ofensiva a c2rm:entity ;
+    c2rm:composed_of <n58eb6ae316ed42a79fe69d9d5dcd5322> ;
+    rdfs:subClassOf cnt:aproveitamento_do_exito,
+        cnt:ataque,
+        cnt:marcha_para_o_combate,
+        cnt:perseguicao,
+        cnt:reconhecimento_em_forca .
+
+cnt:operacao_tatica a c2rm:entity ;
+    c2rm:applied_to cnt:missao ;
+    c2rm:occurs_in cnt:teatro_de_operacoes,
+        cnt:zona_de_defesa .
+
+cnt:operacao_tipo_policia a c2rm:entity ;
+    c2rm:applied_to cnt:operacao_de_garantia_da_lei_e_da_ordem ;
+    c2rm:occurs_in cnt:ambiente_urbano,
+        cnt:rural .
+
+cnt:operacionais a c2rm:entity .
+
+cnt:operacoes_aeroestrategicas a c2rm:entity .
+
+cnt:operacoes_basicas a c2rm:entity .
+
+cnt:operacoes_complementares a c2rm:entity ;
+    c2rm:applied_to cnt:operacoes_basicas ;
+    rdfs:seeAlso cnt:assuntos_civis,
+        cnt:guerra_eletronica,
+        cnt:inteligencia,
+        cnt:interdicao,
+        cnt:juncao,
+        cnt:operacoes_complementares,
+        cnt:poder .
+
+cnt:operacoes_correntes a c2rm:entity .
+
+cnt:operacoes_militares a c2rm:entity ;
+    c2rm:composed_of <n1e8f7e1756f04f019369822299fd5692> .
+
+cnt:operacoes_psicologicas a c2rm:entity .
+
+cnt:operacoes_terrestres a c2rm:entity .
+
+cnt:oponentes a c2rm:entity ;
+    rdfs:subClassOf cnt:atuais,
+        cnt:potenciais .
+
+cnt:ordem_publica a c2rm:entity .
+
+cnt:ordens_de_operacoes a c2rm:entity .
+
+cnt:organismos_internacionais a c2rm:entity .
+
+cnt:orgao_central a c2rm:entity ;
+    rdfs:seeAlso cnt:sistema_militar_de_comando_e_controle .
+
+cnt:orgaos_publicos a c2rm:entity ;
+    c2rm:composed_of <n3c4c3fa2e0f849fb9f2f1bf3aff90d90> ;
+    rdfs:subClassOf cnt:agencias,
+        cnt:estadual,
+        cnt:federal,
+        cnt:municipal .
+
+cnt:orientacoes_e_condicionantes_aos_planejamentos a c2rm:entity .
+
+cnt:paises_aliados a c2rm:entity .
+
+cnt:peculiaridades_tecnico-profissionais a c2rm:entity .
+
+cnt:pedido a c2rm:entity ;
+    c2rm:responsible_for cnt:camara_dos_deputados,
+        cnt:senado_federal,
+        cnt:supremo_tribunal_federal .
+
+cnt:penetracao a c2rm:entity .
+
+cnt:pensamento_critico a c2rm:entity .
+
+cnt:perda_de_vidas_humanas a c2rm:entity .
+
+cnt:permanente_adestrada_e_altamente_qualificada a c2rm:entity .
+
+cnt:perseguicao a c2rm:entity .
+
+cnt:pessoal a c2rm:entity .
+
+<http://idea-c2.org/data/#planejamento,_orcamento_e_gestao> a c2rm:entity .
+
+cnt:planejamento_deliberado a c2rm:entity .
+
+cnt:planejamento_do_emprego_conjunto_das_fa a c2rm:entity .
+
+cnt:planejamento_emergencial a c2rm:entity .
+
+cnt:planejamento_estrategico a c2rm:entity .
+
+cnt:planejamento_militar_da_campanha a c2rm:entity ;
+    rdfs:seeAlso cnt:diretrizes,
+        cnt:peecfa .
+
+cnt:plano_operacional a c2rm:entity .
+
+cnt:planos a c2rm:entity .
+
+cnt:planos_estrategicos_de_emprego_conjunto_das_forcas_armadas a c2rm:entity ;
+    rdfs:comment cnt:planejamento_do_emprego_conjunto_das_fa ;
+    rdfs:seeAlso cnt:preparo_e_emprego_conjunto_das_forcas_armadas ;
+    rdfs:subClassOf cnt:lista_de_necessidades,
+        cnt:plano_estrategico_de_administracao_financeira,
+        cnt:plano_estrategico_de_assuntos_civis,
+        cnt:plano_estrategico_de_comando_e_controle,
+        cnt:plano_estrategico_de_deslocamento_e_concentracao_de_forcas,
+        cnt:plano_estrategico_de_inteligencia,
+        cnt:plano_estrategico_de_logistica,
+        cnt:plano_estrategico_de_mobilizacao_militar .
+
+cnt:poder a c2rm:entity .
+
+cnt:poder_executivo a c2rm:entity .
+
+cnt:poder_judiciario a c2rm:entity .
+
+cnt:policia_federal a c2rm:entity .
+
+cnt:politica_de_defesa_nacional a c2rm:entity .
+
+cnt:politicos a c2rm:entity .
+
+cnt:populacao a c2rm:entity .
+
+cnt:possibilidades_do_inimigo a c2rm:entity .
+
+cnt:posto a c2rm:entity .
+
+cnt:potenciais a c2rm:entity .
+
+cnt:preparo_e_emprego_conjunto_das_forcas_armadas a c2rm:entity ;
+    c2rm:composed_of <n7772e58ff480494fb6283d44b4ff5db0> ;
+    rdfs:subClassOf cnt:estrategico,
+        cnt:operacional,
+        cnt:tatico .
+
+cnt:prevencao_e_combate_ao_terrorismo a c2rm:entity .
+
+cnt:prevenir a c2rm:entity .
+
+cnt:preventivas a c2rm:entity .
+
+cnt:preventivo a c2rm:entity .
+
+cnt:previsiveis a c2rm:entity ;
+    rdfs:seeAlso cnt:planejamento_deliberado .
+
+cnt:principios a c2rm:entity ;
+    rdfs:subClassOf cnt:legalidade,
+        cnt:proporcionalidade,
+        cnt:razoabilidade .
+
+cnt:prioritarias a c2rm:entity .
+
+cnt:privados a c2rm:entity .
+
+cnt:problemas_militares a c2rm:entity .
+
+cnt:procedimentos a c2rm:entity .
+
+cnt:processo_decisorio a c2rm:entity .
+
+cnt:processos a c2rm:entity ;
+    c2rm:applied_to cnt:conhecimento .
+
+cnt:proporcionalidade a c2rm:entity .
+
+cnt:psicossociais a c2rm:entity .
+
+cnt:publicos a c2rm:entity .
+
+cnt:razoabilidade a c2rm:entity .
+
+cnt:reconhecimento a c2rm:entity .
+
+cnt:reconhecimento_aerofotografico a c2rm:entity .
+
+cnt:reconhecimento_em_forca a c2rm:entity .
+
+cnt:recursos_financeiros a c2rm:entity ;
+    c2rm:applied_to cnt:operacao .
+
+cnt:relacoes_exteriores a c2rm:entity .
+
+cnt:representacoes_inteligiveis a c2rm:entity ;
+    c2rm:composed_of <n0acc5860e5b24b48b077432f2e8ebf60> .
+
+cnt:representantes a c2rm:entity .
+
+cnt:repressivas a c2rm:entity .
+
+cnt:repressivo a c2rm:entity .
+
+cnt:retirada a c2rm:entity ;
+    rdfs:seeAlso cnt:movimento_retrogrado .
+
+cnt:retraimento a c2rm:entity .
+
+cnt:riscos a c2rm:entity .
+
+cnt:rural a c2rm:entity .
+
+cnt:seguranca a c2rm:entity ;
+    c2rm:applied_to cnt:voo .
+
+cnt:seguranca_publica a c2rm:entity .
+
+cnt:senado_federal a c2rm:entity .
+
+cnt:singular a c2rm:entity ;
+    rdfs:seeAlso cnt:operacoes_de_garantia_da_lei_e_da_ordem .
+
+cnt:sistema a c2rm:entity .
+
+cnt:sistema_de_comando_e_controle a c2rm:entity .
+
+cnt:sistema_militar_de_comando_e_controle a c2rm:entity .
+
+cnt:sistematica a c2rm:entity ;
+    c2rm:applied_to cnt:cumprimento_pleno_das_ordens ;
+    c2rm:composed_of <n3ee2b3fde00745ccaadb0a541a4c536c> .
+
+cnt:sistematica_de_planejamento_e_de_coordenacao_da_operacao a c2rm:entity ;
+    c2rm:applied_to cnt:missao .
+
+cnt:sistematica_de_planejamento_estrategico_de_emprego_conjunto_das_forcas_armadas a c2rm:entity .
+
+cnt:sociedade a c2rm:entity .
+
+cnt:subchefia_de_inteligencia_operacional a c2rm:entity ;
+    c2rm:responsible_for cnt:plano_estrategico_de_inteligencia .
+
+cnt:supremo_tribunal_federal a c2rm:entity .
+
+cnt:surpresa a c2rm:entity .
+
+cnt:tatica a c2rm:entity .
+
+cnt:taticos a c2rm:entity .
+
+cnt:tecnologia a c2rm:entity .
+
+cnt:tempo a c2rm:entity .
+
+cnt:terrestre a c2rm:entity .
+
+cnt:terrestres a c2rm:entity .
+
+cnt:territorio_nacional a c2rm:entity .
+
+cnt:tropas a c2rm:entity ;
+    c2rm:composed_of <n37949e8b0d504aa3b6c1afd9e3e56f8e> .
+
+cnt:unidade a c2rm:entity ;
+    rdfs:subClassOf cnt:batalhao .
+
+cnt:urbanidade a c2rm:entity .
+
+cnt:uso_de_forca a c2rm:entity .
+
+cnt:veiculos_espaciais a c2rm:entity .
+
+cnt:vigilancia a c2rm:entity .
+
+cnt:voo a c2rm:entity .
+
+cnt:voo_por_instrumento a c2rm:entity .
+
+cnt:vulnerabilidades_criticas a c2rm:entity .
+
+cnt:zona_de_defesa a c2rm:entity .
+
+<n0aca28229c0243768ed71a19677035b1> a c2rm:entity,
+        cnt:estrutura,
+        rdf:Bag ;
+    rdf:Bag cnt:atividades,
+        cnt:autoridade_legitimamente_investida,
+        cnt:comando,
+        cnt:controle,
+        cnt:exercicio_da_autoridade,
+        cnt:sistemas_inter-relacionados,
+        cnt:tarefas .
+
+<n0acc5860e5b24b48b077432f2e8ebf60> a c2rm:entity,
+        cnt:acontecimentos,
+        rdf:Bag ;
+    rdf:Bag cnt:estados,
+        cnt:objetos .
+
+<n0e63980a740d46669ee0e5d22a800c78> a c2rm:entity,
+        cnt:capacidades,
+        rdf:Bag ;
+    rdf:Bag cnt:elementos,
+        cnt:tropas .
+
+<n10932098a04e452eaa61ca3a6597642e> a c2rm:entity,
+        cnt:defesa_em_perimetro,
+        rdf:Bag ;
+    rdf:Bag cnt:defesa_circular,
+        cnt:defesa_contra_tropa_aeroterrestre_e_aeromovel,
+        cnt:defesa_contrarreconhecimento,
+        cnt:defesa_elastica,
+        cnt:defesa_em_ponto_forte,
+        cnt:dinamicas_da_defesa,
+        cnt:dispositivo_de_expectativa .
+
+<n13d03c6fca5746f5912c3852b3712ba9> a c2rm:entity,
+        cnt:marinha,
+        rdf:Bag ;
+    rdf:Bag cnt:exercito,
+        cnt:forca_aerea .
+
+<n161759e8384140938e32e25d3a8b1489> a c2rm:entity,
+        cnt:tarefas,
+        rdf:Bag ;
+    rdf:Bag cnt:atividades,
+        cnt:sistemas .
+
+<n1e8f7e1756f04f019369822299fd5692> a c2rm:entity,
+        cnt:sistemas,
+        rdf:Bag .
+
+<n2a14f7de09d0406da47b6b9a4f02ecd1> a c2rm:entity,
+        cnt:diretrizes,
+        rdf:Bag ;
+    rdf:Bag cnt:planejamento,
+        cnt:planejamento_estrategico-militar,
+        cnt:planos .
+
+<n2a54d355508a401e84ce68ccadc56f2a> a c2rm:entity,
+        cnt:empresas,
+        rdf:Bag ;
+    rdf:Bag cnt:agencias,
+        cnt:ong,
+        cnt:orgaos .
+
+<n2cd6699fe887478ba2b99a66b6e4a608> a c2rm:entity,
+        cnt:comunicacao_social,
+        rdf:Bag ;
+    rdf:Bag cnt:defesa_cibernetica,
+        cnt:guerra_eletronica,
+        cnt:operacoes_psicologicas .
+
+<n2f27fbfb2b1e459ab6f8f35702578b29> a c2rm:entity,
+        cnt:sistemas,
+        rdf:Bag .
+
+<n32bc0bf22e79444f9d0a80de35456f47> a c2rm:entity,
+        cnt:tarefas,
+        rdf:Bag .
+
+<n37949e8b0d504aa3b6c1afd9e3e56f8e> a c2rm:entity,
+        cnt:capacidades,
+        rdf:Bag .
+
+<n37c408c8e96045d6951718c7e6d52972> a c2rm:entity,
+        cnt:atividades,
+        rdf:Bag ;
+    rdf:Bag cnt:sistemas_inter-relacionados,
+        cnt:tarefas .
+
+<n3a8ced0e759d489c94d8eec3b00188f9> a c2rm:entity,
+        cnt:possibilidades_do_inimigo,
+        rdf:Bag ;
+    rdf:Bag cnt:centros_de_gravidade,
+        cnt:vulnerabilidades_criticas .
+
+<n3c4c3fa2e0f849fb9f2f1bf3aff90d90> a c2rm:entity,
+        cnt:operacao,
+        rdf:Bag .
+
+<n3c75f2c437044fb792aa89ac7b07771c> a c2rm:entity,
+        cnt:tarefa,
+        rdf:Bag .
+
+<n3ee2b3fde00745ccaadb0a541a4c536c> a c2rm:entity,
+        cnt:processo_decisorio,
+        rdf:Bag ;
+    rdf:Bag cnt:fluxo_de_informacoes,
+        cnt:formulacao_de_ordens .
+
+<n41357b978ebe482b8d1ad6c1f629842f> a c2rm:entity,
+        cnt:planos_estrategicos,
+        rdf:Bag ;
+    rdf:Bag cnt:planos_operacionais,
+        cnt:taticos .
+
+<n4502dabd6ab24f20b360245e302eef00> a c2rm:entity,
+        cnt:exames_de_situacao_taticos_das_forcas_componentes,
+        rdf:Bag ;
+    rdf:Bag cnt:ordens_de_operacoes,
+        cnt:planejamento,
+        cnt:planos_taticos .
+
+<n46b2fbddd85b4233b518bc23f823fa9b> a c2rm:entity,
+        cnt:orgaos,
+        rdf:Bag .
+
+<n471b08c1a2584d5f92ded78769199a84> a c2rm:entity,
+        cnt:acoes,
+        rdf:Bag ;
+    rdf:Bag cnt:normas_de_conduta,
+        cnt:regras_de_engajamento .
+
+<n4aea5032b1c74458b934f9f3b18ba8c5> a c2rm:entity,
+        cnt:objetivos_politicos_e_estrategicos,
+        rdf:Bag ;
+    rdf:Bag cnt:acoes_estrategicas,
+        cnt:areas_de_responsabilidade,
+        cnt:centros_de_gravidade,
+        cnt:condicionantes_politicas_ao_planejamento,
+        cnt:estado_final_desejado,
+        cnt:estrutura_militar,
+        cnt:meios .
+
+<n4bfe8410f1834dc3a49ed5d37e742a0e> a c2rm:entity,
+        cnt:tarefas,
+        rdf:Bag ;
+    rdf:Bag cnt:atividades,
+        cnt:sistemas_inter-relacionados .
+
+<n509558bf5bcc41cd865ad792bbde9d89> a c2rm:entity,
+        cnt:peecfa,
+        rdf:Bag .
+
+<n546b0588c126437f8ea8b438767a5c2c> a c2rm:entity,
+        cnt:situacoes,
+        rdf:Bag ;
+    rdf:Bag cnt:controle,
+        cnt:coordenacao,
+        cnt:execucao,
+        cnt:planejamento .
+
+<n5495af15fc9a4b4393f9d0cb5d8fd7a0> a c2rm:entity,
+        cnt:fatores,
+        rdf:Bag .
+
+<n58eb6ae316ed42a79fe69d9d5dcd5322> a c2rm:entity,
+        cnt:acoes_ofensivas,
+        rdf:Bag .
+
+<n5d194834cb1a4d748f27b9972d5c2d2b> a c2rm:entity,
+        cnt:subchefia_de_inteligencia_operacional,
+        rdf:Bag .
+
+<n6523785411e44ad18f5b3f023bc90b20> a c2rm:entity,
+        cnt:aeronaves,
+        rdf:Bag .
+
+<n6c91b471b7844a21a25ac913bd7b46f6> a c2rm:entity,
+        cnt:controle_das_operacoes_militares,
+        rdf:Bag ;
+    rdf:Bag cnt:avaliacao_da_conjuntura_e_elaboracao_de_cenarios,
+        cnt:exame_de_situacao_e_planejamento,
+        cnt:nivel_setorial .
+
+<n71cae3e547ca4723a2e787771745e678> a c2rm:entity,
+        cnt:hipotese_de_emprego,
+        rdf:Bag .
+
+<n7772e58ff480494fb6283d44b4ff5db0> a c2rm:entity,
+        cnt:plano_estrategico_de_inteligencia,
+        rdf:Bag .
+
+<n8e06ba8fafe6464683a651619ad10a15> a c2rm:entity,
+        cnt:subchefia_de_logistica_operacional,
+        rdf:Bag .
+
+<n9235d330f15844f096ac7d86ea0df89c> a c2rm:entity,
+        cnt:exame_de_situacao_operacional,
+        rdf:Bag ;
+    rdf:Bag cnt:analises_de_situacao,
+        cnt:exames_de_situacao_operacional,
+        cnt:plano_operacional,
+        cnt:planos_operacionais .
+
+<n92ca5029f22945f1b60d5871e6a0c447> a c2rm:entity,
+        cnt:subchefia_de_logistica_operacional,
+        rdf:Bag .
+
+<n9750a1f575014a62b730f508e3a1ecab> a c2rm:entity,
+        cnt:tarefas,
+        rdf:Bag ;
+    rdf:Bag cnt:atividades,
+        cnt:manobra,
+        cnt:movimento,
+        cnt:sistemas_inter-relacionados .
+
+<n9b6b9347d1b74e6485742dc4e268a257> a c2rm:entity,
+        cnt:acoes_militares,
+        rdf:Bag ;
+    rdf:Bag cnt:forca_armada .
+
+<n9f9e0fac1c0a4e728f998d9afa216170> a c2rm:entity,
+        cnt:comando_aeroestrategico,
+        rdf:Bag .
+
+<na15c4ed35c6c40b79d55602dbaeba731> a c2rm:entity,
+        cnt:subchefia_de_logistica_operacional,
+        rdf:Bag .
+
+<na523d4ff7a694883bf85500e09c6eaec> a c2rm:entity,
+        cnt:operacoes_militares,
+        rdf:Bag .
+
+<na55a0827776c4e4da2d0b94d3acaf620> a c2rm:entity,
+        cnt:comandante_de_aeronave,
+        rdf:Bag .
+
+<na6724a436f264ee18228ebd3247e7b52> a c2rm:entity,
+        cnt:nivel,
+        rdf:Bag .
+
+<nb3f48460555c4827939ac7abb0cf12b3> a c2rm:entity,
+        cnt:acoes,
+        rdf:Bag .
+
+<nbfd8343c008d4a7888076a9761af204a> a c2rm:entity,
+        cnt:dados_atualizados,
+        rdf:Bag ;
+    rdf:Bag cnt:atividades,
+        cnt:sistemas_inter-relacionados,
+        cnt:tarefas .
+
+<ncfc6714000c24df0a189a2c23f015e80> a c2rm:entity,
+        cnt:subchefia_de_logistica_operacional,
+        rdf:Bag .
+
+<nd0ff59e25ac143c49ffd75dd206fd768> a c2rm:entity,
+        cnt:niveis,
+        rdf:Bag .
+
+<nd14a818c234a4289941681bae958f8c0> a c2rm:entity,
+        cnt:servicos,
+        rdf:Bag ;
+    rdf:Bag cnt:armas,
+        cnt:quadros .
+
+<nd85ad56b8c634b048156e20c66cfed4f> a c2rm:entity,
+        cnt:acoes,
+        rdf:Bag .
+
+<nda92e3e249ce4c80a09ee87e828d9d1c> a c2rm:entity,
+        cnt:exames_de_situacao_operacional,
+        rdf:Bag .
+
+<ndcfd9ae3900a4f668b6ae8e3da1840a2> a c2rm:entity,
+        cnt:diretrizes,
+        rdf:Bag ;
+    rdf:Bag cnt:atividades_operacionais,
+        cnt:concepcao_da_manobra_do_comandante,
+        cnt:estado_final_desejado,
+        cnt:forcas_componentes,
+        cnt:missao,
+        cnt:riscos,
+        cnt:situacao .
+
+<ne1b4152392e34b9a89d3a418d9fdce04> a c2rm:entity,
+        cnt:operacionais,
+        rdf:Bag ;
+    rdf:Bag cnt:estrategicos .
+
+<ne3c69835ff6d41019c74f42b73c82251> a c2rm:entity,
+        cnt:terreno,
+        rdf:Bag ;
+    rdf:Bag cnt:condicoes_meteorologicas .
+
+<ne80cc203daa74d50ba9a2554f2f368a3> a c2rm:entity,
+        cnt:diretrizes,
+        rdf:Bag .
+
+<ne8492ac97a6e4b1a9fede3dbc189f220> a c2rm:entity,
+        cnt:exercito,
+        rdf:Bag ;
+    rdf:Bag cnt:aeronautica,
+        cnt:marinha,
+        cnt:orgaos .
+
+<ne9ee60ce00f8464e8284fc6e5d08fd1d> a c2rm:entity,
+        cnt:tatico,
+        rdf:Bag ;
+    rdf:Bag cnt:estrategico,
+        cnt:operacional,
+        cnt:politico .
+
+<nea0c4653e222456985daae3b1fdc2774> a c2rm:entity,
+        cnt:orgaos,
+        rdf:Bag .
+
+<nf036a59f53bf41e7b19450fe9dff9499> a c2rm:entity,
+        cnt:atividades,
+        rdf:Bag ;
+    rdf:Bag cnt:sistemas_inter-relacionados,
+        cnt:tarefas .
+
+<nf12ad4f08e624993ba0398f8aa1f59fd> a c2rm:entity,
+        cnt:tarefas,
+        rdf:Bag ;
+    rdf:Bag cnt:atividades,
+        cnt:sistemas_inter-relacionados .
+
+<nfe0e891ff8ac48bbbd6b5834b12fa561> a c2rm:entity,
+        cnt:agencias,
+        rdf:Bag ;
+    rdf:Bag cnt:orgaos .
+
+<nfe9a50df6b3e480d8fe2df03e350f626> a c2rm:entity,
+        cnt:orientacoes,
+        rdf:Bag .
+
+c2rm:relation a rdf:Property ;
+    rdfs:domain c2rm:entity ;
+    rdfs:range c2rm:entity .
+
+cnt:acoes_estrategicas a c2rm:entity .
+
+cnt:aeronaves a c2rm:entity .
+
+cnt:ambiente_operacional a c2rm:entity ;
+    rdfs:seeAlso cnt:espaco,
+        cnt:forcas_militares .
+
+cnt:analises_de_situacao a c2rm:entity .
+
+cnt:armas a c2rm:entity .
+
+cnt:ataque a c2rm:entity .
+
+cnt:centros_de_gravidade a c2rm:entity .
+
+cnt:civis a c2rm:entity ;
+    rdfs:subClassOf cnt:privados,
+        cnt:publicos .
+
+cnt:comando_aeroestrategico a c2rm:entity ;
+    c2rm:applied_to cnt:operacoes_aeroestrategicas ;
+    rdfs:seeAlso cnt:comandante_supremo .
+
+cnt:comando_operacional a c2rm:entity ;
+    c2rm:capacity_of cnt:autoridade ;
+    c2rm:responsible_for cnt:acoes,
+        cnt:campanha,
+        cnt:planejamento_operacional ;
+    rdfs:comment cnt:diretriz_para_o_estabelecimento_da_estrutura_militar_de_defesa ;
+    rdfs:subClassOf cnt:comandante_do_comando_combinado,
+        cnt:comandante_do_teatro_de_operacoes .
+
+cnt:comando_supremo a c2rm:entity ;
+    c2rm:applied_to cnt:defesa ;
+    c2rm:responsible_for cnt:emprego ;
+    rdfs:seeAlso cnt:conselho_de_defesa_nacional,
+        cnt:conselho_militar_de_defesa,
+        cnt:estrutura_militar_de_defesa,
+        cnt:estrutura_militar_de_guerra,
+        cnt:forcas_armadas .
+
+cnt:combate a c2rm:entity ;
+    c2rm:applied_to cnt:inimigo,
+        cnt:objetivo ;
+    rdfs:subClassOf cnt:batalhao .
+
+cnt:condicoes_meteorologicas a c2rm:entity .
+
+cnt:crise a c2rm:entity .
+
+cnt:decisoes_e_diretrizes a c2rm:entity .
+
+cnt:defesa_circular a c2rm:entity .
+
+cnt:defesa_contra_tropa_aeroterrestre_e_aeromovel a c2rm:entity .
+
+cnt:defesa_contrarreconhecimento a c2rm:entity .
+
+cnt:defesa_elastica a c2rm:entity .
+
+cnt:defesa_em_perimetro a c2rm:entity .
+
+cnt:defesa_em_ponto_forte a c2rm:entity .
+
+cnt:defesa_em_posicao a c2rm:entity .
+
+cnt:dinamicas_da_defesa a c2rm:entity .
+
+cnt:dispositivo_de_expectativa a c2rm:entity .
+
+cnt:elementos a c2rm:entity .
+
+cnt:emcfa a c2rm:entity ;
+    c2rm:responsible_for cnt:atividades ;
+    rdfs:seeAlso cnt:exame_de_situacao_operacional .
+
+cnt:escaloes_superiores a c2rm:entity .
+
+cnt:estado_final_desejado a c2rm:entity ;
+    rdfs:seeAlso cnt:objetivos_operacionais .
+
+cnt:exames_de_situacao_operacional a c2rm:entity .
+
+cnt:exercito a c2rm:entity ;
+    c2rm:composed_of <nd14a818c234a4289941681bae958f8c0> ;
+    rdfs:seeAlso cnt:comandantes .
+
+cnt:f_ter a c2rm:entity ;
+    c2rm:applied_to cnt:areas_estrategicas ;
+    c2rm:composed_of <n0e63980a740d46669ee0e5d22a800c78> ;
+    c2rm:responsible_for cnt:operacoes_de_cooperacao_e_coordenacao_com_agencias ;
+    rdfs:seeAlso cnt:emprego .
+
+cnt:fa a c2rm:entity ;
+    c2rm:applied_to cnt:forma,
+        cnt:garantia_da_lei_e_da_ordem,
+        cnt:op_glo,
+        cnt:operacoes_de_garantia_da_lei_e_da_ordem,
+        cnt:situacao ;
+    c2rm:composed_of <ne8492ac97a6e4b1a9fede3dbc189f220> ;
+    c2rm:responsible_for cnt:op_glo ;
+    owl:equivalentClass cnt:poder_militar .
+
+cnt:forca a c2rm:entity ;
+    c2rm:responsible_for cnt:alcance_operativo .
+
+cnt:fs a c2rm:entity ;
+    c2rm:responsible_for cnt:coordenacao_da_operacao,
+        cnt:emprego_singular,
+        cnt:informacoes ;
+    rdfs:seeAlso cnt:orgaos_publicos .
+
+cnt:funcoes_de_combate a c2rm:entity ;
+    c2rm:composed_of <nf12ad4f08e624993ba0398f8aa1f59fd> ;
+    rdfs:subClassOf cnt:comando_e_controle,
+        cnt:fogos,
+        cnt:inteligencia,
+        cnt:logistica,
+        cnt:movimento_e_manobra,
+        cnt:protecao .
+
+cnt:glo a c2rm:entity ;
+    rdfs:seeAlso cnt:centro_de_comando_e_controle_do_md,
+        cnt:md .
+
+cnt:gsi-pr a c2rm:entity .
+
+cnt:guerra_eletronica a c2rm:entity .
+
+cnt:influenciar a c2rm:entity .
+
+cnt:informado a c2rm:entity ;
+    rdfs:seeAlso cnt:area_militar,
+        cnt:gsi-pr,
+        cnt:md,
+        cnt:medidas_adotadas,
+        cnt:ministerio_publico,
+        cnt:mre,
+        cnt:repercussao_internacional .
+
+cnt:liberdade a c2rm:entity .
+
+cnt:lista_de_necessidades a c2rm:entity .
+
+cnt:marinha a c2rm:entity ;
+    rdfs:seeAlso cnt:comandantes .
+
+cnt:md30-m-01 a c2rm:entity .
+
+cnt:meios a c2rm:entity ;
+    rdfs:seeAlso cnt:comandos_operacionais .
+
+cnt:militares a c2rm:entity .
+
+cnt:movimento a c2rm:entity ;
+    c2rm:applied_to cnt:missao ;
+    c2rm:occurs_in cnt:area_de_concentracao,
+        cnt:area_de_operacoes,
+        cnt:teatro_de_operacoes ;
+    rdfs:seeAlso cnt:forcas .
+
+cnt:movimento_retrogrado a c2rm:entity .
+
+cnt:mre a c2rm:entity ;
+    c2rm:responsible_for cnt:repercussao_internacional .
+
+cnt:nao-guerra a c2rm:entity .
+
+cnt:nao_guerra a c2rm:entity ;
+    rdfs:subClassOf cnt:atribuicoes_subsidiarias,
+        cnt:defesa_civil_e_ajuda_humanitaria,
+        cnt:garantia_da_lei_e_da_ordem,
+        cnt:garantia_dos_poderes_constitucionais,
+        cnt:organismos_internacionais,
+        cnt:prevencao_e_combate_ao_terrorismo .
+
+cnt:niveis a c2rm:entity ;
+    c2rm:composed_of <ne9ee60ce00f8464e8284fc6e5d08fd1d> ;
+    rdfs:subClassOf cnt:estrategico,
+        cnt:operacional,
+        cnt:tatico .
+
+cnt:nivel a c2rm:entity ;
+    rdfs:subClassOf cnt:estrategico,
+        cnt:operacional,
+        cnt:politico,
+        cnt:tatico .
+
+cnt:objetivo a c2rm:entity .
+
+cnt:objetivos_politicos a c2rm:entity .
+
+cnt:operacao_militar a c2rm:entity ;
+    c2rm:applied_to cnt:manobra,
+        cnt:missao ;
+    rdfs:seeAlso cnt:guerra,
+        cnt:seguranca_interna ;
+    rdfs:subClassOf cnt:operacao_de_garantia_da_lei_e_da_ordem .
+
+cnt:operacao_naval a c2rm:entity ;
+    c2rm:occurs_in cnt:ambiente_maritimo .
+
+cnt:operacoes_de_cooperacao_e_coordenacao_com_agencias a c2rm:entity ;
+    c2rm:applied_to cnt:nao_guerra ;
+    rdfs:subClassOf cnt:operacao .
+
+cnt:organizacao_de_chefia a c2rm:entity .
+
+cnt:orientacoes a c2rm:entity ;
+    rdfs:seeAlso cnt:escaloes_superiores .
+
+cnt:perturbacoes_da_ordem a c2rm:entity .
+
+cnt:planejamento_estrategico-militar a c2rm:entity ;
+    c2rm:composed_of <n6c91b471b7844a21a25ac913bd7b46f6> ;
+    rdfs:seeAlso cnt:capacidade_de_defesa,
+        cnt:constituicao_federal,
+        cnt:estrategia_nacional_de_defesa,
+        cnt:leis_complementares,
+        cnt:politica_de_defesa_nacional .
+
+cnt:planejamento_operacional a c2rm:entity .
+
+cnt:planejamentos a c2rm:entity .
+
+cnt:plano_estrategico_de_administracao_financeira a c2rm:entity .
+
+cnt:plano_estrategico_de_assuntos_civis a c2rm:entity .
+
+cnt:plano_estrategico_de_comando_e_controle a c2rm:entity .
+
+cnt:plano_estrategico_de_deslocamento_e_concentracao_de_forcas a c2rm:entity .
+
+cnt:plano_estrategico_de_logistica a c2rm:entity .
+
+cnt:plano_estrategico_de_mobilizacao_militar a c2rm:entity .
+
+cnt:plano_estrategico_de_operacoes_de_informacao a c2rm:entity .
+
+cnt:poder_de_combate a c2rm:entity .
+
+cnt:poder_militar a c2rm:entity ;
+    c2rm:applied_to cnt:situacao ;
+    c2rm:capacity_of cnt:acoes_de_efetivo_combate,
+        cnt:operacoes_de_cooperacao_e_coordenacao_com_agencias .
+
+cnt:presidente_da_republica a c2rm:entity ;
+    c2rm:responsible_for cnt:acoes_estrategicas,
+        cnt:comando_supremo,
+        cnt:decisoes_e_diretrizes,
+        cnt:espaco_geografico,
+        cnt:limitacoes_ao_emprego_dos_meios_militares,
+        cnt:objetivos_politicos,
+        cnt:operacao_de_garantia_da_lei_e_da_ordem,
+        cnt:politico .
+
+cnt:quadros a c2rm:entity .
+
+cnt:regras_de_engajamento a c2rm:entity ;
+    c2rm:applied_to cnt:fa ;
+    rdfs:seeAlso cnt:acoes,
+        cnt:bens_patrimoniais,
+        cnt:cidadaos,
+        cnt:escaloes_superiores,
+        cnt:missao,
+        cnt:necessidade,
+        cnt:nivel,
+        cnt:operacao,
+        cnt:orientacoes,
+        cnt:principios,
+        cnt:procedimentos,
+        cnt:protecao .
+
+cnt:repercussao_internacional a c2rm:entity .
+
+cnt:seguranca_interna a c2rm:entity .
+
+cnt:tarefa a c2rm:entity .
+
+cnt:agencias a c2rm:entity ;
+    owl:equivalentClass cnt:orgaos .
+
+cnt:arte_operacional a c2rm:entity ;
+    c2rm:applied_to cnt:campanhas,
+        cnt:estrategias,
+        cnt:objetivos,
+        cnt:operacoes ;
+    rdfs:seeAlso cnt:ambiente_operacional,
+        cnt:comandantes,
+        cnt:condicoes_de_sucesso,
+        cnt:estados-maiores .
+
+cnt:capacidades a c2rm:entity .
+
+cnt:comandante a c2rm:entity ;
+    c2rm:capacity_of cnt:autoridade ;
+    c2rm:responsible_for cnt:comando,
+        cnt:inteligencia,
+        cnt:manobra_tatica,
+        cnt:operacao,
+        cnt:operacao_ofensiva,
+        cnt:tarefas ;
+    rdfs:seeAlso cnt:autoridade,
+        cnt:exame_de_situacao_operacional,
+        cnt:exercicio ;
+    owl:equivalentClass cnt:organizacao_de_chefia .
+
+cnt:controle a c2rm:entity .
+
+cnt:coordenacao a c2rm:entity ;
+    rdfs:seeAlso cnt:glo .
+
+cnt:dirigir a c2rm:entity .
+
+cnt:fatores a c2rm:entity ;
+    rdfs:subClassOf cnt:comportamentos,
+        cnt:condicoes_meteorologicas,
+        cnt:conjunturais_locais,
+        cnt:economicos,
+        cnt:estruturas,
+        cnt:historicos,
+        cnt:interesses,
+        cnt:internacionais,
+        cnt:nacionais,
+        cnt:politicos,
+        cnt:psicossociais,
+        cnt:terreno .
+
+cnt:incolumidade_das_pessoas a c2rm:entity .
+
+cnt:informacoes a c2rm:entity ;
+    rdfs:comment cnt:representacoes_inteligiveis ;
+    rdfs:seeAlso cnt:consciencia_situacional,
+        cnt:md,
+        cnt:processos .
+
+cnt:logistica a c2rm:entity ;
+    c2rm:applied_to cnt:amplitude_de_alcance ;
+    c2rm:composed_of <n37c408c8e96045d6951718c7e6d52972> ;
+    rdfs:seeAlso cnt:apoio,
+        cnt:servicos ;
+    rdfs:subClassOf cnt:batalhao .
+
+cnt:manobra a c2rm:entity ;
+    c2rm:applied_to cnt:finalidade,
+        cnt:tropa ;
+    rdfs:seeAlso cnt:contato,
+        cnt:forca_oponente,
+        cnt:tropa .
+
+cnt:ministerio_publico a c2rm:entity,
+        cnt:orgaos .
+
+cnt:op_glo a c2rm:entity ;
+    c2rm:applied_to cnt:atividades,
+        cnt:situacoes ;
+    c2rm:composed_of <n546b0588c126437f8ea8b438767a5c2c> ;
+    rdfs:seeAlso cnt:execucao,
+        cnt:md30-m-01,
+        cnt:planejamentos,
+        cnt:sistematica_de_planejamento_e_de_coordenacao_da_operacao,
+        cnt:sistematica_de_planejamento_estrategico_de_emprego_conjunto_das_forcas_armadas .
+
+cnt:operacao_singular a c2rm:entity ;
+    owl:equivalentClass cnt:operacao_independente .
+
+cnt:patrimonio a c2rm:entity .
+
+cnt:peecfa a c2rm:entity ;
+    c2rm:applied_to cnt:situacoes .
+
+cnt:plano_estrategico_de_inteligencia a c2rm:entity .
+
+cnt:planos_taticos a c2rm:entity ;
+    rdfs:seeAlso cnt:planos_estrategicos,
+        cnt:planos_operacionais .
+
+cnt:protecao a c2rm:entity ;
+    c2rm:applied_to cnt:preservacao ;
+    c2rm:composed_of <n4bfe8410f1834dc3a49ed5d37e742a0e> ;
+    rdfs:seeAlso cnt:poder_de_combate .
+
+cnt:servicos a c2rm:entity ;
+    rdfs:seeAlso cnt:liberdade .
+
+cnt:sistemas a c2rm:entity ;
+    rdfs:seeAlso cnt:informacao .
+
+cnt:solicitacao a c2rm:entity .
+
+cnt:teatro_de_operacoes a c2rm:entity .
+
+cnt:terreno a c2rm:entity .
+
+cnt:tropa a c2rm:entity ;
+    rdfs:subClassOf cnt:batalhao,
+        cnt:comandos .
+
+cnt:aeroestrategica a c2rm:entity ;
+    c2rm:applied_to cnt:carater_estrategico .
+
+cnt:comando_e_controle a c2rm:entity ;
+    c2rm:composed_of <n0aca28229c0243768ed71a19677035b1> ;
+    rdfs:comment cnt:ciencia_e_arte_que_trata_do_funcionamento_de_uma_cadeia_de_comando ;
+    rdfs:seeAlso cnt:sistematica ;
+    owl:equivalentClass cnt:sistema_de_comando_e_controle .
+
+cnt:comandos_operacionais a c2rm:entity ;
+    c2rm:responsible_for cnt:atividades,
+        cnt:operacional,
+        cnt:planos_operacionais .
+
+cnt:combinada\(o\) a c2rm:entity ;
+    c2rm:composed_of <n9b6b9347d1b74e6485742dc4e268a257> ;
+    rdfs:seeAlso cnt:operacional .
+
+cnt:diretrizes a c2rm:entity .
+
+cnt:emprego a c2rm:entity ;
+    rdfs:seeAlso cnt:decisao,
+        cnt:forcas_armadas,
+        cnt:garantia_da_lei_e_da_ordem ;
+    rdfs:subClassOf cnt:iniciativa_propria,
+        cnt:pedido,
+        cnt:solicitacao .
+
+cnt:exame_de_situacao_operacional a c2rm:entity ;
+    rdfs:seeAlso cnt:peecfa .
+
+cnt:execucao a c2rm:entity .
+
+cnt:garantia_da_lei_e_da_ordem a c2rm:entity ;
+    c2rm:responsible_for cnt:presidente_da_republica .
+
+cnt:guerra a c2rm:entity ;
+    rdfs:subClassOf cnt:defesa_da_patria .
+
+cnt:individuo a c2rm:entity ;
+    c2rm:capacity_of cnt:dirigir,
+        cnt:influenciar ;
+    rdfs:seeAlso cnt:capacidade .
+
+cnt:objetivos_operacionais a c2rm:entity .
+
+cnt:operacao_de_garantia_da_lei_e_da_ordem a c2rm:entity ;
+    c2rm:applied_to cnt:preservacao .
+
+cnt:operacoes_de_garantia_da_lei_e_da_ordem a c2rm:entity ;
+    c2rm:applied_to cnt:poder_militar ;
+    rdfs:seeAlso cnt:combate,
+        cnt:uso_de_forca .
+
+cnt:planos_estrategicos a c2rm:entity ;
+    c2rm:composed_of <n4aea5032b1c74458b934f9f3b18ba8c5> .
+
+cnt:planos_operacionais a c2rm:entity ;
+    rdfs:seeAlso cnt:planos_estrategicos .
+
+cnt:preservacao a c2rm:entity ;
+    rdfs:seeAlso cnt:forca ;
+    rdfs:subClassOf cnt:incolumidade_das_pessoas,
+        cnt:ordem_publica,
+        cnt:patrimonio .
+
+cnt:situacao a c2rm:entity ;
+    rdfs:seeAlso cnt:ameacas ;
+    rdfs:subClassOf cnt:guerra,
+        cnt:nao_guerra .
+
+cnt:situacoes a c2rm:entity ;
+    rdfs:seeAlso cnt:ameacas,
+        cnt:incolumidade_das_pessoas,
+        cnt:patrimonio,
+        cnt:perturbacoes_da_ordem ;
+    rdfs:subClassOf cnt:conflito_armado,
+        cnt:contingencia,
+        cnt:crise,
+        cnt:guerra,
+        cnt:imprevisiveis,
+        cnt:nao-guerra,
+        cnt:normalidade,
+        cnt:previsiveis .
+
+cnt:subchefia_de_logistica_operacional a c2rm:entity ;
+    c2rm:responsible_for cnt:plano_estrategico_de_administracao_financeira,
+        cnt:plano_estrategico_de_deslocamento_e_concentracao_de_forcas,
+        cnt:plano_estrategico_de_logistica,
+        cnt:plano_estrategico_de_mobilizacao_militar .
+
+c2rm:c2domainrelation a rdf:Property ;
+    rdfs:subPropertyOf c2rm:relation .
+
+cnt:md a c2rm:entity ;
+    c2rm:responsible_for cnt:coordenacao,
+        cnt:glo ;
+    rdfs:seeAlso cnt:agu,
+        cnt:coordenacao,
+        cnt:execucao,
+        cnt:fa,
+        cnt:fs,
+        cnt:gsi-pr,
+        cnt:informado,
+        cnt:ministerio_publico,
+        cnt:mpog,
+        cnt:mre,
+        cnt:orgaos,
+        cnt:planejamento .
+
+cnt:operacao_conjunta a c2rm:entity ;
+    c2rm:applied_to cnt:comando_e_controle,
+        cnt:inteligencia,
+        cnt:logistica ;
+    rdfs:comment cnt:heterogeneidade_dos_processos_de_emprego,
+        cnt:peculiaridades_tecnico-profissionais ;
+    rdfs:seeAlso cnt:centro_de_operacoes_conjuntas,
+        cnt:ferramentas,
+        cnt:niveis,
+        cnt:representantes .
+
+cnt:politico a c2rm:entity ;
+    c2rm:applied_to cnt:objetivos_politicos ;
+    c2rm:composed_of <ne80cc203daa74d50ba9a2554f2f368a3> .
+
+c2rm:generaldomainrelation a rdf:Property ;
+    rdfs:subPropertyOf c2rm:relation .
+
+cnt:comandantes a c2rm:entity ;
+    c2rm:applied_to cnt:acoes ;
+    c2rm:capacity_of cnt:adaptaveis ;
+    c2rm:responsible_for cnt:comando_e_controle,
+        cnt:operacoes_terrestres,
+        cnt:protecao ;
+    rdfs:seeAlso cnt:autoridade,
+        cnt:competencias,
+        cnt:direcao,
+        cnt:elementos ;
+    owl:equivalentClass cnt:individuo .
+
+cnt:comando a c2rm:entity ;
+    c2rm:responsible_for cnt:combinada\(o\) ;
+    rdfs:seeAlso cnt:area,
+        cnt:atividade,
+        cnt:autoridade,
+        cnt:comando,
+        cnt:controlar,
+        cnt:dirigir,
+        cnt:graduacao,
+        cnt:posto,
+        cnt:unidade ;
+    rdfs:subClassOf cnt:comando_operacional ;
+    owl:equivalentClass cnt:comandante,
+        cnt:organizacao_de_chefia .
+
+cnt:estrategico a c2rm:entity ;
+    c2rm:composed_of <n2a14f7de09d0406da47b6b9a4f02ecd1> ;
+    rdfs:seeAlso cnt:plano_estrategico_de_operacoes_de_informacao .
+
+cnt:forcas a c2rm:entity ;
+    c2rm:responsible_for cnt:missao .
+
+cnt:forcas_armadas a c2rm:entity ;
+    c2rm:responsible_for cnt:operacao_de_garantia_da_lei_e_da_ordem,
+        cnt:operacao_singular .
+
+cnt:operacao a c2rm:entity ;
+    c2rm:composed_of <n3c75f2c437044fb792aa89ac7b07771c> ;
+    rdfs:seeAlso cnt:acoes ;
+    rdfs:subClassOf cnt:aeroestrategica,
+        cnt:combinada\(o\),
+        cnt:operacao_conjunta,
+        cnt:operacao_ifr,
+        cnt:operacao_interaliada,
+        cnt:operacao_militar,
+        cnt:operacao_naval,
+        cnt:operacao_singular,
+        cnt:operacao_tatica,
+        cnt:operacao_tipo_policia .
+
+cnt:operacoes a c2rm:entity ;
+    rdfs:subClassOf cnt:aquisicao_de_alvos,
+        cnt:inteligencia,
+        cnt:nao-guerra,
+        cnt:operacoes_de_garantia_da_lei_e_da_ordem,
+        cnt:reconhecimento,
+        cnt:vigilancia .
+
+cnt:planejamento a c2rm:entity ;
+    c2rm:composed_of <n71cae3e547ca4723a2e787771745e678> ;
+    rdfs:seeAlso cnt:analise_dos_fatores_fixos_da_area_de_responsabilidade,
+        cnt:planejamento_operacional,
+        cnt:planos_estrategicos .
+
+cnt:tatico a c2rm:entity ;
+    c2rm:composed_of <n4502dabd6ab24f20b360245e302eef00> ;
+    rdfs:seeAlso cnt:forcas_oponentes,
+        cnt:inteligencia .
+
+cnt:ameacas a c2rm:entity ;
+    c2rm:applied_to cnt:preservacao ;
+    c2rm:composed_of <n5495af15fc9a4b4393f9d0cb5d8fd7a0> ;
+    rdfs:seeAlso cnt:forcas,
+        cnt:meios,
+        cnt:operacoes .
+
+cnt:autoridade a c2rm:entity ;
+    c2rm:responsible_for cnt:operacao_militar .
+
+cnt:sistemas_inter-relacionados a c2rm:entity .
+
+cnt:operacional a c2rm:entity ;
+    c2rm:composed_of <n9235d330f15844f096ac7d86ea0df89c> ;
+    rdfs:seeAlso cnt:inteligencia .
+
+cnt:batalhao a c2rm:entity .
+
+cnt:missao a c2rm:entity ;
+    rdfs:subClassOf cnt:guerra,
+        cnt:seguranca_interna .
+
+cnt:tarefas a c2rm:entity ;
+    c2rm:applied_to cnt:ameacas,
+        cnt:operacoes ;
+    rdfs:seeAlso cnt:identificar,
+        cnt:mitigar,
+        cnt:prevenir .
+
+cnt:inteligencia a c2rm:entity ;
+    c2rm:applied_to cnt:ambiente_operacional,
+        cnt:ameacas,
+        cnt:civis,
+        cnt:oponentes,
+        cnt:terreno ;
+    c2rm:composed_of <nbfd8343c008d4a7888076a9761af204a> ;
+    rdfs:seeAlso cnt:areas_de_operacoes,
+        cnt:etapa_de_exame_de_situacao_e_planejamento,
+        cnt:planos_taticos,
+        cnt:teatro_de_operacoes .
+
+cnt:atividades a c2rm:entity ;
+    rdfs:seeAlso cnt:ameacas,
+        cnt:emprego,
+        cnt:incolumidade_das_pessoas,
+        cnt:patrimonio,
+        cnt:perturbacoes_da_ordem,
+        cnt:planejamento .
+
+cnt:acoes a c2rm:entity ;
+    c2rm:applied_to cnt:ambientais,
+        cnt:delitos ;
+    c2rm:composed_of <nea0c4653e222456985daae3b1fdc2774> ;
+    c2rm:occurs_in cnt:faixa_de_fronteira ;
+    rdfs:seeAlso cnt:comando_e_controle,
+        cnt:inteligencia,
+        cnt:logistica ;
+    rdfs:subClassOf cnt:aereas,
+        cnt:defesa_circular,
+        cnt:defesa_contra_tropa_aeroterrestre_e_aeromovel,
+        cnt:defesa_contrarreconhecimento,
+        cnt:defesa_elastica,
+        cnt:defesa_em_perimetro,
+        cnt:defesa_em_ponto_forte,
+        cnt:dinamicas_da_defesa,
+        cnt:dispositivo_de_expectativa,
+        cnt:navais,
+        cnt:preventivas,
+        cnt:preventivo,
+        cnt:repressivas,
+        cnt:repressivo,
+        cnt:terrestres .
+
+cnt:orgaos a c2rm:entity ;
+    c2rm:responsible_for cnt:acoes ;
+    rdfs:subClassOf cnt:agencias_governamentais,
+        cnt:civis,
+        cnt:governamentais,
+        cnt:militares,
+        cnt:poder_executivo .
+
+rdf:Bag a c2rm:entity .
+

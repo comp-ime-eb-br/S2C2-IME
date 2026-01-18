@@ -1,0 +1,4886 @@
+base de combate 
+nível da ameaça aeroespacial regional 
+reunião de coordenação 
+transporte aerotático 
+zona de reunião final de material de engenharia 
+órgão de atividade-meio 
+torre de controle de aeródromo 
+centro diretor aerotático 
+finta
+posto de socorro 
+zoneamento de ruído 
+zona desmilitarizada 
+área de estacionamento
+ponto sensível 
+grupamento aéreo 
+suprimento classe v 
+zona de serviço militar 
+área geral de desembarque 
+forças auxiliares 
+zona de aterragem 
+cabeça-de-ponte aérea 
+efeito desejado 
+grupamento logístico 
+função militar 
+assinatura eletrônica do emissor 
+percentagem de perdas por atrito
+posição fortificada 
+quadro de repartição de meios 
+aeródromo de alternativa 
+ciclo de decisão
+manutenção da ordem pública
+não-normalidade 
+expedidor 
+salvaero 
+divulgação institucional 
+promoção da paz
+guerra civil 
+apoio de fogo adicional 
+região militar
+dispositivo de defesa antiaérea 
+simpatizantes 
+policiamento do espaço aéreo 
+estratégia
+exame corrente da situação 
+controle de danos 
+navio escoteiro
+unidade de telecomunicações 
+contra-reconhecimento 
+ponto de aproximação 
+vagas programadas
+operação de promoção da paz 
+portaria 
+posto de integração rádio-fio 
+unidade apoiadora 
+propagandistas
+obtenção
+centro de operações militares da região de defesa aeroespacial 
+emprego
+área de resistência
+local de desembarque
+organização do terreno
+organização militar subordinada
+evasiva 
+cobertura antiaérea
+artigo 
+pedido
+radar
+órgão provedor 
+patrulha costeira 
+estratégia da projeção de poder 
+infra-estrutura aeronáutica 
+treinamento solo 
+centro móvel de operações aéreas 
+arquitetura de sistemas 
+operação de garantia da lei e da ordem 
+engenharia 
+mobilização militar
+condicionantes doutrinárias e operacionais
+zona do interior
+freqüências protegidas 
+espaço morto
+código de dotação
+operação contraguerrilha 
+substituição
+manutenção de retaguarda 
+operação militar de não-guerra 
+centro de operações militares transportável 
+sistema operacional logístico 
+potência de fogo 
+base de apoio logístico 
+ciclo ooda
+ângulo morto
+reconhecimento em força 
+operações de forças especiais 
+espera 
+cavalaria de selva 
+inteligência de sinal de guerra eletrônica 
+área de apoio logístico 
+governo militar
+transferência no mar 
+saúde
+área sensível 
+acordo 
+inquietação
+doutrina militar terrestre 
+operação ofensiva 
+radar de identificação 
+operação de minagem
+pista de táxi 
+plano setorial 
+centro de coordenação de operações aéreas 
+presença 
+área de reagrupamento 
+administração militar
+batalhão 
+território ocupado
+atuar 
+contra-inteligência 
+operação singular 
+estrada reservada 
+planejamento
+luta interna
+centro de controle aerotático 
+nível de estoque de reserva 
+linha de visada 
+tiro interdito
+diretrizes gerais de planejamento 
+infra-estrutura aeroportuária 
+supervisionar
+centro de operações aéreas do teatro
+crise político-estratégica 
+estado-maior geral 
+centro de informações de combate
+objetivos aeroespaciais atuais
+esforço contínuo de combate
+datum
+suprimento aéreo 
+subsetor de segurança integrada 
+posto de suprimento móvel 
+cadeia de evacuação 
+ponto de toque 
+condicionantes doutrinárias e operacionais 
+aeronave inimiga 
+escalão de manutenção 
+radar de vigilância terrestre 
+torre de controle de aeródromo
+força moral 
+força oponente
+operação tipo polícia 
+restrições
+força-tarefa interaliada 
+força de proteção 
+procedimento
+raio de segurança 
+comando singular 
+reserva geral 
+volume de responsabilidade de defesa antiaérea
+teatro de guerra
+manutenção reparadora 
+nivelamento 
+situação de emergência 
+instruções
+aliciamento
+segurança de área de retaguarda 
+telecomunicações 
+brigada blindada (de infantaria ou de cavalaria) 
+pressão dominante 
+busca sistemática 
+contra-atacar 
+conflito armado
+quartel-general 
+ebnet
+equivalente de manutenção 
+área proibida 
+zona perigosa 
+estratégia da aproximação indireta 
+sistema de armas
+guerra de atrição 
+planejamento de defesa nacional 
+sub-rota
+escalão de defesa avançada 
+ideologia 
+guerra eletrônica
+subunidade
+crista topográfica
+hora zulu 
+operação ar-superfície 
+equilíbrio 
+vetor aeroespacial
+organização por tarefas 
+probabilidade de penetração 
+unidade administrativa 
+posição de pré-contato 
+terreno adequado 
+sítio
+remanescente
+controle de área marítima 
+força adjudicada 
+plataforma marítima móvel auto-elevável 
+efeito de solo
+fatores da decisão 
+zona livre de obstáculos 
+base móvel
+aerotática
+plano de mobilidade 
+quadro de cargos previstos
+fotointerpretação 
+casco 
+ponto de controle de reabastecimento alternado 
+esquadra 
+base de operações aéreas 
+mesa-redonda 
+intervalo de ração 
+missão de interferência eletrônica 
+impacto ambiental 
+quadro de dotação de material previsto 
+estação aeronáutica 
+embarcação
+espólio 
+planejamento de guerra 
+linha divisor de águas
+viatura anfíbia
+radiação térmica 
+projeção do poder nacional 
+segurança interna
+asilo político 
+área estratégica
+corredor de mobilidade
+unidade celular
+sistema interoperável
+envolvimento
+manutenção não-programada
+desenvolvimento tecnológico 
+força legal 
+interceptação
+jornada
+plotar 
+item bélico
+necessidades gerais do exército 
+objetivos básicos operacionais 
+deslocamento sob condições desfavoráveis 
+área de influência 
+objetivo intermediário 
+sistema de classificação por catalogação 
+suprimento de outras classes 
+concentração
+especialistas
+contratorpedeiro 
+capacidade científica e tecnológica 
+atribuições subsidiárias gerais
+demonstração de força 
+área de embarque 
+controle aéreo avançado 
+promoção da paz 
+área de recuperação 
+plano de desinterdição de pista 
+armas combinadas
+estabilidade estratégica 
+transbordo 
+situação de não-normalidade
+base de coordenação avançada 
+calco
+grupo de ataque 
+cargo militar 
+período operativo 
+janela
+ponto de ligação 
+possibilidade do inimigo 
+vagas a pedido
+posto de observação visual 
+aditamento 
+casulo 
+plano de inteligência 
+sistema de recompletamento de pessoal 
+credenciamento
+óbices 
+comunalidade 
+definição política
+refugiado 
+rebatimento
+tripulação mínima 
+defesa da pátria
+tempo-resposta 
+calamidade pública
+consolidação da paz 
+ação 
+fotointerpretação
+intrusão 
+material de emprego militar essencial 
+controlar
+arma nuclear
+tiro técnico 
+área de destruição
+tempo morto
+poder nacional
+engajamento decisivo 
+ensaio 
+equipe de resgate 
+dispositivo de defesa antiaérea
+bloqueio naval 
+centro de controle de evacuados
+controle tático
+processo operacional 
+resultado 
+evacuado
+força terrestre
+unidade de tiro 
+zona de controle 
+popa 
+planos orgânicos 
+sistema de operações ar-mar 
+míssil superfície-ar 
+estratégia militar
+proibição de sobrevôo 
+separação 
+princípio da exploração 
+livro de prioridades 
+missão 
+zona cega 
+ação estratégica militar
+operação anfíbia
+rede de comunicações
+desdobramento
+garantia da lei e da ordem 
+capacidade militar 
+defesa de ponto
+estratégia da aliança 
+missão de inspeção em vôo 
+centro de operações aéreas
+navegador 
+força-tarefa
+objetivos nacionais 
+contraguerrilha 
+bombardeio por série 
+ordem de movimento 
+zona de reunião inicial de material de engenharia 
+operação tática
+método
+calco de apoio à decisão 
+estimativa de consumo 
+autonomia logística 
+implementação
+guerra revolucionária 
+evacuação aeromédica
+volume de responsabilidade de sobrevôo restrito
+área de apoio logístico
+mina de influência 
+contramedidas de minagem
+probabilidade de acerto 
+processo de integração terreno, condições meteorológicas e inimigo 
+linha seca 
+área de apoio de serviços ao combate
+serviço de tráfego aéreo
+operação continuada 
+serviço
+armas combinadas 
+radiofarol 
+demolição
+método de integração terreno, condições meteorológicas e inimigo
+formatura
+incidente aeronáutico
+análise de alvo 
+hipótese de emprego
+grupo de itinerário
+área ribeirinha
+manutenção dos laços táticos 
+objetivo de oportunidade 
+estratégia da resistência 
+conceito da operação 
+ações subsidiárias 
+intercambiabilidade
+patrulha de reconhecimento 
+plano geral de guerra
+sistema operacional inteligência 
+nível tático
+tipo de aeronave
+defesa de área marítima restrita
+zona de combate 
+estado de guerra 
+técnica de desbordamento 
+relatório preliminar 
+ponto de reunião 
+identificação
+avaliação operacional 
+força legal
+cortina de fumaça 
+rumo base 
+intercâmbio
+distância de apoio
+objetivo de desagregação 
+escalão enunciado 
+sinal interferente 
+manobra retrógrada 
+asilo territorial
+ação retardadora
+varredura de influência 
+retardo operacional 
+doutrina de segurança 
+centro de transmissão e recepção 
+fogo previsto 
+ambiente urbano
+objetivo estratégico
+recursos logísticos 
+interferência de barragem 
+terminal de transporte 
+apoio ao combate
+destacamento operacional de forças especiais 
+disciplina
+política de ciência, tecnologia e inovação do ministério da defesa 
+missão de observação aérea 
+ataque
+probabilidade de interceptação
+tropa 
+medidas permissivas 
+população civil 
+dirigir 
+operação aerotática
+estrutura militar
+escalão visualizado
+ação tática
+operação de defesa de área marítima restrita 
+frente 
+manutenção de nível parque
+material de emprego militar tipo f 
+criptoanálise 
+operação de imposição da paz 
+espaço exterior 
+reforço
+espaço aéreo proibido 
+manobra no terreno 
+força operacional 
+missão de posto de comunicação no ar 
+criptodados 
+equabilidade
+eficiência operacional 
+zona de proteção de aeródromo
+perdas administrativas 
+suprimento classe vi 
+agentes armados 
+linha de coordenação de apoio afastado 
+pressurização 
+doutrina básica da marinha 
+setor de segurança integrada 
+nível de capacitação operacional 
+módulo de combate 
+operação de supressão de defesas
+ estrutura militar de guerra 
+confidencial 
+conflito de baixa intensidade 
+área sensível
+ciclo de vida de material de emprego militar 
+força de segurança estratégica 
+linha de lançamento de armamento 
+passagem inocente 
+espaço morto 
+área marítima limitada 
+disciplina de suprimento
+portaria
+plano de interdição aérea 
+controle de tráfego aéreo
+operação naval 
+fase de incerteza
+supressão de defesas
+sobrevôo livre
+ponto forte
+fogo de neutralização 
+passagem inocente
+envolvimento vertical 
+operação de garantia dos poderes constitucionais 
+dissimulação eletrônica imitativa 
+ordem interna 
+reforço de fogos 
+função logística salvamento
+posto de triagem 
+desmobilização nacional
+coordenação do espaço aéreo
+área de coordenação de fogos 
+ação corrente 
+expedição
+derrota
+míssil superfície-superfície 
+rastreamento
+dissimulação eletrônica imitativa
+ritmo da operação
+tiro designado 
+doutrina militar
+destacamento de destruição 
+proteção radiológica
+planejamento logístico 
+autoridade coordenadora 
+ultra-secreto 
+área
+apoio aéreo pré-planejado 
+aerotransportado
+diretriz de planejamento
+operação de esclarecimento
+rodízio
+rede-rádio 
+apoio por tarefa 
+esforço máximo de combate 
+guerra assimétrica 
+míssil 
+ligações necessárias 
+navio independente
+vigilância do espaço aéreo
+dirigir
+tropa de brigada 
+unidade de busca e ataque 
+descarga de assalto
+aerofotogrametria 
+operação ar-terra
+plano interno 
+guerra cibernética 
+informe
+base naval 
+área-problema 
+estratégia da resistência
+investigação para credenciamento 
+plano de segurança e defesa 
+comando de defesa aeroespacial brasileiro
+estratégia de defesa nacional 
+minas lançadas por dispersão 
+ missão de controle e alarme em vôo 
+ciclo de comando e controle
+flanco 
+desclassificação 
+comodoro do comboio 
+zona de segurança integrada
+ambiente operacional 
+faixa de infiltração 
+estudo de estado-maior 
+defesa civil
+força terrestre do teatro de operações 
+alocação de armas 
+força de cobertura estratégica
+navegação estimada 
+defesa móvel
+grupo de reabastecimento no mar
+serviço de informação de vôo 
+volume de responsabilidade de sobrevôo livre 
+controle tático 
+posto de coleta de salvados 
+forças armadas
+pesquisa aplicada 
+força adversa
+destacamento 
+centro de controle aerotático
+operação de salvamento 
+regulação 
+zona primária 
+bem comum 
+corredor aéreo de suprimento 
+deterrência 
+força de fuzileiros da esquadra 
+ponto forte 
+operacão de controle de distúrbio 
+ruptura
+pasta de objetivos 
+poder militar 
+hora estimada de partida (etd) 
+penetração 
+radar primário 
+diretiva
+ambiente rural 
+patrulha
+martelo e bigorna 
+sistema de proteção ao vôo 
+embarque
+organização militar apoiada
+prisioneiro de guerra
+sistema de comando e controle
+resistência 
+controlador aéreo avançado
+poder militar
+plano de guerra
+política de guerra 
+esquadrilha 
+operação de garantia dos poderes constitucionais
+mapa da força 
+tecnologia de furtividade 
+execução da mobilização nacional
+serviço 
+mobilidade estratégica
+vigilância eletrônica 
+comunicação social
+ordem de marcha 
+recompletamento 
+vôo vfr especial 
+orientação estratégica 
+centro de comunicações 
+operação de defesa da pátria
+estado de alerta 
+flotilha 
+local de desembarque 
+limite avançado de trabalho 
+expressão política do poder nacional 
+apoio logístico fixo 
+escala 
+fase de alerta 
+manobra logística 
+ato de desativação 
+ostensivo
+ato hostil
+unidade aérea de busca e ataque 
+ação
+ processamento dos suprimentos 
+plano de restrição de fogos 
+intercâmbio 
+marcha por escalões 
+reparação 
+depósito especializado 
+recursos humanos 
+proteger
+missão de controle aéreo avançado 
+missão de reconhecimento armado 
+guerra química, biológica e nuclear 
+força aérea componente 
+situação corrente 
+planejamento militar
+artilharia divisionária 
+romper o contato
+exame de situação 
+jogo da guerra 
+área marítima limitada
+sistema tático de comunicações 
+ apoio aéreo afastado 
+avaliação estratégica de defesa 
+norma de conduta política 
+conflito 
+descontaminação 
+metodologia 
+grupamento de marcha
+engenharia de combate 
+carga geral 
+eficiência
+fase do assalto 
+atitude operativa 
+bivaque
+força de sustentação 
+quadro das redes-rádio 
+exfiltração aérea 
+economia de guerra 
+descontaminação
+circuito tronco 
+ cavalaria leve 
+operação humanitária
+míssil anti-aéreo 
+combate sar
+planejamento paralelo 
+trem de combate 
+instrução militar
+informação regional 
+pista de táxi
+ponto crítico da defesa 
+encargos de mobilização 
+objetivo decisivo 
+interpretação-foto 
+sistemática do planejamento estratégico militar
+descarga inicial
+objetivo tático 
+delegacia de serviço militar
+situação prospectiva 
+ação subsidiária 
+circuito ponto a ponto 
+hora limite
+estado-maior combinado 
+linha de defesa antiaérea
+nível de estoque máximo 
+sumário de inteligência 
+hora de abandono 
+polarização de antena 
+objetivo de coesão 
+fatores de tempo e distância 
+operação contraguerrilha
+equilíbrio
+agressor 
+vigilância
+avaliação da conjuntura
+sopro
+destruição
+descarga de assalto 
+probabilidade de acerto
+preparo da mobilização nacional 
+tiro de advertência 
+movimento navio-para-terra
+função logística engenharia
+refratário 
+linha de controle 
+ação de emergência
+função logística 
+cabeça-de-ponte 
+missão de reabastecimento em vôo
+estrada principal de suprimento
+operação militar
+esforço secundário 
+sistema de barreiras
+radar primário
+unidade celular 
+sequenciamento 
+infantaria de selva 
+manutenção corretiva não-programada 
+centro de operações militares transportável
+ordem fragmentária
+destacamento logístico 
+canal de suprimento 
+rota
+público 
+ponto zero
+estratégia operacional 
+radioatividade 
+movimento retrógrado
+concepção militar de guerra 
+autenticidade
+ultraportátil 
+programa de trabalho
+passagem seca 
+faixa de tráfego 
+transmissão sem recibo 
+grupo 
+plano de operações 
+distância de controle 
+graduação 
+engenharia de construção 
+concepção estratégica e configuração de forças 
+operação singular
+aeronave de alarme aéreo antecipado
+centro de operações aéreas 
+aeronave desconhecida 
+protocolo de comunicação de dados 
+tiro antiaéreo 
+gerente de projeto 
+ordem de marcha
+conhecimentos operacionais 
+decifrar 
+depósito 
+manutenibilidade 
+inteligência
+identificação 
+brigada de artilharia antiaérea 
+princípio da unidade de comando
+jogo de guerra semi-rígido 
+linha de provável encontro 
+guerra psicológica
+função logística saúde 
+estratégia militar de defesa 
+hipotecar 
+operações complementares
+relatório final 
+mina explosiva anticarro
+reabastecedor
+ressuprimento
+marcha para o combate 
+área de travessia
+reserva estratégica 
+infantaria de montanha
+conjugado anfíbio 
+área de assalto
+grupo de recompletamento 
+ operador de equipamento especial 
+estocagem de aeronave 
+estudo de viabilidade técnico-econômica 
+manobra tática 
+tropa do comando do teatro de operações 
+infantaria leve
+acidente aeronáutico 
+direção estratégica 
+logística de consumo 
+servidor 
+alto-mar 
+resgate de recursos materiais, cargas ou itens específicos, acidentados ou avariados 
+força terrestre componente
+posto de comando recuado 
+ponto lógico 
+fatores de tempo e distância
+bloqueio eletrônico
+reirradiação
+nível mínimo 
+destacamento de destruição
+fase da travessia 
+alto-mar
+organização militar 
+prevenção de acidentes
+esforço intensivo de combate 
+estrada 
+setor de segurança integrada
+anexo
+localização eletrônica 
+rede controlada 
+serviço de campanha 
+equipagem de combate 
+ponto de decisão 
+perda de pessoal 
+autenticação
+simpatizantes intelectuais 
+corrida seca 
+assalto aeroterrestre 
+arma de energia direcionada 
+fase
+vfr
+pista de rolamento
+programa
+míssil ar-submarino 
+linha de coordenação de fogos 
+rebatimento 
+restrições 
+sistema interoperável 
+cargo militar
+guerra de atrição
+caderno de trabalho 
+tarefa de interdição
+fase do planejamento
+poder militar aeroespacial 
+evacuação médica 
+anti-submarino 
+surpresa 
+companhia
+segurança e defesa
+suprimento classe iii
+guerrilha 
+transposição de curso de água
+campanha
+atribuições subsidiárias particulares 
+meios 
+força oponente 
+aquartelamento 
+posto avançado geral 
+escalão aéreo 
+situação tática 
+política nacional
+look-through 
+bases ultramarinas 
+brigada de cavalaria mecanizada 
+ração operacional 
+míssil balístico 
+busca 
+pirotécnico
+aeródromo alternativo 
+assunto sigiloso
+diretiva inicial 
+força principal 
+heliponto civil
+resolução espectral 
+conhecimento 
+força aérea do teatro de operações terrestres 
+disciplina de suprimento 
+diversão 
+tempo médio entre falhas
+área de reserva
+esforço principal 
+espotagem 
+área ribeirinha 
+refletor metálico anti-radar 
+operacionalidade
+ação tática 
+atitude ofensiva 
+aeromóvel 
+manobra em posição 
+aeronave de ataque 
+escalão móvel de apoio 
+material capturado 
+comando 
+ponto de curva 
+vigilância-radar 
+combate de resistência 
+parte de contato
+sistema de navegação global por satélites 
+nível político
+oficial de ligação terrestre 
+não-intervenção
+pedido 
+aeronave 
+zona de reunião 
+grupamento
+direção tática de atuação 
+fogo de contrapreparação 
+ponto vital
+relatório de ocorrência de solo 
+deslocamento
+corredor de segurança
+retraimento 
+grave comprometimento da ordem pública
+decodizar 
+estação controladora da rede 
+infiltração aeromóvel 
+região de informação de vôo 
+suprimento de acompanhamento automático 
+ficar em condições de
+batalha de comando e controle 
+esnórquel
+força de desembarque 
+marcha 
+contrapropaganda
+ficar em condições de 
+tiro direto
+campanha terrestre
+caça de minas 
+força de choque 
+área de sobrevôo restrito 
+incidente grave 
+local de ponte 
+aeronave laboratório 
+guardar
+busca de alvos
+missão de ressuprimento aéreo 
+observação aérea 
+comandante
+posto de suprimento 
+unidade de artilharia antiaérea 
+milha marítima 
+objetivo material 
+defesa em posição
+volume de responsabilidade de defesa antiaérea 
+linha de bombardeio 
+posição de observação 
+força irregular
+operações de transbordo 
+ligações
+infiltração
+medida de policiamento do espaço aéreo 
+grupo de estacionadores
+prisioneiro de guerra 
+tipo de ração 
+não-normalidade
+sala de informações aeronáuticas de aeródromo
+sistema militar de defesa 
+surpresa
+aeronave de busca e resgate 
+primeiros socorros 
+ataque parcelado 
+bombardeio rasante 
+mediante ordem 
+plano de barreiras 
+violência declarada 
+cenário prospectivo 
+observador do tiro naval 
+missão de cobertura 
+posição defensiva 
+expressão militar do poder nacional
+instruções de operações 
+inteligência de sinais 
+componente de comando 
+nível de estoque de segurança
+plano de apoio de fogo 
+poder aeroespacial 
+desenvolver
+força combinada 
+classe de navio
+reaparelhamento 
+simplicidade
+barreiras interiores 
+linha de visada
+ondas de rádio 
+velocidade aerodinâmica
+apoio logístico 
+local de passadeira 
+classificação por comportamento 
+circuito ponto a ponto
+relatório de defesa aeroespacial 
+destruição tática de uma força 
+pressão 
+força singular 
+rocega 
+recebedor de combustível 
+inteligência de sinais
+defesa aeroespacial ativa 
+centro de controle de área 
+área do objetivo anfíbio
+centro de coordenação de apoio de fogo
+faseamento da operação 
+coordenadoria regional de defesa civil 
+fluxo de suprimento 
+ritmo da operação 
+teatro de operações terrestres 
+tiro de regulação 
+protótipo 
+rotor de cauda 
+apoio ao conjunto de guerra eletrônica 
+tropa hipotecada 
+artilharia muito pesada 
+comissão municipal de defesa civil 
+coordenação de defesa aeroespacial 
+material estratégico 
+objetivos aeroespaciais permanentes
+unidade de tiro
+sistema de defesa nacional 
+guerra total 
+ataque principal 
+desbordamento 
+tiro livre
+desastre 
+adequabilidade 
+freqüência
+notam (notice to airmen) 
+processo subversivo 
+distensão 
+radiofreqüência
+resgate
+anexo 
+apoio mútuo 
+aeronave de ligação e observação 
+orientação
+infantaria de montanha 
+calco 
+rodízio 
+linha privativa
+guia aéreo avançado 
+sala de informações aeronáuticas de aeródromo 
+surtida 
+dispositivo 
+praticabilidade
+faixa espectral 
+vaga de helicópteros 
+objetivos de guerra 
+sistema de objetivos
+região militar 
+aerotática 
+processo decisório 
+zona de identificação de defesa aérea 
+águas interiores 
+fogo 
+hora h
+capitânia 
+integrabilidade 
+necessidade de conhecer
+manutenção orgânica 
+região de defesa aeroespacial
+linha de identificação limite 
+forças armadas 
+alcance da aeronave
+controle de aproximação
+ato de adoção 
+adequação
+sistema de informática do exército 
+missão de evacuação aeromédica 
+situação fictícia 
+arbitragem
+técnica militar de risco 
+fatores adversos
+plano geral de guerra 
+princípios de guerra 
+princípio do moral
+dissuasão 
+transporte aéreo militar 
+ampliação 
+bloqueio de barragem 
+cenário prospectivo
+fase de alerta
+observador de tiro
+raio de ação de interferência 
+tropa de divisão 
+centro de coordenação de apoio de fogo 
+órbita de revo 
+manutenção preditiva 
+missão de infiltração aérea 
+ponto de abandono 
+percentagem de perdas por rodízio
+região de informação de vôo
+informações necessárias
+suprimento classe iv 
+evasiva tática 
+missão de transporte aéreo logístico
+telecomunicações
+eficiência operacional
+norma de evacuação 
+destacamento retardador 
+zona restrita 
+propósito
+ferro 
+lançamento aéreo em queda livre 
+retirada 
+zona morta 
+ação inicial no local do acidente aeronáutico 
+área de vigilância 
+defesa nacional 
+ponto de desembarque 
+guerra de desgaste
+manutenibilidade
+emissão eletromagnética
+logística militar terrestre 
+nota de rodapé 
+revitalização 
+radar de direção de tiro 
+nível político 
+requisitos operacionais básicos 
+processamento
+ambiente urbano 
+marcha tática 
+destacamento
+cenário tático interforças 
+operação conjunta 
+meio ambiente
+sopro 
+força aérea brasileira 
+manutenção corretiva 
+operação de junção 
+passagem em trânsito 
+pedido de inteligência
+oportunistas
+ponto de rendez-vous 
+sistema operacional mobilidade, contramobilidade e proteção 
+silêncio-rádio 
+função militar
+oficial de ligação aérea 
+unidade provedora 
+avaliação
+brigada de infantaria leve
+farol de perigo 
+comandante 
+combate aproximado 
+visibilidade 
+incitamento à rendição 
+estado de sítio 
+estado 
+preparação 
+tarefa de interdição 
+concepção das operações 
+intervenção federal 
+transporte aéreo logístico 
+atividade logística
+ação principal
+navio de guerra 
+parte de contato ampliada 
+velocidade equivalente 
+moral
+plataforma continental
+sobreaviso
+estratégia 
+manobra
+reforço de guerra eletrônica
+operações subseqüentes 
+doutrina 
+expressão psicossocial do poder nacional 
+princípio da segurança
+brigada de infantaria pára-quedista
+sigilo 
+interferência
+extraviado 
+hierarquia militar 
+jornada de vôo 
+missão de ataque 
+vigiar 
+investimento de localidades 
+estratégias particulares 
+credencial de segurança 
+área de perigo torpédico 
+cerimonial 
+esforço máximo de combate
+eixo de suprimento e evacuação 
+eficácia operacional 
+destacamento precursor
+informação pública 
+sistema de apoio logístico
+sobrevôo livre 
+salto de freqüência 
+estrutura organizacional
+material capturado
+aeronave amiga 
+segurança aeromóvel 
+elemento de apoio ao combate 
+bloqueio de acompanhamento 
+substituição em posição 
+distância média de suprimento 
+patrulha de combate 
+tempo médio para reparo 
+retraimento
+estratégia operacional
+defesa móvel 
+monitoração
+operação de esclarecimento 
+posição de retardamento 
+sub-rota 
+poder
+grupo de combate 
+linha divisor de águas 
+posto de distribuição 
+substituição por acolhimento 
+oficial de ligação
+faixa de reconhecimento 
+radar de tiro
+ifr
+mira 
+estoque crítico 
+tripulação mínima
+zona contígua 
+ciclo de comando e controle 
+material sigiloso
+ordem preparatória 
+propagandistas 
+mão-de-obra
+função logística saúde
+sistema de controle do espaço aéreo brasileiro
+tiro de destruição 
+supervisionar 
+despistamento eletrônico manipulativo 
+área de conflito
+ponto limite 
+busca
+sistema nacional de defesa civil
+fase do planejamento 
+paz
+conceito estratégico nacional
+operação de defesa aérea 
+ração 
+silêncio eletrônico 
+aproveitamento do êxito
+resgate 
+radioproteção
+manutenção recuperadora
+sistema nacional de mobilização
+força de apoio
+classificação
+força multinacional 
+sistema operacional
+estado de defesa 
+hora i 
+força singular
+regras de comportamento operativo 
+nível operacional
+missão de patrulha aérea de combate 
+praticabilidade 
+recursos logísticos
+percentagem de perdas por atrito 
+salvamento de material 
+granéis secos ou sólidos 
+aeródromo rodopista 
+plano de batalha 
+espalhamento
+capacidade de defesa 
+manutenção de nível indústria 
+guerra
+sistema operacional comando e controle
+área do objetivo 
+defesa circular
+fusão de dados
+comprometimento da ordem pública 
+supressão de defesa antiaérea 
+nação
+potencial nacional
+guerra biológica
+manutenção de nível indústria
+guia 
+não-intervenção 
+poder futuro 
+princípio da exploração
+controle de área marítima
+centro de controle de evacuação aeromédica 
+detecção passiva 
+detecção
+claros
+força fluvial 
+sistema de planejamento do exército 
+vetor aeroespacial 
+serviços públicos essenciais
+inocente útil 
+limite de retaguarda 
+carta de situação 
+munição de exercício 
+centro integrado de defesa aérea e controle de tráfego aéreo 
+guerra geral
+fatia de brigada 
+dia de suprimento 
+elemento de apoio avançado 
+batalha de retaguarda
+pilone 
+linha máxima de interceptação possível 
+núcleo de base aérea 
+escalão de comando
+sistema de comunicações de área 
+munição inerte 
+relatório especial de inteligência 
+suprimento necessário 
+padrão de busca 
+pátio de estacionamento de aeronaves 
+resolução temporal 
+ataque coordenado
+operação ribeirinha 
+jogo de guerra
+fator de reposição 
+força-tarefa blindada 
+missão de assalto aeroterrestre 
+organização para o combate
+conquistar
+corredor de acesso
+evasão 
+unidade aérea 
+força de helicópteros 
+ejeção 
+contrapropaganda 
+treinador sintético de vôo 
+acolhimento
+atividade de inteligência
+garantia dos poderes constitucionais 
+base de mobilização 
+mira telescopica 
+movimento tático
+apoio logístico
+missão de supressão de defesa 
+incidente sar
+operação de defesa de porto 
+equipamento de comunicações
+grupo de exploradores 
+efetivo existente em pessoal 
+defesa nacional
+manobra de flanco 
+documento sigiloso
+ordem interna
+inquietação 
+munição 
+órgão operacional constituído 
+produto estratégico de defesa 
+radioperador de vôo 
+anfíbio 
+corpo principal 
+restauração 
+teto
+defesa de porto
+missão de minagem aérea 
+linha de ação
+ação estratégica
+esforço intensivo de combate
+torre de controle móvel 
+fogo a pedido 
+sobrevôo restrito 
+penetração
+gerenciador eletrônico de mensagem 
+grupo de comando 
+conceito estratégico militar 
+limite anterior da área de defesa avançada 
+neutralização de uma força 
+força aeromóvel
+concepção da guerra 
+imitação do combate 
+sistema de autodestruição 
+probabilidade de lançamento 
+área de destruição de blindados 
+seleção médica 
+ centro de coordenação das armas de apoio 
+diretriz de planejamento 
+manutenção preventiva 
+instalação militar 
+mira refletiva 
+apoio suplementar por área
+zona de pouso de helicóptero 
+probabilidade de destruição 
+órgão técnico de apoio 
+missão de interceptação 
+estacionamento 
+irradiação
+suprimento de acompanhamento
+zona de tráfego de aeródromo 
+autopropulsado
+banda de faixa espectral 
+cavalaria de guarda 
+rádio livre 
+bombardeio de saturação 
+flak 
+área de interesse
+volume de responsabilidade
+defesa em ponto forte 
+zona crítica 
+proposta orçamentária do exército 
+estrutura militar 
+rota de abastecimento 
+plano de mobilização 
+compulsão 
+logística de produção 
+equipe
+reposição 
+força-tarefa ribeirinha
+velocidade de cruzeiro
+equipamento de apoio de solo 
+batalha de retaguarda 
+esforço 
+munição de salva 
+força multinacional
+navio capitânia 
+força naval 
+comandos 
+mina anticarro
+alvo 
+percentagem de rodízio 
+dado
+estimativa logística 
+navio desembarque de carros de combate 
+rompimento 
+acoplamento
+centro de direção aerotático
+proteção radiológica 
+objetivo ulterior 
+posto de comando principal
+manutenção de nível orgânico 
+operação presença 
+destacar 
+unidade de marcha 
+diretrizes estratégicas
+velocidade indicada
+componente de combate terrestre 
+centro de operações militares da região de defesa aeroespacial
+artigo regulado 
+radiolocalização 
+área do objetivo
+plano de defesa de aquartelamento
+área vital 
+capitania dos portos 
+surtidas potenciais 
+ponto regulador 
+política aeroespacial 
+tripulação simples 
+desbordamento
+reserva orgânica de suprimento
+gerenciamento
+movimentação 
+munição de festim 
+resolução radiométrica 
+zona de patrulha 
+comando supremo 
+revolta 
+mina terrestre 
+ressuprimento aéreo 
+evacuação de não-combatentes 
+contra-inteligência
+calco de operações 
+estratégia da ação independente 
+inteligência de imagens 
+medidas operacionais de proteção preventiva 
+segurança 
+unidade-sede 
+fuga
+suprimento classe v
+mosaico 
+controle de aproximação 
+asilo diplomático 
+área amarela 
+diretiva preliminar de planejamento 
+cortina de fumaça
+tiro interdito 
+infra-estrutura viária 
+jusante 
+navio-tanque 
+normalidade
+rastreamento 
+medidas de ataque eletrônico 
+unidade operadora
+zona de alijamento de bombas 
+guerra preemptiva 
+nível de estoque operacional
+coordenadoria estadual de defesa civil 
+ordem de operações 
+força interaliada 
+operação de defesa da pátria 
+mar territorial
+decisão
+luta interna 
+operações especiais 
+sistema de defesa aeroespacial brasileiro
+radar de busca
+rotor auxiliar 
+estratégia da ofensiva 
+força componente 
+ofensiva 
+bem-estar e manutenção do moral militar 
+manutenção 
+rede local 
+foguete 
+guerra insurrecional 
+guarda de aeronaves 
+crista topográfica 
+grupamento operativo de fuzileiros navais
+apoio mútuo
+ejeção
+míssil anti-míssil 
+comboio de acompanhamento 
+pista de rolamento 
+concentração estratégica 
+ponto decisivo
+rotor principal 
+área marítima de operações 
+plano de campanha
+doutrina militar terrestre
+busca de interceptação
+aceitabilidade 
+comando militar de área 
+posto cirúrgico móvel 
+área de busca e salvamento 
+ material de emprego militar tipo b 
+palestra
+interferência de ponto 
+força de emprego geral 
+ponto crítico do ataque 
+defesa pública 
+desengajar
+potencial econômico
+provável linha de desenvolvimento 
+análise prospectiva
+mobilidade
+análise pós-ação
+estado de ação 
+aeronave de reconhecimento 
+jogo de guerra livre 
+alerta
+fator de força 
+mão-de-obra contratada 
+ponto de espera do recebedor 
+aeródromo de alternativa pós-decolagem 
+brigada
+rede de alarme 
+operação militar 
+sistema de comunicações 
+reserva móvel 
+vôo ifr 
+operação anti-submarino 
+posto de regulação de movimento 
+padronização
+área de retaguarda
+projeção de poder sobre terra 
+calco de restrições ao movimento 
+sistema de mobilização de recursos logísticos 
+operações em terra
+escuta hidrofônica 
+defesa de área marítima restrita 
+aeródromo 
+fase do embarque
+sensoriamento remoto 
+ala  aérea 
+bloqueio de varredura 
+comprometimento
+enlace
+combinada(o) 
+fotointérprete 
+jornada 
+poder de polícia
+silhuetamento 
+suprimento classe ix 
+referenciação de cargo 
+ataque principal
+núcleo de aprofundamento 
+vfr 
+refratário
+objetivos militares de defesa 
+ponto de início de reabastecimento 
+espaço exterior
+operação de paz
+divisão de exército 
+área de combate 
+hacker 
+oficial de permanência operacional 
+aeronave de alerta 
+documento sigiloso 
+formação
+segurança cooperativa 
+aeronave suspeita 
+assistência ao pessoal 
+míssil guiado 
+operação aeromóvel
+plano administrativo 
+retém
+informe 
+acampamento
+bombardeio a grande altura 
+plataforma aérea
+retirada anfíbia 
+operação de inteligência
+assalto aeromóvel 
+grupamento operativo de fuzileiros navais 
+defesa civil 
+zona liberada 
+sistema de comunicação social do exército 
+desmobilização nacional 
+sistema de suprimento 
+grande comando
+brigada de infantaria de selva 
+embarcação 
+fatia de brigada
+força terrestre de defesa aeroespacial 
+rumo básico
+registros
+batalha 
+item de suprimento 
+zona econômica exclusiva
+sistema de catalogação do exército 
+sistemática
+planimetria 
+aerofotografia 
+credenciamento 
+área de cobertura anti-submarino 
+sistema integrado de defesa aérea e controle de tráfego aéreo 
+função logística engenharia 
+desafio
+posto de bloqueio e controle de vias urbanas 
+claros 
+força adversa 
+asilo político
+limite de retaguarda
+tempo médio entre falhas 
+vazamento 
+terrorismo
+reabastecimento ancorado
+fator contribuinte 
+apoio ao conjunto
+contato sonar 
+plataforma aérea 
+planejamento do preparo 
+manutenção corretiva planejada 
+elemento de apoio recuado 
+operação aérea
+ponto de início de aproximação perdida 
+confiabilidade 
+fonte
+guerra química
+abastecimento 
+força material
+nível de vôo
+série
+estado de ação
+vôo pairado
+arma não-letal 
+incursão
+via de acesso 
+aeródromo fechado ifr 
+estratégia nacional
+míssil ar-ar 
+zona econômica exclusiva 
+capacidade de mobilização nacional 
+força de ação rápida 
+sistema
+movimento navio-para-terra 
+plano 
+base de operações de forças especiais
+prontidão 
+estratégia naval 
+pacificar 
+material comum 
+zona morta
+diretiva 
+restabelecimento da ordem 
+força amiga 
+defesa
+manutenção preventiva
+operação regulada 
+tráfego de mensagem 
+vigilância do espaço aéreo 
+espaço aéreo livre
+interaliado 
+norma padrão de ação 
+área de dispersão 
+planejamento concorrente
+tripulante orgânico
+aprestamento de guerra eletrônica 
+grupo de combate
+segurança nacional
+ofensiva
+estratégia nacional 
+dispersão
+conquistar 
+memorando de entendimento 
+operação de defesa de área marítima restrita
+ataque de oportunidade 
+engodos 
+princípio da manobra 
+sistema de controle e alarme 
+retém 
+pesquisa e desenvolvimento
+inteligência militar 
+supressão eletromagnética 
+operação aerotática 
+ração de abandono 
+transporte aéreo logístico
+míssil teleguiado 
+saturação dos objetivos 
+suprimento normal 
+velocidade de manobra 
+barragem
+quartel 
+subprograma 
+mina 
+programa 
+espaço aéreo livre 
+área marítima móvel 
+confronto 
+deficiência
+área de desembarque ribeirinha 
+inspeção naval 
+fatia de tropa
+transmissão às cegas
+força de desembarque
+volume de responsabilidade 
+trem da esquadra 
+dispositivo
+guerra de comando e controle 
+espaço aéreo
+ambiente operacional
+ação de conjunto-reforço de fogos 
+ação de submarinos 
+reversão 
+material de emprego militar tipo e 
+equipamento de comunicações 
+equipe de radar para apoio aéreo 
+área de destruição 
+área marítima estacionária 
+destacamento precursor 
+manutenção de nível base
+ocorrência anormal 
+suprimento classe i 
+comando operacional (ou operativo) 
+ fogo de preparação 
+controle de defesa aeroespacial passiva 
+ponto de controle
+ponto de dispersão 
+área de responsabilidade
+travessia
+crise 
+guerra de informação 
+disponibilidade
+logística nacional
+freqüências proibidas 
+substituição 
+navio-aeródromo
+lei orçamentária anual
+contrabateria 
+cabeça-de-praia
+estimativa
+operação de diplomacia preventiva
+linha de destruição total 
+ponto de liberação 
+comando aeroestratégico 
+tiro de eficácia
+coordenador de busca de superfície (css) 
+elementos essenciais de inteligência 
+missão de segurança 
+risco de colisão 
+exame corrente da situação
+operação de manutenção da paz
+deslocamento 
+rendez-vous 
+aeronave de combate
+santuário 
+subgrupamento de marcha 
+ deslocado de guerra 
+aeronave hostil 
+transferência de controle 
+velocidade de manobra
+aeronave de combate 
+dissimulação tática 
+poder relativo de combate
+planejamento simultâneo 
+pressupostos básicos 
+processo de integração terreno, condições meteorológicas e inimigo
+grupo de reabastecimento no mar 
+destacamento aéreo embarcado 
+ operação de bloqueio 
+plataforma marítima 
+anteprojeto 
+civis internados 
+área dos transportes 
+guarnição
+força material 
+unidade isolada 
+local de destino seguro intermediário 
+avaliação estratégica setorial 
+escalão do mar 
+marcha administrativa 
+guerra de atrito 
+acantonamento
+decisão fundamental
+sistema operacional 
+zona protegida 
+unidade anfíbia 
+informação global 
+perda administrativa 
+bem comum
+defesa territorial
+atitude preventiva
+velocidade calibrada 
+engajamento
+guerra nuclear
+cavalaria de guarda
+expressão militar do poder nacional 
+artigos críticos 
+ângulo de sítio 
+missão de ação psicológica 
+camuflagem 
+linha de cerco 
+míssil anti-radiação 
+segurança criptográfica 
+reserva
+emprego 
+área operacional de guerra irregular 
+estiva 
+catalogação
+ponto intermediário logístico
+vetoração-radar 
+apoio fixo móvel 
+linha provável de desenvolvimento 
+optrônico 
+relações de comando
+linha de partida
+assuntos de governo
+poder naval
+exeqüibilidade 
+poder terrestre
+plano militar de defesa 
+fixar
+autonomia
+grupamento de marcha 
+área de desembarque 
+nível de perigo 
+probabilidade de contato 
+programa de aproximação 
+sistemática 
+ação subversiva 
+dia d 
+manobra em linhas exteriores 
+medidas restritivas 
+servidor
+oficial de ligação naval 
+bombardeio em manobra ascendente 
+suprimento de assalto 
+recursos humanos
+munição necessária
+apoio de fogo aéreo 
+artilharia leve 
+hora estimada de calços fora 
+cavalaria mecanizada 
+relatório de perdas 
+requisitos operacionais preliminares 
+relatório final de missão 
+função logística recursos humanos
+guerra revolucionária
+reserva fracionada 
+graduação
+estratégia setorial 
+mão-de-obra civil 
+operação aerotransportada 
+economia de guerra
+repotencialização 
+zona desimpedida 
+segurança pública 
+perseguição 
+informação interna 
+interoperabilidade 
+domínio do mar 
+área marítima estacionária
+ordem de movimento
+adequação 
+serviço de alerta 
+espaçamento 
+ação de choque
+manutenção da paz
+aerotransportado 
+plano preliminar 
+exfiltração 
+jusante
+perda bruta 
+vigiar
+detetor de anomalias magnéticas (mad) 
+ponto de embarque 
+descarga geral 
+ação diversionária 
+jogo de guerra analítico 
+mar territorial brasileiro 
+patrulha de reconhecimento
+área de travessia 
+seminário
+especificação
+segurança interna 
+zona de serviço militar
+reserva 
+fatores da decisão
+declaração de guerra 
+hora sobre objetivo 
+sistema de guerra eletrônica do exército 
+inteligência de sinal de guerra eletrônica
+tarefa operacional 
+ostensivo 
+linha de isolamento 
+aeronave de fotografia aérea 
+cracker
+propaganda cinza 
+rede corporativa privativa do exército 
+apoio aéreo indireto 
+barreira de flanco 
+metodologia
+código de dotação 
+defesa aeroespacial periférica 
+heliponto
+nível de completamento 
+conta-corrente mínima
+brigada de infantaria mecanizada
+levantamento estratégico de área 
+mensagem 
+operação aeromóvel 
+despistamento eletrônico manipulativo
+grupo de aviação 
+área de apoio de fogo 
+operações pré-assalto 
+elemento anfíbio
+inteligência 
+manobra de crise
+tecnologia da informação
+sistema de classificação por catalogação
+área de lançamento de viaturas anfíbias 
+auxiliares de influência 
+painel 
+sistema de controle aerotático
+saúde 
+missão de ligação aérea
+tiro antiaéreo
+guerra civil
+batalha
+guerra interna
+pirataria
+autonomia 
+linha de coordenação de apoio de fogo
+ciclo de boyd 
+dissuasão
+sigint 
+suprimento de acompanhamento 
+linhas de ação preliminares 
+minagem
+transporte 
+meios
+paletização 
+rádio em silêncio absoluto 
+defesa nuclear, biológica e química 
+área de escala 
+estacionamento
+situação de emergência
+barreira de retaguarda 
+poder de combate 
+segurança nacional 
+escalão de acompanhamento 
+prevenção de acidentes 
+regulação da manobra 
+força de vigilância estratégica 
+administração militar 
+orientação 
+situação de apronto operacional
+mobilização política 
+economia de forças ou de meios 
+campo minado 
+propaganda 
+acordo sobre o status da força 
+deterrência
+reservado 
+classe de suprimento 
+logística
+linha de cobertura 
+infantaria pára-quedista 
+ação humanitária 
+desembarque subsidiário 
+exfiltração aeromóvel
+ponto de toque
+munição
+ação aérea 
+capacidade de mobilização militar 
+zona de reunião
+força
+operações psicológicas
+artilharia pesada 
+guerra de corso 
+área defensiva 
+proteger 
+tropa localmente disponível
+reservado
+posto de interferência 
+conferência
+operação de salvamento
+ação de comandos 
+mina explosiva de penetração anticarro 
+ordem fragmentária 
+sabotagem
+reabastecedor 
+delegacia de serviço militar 
+substituição por ultrapassagem 
+integração 
+sepultamento 
+força naval
+centro de comando e controle
+marcha para o combate
+tráfego 
+ações repressivas 
+ala
+patrulha de trânsito 
+escalão considerado
+força aérea
+poder combatente
+linha de esclarecimento
+teatro de operações
+defesa circular 
+escalão de ataque 
+capitulação
+fator material 
+mobilização aeroespacial
+zona contígua
+forma parametrizada 
+pressão
+sistema corporativo 
+operação aeroestratégica 
+assuntos de governo 
+aeródromo de alternativa
+tática
+possibilidade do inimigo
+subárea de segurança integrada
+objetivo eventual 
+estado de alerta
+montante 
+área de segurança à navegação 
+evacuação aeromédica 
+ administração de pessoal 
+grupo data-hora 
+transmissão 
+abrigo antiaéreo 
+cobertura antiaérea 
+mira regulável 
+plano de segurança e defesa
+zona de lançamento 
+mensagem
+nível operacional 
+posição de ataque 
+turma de comunicações 
+cerimônia
+medida de intervenção 
+diretiva inicial
+execução da mobilização nacional 
+objetivos fundamentais
+classe de suprimento
+princípio da unidade de comando 
+guerra econômica 
+quadro de trabalho 
+tropa aerotransportada 
+circulação operacional militar
+incursão anfíbia 
+tropa em condições de reforçar 
+compartimentação 
+autopropulsionado 
+defesa antiaérea 
+autoridade 
+autodefesa 
+alternativa
+embarcação de desembarque
+infra-estrutura de comando e controle 
+taxa de admissão diária
+aeroespacial
+objetivos da defesa nacional 
+operação de contramedidas de minagem 
+rodopista 
+quadro de dotação de material reduzido 
+patrulha costeira
+informação tática
+zona primária
+hospitalização 
+hora g 
+aprestamento 
+grupamento tático sar 
+força-tarefa combinada 
+vôo rebocado 
+escalão
+cavalaria blindada
+enlace 
+fração 
+segurança das comunicações
+teatro de operações marítimo 
+base de patrulha 
+corpo de tropa 
+probabilidade de não abortar 
+área de defesa avançada
+turma 
+princípio da massa 
+piquete 
+período de rodízio 
+eixo de comunicações 
+ativistas 
+integridade 
+sistema logístico militar 
+missão de reconhecimento aéreo
+fase do assalto
+zona de segurança 
+estratégia da defensiva 
+orçamento geral da união 
+meio ambiente 
+área do escalão do mar 
+ponto de espera do recebedor
+nó 
+ondas de rádio
+grupo de comunicações e controle 
+viatura de combate
+centro de operações 
+interesse nacional
+ligações 
+rede-rádio
+terrorismo 
+zona de proteção de aeródromo 
+área do objetivo anfíbio 
+velocidade de avanço 
+área coração 
+poder de choque 
+controle de distúrbio
+compatibilidade 
+banda de faixa espectral
+defesa de área de retaguarda
+infantaria blindada
+apoio afastado 
+gerência de ambientes adversos 
+manutenção corretiva não planejada 
+fortificação de campanha 
+heliponto civil 
+fatores preponderantes
+ordinário militar
+estado de crise 
+remoção 
+acantonamento 
+sistema de armas 
+relatório
+ataque de fixação 
+escalão terrestre 
+guerra eletrônica passiva 
+estado final
+observador avançado 
+estado de sítio
+símbolo chave 
+telemática 
+operacional 
+aeroterrestre 
+busca sistemática
+junta de serviço militar 
+busca exploratória 
+bloqueio de ponto 
+defesa aeroespacial passiva 
+barreira de retenção de aeronave 
+modernização
+contra-reconhecimento
+negociação 
+comandante supremo
+informação de combate
+apoio por área 
+mina de fundo 
+pesquisa básica 
+princípio da manobra
+distância máxima de interceptação possível 
+cadeia de comando paralela 
+plano estratégico 
+calamidade pública 
+guarda
+equipamento do território 
+acoplamento 
+estratégia naval
+área-problema
+direito de autodefesa 
+força expedicionária 
+objetivos nacionais
+chaff 
+freqüência de repetição de pulso 
+item genérico
+mão-de-obra 
+rejogo 
+poder de combate
+sistema de material do exército 
+emissão eletromagnética 
+artilharia de campanha
+comando tático
+coordenação 
+estratégia da ação indireta 
+radar de vigilância 
+criptografia 
+ataque coordenado 
+desenvolvimento experimental 
+escalão considerado 
+norma de evacuação
+estrada guardada 
+logística 
+sistema de alvos 
+elemento de combate
+força combinada
+ação comunitária
+eficácia 
+quadro de desdobramento de força 
+reagrupamento 
+tempo de atraso 
+ordem de transporte 
+conceito da operação
+solenidade 
+manutenção da paz 
+asilo territorial 
+operações complementares 
+corrida seca
+piloto qualificado em pouso a bordo 
+liberdade de ação 
+radioproteção 
+sistema operacional manobra 
+rota de aproximação e retirada 
+conceito estratégico nacional 
+sinalização náutica
+força componente
+espaço aéreo condicionado 
+estado de paz 
+observador militar 
+operação ar-mar 
+acompanhamento 
+farol 
+linha de desdobramento de defesa aérea 
+mina flutuante de contato 
+diretrizes particulares de planejamento 
+apêndice
+infantaria de selva
+plano de operações de inteligência 
+política de defesa nacional 
+situação aeroespacial regional 
+sistema de apoio logístico 
+operação de defesa de porto
+ operação de bloqueio
+região de interesse para a inteligência 
+suprimento classe vii 
+avaliação estratégica de área 
+exercício de simulação de combate
+manobra de crise 
+procedimento 
+aeronave não-identificada 
+sistema de defesa aeroespacial brasileiro 
+jogo de guerra rígido 
+referência bibliográfica 
+palestra 
+idéia de manobra 
+tarefa 
+divisão de exército
+turbulência 
+aeronaval
+ponto crítico 
+conta-corrente 
+pouso de emergência 
+tempo morto 
+estado final 
+casco resistente
+material de emprego militar tipo a 
+situação de normalidade 
+ordem de movimento simplificada 
+chaff
+ponto presente
+linha de ação do comando ou do comandante 
+definição política 
+repetidora 
+trajetória 
+esquema de manobra
+antagonismos
+espaço aéreo brasileiro 
+sala ais
+força terrestre 
+operação de defesa territorial
+plano de guerra 
+posto de extraviado 
+mosaico não controlado 
+princípios básicos 
+organização do terreno 
+artigo regulado
+cerimônia 
+diretrizes de mobilização nacional 
+quadro de organização
+gravador de vôo 
+apreciação
+anfíbio
+missão de cobertura
+operação de defesa do tráfego marítimo 
+subunidade 
+suprimento reembolsável 
+processo decisório
+acolhimento 
+relações públicas
+seleção de frente de ataque 
+usuário
+material de emprego militar tipo d 
+vigilância 
+rumo de abandono 
+águas jurisdicionais 
+estimativa 
+conjuntura
+elemento 
+salto de freqüência
+organização militar apoiadora
+sistema de controle do espaço aéreo brasileiro 
+guiagem 
+bibliografia 
+radiação
+ação comunitária 
+área operacional de forças especiais 
+velocidade de evolução
+spam 
+ política nacional de defesa aeroespacial 
+perdas administrativas
+unidade de comando 
+moral 
+material sigiloso controlado
+zona de aterragem
+multiplex 
+sistemática do planejamento estratégico militar 
+rotor principal
+guerra de independência 
+poder militar terrestre
+base industrial de defesa 
+central siscomis 
+operação de junção
+segurança de área de retaguarda
+missão de ligação aérea 
+artigo
+reforço 
+estatura político-estratégica
+serviço de tráfego aéreo 
+ação psicológica
+apoio geral 
+zulu 
+nível de operacionalidade 
+cobertura-radar 
+preparação específica 
+conferência 
+funções de comando e controle
+hospital de campanha 
+investigação de acidente aeronáutico 
+área de embarque
+mão-de-obra móvel 
+zona de perigo torpédico 
+sistema de controle e alarme
+função logística suprimento
+ataque 
+carta de assistência 
+governo 
+aeroespacial 
+esclarecedor 
+hora de pico 
+canal técnico 
+jogo seminário 
+lote piloto 
+ação de choque 
+apoio aéreo
+levantamento estratégico 
+retirada anfíbia
+poder de polícia 
+sistema específico
+sistema de informação geográfica 
+força de helicópteros
+área de defesa avançada 
+agressor
+capturado-recuperado 
+despistamento 
+fogo inopinado 
+força de superfície 
+radar de direção de tiro
+tropa empenhada 
+informação pública
+defesa territorial 
+evacuado 
+unidade de comando
+poder marítimo 
+número série 
+regimento 
+sonar 
+assuntos civis
+área de cobertura anti-submarino
+figurar 
+serviço de informação de vôo
+linha de contato
+carro de combate anfíbio 
+serviço de controle de tráfego aéreo 
+resistência passiva 
+guerra naval 
+interferência 
+substituição por ultrapassagem
+corredor de segurança 
+levantamento topográfico
+farol aeronáutico 
+zona desimpedida
+nó
+rompimento
+terra arrasada 
+operação componente 
+ação de conjunto 
+área de operações 
+carta de instrução 
+apoio aproximado 
+área de segurança integrada 
+medidas de ataque eletrônico
+doutrina militar 
+fatores condicionantes
+carro lagarta anfíbio 
+adjudicação 
+módulo de completamento 
+conselho de defesa nacional
+posto diretor da rede 
+economia de forças ou de meios
+varredura 
+estado-maior especial 
+operação de substituição 
+defesa elástica 
+busca exploratória
+vistoria de segurança de vôo 
+mina explosiva de penetração anticarro
+gestão contemporânea 
+batalha profunda
+rotor 
+unitização 
+guerra química, biológica e nuclear
+rojão 
+posto de retransmissão 
+corredor de acesso 
+quadro de cargos 
+avaria 
+míssil livre 
+brigada de infantaria pára-quedista 
+milha náutica 
+exploração 
+hipótese de emprego 
+brecha 
+operação tática 
+crista militar 
+missão de exfiltração aérea 
+garantia da lei e da ordem
+política militar de defesa 
+razão de subida 
+supremacia aérea 
+teatro de operações interaliado 
+poder militar aeroespacial
+posto diretor da rede
+transporte de tropa
+método de ensaio 
+operações psicológicas 
+sinalização náutica 
+interceptação e escolta 
+reconhecimento 
+bombardeio em paralaxe 
+plano de emergência aeronáutica em aeródromo 
+tarefa
+manutenção de campanha 
+operação sar 
+linha de transferência 
+workshop 
+planejamento de forças 
+vor
+destacamento de praia 
+operação ofensiva
+idéia de manobra
+defender 
+patrulha aérea de combate
+espaçamento
+comboio 
+unidade
+informação
+ponto de notificação 
+canal
+princípio da surpresa
+superioridade aérea
+navio escoteiro 
+envolvimento 
+centro nodal 
+dados característicos da emissão
+sistema de posicionamento global 
+guerra limitada
+sistema de informação geográfica
+transposição de curso de água 
+mina anti-helicóptero 
+apoio ao combate 
+linha de cabeça-de-praia da força 
+marcha tática
+escalão de apoio 
+atividade 
+centro de operações militares 
+tripulante operacional 
+sistema de dotação 
+unidade isolada
+manutenção não-programada 
+registros 
+base flutuante
+tema
+perfídia 
+radial 
+defesa aérea
+pesquisa e desenvolvimento 
+taxa de admissão diária 
+campo de pouso 
+escalão 
+unidade de evacuação aeromédica 
+alvo prioritário
+biossegurança 
+estrada livre 
+escolta
+defesa antiaérea
+faixa de freqüência
+potencial
+plano estratégico da marinha 
+ponto de controle de reabastecimento alternado
+aeronave aew 
+desativar 
+desaparecido em ação
+fadiga de vôo 
+mina antipessoal 
+sistema de material 
+informação 
+defesa aeroespacial dissuasiva 
+bloqueio sobre o alvo 
+rumo 
+seqüência das ações de comando e estado-maior da força de desembarque 
+arquitetura operacional 
+controle de distúrbio 
+manobra de ação frontal 
+força principal
+força-tarefa combinada anfíbia 
+mobilização nacional
+casulo
+eficiência 
+ideologia
+helicóptero 
+aeronave de asas rotativas 
+comissão de investigação de acidente aeronáutico 
+ala 
+órgão central
+centro de informações de combate 
+comboio especial de suprimento 
+estudo estratégico de área 
+ordem permanente de operação 
+percentagem de perdas totais 
+missão de escolta
+plano de rodízio 
+tiro livre 
+hora estimada de chegada (eta) 
+ proa 
+processo 
+autenticidade 
+rede de computadores
+radiossonda 
+programa de trabalho 
+popa
+atitude
+suprimento classe iii 
+espaço aéreo controlado
+águas interiores
+imposição da paz 
+avaliação 
+força de cobertura estratégica 
+plano básico
+seminário 
+sistema de mobilização de recursos logísticos
+planejamento do emprego operacional 
+silêncio-radar 
+aeronave de caça 
+operação humanitária 
+ponto de abandono
+comandante de aeronave 
+sistema de material
+ressuprimento 
+base operacional alternativa 
+combate 
+segurança ativa 
+vetor
+experimentação doutrinária 
+hora do datum 
+indicativo de chamada
+sistema de comando e controle 
+controle de emissão 
+zona de segurança integrada 
+sistema específico 
+operação de socorro
+centro de operações de busca e salvamento 
+criptograma 
+desenvolver 
+efetivo previsto em pessoal 
+míssil submarino-ar 
+simpósio 
+compulsão
+força paramilitar 
+pedido de inteligência 
+hora de ataque 
+hora zulu
+declaração de guerra
+base logística avançada 
+grosso 
+tropa ativada 
+usuário 
+esquadrão
+material crítico 
+transposição imediata 
+especificação 
+reconhecimento aéreo
+posto central de controle de trânsito 
+doutrina
+trem explosivo 
+guiamento
+cruzador
+objetivos de governo 
+acidente capital
+manutenção programada 
+ordem particular 
+sonda 
+demonstração 
+especialistas 
+navio-aeródromo 
+comprometimento da ordem pública
+ruptura 
+autopropulsado 
+equipe 
+guerra simétrica 
+organização militar apoiada 
+apoio de fogo aéreo
+autodefesa
+vôo de experiência 
+agitação e propaganda 
+defesa estática 
+linha de ação 
+grupo de estacionadores 
+integração de sistemas
+lei de diretrizes orçamentárias 
+efeito de solo 
+sistema de comunicações do exército 
+grupo tat-log 
+zona de parada 
+sistema operacional manobra
+operações em terra 
+resolução temporal
+conselho militar de defesa 
+onda de choque 
+grau de sigilo 
+unidade carburante 
+fatia 
+guerra de manobra 
+operação aérea 
+manutenção da fisionomia da frente 
+operações de transferência 
+política 
+ponto médio de impacto desejado 
+tropa
+centro de coordenação de salvamento (rcc) 
+zona de controle
+preparo da mobilização nacional
+zona de ação 
+disponibilidade 
+relações públicas 
+seção
+atribuições subsidiárias gerais 
+desembocar 
+ponto presente 
+comando apoiado
+força ribeirinha 
+guerra psicológica 
+aeroporto
+ponto de coordenação 
+arquitetura de comando e controle 
+infra-estrutura aeronáutica
+destacamento de segurança 
+posto de detecção e controle aéreo 
+zona secundária
+rotor auxiliar
+órgão de direção geral 
+conhecimento
+área externa de navios de desembarque 
+ponto inicial
+tripulante 
+esquadra em potência 
+ramal 
+subunidade independente
+grupo de itinerário 
+agentes especiais 
+força -tarefa aeromóvel 
+look-through
+radar de tiro 
+dados característicos da emissão 
+perda de pessoal
+criptografia
+operação de manutenção da paz 
+área de segurança integrada
+operação ribeirinha
+ligação aérea
+força terrestre componente 
+avaliação estratégica 
+orgânico
+pesquisa doutrinária 
+princípio do objetivo 
+barreira 
+regimento
+viatura
+operação preparatória 
+missão
+ações preventivas 
+vau 
+vor 
+integridade
+operação de consolidação da paz 
+guerra anti-submarino
+relatório especial 
+adequabilidade
+linha de escurecimento total 
+operação de defesa aérea
+hover 
+artilharia média 
+reação 
+princípio da economia de forças ou de meios 
+função logística manutenção 
+política de defesa nacional
+posto de controle de engenharia 
+vulnerabilidade estratégica 
+probabilidade de dano 
+sistema de suprimento
+sinal interferente
+atitude preventiva 
+deslizância 
+padrão de bombardeio 
+sincronização
+tarefa operacional
+ponto de reunião
+exploração
+artigo controlado 
+linha de partida 
+enlace de dados táticos 
+base de guerrilha 
+área externa dos transportes 
+hospital geral 
+força anfíbia de fuzileiros 
+força avançada
+ambiente de combate 
+operação de interdição
+perdas em ação 
+plano complementar 
+repetidores
+ponto de completamento
+mosaico controlado
+unidade de trânsito de evacuação aeromédica 
+operação de suporte 
+elemento recebedor 
+fortificação
+propagação eletromagnética 
+suprimento 
+unidade de recompletamento 
+linha de regulação de trânsito 
+susceptibilidade 
+guerra eletrônica 
+brigada de infantaria de montanha 
+intenção hostil 
+operação 
+arranjo de defesa coletiva 
+área crítica
+classe de navio 
+plano diretor do exército
+ação principal 
+padronização 
+rede dirigida
+sistema operacional defesa antiaérea 
+presença
+população civil
+criptoanálise
+marcha forçada 
+informação operacional 
+linha de escurecimento parcial 
+pacote logístico 
+agrupamento de artilharia
+horário de controle de reabastecimento em vôo 
+patrulha naval 
+solenidade
+estimativa de captura de prisioneiros de guerra 
+princípio da simplicidade
+equipagem de alerta 
+surpresa tecnológica 
+material bélico 
+negação do uso do mar ao inimigo 
+substituição por acolhimento
+apoio suplementar 
+base de apoio interno 
+reserva estratégica de suprimento 
+tiro de inquietação 
+zona de tiro 
+agitadores 
+zona secundária 
+engajamento decisivo
+alvo prioritário 
+manobra operacional 
+ordinariado militar do brasil
+fatores condicionantes 
+operação combinada
+permanência
+aew 
+golpe de mão 
+barragem 
+linha de crista 
+distribuição
+defesa de área 
+base flutuante 
+retirada
+comprometimento da ordem interna 
+suspender
+escalão de assalto 
+indicativo postal 
+plano de restrição de fogos
+encomenda educativa 
+força aérea de defesa aeroespacial 
+casco
+sar 
+território ocupado 
+operacão de controle de distúrbio
+uniformidade doutrinária 
+manutenção corretiva não-programada
+processo especial de suprimento 
+rapel 
+tripulante
+missão de interceptação
+material de emprego militar essencial
+força aerotática
+travessia de oportunidade 
+zona de responsabilidade tática 
+navegação aérea 
+defesa em profundidade 
+alarme
+opinião pública 
+cadeia de evacuação
+controle da ação em curso 
+canalizar 
+tropa localmente disponível 
+aeronave de transporte 
+sistema logístico militar
+equipe de embarcação 
+treinador para procedimentos de vôo
+observação aérea
+desdobramento 
+força amiga
+organização apoiadora 
+operação vfr 
+blindado 
+centro de comunicações
+vinculação de comando 
+balizamento 
+crise político-estratégica
+depósito
+flanco
+faixa espectral
+gerenciamento 
+segurança integrada
+centro de comunicações de comando 
+trabalho de comando–
+deriva
+transporte
+operação estratégica 
+relatório de incidente aeronáutico 
+radar de aproximação de precisão
+reabastecimento em vôo 
+vaga de embarcações 
+grau de ameaça a pontos e áreas sensíveis 
+linha de cumeada
+linha de cumeada 
+apoio aerotático 
+zona não protegida principal 
+zona de estacionamento 
+terreno restritivo 
+não-combatente 
+força aérea 
+operação defensiva
+estratégia aeroespacial 
+área de interesse 
+fixo de posição 
+operação ar-terra 
+área de fogo proibido 
+desgaste 
+teatro de operações 
+operação de guerra naval 
+resistência passiva
+transitabilidade 
+unidade de transporte de tropa 
+neutralizar
+controle aerotático
+infra-estrutura aeroportuária
+jogo de guerra 
+trânsito
+sistema corporativo
+plano
+piloto de combate 
+varredura mecânica 
+bloqueio avançado 
+fuga 
+informações necessárias 
+confronto
+estratégia de defesa aeroespacial 
+plano plurianual
+elemento
+patrulha aérea de combate 
+risco 
+plataforma marítima fixa 
+velocidade de evolução 
+esforço de guerra
+operação de defesa antiaérea
+força-tarefa anfíbia
+aew
+centro de controle de aproximação 
+planejamento 
+órgão de direção geral
+unidade incorporada 
+área de combate
+cabeça-de-série 
+evacuação 
+mestre de carga 
+tráfego aéreo 
+esforço secundário
+defesa aeroespacial
+batalha aproximada 
+simulação 
+problema militar 
+forças auxiliares
+engenharia
+órgão de controle de tráfego aéreo
+substituição em posição
+trabalho de comando
+aeronaval 
+escolta eletrônica 
+ponto sensível
+foguete
+opinião pública
+unidade de mobilização 
+operação aeroterrestre
+plano de campanha 
+assalto 
+trafegabilidade
+área de reserva 
+zona de desembarque
+guerra regular
+infantaria mecanizada 
+método de integração terreno, condições meteorológicas e inimigo 
+órgão dos serviços de tráfego aéreo 
+operação interaliada 
+probabilidade de interceptação 
+manutenção reparadora
+operação sar
+arranjo internacional de defesa coletiva 
+comando apoiado 
+teatro de guerra 
+eixo de progressão
+resistência
+comboio de assalto 
+reagrupamento
+força armada
+efetividade 
+estrutura organizacional 
+força de apoio 
+planejamento do preparo
+zona do interior 
+recebedor de combustível
+vôo ifr
+operação contra força irregular
+infantaria blindada 
+bombardeio horizontal
+centro de operações táticas 
+manutenção corretiva
+salvamento 
+tráfego de aeródromo
+apoio direto de guerra eletrônica 
+combate sar 
+atividade subsidiária 
+segurança lógica 
+inimigo 
+local de destino seguro 
+objetivo final
+quadro de cargos previstos 
+operação defensiva 
+incidente aeronáutico 
+diário de seção de estado-maior 
+embarque e carregamento 
+insubmisso 
+princípio da prontidão 
+regulação
+escalão de segurança
+poder combatente 
+repetidores 
+reconhecimento estratégico 
+manutenção modificadora 
+mira
+vôo vfr
+ataque aeromóvel 
+águas jurisdicionais
+desconflito
+expedição 
+ordinariado militar do brasil 
+organização para a experimentação da doutrina 
+mina de fundeio 
+boato
+força de superfície
+faixa de freqüência 
+funções de comando e controle 
+recompletamento individual 
+heliponto privado 
+cadeia de comando
+salvamento
+parecer 
+aeródromo interditado 
+missão anti-submarino
+avaliação da conjuntura 
+modularidade 
+pod 
+técnica de triangulação 
+tiro de barragem
+zona de administração 
+finalidade 
+informação operacional
+nível de estoque operacional 
+poder 
+iff
+política
+última linha de defesa 
+área de influência
+companhia 
+área de controle 
+estratégia de desenvolvimento 
+objetivos aeroespaciais atuais 
+planejamento concorrente 
+limpeza da zona de ação 
+plataforma continental 
+flexibilidade 
+simpatizantes logísticos 
+capacidade de guerra eletrônica 
+força aérea componente
+tiro de interdição 
+bombardeio planado 
+setor
+relatório de impacto ambiental 
+ação dinâmica da defesa 
+operação de estabilidade 
+mar territorial 
+unidade operadora 
+atuar
+manutenção
+combate aproximado
+linha limite de progressão 
+constabular 
+elevado potencial de reocorrência 
+radar secundário 
+aquisição de alvo
+baixa 
+flare 
+campanha 
+força de vigilância 
+investigação de incidente aeronáutico ou de ocorrência de solo 
+triagem de baixas 
+quadro de pessoal e tonelagem da unidade 
+ecobatímetro 
+aeródromo de desdobramento
+documento sigiloso controlado
+abicar 
+remoção
+ferro
+componente de combate aéreo 
+missão de ataque
+contramobilidade
+operação combinada interaliada 
+princípio da ofensiva 
+rumo básico 
+retardamento 
+telemática
+radiação 
+milha marítima
+reserva local 
+bloqueio
+sistema de inteligência do exército 
+unidade aerotransportada 
+espaço aéreo proibido
+centro de operações terrestres do comando-geral de operações aéreas 
+pelotão
+operações subseqüentes
+manutenção recuperadora 
+posto de bloqueio e controle de estradas
+bombardeio por salva 
+força de cobertura 
+diretriz de operações aéreas 
+documento sigiloso controlado 
+ações repressivas
+imposição da paz
+unidade 
+submarino
+caderno de encargos 
+remanescente 
+centro de operações táticas
+estrada principal de suprimento alternativa 
+força de contra-ataque 
+objetivo
+equipamento de não-comunicações 
+diversão
+fase do ensaio 
+guarda 
+manutenção da ordem pública 
+plano de segurança orgânica 
+bateria
+guerra insurrecional
+reserva articulada 
+distância de apoio 
+acampamento 
+fogo previsto
+processo especial de suprimento
+poder terrestre 
+método operacional 
+velocidade equivalente
+saída de praia 
+equipagem 
+mobilização marítima 
+paráfrase 
+governador militar 
+paz 
+alternativa 
+expectativa de dano 
+segurança aeroespacial 
+área de concentração
+operação aeronaval 
+área de seguranca 
+dia de suprimento de munição 
+simpatizantes institucionais 
+linha de contato 
+subversão
+zona de lançamento
+teatro de operações terrestres
+centro de direção aerotático 
+zona aérea 
+navio-patrulha 
+guerra limitada 
+piloto em comando 
+expressão econômica do poder nacional 
+alvo de alta prioridade 
+decisão 
+reboque
+coordenador de área marítima 
+despistamento
+pacote logístico
+área restrita 
+área de aproximação de praia 
+infantaria leve 
+linha de bombardeio de costa 
+defesa coletiva 
+corredor rodoviário de apoio logístico 
+força de paz 
+credencial de segurança
+linha de controle
+relatório de investigação de acidente aeronáutico 
+unidade pára-quedista 
+apoio específico 
+centro de controle de defesa aérea 
+defesa em contra-encosta 
+integração de sistemas 
+região de interesse para a inteligência
+rota de segurança 
+espaço aéreo restrito 
+relatório de investigação de acidente aeronáutico
+operação combinada 
+míssil ar-superfície 
+hover
+esquadra
+fogo
+hangar de alerta 
+incursão aeromóvel 
+operação de defesa aeroespacial
+guerra química 
+levantamento topográfico 
+fogo amigo
+monitoragem 
+reabastecimento ancorado 
+reunião de informes 
+tempestade de idéias 
+base aérea naval 
+comando apoiador
+sala de autoridade de defesa aeroespacial 
+sumário diário de pessoal 
+plano de evacuação 
+níveis de estoque 
+propaganda
+material sigiloso 
+centro de operações de combate
+posto de comando tático 
+visita 
+guerra de resistência
+plano de emergência de aeródromos 
+radial
+linha de festo 
+sistema de identificação automática 
+escalão aéreo
+volume de responsabilidade de sobrevôo livre
+núcleo de defesa 
+posição sumariamente organizada 
+princípio da segurança 
+recuperação 
+míssil submarino-superfície 
+guerra irregular
+bloqueio eletrônico 
+bivaque 
+posição sumariamente organizada
+defesa em posição 
+observação 
+subárea 
+escalão de comando 
+centro de coordenação do poder aeroespacial brasileiro 
+difusão do alarme 
+homologação 
+incidente sar 
+ordem particular
+suspensor aerodinâmico
+aeródromo alternativo
+área de concentração 
+sabotagem 
+taxa de esforço 
+projeto
+análise da área de operações 
+simplicidade 
+oficial de permanência operacional
+roteador 
+órgão de controle de operações aéreas militares 
+controle de tráfego aéreo 
+distribuição em instalação de suprimento 
+veículo áereo não-tripulado 
+item genérico 
+vagas a pedido 
+desencalhe 
+condições de aprestamento 
+cavalaria mecanizada
+objetivos aeroespaciais permanentes 
+estado-maior
+contato radar 
+equipagem
+elemento de combate 
+raias de embarcações
+canal de comando 
+plano de busca 
+vôo cargueiro 
+revolta
+aproximação 
+item bélico 
+região de defesa aeroespacial 
+esaon 
+escalão de segurança 
+força aeronaval 
+observador de tiro 
+alvo de busca 
+batalha aproximada
+defesa aeroespacial 
+inimigo
+conceito de operação em terra
+linha de coordenação de apoio de fogo 
+protótipo
+demonstração anfíbia
+aeromobilidade 
+assuntos civis 
+missão de reconhecimento aéreo 
+ângulo morto 
+ordinário militar 
+lançamento aéreo com pára-quedas 
+preparação
+aeródromo
+destacamento de praia
+base aérea 
+posto de bloqueio e controle de estradas 
+guerra regional 
+defesa aeroespacial em profundidade 
+fogo a horário 
+ponto de reabastecimento mandatório 
+cota 
+potencial econômico de guerra 
+equipamento do território
+coordenação
+relatório periódico de pessoal 
+sistema de controle de aproximação-radar móvel 
+navio independente 
+plano nacional de mobilização 
+probabilidade de detecção-radar 
+controle das irradiações eletromagnéticas 
+comandamento
+rede controlada
+coordenador de defesa antiaérea 
+quadro de itinerário 
+comando de defesa aeroespacial brasileiro 
+hipótese básica 
+hospital de guarnição 
+terreno impeditivo 
+vôo vfr 
+plano de defesa de aquartelamento 
+centro de coordenação de operações 
+varredura de minas 
+nível de completamento
+intervalo entre o pedido e o recebimento 
+ordem pública 
+cota
+oficial de ligação 
+zona de sombra
+ponto crítico
+ponto de curva
+análise
+decisão fundamental 
+velocidade calibrada
+fração isca 
+instruções 
+rádio em silêncio 
+risco potencial 
+operações de transferência
+rumo magnético
+missão de patrulha marítima
+processos de comando e controle 
+planejamento simultâneo
+combate de resistência
+espaço aéreo de assessoramento 
+estimativa logística
+saturação dos meios de defesa 
+área de estacionamento 
+área de assalto 
+estratégia militar 
+intensificação de fogos 
+radiação inicial 
+posto de remuniciamento 
+ordem de batalha
+reação
+níveis de condução da guerra 
+suprimento de reserva 
+plano contingente 
+base intermediária de apoio 
+centro de operações de defesa aeroespacial 
+rede corporativa privativa do exército
+método 
+cobertura 
+operação naval
+situação de apronto operacional 
+força aérea numerada 
+precipitação radioativa 
+coordenação do espaço aéreo 
+função logística salvamento 
+aeródromo de alternativa de destino 
+esforço principal
+inteligência técnica de material bélico 
+princípio da ofensiva
+órgão de execução 
+classificação por identificação 
+estado-maior pessoal 
+carga pré-configurada 
+defesa de costa 
+esclarecimento
+aprestamento
+perda líquida 
+plano de concentração 
+estabilização 
+insubmisso
+resultado
+embarcação de desembarque 
+garantia dos poderes constitucionais
+perda de combate 
+doutrina militar de defesa 
+pedido diário de ração 
+reconhecimento por sistemas ópticos digitais 
+comprometimento 
+fase de emergência 
+sonda batitermográfica 
+leito fixo 
+concentração 
+função logística
+plano de segurança orgânica
+capacidade de comando e controle 
+demonstração anfíbia 
+fortificação 
+interesse nacional 
+guerra regular 
+posto de detecção e controle aéreo
+guarda de honra 
+redundância 
+desinformação 
+comando e controle 
+operação de interdição 
+transferência
+cerimonial
+órgão central do sistema de defesa aeroespacial brasileiro 
+ataque frontal 
+sistema de planejamento do exército
+sala de guerra 
+suprimento
+série 
+transporte aeroestratégico 
+formatura 
+força-tarefa 
+mina explosiva anticarro 
+apoio ao conjunto - reforço de guerra eletrônica 
+farol aeronáutico
+aeronave de patrulha marítima 
+isolamento 
+controlar 
+missão de socorro em vôo 
+grupo de controle
+órgão de atividade-fim 
+combate
+linha de desembarque
+recalada 
+viatura de combate 
+ação aérea
+informação nacional
+hora média de greenwich
+probabilidade de engajamento 
+sistema de informações operacionais 
+abicar
+público externo
+defesa aeroespacial local 
+tripulante orgânico 
+política nacional 
+medicina curativa 
+item de suprimento
+mobilização cientifica e tecnológica 
+requisitos operacionais básicos
+grupo avançado 
+busca de interceptação 
+estratégia militar de defesa
+ponto futuro 
+exercício de simulação de combate 
+espionagem 
+protocolo
+navegação aérea
+governo militar 
+míssil
+reserva orgânica de suprimento 
+visibilidade
+peça de manobra 
+sistema de autenticação
+centro de operações
+farol de aeródromo 
+comando e controle
+bombardeio de precisão 
+trem de estacionamento 
+ambiente de combate
+material bélico
+ataque de supressão de defesas 
+autonomia operacional (ou operativa) 
+zona de defesa
+padrão de alvo 
+probabilidade de chegar e identificar 
+fonte 
+apoio ao conjunto 
+fumígeno 
+assalto aeroterrestre
+nível de vôo 
+força naval de defesa aeroespacial 
+objetivo final 
+transmissão sem recibo
+política naval 
+abastecimento
+organização militar prestadora de serviço 
+heliporto
+emergência aeronáutica 
+organização militar subordinada 
+missão de patrulha aérea de combate
+reconhecimento tático 
+propaganda negra 
+junção
+guerra de desgaste 
+guerra nuclear 
+salvamar 
+centro de operações militares
+operação de engenharia de construção 
+setor 
+área de pacificação 
+espaço aéreo 
+capacidade de tráfego
+projeção do poder nacional
+profundidade de coluna 
+risco crítico
+guerra geral 
+classificação 
+tiro designado
+ apronto operacional 
+guerra preventiva 
+direção de ataque 
+força de defesa de área de retaguarda 
+radar de abertura sintética 
+míssil anti-carro 
+ação psicológica 
+contrato de objetivos 
+plano diretor do exército 
+sistema de barreiras 
+sigilo
+material de emprego militar
+área indispensável à segurança nacional 
+grupo
+operação de consolidação da paz
+divisão reforçada 
+capacidade de tráfego 
+escalão de ataque
+mobilidade tática 
+processamento 
+limite
+velocidade aerodinâmica 
+vaga 
+base de operações de forças especiais 
+intenção do comandante 
+fator de suprimento 
+função logística manutenção
+artigo controlado
+operação de defesa aeroespacial 
+pirataria 
+atividade
+base doutrinária 
+princípios básicos
+canal 
+munição disponível 
+quadro de movimento 
+frente
+força subterrânea 
+crise
+plano estratégico aeroespacial 
+freqüências vigiadas 
+agrupamento de artilharia 
+análise da missão
+calco de eventos 
+incidente de busca e salvamento
+área interna dos transportes 
+período de rodízio
+desengajar 
+elemento alocado 
+local de destino seguro
+área de fogo livre 
+tráfego de aeródromo 
+ação de superfície 
+força aérea da zona de defesa 
+política militar
+local de travessia de assalto 
+detecção 
+fotocarta
+vaga
+escalão observado 
+desafio 
+geopolítica 
+preparação completa 
+monitoração 
+rede local
+refletor angular 
+serviço postal 
+princípio da massa
+ifr 
+mobilização nacional 
+ordem de batalha eletrônica 
+posto avançado de detecção-radar 
+efetividade
+contramobilidade 
+subárea de apoio logístico 
+projeto 
+material salvado 
+autoridade
+área restrita
+bloqueio 
+instrução 
+embarque 
+plano de defesa aeroespacial brasileiro
+reconhecimento radiológico 
+heliporto 
+hora estimada de aproximação 
+informação global
+operação de ataque 
+operação de socorro 
+zona de administração
+sistema militar de comando e controle 
+local de travessia 
+processo decisório nacional 
+território nacional 
+princípio da economia de forças ou de meios
+rumo
+produto 
+aeródromo fechado vfr 
+eixo prioritário de transporte 
+movimento tático 
+controle-radar 
+diretriz
+conjuntura 
+alvo
+dotação orgânica 
+escalão visualizado 
+governo
+escalar a crise 
+posto
+ordem de operações
+neutralidade 
+defesa aérea 
+viatura 
+saltador 
+relatório final
+ medida de apoio à guerra eletrônica 
+atividade logística 
+código ssr 
+guerra de libertação 
+medida de persuasão 
+comando tático 
+mobilização psicossocial 
+base doutrinária
+tática 
+análise pós-ação 
+observador terrestre 
+poder relativo de combate 
+operação de apoio logístico móvel 
+guarnição 
+deslizância
+segurança pública
+escala
+local de portadas 
+política aeroespacial
+análise prospectiva 
+material em excesso 
+aeródromo impraticável 
+reunião formal 
+treinamento 
+arma nuclear 
+operação independente 
+militantes
+apoio de fogo
+radar de aproximação de precisão 
+reconhecimento aeromóvel 
+escolta 
+dissimulação eletrônica 
+sistema de navegação por satélite 
+proteção
+capacidade de guerra eletrônica
+órgão de direção setorial 
+pista de pouso por instrumento 
+potencial nacional utilizável 
+onda de choque
+cota periscópica
+neutralização 
+munição de manejo 
+suprimento classe i
+zona de interceptação por mísseis 
+raias de embarcações 
+hora média de greenwich 
+comandante de aeronave
+comandante do escalão móvel de apoio 
+elemento de apoio inicial 
+turma
+surtida
+mobilização econômica 
+estatura político-estratégica 
+brigada anfíbia 
+nação 
+rebelião 
+estratégia da presença
+informação sigmet 
+guerra externa 
+objetivo 
+derrota 
+velocidade de progressão 
+princípio do objetivo
+guerra anti-submarino 
+instalação logística sumária 
+soberania
+combate não-linear
+direção tática de atuação
+tiro de neutralização 
+estratégia da ação direta 
+linha privativa 
+conselho de defesa nacional 
+força de pacificação
+radar secundário
+força aeroterrestre 
+navio de estado 
+ebnet 
+isolamento do campo de batalha
+centro de operações aéreas do teatro 
+brigada de infantaria de selva
+operação de busca e apreensão 
+míssil autoguiado 
+equipamento transportável 
+grande unidade 
+transferência 
+plano básico 
+sensor 
+guerra biológica 
+demonstração
+sistema de operações ar-terra
+operação de inteligência 
+plano de inteligência
+subárea de segurança integrada 
+ação subsidiária
+freqüência fixa 
+treinador para procedimentos de vôo 
+cracker 
+combate de encontro 
+ação de emergência 
+pesquisa operacional 
+sistema de mobilização de recursos humanos 
+medicina preventiva 
+comando supremo
+componente de combate aéreo
+base logística 
+linha de esclarecimento 
+incidente de busca e salvamento 
+tiro de eficácia 
+diretrizes estratégicas 
+espaço aéreo contaminado 
+sobrevôo restrito
+fator operacional 
+espaço aéreo brasileiro
+interdição
+rádio restrito 
+estado
+busca de alvos 
+análise das linhas de ação opostas 
+missão de busca e resgate 
+ponto de completamento 
+fator de cobertura 
+poder nacional 
+tropa em condições de reforçar
+base móvel 
+organização por tarefas
+centro de comando e controle 
+exfiltração aeromóvel 
+ponto de aproximação
+espalhamento 
+radioatividade
+intrusão
+aspiração nacional 
+mobilização militar 
+disciplina de rede 
+deserção 
+vaga de helicópteros
+posto de coleta de extraviados 
+liberdade de ação
+sigmet 
+superioridade de área 
+método de análise e solução de problemas 
+guerra irregular 
+apêndice 
+helicóptero
+detecção ativa 
+guerra centrada em redes 
+mobilização de transportes 
+incidente grave
+orçamento geral da união
+atividade de contrabateria 
+emergência aeronáutica
+livro de prioridades
+capitânia
+operações especiais
+operação independente
+esforço contínuo de combate 
+bloqueio naval
+público interno
+acidente capital 
+operação de imposição da paz
+flexibilidade
+inteligência de comunicações 
+silêncio eletrônico
+movimento revolucionário
+reabastecimento em rota 
+zona não protegida 
+movimento
+cobertura
+unidade tática
+fatores preponderantes 
+grupo de controle 
+escalão de assalto
+simulação de combate 
+estação naval 
+vulnerabilidade
+obtenção 
+órgão de comprovação e experimentação 
+plano plurianual–
+tiro direto 
+sigint
+objetivo de última instância 
+estrada principal de suprimento 
+ deslocamento estratégico 
+evacuação de não-combatentes
+tema tático 
+nível tático 
+cota de colapso 
+atitude defensiva 
+assunto sigiloso 
+exercício de campanha 
+capacidade de comando e controle
+motor de combustão principal 
+prazo crítico 
+situação tática
+missão de escolta 
+força aérea de defesa aérea 
+ocupação 
+plano de operação 
+norma de distribuição 
+zona de tráfego de aeródromo
+zona de apoio 
+abalroamento 
+planejamento estratégico militar 
+alijamento 
+posto de distribuição
+esforço de guerra 
+diplomacia preventiva
+operação de supressão de defesas 
+planejamento militar 
+seqüência de aproximação 
+nível de estoque de segurança 
+depósitos flutuantes 
+segurança coletiva 
+apreciação 
+minagem 
+área de desembarque
+esnórquel 
+problema militar
+defesa de área de retaguarda 
+mapa de situação 
+região de destino 
+estimativa de consumo
+material salvado
+ação humanitária
+serviço de engenharia 
+área de engajamento 
+poder militar terrestre 
+missão de reabastecimento em vôo 
+interdição 
+desenvolvimento 
+cabeça-de-ponte aérea
+relações de comando 
+ardil 
+homologação
+transmissão às cegas 
+unidade administrativa
+fase de incerteza 
+sondagem aerológica 
+rendez-vous
+contra-atacar
+área de apoio de praia 
+varredura
+plano de circulação e controle do trânsito 
+relatório periódico de inteligência 
+princípio do moral 
+subversão 
+aeroestratégica
+suspender 
+pessoal capturado 
+espaço aéreo contaminado
+auxiliares ocultos 
+ponto de bloqueio e controle fluvial 
+ponto de junção 
+quadro de dotação de material previsto
+círculo de detecção 
+confrontação 
+público externo 
+mascaramento 
+objetivos da defesa nacional
+órgão de controle de aproximação 
+sítio de defesa antiaérea 
+ataque de supressão de defesas
+normalidade 
+instrução
+estação controladora da rede
+gabinete de crise 
+segurança das comunicações 
+iff 
+aeronave a  vigiar 
+zona de sombra 
+posto 
+brigada de infantaria de montanha
+força aerotática 
+operacional
+unidade apoiada 
+destacamento de contato 
+posto de segurança estático 
+potência de fogo
+mediante ordem
+área estratégica 
+eficácia
+veículo áereo não-tripulado
+briefing  (ou brifim) 
+arquitetura modular 
+monitoragem
+passagem tática 
+defesa em ponto forte
+corpo principal
+vôo pairado 
+tratamento de imagem-radar 
+acidente de tiro 
+ultrapassagem
+tiro iluminativo 
+comando independente 
+quadro de situação de comunicação social 
+mina de fundeio
+gestão de conhecimento 
+camuflagem
+supremacia de área 
+integração rádio-fio 
+comboio de assalto
+reconhecimento
+probabilidade de chegada 
+trafegabilidade 
+divulgação institucional
+organizações militares tipo
+mascaramento
+operação de garantia da lei e da ordem
+área de controle
+manobra na carta 
+defesa aeroespacial ativa
+equipamentos móveis para aproximação controlada do solo 
+movimento revolucionário 
+ativistas
+optrônico
+quadro de dotação de material
+relação funcional 
+movimentação
+drone
+guiagem
+força avançada 
+rumo base
+baixa
+meios audiovisuais 
+segurança integrada 
+informação setorial 
+medida de destruição 
+inteligência operacional 
+segurança e defesa 
+método científico 
+produto
+reposição
+centro de gravidade 
+componente de apoio de serviços ao combate
+inteligência eletrônica 
+saturação de área 
+guerra de guerrilha
+objetivo estratégico 
+mestre de salto 
+ação estratégica militar 
+controle operacional (ou operativo) 
+sala ais 
+estratégia da ofensiva
+fotocarta 
+base de combate ribeirinha 
+reabastecimento no solo 
+informação tática 
+pouso de emergência
+arma de destruição em massa 
+rede livre 
+etiqueta 
+cobertura-radar
+desobstrução 
+patrulha marítima 
+zona livre de obstáculos
+plano sav 
+relatório de incidente de tráfego aéreo 
+recompletamento
+comboio
+sonda de reabastecimento 
+aeronave militar 
+munição necessária 
+ocorrência de solo 
+guiamento 
+acompanhamento
+relatório de ataque 
+dissimulação 
+fator de consumo 
+equipe de controle de defesa aeroespacial e controle de tráfego aéreo 
+rede de comunicações 
+fixo
+sistema de mobilização aeroespacial 
+organização militar
+ação cívico-social 
+zona de ação
+zona de patrulha
+relatório 
+transposição preparada 
+óbices
+grande unidade
+ações preventivas
+estado de ação da artilharia antiaérea 
+transmissor-alvo 
+capacidade logística 
+fase de perigo 
+plano de defesa aeroespacial brasileiro 
+órgão central 
+base logística recuada 
+manobra tática
+volume de responsabilidade de sobrevôo proibido
+função logística recursos humanos 
+mina anticarro 
+neutralidade
+eixo de progressão 
+monitoração radiológica 
+força aérea do teatro de operações marítimo 
+potencial nacional 
+transmissão
+rede de computadores 
+sistema de mobilização militar 
+suprimento classe x 
+comandamento 
+comandante supremo 
+medicina veterinária 
+circulação operacional militar 
+fase de busca 
+rede dirigida 
+sistema nacional de mobilização 
+equabilidade 
+minuta 
+nacional mobilização industrial 
+grave comprometimento da ordem pública 
+sistema de objetivos 
+fixo 
+reserva de guerra de material bélico 
+tobogã 
+mobilidade tática
+proteção 
+material de emprego militar tipo c 
+ração de vôo 
+centro nodal
+centro de operações de combate 
+secreto 
+desbordamento vertical 
+equipagem operacional 
+poder de choque
+análise da missão 
+tráfego
+eco-radar 
+guia aéreo avançado
+desenvolvimento
+destinatário de ação 
+situação hipotética 
+medidas de averiguação
+agrupamento de artilharia antiaérea 
+sistema de comunicações
+horário de controle de reabastecimento alternado 
+vulnerabilidade crítica 
+demolição 
+gaseado 
+tempo de reabastecimento em vôo 
+base logística
+transporte de tropa 
+permanência 
+área de defesa aeroespacial 
+reconhecimento eletrônico
+defesa do litoral 
+manobra 
+força de emprego estratégico 
+cobertura aerofotográfica 
+força aeromóvel 
+serviços públicos essenciais 
+campanha terrestre 
+recuperação
+defesa de ponto 
+subunidade independente 
+movimento preparatório 
+ação direta 
+elementos permanentes do sistema de defesa aeroespacial brasileiro 
+ataque diversionário 
+operação de defesa territorial 
+reconhecimento aéreo 
+rumo verdadeiro 
+surpresa estratégica 
+contrabando de guerra 
+reboque 
+aeroestratégica 
+risco
+defesa de porto 
+ogiva 
+situação retrospectiva 
+rotor de cauda
+contato
+espaço aéreo restrito
+guerra de movimento 
+dotação de munição anual 
+linha de crista
+aeródromo de alternativa em rota 
+carga geral
+calco de eventos
+força de emprego rápido 
+força-tarefa ribeirinha 
+agrupamento grupo 
+equipe de controle de transporte de tropa 
+informação técnico-científica 
+ameaça militar 
+militantes 
+indicativo de chamada 
+olhar através 
+operação aeroterrestre 
+operações de informação 
+rojão de fogo 
+centro de operações de defesa aeroespacial
+diplomacia preventiva 
+nível estratégico
+movimento retrógrado 
+objetivo atribuído 
+vagas programadas 
+situação de normalidade
+separação mínima 
+serviço de informação aeronáutica 
+quartel
+sistema operacional comando e controle 
+mosaico controlado 
+isolamento do campo de batalha 
+grupo de apoio móvel 
+equipamento 
+nível estratégico 
+acidente aeronáutico
+ensaio
+radar de identificação
+corredor de apoio logístico 
+junta de serviço militar
+organizações militares tipo 
+capacidade de defesa
+guia
+normas gerais de ação 
+defesa externa 
+área de sobrevôo livre 
+percentual de completamento 
+aeródromo de desdobramento 
+controle
+espaço aéreo controlado 
+infra-estrutura aeroespacial 
+pouso forçado
+desgarrado 
+transgressão militar 
+lei orçamentária anual 
+ataque secundário
+exfiltração
+motor de combustão auxiliar 
+grupo de reivindicação 
+vôo controlado 
+integração
+centro de gravidade
+isolamento estratégico 
+requisito
+apoio por unidade 
+eco-radar
+barricada 
+diretriz 
+consolidação da paz
+canalizar
+ordem de alerta 
+técnica de cenários alternativos 
+logística militar 
+operação de defesa antiaérea 
+informação interna
+linha de comunicação ou de suprimento 
+quadro estratégico 
+força naval componente
+plano de vôo 
+tema 
+tiro de calibragem 
+vírus 
+força aérea numerada
+guerra convencional 
+linha de desembarque 
+organização apoiadora
+tráfego aéreo
+antagonismos 
+operação ifr 
+teto 
+marcha
+operação
+missão de transporte aéreo logístico 
+componente de combate terrestre
+guerra de guerrilha 
+difusão da informação 
+carta de operações 
+desaparecido em ação 
+posto avançado de combate 
+público
+consciência situacional 
+guerra 
+agitadores
+sistema de mobilização do exército 
+área defensiva
+linha de festo
+fatia de tropa 
+função logística transporte
+guerra acústica 
+bombardeio de área 
+área de repouso 
+ato declaratório 
+reparação
+princípio da surpresa 
+componente de apoio de serviços ao combate 
+suprimento de acompanhamento a pedido 
+área de espera 
+radar altímetro
+estado de defesa
+aliciamento 
+força terrestre do teatro de operações
+comunicação social 
+parte de contato 
+plataforma flutuante 
+cerco 
+deficiência 
+espírito de corpo
+rádio em silêncio
+pilone
+unidade para recompletamento 
+estudo de situação 
+força de emprego local 
+área de apoio de serviços ao combate 
+obstáculo
+ordem jurídica 
+memorando de entendimento
+posto de comando alternativo 
+tiro de barragem 
+saturação de área
+ponto de referência de alvos 
+ponto de controle de reabastecimento 
+formação 
+cabeça-de-praia 
+reforço de guerra eletrônica 
+alcance da aeronave 
+freqüência 
+objetivos fundamentais 
+cifra
+informação de combate 
+ponto vital 
+estratégia da dissuasão
+incursão 
+guardar 
+treinamento
+posto de coleta de prisioneiros de guerra 
+ponto zero 
+mobilização aeroespacial 
+estratégia de defesa aeroespacial
+linha seca
+distribuição do esforço 
+linha mínima de interceptação desejada 
+cadeia de comando 
+pedido de fogo 
+míssil superfície-submarino 
+repetitividade do sistema 
+radar altímetro 
+sistema nacional de defesa civil 
+controle naval do tráfego marítimo 
+ordem logística 
+impacto ambiental
+massa
+hospital cirúrgico móvel 
+desmobilização militar 
+horário universal coordenado (utc) 
+distrito administrativo 
+fogo amigo 
+informação militar 
+operações pré-assalto
+órgão de controle de tráfego aéreo 
+acesso
+guerra total
+trilha 
+área 
+massa 
+elemento de apoio ao combate
+estudo de situação
+recursos locais de comunicações 
+reserva geral
+via marítima 
+agrupamento bateria 
+grupo de comunicações e controle
+fator de fraqueza 
+conceito estratégico 
+conflito armado 
+informação estratégica militar 
+análise da ameaça 
+níveis de estoque
+operação contra força irregular 
+arma convencional 
+organização para o combate 
+dispositivo de expectativa 
+estrada policiada 
+força irregular 
+patrulha de combate
+instrução militar 
+janela 
+sistema de operações ar-terra 
+  adendo 
+teatro de operações marítimo
+altitude
+ação estratégica 
+unidade aérea
+grosso
+intenção do comandante
+produção de informação 
+ação direta
+risco crítico 
+linha de lançamento de armamento
+cerco
+  transporte aeromóvel 
+ataque secundário 
+aeronave de alarme aéreo antecipado 
+separação
+propósito 
+suspensor aerodinâmico 
+sistema de cadastro de mobilização 
+processo
+esquadrão 
+logística nacional 
+barreira
+datum 
+equipagem de combate
+jogo de guerra didático 
+sobrevôo proibido 
+acesso 
+defesa aeroespacial passiva
+controlador de local de desembarque 
+centro de coordenação de operações
+política militar 
+operação de paz 
+sistemas de tecnologia da informação para comando e controle 
+zona de operações
+matriz de sincronização 
+dispersão 
+disciplina 
+defender
+isolamento tático 
+radioaltímetro
+força de pacificação 
+missão de patrulha marítima 
+boato 
+bombardeio picado 
+serviço militar 
+drone 
+bombardeio horizontal 
+aeromóvel
+sistema de controle físico 
+soberania 
+olhar através
+sítio-radar 
+mão-de-obra estática 
+sistema militar de comando e controle
+força expedicionária
+direção de ataque
+esclarecimento 
+mosaico
+junção 
+aerovia 
+aerofotogrametria
+rotor
+controle de defesa aeroespacial ativa 
+conceito de operação em terra 
+estrutura de comando e controle
+lan 
+material de emprego militar 
+observador aéreo 
+arquitetura física 
+registros estatísticos 
+brigada de infantaria mecanizada 
+desconflito 
+comunalidade
+contraguerrilha
+missão de observação aérea
+objetivos de governo
+centro de controle de evacuados 
+princípio da prontidão
+função logística suprimento 
+zona de combate
+ração
+área vermelha 
+orçamento anual do exército 
+público interno 
+ocupação
+sistema de imagens e informações geográficas do exército 
+conduta de combate 
+quebra de estiva 
+espírito de corpo 
+passagem seca
+ciclo de boyd
+subunidade incorporada 
+controle 
+horário de fogos 
+obstáculo 
+estrutura de comando e controle 
+estado de guerra
+conselho militar de defesa
+centro de operações do comando supremo 
+volume de responsabilidade de sobrevôo restrito 
+autenticação 
+esforço
+precedência
+criptograma
+estrada
+ampliação
+zona de obstáculos 
+civis internados
+poder naval 
+casco resistente 
+reabastecimento em vôo
+dado 
+cruzador 
+força de guerrilha 
+oficial no comando-tático 
+hora no alvo 
+material 
+multicanal 
+defesa 
+apoio aéreo aproximado 
+área de retaguarda 
+cavalaria blindada 
+coordenação de apoio de fogo
+elemento anfíbio 
+sistema 
+bloqueio de barragem
+manutenção de nível parque 
+grave comprometimento da ordem interna 
+volume de responsabilidade de sobrevôo proibido 
+velocidade de marcha 
+romper o contato 
+controle do espaço aéreo
+política de mobilização nacional 
+sistema de mobilização do exército
+engajamento 
+força armada 
+flancoguarda 
+binômio infantaria-carros 
+radioaltímetro 
+zona de interceptação aérea 
+esquema de manobra 
+aeronave
+navio de guerra
+acordo
+observador visual 
+tripulante técnico 
+plataforma marítima móvel flutuante 
+zona de silêncio rádio 
+brigada de infantaria leve 
+ameaça assimétrica 
+canibalização 
+descarga inicial–
+oficial sinalizador de pouso 
+patrulha marítima
+adesividade 
+surtidas creditadas 
+corveta 
+manter o contato 
+posição de ataque pelo fogo 
+velocidade de cruzeiro 
+quadro de dotação de material 
+artilharia de campanha 
+planejamento logístico
+tronco 
+foguete balístico 
+intervalo de tempo 
+operação de evacuação de não-combatentes 
+público-alvo 
+radar doppler 
+reforma 
+ largura de varredura 
+grupamento 
+logística internacional 
+reconhecimento eletrônico 
+restauração
+regras de engajamento 
+precedência 
+espotagem
+trajetória
+fração
+isolamento
+elemento reabastecedor 
+mach 
+ordem de missão 
+contratorpedeiro
+pouso forçado 
+finta 
+posto de coleta 
+mina antiaeroterrestre
+zona de defesa 
+incursão anfíbia
+dissimulação
+repetitividade do sistema
+sensor infravermelho 
+decriptografar
+contrapreparação 
+incidente de tiro 
+ponto de controle 
+reserva local
+comando
+escalão recuado 
+surpresa tática 
+quadro de movimento aéreo 
+superioridade aérea 
+reirradiação 
+velocidade básica 
+sistema gerenciador de informações de guerra eletrônica 
+área de carregamento 
+apoio aéreo aproximado
+força naval componente 
+defesa de área
+distribuição na unidade 
+configuração
+estado-maior 
+destruição 
+guerra mundial 
+fragata 
+mobilidade estratégica 
+organização militar apoiadora 
+força especial 
+sistema de classificação militar 
+higiene 
+premissa 
+força 
+unidade local de assuntos civis 
+ato de serviço 
+linha de destruição inicial 
+protocolo 
+comandos
+depósito geral 
+exame de situação
+vanguarda 
+guerrilha
+rumo magnético 
+solução de conduta 
+estrutura militar de defesa
+implementação 
+meios visuais 
+perda-saúde 
+plano de apoio logístico 
+carta estratégica 
+piquete aéreo 
+área crítica 
+apoio aéreo imediato 
+espectro eletromagnético
+aquisição de alvo 
+restabelecimento da ordem
+plano de desembarque 
+força-tarefa combinada
+aproximação
+área perigosa 
+apoio suplementar específico 
+controle de avarias 
+escalão de reserva 
+misturador de voz ( scrambler ) 
+controle da ação em curso
+área de posição 
+missão anti-submarino 
+ordem jurídica
+sincronização 
+operação de diplomacia preventiva 
+compatibilidade
+aerolevantamento 
+adesividade
+asilo diplomático
+responsabilidade
+pod
+estrutura militar de defesa 
+plano de transporte 
+bombardeio a média altura 
+engenharia de construção
+centro de operações antiaéreas 
+transponder 
+área verde 
+sar
+contramedidas de minagem 
+quadro horário do movimento aéreo 
+carta de itinerário de linhas 
+unidade de emprego 
+análise 
+controle aerotático 
+área de apoio de zona de desembarque 
+inspeção naval
+freqüência fixa
+aproveitamento do êxito 
+comando singular
+guerra de atrito
+ordem pública
+limite 
+informação externa 
+perda fora de combate 
+ciclo de decisão 
+oportunistas 
+medidas de proteção eletrônica 
+higiene
+resolução espacial 
+base de operações 
+trânsito 
+ponto decisivo 
+operação de evacuação de não-combatentes
+fase de perigo
+comando independente
+hora limite 
+montante
+território liberado 
+requisito 
+área de objetivo de interesse 
+comissão de prevenção de acidentes aeronáuticos 
+área de operações
+plano de segurança integrada 
+tabela-mestra 
+ação diversionária
+unidade tática 
+atividade subsidiária
+potencial 
+coordenador de helicópteros no ar 
+força de proteção
+centro de informação de vôo 
+delegação de competência 
+ângulo de sítio
+unidade pára-quedista
+manobra central de ruptura ou penetração 
+bateria 
+bloqueio fora do alvo 
+sítio 
+corpo de tropa
+serviço de controle de tráfego aéreo
+simulação de combate
+subsetor de segurança integrada
+ato hostil 
+base fixa 
+unidade anfíbia
+defesa da pátria 
+precursor pára-quedista 
+área de engajamento
+radar de busca combinada 
+tecnologia da informação 
+campo de batalha não-linear 
+barreira de cobertura 
+fator de acúmulo 
+base aérea
+blindado
+operação anfíbia 
+intercambiabilidade 
+seção 
+requisitos operacionais preliminares
+brigada anfíbia
+vau
+velocidade de progressão
+avaria
+hipótese de planejamento 
+operacionalidade 
+ações subsidiárias
+sistema operacional apoio de fogo 
+torre de controle de vôo 
+manutenção de nível base 
+carta de circulação e controle de trânsito 
+defesa passiva 
+apoio aéreo 
+linha de segurança de apoio de artilharia 
+apoio suplementar por área 
+tiro de destruição
+posição de ataque
+plano de operações
+operação de minagem 
+sistema marítimo global de socorro e salvamento 
+observação
+corredor de mobilidade 
+distribuição 
+linha de detecção mínima 
+casamata 
+função logística transporte 
+hora de abandono
+manobra em linhas interiores 
+força aérea brasileira
+potencial econômico 
+técnica de planejamento 
+prontidão operacional 
+fator humano 
+cifra 
+velocidade indicada 
+ultrapassagem 
+solução da guerra 
+posição organizada 
+ponto de controle de reabastecimento
+hora h 
+combate não-linear 
+deriva 
+raio de ação operacional 
+requisição 
+desgaste
+bombardeio a baixa altura 
+batalha profunda 
+mira laser 
+segurança orgânica 
+sistema de operações psicológicas do exército 
+medidas restritivas
+heliponto 
+radiofreqüência 
+artilharia antiaérea 
+controle de danos
+granéis líquidos 
+ação corrente
+fase do embarque 
+objetivos aeroespaciais 
+ponto de decisão
+comando apoiador 
+área de responsabilidade 
+posto de controle de munição 
+amaciamento 
+navio de estado
+reserva de guerra 
+alerta 
+surtida abortiva 
+batalhão
+operação de segurança 
+nível mínimo
+alarme 
+neutralização
+grupamento logístico
+separação mínima
+milha terrestre 
+anti-submarino
+aeroporto 
+milha náutica
+plano de evacuação de aeronaves 
+sobreaviso 
+relatório relâmpago 
+pirotécnico 
+rede de comando 
+mobilidade 
+plataforma terrestre 
+diagrama dos circuitos 
+confrontação
+quarentena 
+mira noturna 
+configuração 
+transitabilidade
+espera
+destino de mobilização 
+nível de estoque corrente 
+guerra de resistência 
+segurança externa 
+artilharia antiaérea
+capitulação 
+propaganda branca 
+depósito privativo 
+faina 
+interceptação sar 
+ligações necessárias
+mina antiaeroterrestre 
+zona de operações 
+cota periscópica 
+força naval do teatro de operações 
+posto de coleta de civis 
+sistema de controle aerotático 
+assalto
+política militar de defesa
+neutralizar 
+unidades não-programadas 
+área de conflito 
+exeqüibilidade
+modernização 
+gerenciamento das irradiações eletromagnéticas 
+estado de paz
+contra-insurgência 
+praia de desembarque 
+guerra aérea estratégica 
+posição de bloqueio 
+fatores adversos 
+flare
+responsabilidade 
+sistema de autenticação 
+cena de ação 
+segurança da informação 
+estratégia da dissuasão 
+guerra naval
+conflito
+contato 
+planejamento detalhado 
+ponto inicial 
+quadro de cargos
+quadro de organização 
+atitude defensiva
+operação de defesa de plataformas de exploração/ explotação de petróleo no mar 
+vulnerabilidade 
+posto de comando principal 
+trem 
+coordenação de apoio de fogo 
+rota 
+grande comando operacional
+raio de ação 
+tropa de força terrestre 
+ciclo ooda 
+guerra eletrônica ativa 
+fixar 
+nível de cruzeiro 
+infiltração 
+unidade operacional de assuntos civis 
+transponder
+rocada 
+grupo de apoio móvel
+catalogação 
+supressão de defesas 
+eficácia operacional
+probabilidade de reabastecimento em vôo 
+estratégia da presença 
+poder marítimo
+apoio de fogo 
+radiação residual 
+navio de desembarque doca 
+guerra fria 
+órgão central do sistema de defesa aeroespacial brasileiro
+ordem de operações de defesa aeroespacial 
+suprimento classe ii 
+elevado potencial de perigo 
+marcha de aproximação 
+fusão de dados 
+lançador múltiplo de foguetes 
+irradiação 
+finalidade
+espectro eletromagnético 
+simulação
+reconhecimento por radar imageador 
+trem
+brigada de artilharia antiaérea
+zulu
+radar 
+interoperabilidade
+linha de defesa antiaérea 
+movimento 
+perseguição
+tipo de aeronave 
+elo do sistema de defesa aeroespacial brasileiro 
+atividades de guerra eletrônica 
+arquitetura técnica 
+objetivos de guerra
+princípio da simplicidade 
+suprimento classe viii 
+vetor 
+esquadrilha
+preparo operacional do exército 
+operação de substituição
+orgânico 
+assalto anfíbio
+patrulha anti-submarino 
+sistema de mobilização marítima 
+submarino 
+velocidade básica
+fase 
+mina
+navio capitânia
+força-tarefa anfíbia 
+atividade de inteligência 
+farol de identificação de código 
+imunização 
+idéia força 
+aquartelamento
+necessidade de conhecer 
+operação de promoção da paz
+ligação aérea 
+raio de ação
+tiro de neutralização
+tiro indireto 
+zona de desembarque 
+prontidão
+arbitragem 
+pelotão 
+manutenção de nível orgânico
+material essencial 
+linha da pior hipótese 
+hacker
+piloto operacional 
+interceptação 
+posto médico 
+radar de busca 
+material
+força de guerrilha
+guerra interna 
+viatura anfíbia 
+serviço militar
+controle do espaço aéreo 
+manutenção modificadora
+medidas de averiguação 
+ordem de batalha 
+percentagem de perdas por rodízio 
+ponto de dispersão da caça 
+efeito desejado
+atitude 
+centro de controle de área
+obra de engenharia 
+grande comando 
+área marítima móvel
+decriptografar 
+patrulha 
+altitude 
+conta-corrente mínima 
+evacuação
+assalto anfíbio 
+sonar
+segurança
+varredura mecânica
+intervalo de tempo
+brigada 
+plano de operação
+esclarecedor
+posição defensiva
+aeronave aew
+material sigiloso controlado 
+período de manutenção 
+informação nacional 
+situação de não-normalidade 
+travessia 
+retardamento
+confiabilidade
+relatório de perigo 
+pausa operacional 
+elemento de comunicações e guerra eletrônica 
+teto mínimo 
+equipamento
+agrupamento de artilharia antiaérea
+fator de consumo
+grau de sigilo
+área de escala de tropa 
+poder aeroespacial
+ponto intermediário logístico 
+sobrevôo proibido
+elo do sistema de defesa aeroespacial brasileiro
+ação retardadora 
+escoamento 
+necessidades conjunturais de material de emprego militar 
+grande comando operacional 
+raio de busca 
+rwr 
+posto de bloqueio e controle de vias urbanas
+ocorrência de solo
+controlador aéreo avançado 
+área de resistência 
+território nacional

@@ -1,0 +1,14 @@
+CONSULTA SPARQL - FIGURA 28 - Consulta sobre o nó operacao_ofensiva.
+
+1) OBJETIVO
+
+Essa consulta busca os recursos em que o nó operacao_ofensiva seja tanto sujeito quanto objeto.
+
+2) SPARQL
+
+PREFIX cnt: <http://idea-c2.org/data/#>
+CONSTRUCT {?s1 ?p1 ?o1. ?s2 ?p2 ?o2.} 
+WHERE 
+{{SELECT * WHERE {?s1 ?p1 ?o1. FILTER(?s1=cnt:operacao_ofensiva)}} 
+    {SELECT * WHERE {?s2 ?p2 ?o2. FILTER(?s2=cnt:operacao_ofensiva)}} 
+    FILTER(?o1=?o2)}

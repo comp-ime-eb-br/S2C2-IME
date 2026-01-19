@@ -1,0 +1,16 @@
+CONSULTA SPARQL - FIGURA 31 - Consulta sobre os nós operacao_ofensiva e acao_de_choque.
+
+1) OBJETIVO
+
+Essa consulta busca os recursos, cujos nós adjacentes sejam comuns aos nós operacao_ofensiva e acao_de_choque.
+
+2) SPARQL
+
+PREFIX cnt: <http://idea-c2.org/data/#>
+CONSTRUCT {?s1 ?p1 ?o1. ?s2 ?p2 ?o2. ?s3 ?p3 ?o3. ?s4 ?p4 ?o4} 
+WHERE {
+    {SELECT * WHERE {?s1 ?p1 ?o1. FILTER(?s1=cnt:operacao_ofensiva)}} 
+    {SELECT * WHERE {?s2 ?p2 ?o2. FILTER(?o2=cnt:operacao_ofensiva)}} 
+    {SELECT * WHERE {?s3 ?p3 ?o3. FILTER(?s3=cnt:acao_de_choque)}} 
+    {SELECT * WHERE {?s4 ?p4 ?o4. FILTER(?o4=cnt:acao_de_choque)}} 
+    FILTER(?o2=?s1 && ?o4=?s3 && ?s2=?s4 && ?o1=?o3)}

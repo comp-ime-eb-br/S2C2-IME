@@ -1,0 +1,15 @@
+@prefix cnt: <http://idea-c2.org/data/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+cnt:ataque_coordenado a <http://idea-c2.org/c2rm/#entity>;
+  rdfs:seeAlso cnt:inimigo, cnt:movimento, cnt:acao_de_choque, cnt:fogo .
+
+cnt:operacao_ofensiva a <http://idea-c2.org/c2rm/#entity>;
+  <http://idea-c2.org/c2rm/#applied_to> cnt:inimigo;
+  rdfs:seeAlso cnt:movimento, cnt:acao_de_choque, cnt:fogo .

@@ -131,7 +131,7 @@ hide:
 
 # Relatórios e Outros Documentos
 
-**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível conceitual)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Documento_com_a_descrição_das_sistemáticas__conceitual____S2C2_IME.pdf?raw=true){:download="RelatS2C2IME_Sistematica_Conceitual"}
+**Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível conceitual)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Documento_com_a_descrição_das_sistemáticas__conceitual____S2C2_IMEversaoExtMiscon.pdf?raw=true){:download="RelatS2C2IME_Sistematica_Conceitual"}
 
 **Especificação do procedimento sistemático para apoiar a interoperabilidade de C2 (nível logico)**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/relats/Documento_com_a_descrição_de_Procedimentos_Sistemáticos__lógico____S2C2_IME.pdf?raw=true){:download="RelatS2C2IME_Sistematica_Logica"}
 

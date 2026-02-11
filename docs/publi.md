@@ -14,7 +14,7 @@ hide:
 
 *Marcus Albert Alves Da Silva*
 
-**Method for highlighting and prioritizing text messages exchanged in a command and control environment using transformers to improve communication**
+**Method for highlighting and prioritizing text messages exchanged in a command and control environment using transformers to improve communication** - [vídeo da defesa](https://drive.google.com/file/d/1R-t7K_ibC48Nyd8EBtuO_h5y7_ENVUWa/view)
 
 *Flávio Ferreira da Silva Mosafi*
 
@@ -25,7 +25,7 @@ hide:
 
 # Dissertações
 
-**Uma Abordagem Baseada Em Ontologia Para Reprodução De Cenários De  Operações Militares**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Disserta%C3%A7%C3%A3oAndreMunizDemori_IME_versao_final.pdf?raw=true){:download="Diss_ADemori"} - [Vídeo da apresentação](https://drive.google.com/file/d/1kkt-DTS2Hcr_E7Mdt-dZQmz98gOX2Uzz/view?usp=sharing)
+**Uma Abordagem Baseada Em Ontologia Para Reprodução De Cenários De  Operações Militares**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Disserta%C3%A7%C3%A3oAndreMunizDemori_IME_versao_final.pdf?raw=true){:download="Diss_ADemori"} - [Vídeo da defesa](https://drive.google.com/file/d/1kkt-DTS2Hcr_E7Mdt-dZQmz98gOX2Uzz/view?usp=sharing)
 
 *André Muniz Demori*
 

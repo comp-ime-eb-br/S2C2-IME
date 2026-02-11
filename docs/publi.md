@@ -14,6 +14,15 @@ hide:
 
 *Marcus Albert Alves Da Silva*
 
+**Method for highlighting and prioritizing text messages exchanged in a command and control environment using transformers to improve communication**
+
+*Flávio Ferreira da Silva Mosafi*
+
+**IDEA-C2: uma abordagem híbrida de modelagem conceitual apoiada por um modelo de linguagem e um metamodelo de dados no contexto de Comando e Controle**
+
+*Jones de Oliveira Avelino*
+
+
 # Dissertações
 
 **Uma Abordagem Baseada Em Ontologia Para Reprodução De Cenários De  Operações Militares**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Disserta%C3%A7%C3%A3oAndreMunizDemori_IME_versao_final.pdf?raw=true){:download="Diss_ADemori"}
@@ -23,6 +32,12 @@ hide:
 **Autonomia de Meios Operativos para Apoio à Decisão em Sistemas de Comando e Controle: uma Abordagem Preditiva e Conceitual Utilizando Aprendizado de Máquina**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Dissertacao_Mestrado_PPGI_UFRJ_Valquire_Final_comAssinaturas.pdf?raw=true){:download="Diss_Valquire"}
 
 *Valquire da Silva de Jesus*
+
+**ATHENA: Uma abordagem FAIR para Publicação e Avaliação de Conjuntos de Dados de Segurança
+Cibernética**
+
+*Thaisa da Silva Hernadez*
+
 
 # Projetos Finais de Curso
 

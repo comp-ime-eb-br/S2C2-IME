@@ -10,7 +10,7 @@ hide:
 
 *Julio Cesar Cardoso Tesolin*
 
-**Combinando Técnica E Doutrina Por Meio De Conceitos Ontológicos Para Representar Cenários Operacionais Militares Em Sistemas De Comunicações Cognitivos**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Tese_de_Doutorado_Marcus__IME_Final_Ass.pdf?raw=true){:download="Tese_MAlbert"}
+**Combinando Técnica E Doutrina Por Meio De Conceitos Ontológicos Para Representar Cenários Operacionais Militares Em Sistemas De Comunicações Cognitivos**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Tese_de_Doutorado_Marcus__IME_Final_Ass.pdf?raw=true){:download="Tese_MAlbert"} - [vídeo da defesa](https://drive.google.com/file/d/1Et_0yshU2nwLmwCdZ11e6MmT_KjTYUWO/view?usp=sharing)
 
 *Marcus Albert Alves Da Silva*
 

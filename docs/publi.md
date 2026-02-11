@@ -18,7 +18,7 @@ hide:
 
 *Flávio Ferreira da Silva Mosafi*
 
-**IDEA-C2: uma abordagem híbrida de modelagem conceitual apoiada por um modelo de linguagem e um metamodelo de dados no contexto de Comando e Controle**
+**IDEA-C2: uma abordagem híbrida de modelagem conceitual apoiada por um modelo de linguagem e um metamodelo de dados no contexto de Comando e Controle**[video da defesa](https://drive.google.com/file/d/1qzyBFtHlpGdrMphBPyzgiEMxg7-rSMbm/view?usp=sharing)
 
 *Jones de Oliveira Avelino*
 
@@ -34,7 +34,7 @@ hide:
 *Valquire da Silva de Jesus*
 
 **ATHENA: Uma abordagem FAIR para Publicação e Avaliação de Conjuntos de Dados de Segurança
-Cibernética**
+Cibernética**[vídeo da defesa](https://drive.google.com/file/d/1Eogafi_1d0zm4MN6Jh39jmG_mPrtoz4J/view?usp=sharing)
 
 *Thaisa da Silva Hernadez*
 

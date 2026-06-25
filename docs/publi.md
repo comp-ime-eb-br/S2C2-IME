@@ -14,11 +14,11 @@ hide:
 
 *Marcus Albert Alves Da Silva*
 
-**Method for highlighting and prioritizing text messages exchanged in a command and control environment using transformers to improve communication** - [vídeo da defesa](https://drive.google.com/file/d/1R-t7K_ibC48Nyd8EBtuO_h5y7_ENVUWa/view)
+**Method for highlighting and prioritizing text messages exchanged in a command and control environment using transformers to improve communication**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/2026Tese_MAISC2_PosDefesaFlavioFerreira.pdf?raw=true){:download="202602_Tese_FlavioFerreira"} - [vídeo da defesa](https://drive.google.com/file/d/1R-t7K_ibC48Nyd8EBtuO_h5y7_ENVUWa/view)
 
 *Flávio Ferreira da Silva Mosafi*
 
-**IDEA-C2: uma abordagem híbrida de modelagem conceitual apoiada por um modelo de linguagem e um metamodelo de dados no contexto de Comando e Controle** - [video da defesa](https://drive.google.com/file/d/1qzyBFtHlpGdrMphBPyzgiEMxg7-rSMbm/view?usp=sharing)
+**IDEA-C2: uma abordagem híbrida de modelagem conceitual apoiada por um modelo de linguagem e um metamodelo de dados no contexto de Comando e Controle**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/2026Tese_IDEA-C2_PosDefesaJones.pdf?raw=true){:download="202602_Tese_JonesAvelino"} - [video da defesa](https://drive.google.com/file/d/1qzyBFtHlpGdrMphBPyzgiEMxg7-rSMbm/view?usp=sharing)
 
 *Jones de Oliveira Avelino*
 

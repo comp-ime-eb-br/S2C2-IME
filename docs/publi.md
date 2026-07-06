@@ -34,9 +34,9 @@ hide:
 *Valquire da Silva de Jesus*
 
 **ATHENA: Uma abordagem FAIR para Publicação e Avaliação de Conjuntos de Dados de Segurança
-Cibernética** - [vídeo da defesa](https://drive.google.com/file/d/1Eogafi_1d0zm4MN6Jh39jmG_mPrtoz4J/view?usp=sharing)
+Cibernética** - [:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/2026Dissertacao_ATHENA_PosDefesaThaisaHernandez.pdf?raw=true){:download="Diss_Thaisa} - [vídeo da defesa](https://drive.google.com/file/d/1Eogafi_1d0zm4MN6Jh39jmG_mPrtoz4J/view?usp=sharing)
 
-*Thaisa da Silva Hernadez*
+*Thaisa da Silva Hernandez*
 
 
 # Projetos Finais de Curso

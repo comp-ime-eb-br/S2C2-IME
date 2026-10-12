@@ -51,6 +51,7 @@ nav:
     - index.md
     - Resultados: resultados.md
     - FINEP: https://www.finep.gov.br/
+    - #logo: img/s2c2capsuleb.png
   - Ontologias:
     - ontodesc/index.md
     - hint: ontodesc/hint.md

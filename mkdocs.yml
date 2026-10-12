@@ -50,6 +50,7 @@ nav:
   - S2C2-IME: 
     - index.md
     - Resultados: resultados.md
+    - FINEP: https://www.finep.gov.br/
   - Ontologias:
     - ontodesc/index.md
     - hint: ontodesc/hint.md

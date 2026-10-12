@@ -51,7 +51,7 @@ nav:
     - index.md
     - Resultados: resultados.md
     - FINEP: https://www.finep.gov.br/
-    - logo: img/s2rdfc2b.png
+    - img/banner_finep_site_clientes234x60.jpg: https://www.finep.gov.br/
   - Ontologias:
     - ontodesc/index.md
     - hint: ontodesc/hint.md

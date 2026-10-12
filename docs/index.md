@@ -22,3 +22,4 @@ Para que tal ambiente funcione de modo satisfatório, é preciso estabelecer pro
 
 Nesse contexto, com a finalidade de **aprimoramento da interoperabilidade semântica de Comando e Controle das Forças Armadas Brasileiras**, é que surgiu o projeto “Sistema de Sistemas de Comando e Controle” - S2C2. Publicado no DOU no 16 de 25 de janeiro de 2021, Seção 3, página 7. O projeto S2C2 contou com o financiamento da FINEP/DCT/FAPEB, referência número 2904/20 sob o contrato de número 01.20.0272.00. 
 
+![](img/logoFINEP2.jpg){ align=center }

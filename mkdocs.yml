@@ -51,7 +51,7 @@ nav:
     - index.md
     - Resultados: resultados.md
     - FINEP: https://www.finep.gov.br/
-    - [](img/s2c2logo.png){ align=left }: https://www.finep.gov.br/
+    - FAPEB: https://fapeb.com.br/
   - Ontologias:
     - ontodesc/index.md
     - hint: ontodesc/hint.md

@@ -75,6 +75,10 @@ Cibernética**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-i
 
 *Giselle de Farias Rosa, Jones de Oliveira Avelino, Maria Claudia Reis Cavalcanti, Julio Cesar Duarte*
 
+**Interoperability Mechanisms for System-of-Systems: A Systematic Literature Review**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Interoperability_Mechanisms_for_System-of-Systems_A_Systematic_Literature_Review.pdf?raw=true){:download="250902_IEEEaccess_RSL_SoS_InteropMech"}[:simple-doi:](https://doi.org/10.1109/ACCESS.2026.3725151)
+
+*Thyago Ferreira Vieira, Ronaldo R. Goldschmidt, Maria Cláudia Reis Cavalcanti, Ricardo Choren*
+
 # Artigos de Conferência
 
 **Supporting Simulation of Military Communication Systems Using Well-Founded Modeling**[:material-file-pdf-box:{ title="file"}](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/Supporting_Simulation_of_Military_Communication_Systems_Using_Well_Founded_Modeling___Ontobras_2022.pdf?raw=true){:download="Ontobras_SupSimMilCom"}[:material-tag-text:{ title="bibtex" }](https://github.com/comp-ime-eb-br/S2C2-IME/blob/main/publi/ref/supportingsim.bib?raw=true)

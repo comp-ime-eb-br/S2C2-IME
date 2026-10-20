@@ -13,7 +13,7 @@ e do [repositório](https://github.com/comp-ime-eb-br/S2C2-IME) associado. A lis
 
   -  Artigos em Conferência Nacional 12 
   -  Artigos em Conferência Internacional 6 
-  -  Artigos em Revistas 4 
+  -  Artigos em Revistas 4
   -  Capítulos de Livro 1 
   -  Ontologias de Referência 5 
   -  Ontologias Operacionais 3 

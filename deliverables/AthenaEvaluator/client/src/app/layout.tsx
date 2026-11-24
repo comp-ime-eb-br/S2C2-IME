@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FDP Metrics",
-  description: "Webpage for FDP Metrics",
+  title: "Athena Evaluator",
+  description: "Webpage for Athena Evaluator",
 };
 
 export default function RootLayout({

@@ -42,24 +42,24 @@ def anonymityMetric(anonymity, kind_of_Traffic):
     #  for the anonymity. If a dataset has a kindy of traffic Real, it means that the data needs to be anonymized;
     #  otherwise, if the kindy of traffic is emulated or synthetic, it makes no sense for the data to be anonymized.
 
-    if kind_of_Traffic == "real" and anonymity == "yes":
+    if kind_of_Traffic == "real" and (anonymity == "yes" or anonymity == 'true'):
         anonymity_score = 1
-    elif kind_of_Traffic == "real" and anonymity == "none":
+    elif kind_of_Traffic == "real" and (anonymity == "none" or anonymity == "false"):
         anonymity_score = 0
     elif anonymity == "not specified":
         anonymity_score = 0
-    elif kind_of_Traffic == "emulated" and anonymity == "yes":
+    elif kind_of_Traffic == "emulated" and (anonymity == "yes" or anonymity == "true"):
         anonymity_score = 0
-    elif kind_of_Traffic == "emulated" and anonymity == "none":
+    elif kind_of_Traffic == "emulated" and (anonymity == "none" or anonymity == "false"):
         anonymity_score = 1
-    elif kind_of_Traffic == "syntethic" and anonymity == "none":
+    elif kind_of_Traffic == "syntethic" and (anonymity == "none" or anonymity == "false"):
         anonymity_score = 1
-    elif kind_of_Traffic == "syntethic" and anonymity == "yes":
+    elif kind_of_Traffic == "syntethic" and (anonymity == "yes" or anonymity == "true"):
         anonymity_score = 0
 
     return anonymity_score
 
-def relevanceMetric(citations, year_score, reference_value=4000, W=0.3):
+def relevanceMetric(citations, year_score, reference_value=4500, W=0.3):
     #  Citations is the number of citations of the evaluated dataset. reference_value is the number
     #  of citations considered the maximum, W is the weight considered  for the citations, and Y c is the value
     #  of the score received by the year of traffic creation metric.

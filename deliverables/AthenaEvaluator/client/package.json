@@ -10,16 +10,21 @@
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^6.4.8",
-    "@mui/material": "^6.4.3",
-    "next": "^15.3.4",
+    "@mui/material": "^6.5.0",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.540.0",
+    "n3": "^1.26.0",
+    "next": "15.3.6",
     "rdflib": "^2.2.36",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "recharts": "^3.1.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/n3": "^1.26.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

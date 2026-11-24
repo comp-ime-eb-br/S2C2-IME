@@ -13,16 +13,16 @@ TESTS_INFO = {
     "gen2_structured_metadata": {"label": "F2", "principle": "F"},
     "gen2_data_identifier_in_metadata": {"label": "F3", "principle": "F"},
     "gen2_metadata_identifier_in_metadata": {"label": "F3", "principle": "F"},
-    "gen2_searchable": {"label": "F4", "principle": "F"},
-    "gen2_data_protocol": {"label": "A1.1", "principle": "A"},
-    "gen2_metadata_protocol": {"label": "A1.1", "principle": "A"},
-    "gen2_data_authorization": {"label": "A1.2", "principle": "A"},
-    "gen2_metadata_authorization": {"label": "A1.2", "principle": "A"},
+    # "gen2_searchable": {"label": "F4", "principle": "F"},
+    # "gen2_data_protocol": {"label": "A1.1", "principle": "A"},
+    "gen2_metadata_protocol": {"label": "A1.1", "principle": "A"}, # <--
+    # "gen2_data_authorization": {"label": "A1.2", "principle": "A"},
+    "gen2_metadata_authorization": {"label": "A1.2", "principle": "A"}, # <--
     "gen2_metadata_persistence": {"label": "A2", "principle": "A"},
-    "gen2_data_kr_language_strong": {"label": "I1", "principle": "I"},
-    "gen2_metadata_kr_language_strong": {"label": "I1", "principle": "I"},
-    "gen2_data_kr_language_weak": {"label": "I1", "principle": "I"},
-    "gen2_metadata_kr_language_weak": {"label": "I1", "principle": "I"},
+    # "gen2_data_kr_language_strong": {"label": "I1", "principle": "I"},
+    "gen2_metadata_kr_language_strong": {"label": "I1", "principle": "I"}, # <--
+    # "gen2_data_kr_language_weak": {"label": "I1", "principle": "I"},
+    "gen2_metadata_kr_language_weak": {"label": "I1", "principle": "I"}, # <--
     "gen2_metadata_uses_fair_vocabularies_strong": {"label": "I2", "principle": "I"},
     "gen2_metadata_uses_fair_vocabularies_weak": {"label": "I2", "principle": "I"},
     "gen2_metadata_contains_outward_links": {"label": "I3", "principle": "I"},

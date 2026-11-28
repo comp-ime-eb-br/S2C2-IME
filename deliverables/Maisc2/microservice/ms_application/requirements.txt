@@ -80,7 +80,7 @@ sqlparse==0.5.0
 srsly==2.4.8
 thinc==8.2.3
 tqdm==4.66.4
-Twisted==24.3.0
+Twisted==26.10.0rc1
 txaio==23.1.1
 typer==0.9.4
 typing_extensions==4.9.0

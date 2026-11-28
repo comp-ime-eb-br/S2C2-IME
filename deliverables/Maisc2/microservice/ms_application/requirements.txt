@@ -48,7 +48,7 @@ numpy==1.24.4
 oauthlib==3.2.2
 packaging==24.0
 pandas==2.0.3
-pillow==10.3.0
+pillow==13.0.0
 preshed==3.0.9
 prompt-toolkit==3.0.43
 psycopg2-binary==2.9.9

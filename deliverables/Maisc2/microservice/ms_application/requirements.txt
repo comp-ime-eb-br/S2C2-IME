@@ -45,7 +45,7 @@ MarkupSafe==2.1.5
 murmurhash==1.0.10
 nltk==3.10.4
 numpy==1.24.4
-oauthlib==3.2.2
+oauthlib==4.0.1
 packaging==24.0
 pandas==2.0.3
 pillow==13.0.0
@@ -53,8 +53,8 @@ preshed==3.0.9
 prompt-toolkit==3.0.43
 psycopg2-binary==2.9.9
 pt-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.7.0/pt_core_news_sm-3.7.0-py3-none-any.whl#sha256=a3a8eed42c600af17c70ed3c8720ffe2879b5353055e66fe0c998306329052fd
-pyasn1==0.6.0
-pyasn1_modules==0.4.0
+pyasn1==0.6.5
+pyasn1_modules==0.4.2
 pycparser==2.22
 pydantic==2.7.1
 pydantic_core==2.18.2
